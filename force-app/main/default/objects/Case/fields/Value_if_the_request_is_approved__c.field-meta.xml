@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Value_if_the_request_is_approved__c</fullName>
+    <externalId>false</externalId>
+    <label>Value if the request is approved</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aligned with Prosci mission, vision, values</fullName>
+                <default>false</default>
+                <label>Aligned with Prosci mission, vision, values</label>
+            </value>
+            <value>
+                <fullName>Client success</fullName>
+                <default>false</default>
+                <label>Client success</label>
+            </value>
+            <value>
+                <fullName>Client experience</fullName>
+                <default>false</default>
+                <label>Client experience</label>
+            </value>
+            <value>
+                <fullName>Financial return</fullName>
+                <default>false</default>
+                <label>Financial return</label>
+            </value>
+            <value>
+                <fullName>Competitive response</fullName>
+                <default>false</default>
+                <label>Competitive response</label>
+            </value>
+            <value>
+                <fullName>Solution portfolio gap</fullName>
+                <default>false</default>
+                <label>Solution portfolio gap</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

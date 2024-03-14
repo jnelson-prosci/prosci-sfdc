@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Rate_Card_Percentage_Discount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The discount in percent applicable on a rate card&apos;s suggested bill rate when creating or updating a resource request on an opportunity.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The discount in percent applicable on a rate card&apos;s suggested bill rate when creating or updating a resource request on an opportunity.</inlineHelpText>
+    <label>Rate Card Percentage Discount</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

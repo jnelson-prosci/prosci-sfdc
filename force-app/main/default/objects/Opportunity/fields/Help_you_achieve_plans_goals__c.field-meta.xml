@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Help_you_achieve_plans_goals__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>PLEASE DESCRIBE HOW ATTENDING THIS TRAINING WILL HELP YOU TO ACHIEVE THE PLANS/GOALS YOU LISTED ABOVE</inlineHelpText>
+    <label>Help you achieve plans/goals</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

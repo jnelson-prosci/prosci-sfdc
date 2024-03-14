@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSTR__Ignore_PCE_Definition_Initiators__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box for users that should not evaluate Definition Initiators.  This would typically be checked for an integration user that automatically updates data in the background and does not need to initiate processes.</inlineHelpText>
+    <label>Ignore Definition Initiators</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Type__c</fullName>
+    <description>What type of Lead is this/Where did it come from on the website</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What type of lead is this? What is the customer interested in?</inlineHelpText>
+    <label>Lead Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Bridge Option</fullName>
+                <default>false</default>
+                <label>Bridge Option</label>
+            </value>
+            <value>
+                <fullName>Proxima</fullName>
+                <default>false</default>
+                <label>Proxima</label>
+            </value>
+            <value>
+                <fullName>Advanced Certifications</fullName>
+                <default>false</default>
+                <label>Advanced Certifications</label>
+            </value>
+            <value>
+                <fullName>Advisory Services</fullName>
+                <default>false</default>
+                <label>Advisory Services</label>
+            </value>
+            <value>
+                <fullName>Licensing</fullName>
+                <default>false</default>
+                <label>Licensing</label>
+            </value>
+            <value>
+                <fullName>Solutions for Organizations</fullName>
+                <default>false</default>
+                <label>Solutions for Organizations</label>
+            </value>
+            <value>
+                <fullName>Enterprise Training</fullName>
+                <default>false</default>
+                <label>Enterprise Training</label>
+            </value>
+            <value>
+                <fullName>eLearning for Organizations</fullName>
+                <default>false</default>
+                <label>eLearning for Organizations</label>
+            </value>
+            <value>
+                <fullName>Speaking Engagements</fullName>
+                <default>false</default>
+                <label>Speaking Engagements</label>
+            </value>
+            <value>
+                <fullName>GAN</fullName>
+                <default>false</default>
+                <label>GAN</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

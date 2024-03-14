@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Final_Contract</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Send Final Contract for Signatures</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer
+?ServerURL={!API.Partner_Server_URL_220}
+&amp;id={!Contract.Id}
+
+&amp;DefaultPDF=1
+&amp;QVar0Id=a271Y000003EZcW
+&amp;QVar0Format=00010
+&amp;TemplateId={Qvar0}
+
+&amp;DC={!IF(Contract.Contract_Approved__c = FALSE, 1, 0)}
+&amp;DCL=Contract+Is+Not+Yet+Approved
+
+&amp;Qvar1Id=a271Y000003EZfB?pv0={!Contract.Related_OpportunityId__c}
+&amp;Qvar1Format=00010
+
+&amp;csvisible=1
+&amp;CSRoutingType=SERIAL
+
+&amp;CSRecipient1=005i0000006Vw3R
+&amp;csrole1=Signer
+
+&amp;CSRecipient2={qvar1}
+&amp;csrole2=Signer
+
+&amp;csEmailMessage=Please+click+Begin+Signing+to+Review+Document+and+Sign
+&amp;csEmailSubject=Please+review+for+signature
+
+&amp;_DS7=1141</url>
+</WebLink>

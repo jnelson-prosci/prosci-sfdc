@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Val_s_Events</fullName>
+    <booleanFilter>1 OR 2 OR 3</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Title__c</columns>
+    <columns>Type_of_Event__c</columns>
+    <columns>Location__c</columns>
+    <columns>Assigned_Training_Manager__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Assigned_Instructor__c</columns>
+    <columns>Back_up_Instructor__c</columns>
+    <columns>Co_Teach_Instructor_Lookup__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Assigned_Instructor__c</field>
+        <operation>contains</operation>
+        <value>Tremblay</value>
+    </filters>
+    <filters>
+        <field>Co_Teach_Instructor_Lookup__c</field>
+        <operation>contains</operation>
+        <value>Tremblay</value>
+    </filters>
+    <filters>
+        <field>Back_up_Instructor__c</field>
+        <operation>contains</operation>
+        <value>Tremblay</value>
+    </filters>
+    <label>Val&apos;s Events</label>
+</ListView>

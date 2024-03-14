@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>S_Solution__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>How can we help you? 
+What&apos;s your reason for contacting Prosci 
+What problem are you trying to solve? 
+What&apos;s the business outcome you&apos;re looking to achieve? 
+How would you describe the job to be done? 
+What does success look like?</inlineHelpText>
+    <label>S-Solution</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Email_Alert_for_CAN_Improve_Project_Health</name>
+        <label>Email Alert for CAN Improve Project Health</label>
+        <locationX>314</locationX>
+        <locationY>647</locationY>
+        <actionName>Associated_Training_Contacts__c.Welcome_Email_Alert_CAN_Public_Improve_Project_Health</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Create_Task</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Associated_Training_Contacts__c.Welcome_Email_Alert_CAN_Public_Improve_Project_Health</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Email_Alert_Virt_Improve_Project_Health</name>
+        <label>Email Alert Virt Improve Project Health</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <actionName>Associated_Training_Contacts__c.Welcome_Email_Alert_HQ_Public_Improve_Project_Health</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Create_Task</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Associated_Training_Contacts__c.Welcome_Email_Alert_HQ_Public_Improve_Project_Health</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <description>The decision to see if its pubic VILT Improve project Health</description>
+        <name>is_public_VILT_Improve_Project_Heath</name>
+        <label>is public VILT Improve Project Heath</label>
+        <locationX>666</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>public_vilt_Improve_Project_Health</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.VILT_Program__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Improve Project Health</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Type_of_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Public</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Type_of_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Internal</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>regional_decision_welcome_email_public_vilt_cert</targetReference>
+            </connector>
+            <label>public vilt Improve Project Health</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>regional_decision_welcome_email_public_vilt_cert</name>
+        <label>regional decision welcome email public vilt cert</label>
+        <locationX>402</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>Create_Task</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Welcome_Email_HQ_public_Agile</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Instructor_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Prosci</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Email_Alert_Virt_Improve_Project_Health</targetReference>
+            </connector>
+            <label>Welcome Email HQ public Agile</label>
+        </rules>
+        <rules>
+            <name>Welcome_Email_CAN_public_Agile</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Instructor_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Prosci Canada</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Email_Alert_for_CAN_Improve_Project_Health</targetReference>
+            </connector>
+            <label>Welcome Email CAN public Agile</label>
+        </rules>
+        <rules>
+            <name>Welcome_Email_ANZ_public_Agile</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Instructor_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Prosci Australia</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Task</targetReference>
+            </connector>
+            <label>Welcome Email ANZ public Agile</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Send_Welcome_Email</name>
+        <label>Send Welcome Email</label>
+        <locationX>930</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>No Welcome Email</defaultConnectorLabel>
+        <rules>
+            <name>Welcome_Email_to_be_Sent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.No_Welcome_Email__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>is_public_VILT_Improve_Project_Heath</targetReference>
+            </connector>
+            <label>Welcome Email to be Sent</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>subject</name>
+        <dataType>String</dataType>
+        <expression>&quot;Welcome email for &quot;+{!$Record.Training_Event__r.Name}</expression>
+    </formulas>
+    <formulas>
+        <name>today</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Welcome Public Improve Project Health {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Welcome Public Improve Project Health</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>create task on the contact showing the welcome email was sent</description>
+        <name>Create_Task</name>
+        <label>Create Task</label>
+        <locationX>402</locationX>
+        <locationY>839</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>today</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>subject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type</field>
+            <value>
+                <stringValue>Email</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhoId</field>
+            <value>
+                <elementReference>$Record.Contact__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>804</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_Welcome_Email</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Registered</stringValue>
+            </value>
+        </filters>
+        <object>Associated_Training_Contacts__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>NMSO</fullName>
+        <default>false</default>
+        <label>NMSO</label>
+    </customValue>
+    <customValue>
+        <fullName>NMSO - FRENCH</fullName>
+        <default>false</default>
+        <label>NMSO - FRENCH</label>
+    </customValue>
+    <customValue>
+        <fullName>FRENCH</fullName>
+        <default>false</default>
+        <label>FRENCH</label>
+    </customValue>
+    <customValue>
+        <fullName>Rate based</fullName>
+        <default>false</default>
+        <label>Rate based</label>
+    </customValue>
+    <customValue>
+        <fullName>Deliverable</fullName>
+        <default>false</default>
+        <label>Deliverable</label>
+    </customValue>
+    <customValue>
+        <fullName>Stand-Ready</fullName>
+        <default>false</default>
+        <label>Stand-Ready</label>
+    </customValue>
+    <masterLabel>Contract Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

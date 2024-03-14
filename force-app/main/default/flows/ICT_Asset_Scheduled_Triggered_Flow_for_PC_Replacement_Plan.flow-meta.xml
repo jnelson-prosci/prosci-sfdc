@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <name>Is_it_the_first_of_the_month</name>
+        <label>Is it the first of the month?</label>
+        <locationX>380</locationX>
+        <locationY>252</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>First_of_the_month</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Flow.CurrentDate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>FirstofMonth</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_the_ICT_Asset_3_Years_Old_and_still_Active</targetReference>
+            </connector>
+            <label>First of the month</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_the_ICT_Asset_3_Years_Old_and_still_Active</name>
+        <label>Is the ICT Asset 3+ Years Old and still Active</label>
+        <locationX>182</locationX>
+        <locationY>360</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Three_Plus_Years</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AssetisThreeYearsOld</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_ICT_Assets</targetReference>
+            </connector>
+            <label>Three Plus Years</label>
+        </rules>
+    </decisions>
+    <description>This flow creates a case for ICT Assets 3+ years old.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>AssetisThreeYearsOld</name>
+        <dataType>Boolean</dataType>
+        <expression>Month({!$Record.Purchase_Date__c})=Month(Today())&amp;&amp;Year(Today())&gt;=Year({!$Record.Purchase_Date__c}+1095)</expression>
+    </formulas>
+    <formulas>
+        <name>FirstofMonth</name>
+        <dataType>Date</dataType>
+        <expression>DATE(YEAR(TODAY()), MONTH(TODAY()),6)</expression>
+    </formulas>
+    <interviewLabel>ICT Asset - Scheduled Triggered Flow for PC Replacement Plan {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ICT Asset - Scheduled Triggered Flow for PC Replacement Plan</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_a_Case</name>
+        <label>Create a Case</label>
+        <locationX>50</locationX>
+        <locationY>576</locationY>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>$Record.Assigned_to__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>Description</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ICT_Asset__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Salesforce</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Request_Type_Other__c</field>
+            <value>
+                <stringValue>PC Replacement Plan</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Request_Type__c</field>
+            <value>
+                <stringValue>Other</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>PCReplacementPlanSubject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>System__c</field>
+            <value>
+                <stringValue>Desktop Hardware</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_ICT_Assets</name>
+        <label>Get ICT Assets</label>
+        <locationX>50</locationX>
+        <locationY>468</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_a_Case</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4 OR 5)</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Warranty</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Disposed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Donated</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Retired Asset</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Asset_upload_to_SF__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_it_the_first_of_the_month</targetReference>
+        </connector>
+        <object>Asset_upload_to_SF__c</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2023-09-06</startDate>
+            <startTime>12:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Draft</status>
+    <textTemplates>
+        <name>Description</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>This Asset is coming up on 3 years. The purchase date was {!$Record.Purchase_Date__c}. Time to replace.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>PCReplacementPlanSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Asset is ready for PC Replacement Plan {!$Record.Name}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Subject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>PC Replacement Plan Asset is 3 Years Old {!$Record.Name}</text>
+    </textTemplates>
+</Flow>

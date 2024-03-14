@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_License</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate License</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer
+?ServerURL={!API.Partner_Server_URL_220}
+&amp;id={!Contract.Id}
+
+&amp;Templateid=a2F1Y000001eOsC
+&amp;TemplateGroup=License
+&amp;SC0=1
+&amp;SC1=SalesforceFile
+&amp;DataTagEnable=1
+&amp;RM=1
+&amp;LRTF=1
+
+
+&amp;QueryID=[BackgroundInfo]a271Y000003EZdF,[ProsciCopyright]a271Y000003EZer,[Trademark]a271Y000003EZew,[License]a271Y000003EZdj,[ScopeLicense]a271Y000003EZdo,[LicenseRestric1]a271Y000003EZdt,[Active]a271Y000003EZe8,[Individual]a271Y000003EZeD,[Customization]a271Y000003EZeI,[Internal]a271Y000003EZeN,[Payment]a271Y000003EZdU,[Term]a271Y0000036bzv,[Infringement]a271Y000003EZeS,[Limited]a271Y000003EZeX,[LoL]a271Y000003EZcq,[MiscPt1]a271Y000003EZec,[MiscPt2]a271Y000003EZeh,[MiscEnterp]a271Y000003EZcl,[MiscWIA]a271Y000003EZcg,[AccountInfo]a271Y000003EZf1,[Template]a271Y000003EZf6,[3341]a271Y000003EZfG,[Portal1]a271Y0000036S44QAE,[Portal2]a271Y0000036S4EQAU,[Portal3]a271Y0000036S4FQAU,[Portal4]a271Y0000036S4GQAU,[Restrictions]a271Y0000036S4OQAU,[ConfidentialityPrtl]a271Y0000036S4cQAE,[TerminationPortal]a271Y0000036S4mQAE,[WarrantyPortal]a271Y0000036S51QAE,[PortalAccess]a271Y0000036S5xQAE
+
+&amp;OFN=Agreement+{!Contract.ContractNumber}+for+{!Contract.Account}
+
+&amp;_DS7=11
+
+&amp;DC={!IF(Contract.Disable_Conga_Logic_License__c = &quot;0&quot;, 0, 1)}
+
+&amp;DCL=One+of+the+following+fields+has+not+been+set+-+Initial+License+Fee,+Licensee+Agent+Count.</url>
+</WebLink>

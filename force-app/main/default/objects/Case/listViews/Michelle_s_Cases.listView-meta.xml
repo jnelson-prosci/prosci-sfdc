@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Michelle_s_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Last_Comment_date__c</columns>
+    <columns>Due_date__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>System__c</columns>
+    <columns>Request_Type__c</columns>
+    <columns>Request_Type_Other__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>Hours_Before_Reviewed__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATEDBY_USER.ALIAS</field>
+        <operation>equals</operation>
+        <value>mlemi</value>
+    </filters>
+    <label>Michelle&apos;s Cases</label>
+</ListView>

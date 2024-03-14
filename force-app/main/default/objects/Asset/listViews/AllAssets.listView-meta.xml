@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllAssets</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>ASSET.CREATED_DATE</columns>
+    <columns>prosci_portal_db_id__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.NAME</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>Seats_Purchased__c</columns>
+    <columns>Seats_Assigned__c</columns>
+    <columns>Seats_Available__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Assets</label>
+</ListView>

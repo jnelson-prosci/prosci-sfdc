@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Advisory_Fed_Gov</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.RECORDTYPE</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.PROBABILITY</columns>
+    <columns>Approved__c</columns>
+    <columns>Training_Event__c</columns>
+    <columns>OPPORTUNITY.NEXT_STEP</columns>
+    <columns>Day_1__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Product_Ordered__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Advisory_Services</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.PROBABILITY</field>
+        <operation>greaterThan</operation>
+        <value>1</value>
+    </filters>
+    <label>All Advisory - Fed Gov</label>
+</ListView>

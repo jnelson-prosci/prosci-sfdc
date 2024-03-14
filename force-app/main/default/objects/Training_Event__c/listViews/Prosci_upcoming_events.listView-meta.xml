@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prosci_upcoming_events</fullName>
+    <columns>Start_Date__c</columns>
+    <columns>NAME</columns>
+    <columns>Title__c</columns>
+    <columns>Type_of_Event__c</columns>
+    <columns>Status__c</columns>
+    <columns>Assigned_Instructor__c</columns>
+    <columns>Assigned_Training_Manager__c</columns>
+    <columns>Location__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>LAST_WEEK</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled</value>
+    </filters>
+    <label>Prosci upcoming events</label>
+</ListView>

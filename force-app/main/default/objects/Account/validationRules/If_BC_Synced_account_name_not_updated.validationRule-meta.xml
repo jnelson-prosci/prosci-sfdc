@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_BC_Synced_account_name_not_updated</fullName>
+    <active>true</active>
+    <description>If the account is synced to BC you will get an error if you try to update the account name.</description>
+    <errorConditionFormula>NOT( $Permission.Bypass_BC_Synced_Account_Name_Validation_Rule )&amp;&amp; ISCHANGED(Name)&amp;&amp;(BC_Synced__c  = True)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>You cannot update account name on an account that is already synced to BC. Please reach out to your data steward.</errorMessage>
+</ValidationRule>

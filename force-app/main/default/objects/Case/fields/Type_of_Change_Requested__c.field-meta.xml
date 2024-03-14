@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Change_Requested__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of Change Requested</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Error (Priority due to brand or client impact)</fullName>
+                <default>false</default>
+                <label>Error (Priority due to brand or client impact)</label>
+            </value>
+            <value>
+                <fullName>Error (Other to be corrected when possible)</fullName>
+                <default>false</default>
+                <label>Error (Other to be corrected when possible)</label>
+            </value>
+            <value>
+                <fullName>Add New</fullName>
+                <default>false</default>
+                <label>Add New</label>
+            </value>
+            <value>
+                <fullName>Modify Existing</fullName>
+                <default>false</default>
+                <label>Modify Existing</label>
+            </value>
+            <value>
+                <fullName>Retire or Replace</fullName>
+                <default>false</default>
+                <label>Retire or Replace</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

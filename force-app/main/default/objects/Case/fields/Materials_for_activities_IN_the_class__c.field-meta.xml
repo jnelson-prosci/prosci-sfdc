@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Materials_for_activities_IN_the_class__c</fullName>
+    <externalId>false</externalId>
+    <label>Materials for activities IN the class</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Videos</fullName>
+                <default>false</default>
+                <label>Videos</label>
+            </value>
+            <value>
+                <fullName>Exercises</fullName>
+                <default>false</default>
+                <label>Exercises</label>
+            </value>
+            <value>
+                <fullName>Training “toys”</fullName>
+                <default>false</default>
+                <label>Training “toys”</label>
+            </value>
+            <value>
+                <fullName>Instructor provided materials/handouts</fullName>
+                <default>false</default>
+                <label>Instructor provided materials/handouts</label>
+            </value>
+            <value>
+                <fullName>Production provided Instructional Materials</fullName>
+                <default>false</default>
+                <label>Production provided Instructional Materials</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

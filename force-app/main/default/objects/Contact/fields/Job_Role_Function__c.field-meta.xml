@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Role_Function__c</fullName>
+    <externalId>false</externalId>
+    <label>Job Role / Function</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Change Management</fullName>
+                <default>false</default>
+                <label>Change Management</label>
+            </value>
+            <value>
+                <fullName>Communications</fullName>
+                <default>false</default>
+                <label>Communications</label>
+            </value>
+            <value>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+                <label>Consulting</label>
+            </value>
+            <value>
+                <fullName>Continuous Improvement and Innovation</fullName>
+                <default>false</default>
+                <label>Continuous Improvement and Innovation</label>
+            </value>
+            <value>
+                <fullName>Customer Relations, Sales &amp; Marketing</fullName>
+                <default>false</default>
+                <label>Customer Relations, Sales &amp; Marketing</label>
+            </value>
+            <value>
+                <fullName>Finance and Administration</fullName>
+                <default>false</default>
+                <label>Finance and Administration</label>
+            </value>
+            <value>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <label>Human Resources</label>
+            </value>
+            <value>
+                <fullName>Information Technology</fullName>
+                <default>false</default>
+                <label>Information Technology</label>
+            </value>
+            <value>
+                <fullName>Operations</fullName>
+                <default>false</default>
+                <label>Operations</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+                <label>Project Management</label>
+            </value>
+            <value>
+                <fullName>Senior Leader</fullName>
+                <default>false</default>
+                <label>Senior Leader</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

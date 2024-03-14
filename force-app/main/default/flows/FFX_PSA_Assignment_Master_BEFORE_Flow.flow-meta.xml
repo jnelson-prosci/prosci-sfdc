@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Sets assignment Defaults based on original Workflow Rule - FFX PSA Assignment Creation Defaults. The only field that has not been brought over from the original workflow rule is field update &quot;PSA Use Default Cost Rate False&quot;</description>
+        <name>Assignment_Creation_Defaults</name>
+        <label>Assignment Creation Defaults</label>
+        <locationX>271</locationX>
+        <locationY>341</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AssignmentName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.pse__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Scheduled</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Invokes the actions included within the FFX PSA Assignment Creation Defaults Workflow Rule (With the exception of field update PSA Use Default Cost Rate False) now DEPRECATED for Spring 21 Release</description>
+    <formulas>
+        <description>Populates the Assignment Name on creation</description>
+        <name>AssignmentName</name>
+        <dataType>String</dataType>
+        <expression>LEFT(LEFT(
+{!$Record.pse__Project__r.Name}
+,38) &amp; &quot; - &quot; &amp; 
+{!$Record.pse__Resource__r.FirstName}
+ &amp; &apos; &apos; &amp; 
+{!$Record.pse__Resource__r.LastName}
+ , 80)</expression>
+    </formulas>
+    <interviewLabel>PSA - Assignment - Master BEFORE Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>PSA - Assignment - Master BEFORE Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Assignment_Creation_Defaults</targetReference>
+        </connector>
+        <object>pse__Assignment__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

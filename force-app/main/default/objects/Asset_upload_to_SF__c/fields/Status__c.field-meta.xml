@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>What is the status on the ICT Asset?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What is the status on the ICT Asset?</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unallocated Asset</fullName>
+                <default>true</default>
+                <label>Unallocated Asset</label>
+            </value>
+            <value>
+                <fullName>Assigned</fullName>
+                <default>false</default>
+                <label>Assigned</label>
+            </value>
+            <value>
+                <fullName>Retired Asset</fullName>
+                <default>false</default>
+                <label>Retired Asset</label>
+            </value>
+            <value>
+                <fullName>Wiped</fullName>
+                <default>false</default>
+                <label>Wiped</label>
+            </value>
+            <value>
+                <fullName>Donated</fullName>
+                <default>false</default>
+                <label>Donated</label>
+            </value>
+            <value>
+                <fullName>Disposed</fullName>
+                <default>false</default>
+                <label>Disposed</label>
+            </value>
+            <value>
+                <fullName>Warranty</fullName>
+                <default>false</default>
+                <label>Warranty</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

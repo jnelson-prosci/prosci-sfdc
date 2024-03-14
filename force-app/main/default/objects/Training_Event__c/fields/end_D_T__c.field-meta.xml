@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>end_D_T__c</fullName>
+    <description>This formula field is used to calculate the UTC time that can be used to create a Google Calendar link that correctly creates the event in the user&apos;s time zone.</description>
+    <externalId>false</externalId>
+    <formula>DATETIMEVALUE(TEXT( End_Date__c ) + &quot; &quot; + LEFT(TEXT(Training_Event_End_Time__c),8)) +
+  CASE(TEXT(Training_Event_Time_Zone__c), 
+						&quot;North America Pacific Standard Time&quot;, (8/24), 
+						&quot;North America Central Standard Time&quot;, (6/24),
+						&quot;North America Mountain Standard Time&quot;, (7/24),
+						&quot;North America Eastern Standard Time&quot;, (5/24),
+						&quot;North America Pacific Daylight Time&quot;, (7/24),
+      &quot;North America Mountain Daylight Time&quot;, (6/24),
+      &quot;North America Central Daylight Time&quot;, (5/24),
+      &quot;North America Eastern Daylight Time&quot;, (4/24),
+      &quot;North America Atlantic Daylight Time&quot;, (3/24),
+      &quot;North America Newfoundland Daylight Time&quot;, (2.5/24),
+						&quot;Normale de l&apos;Est&quot;, (4/24),
+						&quot;Avaneè de l&apos;est&quot;, (5/24),
+						&quot;North America Atlantic Standard Time&quot;, (4/24),
+						&quot;North America Newfoundland Standard Time&quot;, (3.5/24),
+						&quot;Norfolk Island Standard Time&quot;, (-11/24),
+						&quot;Australian Western Standard Time&quot;, (-8/24),
+						&quot;Australian Western Daylight Time&quot;, (-9/24),
+						&quot;Australian Central Standard Time&quot;, (-9.5/24),
+						&quot;Australian Central Daylight Time&quot;, (-10.5/24),
+      &quot;Australian Eastern Standard Time&quot;, (-10/24),
+      &quot;Australian Eastern Daylight Time&quot;, (-12/24),
+						&quot;New Zealand Standard Time&quot;, (-12/24),
+						&quot;New Zealand Daylight Time&quot;, (-13/24),
+						&quot;Christmas Island Time&quot;, (-7/24),
+						0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>end D/T</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

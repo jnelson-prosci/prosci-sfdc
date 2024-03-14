@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TTT_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This date represents attendance of 4-day in person program pre-covid. Does not relate to attendance in TTT level 1 or 2.</inlineHelpText>
+    <label>TTT Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

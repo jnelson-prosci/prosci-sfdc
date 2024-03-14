@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Contact__c</columns>
+    <columns>Account__c</columns>
+    <columns>Email__c</columns>
+    <columns>prosci_portal_db_id__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Email__c</field>
+        <operation>equals</operation>
+        <value>syreeta.n.mcfadden@gmail.com</value>
+    </filters>
+    <label>All</label>
+</ListView>

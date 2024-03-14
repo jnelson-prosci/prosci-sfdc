@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HB_VILT_Program__c</fullName>
+    <description>Hubspot field to set text TRUE if VILT Program else FALSE</description>
+    <externalId>false</externalId>
+    <formula>IF( Training_Event__r.VILT_Program__c == TRUE , &quot;TRUE&quot;, &quot;FALSE&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>HB VILT Program</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

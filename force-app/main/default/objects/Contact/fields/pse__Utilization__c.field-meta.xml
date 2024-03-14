@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Utilization__c</fullName>
+    <deprecated>false</deprecated>
+    <description>[DEPRECATED, no longer used]</description>
+    <externalId>false</externalId>
+    <formula>IF((pse__Utilization_Elapsed_Hours__c&gt;pse__Excluded_Hours__c),IF(AND(NOT(ISNULL(pse__Billable_Internal_Hours__c)),NOT(ISNULL(pse__Credited_Non_Billable_Internal_Hours__c)),NOT(ISNULL(pse__Utilization_Elapsed_Hours__c)),NOT(ISNULL(pse__Excluded_Hours__c))),(pse__Billable_Internal_Hours__c + pse__Credited_Non_Billable_Internal_Hours__c)/(pse__Utilization_Elapsed_Hours__c - pse__Excluded_Hours__c),0.00),0.00)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Utilization</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

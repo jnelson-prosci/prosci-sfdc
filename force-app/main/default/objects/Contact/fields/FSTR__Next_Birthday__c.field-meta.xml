@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSTR__Next_Birthday__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(OR(Month( Birthdate )&gt;Month(Today()), AND(Month( Birthdate )=Month(Today()), Day(Birthdate)&gt;=Day(Today()))), IF(AND(MONTH(Birthdate) = 2, DAY(Birthdate) = 29),(IF(OR(MOD(YEAR(Today()), 400) = 0, AND(MOD(YEAR(Today()),4) = 0, MOD(YEAR(Today()), 100) &lt;&gt; 0)),
+DATE(YEAR(Today()), MONTH(Birthdate), DAY(Birthdate)),
+DATE(YEAR(Today()), MONTH(Birthdate), 28))),
+(DATE(YEAR(Today()), MONTH(Birthdate) , DAY(Birthdate)))),
+IF(AND(MONTH(Birthdate) = 2, DAY(Birthdate) = 29),
+(IF(OR(MOD(YEAR(Today()) +1, 400) = 0, AND(MOD(YEAR(Today()) + 1 ,4) = 0, MOD(YEAR(Today()) + 1, 100) &lt;&gt; 0)),
+DATE(YEAR(Today()) + 1, MONTH(Birthdate), DAY(Birthdate)),
+DATE(YEAR(Today()) +1, MONTH(Birthdate), 28))),
+(DATE(YEAR(Today()) +1, MONTH(Birthdate) , DAY(Birthdate)))))</formula>
+    <inlineHelpText>Indicates the actual date of the next occurrence of the contacts birthday.</inlineHelpText>
+    <label>Next Birthday</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

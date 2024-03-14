@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ANZ_Public_one_day_Programs</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+    <columns>Start_Date__c</columns>
+    <columns>NAME</columns>
+    <columns>Title__c</columns>
+    <columns>Location__c</columns>
+    <columns>Projected_Attendance__c</columns>
+    <columns>No_of_Trainees__c</columns>
+    <columns>No_of_Pending__c</columns>
+    <columns>Participant_Spots_Left_ANZ__c</columns>
+    <columns>Project_Count__c</columns>
+    <columns>Project_spots_left_ANZ__c</columns>
+    <columns>No_of_Waitlisted__c</columns>
+    <columns>Instructor__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Instructor_Type__c</field>
+        <operation>equals</operation>
+        <value>Prosci Australia</value>
+    </filters>
+    <filters>
+        <field>Type_of_Event__c</field>
+        <operation>equals</operation>
+        <value>Public</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Training_Event__c.Prosci_Training_Event</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>LAST_WEEK</value>
+    </filters>
+    <filters>
+        <field>Title__c</field>
+        <operation>equals</operation>
+        <value>Fundamentals of Change Workshop,Integrating Agile</value>
+    </filters>
+    <label>ANZ Public one day Programs</label>
+</ListView>

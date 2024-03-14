@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Important_Urgent__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>4 – we have paperwork out but there are no dates being held.  
+4 - Also, past events where paperwork is still outstanding
+3 – holding dates, 8+ weeks out.
+2 – holding dates, between 5 and 8 weeks out.
+1 – holding dates, 4 weeks out or less.</inlineHelpText>
+    <label>Important/Urgent</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>4</fullName>
+                <default>true</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

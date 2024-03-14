@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_Document</fullName>
+    <availability>online</availability>
+    <description>Use this button to  drag and drop documents to the Training Event page</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Add Document</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/DragDropAttach__AttachFiles?recordid={!Training_Event__c.Id}&amp;recordname={!Training_Event__c.Name}&amp;recordtype=Training Event</url>
+</WebLink>

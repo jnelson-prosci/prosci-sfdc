@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_Instance__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>BC Instance</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business_Central_US</fullName>
+                <default>true</default>
+                <label>Business_Central_US</label>
+            </value>
+            <value>
+                <fullName>Business_Central_CAN</fullName>
+                <default>false</default>
+                <label>Business_Central_CAN</label>
+            </value>
+            <value>
+                <fullName>Business_Central_ANZ</fullName>
+                <default>false</default>
+                <label>Business_Central_ANZ</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

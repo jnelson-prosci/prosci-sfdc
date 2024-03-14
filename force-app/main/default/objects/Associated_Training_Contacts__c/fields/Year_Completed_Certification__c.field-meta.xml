@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Year_Completed_Certification__c</fullName>
+    <externalId>false</externalId>
+    <label>Year Completed Certification</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2020-2021</fullName>
+                <default>false</default>
+                <label>2020-2021</label>
+            </value>
+            <value>
+                <fullName>2018-2019</fullName>
+                <default>false</default>
+                <label>2018-2019</label>
+            </value>
+            <value>
+                <fullName>2016-2017</fullName>
+                <default>false</default>
+                <label>2016-2017</label>
+            </value>
+            <value>
+                <fullName>2014-2015</fullName>
+                <default>false</default>
+                <label>2014-2015</label>
+            </value>
+            <value>
+                <fullName>2010-2013</fullName>
+                <default>false</default>
+                <label>2010-2013</label>
+            </value>
+            <value>
+                <fullName>2004-2009</fullName>
+                <default>false</default>
+                <label>2004-2009</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

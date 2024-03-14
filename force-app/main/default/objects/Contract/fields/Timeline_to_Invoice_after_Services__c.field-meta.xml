@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timeline_to_Invoice_after_Services__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>We must invoice the company within the required timeline after completion of Services, otherwise we forfeit the right to payment.</inlineHelpText>
+    <label>Timeline to Invoice after Services</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>90</fullName>
+                <default>false</default>
+                <label>90</label>
+            </value>
+            <value>
+                <fullName>120</fullName>
+                <default>false</default>
+                <label>120</label>
+            </value>
+            <value>
+                <fullName>150</fullName>
+                <default>false</default>
+                <label>150</label>
+            </value>
+            <value>
+                <fullName>180</fullName>
+                <default>false</default>
+                <label>180</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other - see Finance Details - Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prequisites__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>What permissions do you need to have to complete this procedure?</inlineHelpText>
+    <label>Prequisites</label>
+    <length>32768</length>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

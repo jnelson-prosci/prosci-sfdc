@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_SOW</fullName>
+    <availability>online</availability>
+    <description>{!Opportunity.Account}+SOW+{!Account.of_SOW_s_generated__c}+{!Opportunity.Day_1__c} 0051Y000008atd7</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Generate SOW</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/APXTConga4__Conga_Composer
+?serverUrl={!API.Partner_Server_URL_370}
+&amp;id={!Opportunity.Id}
+
+&amp;TemplateId=a2F1Y000001eOs7
+&amp;TemplateGroup=SOW
+
+&amp;SC0=1
+&amp;SC1=SalesforceFile
+&amp;DataTagEnable=1
+&amp;RM=1
+
+
+
+&amp;QueryID=[AccountInfo]a271Y000003EZf1,[Materials]a271Y000003EZfQ,[Tuition]a271Y000003EZfL,[ScopeofServices]a271Y000003EZfV,[ProgramCosts]a271Y000003EZfa,[CompanyAssignments]a271Y000003EZff,[Logistics]a271Y000003EZfk,[PSAEFTDate]a271Y000003EaJl?pv0={!Opportunity.AccountId}
+
+&amp;OFN={!Opportunity.OFN_Name__c}+SOW+{!Opportunity.of_SOW_s_for_Conga_Merge_Field__c}+{!Opportunity.Day_1__c}
+
+&amp;_DS7=11
+
+&amp;UF0=1
+&amp;MFTS0=SOW_Generated__c
+&amp;MFTSValue0=TRUE 
+
+&amp;DC={!IF($User.Id = &quot;0051Y000008atd7&quot;,&quot;0&quot;,Opportunity.Disable_Conga_Logic__c)}
+
+&amp;DCL=One+of+the+following+fields+has+not+been+set+-+Fee,+location,+Day+1,+or+PSA+Effective+Date.+Make+sure+products+are+added.</url>
+</WebLink>

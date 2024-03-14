@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Apply_Rate_Card_Discount</fullName>
+    <availability>online</availability>
+    <description>This will apply the opportunity&apos;s rate card discount to resources requests that are not assigned or held.</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Apply Rate Card Discount</masterLabel>
+    <openType>sidebar</openType>
+    <page>pse__ApplyRCDiscountOpportunityRRs</page>
+    <protected>false</protected>
+</WebLink>

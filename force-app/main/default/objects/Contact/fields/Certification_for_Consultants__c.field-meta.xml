@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certification_for_Consultants__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This box will be automatically checked when a person attends a Certification for Consultants program.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This box will be automatically checked when a person attends a Certification for Consultants program.</inlineHelpText>
+    <label>Certification for Consultants</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Identified_Departments_Feedback__c</fullName>
+    <description>Please identify what Departments were represented. Did you note any tension/control issues among Departments? Was there an Alpha person or Dept in the room?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please identify what Departments were represented. Did you note any tension/control issues among Departments? Was there an Alpha person or Dept in the room?</inlineHelpText>
+    <label>Identified Departments Feedback</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>15</visibleLines>
+</CustomField>

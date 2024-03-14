@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_Events_for_Orders</fullName>
+    <columns>NAME</columns>
+    <columns>Start_Date__c</columns>
+    <columns>End_Date__c</columns>
+    <columns>Title__c</columns>
+    <columns>Location__c</columns>
+    <columns>Assigned_Instructor__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>NEXT_N_DAYS:21</value>
+    </filters>
+    <filters>
+        <field>Instructor_Type__c</field>
+        <operation>equals</operation>
+        <value>Prosci Canada</value>
+    </filters>
+    <filters>
+        <field>Type_of_Event__c</field>
+        <operation>notEqual</operation>
+        <value>Internal,Public</value>
+    </filters>
+    <label>Training Events for Orders</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

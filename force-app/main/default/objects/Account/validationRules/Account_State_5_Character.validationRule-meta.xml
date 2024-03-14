@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_State_5_Character</fullName>
+    <active>false</active>
+    <errorConditionFormula>LEN(BillingState)&gt;5</errorConditionFormula>
+    <errorMessage>Company State/Province cannot be more than 5 characters</errorMessage>
+</ValidationRule>

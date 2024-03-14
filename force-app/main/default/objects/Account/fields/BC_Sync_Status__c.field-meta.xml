@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_Sync_Status__c</fullName>
+    <description>Integration Status of record with Business Central</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Integration Status of record with Business Central</inlineHelpText>
+    <label>BC Sync Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending Sync</fullName>
+                <default>false</default>
+                <label>Pending Sync</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

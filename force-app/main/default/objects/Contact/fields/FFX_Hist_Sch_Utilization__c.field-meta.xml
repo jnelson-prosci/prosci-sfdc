@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FFX_Hist_Sch_Utilization__c</fullName>
+    <externalId>false</externalId>
+    <formula>( pse__Hist_Sch_Utilization_Billable_Hours__c + pse__Hist_Sch_Utilization_Credited_Hours__c ) / ( pse__Historical_Utilization_Calendar_Hours__c - pse__Hist_Sch_Utilization_Excluded_Hours__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Hist Sch Utilization</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

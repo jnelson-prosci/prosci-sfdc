@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Terms_of_Agreement_or_PO_prevail__c</fullName>
+    <externalId>false</externalId>
+    <label>Terms of Agreement or PO prevail</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agreement</fullName>
+                <default>false</default>
+                <label>Agreement</label>
+            </value>
+            <value>
+                <fullName>Purchase_Order</fullName>
+                <default>false</default>
+                <label>Purchase Order</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_Event_Time_Zone__c</fullName>
+    <description>Time zone of the training event</description>
+    <externalId>false</externalId>
+    <label>Training Event Time Zone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Australian Central Daylight Time</fullName>
+                <default>false</default>
+                <label>Australian Central Daylight Time</label>
+            </value>
+            <value>
+                <fullName>Australian Central Standard Time</fullName>
+                <default>false</default>
+                <label>Australian Central Standard Time</label>
+            </value>
+            <value>
+                <fullName>Australian Eastern Daylight Time</fullName>
+                <default>false</default>
+                <label>Australian Eastern Daylight Time</label>
+            </value>
+            <value>
+                <fullName>Australian Eastern Standard Time</fullName>
+                <default>false</default>
+                <label>Australian Eastern Standard Time</label>
+            </value>
+            <value>
+                <fullName>Australian Western Standard Time</fullName>
+                <default>false</default>
+                <label>Australian Western Standard Time</label>
+            </value>
+            <value>
+                <fullName>Avaneè de l&apos;est</fullName>
+                <default>false</default>
+                <label>Avaneè de l&apos;est</label>
+            </value>
+            <value>
+                <fullName>Christmas Island Time</fullName>
+                <default>false</default>
+                <label>Christmas Island Time</label>
+            </value>
+            <value>
+                <fullName>New Zealand Daylight Time</fullName>
+                <default>false</default>
+                <label>New Zealand Daylight Time</label>
+            </value>
+            <value>
+                <fullName>New Zealand Standard Time</fullName>
+                <default>false</default>
+                <label>New Zealand Standard Time</label>
+            </value>
+            <value>
+                <fullName>Norfolk Island Standard Time</fullName>
+                <default>false</default>
+                <label>Norfolk Island Standard Time</label>
+            </value>
+            <value>
+                <fullName>Normale de l&apos;Est</fullName>
+                <default>false</default>
+                <label>Normale de l&apos;Est</label>
+            </value>
+            <value>
+                <fullName>North America Atlantic Daylight Time</fullName>
+                <default>false</default>
+                <label>North America Atlantic Daylight Time</label>
+            </value>
+            <value>
+                <fullName>North America Atlantic Standard Time</fullName>
+                <default>false</default>
+                <label>North America Atlantic Standard Time</label>
+            </value>
+            <value>
+                <fullName>North America Central Daylight Time</fullName>
+                <default>false</default>
+                <label>North America Central Daylight Time</label>
+            </value>
+            <value>
+                <fullName>North America Central Standard Time</fullName>
+                <default>false</default>
+                <label>North America Central Standard Time</label>
+            </value>
+            <value>
+                <fullName>North America Eastern Daylight Time</fullName>
+                <default>false</default>
+                <label>North America Eastern Daylight Time</label>
+            </value>
+            <value>
+                <fullName>North America Eastern Standard Time</fullName>
+                <default>false</default>
+                <label>North America Eastern Standard Time</label>
+            </value>
+            <value>
+                <fullName>North America Mountain Daylight Time</fullName>
+                <default>false</default>
+                <label>North America Mountain Daylight Time</label>
+            </value>
+            <value>
+                <fullName>North America Mountain Standard Time</fullName>
+                <default>false</default>
+                <label>North America Mountain Standard Time</label>
+            </value>
+            <value>
+                <fullName>North America Newfoundland Daylight Time</fullName>
+                <default>false</default>
+                <label>North America Newfoundland Daylight Time</label>
+            </value>
+            <value>
+                <fullName>North America Newfoundland Standard Time</fullName>
+                <default>false</default>
+                <label>North America Newfoundland Standard Time</label>
+            </value>
+            <value>
+                <fullName>North America Pacific Daylight Time</fullName>
+                <default>false</default>
+                <label>North America Pacific Daylight Time</label>
+            </value>
+            <value>
+                <fullName>North America Pacific Standard Time</fullName>
+                <default>false</default>
+                <label>North America Pacific Standard Time</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Pre_Billed_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is a replacement for the old Pre-Billed Amount field (PreBilledAmount__c) which did not allow non-integer decimals.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is a replacement for the old Pre-Billed Amount field (PreBilledAmount__c) which did not allow non-integer decimals.</inlineHelpText>
+    <label>Pre-Billed Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

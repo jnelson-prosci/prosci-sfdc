@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Type__c</fullName>
+    <description>Select this with the system to help root out what types of cases we are getting. This is an unrestricted picklist so you can add something new if you don&apos;t see what you are looking for.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What type of requests are we receiving? Select from the drop down or add your own item, if what you need is not in there.</inlineHelpText>
+    <label>Request Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Access Request</fullName>
+                <default>false</default>
+                <label>Access Request</label>
+            </value>
+            <value>
+                <fullName>Configuration Change</fullName>
+                <default>false</default>
+                <label>Configuration Change</label>
+            </value>
+            <value>
+                <fullName>Contract renewal</fullName>
+                <default>false</default>
+                <label>Contract renewal</label>
+            </value>
+            <value>
+                <fullName>DNS</fullName>
+                <default>false</default>
+                <label>DNS</label>
+            </value>
+            <value>
+                <fullName>ECommerce</fullName>
+                <default>false</default>
+                <label>ECommerce</label>
+            </value>
+            <value>
+                <fullName>Firewall</fullName>
+                <default>false</default>
+                <label>Firewall</label>
+            </value>
+            <value>
+                <fullName>Laptop Hardware</fullName>
+                <default>false</default>
+                <label>Laptop Hardware</label>
+            </value>
+            <value>
+                <fullName>Logging</fullName>
+                <default>false</default>
+                <label>Logging</label>
+            </value>
+            <value>
+                <fullName>Network Hardware</fullName>
+                <default>false</default>
+                <label>Network Hardware</label>
+            </value>
+            <value>
+                <fullName>Network Hosting</fullName>
+                <default>false</default>
+                <label>Network Hosting</label>
+            </value>
+            <value>
+                <fullName>Offboarding</fullName>
+                <default>false</default>
+                <label>Offboarding</label>
+            </value>
+            <value>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+                <label>Onboarding</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Process</fullName>
+                <default>false</default>
+                <label>Process</label>
+            </value>
+            <value>
+                <fullName>Receiving Error</fullName>
+                <default>false</default>
+                <label>Receiving Error</label>
+            </value>
+            <value>
+                <fullName>Report Request</fullName>
+                <default>false</default>
+                <label>Report Request</label>
+            </value>
+            <value>
+                <fullName>Reset Password</fullName>
+                <default>false</default>
+                <label>Reset Password</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Transition</fullName>
+                <default>false</default>
+                <label>Transition</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

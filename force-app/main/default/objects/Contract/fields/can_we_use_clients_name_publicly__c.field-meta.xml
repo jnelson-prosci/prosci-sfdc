@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>can_we_use_clients_name_publicly__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If the selection is ‘Cannot use Client’s name publicly’, please contact Legal if we wish to request permission to use name publicly</inlineHelpText>
+    <label>Can we use Client&apos;s name publicly?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Able to use client’s name publicly</fullName>
+                <default>false</default>
+                <label>Able to use client’s name publicly</label>
+            </value>
+            <value>
+                <fullName>Cannot use client’s name publicly</fullName>
+                <default>false</default>
+                <label>Cannot use client’s name publicly</label>
+            </value>
+            <value>
+                <fullName>No Restriction</fullName>
+                <default>false</default>
+                <label>No Restriction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

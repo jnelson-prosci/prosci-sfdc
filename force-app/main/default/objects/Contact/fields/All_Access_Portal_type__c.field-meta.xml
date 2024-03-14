@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Access_Portal_type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Direct - purchased invididually not part of the Company&apos;s license agreement
+Tied to License - client purchased portal access as part of their license agreement</inlineHelpText>
+    <label>All Access Portal type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct</fullName>
+                <default>false</default>
+                <label>Direct</label>
+            </value>
+            <value>
+                <fullName>Tied to License</fullName>
+                <default>false</default>
+                <label>Tied to License</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

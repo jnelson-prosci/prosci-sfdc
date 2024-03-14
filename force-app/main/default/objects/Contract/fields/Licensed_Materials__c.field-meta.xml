@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Licensed_Materials__c</fullName>
+    <externalId>false</externalId>
+    <label>Licensed Materials</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DPR</fullName>
+                <default>false</default>
+                <label>DPR</label>
+            </value>
+            <value>
+                <fullName>ADKAR book</fullName>
+                <default>false</default>
+                <label>ADKAR book</label>
+            </value>
+            <value>
+                <fullName>Change Mgt: people side of change book</fullName>
+                <default>false</default>
+                <label>Change Mgt: people side of change book</label>
+            </value>
+            <value>
+                <fullName>Employees Survival Guide to Change book</fullName>
+                <default>false</default>
+                <label>Employees Survival Guide to Change book</label>
+            </value>
+            <value>
+                <fullName>CM Cert Pgm, a pictorial book</fullName>
+                <default>false</default>
+                <label>CM Cert Pgm, a pictorial book</label>
+            </value>
+            <value>
+                <fullName>Best Practices in CM report</fullName>
+                <default>false</default>
+                <label>Best Practices in CM report</label>
+            </value>
+            <value>
+                <fullName>Change Management Toolkit</fullName>
+                <default>false</default>
+                <label>Change Management Toolkit</label>
+            </value>
+            <value>
+                <fullName>CM Guide for Mgrs &amp; Supervisors Toolkit</fullName>
+                <default>false</default>
+                <label>CM Guide for Mgrs &amp; Supervisors Toolkit</label>
+            </value>
+            <value>
+                <fullName>CM Practitioner Course</fullName>
+                <default>false</default>
+                <label>CM Practitioner Course</label>
+            </value>
+            <value>
+                <fullName>CM Coaching Course</fullName>
+                <default>false</default>
+                <label>CM Coaching Course</label>
+            </value>
+            <value>
+                <fullName>CM Sponsor Course</fullName>
+                <default>false</default>
+                <label>CM Sponsor Course</label>
+            </value>
+            <value>
+                <fullName>CM Orientation Employees Course</fullName>
+                <default>false</default>
+                <label>CM Orientation Employees Course</label>
+            </value>
+            <value>
+                <fullName>DPR: CM Workshop for Project Managers</fullName>
+                <default>false</default>
+                <label>DPR: CM Workshop for Project Managers</label>
+            </value>
+            <value>
+                <fullName>Change Management Pilot Professional</fullName>
+                <default>false</default>
+                <label>Change Management Pilot Professional</label>
+            </value>
+            <value>
+                <fullName>Practitioner eToolkit</fullName>
+                <default>false</default>
+                <label>Practitioner eToolkit</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Change Management</fullName>
+                <default>false</default>
+                <label>Fundamentals of Change Management</label>
+            </value>
+            <value>
+                <fullName>Facilitator Guides for all role based programs</fullName>
+                <default>false</default>
+                <label>Facilitator Guides for all role based programs</label>
+            </value>
+            <value>
+                <fullName>ADKAR audiobook</fullName>
+                <default>false</default>
+                <label>ADKAR audiobook</label>
+            </value>
+            <value>
+                <fullName>Change Portfolio Toolkit</fullName>
+                <default>false</default>
+                <label>Change Portfolio Toolkit</label>
+            </value>
+            <value>
+                <fullName>ADKAR eLearning</fullName>
+                <default>false</default>
+                <label>ADKAR eLearning</label>
+            </value>
+            <value>
+                <fullName>Introduction_to_Leading_Change_eLeanring</fullName>
+                <default>false</default>
+                <label>Introduction to Leading Change eLearning</label>
+            </value>
+            <value>
+                <fullName>Custom</fullName>
+                <default>false</default>
+                <label>Custom</label>
+            </value>
+            <value>
+                <fullName>Thriving Through Change eLearning</fullName>
+                <default>false</default>
+                <label>Thriving Through Change eLearning</label>
+            </value>
+            <value>
+                <fullName>CM Research Library</fullName>
+                <default>false</default>
+                <label>CM Research Library</label>
+            </value>
+            <value>
+                <fullName>Prosci Introduction to Change Management eLearning module</fullName>
+                <default>false</default>
+                <label>Prosci Introduction to Change Management eLearning module</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

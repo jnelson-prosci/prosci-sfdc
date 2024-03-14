@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Before_Reviewed_Can_Not_be_Edited</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				NOT(ISNULL(PRIORVALUE(Time_Before_Reviewed__c))),
+				ISCHANGED(Time_Before_Reviewed__c))</errorConditionFormula>
+    <errorMessage>Time Before Review Can Not Be Changed Once Set</errorMessage>
+</ValidationRule>

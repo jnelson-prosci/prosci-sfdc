@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Instructor_Name_Feedback__c</fullName>
+    <externalId>false</externalId>
+    <formula>Training_Event__r.Assigned_Instructor__r.FirstName + &quot; &quot; +  Training_Event__r.Assigned_Instructor__r.LastName</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Instructor Name - Feedback</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

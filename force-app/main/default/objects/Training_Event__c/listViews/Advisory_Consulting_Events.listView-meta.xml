@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advisory_Consulting_Events</fullName>
+    <columns>NAME</columns>
+    <columns>Account_Manager__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Name_of_Resource_1__c</columns>
+    <columns>End_User_Company__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Title__c</field>
+        <operation>equals</operation>
+        <value>Consulting</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>1/1/2020</value>
+    </filters>
+    <label>Advisory Consulting Events</label>
+</ListView>

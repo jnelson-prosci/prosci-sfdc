@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Total_Costs__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>pse__Internal_Costs__c + pse__External_Costs__c + pse__Expense_Costs__c + pse__Other_Costs__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Costs</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

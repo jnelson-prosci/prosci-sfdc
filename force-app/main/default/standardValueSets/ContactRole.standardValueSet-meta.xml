@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Accounting Contact</fullName>
+        <default>false</default>
+        <label>Accounting Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business Contact</fullName>
+        <default>false</default>
+        <label>Business Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Executive Decision Maker</fullName>
+        <default>false</default>
+        <label>Executive Decision Maker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Legal Contact</fullName>
+        <default>false</default>
+        <label>Legal Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Logistics Contact</fullName>
+        <default>false</default>
+        <label>Logistics Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Procurement Contact</fullName>
+        <default>false</default>
+        <label>Procurement Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referred by</fullName>
+        <default>false</default>
+        <label>Referred by</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Order Contact</fullName>
+        <default>false</default>
+        <label>Order Contact</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mike_s_List_for_Production</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND (4 OR 5 OR 6) AND 7 AND 8</booleanFilter>
+    <columns>Start_Date__c</columns>
+    <columns>NAME</columns>
+    <columns>Projected_Attendance__c</columns>
+    <columns>No_of_Trainees__c</columns>
+    <columns>Order_Reference_Number__c</columns>
+    <columns>Title__c</columns>
+    <columns>Type_of_Event__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Assigned_Instructor__c</columns>
+    <columns>Assigned_Training_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Training_Event_Owner_Division__c</field>
+        <operation>equals</operation>
+        <value>USA</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled,Converted to VILT</value>
+    </filters>
+    <filters>
+        <field>Title__c</field>
+        <operation>equals</operation>
+        <value>Certification,TTT - Level 1,TTT - Level 2,ECM Boot Camp,Sponsor,Manager</value>
+    </filters>
+    <filters>
+        <field>Title__c</field>
+        <operation>equals</operation>
+        <value>Employee,Delivering Project Results Workshop,Fundamentals of Change Workshop</value>
+    </filters>
+    <filters>
+        <field>Title__c</field>
+        <operation>equals</operation>
+        <value>Strategic Alignment Workshop,Integrating Agile,Methodology Application Program</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>TEST,Consulting</value>
+    </filters>
+    <filters>
+        <field>Instructor_Type__c</field>
+        <operation>equals</operation>
+        <value>Prosci,Prosci Canada,Prosci Australia</value>
+    </filters>
+    <label>Mike&apos;s List for Production (VILT)</label>
+</ListView>

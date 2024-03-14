@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <name>Agreement_Type</name>
+        <label>Agreement Type</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Licenses</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.APXT_Redlining__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>License Agreement</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Stage_on_License_Opp</targetReference>
+            </connector>
+            <label>Licenses</label>
+        </rules>
+        <rules>
+            <name>All_but_PSA_and_NDA</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.APXT_Redlining__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Statement of Work</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.APXT_Redlining__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Limited Services Agreement</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.APXT_Redlining__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Click Through Agreement</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.APXT_Redlining__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Audit</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.APXT_Redlining__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Advisory</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.APXT_Redlining__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Speaking Engagement</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.APXT_Redlining__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Client Paper</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_on_All_But_PSA_and_NDA_Opp</targetReference>
+            </connector>
+            <label>All but PSA and NDA</label>
+        </rules>
+        <rules>
+            <name>PSA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.APXT_Redlining__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Professional Services Agreement</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_PSA_Date_on_Account</targetReference>
+            </connector>
+            <label>PSA</label>
+        </rules>
+        <rules>
+            <name>NDA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.APXT_Redlining__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Non-Disclosure Agreement</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Expiration_Dates_NDA</targetReference>
+            </connector>
+            <label>NDA</label>
+        </rules>
+    </decisions>
+    <description>Updating to remove email alert and close date.  Leaving those in workflow for now until we can rebuild later.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Today</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <formulas>
+        <name>Todayplus3years</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()+1095</expression>
+    </formulas>
+    <interviewLabel>Contract Agreement - Update Opportunity to Confirmed {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Contract Agreement - Update Opportunity to Confirmed</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Effective_Date_on_Contract_Agreement</name>
+        <label>Update Effective Date on Contract Agreement</label>
+        <locationX>578</locationX>
+        <locationY>323</locationY>
+        <connector>
+            <targetReference>Agreement_Type</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>APXT_Redlining__Effective_Date__c</field>
+            <value>
+                <elementReference>Today</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Expiration_Dates_NDA</name>
+        <label>Update Expiration Dates NDA</label>
+        <locationX>842</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>APXT_Redlining__Expiration_Date__c</field>
+            <value>
+                <elementReference>Todayplus3years</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_on_All_But_PSA_and_NDA_Opp</name>
+        <label>Update on All But PSA and NDA Opp</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>StageName</field>
+            <value>
+                <stringValue>Program Confirmed</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.APXT_Redlining__Opportunity__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_PSA_Date_on_Account</name>
+        <label>Update PSA Date on Account</label>
+        <locationX>578</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>PSA_Effective_Date__c</field>
+            <value>
+                <elementReference>$Record.APXT_Redlining__Effective_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.APXT_Redlining__Account__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Stage_on_License_Opp</name>
+        <label>Update Stage on License Opp</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>StageName</field>
+            <value>
+                <stringValue>License Confirmed</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.APXT_Redlining__Opportunity__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Effective_Date_on_Contract_Agreement</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>APXT_Redlining__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <object>APXT_Redlining__Contract_Agreement__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

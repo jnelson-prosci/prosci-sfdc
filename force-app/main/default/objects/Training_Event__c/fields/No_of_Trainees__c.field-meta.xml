@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_of_Trainees__c</fullName>
+    <externalId>false</externalId>
+    <label>No of Trainees</label>
+    <summaryFilterItems>
+        <field>Associated_Training_Contacts__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Attended, Certified, Registered, Scheduled to Attend, Registered - wanting to move</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Associated_Training_Contacts__c.Training_Event__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_Parent_Sync</fullName>
+    <active>true</active>
+    <description>Verify that the Sell To Customer has been synced to Business Central, as well as included in this Opportunity, before syncing.</description>
+    <errorConditionFormula>OR(AND(
+ISPICKVAL(BC_Sync_Status__c, &quot;Pending Sync&quot;),
+RecordTypeId = &quot;012i0000001N4wi&quot;,
+ISBLANK( Sell_To__c )),
+
+AND( 
+ISPICKVAL(BC_Sync_Status__c, &quot;Pending Sync&quot;),
+RecordTypeId = &quot;012i0000001N4wi&quot;,
+ISBLANK(Sell_To__r.BC_Synced_Instances__c)
+)
+)</errorConditionFormula>
+    <errorMessage>Verify that the Sell To Customer has been synced to Business Central, as well as included in this Opportunity, before syncing.</errorMessage>
+</ValidationRule>

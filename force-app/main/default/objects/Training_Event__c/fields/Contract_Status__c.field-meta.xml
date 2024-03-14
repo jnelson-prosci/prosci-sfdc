@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Contract Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sent BH Contract</fullName>
+                <default>false</default>
+                <label>Sent BH contract</label>
+            </value>
+            <value>
+                <fullName>Signed/Accepted</fullName>
+                <default>false</default>
+                <label>Signed/Accepted</label>
+            </value>
+            <value>
+                <fullName>Waiting for client PO/Contract</fullName>
+                <default>false</default>
+                <label>Waiting for client PO/Contract</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

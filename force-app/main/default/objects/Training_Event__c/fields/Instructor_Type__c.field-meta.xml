@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Instructor_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Instructor Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prosci</fullName>
+                <default>false</default>
+                <label>Prosci</label>
+            </value>
+            <value>
+                <fullName>Prosci Australia</fullName>
+                <default>false</default>
+                <label>Prosci Australia</label>
+            </value>
+            <value>
+                <fullName>Prosci Brasil</fullName>
+                <default>false</default>
+                <label>Prosci Brasil</label>
+            </value>
+            <value>
+                <fullName>Prosci Canada</fullName>
+                <default>false</default>
+                <label>Prosci Canada</label>
+            </value>
+            <value>
+                <fullName>Primary Affiliate</fullName>
+                <default>false</default>
+                <label>Primary Affiliate</label>
+            </value>
+            <value>
+                <fullName>TTT</fullName>
+                <default>false</default>
+                <label>TTT</label>
+            </value>
+            <value>
+                <fullName>Internal PCAI</fullName>
+                <default>false</default>
+                <label>Internal PCAI</label>
+            </value>
+            <value>
+                <fullName>Prosci Iberia</fullName>
+                <default>false</default>
+                <label>Prosci Iberia</label>
+            </value>
+            <value>
+                <fullName>Prosci Mexico</fullName>
+                <default>false</default>
+                <label>Prosci Mexico</label>
+            </value>
+            <value>
+                <fullName>Prosci Chile</fullName>
+                <default>false</default>
+                <label>Prosci Chile</label>
+            </value>
+            <value>
+                <fullName>Coach the trainer (Prosci Canada)</fullName>
+                <default>false</default>
+                <label>Coach the trainer (Prosci Canada)</label>
+            </value>
+            <value>
+                <fullName>Exception</fullName>
+                <default>false</default>
+                <label>Exception</label>
+            </value>
+            <value>
+                <fullName>Authorized Training Provider</fullName>
+                <default>false</default>
+                <label>Authorized Training Provider</label>
+            </value>
+            <value>
+                <fullName>PCAI Not Current</fullName>
+                <default>false</default>
+                <label>PCAI Not Current</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

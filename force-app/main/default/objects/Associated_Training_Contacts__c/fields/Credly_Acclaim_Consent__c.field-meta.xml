@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credly_Acclaim_Consent__c</fullName>
+    <description>If this box is checked, we have been given consent to share this information with Credly to issue a digital badge.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this box is checked, we have been given consent to share this information with Credly to issue a digital badge.</inlineHelpText>
+    <label>Credly Consent</label>
+    <length>5</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <name>Update_Seats_Available</name>
+        <label>Update Seats Available</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Seats_Available__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SeatsAvailable</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Updates the number of seats available based on purchased seats and seats already assigned</description>
+    <formulas>
+        <name>SeatsAvailable</name>
+        <dataType>Number</dataType>
+        <expression>{!$Record.Seats_Purchased__c} + {!$Record.Seats_Comped__c} - {!$Record.Seats_Assigned__c}</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Asset Seats Available Calculation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Asset Seats Available Calculation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Seats_Available</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Seats_Purchased__c</field>
+            <operator>GreaterThan</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </filters>
+        <object>Asset</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

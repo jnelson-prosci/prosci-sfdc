@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_of_last_enterprise_opportunity__c</fullName>
+    <description>This field was created for an industry reallignment project when we changed the POD structure.  It is tied to roll-up helper to deliver the most recent enterprise opportunity created date.  MB 3/10/22</description>
+    <externalId>false</externalId>
+    <label>Date of last enterprise opportunity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

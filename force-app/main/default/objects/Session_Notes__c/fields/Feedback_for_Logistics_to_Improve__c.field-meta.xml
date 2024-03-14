@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Feedback_for_Logistics_to_Improve__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>How could your experience with the LC better? Are there opportunities for improvement?</inlineHelpText>
+    <label>Feedback for Logistics to Improve</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

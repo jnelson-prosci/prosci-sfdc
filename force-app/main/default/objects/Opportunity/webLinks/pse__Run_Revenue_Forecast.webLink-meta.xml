@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Run_Revenue_Forecast</fullName>
+    <availability>online</availability>
+    <description>Run a revenue forecast for this opportunity.</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Run Revenue Forecast</masterLabel>
+    <openType>sidebar</openType>
+    <page>pse__RF_OpportunityActionRun</page>
+    <protected>false</protected>
+</WebLink>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unspecified_Account_Block</fullName>
+    <active>true</active>
+    <errorConditionFormula>(( X18_Digit_CASESAFEID__c = &quot;001i000000PKt8zAAD&quot;) &amp;&amp;(ISCHANGED(Name)))</errorConditionFormula>
+    <errorMessage>Cannot update the Unspecified account name. See your Admin for details.</errorMessage>
+</ValidationRule>

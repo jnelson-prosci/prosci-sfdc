@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_event_program_title__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the field that will put the item on the training event when created.</inlineHelpText>
+    <label>Training Event Program Title</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Certification</fullName>
+                <default>false</default>
+                <label>Certification</label>
+            </value>
+            <value>
+                <fullName>Delivering Project Results Workshop</fullName>
+                <default>false</default>
+                <label>Delivering Project Results Workshop</label>
+            </value>
+            <value>
+                <fullName>ECM Boot Camp</fullName>
+                <default>false</default>
+                <label>ECM Boot Camp</label>
+            </value>
+            <value>
+                <fullName>Employee</fullName>
+                <default>false</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Change Workshop</fullName>
+                <default>false</default>
+                <label>Fundamentals of Change Workshop</label>
+            </value>
+            <value>
+                <fullName>Integrating Agile</fullName>
+                <default>false</default>
+                <label>Integrating Agile</label>
+            </value>
+            <value>
+                <fullName>Leading your team through change</fullName>
+                <default>false</default>
+                <label>Leading your team through change</label>
+            </value>
+            <value>
+                <fullName>Manager</fullName>
+                <default>false</default>
+                <label>Manager</label>
+            </value>
+            <value>
+                <fullName>Practitioner</fullName>
+                <default>false</default>
+                <label>Practitioner</label>
+            </value>
+            <value>
+                <fullName>Sponsor</fullName>
+                <default>false</default>
+                <label>Sponsor</label>
+            </value>
+            <value>
+                <fullName>Taking Charge of Change</fullName>
+                <default>false</default>
+                <label>Taking Charge of Change</label>
+            </value>
+            <value>
+                <fullName>TTT - Level 1</fullName>
+                <default>false</default>
+                <label>TTT - Level 1</label>
+            </value>
+            <value>
+                <fullName>TTT - Level 2</fullName>
+                <default>false</default>
+                <label>TTT - Level 2</label>
+            </value>
+            <value>
+                <fullName>Methodology Application Program</fullName>
+                <default>false</default>
+                <label>Methodology Application Program</label>
+            </value>
+            <value>
+                <fullName>Improve Project Health</fullName>
+                <default>false</default>
+                <label>Improve Project Health</label>
+            </value>
+            <value>
+                <fullName>ADKAR Model Mastery Level 1: Prevent Change Resistance</fullName>
+                <default>false</default>
+                <label>ADKAR Model Mastery Level 1: Prevent Change Resistance</label>
+            </value>
+            <value>
+                <fullName>ADKAR Model Mastery Level 2: Resolve Change Barriers</fullName>
+                <default>false</default>
+                <label>ADKAR Model Mastery Level 2: Resolve Change Barriers</label>
+            </value>
+            <value>
+                <fullName>Conference</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Conference</label>
+            </value>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Internal</label>
+            </value>
+            <value>
+                <fullName>Onsite</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Onsite</label>
+            </value>
+            <value>
+                <fullName>Public</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public</label>
+            </value>
+            <value>
+                <fullName>Public Partnership</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Partnership</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

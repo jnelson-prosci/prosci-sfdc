@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advisory_Needs__c</fullName>
+    <externalId>false</externalId>
+    <label>Advisory Needs</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>I need to accelerate change management capability</fullName>
+                <default>false</default>
+                <label>I need to accelerate change management capability</label>
+            </value>
+            <value>
+                <fullName>I need support delivering on a must-win project</fullName>
+                <default>false</default>
+                <label>I need support delivering on a must-win project</label>
+            </value>
+            <value>
+                <fullName>I need to integrate change management with other disciplines</fullName>
+                <default>false</default>
+                <label>I need to integrate change management with other disciplines</label>
+            </value>
+            <value>
+                <fullName>I need to better manage my Change Portfolio</fullName>
+                <default>false</default>
+                <label>I need to better manage my Change Portfolio</label>
+            </value>
+            <value>
+                <fullName>I need to build an enterprise change Management Strategy</fullName>
+                <default>false</default>
+                <label>I need to build an enterprise change Management Strategy</label>
+            </value>
+            <value>
+                <fullName>I need to measure the impact of Change</fullName>
+                <default>false</default>
+                <label>I need to measure the impact of Change</label>
+            </value>
+            <value>
+                <fullName>I need guidance from Prosci</fullName>
+                <default>false</default>
+                <label>I need guidance from Prosci</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

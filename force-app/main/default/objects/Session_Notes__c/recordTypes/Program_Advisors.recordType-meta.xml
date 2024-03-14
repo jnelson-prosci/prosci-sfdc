@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Advisors</fullName>
+    <active>true</active>
+    <label>Program Advisors</label>
+    <picklistValues>
+        <picklist>Food_and_Beverage_Rating__c</picklist>
+        <values>
+            <fullName>1 - Poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Needs Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Average</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Excellent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Guest_Room_Rating__c</picklist>
+        <values>
+            <fullName>1 - Poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Needs Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Average</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Excellent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Karaoke_Rating__c</picklist>
+        <values>
+            <fullName>1 - Poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Needs Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Average</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Excellent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Logistices_Effectiveness_Updating_SF__c</picklist>
+        <values>
+            <fullName>1_Poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2_Needs_Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3_Average</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4_Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5_Excellent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Logistics_Response_Time_Effectiveness__c</picklist>
+        <values>
+            <fullName>1_Poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2_Needs_Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3_Average</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4_Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5_Excellent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Logistics_clearly_answered_my_questions__c</picklist>
+        <values>
+            <fullName>1_Poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2_Needs_Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3_Average</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4_Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5_Excellent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Meeting_Room_Rating__c</picklist>
+        <values>
+            <fullName>1 - Poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Needs Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Average</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Excellent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Note_Type__c</picklist>
+        <values>
+            <fullName>Advanced tracks-Deployment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced tracks-Instructor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced tracks-Practitioner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audit coaching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Course Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General TTT support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post-session sponsor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-TTT success call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-session sponsor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Session Notes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Org_CM_Maturity__c</picklist>
+        <values>
+            <fullName>Advanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-existent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pretty Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some but not great</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Participant_Engagement_Rating__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recommend_TSS_to_another_instructor__c</picklist>
+        <values>
+            <fullName>1 - Unlikely</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 - Likely</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Staff_Rating__c</picklist>
+        <values>
+            <fullName>1 - Poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Needs Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Average</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Excellent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Technology_Rating__c</picklist>
+        <values>
+            <fullName>1 - Poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Needs Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Average</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Excellent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tuesday_Evening_Activity_Rating__c</picklist>
+        <values>
+            <fullName>1 - Poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Needs Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Average</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Excellent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Venue_Rating__c</picklist>
+        <values>
+            <fullName>1 - Poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Needs Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Average</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Excellent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

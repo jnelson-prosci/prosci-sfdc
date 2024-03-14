@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_Tools</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+    <columns>Training_event_program_title__c</columns>
+    <columns>Subscription_Length_days__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Portal_is_assignable__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Portal Tools</label>
+</ListView>

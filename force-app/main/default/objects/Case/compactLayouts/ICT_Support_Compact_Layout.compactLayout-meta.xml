@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ICT_Support_Compact_Layout</fullName>
+    <fields>Subject</fields>
+    <fields>ICT_Asset__c</fields>
+    <fields>Status</fields>
+    <fields>CaseNumber</fields>
+    <label>ICT Support Compact Layout</label>
+</CompactLayout>

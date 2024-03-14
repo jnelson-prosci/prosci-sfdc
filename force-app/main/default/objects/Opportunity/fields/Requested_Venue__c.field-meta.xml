@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requested_Venue__c</fullName>
+    <externalId>false</externalId>
+    <label>Requested Venue</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Airlie</fullName>
+                <default>false</default>
+                <label>Airlie</label>
+            </value>
+            <value>
+                <fullName>Atlanta Evergreen Resort</fullName>
+                <default>false</default>
+                <label>Atlanta Evergreen Resort</label>
+            </value>
+            <value>
+                <fullName>Chaminade</fullName>
+                <default>false</default>
+                <label>Chaminade</label>
+            </value>
+            <value>
+                <fullName>Chateau Elan</fullName>
+                <default>false</default>
+                <label>Chateau Elan</label>
+            </value>
+            <value>
+                <fullName>Cheyenne Mountain</fullName>
+                <default>false</default>
+                <label>Cheyenne Mountain</label>
+            </value>
+            <value>
+                <fullName>Dolce Norwalk</fullName>
+                <default>false</default>
+                <label>Dolce Norwalk</label>
+            </value>
+            <value>
+                <fullName>Doral Arrowwood</fullName>
+                <default>false</default>
+                <label>Doral Arrowwood</label>
+            </value>
+            <value>
+                <fullName>Eaglewood</fullName>
+                <default>false</default>
+                <label>Eaglewood</label>
+            </value>
+            <value>
+                <fullName>Éilan Hotel &amp; Spa</fullName>
+                <default>false</default>
+                <label>Éilan Hotel &amp; Spa</label>
+            </value>
+            <value>
+                <fullName>Garden of the Gods</fullName>
+                <default>false</default>
+                <label>Garden of the Gods</label>
+            </value>
+            <value>
+                <fullName>Grand Geneva</fullName>
+                <default>false</default>
+                <label>Grand Geneva</label>
+            </value>
+            <value>
+                <fullName>Hilton Denver Inverness</fullName>
+                <default>false</default>
+                <label>Hilton Denver Inverness</label>
+            </value>
+            <value>
+                <fullName>Lakeway</fullName>
+                <default>false</default>
+                <label>Lakeway</label>
+            </value>
+            <value>
+                <fullName>Lansdowne</fullName>
+                <default>false</default>
+                <label>Lansdowne</label>
+            </value>
+            <value>
+                <fullName>La Torretta</fullName>
+                <default>false</default>
+                <label>La Torretta</label>
+            </value>
+            <value>
+                <fullName>Mission Inn</fullName>
+                <default>false</default>
+                <label>Mission Inn</label>
+            </value>
+            <value>
+                <fullName>Nationwide</fullName>
+                <default>false</default>
+                <label>Nationwide</label>
+            </value>
+            <value>
+                <fullName>Omni Barton Creek</fullName>
+                <default>false</default>
+                <label>Omni Barton Creek</label>
+            </value>
+            <value>
+                <fullName>Omni Interlocken</fullName>
+                <default>false</default>
+                <label>Omni Interlocken</label>
+            </value>
+            <value>
+                <fullName>Partnership</fullName>
+                <default>false</default>
+                <label>Partnership</label>
+            </value>
+            <value>
+                <fullName>Scottsdale Resort</fullName>
+                <default>false</default>
+                <label>Scottsdale Resort</label>
+            </value>
+            <value>
+                <fullName>Seascape</fullName>
+                <default>false</default>
+                <label>Seascape</label>
+            </value>
+            <value>
+                <fullName>Skamania</fullName>
+                <default>false</default>
+                <label>Skamania</label>
+            </value>
+            <value>
+                <fullName>Tarrytown</fullName>
+                <default>false</default>
+                <label>Tarrytown</label>
+            </value>
+            <value>
+                <fullName>Tarrytown House</fullName>
+                <default>false</default>
+                <label>Tarrytown House</label>
+            </value>
+            <value>
+                <fullName>Temecula Creek</fullName>
+                <default>false</default>
+                <label>Temecula Creek</label>
+            </value>
+            <value>
+                <fullName>The Gaylord Texan</fullName>
+                <default>false</default>
+                <label>The Gaylord Texan</label>
+            </value>
+            <value>
+                <fullName>The Grove</fullName>
+                <default>false</default>
+                <label>The Grove</label>
+            </value>
+            <value>
+                <fullName>Turnberry Resort</fullName>
+                <default>false</default>
+                <label>Turnberry Resort</label>
+            </value>
+            <value>
+                <fullName>Villas</fullName>
+                <default>false</default>
+                <label>Villas</label>
+            </value>
+            <value>
+                <fullName>Woodlands</fullName>
+                <default>false</default>
+                <label>Woodlands</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+                <label>Virtual</label>
+            </value>
+            <value>
+                <fullName>Rockwall</fullName>
+                <default>false</default>
+                <label>Rockwall</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

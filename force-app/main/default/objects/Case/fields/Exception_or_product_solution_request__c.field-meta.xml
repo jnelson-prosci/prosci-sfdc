@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exception_or_product_solution_request__c</fullName>
+    <externalId>false</externalId>
+    <label>Exception or product/solution request</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>One-time exception</fullName>
+                <default>false</default>
+                <label>One-time exception</label>
+            </value>
+            <value>
+                <fullName>Regional exception</fullName>
+                <default>false</default>
+                <label>Regional exception</label>
+            </value>
+            <value>
+                <fullName>Partner exception</fullName>
+                <default>false</default>
+                <label>Partner exception</label>
+            </value>
+            <value>
+                <fullName>Make part of the design/delivery of standard offering</fullName>
+                <default>false</default>
+                <label>Make part of the design/delivery of standard offering</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

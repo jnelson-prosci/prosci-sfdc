@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prosci_Department_systems_or_processes__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Does this project/change involve systems or processes owned by other Prosci departments? If so,
+please list.
+Implications: One business unit cannot put another at risk without both parties knowing it and allowing it to occur.</inlineHelpText>
+    <label>Prosci Department systems or processes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Yes_No</valueSetName>
+    </valueSet>
+</CustomField>

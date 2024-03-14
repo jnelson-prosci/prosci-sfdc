@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Event__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>ONSITE means Enterprise Event. We are currently in process of upgrading the picklist values.</inlineHelpText>
+    <label>Type of Event</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <label>Internal</label>
+            </value>
+            <value>
+                <fullName>Onsite</fullName>
+                <default>false</default>
+                <label>Onsite</label>
+            </value>
+            <value>
+                <fullName>Public</fullName>
+                <default>false</default>
+                <label>Public</label>
+            </value>
+            <value>
+                <fullName>Public Partnership</fullName>
+                <default>false</default>
+                <label>Public Partnership</label>
+            </value>
+            <value>
+                <fullName>Conference</fullName>
+                <default>false</default>
+                <label>Conference</label>
+            </value>
+            <value>
+                <fullName>On Call</fullName>
+                <default>false</default>
+                <label>On Call</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

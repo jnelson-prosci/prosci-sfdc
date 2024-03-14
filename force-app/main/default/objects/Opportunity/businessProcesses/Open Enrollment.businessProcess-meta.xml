@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open Enrollment</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Done - Alternate Solution</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Done - No Response</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Done - Successful</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Done - Terminated</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Identified - in their court</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Need to follow-up</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Need to follow-up see close date</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Process started</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>TM Nurturing</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

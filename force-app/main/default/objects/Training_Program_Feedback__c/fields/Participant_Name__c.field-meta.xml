@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participant_Name__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This field was retired on 8/31/2020 with the launch of GetFeedback.  Please see your Salesforce Admin if you need the contact name for the individual feedback entry.</inlineHelpText>
+    <label>Participant Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

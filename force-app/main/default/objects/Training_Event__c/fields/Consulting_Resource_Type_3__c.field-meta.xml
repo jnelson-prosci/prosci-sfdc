@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consulting_Resource_Type_3__c</fullName>
+    <externalId>false</externalId>
+    <label>Consulting Resource Type 3</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sr. Change Advisor</fullName>
+                <default>false</default>
+                <label>Sr. Change Advisor</label>
+            </value>
+            <value>
+                <fullName>Change Advisor</fullName>
+                <default>false</default>
+                <label>Change Advisor</label>
+            </value>
+            <value>
+                <fullName>Engagement Leader</fullName>
+                <default>false</default>
+                <label>Engagement Leader</label>
+            </value>
+            <value>
+                <fullName>Master Instructor</fullName>
+                <default>false</default>
+                <label>Master Instructor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

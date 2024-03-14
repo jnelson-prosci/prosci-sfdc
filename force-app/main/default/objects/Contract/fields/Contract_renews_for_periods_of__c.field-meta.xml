@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_renews_for_periods_of__c</fullName>
+    <externalId>false</externalId>
+    <label>Contract renews for periods of</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>One year</fullName>
+                <default>false</default>
+                <label>One year</label>
+            </value>
+            <value>
+                <fullName>Two years</fullName>
+                <default>false</default>
+                <label>Two years</label>
+            </value>
+            <value>
+                <fullName>Three years</fullName>
+                <default>false</default>
+                <label>Three years</label>
+            </value>
+            <value>
+                <fullName>Five years</fullName>
+                <default>false</default>
+                <label>Five years</label>
+            </value>
+            <value>
+                <fullName>Other_see_general_contract_details_other</fullName>
+                <default>false</default>
+                <label>Other, see General Contract Details - Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

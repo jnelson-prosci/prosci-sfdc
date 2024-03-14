@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acclaim_Retro_Badge_Consent__c</fullName>
+    <description>Field added to Lead object in attempt to solve for HubSpot mapping consent date to both contact and lead objects.  Reference Link: https://knowledge.hubspot.com/integrations/sync-salesforce-leads-and-contacts-to-hubspot
+
+MB 3/30/22</description>
+    <externalId>false</externalId>
+    <label>Credly Consent Date (Lead)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

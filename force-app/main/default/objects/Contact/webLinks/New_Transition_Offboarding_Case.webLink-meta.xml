@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Transition_Offboarding_Case</fullName>
+    <availability>online</availability>
+    <description>Click this button to follow the screen flow to create a transition or offboarding case.</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>New Transition/Offboarding Case</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/flow/Case_Screen_Flow_to_Create_Transition_and_Offboarding_Case</url>
+</WebLink>

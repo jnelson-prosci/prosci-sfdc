@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Impact_on_current_business_continuity__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Will this project have an impact on current business continuity, disaster recovery processes and
+infrastructure?
+Implication: Changes in business and IT processes and infrastructure often make established business continuity and
+disaster recovery plans out of date. Not applying changes to the enterprise’s recovery plans and infrastructure puts
+the enterprise at risk in the event of an interruption in the normal business process.</inlineHelpText>
+    <label>Impact on current business continuity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Yes_No</valueSetName>
+    </valueSet>
+</CustomField>

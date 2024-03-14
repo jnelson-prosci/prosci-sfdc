@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Approval_or_Review__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Has Legal reviewed the project/change in terms of any regulatory, legal, or contractual requirements
+(not data privacy related)? If yes, please attach proof of review and approval within the last 30 days.
+Noncompliance with regulations and contractual commitments can incur penalties.</inlineHelpText>
+    <label>Legal Approval or Review</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Yes_No</valueSetName>
+    </valueSet>
+</CustomField>

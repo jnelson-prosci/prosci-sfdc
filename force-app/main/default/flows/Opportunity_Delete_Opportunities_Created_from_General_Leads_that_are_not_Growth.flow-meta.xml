@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>Is_it_a_growth_team_Lead</name>
+        <label>Is it a growth team Lead?</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Delete_non_growth_team_opportunties</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other Opportunity from Lead</defaultConnectorLabel>
+        <rules>
+            <name>Growth_Team_Lead</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Comments_from_Website_Lead__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Advisory And Consulting Services</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Comments_from_Website_Lead__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Enterprise access To Prosci&apos;s world-class tools</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Comments_from_Website_Lead__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Global Training Availability (Outside of US, Canada, Australia, and New Zealand)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Comments_from_Website_Lead__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Private Training For Your Organization or Team</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Comments_from_Website_Lead__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Onsite Training</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Comments_from_Website_Lead__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Distributing Prosci materials at organization</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Comments_from_Website_Lead__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Change of company or email</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Comments_from_Website_Lead__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Having Prosci speak at an event</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Comments_from_Website_Lead__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Learning more about change management</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Comments_from_Website_Lead__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Interested in public training outside the U.S.</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Comments_from_Website_Lead__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Advisory and consulting services</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Growth Team Lead</label>
+        </rules>
+    </decisions>
+    <description>This flow will delete the opportunities created from the General leads that are general an not meant for the growth team.</description>
+    <environments>Default</environments>
+    <interviewLabel>Opportunity- Delete Opportunities Created from General Leads that are not Growth Team {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity- Delete Opportunities Created from General Leads that are not Growth Team</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>Delete_non_growth_team_opportunties</name>
+        <label>Delete non growth team opportunties</label>
+        <locationX>308</locationX>
+        <locationY>431</locationY>
+        <inputReference>$Record</inputReference>
+    </recordDeletes>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_it_a_growth_team_Lead</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Lead_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>General</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

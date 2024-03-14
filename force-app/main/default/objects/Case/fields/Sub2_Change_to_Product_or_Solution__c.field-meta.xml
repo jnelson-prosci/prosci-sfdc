@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub2_Change_to_Product_or_Solution__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub2 Change to Product or Solution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-program</fullName>
+                <default>false</default>
+                <label>Pre-program</label>
+            </value>
+            <value>
+                <fullName>In Program</fullName>
+                <default>false</default>
+                <label>In Program</label>
+            </value>
+            <value>
+                <fullName>In Practice</fullName>
+                <default>false</default>
+                <label>In Practice</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

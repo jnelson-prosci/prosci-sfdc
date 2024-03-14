@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_no_longer_then_5_digits_Bill_to</fullName>
+    <active>false</active>
+    <errorConditionFormula>LEN(Bill_to_State__c)&gt;5</errorConditionFormula>
+    <errorDisplayField>Bill_to_State__c</errorDisplayField>
+    <errorMessage>The State/Province cannot be longer than 5 characters</errorMessage>
+</ValidationRule>

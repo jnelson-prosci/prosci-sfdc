@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>People_affected__c</fullName>
+    <externalId>false</externalId>
+    <label>People affected</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Only 1</fullName>
+                <default>false</default>
+                <label>Only 1</label>
+            </value>
+            <value>
+                <fullName>Multiple People/whole department</fullName>
+                <default>false</default>
+                <label>Multiple People/whole department</label>
+            </value>
+            <value>
+                <fullName>Multiple departments</fullName>
+                <default>false</default>
+                <label>Multiple departments</label>
+            </value>
+            <value>
+                <fullName>Multiple Markets</fullName>
+                <default>false</default>
+                <label>Multiple Markets</label>
+            </value>
+            <value>
+                <fullName>The whole company</fullName>
+                <default>false</default>
+                <label>The whole company</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

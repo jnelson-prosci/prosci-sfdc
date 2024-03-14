@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purpose_for_processing_personal_data__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please describe the purpose for processing personal data. Please also include who will have access to
+this data.</inlineHelpText>
+    <label>Purpose for processing personal data</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

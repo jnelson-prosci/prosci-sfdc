@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NMSO_Events</fullName>
+    <columns>NAME</columns>
+    <columns>End_User_Company__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Title__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Contract_type__c</field>
+        <operation>equals</operation>
+        <value>NMSO</value>
+    </filters>
+    <label>NMSO Events</label>
+</ListView>

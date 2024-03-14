@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactive_TTT_Campaign__c</fullName>
+    <description>What discount type was chosen when the TTT Survey was filled out.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the option the contact choose on their survey and an email with the code will be sent to them.</inlineHelpText>
+    <label>Inactive TTT Campaign</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Free Resource Bundle</fullName>
+                <default>false</default>
+                <label>Free Resource Bundle</label>
+            </value>
+            <value>
+                <fullName>MAP Discount</fullName>
+                <default>false</default>
+                <label>MAP Discount</label>
+            </value>
+            <value>
+                <fullName>Certification Discount</fullName>
+                <default>false</default>
+                <label>Certification Discount</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

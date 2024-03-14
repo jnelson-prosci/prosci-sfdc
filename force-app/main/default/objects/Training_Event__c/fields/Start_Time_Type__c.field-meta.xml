@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Time_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Start Time Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Regular</fullName>
+                <default>false</default>
+                <label>Regular</label>
+            </value>
+            <value>
+                <fullName>Early</fullName>
+                <default>false</default>
+                <label>Early</label>
+            </value>
+            <value>
+                <fullName>Late</fullName>
+                <default>false</default>
+                <label>Late</label>
+            </value>
+            <value>
+                <fullName>Weekend</fullName>
+                <default>false</default>
+                <label>Weekend</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

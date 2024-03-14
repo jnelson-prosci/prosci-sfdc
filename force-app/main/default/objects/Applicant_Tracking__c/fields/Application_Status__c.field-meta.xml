@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Application Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Resume under review</fullName>
+                <default>false</default>
+                <label>Resume under review</label>
+            </value>
+            <value>
+                <fullName>Disqualified</fullName>
+                <default>false</default>
+                <label>Disqualified</label>
+            </value>
+            <value>
+                <fullName>Resume approved</fullName>
+                <default>false</default>
+                <label>Resume approved</label>
+            </value>
+            <value>
+                <fullName>Phone Screen Pending</fullName>
+                <default>false</default>
+                <label>Phone Screen Pending</label>
+            </value>
+            <value>
+                <fullName>Phone Screen complete</fullName>
+                <default>false</default>
+                <label>Phone Screen complete</label>
+            </value>
+            <value>
+                <fullName>1st interview scheduled</fullName>
+                <default>false</default>
+                <label>1st interview scheduled</label>
+            </value>
+            <value>
+                <fullName>1st Interview complete</fullName>
+                <default>false</default>
+                <label>1st Interview complete</label>
+            </value>
+            <value>
+                <fullName>2nd Interview scheduled</fullName>
+                <default>false</default>
+                <label>2nd Interview scheduled</label>
+            </value>
+            <value>
+                <fullName>2nd Interview complete</fullName>
+                <default>false</default>
+                <label>2nd Interview complete</label>
+            </value>
+            <value>
+                <fullName>Background Complete</fullName>
+                <default>false</default>
+                <label>Background Complete</label>
+            </value>
+            <value>
+                <fullName>References in process</fullName>
+                <default>false</default>
+                <label>References in process</label>
+            </value>
+            <value>
+                <fullName>References complete</fullName>
+                <default>false</default>
+                <label>References complete</label>
+            </value>
+            <value>
+                <fullName>Job Offered</fullName>
+                <default>false</default>
+                <label>Job Offered</label>
+            </value>
+            <value>
+                <fullName>Notified of selection – not hired</fullName>
+                <default>false</default>
+                <label>Notified of selection – not hired</label>
+            </value>
+            <value>
+                <fullName>Job Accepted/ hired</fullName>
+                <default>false</default>
+                <label>Job Accepted/ hired</label>
+            </value>
+            <value>
+                <fullName>Hired</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hired</label>
+            </value>
+            <value>
+                <fullName>Interviewing process</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Interviewing process</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Under review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Under review</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AUD</fullName>
+        <default>false</default>
+        <label>AUD</label>
+    </customValue>
+    <customValue>
+        <fullName>CAD</fullName>
+        <default>false</default>
+        <label>CAD</label>
+    </customValue>
+    <customValue>
+        <fullName>USD</fullName>
+        <default>false</default>
+        <label>USD</label>
+    </customValue>
+    <customValue>
+        <fullName>NZD</fullName>
+        <default>false</default>
+        <label>NZD</label>
+    </customValue>
+    <customValue>
+        <fullName>NAZ</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NAZ</label>
+    </customValue>
+    <masterLabel>BC Currency Code</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

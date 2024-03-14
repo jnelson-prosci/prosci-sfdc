@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Historical_Utilization_Non_Billable_Hrs__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The historical utilization non-billable hours total for the current time period. This value has been copied from the associated Utilization Detail object for this time period.</description>
+    <externalId>false</externalId>
+    <label>Historical Utilization Non Billable Hrs</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

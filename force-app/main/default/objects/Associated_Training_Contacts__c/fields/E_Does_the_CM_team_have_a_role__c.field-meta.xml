@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>E_Does_the_CM_team_have_a_role__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Does the CM team have a role in the design of the solution and under what circumstances would the they make suggestions to influence the solution design?  List some specific areas of the solution (future state) that would be of particular interest to team</inlineHelpText>
+    <label>E-Does the CM team have a role</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

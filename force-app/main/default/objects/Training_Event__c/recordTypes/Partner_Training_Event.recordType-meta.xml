@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Training_Event</fullName>
+    <active>true</active>
+    <label>Partner Training Event</label>
+    <picklistValues>
+        <picklist>Coach_1_Booking_Form__c</picklist>
+        <values>
+            <fullName>Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Drafted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VE Approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Coach_2_Booking_Form__c</picklist>
+        <values>
+            <fullName>Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Drafted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VE Approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Consulting_Resource_Type_1__c</picklist>
+        <values>
+            <fullName>Change Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engagement Leader</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sr%2E Change Advisor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Consulting_Resource_Type_2__c</picklist>
+        <values>
+            <fullName>Change Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engagement Leader</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sr%2E Change Advisor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Consulting_Resource_Type_3__c</picklist>
+        <values>
+            <fullName>Change Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engagement Leader</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sr%2E Change Advisor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Status__c</picklist>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent BH Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signed%2FAccepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for client PO%2FContract</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_type__c</picklist>
+        <values>
+            <fullName>FRENCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NMSO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NMSO - FRENCH</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Create_Material_Invoice_Opportunity__c</picklist>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Date_status__c</picklist>
+        <values>
+            <fullName>Dates Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dates Offered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Dates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Deposit_Invoice_Status__c</picklist>
+        <values>
+            <fullName>Deposit Invoice Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deposit Invoice Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Deposit Invoice</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Final_Invoice_Status__c</picklist>
+        <values>
+            <fullName>Final Invoice Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Invoice Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Instructor_1_Booking_Form__c</picklist>
+        <values>
+            <fullName>Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Drafted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VE Approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Instructor_2_Booking_Form__c</picklist>
+        <values>
+            <fullName>Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Drafted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VE Approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Instructor_Type__c</picklist>
+        <values>
+            <fullName>Authorized Training Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal PCAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCAI Not Current</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary Affiliate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prosci</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prosci Australia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prosci Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoice_Type__c</picklist>
+        <values>
+            <fullName>Custom Invoicing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training Materials and Training Fees</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Material_Type__c</picklist>
+        <values>
+            <fullName>Electronic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hard Copy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Onsite_Logistic_support_Booking_form__c</picklist>
+        <values>
+            <fullName>Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Drafted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VE Approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pre_program_email__c</picklist>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pricing__c</picklist>
+        <values>
+            <fullName>Complimentary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard pricing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sponsor_preferred_method_of_contact__c</picklist>
+        <values>
+            <fullName>Email only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No preference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thru admin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Start_Time_Type__c</picklist>
+        <values>
+            <fullName>Early</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regular</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Title__c</picklist>
+        <values>
+            <fullName>Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Management Project Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom-Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivering Project Results Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECM Boot Camp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Change Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrating Agile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Methodology Application Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Practitioner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Training_Event_Time_Zone__c</picklist>
+        <values>
+            <fullName>Australian Central Daylight Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australian Central Standard Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australian Eastern Daylight Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australian Eastern Standard Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australian Western Standard Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avaneè de l%27est</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Christmas Island Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Zealand Daylight Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Zealand Standard Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norfolk Island Standard Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normale de l%27Est</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America Atlantic Daylight Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America Atlantic Standard Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America Central Daylight Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America Central Standard Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America Eastern Daylight Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America Eastern Standard Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America Mountain Daylight Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America Mountain Standard Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America Newfoundland Daylight Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America Newfoundland Standard Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America Pacific Daylight Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America Pacific Standard Time</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Event__c</picklist>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Partnership</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

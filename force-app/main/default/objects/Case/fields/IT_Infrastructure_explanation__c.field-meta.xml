@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Infrastructure_explanation__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Will this project involve a change to the IT infrastructure? This could be an addition of new technology,
+or a change to existing technology. If so, please explain.
+Implication: A change to the established infrastructure could mean a change in the information security architecture
+and implementations. Changes to processes, procedures and mitigating controls might be required because of the
+infrastructure change.</inlineHelpText>
+    <label>IT Infrastructure explanation</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

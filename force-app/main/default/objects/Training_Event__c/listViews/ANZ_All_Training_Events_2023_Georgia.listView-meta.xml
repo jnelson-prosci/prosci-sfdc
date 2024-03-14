@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ANZ_All_Training_Events_2023_Georgia</fullName>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Start_Time_Type__c</columns>
+    <columns>NAME</columns>
+    <columns>Title__c</columns>
+    <columns>Location__c</columns>
+    <columns>No_of_Trainees__c</columns>
+    <columns>No_of_Pending__c</columns>
+    <columns>No_of_Waitlisted__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Instructor_Type__c</field>
+        <operation>equals</operation>
+        <value>Prosci Australia</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>LAST_WEEK</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Not available,Cancelled</value>
+    </filters>
+    <filters>
+        <field>OWNER.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Georgia,Brooke</value>
+    </filters>
+    <label>ANZ All Training Events Public</label>
+</ListView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Areas_of_Interest__c</fullName>
+    <externalId>false</externalId>
+    <label>Area of Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New to CM – Change Management Basics</fullName>
+                <default>false</default>
+                <label>New to CM – Change Management Basics</label>
+            </value>
+            <value>
+                <fullName>ADKAR – Individual Change Management</fullName>
+                <default>false</default>
+                <label>ADKAR – Individual Change Management</label>
+            </value>
+            <value>
+                <fullName>3-PhaseProcess–Project-basedChangeMgmt</fullName>
+                <default>false</default>
+                <label>3-PhaseProcess–Project-basedChangeMgmt</label>
+            </value>
+            <value>
+                <fullName>ECM – Enterprise Change Management</fullName>
+                <default>false</default>
+                <label>ECM – Enterprise Change Management</label>
+            </value>
+            <value>
+                <fullName>Value of CM – ROI and Business Case</fullName>
+                <default>false</default>
+                <label>Value of CM – ROI and Business Case</label>
+            </value>
+            <value>
+                <fullName>Sponsorship – Building Change Leadership</fullName>
+                <default>false</default>
+                <label>Sponsorship – Building Change Leadership</label>
+            </value>
+            <value>
+                <fullName>Project Management - PM/CM Integration</fullName>
+                <default>false</default>
+                <label>Project Management - PM/CM Integration</label>
+            </value>
+            <value>
+                <fullName>Research – Best Practices Data</fullName>
+                <default>false</default>
+                <label>Research – Best Practices Data</label>
+            </value>
+            <value>
+                <fullName>Managing Employees–F-line MgrPerspective</fullName>
+                <default>false</default>
+                <label>Managing Employees–F-line MgrPerspective</label>
+            </value>
+            <value>
+                <fullName>Tools – Products and Templates</fullName>
+                <default>false</default>
+                <label>Tools – Products and Templates</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

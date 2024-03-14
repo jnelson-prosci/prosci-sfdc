@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Logistics_Response_Time_Effectiveness__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Logistics Coordinator Response Time (Scale 1-5)</inlineHelpText>
+    <label>Logistics Response Time Effectiveness</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Scale</valueSetName>
+    </valueSet>
+</CustomField>

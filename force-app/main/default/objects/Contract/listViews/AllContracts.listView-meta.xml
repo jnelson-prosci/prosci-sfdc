@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllContracts</fullName>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>CONTRACT.RECORDTYPE</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>Data_Privacy_Agreement__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTRACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contract.Non_disclosure_agreement</value>
+    </filters>
+    <label>All Contracts</label>
+</ListView>

@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Assign_Data_to_Prework_Variable_0</name>
+        <label>Assign Data to Prework Variable</label>
+        <locationX>182</locationX>
+        <locationY>360</locationY>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Activist_Learning_Style_Rank__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.activist_learning_style_rank__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Completed_Profile_Questions__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>completedPrework</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Current_Change_Management_Competency__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.current_change_management_competency__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Current_Role__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.current_role__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Current_Use_Of_Methodology__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Current_Use_Of_Methodology__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Frequency_of_Use_ADKAR_Model__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Frequency_of_Use_ADKAR_Model__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Frequency_of_Use_PCT_Model__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Frequency_of_Use_PCT_Model__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Frequency_of_Use_Three_phase_process__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Frequency_of_Use_Three_phase_process__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Frequeny_Of_Use_Of_Methdology_Parts__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Frequeny_Of_Use_Of_Methdology_Parts__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Impact_of_Applying_ADKAR_Model__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Impact_of_Applying_ADKAR_Model__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Impact_of_Applying_PCT_Model__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Impact_of_Applying_PCT_Model__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Impact_of_Applying_Three_Phase_Process__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Impact_of_Applying_Three_Phase_Process__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Impact_Of_Applying_Methodology_Parts__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Impact_Of_Applying_Methodology_Parts__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Number_Of_Projects_Applied_Methodology__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Number_Of_Projects_Applied_Methodology__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.PCT_Change_Management_Score__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.pct_change_management_score__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.PCT_Leadership_Sponsorship_Score__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.pct_leadership_sponsorship_score__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.PCT_Project_Management_Score__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.pct_project_management_score__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.PCT_Success_Score__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.pct_success_score__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Percentage_Time_On_Change_Management__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.percent_time_on_change_management__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Pragmatist_Learning_Style_Rank__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.pragmatist_learning_style_rank__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Proficiency_of_ADKAR_Model__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Proficiency_of_ADKAR_Model__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Proficiency_of_PCT_Model__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Proficiency_of_PCT_Model__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Proficiency_of_Three_Phase_Process__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Proficiency_of_Three_Phase_Process__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Project_change_type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Project_change_type__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Project_Compatibility__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.project_compatibility__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Project_Management_Approach__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.project_management_approach__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Project_Setup_and_PCT__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>projectSetup</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Project_Title__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Project_Title__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Reflector_Learning_Style_Rank__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.reflector_learning_style_rank__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Theorist_Learning_Style_Rank__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.theorist_learning_style_rank__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Top_Challenges_Applying_Methodology__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Top_Challenges_Applying_Methodology__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Top_Wins_of_Applying_Methodology__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Top_Wins_Of_Applying_Methodology__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Working_With_Others__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.working_with_others__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Year_Completed_Certification__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Year_Completed_Certification__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Years_Experience__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.years_experience__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Project_Description__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.project_description__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Learning_Objectives__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.learning_objectives__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Project_Objectives__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.project_objectives__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Instructor_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Training_Event__r.Instructor_Type__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Program_Title__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Training_Event__r.Title__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Industry__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Contact__r.Account.Industry__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>year</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>PreworkVariable.Contact__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Contact__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Should_PreWork_be_Created</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Check that program title is either MAP or certification</description>
+        <name>Check_Program_Title</name>
+        <label>Check Program Title</label>
+        <locationX>380</locationX>
+        <locationY>252</locationY>
+        <defaultConnectorLabel>Not Applicable Program</defaultConnectorLabel>
+        <rules>
+            <name>MAP_or_Cert</name>
+            <conditionLogic>(1 OR 2) AND 3 AND (4 OR 5 OR 6)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Certification</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Methodology Application Program</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.End_Date__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <dateValue>2021-03-01</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Start_Date__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <dateValue>2023-04-30</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Start_Date__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <dateValue>2023-03-08</dateValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Start_Date__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <dateValue>2023-06-01</dateValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Data_to_Prework_Variable_0</targetReference>
+            </connector>
+            <label>MAP or Cert</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Should_PreWork_be_Created</name>
+        <label>Should PreWork be Created?</label>
+        <locationX>182</locationX>
+        <locationY>468</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formCreatePrework</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Prework_Records_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Create prework from ATC data after status is updated to &quot;Attended&quot; or &quot;Certified&quot;</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>completedPrework</name>
+        <dataType>String</dataType>
+        <expression>IF({!$Record.Completed_Profile_Questions__c}=TRUE, &quot;TRUE&quot;, &quot;FALSE&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>EmptyNumber</name>
+        <dataType>Number</dataType>
+        <expression>VALUE(&quot;&quot;)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>formCreatePrework</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+AND(
+ISBLANK(TEXT({!$Record.activist_learning_style_rank__c})),
+({!completedPrework} = &quot;FALSE&quot;),
+ISBLANK({!$Record.current_change_management_competency__c}),
+ISBLANK({!$Record.current_role__c}),
+ISBLANK(TEXT({!$Record.Current_Use_Of_Methodology__c})),
+ISBLANK({!$Record.Frequency_of_Use_ADKAR_Model__c}),
+ISBLANK({!$Record.Frequency_of_Use_PCT_Model__c}),
+ISBLANK({!$Record.Frequency_of_Use_Three_phase_process__c}),
+ISBLANK(TEXT({!$Record.Frequeny_Of_Use_Of_Methdology_Parts__c})),
+ISBLANK({!$Record.Impact_of_Applying_ADKAR_Model__c}),
+ISBLANK({!$Record.Impact_of_Applying_PCT_Model__c}),
+ISBLANK({!$Record.Impact_of_Applying_Three_Phase_Process__c}),
+ISBLANK(TEXT({!$Record.Impact_Of_Applying_Methodology_Parts__c})),
+ISBLANK(TEXT({!$Record.Number_Of_Projects_Applied_Methodology__c})),
+ISBLANK({!$Record.pct_change_management_score__c}),
+ISBLANK({!$Record.pct_leadership_sponsorship_score__c}),
+ISBLANK({!$Record.pct_project_management_score__c}),
+ISBLANK({!$Record.pct_success_score__c}),
+ISBLANK({!$Record.percent_time_on_change_management__c}),
+ISBLANK(TEXT({!$Record.pragmatist_learning_style_rank__c})),
+ISBLANK({!$Record.Proficiency_of_ADKAR_Model__c}),
+ISBLANK({!$Record.Proficiency_of_PCT_Model__c}),
+ISBLANK({!$Record.Proficiency_of_Three_Phase_Process__c}),
+ISBLANK({!$Record.Project_change_type__c}),
+ISBLANK({!$Record.project_compatibility__c}),
+ISBLANK(TEXT({!$Record.project_management_approach__c})),
+({!projectSetup} = &quot;FALSE&quot;),
+ISBLANK({!$Record.Project_Title__c}),
+ISBLANK(TEXT({!$Record.reflector_learning_style_rank__c})),
+ISBLANK(TEXT({!$Record.theorist_learning_style_rank__c})),
+ISBLANK({!$Record.Top_Challenges_Applying_Methodology__c}),
+ISBLANK({!$Record.Top_Wins_Of_Applying_Methodology__c}),
+ISBLANK({!$Record.working_with_others__c}),
+ISBLANK(TEXT({!$Record.Year_Completed_Certification__c})),
+ISBLANK({!$Record.years_experience__c}),
+ISBLANK({!$Record.project_description__c}),
+ISBLANK({!$Record.learning_objectives__c}),
+ISBLANK({!$Record.project_objectives__c})
+),
+FALSE, TRUE)</expression>
+    </formulas>
+    <formulas>
+        <name>projectSetup</name>
+        <dataType>String</dataType>
+        <expression>IF({!$Record.Project_Setup_and_PCT__c}=TRUE, &quot;TRUE&quot;, &quot;FALSE&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>truncatedWorkingWithOthers</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.working_with_others__c}</expression>
+    </formulas>
+    <formulas>
+        <name>year</name>
+        <dataType>String</dataType>
+        <expression>TEXT(YEAR({!$Record.Training_Event__r.End_Date__c}))</expression>
+    </formulas>
+    <interviewLabel>Prework Creation After ATC Status Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Prework Creation After ATC Status Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Create prework records from collection</description>
+        <name>Create_Prework_Records_0</name>
+        <label>Create Prework Records</label>
+        <locationX>50</locationX>
+        <locationY>576</locationY>
+        <inputReference>PreworkVariable</inputReference>
+    </recordCreates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Program_Title</targetReference>
+        </connector>
+        <filterLogic>(1 OR 2) AND 3</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Attended</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Certified</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Prework_Created__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Associated_Training_Contacts__c</object>
+        <schedule>
+            <frequency>Once</frequency>
+            <startDate>2023-08-03</startDate>
+            <startTime>00:01:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>New prework records to be created from variable</description>
+        <name>NewPreworkRecords</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Prework__c</objectType>
+    </variables>
+    <variables>
+        <name>PreworkVariable</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Prework__c</objectType>
+    </variables>
+</Flow>

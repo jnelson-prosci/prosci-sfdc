@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HQ_Product_orders_without_SO</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Order_No__c</columns>
+    <columns>Shipment_Date__c</columns>
+    <columns>Category_Code__c</columns>
+    <columns>Dropship_Category_Code__c</columns>
+    <columns>Event_Start_Date__c</columns>
+    <columns>Production_Notes__c</columns>
+    <columns>Progtype_Code__c</columns>
+    <columns>Shipping_Agent_Code_Courier__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Product_Ordered__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Product_Order</value>
+    </filters>
+    <filters>
+        <field>Shipment_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>training,tuition</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CURRENCY_ISO_CODE</field>
+        <operation>equals</operation>
+        <value>USD</value>
+    </filters>
+    <filters>
+        <field>Order_No__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>HQ - Product orders without SO</label>
+</ListView>

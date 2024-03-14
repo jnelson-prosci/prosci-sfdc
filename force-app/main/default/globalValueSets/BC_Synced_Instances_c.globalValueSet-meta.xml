@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Business_Central_ANZ</fullName>
+        <default>false</default>
+        <label>Business Central ANZ</label>
+    </customValue>
+    <customValue>
+        <fullName>Business_Central_CAN</fullName>
+        <default>false</default>
+        <label>Business Central CAN</label>
+    </customValue>
+    <customValue>
+        <fullName>Business_Central_US</fullName>
+        <default>false</default>
+        <label>Business Central US</label>
+    </customValue>
+    <description>BC Regions</description>
+    <masterLabel>BC Synced Instances</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

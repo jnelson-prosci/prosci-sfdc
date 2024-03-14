@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Flow_Entry_Criteria</name>
+        <label>Flow Entry Criteria</label>
+        <locationX>684</locationX>
+        <locationY>374</locationY>
+        <defaultConnectorLabel>Doesn&apos;t Meet Entry Criteria</defaultConnectorLabel>
+        <rules>
+            <name>Meets_Entry_Criteria</name>
+            <conditionLogic>((1 OR 2) AND (3 OR 4)) OR ((3 OR 4) AND 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>TTT - Level 1</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>TTT - Level 2</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Registered</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Scheduled to Attend</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Create_Customer_Products__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_the_ATC</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Meets Entry Criteria</label>
+        </rules>
+    </decisions>
+    <description>Identifies Associated Training Contacts records to enqueue for creating Customer Products</description>
+    <environments>Default</environments>
+    <interviewLabel>Associated Training Contact Identify for Customer Product Queue {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Associated Training Contact Identify for Customer Product Queue</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_the_ATC</name>
+        <label>Update the ATC</label>
+        <locationX>692</locationX>
+        <locationY>548</locationY>
+        <inputAssignments>
+            <field>Customer_Product_Status__c</field>
+            <value>
+                <stringValue>Pending</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>566</locationX>
+        <locationY>49</locationY>
+        <connector>
+            <targetReference>Flow_Entry_Criteria</targetReference>
+        </connector>
+        <object>Associated_Training_Contacts__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

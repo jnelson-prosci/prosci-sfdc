@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>D_What_is_the_purpose_of_assessing__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>What is the purpose of assessing the organization and assessing the change prior to developing change management plans?</inlineHelpText>
+    <label>D-What is the purpose of assessing</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

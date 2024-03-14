@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <description>Enqueues Processes to create Customer Products for Training Event Associated Training Contacts</description>
+    <environments>Default</environments>
+    <interviewLabel>Associated Training Contact Queue For Customer Product {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Associated Training Contact Queue For Customer Product</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Publish_Platform_Event</name>
+        <label>Publish Platform Event</label>
+        <locationX>694</locationX>
+        <locationY>393</locationY>
+        <connector>
+            <targetReference>Update_Associated_Training_Contact</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Associated_Training_Contact_Id__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Training_Contact_Create_Customer_Product__e</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>Update_Associated_Training_Contact</name>
+        <label>Update Associated Training Contact</label>
+        <locationX>693</locationX>
+        <locationY>537</locationY>
+        <inputAssignments>
+            <field>Customer_Product_Status__c</field>
+            <value>
+                <stringValue>Queued</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>566</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Publish_Platform_Event</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Customer_Product_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pending</stringValue>
+            </value>
+        </filters>
+        <object>Associated_Training_Contacts__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

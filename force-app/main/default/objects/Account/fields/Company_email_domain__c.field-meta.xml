@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_email_domain__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Enter everything after the &quot;@&quot;.  This field is used in the mapping process of registration importing, specifically at this time for HQ.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter everything after the &quot;@&quot;.  This field is used in the mapping process of registration importing, specifically at this time for HQ.</inlineHelpText>
+    <label>Company email domain</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

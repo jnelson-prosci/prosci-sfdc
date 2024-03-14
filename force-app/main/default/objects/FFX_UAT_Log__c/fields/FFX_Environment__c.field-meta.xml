@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FFX_Environment__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Org in which the test case is carried out, e.g. UAT Sandbox, Full Sandbox, Production.</inlineHelpText>
+    <label>Environment</label>
+    <length>250</length>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

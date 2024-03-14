@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consent_Date_Within_Range__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(((Program_End_Date_Feedback__c -1 &lt;= Contact__r.Acclaim_Retro_Badge_Consent__c)
+
+&amp;&amp;((ISPICKVAL(Status__c,&apos;Certified&apos;) || (ISPICKVAL(Status__c,&apos;Attended&apos;))))),
+
+&quot;Issue Badge&quot;, null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Consent Date Within Range</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

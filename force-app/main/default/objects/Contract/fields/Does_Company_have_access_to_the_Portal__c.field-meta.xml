@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Does_Company_have_access_to_the_Portal__c</fullName>
+    <externalId>false</externalId>
+    <label>Does Company have access to the Portal?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standards</fullName>
+                <default>false</default>
+                <label>Standards</label>
+            </value>
+            <value>
+                <fullName>Yes, see Portal Access Details</fullName>
+                <default>false</default>
+                <label>Yes, see Portal Access Details</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>Modified</fullName>
+                <default>false</default>
+                <label>Modified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

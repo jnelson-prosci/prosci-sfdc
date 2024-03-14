@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Opportunity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Related Opportunity</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Opportunity.AccountId</field>
+            <operation>equals</operation>
+            <valueField>$Source.End_User_Company__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Opportunity.StageName</field>
+            <operation>notEqual</operation>
+            <value>Done - Terminated, Done - No Response, Done - Alternate Solution</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Training Events</relationshipLabel>
+    <relationshipName>Training_Events</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

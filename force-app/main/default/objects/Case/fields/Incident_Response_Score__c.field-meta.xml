@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incident_Response_Score__c</fullName>
+    <description>It&apos;s a formula field that show the score of incident responses. CHANGES TO THIS FORMULA MAY IMPACT SCORING if the Case - Incident Response Form screen flow is not also updated to match.</description>
+    <externalId>false</externalId>
+    <formula>CASE( Reporting_violation_of_acceptable_use__c, &quot;Yes&quot;,1.75,0)
++
+CASE( Incident_Category__c , &quot;Malware&quot;, 2, &quot;System Outage/Degradation&quot;,1, &quot;Improper Use of Prosci Systems/Data&quot;,1.75,0)
++
+IF(ISPICKVAL(Incident_Category__c, &quot;Malware&quot;),CASE( What_type_of_Malware__c ,&quot;Phishing Attack&quot;,1,&quot;Unauthorized Software&quot;,1.75,&quot;Other External Malware&quot;,2,0),0)
++
+IF(ISPICKVAL(Incident_Category__c, &quot;Malware&quot;),CASE(  Have_you_clicked_on_any_links__c  ,&quot;Yes&quot;,1,&quot;No&quot;,0.5,&quot;Unsure&quot;,0.75,0),0)
++
+IF(ISPICKVAL(Incident_Category__c, &quot;System Outage/Degradation&quot;),CASE(  Is_this_an_outage_or_performance_issue__c ,&quot;System Outage&quot;,1,&quot;Performance Issue&quot;,0.75,0),0)
++
+IF(ISPICKVAL(Incident_Category__c, &quot;Improper Use of Prosci Systems/Data&quot;),CASE(  Improper_Use_of_Systems_Data_Type__c  ,&quot;Loss or Theft of Equipment&quot;,1,&quot;Suspected Unauthorized Access&quot;,1,&quot;Violation of InfoSec Policies&quot;,0.75,0),0)
++
+CASE( What_is_the_incident_related_to__c ,&quot;Desktop Hardware&quot;,0.5,&quot;Network&quot;,1,&quot;Cloud System or Application&quot;,1.5,0)
++
+CASE(  Security_Breached__c  ,&quot;Yes - Someone has gained unauthorized access to Prosci&apos;s systems&quot;,2,&quot;No - I don&apos;t think someone has gained access&quot;,1,&quot;Unsure - I don&apos;t know if someone has access&quot;,1.5,0)
++
+CASE(   Data_breached__c   ,&quot;Yes - Someone has gained unauthorized access to Prosci&apos;s data&quot;,2,&quot;No - I don&apos;t think someone has gained access&quot;,1,&quot;Unsure - I don&apos;t know if someone has access&quot;,1.5,0)
++
+CASE( People_affected__c ,&quot;Only 1&quot;,0.5,&quot;Multiple People/whole department&quot;,1,&quot;Multiple departments&quot;,1,&quot;Multiple Markets&quot;,1.5,&quot;The whole company&quot;,2,0)
++
+IF(INCLUDES(Prosci_RiskM__c,&quot;Security&quot;),1,0)
++
+IF(INCLUDES(Prosci_RiskM__c,&quot;Privacy&quot;),1,0)
++
+IF(INCLUDES(Prosci_RiskM__c,&quot;Business Continuity&quot;),1,0)
++
+CASE( System__c ,&quot;Business Central&quot;,2, &quot;Magento&quot;,2, &quot;Teams&quot;,2, &quot;Outlook&quot;,2, &quot;Word&quot;,2, &quot;Excel&quot;,2, &quot;Sharepoint&quot;,2, &quot;OneDrive&quot;,2, &quot;Other Microsoft System&quot;,2, &quot;Hubspot&quot;,2, &quot;Salesforce&quot;,2, &quot;Zoom&quot;,1.5, &quot;Pollev&quot;,1.5, &quot;Desktop Hardware&quot;,0.5, &quot;Network&quot;,0.75, &quot;Phones&quot;,1, &quot;Portal&quot;,2, &quot;Printers&quot;,0.5, &quot;Server Hardware&quot;,1, &quot;Wifi&quot;,0.75, &quot;Other&quot;,0.5 ,0)</formula>
+    <label>Incident Response Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

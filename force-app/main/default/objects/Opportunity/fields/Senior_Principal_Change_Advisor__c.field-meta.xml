@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Senior_Principal_Change_Advisor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Senior Principal Change Advisor</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Opportunities (Senior Principal Change Advisor)</relationshipLabel>
+    <relationshipName>OpportunitiesQRtg</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incident_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Incident Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Malware</fullName>
+                <default>false</default>
+                <label>Malware</label>
+            </value>
+            <value>
+                <fullName>System Outage/Degradation</fullName>
+                <default>false</default>
+                <label>System Outage/Degradation</label>
+            </value>
+            <value>
+                <fullName>Improper use of Prosci Systems/Data</fullName>
+                <default>false</default>
+                <label>Improper Use of Prosci Systems/Data</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

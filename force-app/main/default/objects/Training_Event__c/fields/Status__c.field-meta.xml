@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Confirming Instructor</fullName>
+                <default>false</default>
+                <label>Confirming Instructor</label>
+            </value>
+            <value>
+                <fullName>Instructor Confirmed</fullName>
+                <default>false</default>
+                <label>Instructor Confirmed</label>
+            </value>
+            <value>
+                <fullName>Confirming Training Mgr</fullName>
+                <default>false</default>
+                <label>Confirming Training Mgr</label>
+            </value>
+            <value>
+                <fullName>Confirming 2nd Training Mgr</fullName>
+                <default>false</default>
+                <label>Confirming 2nd Training Mgr</label>
+            </value>
+            <value>
+                <fullName>Confirming Co-Teach Instructor</fullName>
+                <default>false</default>
+                <label>Confirming Co-Teach Instructor</label>
+            </value>
+            <value>
+                <fullName>Co-Teach Confirmed</fullName>
+                <default>false</default>
+                <label>Co-Teach Confirmed</label>
+            </value>
+            <value>
+                <fullName>Confirmed</fullName>
+                <default>false</default>
+                <label>Confirmed</label>
+            </value>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Not available</fullName>
+                <default>false</default>
+                <label>Not available</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Confirming Resource Type 1</fullName>
+                <default>false</default>
+                <label>Confirming Resource Type 1</label>
+            </value>
+            <value>
+                <fullName>Confirming Resource Type 2</fullName>
+                <default>false</default>
+                <label>Confirming Resource Type 2</label>
+            </value>
+            <value>
+                <fullName>Confirming Resource Type 3</fullName>
+                <default>false</default>
+                <label>Confirming Resource Type 3</label>
+            </value>
+            <value>
+                <fullName>Hold</fullName>
+                <default>false</default>
+                <label>Hold</label>
+            </value>
+            <value>
+                <fullName>Contracting</fullName>
+                <default>false</default>
+                <label>Contracting</label>
+            </value>
+            <value>
+                <fullName>Converted to VILT</fullName>
+                <default>false</default>
+                <label>Converted to VILT</label>
+            </value>
+            <value>
+                <fullName>Confirming Back-up Instructor</fullName>
+                <default>false</default>
+                <label>Confirming Back-up Instructor</label>
+            </value>
+            <value>
+                <fullName>Back-up Instructor Confirmed</fullName>
+                <default>false</default>
+                <label>Back-up Instructor Confirmed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

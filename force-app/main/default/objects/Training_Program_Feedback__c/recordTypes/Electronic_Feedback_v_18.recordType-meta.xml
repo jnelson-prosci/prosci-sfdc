@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Electronic_Feedback_v_18</fullName>
+    <active>true</active>
+    <description>Electronic feedback started in 2018</description>
+    <label>Electronic Feedback v 18</label>
+</RecordType>

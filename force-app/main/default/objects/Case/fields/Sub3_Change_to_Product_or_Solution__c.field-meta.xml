@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub3_Change_to_Product_or_Solution__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub3 Change to Product or Solution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>prework</fullName>
+                <default>false</default>
+                <label>prework</label>
+            </value>
+            <value>
+                <fullName>communications</fullName>
+                <default>false</default>
+                <label>communications</label>
+            </value>
+            <value>
+                <fullName>logistics</fullName>
+                <default>false</default>
+                <label>logistics</label>
+            </value>
+            <value>
+                <fullName>course slides/presenation decks</fullName>
+                <default>false</default>
+                <label>course slides/presenation decks</label>
+            </value>
+            <value>
+                <fullName>activity or breakout</fullName>
+                <default>false</default>
+                <label>activity or breakout</label>
+            </value>
+            <value>
+                <fullName>Knowledge checks, tests</fullName>
+                <default>false</default>
+                <label>Knowledge checks, tests</label>
+            </value>
+            <value>
+                <fullName>engagement/facilitation tactics</fullName>
+                <default>false</default>
+                <label>engagement/facilitation tactics</label>
+            </value>
+            <value>
+                <fullName>participant presentation &amp; feedback</fullName>
+                <default>false</default>
+                <label>participant presentation &amp; feedback</label>
+            </value>
+            <value>
+                <fullName>communication</fullName>
+                <default>false</default>
+                <label>communication</label>
+            </value>
+            <value>
+                <fullName>licenses</fullName>
+                <default>false</default>
+                <label>licenses</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSTR__Send_Email_BPD</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Send Email</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/email/author/emailauthor.jsp?p3_lkid={!FSTR__Test_PCE__c.Id}&amp;p3_lkold={!FSTR__Test_PCE__c.Name}&amp;p3={!FSTR__Test_PCE__c.Name}&amp;p2_lkid={!FSTR__Test_PCE__c.FSTR__ClientId__c}&amp;p2= {!FSTR__Test_PCE__c.FSTR__Client__c}&amp;p2_lkold={!FSTR__Test_PCE__c.FSTR__Client__c}&amp;retURL=/{! FSTR__Test_PCE__c.Id}</url>
+</WebLink>

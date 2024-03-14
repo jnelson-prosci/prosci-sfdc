@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>License_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>License Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Enterprise Change Management (ECM) License</fullName>
+                <default>false</default>
+                <label>Enterprise Change Management (ECM) License</label>
+            </value>
+            <value>
+                <fullName>Organizational Change Competency License</fullName>
+                <default>false</default>
+                <label>Organizational Change Competency License</label>
+            </value>
+            <value>
+                <fullName>ADKAR Enablement License</fullName>
+                <default>false</default>
+                <label>ADKAR Enablement License</label>
+            </value>
+            <value>
+                <fullName>Enterprise Portal Subscription</fullName>
+                <default>false</default>
+                <label>Enterprise Portal Subscription</label>
+            </value>
+            <value>
+                <fullName>Individual All Access Portal Subscription</fullName>
+                <default>false</default>
+                <label>Individual All Access Portal Subscription</label>
+            </value>
+            <value>
+                <fullName>Change Practitioner eToolkit License</fullName>
+                <default>false</default>
+                <label>Change Practitioner eToolkit License</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+            <value>
+                <fullName>Managers</fullName>
+                <default>false</default>
+                <label>Managers</label>
+            </value>
+            <value>
+                <fullName>Portal</fullName>
+                <default>false</default>
+                <label>Portal</label>
+            </value>
+            <value>
+                <fullName>Service Provider</fullName>
+                <default>false</default>
+                <label>Service Provider</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>eLearning</fullName>
+                <default>false</default>
+                <label>eLearning</label>
+            </value>
+            <value>
+                <fullName>ADKAR Dashboard</fullName>
+                <default>false</default>
+                <label>ADKAR Dashboard</label>
+            </value>
+            <value>
+                <fullName>CMROI Calculator</fullName>
+                <default>false</default>
+                <label>CMROI Calculator</label>
+            </value>
+            <value>
+                <fullName>PCT Analyzer</fullName>
+                <default>false</default>
+                <label>PCT Analyzer</label>
+            </value>
+            <value>
+                <fullName>CMRL</fullName>
+                <default>false</default>
+                <label>CMRL</label>
+            </value>
+            <value>
+                <fullName>Maturity Model Audit</fullName>
+                <default>false</default>
+                <label>Maturity Model Audit</label>
+            </value>
+            <value>
+                <fullName>Best Practices Audit</fullName>
+                <default>false</default>
+                <label>Best Practices Audit</label>
+            </value>
+            <value>
+                <fullName>Portal Bundle - CM Deployment</fullName>
+                <default>false</default>
+                <label>Portal Bundle - CM Deployment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

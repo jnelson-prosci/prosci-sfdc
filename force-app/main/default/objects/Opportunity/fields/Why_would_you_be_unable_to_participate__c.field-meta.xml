@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Why_would_you_be_unable_to_participate__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>IF YOU ANSWERED &quot;YES” TO THE ABOVE QUESTION, PLEASE DESCRIBE IN A FEW SENTENCES WHY YOU WOULD BE UNABLE TO PARTICIPATE IN THE SELECTED CHANGE MANAGEMENT TRAINING PROGRAM WITHOUT RECEIVING FINANCIAL ASSISTANCE</inlineHelpText>
+    <label>Why would you be unable to participate</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

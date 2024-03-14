@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_need_support_building_change_capabilit__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>I need support building change capability</description>
+    <externalId>false</externalId>
+    <label>Support building change capabilities</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

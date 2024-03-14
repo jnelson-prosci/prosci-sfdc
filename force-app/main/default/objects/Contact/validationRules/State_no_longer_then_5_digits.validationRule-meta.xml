@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_no_longer_then_5_digits</fullName>
+    <active>false</active>
+    <errorConditionFormula>LEN(OtherState)&gt;5</errorConditionFormula>
+    <errorDisplayField>OtherState</errorDisplayField>
+    <errorMessage>The State/Province cannot be longer than 5 characters</errorMessage>
+</ValidationRule>

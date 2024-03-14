@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__PreBilledAmount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is deprecated. It has been replaced by Pre-Billed Amount (Pre_Billed_Amount__c).</description>
+    <externalId>false</externalId>
+    <label>DEPRECATED: Pre-Billed Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

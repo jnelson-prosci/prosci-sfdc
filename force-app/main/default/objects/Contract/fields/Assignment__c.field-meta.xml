@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assignment__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If &quot;Company,&quot; explain modification.</inlineHelpText>
+    <label>Assignment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Prosci</fullName>
+                <default>false</default>
+                <label>Prosci</label>
+            </value>
+            <value>
+                <fullName>Neither party may assign</fullName>
+                <default>false</default>
+                <label>Neither party may assign</label>
+            </value>
+            <value>
+                <fullName>Both parties may assign in any event</fullName>
+                <default>false</default>
+                <label>Both parties may assign in any event</label>
+            </value>
+            <value>
+                <fullName>Prosci may assign in any event</fullName>
+                <default>false</default>
+                <label>Prosci may assign in any event</label>
+            </value>
+            <value>
+                <fullName>Company may assign in any event</fullName>
+                <default>false</default>
+                <label>Company may assign in any event</label>
+            </value>
+            <value>
+                <fullName>Both parties may assign in case of sale, transfer, etc.</fullName>
+                <default>false</default>
+                <label>Both parties may assign in case of sale, transfer, etc.</label>
+            </value>
+            <value>
+                <fullName>Prosci may assign in case of sale, transfer, etc.</fullName>
+                <default>false</default>
+                <label>Prosci may assign in case of sale, transfer, etc.</label>
+            </value>
+            <value>
+                <fullName>Company may assign in case of sale, transfer, etc.</fullName>
+                <default>false</default>
+                <label>Company may assign in case of sale, transfer, etc.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

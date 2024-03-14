@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Discount_Rates_Must_Be_Between_0_to_100</fullName>
+    <active>false</active>
+    <description>The Rate Card Percentage Discount must be between 0 and 100.</description>
+    <errorConditionFormula>pse__Rate_Card_Percentage_Discount__c &lt; 0 || pse__Rate_Card_Percentage_Discount__c &gt; 100</errorConditionFormula>
+    <errorMessage>The Rate Card Percentage Discount must be between 0 and 100.</errorMessage>
+</ValidationRule>

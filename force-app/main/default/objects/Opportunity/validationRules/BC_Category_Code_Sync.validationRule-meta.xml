@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_Category_Code_Sync</fullName>
+    <active>true</active>
+    <description>When Category Code has been set to &quot;Public&quot;, a &quot;Ship To Contact&quot; must be synced with BC as well as included on this Opportunity before syncing to BC.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(Category_Code__c, &quot;Public&quot;), 
+ISPICKVAL(BC_Sync_Status__c, &quot;Pending Sync&quot;),
+RecordTypeId = &quot;012i0000001N4wi&quot;,
+OR(
+ISBLANK(Ship_To_Contact__c),
+NOT(Ship_To_Contact__r.BC_Synced__c))
+)</errorConditionFormula>
+    <errorDisplayField>of_contracted_rooms__c</errorDisplayField>
+    <errorMessage>When Category Code has been set to &quot;Public&quot;, a &quot;Ship To Contact&quot; must be synced with BC as well as included on this Opportunity before syncing to BC.</errorMessage>
+</ValidationRule>

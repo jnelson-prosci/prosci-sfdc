@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Opp_Rate_Card_Set_Currency_Mismatch</fullName>
+    <active>true</active>
+    <description>The currency must be the same for the opportunity and the rate card set.</description>
+    <errorConditionFormula>(pse__Rate_Card_Set__c &lt;&gt; NULL) &amp;&amp;(ISPICKVAL(CurrencyIsoCode, &apos;&apos;) ||
+		ISPICKVAL(pse__Rate_Card_Set__r.CurrencyIsoCode , &apos;&apos;) ||
+		(TEXT(pse__Rate_Card_Set__r.CurrencyIsoCode) &lt;&gt; TEXT(CurrencyIsoCode)))</errorConditionFormula>
+    <errorMessage>You cannot associate the rate card set with the opportunity. They must both use the same currency.</errorMessage>
+</ValidationRule>

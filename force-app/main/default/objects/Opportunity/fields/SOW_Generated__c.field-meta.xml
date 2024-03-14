@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOW_Generated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When the generate SOW button is clicked, it checks a box on the opportunity.  Then that field rolls up and counts the number of SOW’s created.</description>
+    <externalId>false</externalId>
+    <label>SOW Generated</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Name_50_Character</fullName>
+    <active>true</active>
+    <description>This rule is to limit the # of character in the account name field</description>
+    <errorConditionFormula>LEN(Name) &gt; 50</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>The Account Name cannot be longer than 50 characters, shorten and use the Legal Name field to enter the complete Account Name</errorMessage>
+</ValidationRule>

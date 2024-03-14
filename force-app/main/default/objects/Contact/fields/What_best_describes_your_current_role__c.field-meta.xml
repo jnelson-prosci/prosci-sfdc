@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_best_describes_your_current_role__c</fullName>
+    <externalId>false</externalId>
+    <label>What best describes your current role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>I am a part-time change practitioner (I spend less than 50% of my time on change management)</fullName>
+                <default>false</default>
+                <label>I am a part-time change practitioner (I spend less than 50% of my time on change management)</label>
+            </value>
+            <value>
+                <fullName>I am a project manager</fullName>
+                <default>false</default>
+                <label>I am a project manager</label>
+            </value>
+            <value>
+                <fullName>I am a business lead or department head</fullName>
+                <default>false</default>
+                <label>I am a business lead or department head</label>
+            </value>
+            <value>
+                <fullName>I am a consultant</fullName>
+                <default>false</default>
+                <label>I am a consultant</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

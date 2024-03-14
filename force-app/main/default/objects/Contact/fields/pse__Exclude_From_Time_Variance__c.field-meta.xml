@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Exclude_From_Time_Variance__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If true, the resource is excluded from Time Variance calculations.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If true, the resource is excluded from Time Variance calculations.</inlineHelpText>
+    <label>Exclude From Time Variance Calculations</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

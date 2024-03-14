@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllOpenLeads_ANZ</fullName>
+    <booleanFilter>(1 AND 5 AND 4) OR (2 AND 4 AND 5) OR (3 AND 4 AND 5) OR (6 AND 5 AND 2)</booleanFilter>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.TITLE</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>Job_Title__c</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>Lead_Type__c</columns>
+    <columns>Comments_from_Website__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Reason_for_Contact__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.EMAIL</field>
+        <operation>contains</operation>
+        <value>.au</value>
+    </filters>
+    <filters>
+        <field>Country_Code__c</field>
+        <operation>equals</operation>
+        <value>AU,NZ</value>
+    </filters>
+    <filters>
+        <field>LEAD.EMAIL</field>
+        <operation>contains</operation>
+        <value>.nz</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2023 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>contains</operation>
+        <value>Open</value>
+    </filters>
+    <filters>
+        <field>LEAD.EMAIL</field>
+        <operation>contains</operation>
+        <value>.gmail</value>
+    </filters>
+    <label>All Open Leads-ANZ</label>
+</ListView>

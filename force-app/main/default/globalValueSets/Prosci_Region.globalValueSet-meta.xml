@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>HQ</fullName>
+        <default>false</default>
+        <label>HQ</label>
+    </customValue>
+    <customValue>
+        <fullName>CAN</fullName>
+        <default>false</default>
+        <label>CAN</label>
+    </customValue>
+    <customValue>
+        <fullName>ANZ</fullName>
+        <default>false</default>
+        <label>ANZ</label>
+    </customValue>
+    <customValue>
+        <fullName>BRZ</fullName>
+        <default>false</default>
+        <label>BRZ</label>
+    </customValue>
+    <customValue>
+        <fullName>COL</fullName>
+        <default>false</default>
+        <label>COL</label>
+    </customValue>
+    <customValue>
+        <fullName>LATAM</fullName>
+        <default>false</default>
+        <label>LATAM</label>
+    </customValue>
+    <customValue>
+        <fullName>IBERIA</fullName>
+        <default>false</default>
+        <label>IBERIA</label>
+    </customValue>
+    <masterLabel>Prosci Region</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_to_Product_or_Solution__c</fullName>
+    <externalId>false</externalId>
+    <label>Change to Product or Solution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Models/methods</fullName>
+                <default>false</default>
+                <label>Models/methods</label>
+            </value>
+            <value>
+                <fullName>Research/Publications</fullName>
+                <default>false</default>
+                <label>Research/Publications</label>
+            </value>
+            <value>
+                <fullName>Training/Learning</fullName>
+                <default>false</default>
+                <label>Training/Learning</label>
+            </value>
+            <value>
+                <fullName>Tools/Toolkits</fullName>
+                <default>false</default>
+                <label>Tools/Toolkits</label>
+            </value>
+            <value>
+                <fullName>Advisory Services</fullName>
+                <default>false</default>
+                <label>Advisory Services</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>BDR Generated</fullName>
+        <default>false</default>
+        <label>BDR Generated</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Direct Traffic</fullName>
+        <default>false</default>
+        <label>Direct Traffic</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email Campaigns</fullName>
+        <default>false</default>
+        <label>Email Campaigns</label>
+    </standardValue>
+    <standardValue>
+        <fullName>External Client Referral</fullName>
+        <default>false</default>
+        <label>External Client Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Client Referral</fullName>
+        <default>false</default>
+        <label>Internal Client Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Organic Search</fullName>
+        <default>false</default>
+        <label>Organic Search</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Organic Social</fullName>
+        <default>false</default>
+        <label>Organic Social</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other Campaigns</fullName>
+        <default>false</default>
+        <label>Other Campaigns</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbound</fullName>
+        <default>false</default>
+        <label>Outbound</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Paid Search</fullName>
+        <default>false</default>
+        <label>Paid Search</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Paid_Social</fullName>
+        <default>false</default>
+        <label>Paid Social</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partnership Referral</fullName>
+        <default>false</default>
+        <label>Partnership Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Public Program Lead</fullName>
+        <default>false</default>
+        <label>Public Program Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Registration</fullName>
+        <default>false</default>
+        <label>Registration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trade Show</fullName>
+        <default>false</default>
+        <label>Trade Show</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web Referrals</fullName>
+        <default>false</default>
+        <label>Web Referrals</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Zoom_Events</fullName>
+        <default>false</default>
+        <label>Zoom Events</label>
+    </standardValue>
+</StandardValueSet>

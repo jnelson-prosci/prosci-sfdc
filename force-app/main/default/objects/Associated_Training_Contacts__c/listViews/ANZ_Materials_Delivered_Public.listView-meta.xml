@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ANZ_Materials_Delivered_Public</fullName>
+    <columns>Training_Event__c</columns>
+    <columns>Contact__c</columns>
+    <columns>Status__c</columns>
+    <columns>Order_No__c</columns>
+    <columns>Materials_Delivered__c</columns>
+    <columns>Project_Grouping__c</columns>
+    <columns>Program_End_Date_Feedback__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Instructor_Type__c</field>
+        <operation>equals</operation>
+        <value>Prosci Australia</value>
+    </filters>
+    <filters>
+        <field>Materials_Delivered__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Program_End_Date_Feedback__c</field>
+        <operation>greaterThan</operation>
+        <value>6/30/2022</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Registered</value>
+    </filters>
+    <filters>
+        <field>Project_Grouping__c</field>
+        <operation>contains</operation>
+        <value>Individual,Team 1,Team 2,Team 3,Team 4,Team 5,Team 6,Team 7,Team 8,Team 9,Team 10</value>
+    </filters>
+    <filters>
+        <field>Training_Event__c</field>
+        <operation>notContain</operation>
+        <value>Methodology,Improve</value>
+    </filters>
+    <label>ANZ - Materials Delivered Public</label>
+</ListView>

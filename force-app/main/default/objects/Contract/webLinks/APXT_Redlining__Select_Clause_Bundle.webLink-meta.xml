@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APXT_Redlining__Select_Clause_Bundle</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>page</linkType>
+    <masterLabel>Select Clause Bundle</masterLabel>
+    <openType>replace</openType>
+    <page>APXT_Redlining__apxt_selectClauseBundle</page>
+    <protected>false</protected>
+</WebLink>

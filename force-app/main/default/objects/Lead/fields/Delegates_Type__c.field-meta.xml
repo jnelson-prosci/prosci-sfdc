@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delegates_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Delegates_Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CMI/ACMP discount - AUD $5700.00</fullName>
+                <default>false</default>
+                <label>CMI/ACMP discount - AUD $5700.00</label>
+            </value>
+            <value>
+                <fullName>CMI/ACMP Discount - NZD $6700.00</fullName>
+                <default>false</default>
+                <label>CMI/ACMP Discount - NZD $6700.00</label>
+            </value>
+            <value>
+                <fullName>Project Team Discount - AUD $5355.00</fullName>
+                <default>false</default>
+                <label>Project Team Discount - AUD $5355.00</label>
+            </value>
+            <value>
+                <fullName>Project Team Discount - NZD $6255.00</fullName>
+                <default>false</default>
+                <label>Project Team Discount - NZD $6255.00</label>
+            </value>
+            <value>
+                <fullName>Single delegate - AUD $5950.00</fullName>
+                <default>false</default>
+                <label>Single delegate - AUD $5950.00</label>
+            </value>
+            <value>
+                <fullName>Single delegate - NZD $6950.00</fullName>
+                <default>false</default>
+                <label>Single delegate - NZD $6950.00</label>
+            </value>
+            <value>
+                <fullName>Single Delegate - non-res - AUD $4,950.00</fullName>
+                <default>false</default>
+                <label>Single Delegate - non-res - AUD $4,950.00</label>
+            </value>
+            <value>
+                <fullName>CMI/ACMP Discount - non-res - AUD $4,700.00</fullName>
+                <default>false</default>
+                <label>CMI/ACMP Discount - non-res - AUD $4,700.00</label>
+            </value>
+            <value>
+                <fullName>Project Team Discount - non-res - AUD $4,455.00</fullName>
+                <default>false</default>
+                <label>Project Team Discount - non-res - AUD $4,455.00</label>
+            </value>
+            <value>
+                <fullName>Single delegate - $5,950.00</fullName>
+                <default>false</default>
+                <label>Single delegate - $5,950.00</label>
+            </value>
+            <value>
+                <fullName>CMI/ACMP discount - $5,700.00</fullName>
+                <default>false</default>
+                <label>CMI/ACMP discount - $5,700.00</label>
+            </value>
+            <value>
+                <fullName>Team discount - $5,255.00</fullName>
+                <default>false</default>
+                <label>Team discount - $5,255.00</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

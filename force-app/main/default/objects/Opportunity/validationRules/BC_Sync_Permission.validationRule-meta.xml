@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_Sync_Permission</fullName>
+    <active>true</active>
+    <description>Restrict initial sync to Business Central to users with Data Steward Permission</description>
+    <errorConditionFormula>AND(
+NOT($Permission.Data_Steward_BC_Opportunity_Sync)
+, NOT(BC_Synced__c)
+, OR(ISPICKVAL(BC_Sync_Status__c, &apos;Pending Sync&apos;)
+, ISPICKVAL(BC_Sync_Status__c, &apos;Queued&apos;))
+)</errorConditionFormula>
+    <errorMessage>Contact a Data Steward to initiate sync to Business Central</errorMessage>
+</ValidationRule>

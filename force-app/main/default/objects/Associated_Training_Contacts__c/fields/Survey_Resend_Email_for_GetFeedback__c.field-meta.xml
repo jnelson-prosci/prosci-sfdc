@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Survey_Resend_Email_for_GetFeedback__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the email address the attendee wants the survey resent to</inlineHelpText>
+    <label>Survey Resend Email for GetFeedback</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

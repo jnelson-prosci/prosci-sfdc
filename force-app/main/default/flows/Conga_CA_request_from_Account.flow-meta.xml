@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionCalls>
+        <description>Redirects to Composer URL</description>
+        <name>Call_Composer_Solution</name>
+        <label>Call Composer Solution</label>
+        <locationX>314</locationX>
+        <locationY>782</locationY>
+        <actionName>c:navigateEverywhereLFA</actionName>
+        <actionType>component</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>destinationType</name>
+            <value>
+                <stringValue>URL</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>destinationUrl</name>
+            <value>
+                <elementReference>fT_EvaluateComposerURL</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>c:navigateEverywhereLFA</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <choices>
+        <name>chNDA</name>
+        <choiceText>Non-Disclosure Agreement</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Non-Disclosure Agreement</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>chPSA</name>
+        <choiceText>Professional Services Agreement</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Professional Services Agreement</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>Check_for_Required_Fields</name>
+        <label>Check for Required Fields</label>
+        <locationX>182</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <targetReference>Create_Contract_Agreement</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>All fields completed</defaultConnectorLabel>
+        <rules>
+            <name>PSA</name>
+            <conditionLogic>(1 OR 2 OR 3 OR 4 OR 5 OR 6) AND 7</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account.Legal_Account_Name__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Account.BillingStreet</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Account.BillingCity</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Account.BillingState</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Account.BillingPostalCode</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Account.BillingCountry</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ContractType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>chPSA</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PSA_Error_Screen</targetReference>
+            </connector>
+            <label>PSA</label>
+        </rules>
+    </decisions>
+    <description>Removed the debug and put it back to 11</description>
+    <dynamicChoiceSets>
+        <name>pckLicenseType</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>License_Agreement_Type__c</picklistField>
+        <picklistObject>APXT_Redlining__Contract_Agreement__c</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <formulas>
+        <name>fT_ComposerBackgroundMode</name>
+        <dataType>String</dataType>
+        <expression>IF( {!Debug} = false, &quot;11&quot;, &quot;0&quot; )</expression>
+    </formulas>
+    <formulas>
+        <name>fT_EvaluateComposerURL</name>
+        <dataType>String</dataType>
+        <expression>IF( {!ContractType} = {!chPSA}, {!fT_PSAComposerURL}, {!fT_NDAComposerURL})</expression>
+    </formulas>
+    <formulas>
+        <name>fT_NDAComposerURL</name>
+        <dataType>String</dataType>
+        <expression>&apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos;+
+&apos;&amp;serverUrl=&apos;+{!$Api.Partner_Server_URL_520}+
+&apos;&amp;Id=&apos;+{!Get_Contract_Agreement.Id}+
+&apos;&amp;QueryID=[NDA]0Q_110EA2635496&apos;+
+&apos;,[Acc]0Q_093EA2276103&apos;+
+&apos;&amp;TemplateId=0T_015EA2385423&apos;+
+&apos;&amp;SC0=1&apos;+
+&apos;&amp;SC1=SalesforceFile&apos;+
+&apos;&amp;DataTagEnable=1&apos;+
+&apos;&amp;RM=1&apos;+
+&apos;&amp;LRTF=1&apos;+
+&apos;&amp;OFN=Agreement+&apos; + {!Get_Contract_Agreement.Name} + &apos;+for+&apos; + {!Get_Contract_Agreement.APXT_Redlining__Account__r.Name} +
+&apos;&amp;DS7=&apos;+{!fT_ComposerBackgroundMode}+
+&apos;&amp;BML=Generating+agreement...&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>fT_PSAComposerURL</name>
+        <dataType>String</dataType>
+        <expression>&apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos;+
+&apos;&amp;serverUrl=&apos;+{!$Api.Partner_Server_URL_520}+
+&apos;&amp;Id=&apos;+{!Get_Contract_Agreement.Id}+
+&apos;&amp;QueryID=[PMisc]0Q_066EA2730257&apos;+
+&apos;,[LoL]0Q_069EA2477967&apos;+
+&apos;,[Warranties]0Q_102EA2625585&apos;+
+&apos;,[LTerm]0Q_071EA2586206&apos;+
+&apos;,[Confidential]0Q_072EA2438055&apos;+
+&apos;,[Services]0Q_073EA2661910&apos;+
+&apos;,[LPF]0Q_081EA2002103&apos;+
+&apos;,[Template]a271Y000003EZf6&apos;+
+&apos;,[IP]0Q_101EA2843258&apos;+
+&apos;,[IPIndem]0Q_103EA2064720&apos;+
+&apos;,[Acc]0Q_093EA2276103&apos;+
+&apos;&amp;TemplateId=0T_003EA2316962&apos;+
+&apos;&amp;TemplateGroup=PSA&apos;+
+&apos;&amp;SC0=1&apos;+
+&apos;&amp;SC1=SalesforceFile&apos;+
+&apos;&amp;DataTagEnable=1&apos;+
+&apos;&amp;RM=1&apos;+
+&apos;&amp;LRTF=1&apos;+
+&apos;&amp;OFN=PSA+for+&apos; + {!Get_Contract_Agreement.APXT_Redlining__Account__r.Name}+
+&apos;&amp;DS7=11&apos;+
+&apos;&amp;BML=Generating+PSA...&apos;</expression>
+    </formulas>
+    <interviewLabel>Conga - CA request from Account {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Conga - CA request from Account</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_Contract_Agreement</name>
+        <label>Create Contract Agreement</label>
+        <locationX>314</locationX>
+        <locationY>566</locationY>
+        <assignRecordIdToReference>varT_ContractAgreementId</assignRecordIdToReference>
+        <connector>
+            <targetReference>Get_Contract_Agreement</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>APXT_Redlining__Account__c</field>
+            <value>
+                <elementReference>Get_Account.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>APXT_Redlining__Recursive_Merge_Status__c</field>
+            <value>
+                <stringValue>Sync</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>APXT_Redlining__Status__c</field>
+            <value>
+                <stringValue>In Process</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>APXT_Redlining__Type__c</field>
+            <value>
+                <elementReference>ContractType</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Legal_Negotiator__c</field>
+            <value>
+                <elementReference>LegalNegoLookup.recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>APXT_Redlining__Contract_Agreement__c</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Account</name>
+        <label>Get Account</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Contract_Information</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Contract_Agreement</name>
+        <label>Get Contract Agreement</label>
+        <locationX>314</locationX>
+        <locationY>674</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Call_Composer_Solution</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varT_ContractAgreementId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>APXT_Redlining__Contract_Agreement__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Running_User</name>
+        <label>Get Running User</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Account</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>SystemModeWithSharing</runInMode>
+    <screens>
+        <name>Contract_Information</name>
+        <label>Contract Information</label>
+        <locationX>182</locationX>
+        <locationY>350</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Check_for_Required_Fields</targetReference>
+        </connector>
+        <fields>
+            <name>UserWarningMessage</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 18px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Please read: &lt;/strong&gt;&lt;span style=&quot;font-size: 18px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Until told otherwise by the Prosci admin team, only the PSA can be used with the Conga updates&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>ContractType</name>
+            <choiceReferences>chPSA</choiceReferences>
+            <choiceReferences>chNDA</choiceReferences>
+            <dataType>String</dataType>
+            <defaultSelectedChoiceReference>chPSA</defaultSelectedChoiceReference>
+            <fieldText>Type of Contract</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>LegalNegoLookup</name>
+            <extensionName>flowruntime:lookup</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>fieldApiName</name>
+                <value>
+                    <stringValue>Legal_Negotiator__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Legal Negotiator</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>objectApiName</name>
+                <value>
+                    <stringValue>APXT_Redlining__Contract_Agreement__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>DebugMode</name>
+            <fieldText>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;Visible to Sys Admins Only&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Checking this box turns off Composer background mode&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Get_Running_User.Profile.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>System Administrator</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Debug</name>
+            <dataType>Boolean</dataType>
+            <defaultValue>
+                <booleanValue>false</booleanValue>
+            </defaultValue>
+            <fieldText>Debug?</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Get_Running_User.Profile.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>System Administrator</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>PSA_Error_Screen</name>
+        <label>PSA Error Screen</label>
+        <locationX>50</locationX>
+        <locationY>566</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>PSA_ErrorMessage</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 18px;&quot;&gt;Uh oh! This isn&apos;t good.&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;You are missing required fields on the Account. Please go back and confirm that the 2 fields below have the proper values before continuing.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 18px;&quot;&gt;Billing Address:&lt;/strong&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt; {!Get_Account.BillingStreet}, &lt;/span&gt;&lt;span style=&quot;font-size: 18px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!Get_Account.BillingCity}, {!Get_Account.BillingState} {!Get_Account.BillingPostalCode}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 18px;&quot;&gt;Legal Account Name: &lt;/strong&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;{!Get_Account.Legal_Account_Name__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Running_User</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varT_ContractAgreementId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

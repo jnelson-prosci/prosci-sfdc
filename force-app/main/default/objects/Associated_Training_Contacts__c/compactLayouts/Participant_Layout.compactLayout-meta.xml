@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participant_Layout</fullName>
+    <fields>Contact__c</fields>
+    <fields>Pre_work_received__c</fields>
+    <fields>Project_Grouping__c</fields>
+    <fields>Welcome_Dinner__c</fields>
+    <fields>Status__c</fields>
+    <label>Participant Layout</label>
+</CompactLayout>

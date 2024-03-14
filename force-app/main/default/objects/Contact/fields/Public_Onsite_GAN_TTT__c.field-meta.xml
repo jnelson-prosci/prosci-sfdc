@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Public_Onsite_GAN_TTT__c</fullName>
+    <externalId>false</externalId>
+    <label>Public/Onsite/GAN/TTT</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Public</fullName>
+                <default>false</default>
+                <label>Public</label>
+            </value>
+            <value>
+                <fullName>AdPro</fullName>
+                <default>false</default>
+                <label>AdPro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

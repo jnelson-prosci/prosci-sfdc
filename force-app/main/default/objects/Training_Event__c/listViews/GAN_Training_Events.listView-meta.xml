@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GAN_Training_Events</fullName>
+    <columns>NAME</columns>
+    <columns>Training_Company__c</columns>
+    <columns>Type_of_Event__c</columns>
+    <columns>Title__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>No_of_Trainees__c</columns>
+    <columns>Instructor__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Instructor_Type__c</field>
+        <operation>equals</operation>
+        <value>Primary Affiliate,Authorized Training Provider</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <label>GAN Training Events</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

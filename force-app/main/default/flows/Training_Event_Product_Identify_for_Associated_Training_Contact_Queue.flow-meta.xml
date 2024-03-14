@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Is_Create_Customer_Products</name>
+        <label>Is Create Customer Products?</label>
+        <locationX>684</locationX>
+        <locationY>352</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Create_Customer_Products_is_True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Create_Customer_Products__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Customer_Product_Status_to_Pending_on_rel_Associate_Training_Contacts</targetReference>
+            </connector>
+            <label>Create Customer Products is True</label>
+        </rules>
+    </decisions>
+    <description>Enqueues Processes to create Customer Products for Training Event Associated Training Contacts</description>
+    <environments>Default</environments>
+    <interviewLabel>Training Event Product Identify for Associated Training Contact Queue {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Training Event Product Identify for Associated Training Contact Queue</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Customer_Product_Status_to_Pending_on_rel_Associate_Training_Contacts</name>
+        <label>Update Customer Product Status to Pending on rel Associate Training Contacts</label>
+        <locationX>691</locationX>
+        <locationY>568</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Training_Event__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Training_Event__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Customer_Product_Status__c</field>
+            <value>
+                <stringValue>Pending</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Associated_Training_Contacts__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>567</locationX>
+        <locationY>47</locationY>
+        <connector>
+            <targetReference>Is_Create_Customer_Products</targetReference>
+        </connector>
+        <object>Training_Event_Product__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <name>Assign_Contract_Agreement_In_Negotiation</name>
+        <label>Assign Contract Agreement In Negotiation</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>Is_Contract_Agreement_Email.APXT_Redlining__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>In Client Negotiation</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Is_Contract_Agreement_Email.Date_Time_Sent_for_Client_Review__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Contract_Agreement</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Customer_Negotiation_Email_Actions</name>
+        <label>Customer Negotiation Email Actions</label>
+        <locationX>182</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>Update_Contract_Agreement</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sent_for_Customer_Negotiation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Incoming</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Contract_Agreement_In_Negotiation</targetReference>
+            </connector>
+            <label>Sent for Customer Negotiation</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Contract_Agreement_Email_Decision</name>
+        <label>Is Contract Agreement Email</label>
+        <locationX>336</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>NO</defaultConnectorLabel>
+        <rules>
+            <name>YES</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Is_Contract_Agreement_Email.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Customer_Negotiation_Email_Actions</targetReference>
+            </connector>
+            <label>YES</label>
+        </rules>
+    </decisions>
+    <description>Removed Decision for Redlines Returned, Email Notification to Legal and record update for status change.  See previous version for these features (that do not work)</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fEmailDomainProsci</name>
+        <dataType>Boolean</dataType>
+        <expression>CONTAINS({!$Record.FromAddress}, &quot;@prosci.com&quot;)</expression>
+    </formulas>
+    <interviewLabel>Conga - Email Message Updates {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Conga - Email Message Updates</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Is_Contract_Agreement_Email</name>
+        <label>Is Contract Agreement Email?</label>
+        <locationX>336</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Contract_Agreement_Email_Decision</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.RelatedToId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>APXT_Redlining__Contract_Agreement__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Contract_Agreement</name>
+        <label>Update Contract Agreement</label>
+        <locationX>182</locationX>
+        <locationY>839</locationY>
+        <inputReference>Is_Contract_Agreement_Email</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>210</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Contract_Agreement_Email</targetReference>
+        </connector>
+        <object>EmailMessage</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

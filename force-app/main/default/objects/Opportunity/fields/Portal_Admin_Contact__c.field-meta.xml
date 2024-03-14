@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_Admin_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field us used to indicate who from the client is the designated Portal Admin for their license.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field us used to indicate who from the client is the designated Portal Admin for their license.</inlineHelpText>
+    <label>Portal Admin Contact</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Opportunities (Portal Admin Contact)</relationshipLabel>
+    <relationshipName>Opportunities6</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_breached__c</fullName>
+    <externalId>false</externalId>
+    <label>Data breached?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes - Someone has gained unauthorized access to Prosci&apos;s data</fullName>
+                <default>false</default>
+                <label>Yes - Someone has gained unauthorized access to Prosci&apos;s data</label>
+            </value>
+            <value>
+                <fullName>No - I don&apos;t think someone has gained access</fullName>
+                <default>false</default>
+                <label>No - I don&apos;t think someone has gained access</label>
+            </value>
+            <value>
+                <fullName>Unsure - I don&apos;t know if someone has access</fullName>
+                <default>false</default>
+                <label>Unsure - I don&apos;t know if someone has access</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

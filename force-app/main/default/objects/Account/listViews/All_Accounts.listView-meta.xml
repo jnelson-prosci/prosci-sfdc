@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>Chemical Manufacturing,&quot;Energy, Oil, &amp; Gas&quot;,EXTRACTION OF PETROLEUM AND NATURAL GAS</value>
+    </filters>
+    <label>All Accounts</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+        <portalRoleAndSubordinates>AdProChangeSystemsIncPartnerExecutive</portalRoleAndSubordinates>
+        <portalRoleAndSubordinates>AdProChangeSystemsIncPartnerManager</portalRoleAndSubordinates>
+        <portalRoleAndSubordinates>AdProChangeSystemsIncPartnerUser</portalRoleAndSubordinates>
+    </sharedTo>
+</ListView>

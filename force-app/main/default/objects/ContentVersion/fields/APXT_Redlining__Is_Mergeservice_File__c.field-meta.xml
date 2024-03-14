@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APXT_Redlining__Is_Mergeservice_File__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Is Mergeservice File</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

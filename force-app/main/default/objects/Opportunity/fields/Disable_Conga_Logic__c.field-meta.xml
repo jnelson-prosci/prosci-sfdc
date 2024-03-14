@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disable_Conga_Logic__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISBLANK(Fee__c),ISBLANK(Location__c),ISBLANK(Account.PSA_Effective_Date__c),ISBLANK(Day_1__c), text(Count_of_Products__c)=&quot;0&quot;),&quot;1&quot;,&quot;0&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Disable Conga Logic</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

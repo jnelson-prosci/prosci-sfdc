@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Solution_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Product/Solution Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advisory Service</fullName>
+                <default>false</default>
+                <label>Advisory Service</label>
+            </value>
+            <value>
+                <fullName>Digital Product or Tool</fullName>
+                <default>false</default>
+                <label>Digital Product or Tool</label>
+            </value>
+            <value>
+                <fullName>eLearning</fullName>
+                <default>false</default>
+                <label>eLearning</label>
+            </value>
+            <value>
+                <fullName>License</fullName>
+                <default>false</default>
+                <label>License</label>
+            </value>
+            <value>
+                <fullName>Methodology</fullName>
+                <default>false</default>
+                <label>Methodology</label>
+            </value>
+            <value>
+                <fullName>Model</fullName>
+                <default>false</default>
+                <label>Model</label>
+            </value>
+            <value>
+                <fullName>Research Data</fullName>
+                <default>false</default>
+                <label>Research Data</label>
+            </value>
+            <value>
+                <fullName>Training Program</fullName>
+                <default>false</default>
+                <label>Training Program</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

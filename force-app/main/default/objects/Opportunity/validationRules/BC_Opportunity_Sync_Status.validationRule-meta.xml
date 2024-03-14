@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_Opportunity_Sync_Status</fullName>
+    <active>true</active>
+    <description>Block the opportunity from syncing to BC again if it&apos;s already been successfully synced.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(PRIORVALUE(BC_Sync_Status__c),&quot;Synced&quot;),
+ISPICKVAL(BC_Sync_Status__c, &quot;Pending Sync&quot;)
+)</errorConditionFormula>
+    <errorMessage>This Opportunity has already been synced with BC</errorMessage>
+</ValidationRule>

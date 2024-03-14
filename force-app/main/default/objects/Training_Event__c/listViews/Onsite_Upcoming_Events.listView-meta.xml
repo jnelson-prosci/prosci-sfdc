@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Onsite_Upcoming_Events</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Title__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Instructor__c</columns>
+    <columns>Training_Manager__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Projected_Attendance__c</columns>
+    <columns>No_of_Trainees__c</columns>
+    <columns>Account_Manager__c</columns>
+    <columns>Location__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_of_Event__c</field>
+        <operation>equals</operation>
+        <value>Onsite,Conference</value>
+    </filters>
+    <filters>
+        <field>Instructor_Type__c</field>
+        <operation>equals</operation>
+        <value>Prosci,Prosci Canada</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>Title__c</field>
+        <operation>notContain</operation>
+        <value>Audit,Change Management Project Support,Webinar</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notContain</operation>
+        <value>cancelled</value>
+    </filters>
+    <filters>
+        <field>Training_Event_Owner_Division__c</field>
+        <operation>equals</operation>
+        <value>USA</value>
+    </filters>
+    <label>Onsite Upcoming Events</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

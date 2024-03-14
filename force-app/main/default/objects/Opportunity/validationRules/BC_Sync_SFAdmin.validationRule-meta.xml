@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_Sync_SFAdmin</fullName>
+    <active>true</active>
+    <description>Not allowed to sync to BC if the owner is the Salesforce Administrator</description>
+    <errorConditionFormula>OR(AND(
+ISPICKVAL(BC_Sync_Status__c, &quot;Pending Sync&quot;),
+RecordTypeId = &quot;012i0000001N4wi&quot;,
+Owner.Id = &quot;0051Y000008aeBS&quot; ))</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>Change the owner to yourself.  Cannot sync an opportunity with owner as Salesforce Administrator.</errorMessage>
+</ValidationRule>

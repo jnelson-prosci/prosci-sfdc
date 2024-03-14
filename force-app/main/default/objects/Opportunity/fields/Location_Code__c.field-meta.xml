@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_Code__c</fullName>
+    <externalId>false</externalId>
+    <label>Location Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AMAZON</fullName>
+                <default>false</default>
+                <label>AMAZON</label>
+            </value>
+            <value>
+                <fullName>FULFILL</fullName>
+                <default>false</default>
+                <label>FULFILL</label>
+            </value>
+            <value>
+                <fullName>ONSITE</fullName>
+                <default>false</default>
+                <label>ONSITE</label>
+            </value>
+            <value>
+                <fullName>PUBLIC</fullName>
+                <default>false</default>
+                <label>PUBLIC</label>
+            </value>
+            <value>
+                <fullName>DROPSHIP</fullName>
+                <default>false</default>
+                <label>DROPSHIP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

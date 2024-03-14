@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submitter_s_relationship_to_Prosci__c</fullName>
+    <externalId>false</externalId>
+    <label>Submitter&apos;s relationship to Prosci</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GAN</fullName>
+                <default>false</default>
+                <label>GAN</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>PCAI</fullName>
+                <default>false</default>
+                <label>PCAI</label>
+            </value>
+            <value>
+                <fullName>Prosci</fullName>
+                <default>false</default>
+                <label>Prosci</label>
+            </value>
+            <value>
+                <fullName>TTT</fullName>
+                <default>false</default>
+                <label>TTT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

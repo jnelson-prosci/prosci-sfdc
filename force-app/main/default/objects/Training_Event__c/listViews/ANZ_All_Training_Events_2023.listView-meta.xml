@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ANZ_All_Training_Events_2023</fullName>
+    <columns>NAME</columns>
+    <columns>Start_Date__c</columns>
+    <columns>End_Date__c</columns>
+    <columns>No_of_Trainees__c</columns>
+    <columns>No_of_Waitlisted__c</columns>
+    <columns>No_of_Pending__c</columns>
+    <columns>No_of_Cancelled_Trainees__c</columns>
+    <columns>Order_Reference_Number__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Instructor_Type__c</field>
+        <operation>equals</operation>
+        <value>Prosci Australia</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2023</value>
+    </filters>
+    <filters>
+        <field>End_Date__c</field>
+        <operation>lessThan</operation>
+        <value>1/1/2024</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Not available,Cancelled</value>
+    </filters>
+    <label>ANZ All Training Events 2023</label>
+</ListView>

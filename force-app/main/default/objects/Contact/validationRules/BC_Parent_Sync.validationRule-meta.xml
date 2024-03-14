@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_Parent_Sync</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+ISPICKVAL(BC_Sync_Status__c, &quot;Pending Sync&quot;)
+, ISBLANK(Account.BC_Synced_Instances__c)
+, ISPICKVAL(Account.BC_Sync_Status__c, &quot;Synced&quot;)
+)</errorConditionFormula>
+    <errorMessage>The Account must be synced to Business Central before you can sync this Contact.</errorMessage>
+</ValidationRule>

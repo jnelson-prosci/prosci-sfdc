@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_Accounts_created_today</fullName>
+    <columns>NAME</columns>
+    <columns>Created_Date_Time__c</columns>
+    <columns>Active__c</columns>
+    <columns>Email__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Portal Accounts created today</label>
+</ListView>

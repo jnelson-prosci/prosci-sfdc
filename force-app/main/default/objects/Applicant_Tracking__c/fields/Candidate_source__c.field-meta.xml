@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Candidate_source__c</fullName>
+    <externalId>false</externalId>
+    <label>Candidate source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Connenting Colorado</fullName>
+                <default>false</default>
+                <label>Connenting Colorado</label>
+            </value>
+            <value>
+                <fullName>Indeed</fullName>
+                <default>false</default>
+                <label>Indeed</label>
+            </value>
+            <value>
+                <fullName>LinkenIn</fullName>
+                <default>false</default>
+                <label>LinkenIn</label>
+            </value>
+            <value>
+                <fullName>Prosci.com</fullName>
+                <default>false</default>
+                <label>Prosci.com</label>
+            </value>
+            <value>
+                <fullName>Internal Candidate</fullName>
+                <default>false</default>
+                <label>Internal Candidate</label>
+            </value>
+            <value>
+                <fullName>Employee referral</fullName>
+                <default>false</default>
+                <label>Employee referral</label>
+            </value>
+            <value>
+                <fullName>Prosci client</fullName>
+                <default>false</default>
+                <label>Prosci client</label>
+            </value>
+            <value>
+                <fullName>Prosci Career Page</fullName>
+                <default>false</default>
+                <label>Prosci Career Page</label>
+            </value>
+            <value>
+                <fullName>Career Builder</fullName>
+                <default>false</default>
+                <label>Career Builder</label>
+            </value>
+            <value>
+                <fullName>Industry specific site</fullName>
+                <default>false</default>
+                <label>Industry specific site</label>
+            </value>
+            <value>
+                <fullName>College job board</fullName>
+                <default>false</default>
+                <label>College job board</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

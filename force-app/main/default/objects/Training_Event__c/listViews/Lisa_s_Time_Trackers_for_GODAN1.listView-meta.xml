@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lisa_s_Time_Trackers_for_GODAN1</fullName>
+    <booleanFilter>1 AND (2 OR 3) AND 4</booleanFilter>
+    <columns>Start_Date__c</columns>
+    <columns>NAME</columns>
+    <columns>Location__c</columns>
+    <columns>End_Date__c</columns>
+    <columns>Session_Notes__c</columns>
+    <columns>Consulting_Resource_Type_1__c</columns>
+    <columns>Name_of_Resource_1__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>8/1/2019</value>
+    </filters>
+    <filters>
+        <field>OWNER.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>Poshusta-Gregory</value>
+    </filters>
+    <filters>
+        <field>Account_Manager__c</field>
+        <operation>equals</operation>
+        <value>Joelle Goodwin</value>
+    </filters>
+    <filters>
+        <field>Title__c</field>
+        <operation>equals</operation>
+        <value>Consulting</value>
+    </filters>
+    <label>Lisa&apos;s Time Trackers for GODAN</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

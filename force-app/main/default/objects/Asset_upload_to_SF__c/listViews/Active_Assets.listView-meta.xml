@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Assets</fullName>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Processor__c</columns>
+    <columns>Model__c</columns>
+    <columns>Purchase_Date__c</columns>
+    <columns>Serial_Number__c</columns>
+    <columns>Assigned_to__c</columns>
+    <columns>Fixed_Asset__c</columns>
+    <columns>Computer_Name__c</columns>
+    <columns>Invoice_Number__c</columns>
+    <columns>Category__c</columns>
+    <columns>RAM__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Retired_date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Category__c</field>
+        <operation>equals</operation>
+        <value>Computer</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Unallocated Asset</value>
+    </filters>
+    <label>Active Assets</label>
+</ListView>

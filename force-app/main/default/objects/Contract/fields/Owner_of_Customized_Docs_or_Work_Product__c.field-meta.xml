@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Owner_of_Customized_Docs_or_Work_Product__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The entity selected owns any work product created under this License and any intellectual property that is added to the Customized Documents</inlineHelpText>
+    <label>Owner of Customized Docs or Work Product</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prosci</fullName>
+                <default>false</default>
+                <label>Prosci</label>
+            </value>
+            <value>
+                <fullName>Licensee</fullName>
+                <default>false</default>
+                <label>Licensee</label>
+            </value>
+            <value>
+                <fullName>Not Identified</fullName>
+                <default>false</default>
+                <label>Not Identified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

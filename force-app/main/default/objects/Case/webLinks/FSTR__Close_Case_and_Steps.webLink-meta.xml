@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSTR__Close_Case_and_Steps</fullName>
+    <availability>online</availability>
+    <description>Close Case - alternative for AutoClose (for use with Cases used in ProcessComposer processes)</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Close Case and Steps</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/fstr__AutoClose?objName=Case&amp;objId={!Case.Id}&amp;retURL=/{!Case.Id}</url>
+</WebLink>

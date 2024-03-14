@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSTR__New_Task_BP</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Task (BP)</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>{!URLFOR($Action.Task.NewTask, null, [tsk1=FSTR__Business_Process__c.OwnerFullName, tsk1_lkid=FSTR__Business_Process__c.OwnerId,tsk1_lkold=FSTR__Business_Process__c.OwnerId,retURL=&quot;/&quot;&amp; FSTR__Business_Process__c.Id ,what_id=FSTR__Business_Process__c.Id , who_id= FSTR__Business_Process__c.FSTR__ClientId__c,tsk10=&quot;Other&quot;,save_new_url=&quot;/00T/e?retURL=/&quot;&amp;FSTR__Business_Process__c.Id])}</url>
+</WebLink>

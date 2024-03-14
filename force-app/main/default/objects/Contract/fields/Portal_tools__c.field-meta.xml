@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_tools__c</fullName>
+    <externalId>false</externalId>
+    <label>Portal tools</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All current and any developed</fullName>
+                <default>false</default>
+                <label>All current and any developed</label>
+            </value>
+            <value>
+                <fullName>All current</fullName>
+                <default>false</default>
+                <label>All current</label>
+            </value>
+            <value>
+                <fullName>Limited set</fullName>
+                <default>false</default>
+                <label>Limited Set, see Limited Set of Portal Tools Details</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

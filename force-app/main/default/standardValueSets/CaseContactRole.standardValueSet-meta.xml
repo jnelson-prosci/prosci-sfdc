@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Order Contact</fullName>
+        <default>false</default>
+        <label>Order Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Purchasing Contact</fullName>
+        <default>false</default>
+        <label>Purchasing Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Customer</fullName>
+        <default>false</default>
+        <label>General Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>GAN Contact</fullName>
+        <default>false</default>
+        <label>GAN Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Participant</fullName>
+        <default>false</default>
+        <label>Participant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>

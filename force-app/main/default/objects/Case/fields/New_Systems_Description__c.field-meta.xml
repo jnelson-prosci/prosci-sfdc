@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Systems_Description__c</fullName>
+    <description>Involve current or new systems?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Does your project/change involve any current or new systems? If so, please list, including if there will
+be an integration between systems.
+Implication: Creating new processes or data in current or new systems can introduce new information security risk to
+the enterprise. Identifying that risk must be done early in the project to provide time to research mitigating controls
+or delay the project.</inlineHelpText>
+    <label>Current or New Systems Description</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

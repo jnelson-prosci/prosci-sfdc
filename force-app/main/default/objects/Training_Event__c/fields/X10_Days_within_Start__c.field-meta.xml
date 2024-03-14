@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X10_Days_within_Start__c</fullName>
+    <description>Notes whether a training event start date is within 10 business days</description>
+    <externalId>false</externalId>
+    <formula>TODAY()&gt;= Start_Date__c - 14</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>10 Days within Start</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

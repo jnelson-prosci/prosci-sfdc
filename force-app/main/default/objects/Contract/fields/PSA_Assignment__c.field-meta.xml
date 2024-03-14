@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PSA_Assignment__c</fullName>
+    <externalId>false</externalId>
+    <label>PSA Assignment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Neither party may assign</fullName>
+                <default>false</default>
+                <label>Neither party may assign</label>
+            </value>
+            <value>
+                <fullName>Both parties may assign in any event</fullName>
+                <default>false</default>
+                <label>Both parties may assign in any event</label>
+            </value>
+            <value>
+                <fullName>Prosci may assign in any event</fullName>
+                <default>false</default>
+                <label>Prosci may assign in any event</label>
+            </value>
+            <value>
+                <fullName>Company may assign in any event</fullName>
+                <default>false</default>
+                <label>Company may assign in any event</label>
+            </value>
+            <value>
+                <fullName>Both parties may assign in case of a sale, transfer, etc.</fullName>
+                <default>false</default>
+                <label>Both parties may assign in case of a sale, transfer, etc.</label>
+            </value>
+            <value>
+                <fullName>Prosci may assign in the case of a sale, transfer, etc.</fullName>
+                <default>false</default>
+                <label>Prosci may assign in the case of a sale, transfer, etc.</label>
+            </value>
+            <value>
+                <fullName>Company may assign in the case of a sale, transfer, etc.</fullName>
+                <default>false</default>
+                <label>Company may assign in the case of a sale, transfer, etc.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>invoice_requirements__c</fullName>
+    <externalId>false</externalId>
+    <label>Invoice Requirements</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Purchase Order Number</fullName>
+                <default>false</default>
+                <label>Purchase Order Number</label>
+            </value>
+            <value>
+                <fullName>Applicable Contract Number</fullName>
+                <default>false</default>
+                <label>Applicable Contract Number</label>
+            </value>
+            <value>
+                <fullName>Other, see Additional Invoice Requirements</fullName>
+                <default>false</default>
+                <label>Other, see Additional Invoice Requirements</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enterprise Sales Process</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Assess Needs</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Dates Pending</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Done - Alternate Solution</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Done - No Response</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Done - Successful</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Done - Terminated</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Done - Transferred</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Evaluate Partnership</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Identify Opportunity</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>License Confirmed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Negotiate Terms</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Program Confirmed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Propose Solution</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Rescheduled Program</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Verifying</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

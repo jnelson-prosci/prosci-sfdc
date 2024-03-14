@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing</fullName>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>can_we_use_clients_name_publicly__c</columns>
+    <columns>Trademark_logo_restriction__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Marketing</label>
+</ListView>

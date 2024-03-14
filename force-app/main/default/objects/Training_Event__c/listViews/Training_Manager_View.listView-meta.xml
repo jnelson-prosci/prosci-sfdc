@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_Manager_View</fullName>
+    <columns>NAME</columns>
+    <columns>Title__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Assigned_Instructor__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Assigned_Training_Manager__c</field>
+        <operation>contains</operation>
+        <value>Daigle</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>7/1/2021</value>
+    </filters>
+    <label>Training Manager View</label>
+</ListView>

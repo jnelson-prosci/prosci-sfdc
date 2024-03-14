@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prosci_Canada_All_Public_VILT_One_Day</fullName>
+    <booleanFilter>1 AND (2 OR 4) AND 3 AND 5 AND 6</booleanFilter>
+    <columns>NAME</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Title__c</columns>
+    <columns>No_of_Trainees__c</columns>
+    <columns>No_of_Pending__c</columns>
+    <columns>Online_status__c</columns>
+    <columns>Session_Notes__c</columns>
+    <columns>Assigned_Instructor__c</columns>
+    <columns>Co_teach_Instructor__c</columns>
+    <columns>Assigned_Training_Manager__c</columns>
+    <columns>Start_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notContain</operation>
+        <value>Cancelled</value>
+    </filters>
+    <filters>
+        <field>Title__c</field>
+        <operation>equals</operation>
+        <value>TTT - Level 1,TTT - Level 2,ECM Boot Camp,Sponsor,Integrating Agile</value>
+    </filters>
+    <filters>
+        <field>Training_Company__c</field>
+        <operation>equals</operation>
+        <value>Prosci Canada</value>
+    </filters>
+    <filters>
+        <field>Title__c</field>
+        <operation>equals</operation>
+        <value>Methodology Application Program,ECM Workshop,Leading Your Team Through Change,Taking Charge of Change,Improve Project Health,ADKAR Model Mastery Level 1: Prevent Change Resistance,ADKAR Model Mastery Level 2: Resolve Change Barriers</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>Type_of_Event__c</field>
+        <operation>equals</operation>
+        <value>Public</value>
+    </filters>
+    <label>Prosci Canada - All Public VILT One Day</label>
+</ListView>

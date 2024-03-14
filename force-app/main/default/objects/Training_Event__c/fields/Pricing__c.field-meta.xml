@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pricing__c</fullName>
+    <externalId>false</externalId>
+    <label>Pricing</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Standard pricing</fullName>
+                <default>false</default>
+                <label>Standard pricing</label>
+            </value>
+            <value>
+                <fullName>Special pricing</fullName>
+                <default>false</default>
+                <label>Special pricing</label>
+            </value>
+            <value>
+                <fullName>Complimentary</fullName>
+                <default>false</default>
+                <label>Complimentary</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

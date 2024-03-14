@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gauge_my_learning_identify_areas_for_L__c</fullName>
+    <description>This question changed in a survey update from &quot;Gauge my learning/identify areas for learning&quot; to &quot;The program provided opportunities for me to gauge my understanding of the program content&quot;.  Updated label of field to match new question wording.  MB 1/27/22</description>
+    <externalId>false</externalId>
+    <label>Gauge my understanding</label>
+    <precision>7</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

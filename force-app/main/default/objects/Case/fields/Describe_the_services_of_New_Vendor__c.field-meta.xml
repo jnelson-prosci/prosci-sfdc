@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Describe_the_services_of_New_Vendor__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Implication: The use of vendors can introduce new information security risk into the enterprise and into the overall
+business process. That risk must be identified early in the project to provide time to assess the vendor’s information
+security processes and mitigating controls, introduce contractual requirements such as acceptance of liability in the
+event of a security breach introduced through either party, research and implement additional mitigating controls
+on all sides, or delay the project.</inlineHelpText>
+    <label>Describe the services of New Vendor</label>
+    <length>37000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

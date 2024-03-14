@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Utilization_Target__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A target percentage of utilization for this resource. For example, a target of 50% for an 8 hour per day work calendar, results in a 4 hour per day target that the resource should be utilized for.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A target percentage of utilization for this resource. For example, a target of 50% for an 8 hour per day work calendar, results in a 4 hour per day target that the resource should be utilized for.</inlineHelpText>
+    <label>Utilization Target</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

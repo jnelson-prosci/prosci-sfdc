@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Travel_planning</fullName>
+    <columns>Start_Date__c</columns>
+    <columns>NAME</columns>
+    <columns>Instructor__c</columns>
+    <columns>Training_Manager__c</columns>
+    <columns>Airport__c</columns>
+    <columns>Location__c</columns>
+    <columns>End_Date__c</columns>
+    <columns>Title__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Instructor_Type__c</field>
+        <operation>equals</operation>
+        <value>Prosci,Prosci Canada</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>LAST_WEEK</value>
+    </filters>
+    <filters>
+        <field>Training_Event_Owner_Division__c</field>
+        <operation>equals</operation>
+        <value>USA</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>notEqual</operation>
+        <value>VILT</value>
+    </filters>
+    <label>Travel planning</label>
+</ListView>

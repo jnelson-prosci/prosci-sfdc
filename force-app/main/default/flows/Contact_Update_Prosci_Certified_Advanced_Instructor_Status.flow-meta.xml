@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Is_PCAI_Recert_Expired</name>
+        <label>Is PCAI Recert Expired</label>
+        <locationX>176</locationX>
+        <locationY>276</locationY>
+        <defaultConnector>
+            <targetReference>Update_Prosci_Certified_Advanced_Instructor_Field</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Expired</defaultConnectorLabel>
+        <rules>
+            <name>Not_Expired</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PCAI_recert_date__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <elementReference>Today</elementReference>
+                </rightValue>
+            </conditions>
+            <label>Not Expired</label>
+        </rules>
+    </decisions>
+    <description>Update PCAI to expired when the recert day has passed.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Today</name>
+        <dataType>Date</dataType>
+        <expression>today()</expression>
+    </formulas>
+    <interviewLabel>Contact - Update Prosci Certified Advanced Instructor Status {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Contact - Update Prosci Certified Advanced Instructor Status</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Prosci_Certified_Advanced_Instructor_Field</name>
+        <label>Update Prosci Certified Advanced Instructor Field</label>
+        <locationX>308</locationX>
+        <locationY>396</locationY>
+        <inputAssignments>
+            <field>Prosci_Certified_Advanced_Instructor__c</field>
+            <value>
+                <stringValue>Expired</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_PCAI_Recert_Expired</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>PCAI_recert_date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2023-04-10</startDate>
+            <startTime>06:45:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

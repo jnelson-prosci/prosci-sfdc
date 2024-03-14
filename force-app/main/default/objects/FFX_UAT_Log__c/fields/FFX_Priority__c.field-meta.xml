@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FFX_Priority__c</fullName>
+    <externalId>false</externalId>
+    <label>Priority</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>P1 - Critical</fullName>
+                <default>false</default>
+                <label>P1 - Critical</label>
+            </value>
+            <value>
+                <fullName>P2 - High</fullName>
+                <default>false</default>
+                <label>P2 - High</label>
+            </value>
+            <value>
+                <fullName>P3 - Normal</fullName>
+                <default>false</default>
+                <label>P3 - Normal</label>
+            </value>
+            <value>
+                <fullName>P4 - Low</fullName>
+                <default>false</default>
+                <label>P4 - Low</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

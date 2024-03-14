@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Country_Required</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(BillingCountry)</errorConditionFormula>
+    <errorMessage>The country code is required, please enter to save this record</errorMessage>
+</ValidationRule>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Email_Alert_Public_Partnership</name>
+        <label>Email Alert Public Partnership</label>
+        <locationX>138</locationX>
+        <locationY>695</locationY>
+        <actionName>Associated_Training_Contacts__c.Welcome_Email_Alert_HQ_Public_Partnership</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Create_Task</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Associated_Training_Contacts__c.Welcome_Email_Alert_HQ_Public_Partnership</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <description>The decision to see if its pubic VILT Improve project Health</description>
+        <name>is_public_partnership</name>
+        <label>is public Partnership</label>
+        <locationX>226</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>public_partnership</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Type_of_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Public Partnership</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Certification</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_VILT_or_In_Person</targetReference>
+            </connector>
+            <label>public partnership</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_VILT_or_In_Person</name>
+        <label>Is VILT or In Person</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>Email_Alert_Public_Partnership</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>VILT</defaultConnectorLabel>
+        <rules>
+            <name>In_Person</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.VILT_Program__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>In Person</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Send_Welcome_Email</name>
+        <label>Send Welcome Email</label>
+        <locationX>402</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>No Welcome Email</defaultConnectorLabel>
+        <rules>
+            <name>Welcome_Email_to_be_sent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Training_Event__r.No_Welcome_Email__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>is_public_partnership</targetReference>
+            </connector>
+            <label>Welcome Email to be sent</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>subject</name>
+        <dataType>String</dataType>
+        <expression>&quot;Welcome email for &quot;+{!$Record.Training_Event__r.Name}</expression>
+    </formulas>
+    <formulas>
+        <name>today</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Welcome Public Partnership {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Welcome Public Partnership</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Create Task on Contact to note sending of Welcome email</description>
+        <name>Create_Task</name>
+        <label>Create Task</label>
+        <locationX>138</locationX>
+        <locationY>815</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>today</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>subject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type</field>
+            <value>
+                <stringValue>Email</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhoId</field>
+            <value>
+                <elementReference>$Record.Contact__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>276</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_Welcome_Email</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Registered</stringValue>
+            </value>
+        </filters>
+        <object>Associated_Training_Contacts__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

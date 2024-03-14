@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Note_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Note Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-session sponsor</fullName>
+                <default>false</default>
+                <label>Pre-session sponsor</label>
+            </value>
+            <value>
+                <fullName>Post-session sponsor</fullName>
+                <default>false</default>
+                <label>Post-session sponsor</label>
+            </value>
+            <value>
+                <fullName>Session Notes</fullName>
+                <default>false</default>
+                <label>Session Notes</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Course Report</fullName>
+                <default>false</default>
+                <label>Course Report</label>
+            </value>
+            <value>
+                <fullName>Pre-TTT success call</fullName>
+                <default>false</default>
+                <label>Pre-TTT success call</label>
+            </value>
+            <value>
+                <fullName>Audit coaching</fullName>
+                <default>false</default>
+                <label>Audit coaching</label>
+            </value>
+            <value>
+                <fullName>General TTT support</fullName>
+                <default>false</default>
+                <label>General TTT support</label>
+            </value>
+            <value>
+                <fullName>Advanced tracks-Instructor</fullName>
+                <default>false</default>
+                <label>Advanced tracks-Instructor</label>
+            </value>
+            <value>
+                <fullName>Advanced tracks-Deployment</fullName>
+                <default>false</default>
+                <label>Advanced tracks-Deployment</label>
+            </value>
+            <value>
+                <fullName>Advanced tracks-Practitioner</fullName>
+                <default>false</default>
+                <label>Advanced tracks-Practitioner</label>
+            </value>
+            <value>
+                <fullName>Logistics summary</fullName>
+                <default>false</default>
+                <label>Logistics summary</label>
+            </value>
+            <value>
+                <fullName>Open Enrollment call log</fullName>
+                <default>false</default>
+                <label>Open Enrollment call log</label>
+            </value>
+            <value>
+                <fullName>Public Session Course Report</fullName>
+                <default>false</default>
+                <label>Public Session Course Report</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

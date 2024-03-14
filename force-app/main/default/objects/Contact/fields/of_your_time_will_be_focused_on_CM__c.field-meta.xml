@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_your_time_will_be_focused_on_CM__c</fullName>
+    <externalId>false</externalId>
+    <label>% of your time will be focused on CM</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0 - 25%</fullName>
+                <default>false</default>
+                <label>0 - 25%</label>
+            </value>
+            <value>
+                <fullName>26% - 50%</fullName>
+                <default>false</default>
+                <label>26% - 50%</label>
+            </value>
+            <value>
+                <fullName>51% - 75%</fullName>
+                <default>false</default>
+                <label>51% - 75%</label>
+            </value>
+            <value>
+                <fullName>76% - 100%</fullName>
+                <default>false</default>
+                <label>76% - 100%</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

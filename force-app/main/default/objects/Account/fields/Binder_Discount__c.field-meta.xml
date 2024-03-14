@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Binder_Discount__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If this field is blank, please assume that the Licensee receives the most current pricing discount.</inlineHelpText>
+    <label>Binder Discount</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_change_type__c</fullName>
+    <externalId>false</externalId>
+    <label>Project change type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Continuous Improvement: Operating Procedures</fullName>
+                <default>false</default>
+                <label>Continuous Improvement: Operating Procedures</label>
+            </value>
+            <value>
+                <fullName>Continuous Improvement: Regulatory Policies / Practices</fullName>
+                <default>false</default>
+                <label>Continuous Improvement: Regulatory Policies / Practices</label>
+            </value>
+            <value>
+                <fullName>Customer Relationship Management (CRM)/sales management system</fullName>
+                <default>false</default>
+                <label>Customer Relationship Management (CRM)/sales management system</label>
+            </value>
+            <value>
+                <fullName>Electronic conversion</fullName>
+                <default>false</default>
+                <label>Electronic conversion</label>
+            </value>
+            <value>
+                <fullName>Electronic Health Records system</fullName>
+                <default>false</default>
+                <label>Electronic Health Records system</label>
+            </value>
+            <value>
+                <fullName>Enterprise Resource Planning (ERP) system</fullName>
+                <default>false</default>
+                <label>Enterprise Resource Planning (ERP) system</label>
+            </value>
+            <value>
+                <fullName>Human Resources tools/system installation</fullName>
+                <default>false</default>
+                <label>Human Resources tools/system installation</label>
+            </value>
+            <value>
+                <fullName>Innovation: New Market Expansion</fullName>
+                <default>false</default>
+                <label>Innovation: New Market Expansion</label>
+            </value>
+            <value>
+                <fullName>Innovation: New Product Deployment</fullName>
+                <default>false</default>
+                <label>Innovation: New Product Deployment</label>
+            </value>
+            <value>
+                <fullName>Installation of change management</fullName>
+                <default>false</default>
+                <label>Installation of change management</label>
+            </value>
+            <value>
+                <fullName>Installation of Continuous Improvement</fullName>
+                <default>false</default>
+                <label>Installation of Continuous Improvement</label>
+            </value>
+            <value>
+                <fullName>Installation of Lean/Six Sigma</fullName>
+                <default>false</default>
+                <label>Installation of Lean/Six Sigma</label>
+            </value>
+            <value>
+                <fullName>Installation of Strategic Planning</fullName>
+                <default>false</default>
+                <label>Installation of Strategic Planning</label>
+            </value>
+            <value>
+                <fullName>IT hardware upgrade/installation</fullName>
+                <default>false</default>
+                <label>IT hardware upgrade/installation</label>
+            </value>
+            <value>
+                <fullName>IT Software / Hardware Other</fullName>
+                <default>false</default>
+                <label>IT Software / Hardware Other</label>
+            </value>
+            <value>
+                <fullName>IT software upgrade/installation</fullName>
+                <default>false</default>
+                <label>IT software upgrade/installation</label>
+            </value>
+            <value>
+                <fullName>Merger/acquisition</fullName>
+                <default>false</default>
+                <label>Merger/acquisition</label>
+            </value>
+            <value>
+                <fullName>New product deployment/new market expansion</fullName>
+                <default>false</default>
+                <label>New product deployment/new market expansion</label>
+            </value>
+            <value>
+                <fullName>Office move/relocation</fullName>
+                <default>false</default>
+                <label>Office Move / Relocation / Redesign</label>
+            </value>
+            <value>
+                <fullName>Organizational Restructure</fullName>
+                <default>false</default>
+                <label>Organizational Restructure</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Outsourcing</fullName>
+                <default>false</default>
+                <label>Outsourcing</label>
+            </value>
+            <value>
+                <fullName>Performance review system</fullName>
+                <default>false</default>
+                <label>Performance review system</label>
+            </value>
+            <value>
+                <fullName>Personnel Development system (acquisition, talent management)</fullName>
+                <default>false</default>
+                <label>Personnel Development system (acquisition, talent management)</label>
+            </value>
+            <value>
+                <fullName>Process documentation/optimization</fullName>
+                <default>false</default>
+                <label>Process documentation/optimization</label>
+            </value>
+            <value>
+                <fullName>Reduction in force</fullName>
+                <default>false</default>
+                <label>Reduction in force</label>
+            </value>
+            <value>
+                <fullName>Regulatory policies/practices</fullName>
+                <default>false</default>
+                <label>Regulatory policies/practices</label>
+            </value>
+            <value>
+                <fullName>Reorganization</fullName>
+                <default>false</default>
+                <label>Reorganization</label>
+            </value>
+            <value>
+                <fullName>Safety programs/systems</fullName>
+                <default>false</default>
+                <label>Safety programs/systems</label>
+            </value>
+            <value>
+                <fullName>Strategy: Change Management Deployment</fullName>
+                <default>false</default>
+                <label>Strategy: Change Management Deployment</label>
+            </value>
+            <value>
+                <fullName>Culture change</fullName>
+                <default>false</default>
+                <label>Strategy: Culture Change</label>
+            </value>
+            <value>
+                <fullName>Strategy: Strategic Plan Implementation</fullName>
+                <default>false</default>
+                <label>Strategy: Strategic Plan Implementation</label>
+            </value>
+            <value>
+                <fullName>Virtual work environment</fullName>
+                <default>false</default>
+                <label>Virtual work environment</label>
+            </value>
+            <value>
+                <fullName>Diversity Equity &amp; Inclusion</fullName>
+                <default>false</default>
+                <label>Diversity Equity &amp; Inclusion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

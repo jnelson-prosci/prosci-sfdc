@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Added_To_Project__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Indicates this was previously added to a project during the create project process. If checked it will not be picked up in the next create project</description>
+    <externalId>false</externalId>
+    <label>Added To Project</label>
+    <type>Checkbox</type>
+</CustomField>

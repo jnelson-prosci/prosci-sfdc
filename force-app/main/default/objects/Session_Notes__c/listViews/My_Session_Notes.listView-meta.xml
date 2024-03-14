@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Session_Notes</fullName>
+    <columns>NAME</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>General_Observations__c</columns>
+    <columns>Instructor__c</columns>
+    <columns>Training_Event__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Session Notes</label>
+</ListView>

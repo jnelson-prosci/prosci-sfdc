@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Org_CM_Maturity__c</fullName>
+    <description>What is your overall sense of Org maturity re: CM?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What is your overall sense of Org maturity re: CM?</inlineHelpText>
+    <label>Org CM Maturity</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Non-existent</fullName>
+                <default>false</default>
+                <label>Non-existent</label>
+            </value>
+            <value>
+                <fullName>Some but not great</fullName>
+                <default>false</default>
+                <label>Some but not great</label>
+            </value>
+            <value>
+                <fullName>Pretty Good</fullName>
+                <default>false</default>
+                <label>Pretty Good</label>
+            </value>
+            <value>
+                <fullName>Advanced</fullName>
+                <default>false</default>
+                <label>Advanced</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

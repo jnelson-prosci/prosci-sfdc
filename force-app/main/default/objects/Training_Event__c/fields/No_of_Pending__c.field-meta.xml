@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_of_Pending__c</fullName>
+    <externalId>false</externalId>
+    <label>No of Pending</label>
+    <summaryFilterItems>
+        <field>Associated_Training_Contacts__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Pending - Awaiting Payment, Pending - Awaiting Approval</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Associated_Training_Contacts__c.Training_Event__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

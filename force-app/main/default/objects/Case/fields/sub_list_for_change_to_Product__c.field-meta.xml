@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sub_list_for_change_to_Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub list for Change to Product or Soluti</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advanced Immersion Workshop</fullName>
+                <default>false</default>
+                <label>Advanced Immersion Workshop</label>
+            </value>
+            <value>
+                <fullName>Certification</fullName>
+                <default>false</default>
+                <label>Certification</label>
+            </value>
+            <value>
+                <fullName>Certification for Consultants</fullName>
+                <default>false</default>
+                <label>Certification for Consultants</label>
+            </value>
+            <value>
+                <fullName>Change Management Project Support</fullName>
+                <default>false</default>
+                <label>Change Management Project Support</label>
+            </value>
+            <value>
+                <fullName>Change Portfolio Workshop</fullName>
+                <default>false</default>
+                <label>Change Portfolio Workshop</label>
+            </value>
+            <value>
+                <fullName>CM Planning Workshop</fullName>
+                <default>false</default>
+                <label>CM Planning Workshop</label>
+            </value>
+            <value>
+                <fullName>Delivering Project Results Workshop</fullName>
+                <default>false</default>
+                <label>Delivering Project Results Workshop</label>
+            </value>
+            <value>
+                <fullName>ECM Boot Camp</fullName>
+                <default>false</default>
+                <label>ECM Boot Camp</label>
+            </value>
+            <value>
+                <fullName>Employee</fullName>
+                <default>false</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Experienced Practitioner Program</fullName>
+                <default>false</default>
+                <label>Experienced Practitioner Program</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Change Workshop</fullName>
+                <default>false</default>
+                <label>Fundamentals of Change Workshop</label>
+            </value>
+            <value>
+                <fullName>Integrating Agile</fullName>
+                <default>false</default>
+                <label>Integrating Agile</label>
+            </value>
+            <value>
+                <fullName>Manager</fullName>
+                <default>false</default>
+                <label>Manager</label>
+            </value>
+            <value>
+                <fullName>Sponsor</fullName>
+                <default>false</default>
+                <label>Sponsor</label>
+            </value>
+            <value>
+                <fullName>Strategic Alignment Workshop</fullName>
+                <default>false</default>
+                <label>Strategic Alignment Workshop</label>
+            </value>
+            <value>
+                <fullName>TTT</fullName>
+                <default>false</default>
+                <label>TTT</label>
+            </value>
+            <value>
+                <fullName>Prosci Portal</fullName>
+                <default>false</default>
+                <label>Prosci Portal</label>
+            </value>
+            <value>
+                <fullName>Pract. eToolkit</fullName>
+                <default>false</default>
+                <label>Pract. eToolkit</label>
+            </value>
+            <value>
+                <fullName>Impact Index</fullName>
+                <default>false</default>
+                <label>Impact Index</label>
+            </value>
+            <value>
+                <fullName>ADKAR Dashboard</fullName>
+                <default>false</default>
+                <label>ADKAR Dashboard</label>
+            </value>
+            <value>
+                <fullName>PC Analyzer</fullName>
+                <default>false</default>
+                <label>PC Analyzer</label>
+            </value>
+            <value>
+                <fullName>Research Hub</fullName>
+                <default>false</default>
+                <label>Research Hub</label>
+            </value>
+            <value>
+                <fullName>eLearning</fullName>
+                <default>false</default>
+                <label>eLearning</label>
+            </value>
+            <value>
+                <fullName>AGILE Impact Index</fullName>
+                <default>false</default>
+                <label>AGILE Impact Index</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

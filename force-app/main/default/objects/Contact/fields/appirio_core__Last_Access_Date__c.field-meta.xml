@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>appirio_core__Last_Access_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Contains a timestamp for the most recent &quot;login&quot; of this feature user, to be used for PIN expiration.</description>
+    <externalId>false</externalId>
+    <label>Deprecated:Last Access Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

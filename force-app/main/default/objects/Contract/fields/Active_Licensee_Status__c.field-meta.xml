@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Licensee_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Active Licensee Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Not Active</fullName>
+                <default>false</default>
+                <label>Not Active</label>
+            </value>
+            <value>
+                <fullName>Not on Active Structure</fullName>
+                <default>false</default>
+                <label>Not on Active Structure</label>
+            </value>
+            <value>
+                <fullName>Legacy License (Never Active)</fullName>
+                <default>false</default>
+                <label>Legacy License (Never Active)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

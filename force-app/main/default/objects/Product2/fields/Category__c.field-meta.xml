@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>cont-ih</fullName>
+                <default>false</default>
+                <label>Content: Instructor Hub</label>
+            </value>
+            <value>
+                <fullName>cont-rh</fullName>
+                <default>false</default>
+                <label>Content: Research Hub</label>
+            </value>
+            <value>
+                <fullName>cont-elrn-en</fullName>
+                <default>false</default>
+                <label>Content: English Elearning</label>
+            </value>
+            <value>
+                <fullName>cont-elrn-pt</fullName>
+                <default>false</default>
+                <label>Content: Portugese Elearning</label>
+            </value>
+            <value>
+                <fullName>cont-elrn-es</fullName>
+                <default>false</default>
+                <label>Content: Spanish Elearning</label>
+            </value>
+            <value>
+                <fullName>cont-elrn-fr</fullName>
+                <default>false</default>
+                <label>Content: French Elearning</label>
+            </value>
+            <value>
+                <fullName>cont-advtrk</fullName>
+                <default>false</default>
+                <label>Content: Advanced Tracks</label>
+            </value>
+            <value>
+                <fullName>cont</fullName>
+                <default>false</default>
+                <label>Other Content</label>
+            </value>
+            <value>
+                <fullName>lgy</fullName>
+                <default>false</default>
+                <label>Legacy Apps</label>
+            </value>
+            <value>
+                <fullName>lgy-rsrc</fullName>
+                <default>false</default>
+                <label>Legacy Resources</label>
+            </value>
+            <value>
+                <fullName>lgy-web</fullName>
+                <default>false</default>
+                <label>Legacy Webinars</label>
+            </value>
+            <value>
+                <fullName>other</fullName>
+                <default>false</default>
+                <label>Other Resources</label>
+            </value>
+            <value>
+                <fullName>cont-kh</fullName>
+                <default>false</default>
+                <label>Content: Knowledge Hub</label>
+            </value>
+            <value>
+                <fullName>apps</fullName>
+                <default>false</default>
+                <label>Apps</label>
+            </value>
+            <value>
+                <fullName>bundles</fullName>
+                <default>false</default>
+                <label>Bundles</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

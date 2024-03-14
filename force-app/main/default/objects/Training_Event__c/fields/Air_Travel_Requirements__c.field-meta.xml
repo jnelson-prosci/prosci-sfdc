@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Air_Travel_Requirements__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>These are the requirements we must follow when booking a flight in order for Prosci to be reimbursed in full.</inlineHelpText>
+    <label>Air Travel Requirements</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Enrollment_Material_Orders</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Order_No__c</columns>
+    <columns>Event_Start_Date__c</columns>
+    <columns>Progtype_Code__c</columns>
+    <columns>Shipment_Date__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Associated_Training_Contact__c</columns>
+    <columns>BC_Synced__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Product_Order</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Done - Not Required,Pending Prepayment</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>bookstore</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>magento</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>1/25/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Category_Code__c</field>
+        <operation>equals</operation>
+        <value>Public</value>
+    </filters>
+    <label>Open Enrollment Material Orders</label>
+    <sharedTo>
+        <group>Public_logistics</group>
+    </sharedTo>
+</ListView>

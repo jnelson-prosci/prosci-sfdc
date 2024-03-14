@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Break_Even_Date__c</fullName>
+    <description>Date in which the number of registrations(count of registered or scheduled to attend ATC) reached the breakeven point of 8</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date in which the number of registrations(count of registered or scheduled to attend ATC) reached the breakeven point of 8</inlineHelpText>
+    <label>Break Even Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

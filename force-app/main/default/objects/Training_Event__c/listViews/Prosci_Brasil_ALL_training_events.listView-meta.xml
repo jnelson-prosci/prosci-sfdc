@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prosci_Brasil_ALL_training_events</fullName>
+    <columns>NAME</columns>
+    <columns>Instructor__c</columns>
+    <columns>Training_Manager__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Status__c</columns>
+    <columns>End_User_Company__c</columns>
+    <columns>Title__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Instructor_Type__c</field>
+        <operation>equals</operation>
+        <value>Prosci Brasil</value>
+    </filters>
+    <label>Prosci Brasil ALL training events</label>
+</ListView>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Conference</fullName>
+        <default>false</default>
+        <label>Conference</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Direct Mail</fullName>
+        <default>false</default>
+        <label>Direct Mail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Drip Marketing/eCourses</fullName>
+        <default>false</default>
+        <label>Drip Marketing/eCourses</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Tutorial List</fullName>
+        <default>false</default>
+        <label>General Tutorial List</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Media</fullName>
+        <default>false</default>
+        <label>Social Media</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Targeted Marketing</fullName>
+        <default>false</default>
+        <label>Targeted Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar</fullName>
+        <default>false</default>
+        <label>Webinar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Public Session Conversion</fullName>
+        <default>false</default>
+        <label>Public Session Conversion</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Advertisement</fullName>
+        <default>false</default>
+        <label>Advertisement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Being Human Change Mentoring</fullName>
+        <default>false</default>
+        <label>Being Human Change Mentoring</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Being Human Graduate Master Class</fullName>
+        <default>false</default>
+        <label>Being Human Graduate Master Class</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Building Organsational Change Capability</fullName>
+        <default>false</default>
+        <label>Building Organsational Change Capability</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Change Capability Consulting</fullName>
+        <default>false</default>
+        <label>Change Capability Consulting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Change Conversations Seminar</fullName>
+        <default>false</default>
+        <label>Change Conversations Seminar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Change Management Planning Workshop</fullName>
+        <default>false</default>
+        <label>Change Management Planning Workshop</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Change-Ability - Inhouse</fullName>
+        <default>false</default>
+        <label>Change-Ability - Inhouse</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Change-Ability - Public</fullName>
+        <default>false</default>
+        <label>Change-Ability - Public</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CM Maturity Audit Workshop</fullName>
+        <default>false</default>
+        <label>CM Maturity Audit Workshop</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contracting</fullName>
+        <default>false</default>
+        <label>Contracting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Navigating Change Option 2</fullName>
+        <default>false</default>
+        <label>Navigating Change Option 2</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prosci Advanced Change Management</fullName>
+        <default>false</default>
+        <label>Prosci Advanced Change Management</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prosci CM Workshops with Tim Creasey</fullName>
+        <default>false</default>
+        <label>Prosci CM Workshops with Tim Creasey</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prosci Graduate Networking Event</fullName>
+        <default>false</default>
+        <label>Prosci Graduate Networking Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prosci In Practice</fullName>
+        <default>false</default>
+        <label>Prosci In Practice</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prosci Project Support Team Program</fullName>
+        <default>false</default>
+        <label>Prosci Project Support Team Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prosci TTT/Site License</fullName>
+        <default>false</default>
+        <label>Prosci TTT/Site License</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Seminar / Conference</fullName>
+        <default>false</default>
+        <label>Seminar / Conference</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Seminar</fullName>
+        <default>false</default>
+        <label>Seminar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Speaking Engagement</fullName>
+        <default>false</default>
+        <label>Speaking Engagement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Special Projects</fullName>
+        <default>false</default>
+        <label>Special Projects</label>
+    </standardValue>
+</StandardValueSet>

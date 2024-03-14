@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Generate PSA</fullName>
+        <default>false</default>
+        <label>Generate PSA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PSA – Awaiting response</fullName>
+        <default>false</default>
+        <label>PSA – Awaiting response</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PSA – Provide response</fullName>
+        <default>false</default>
+        <label>PSA – Provide response</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PSA – Received signed PSA</fullName>
+        <default>false</default>
+        <label>PSA – Received signed PSA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Generate SOW</fullName>
+        <default>false</default>
+        <label>Generate SOW</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SOW – Awaiting response</fullName>
+        <default>false</default>
+        <label>SOW – Awaiting response</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SOW – Provide response</fullName>
+        <default>false</default>
+        <label>SOW – Provide response</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SOW – Received signed SOW</fullName>
+        <default>false</default>
+        <label>SOW – Received signed SOW</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Generate License</fullName>
+        <default>false</default>
+        <label>Generate License</label>
+    </standardValue>
+    <standardValue>
+        <fullName>License – Awaiting response</fullName>
+        <default>false</default>
+        <label>License – Awaiting response</label>
+    </standardValue>
+    <standardValue>
+        <fullName>License – Provide response</fullName>
+        <default>false</default>
+        <label>License – Provide response</label>
+    </standardValue>
+    <standardValue>
+        <fullName>License – Received signed license</fullName>
+        <default>false</default>
+        <label>License – Received signed license</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call</fullName>
+        <default>false</default>
+        <label>Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Letter</fullName>
+        <default>false</default>
+        <label>Send Letter</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Quote</fullName>
+        <default>false</default>
+        <label>Send Quote</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>

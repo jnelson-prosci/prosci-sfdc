@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Departments_and_Team_Members__c</fullName>
+    <description>Departments and Team Members associated with this project/change</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please list the departments and team members associated with this project/change.</inlineHelpText>
+    <label>Departments and Team Members</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

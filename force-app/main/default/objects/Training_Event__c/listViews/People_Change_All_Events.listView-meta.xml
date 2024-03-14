@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>People_Change_All_Events</fullName>
+    <columns>NAME</columns>
+    <columns>Instructor__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Title__c</columns>
+    <columns>Location__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Training_Company__c</field>
+        <operation>equals</operation>
+        <value>People Change</value>
+    </filters>
+    <label>People Change All Events</label>
+    <sharedTo>
+        <portalRole>PeopleChangePartnerExecutive</portalRole>
+        <portalRole>PeopleChangePartnerManager</portalRole>
+        <portalRole>PeopleChangePartnerUser</portalRole>
+    </sharedTo>
+</ListView>

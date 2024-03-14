@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <decisions>
+        <name>Was_NPS_Survey_Changed</name>
+        <label>Was NPS Survey Changed?</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Update_related_contact_roles_false</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NPS_Survey_was_Changed_to_true</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Send_NPS_Survey__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Send_NPS_Survey__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_related_contact_roles</targetReference>
+            </connector>
+            <label>NPS Survey was Changed to true</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Today</name>
+        <dataType>Date</dataType>
+        <expression>Today()</expression>
+    </formulas>
+    <interviewLabel>Project - Project level trigger to send NPS record triggered survey {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Project - Project level trigger to send NPS record triggered survey</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_related_contact_roles</name>
+        <label>Update related contact roles</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Role__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Survey Contact</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Send_NPS_Survey__c</field>
+            <value>
+                <elementReference>$Record.Send_NPS_Survey__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Contact_Roles__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_related_contact_roles_false</name>
+        <label>Update related contact roles false</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Role__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Survey Contact</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Send_NPS_Survey__c</field>
+            <value>
+                <elementReference>$Record.Send_NPS_Survey__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Contact_Roles__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Was_NPS_Survey_Changed</targetReference>
+        </connector>
+        <object>pse__Proj__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>GAN Support</fullName>
+        <default>false</default>
+        <label>GAN Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Order Fulfillment</fullName>
+        <default>false</default>
+        <label>Order Fulfillment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Policy or Procedure</fullName>
+        <default>false</default>
+        <label>Policy or Procedure</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Portal Login Support</fullName>
+        <default>false</default>
+        <label>Portal Login Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Satisfaction</fullName>
+        <default>false</default>
+        <label>Product Satisfaction</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Support</fullName>
+        <default>false</default>
+        <label>Product Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Route to Acct Team</fullName>
+        <default>false</default>
+        <label>Route to Acct Team</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Route to Training</fullName>
+        <default>false</default>
+        <label>Route to Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TTT Support</fullName>
+        <default>false</default>
+        <label>TTT Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prosci CAN</fullName>
+        <default>false</default>
+        <label>Prosci CAN</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prosci ANZ</fullName>
+        <default>false</default>
+        <label>Prosci ANZ</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Gan Dept</fullName>
+        <default>false</default>
+        <label>Gan Dept</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Training Logistics</fullName>
+        <default>false</default>
+        <label>Training Logistics</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Progam Advisors</fullName>
+        <default>false</default>
+        <label>Progam Advisors</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Master Instructor</fullName>
+        <default>false</default>
+        <label>Master Instructor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Training Manager</fullName>
+        <default>false</default>
+        <label>Training Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Legal</fullName>
+        <default>false</default>
+        <label>Legal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Growth</fullName>
+        <default>false</default>
+        <label>Growth</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <label>Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Affiliates</fullName>
+        <default>false</default>
+        <label>Affiliates</label>
+    </standardValue>
+    <standardValue>
+        <fullName>License Holders</fullName>
+        <default>false</default>
+        <label>License Holders</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Clients</fullName>
+        <default>false</default>
+        <label>Clients</label>
+    </standardValue>
+</StandardValueSet>

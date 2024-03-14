@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role__c</fullName>
+    <externalId>false</externalId>
+    <label>Role</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Acclaim Issuer</fullName>
+                <default>false</default>
+                <label>Acclaim Issuer</label>
+            </value>
+            <value>
+                <fullName>Account Contact</fullName>
+                <default>false</default>
+                <label>Account Contact</label>
+            </value>
+            <value>
+                <fullName>Admin</fullName>
+                <default>false</default>
+                <label>Admin</label>
+            </value>
+            <value>
+                <fullName>Business Contact</fullName>
+                <default>false</default>
+                <label>Business Contact</label>
+            </value>
+            <value>
+                <fullName>Business Development</fullName>
+                <default>false</default>
+                <label>Business Development</label>
+            </value>
+            <value>
+                <fullName>Business Development Lead</fullName>
+                <default>false</default>
+                <label>Business Development Lead</label>
+            </value>
+            <value>
+                <fullName>Decision Maker</fullName>
+                <default>false</default>
+                <label>Decision Maker</label>
+            </value>
+            <value>
+                <fullName>Executive Decision Maker</fullName>
+                <default>false</default>
+                <label>Executive Decision Maker</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Firmex</fullName>
+                <default>false</default>
+                <label>Firmex</label>
+            </value>
+            <value>
+                <fullName>Firmex - eLearning</fullName>
+                <default>false</default>
+                <label>Firmex - eLearning</label>
+            </value>
+            <value>
+                <fullName>GAN Primary Contact</fullName>
+                <default>false</default>
+                <label>GAN Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Instructor</fullName>
+                <default>false</default>
+                <label>Instructor</label>
+            </value>
+            <value>
+                <fullName>License Contact</fullName>
+                <default>false</default>
+                <label>License Contact</label>
+            </value>
+            <value>
+                <fullName>Operations</fullName>
+                <default>false</default>
+                <label>Operations</label>
+            </value>
+            <value>
+                <fullName>Operations Lead</fullName>
+                <default>false</default>
+                <label>Operations Lead</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Portal admin</fullName>
+                <default>false</default>
+                <label>Portal admin</label>
+            </value>
+            <value>
+                <fullName>President / Managing Director</fullName>
+                <default>false</default>
+                <label>President / Managing Director</label>
+            </value>
+            <value>
+                <fullName>Procurement Contact</fullName>
+                <default>false</default>
+                <label>Procurement Contact</label>
+            </value>
+            <value>
+                <fullName>Survey Contact</fullName>
+                <default>false</default>
+                <label>Survey Contact</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

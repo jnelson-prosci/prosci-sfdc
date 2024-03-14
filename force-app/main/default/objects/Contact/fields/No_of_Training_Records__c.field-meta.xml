@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_of_Training_Records__c</fullName>
+    <externalId>false</externalId>
+    <label>No. of Training Records</label>
+    <summaryForeignKey>Associated_Training_Contacts__c.Contact__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

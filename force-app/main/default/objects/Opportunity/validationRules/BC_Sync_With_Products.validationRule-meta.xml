@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_Sync_With_Products</fullName>
+    <active>true</active>
+    <description>Verifies that an opportunity has products before allowing sync</description>
+    <errorConditionFormula>AND(
+Count_of_Products__c = 0
+, ISPICKVAL(BC_Sync_Status__c, &quot;Pending Sync&quot;)
+)</errorConditionFormula>
+    <errorMessage>Add products before syncing with Business Central</errorMessage>
+</ValidationRule>

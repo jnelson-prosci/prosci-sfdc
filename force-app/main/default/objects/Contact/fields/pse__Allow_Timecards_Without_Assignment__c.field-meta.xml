@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Allow_Timecards_Without_Assignment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Check this if resource should be treated as  &apos;Global&apos; Resources.
+&apos;Global&apos; Resources can enter time for any Project, even if that Project normally requires Assignments for Time Entry.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this if resource should be treated as  &apos;Global&apos; Resources.
+&apos;Global&apos; Resources can enter time for any Project, even if that Project normally requires Assignments for Time Entry.</inlineHelpText>
+    <label>Allow Timecards Without Assignment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

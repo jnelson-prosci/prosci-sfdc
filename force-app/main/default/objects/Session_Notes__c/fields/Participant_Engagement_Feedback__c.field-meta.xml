@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participant_Engagement_Feedback__c</fullName>
+    <description>Comments for how engaged participants were</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Comments for how engaged participants were</inlineHelpText>
+    <label>Participant Engagement Feedback</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>15</visibleLines>
+</CustomField>

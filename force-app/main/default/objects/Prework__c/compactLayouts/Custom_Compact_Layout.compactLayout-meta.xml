@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Years_Experience__c</fields>
+    <fields>Project_change_type__c</fields>
+    <fields>Percentage_Time_On_Change_Management__c</fields>
+    <fields>Current_Change_Management_Competency__c</fields>
+    <fields>Activist_Learning_Style_Rank__c</fields>
+    <fields>Pragmatist_Learning_Style_Rank__c</fields>
+    <fields>Reflector_Learning_Style_Rank__c</fields>
+    <fields>Theorist_Learning_Style_Rank__c</fields>
+    <label>Custom Compact Layout</label>
+</CompactLayout>

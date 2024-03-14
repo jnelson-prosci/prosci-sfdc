@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Virtual_Programs_Breezie</fullName>
+    <booleanFilter>1 AND 2 and (3 or 4) and 5</booleanFilter>
+    <columns>Start_Date__c</columns>
+    <columns>Projected_Attendance__c</columns>
+    <columns>NAME</columns>
+    <columns>No_of_Trainees__c</columns>
+    <columns>Online_status__c</columns>
+    <columns>Project_Count__c</columns>
+    <columns>No_of_Pending__c</columns>
+    <columns>Assigned_Training_Manager__c</columns>
+    <columns>Assigned_Instructor__c</columns>
+    <columns>Co_Teach_Instructor_Lookup__c</columns>
+    <columns>Session_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>virtual</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Training_Event__c.Prosci_Training_Event</value>
+    </filters>
+    <filters>
+        <field>OWNER.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Breezie</value>
+    </filters>
+    <filters>
+        <field>OWNER.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>Semonchick</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>9/28/2020</value>
+    </filters>
+    <label>Virtual Programs - Breezie</label>
+    <sharedTo>
+        <role>GAN_Director</role>
+        <role>Marketing_Manager</role>
+        <role>Marketing_User</role>
+    </sharedTo>
+</ListView>

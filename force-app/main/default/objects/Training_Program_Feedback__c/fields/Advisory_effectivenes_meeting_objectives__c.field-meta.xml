@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advisory_effectivenes_meeting_objectives__c</fullName>
+    <description>Please rate your advisory facilitators effectiveness in meeting the session objectives</description>
+    <externalId>false</externalId>
+    <label>Advisory effectivenes meeting objectives</label>
+    <precision>7</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

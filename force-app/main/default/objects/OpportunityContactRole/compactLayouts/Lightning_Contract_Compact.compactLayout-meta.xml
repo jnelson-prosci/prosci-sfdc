@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lightning_Contract_Compact</fullName>
+    <fields>OpportunityId</fields>
+    <fields>ContactId</fields>
+    <fields>Contact_Email__c</fields>
+    <fields>Role</fields>
+    <fields>IsPrimary</fields>
+    <label>Lightning Contract Compact</label>
+</CompactLayout>

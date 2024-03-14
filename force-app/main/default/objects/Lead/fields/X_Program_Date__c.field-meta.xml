@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X_Program_Date__c</fullName>
+    <externalId>false</externalId>
+    <label>Program Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Clear Mountain Lodge</fullName>
+                <default>false</default>
+                <label>Clear Mountain Lodge</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>US_In_Person</fullName>
+    <columns>Start_Date__c</columns>
+    <columns>Online_status__c</columns>
+    <columns>Projected_Attendance__c</columns>
+    <columns>Title__c</columns>
+    <columns>NAME</columns>
+    <columns>Session_Notes__c</columns>
+    <columns>No_of_Trainees__c</columns>
+    <columns>No_of_Pending__c</columns>
+    <columns>Assigned_Instructor__c</columns>
+    <columns>Assigned_Training_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Training_Event__c.Prosci_Training_Event</value>
+    </filters>
+    <filters>
+        <field>Type_of_Event__c</field>
+        <operation>equals</operation>
+        <value>Public,Public Partnership</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>6/1/2023</value>
+    </filters>
+    <filters>
+        <field>Instructor_Type__c</field>
+        <operation>equals</operation>
+        <value>Prosci</value>
+    </filters>
+    <filters>
+        <field>Location__c</field>
+        <operation>notEqual</operation>
+        <value>VILT</value>
+    </filters>
+    <filters>
+        <field>Title__c</field>
+        <operation>equals</operation>
+        <value>Certification</value>
+    </filters>
+    <label>US In Person</label>
+</ListView>

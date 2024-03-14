@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_Program_would_like_to_attend__c</fullName>
+    <externalId>false</externalId>
+    <label>Training Program would like to attend</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ECM Boot camp</fullName>
+                <default>false</default>
+                <label>ECM Boot camp</label>
+            </value>
+            <value>
+                <fullName>Taking Charge of Change</fullName>
+                <default>false</default>
+                <label>Taking Charge of Change</label>
+            </value>
+            <value>
+                <fullName>Leading Your Teams Through Change</fullName>
+                <default>false</default>
+                <label>Leading Your Teams Through Change</label>
+            </value>
+            <value>
+                <fullName>Change Management Certification</fullName>
+                <default>false</default>
+                <label>Change Management Certification</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

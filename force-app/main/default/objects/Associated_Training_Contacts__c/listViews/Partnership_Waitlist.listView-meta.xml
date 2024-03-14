@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partnership_Waitlist</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>Contact__c</columns>
+    <columns>Account_Name__c</columns>
+    <columns>Internal_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Training_Event__c</field>
+        <operation>equals</operation>
+        <value>Waitlist Partnership</value>
+    </filters>
+    <label>Partnership Waitlist</label>
+</ListView>

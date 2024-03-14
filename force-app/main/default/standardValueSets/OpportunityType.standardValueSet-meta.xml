@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>License</fullName>
+        <default>false</default>
+        <label>License</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Onsite Training</fullName>
+        <default>false</default>
+        <label>Onsite Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Order</fullName>
+        <default>false</default>
+        <label>Product Order</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Public Certification</fullName>
+        <default>false</default>
+        <label>Public Certification</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TTT Public</fullName>
+        <default>false</default>
+        <label>TTT Public</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Advanced</fullName>
+        <default>false</default>
+        <label>Advanced</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ECM Boot Camp</fullName>
+        <default>false</default>
+        <label>ECM Boot Camp</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Training Material Order</fullName>
+        <default>false</default>
+        <label>Training Material Order</label>
+    </standardValue>
+    <standardValue>
+        <fullName>License Update</fullName>
+        <default>false</default>
+        <label>License Update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Strategic Support Services</fullName>
+        <default>false</default>
+        <label>Strategic Support Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Enterprise Deployment</fullName>
+        <default>false</default>
+        <label>Enterprise Deployment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing Promotion</fullName>
+        <default>false</default>
+        <label>Marketing Promotion</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Advertisement</fullName>
+        <default>false</default>
+        <label>Advertisement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bookstore Order</fullName>
+        <default>false</default>
+        <label>Bookstore Order</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Change Community Member</fullName>
+        <default>false</default>
+        <label>Change Community Member</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Clients - current or previous</fullName>
+        <default>false</default>
+        <label>Clients - current or previous</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Heart Place Scholarship</fullName>
+        <default>false</default>
+        <label>Heart Place Scholarship</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral from BH team</fullName>
+        <default>false</default>
+        <label>Referral from BH team</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral from Clients current/previous</fullName>
+        <default>false</default>
+        <label>Referral from Clients current/previous</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral from CMI</fullName>
+        <default>false</default>
+        <label>Referral from CMI</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral from Prosci</fullName>
+        <default>false</default>
+        <label>Referral from Prosci</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Speaking Event</fullName>
+        <default>false</default>
+        <label>Speaking Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web search</fullName>
+        <default>false</default>
+        <label>Web search</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar Participant</fullName>
+        <default>false</default>
+        <label>Webinar Participant</label>
+    </standardValue>
+</StandardValueSet>

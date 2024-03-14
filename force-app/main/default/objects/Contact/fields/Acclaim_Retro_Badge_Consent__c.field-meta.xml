@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acclaim_Retro_Badge_Consent__c</fullName>
+    <description>Updated the label on this firld to better match the re-brand from Acclaim to Credly and the purpose of the field.  It is no longer for Retro badging, it is now for all badging.  MB 2/22/22</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the date that the participant gave us consent to issue all retro badges.</inlineHelpText>
+    <label>Credly Consent Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APXT_Redlining__Send_for_Negotiation</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>page</linkType>
+    <masterLabel>Send for Negotiation</masterLabel>
+    <openType>replace</openType>
+    <page>APXT_Redlining__apxt_sendForNegotiation</page>
+    <protected>false</protected>
+</WebLink>

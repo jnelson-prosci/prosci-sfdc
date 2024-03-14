@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A_Authority__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Who&apos;s the executive sponsor of this effort? 
+How are these decisions usually made at your company? 
+Who else is involved in the decision making process? 
+Are there other people that will weigh in on this decision?</inlineHelpText>
+    <label>A-Authority</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

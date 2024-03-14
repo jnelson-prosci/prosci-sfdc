@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Virtual_Programs_Public_and_Partnership2</fullName>
+    <columns>Start_Date__c</columns>
+    <columns>Online_status__c</columns>
+    <columns>Title__c</columns>
+    <columns>NAME</columns>
+    <columns>Projected_Attendance__c</columns>
+    <columns>Project_Count__c</columns>
+    <columns>Session_Notes__c</columns>
+    <columns>No_of_Trainees__c</columns>
+    <columns>No_of_Pending__c</columns>
+    <columns>Assigned_Instructor__c</columns>
+    <columns>Assigned_Training_Manager__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>virtual</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Training_Event__c.Prosci_Training_Event</value>
+    </filters>
+    <filters>
+        <field>Type_of_Event__c</field>
+        <operation>equals</operation>
+        <value>Public,Public Partnership</value>
+    </filters>
+    <label>Virtual Programs Public and Partnership</label>
+</ListView>

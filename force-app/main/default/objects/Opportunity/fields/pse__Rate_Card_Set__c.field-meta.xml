@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Rate_Card_Set__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>A rate card set, composed of multiple separate rate cards, determines which rate cards are applied to a project</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A rate card set, composed of multiple separate rate cards, determines which rate cards are applied to a project</inlineHelpText>
+    <label>Rate Card Set</label>
+    <referenceTo>pse__Rate_Card_Set__c</referenceTo>
+    <relationshipLabel>Rate Card Set Opportunities</relationshipLabel>
+    <relationshipName>Rate_Card_Set_Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

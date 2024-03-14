@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Attended</fullName>
+                <default>false</default>
+                <label>Attended</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Certified</fullName>
+                <default>false</default>
+                <label>Certified</label>
+            </value>
+            <value>
+                <fullName>Registered</fullName>
+                <default>false</default>
+                <label>Registered</label>
+            </value>
+            <value>
+                <fullName>Registered - wanting to move</fullName>
+                <default>false</default>
+                <label>Registered - wanting to move</label>
+            </value>
+            <value>
+                <fullName>Pending - Awaiting Payment</fullName>
+                <default>false</default>
+                <label>Pending - Awaiting Payment</label>
+            </value>
+            <value>
+                <fullName>Pending - Awaiting Approval</fullName>
+                <default>false</default>
+                <label>Pending - Awaiting Approval</label>
+            </value>
+            <value>
+                <fullName>Scheduled to Attend</fullName>
+                <default>false</default>
+                <label>Scheduled to Attend</label>
+            </value>
+            <value>
+                <fullName>Waitlisted</fullName>
+                <default>false</default>
+                <label>Waitlisted</label>
+            </value>
+            <value>
+                <fullName>Partially Attended</fullName>
+                <default>false</default>
+                <label>Partially Attended</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>Atended</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Atended</label>
+            </value>
+            <value>
+                <fullName>Atteneded</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Atteneded</label>
+            </value>
+            <value>
+                <fullName>Awaiting Payment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Awaiting Payment</label>
+            </value>
+            <value>
+                <fullName>Certfied</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Certfied</label>
+            </value>
+            <value>
+                <fullName>Certifed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Certifed</label>
+            </value>
+            <value>
+                <fullName>Certifield</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Certifield</label>
+            </value>
+            <value>
+                <fullName>Failed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Failed</label>
+            </value>
+            <value>
+                <fullName>ITEM insert</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ITEM insert</label>
+            </value>
+            <value>
+                <fullName>Invited</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invited</label>
+            </value>
+            <value>
+                <fullName>Logistics Contact</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Logistics Contact</label>
+            </value>
+            <value>
+                <fullName>No show</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No show</label>
+            </value>
+            <value>
+                <fullName>Not Certified</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not Certified</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Schedueld to attend</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Schedueld to attend</label>
+            </value>
+            <value>
+                <fullName>Schedueled to Attend</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Schedueled to Attend</label>
+            </value>
+            <value>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Scheduled</label>
+            </value>
+            <value>
+                <fullName>Scheduled to Attended</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Scheduled to Attended</label>
+            </value>
+            <value>
+                <fullName>Scheled to Attend</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Scheled to Attend</label>
+            </value>
+            <value>
+                <fullName>Scheuled to attend</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Scheuled to attend</label>
+            </value>
+            <value>
+                <fullName>Sponsor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sponsor</label>
+            </value>
+            <value>
+                <fullName>Status</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Status</label>
+            </value>
+            <value>
+                <fullName>Waiting List</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Waiting List</label>
+            </value>
+            <value>
+                <fullName>Waitlist</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Waitlist</label>
+            </value>
+            <value>
+                <fullName>status needed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>status needed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

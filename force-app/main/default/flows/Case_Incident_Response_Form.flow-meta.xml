@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <name>Assign_Severity</name>
+        <label>Assign Severity</label>
+        <locationX>50</locationX>
+        <locationY>782</locationY>
+        <assignmentItems>
+            <assignToReference>SeverityScore</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>MalwareSeverityCalculation</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Severity_Score</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Severity1</name>
+        <label>Assign Severity</label>
+        <locationX>314</locationX>
+        <locationY>782</locationY>
+        <assignmentItems>
+            <assignToReference>SeverityScore</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SystemOutageSeverityCalc</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Severity_Score</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Severity2</name>
+        <label>Assign Severity</label>
+        <locationX>578</locationX>
+        <locationY>782</locationY>
+        <assignmentItems>
+            <assignToReference>SeverityScore</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ImproperUseSeverityCalc</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Severity_Score</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>Application</name>
+        <choiceText>Application</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Application</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Between_24_48_hours</name>
+        <choiceText>Between 24-48 hours</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Between 24-48 hours</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Business_Central</name>
+        <choiceText>Business Central</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>NAV</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Business_Continuity</name>
+        <choiceText>Business Continuity</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Business Continuity</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Cloud_System_or_Application</name>
+        <choiceText>Cloud System or Application</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Cloud System or Application</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Desktop_Hardware</name>
+        <choiceText>Desktop Hardware</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <elementReference>Desktop_Hardware</elementReference>
+        </value>
+    </choices>
+    <choices>
+        <name>Desktop_Hardware_1</name>
+        <choiceText>Desktop Hardware</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Desktop Hardware</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Hardware</name>
+        <choiceText>Hardware</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Hardware</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Hubspot</name>
+        <choiceText>Hubspot</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Hubspot</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Improper_Use_of_Prosci_Systems_Data</name>
+        <choiceText>Improper Use of Prosci Systems/Data</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Improper Use of Prosci Systems/Data</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>In_the_last_24_hours</name>
+        <choiceText>In the last 24 hours</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>In the last 24 hours</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Individual</name>
+        <choiceText>Individual</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Individual</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Loss_or_theft_of_equipment</name>
+        <choiceText>Loss or Theft of Equipment</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Loss or Theft of Equipment</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Magento</name>
+        <choiceText>Magento</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Magento</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Malware</name>
+        <choiceText>Malware</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Malware</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>More_than_48_hours_ago</name>
+        <choiceText>More than 48 hours ago</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>More than 48 hours ago</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Multiple_Departments</name>
+        <choiceText>Multiple Departments</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Multiple Departments</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Multiple_Markets</name>
+        <choiceText>Multiple Markets</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Multiple Markets</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Multiple_People_whole_department</name>
+        <choiceText>Multiple People/Whole Department</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Multiple People/Whole Department</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Network</name>
+        <choiceText>Network</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Network</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>No</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>No_I_dont_think_someone_has_gained_access</name>
+        <choiceText>&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;No - I don&apos;t think someone has gained access&lt;/span&gt;</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No - I don&apos;t think someone has gained access</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>No_I_dont_think_someone_has_gained_access_to_data</name>
+        <choiceText>No - I don&apos;t think someone has gained access&lt;p&gt;&lt;br&gt;&lt;/p&gt;</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No - I don&apos;t think someone has gained access</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>O365</name>
+        <choiceText>O365</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>O365</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Only_1</name>
+        <choiceText>Only 1</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Only 1</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Other</name>
+        <choiceText>Other</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Other</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Other_External_Malware</name>
+        <choiceText>Other External Malware</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Other External Malware</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Performance_Issue</name>
+        <choiceText>Performance Issue</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Performance Issue</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Phishing_Attack</name>
+        <choiceText>Phishing Attack</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Phishing Attack</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Phones</name>
+        <choiceText>Phones</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Phones</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Pollev</name>
+        <choiceText>Pollev</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Pollev</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Portal</name>
+        <choiceText>Portal</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Portal</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Printers</name>
+        <choiceText>Printers</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Printers</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Privacy</name>
+        <choiceText>Privacy</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Privacy</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Salesforce</name>
+        <choiceText>Salesforce</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Salesforce</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Security</name>
+        <choiceText>Security</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Security</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Server_Hardware</name>
+        <choiceText>Server Hardware</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Server Hardware</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Suspected_unauthorized_access</name>
+        <choiceText>Suspected Unauthorized Access</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Suspected Unauthorized Access</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>System_Degradation</name>
+        <choiceText>System Degradation</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>System Degradation</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>System_Outage</name>
+        <choiceText>System Outage</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>System_Outage</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>System_Outage_Degradation</name>
+        <choiceText>System Outage/Degradation</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>System Outage/Degradation</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>The_Whole_Company</name>
+        <choiceText>The Whole Company</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>The Whole Company </stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Unauthorized_Software</name>
+        <choiceText>Unauthorized Software</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Unauthorized Software</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Unsure_I_dont_know_if_someone_has_access</name>
+        <choiceText>Unsure - I don&apos;t know if someone has access</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Unsure - I don&apos;t know if someone has access</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Violation_of_InfoSec_Policies</name>
+        <choiceText>Violation of InfoSec Policies</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Violation of InfoSec Policies</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Wifi</name>
+        <choiceText>Wifi</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Wifi</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Yes</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Yes_Someone_has_gained_unauthorized_access_to_Prosci_s_data</name>
+        <choiceText>Yes - Someone has gained unauthorized access to Prosci&apos;s data</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes - Someone has gained unauthorized access to Prosci&apos;s data</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Yes_Someone_has_gained_unauthorized_access_to_Prosci_s_systems</name>
+        <choiceText>Yes - Someone has gained unauthorized access to Prosci&apos;s systems</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes - Someone has gained unauthorized access to Prosci&apos;s systems</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Zoom</name>
+        <choiceText>Zoom</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Zoom</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>File_upload</name>
+        <label>File upload</label>
+        <locationX>446</locationX>
+        <locationY>1082</locationY>
+        <defaultConnector>
+            <targetReference>SuccessScreen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Checked</defaultConnectorLabel>
+        <rules>
+            <name>check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>File_checkbox</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>file_upload_screen</targetReference>
+            </connector>
+            <label>Check</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Incident_Category</name>
+        <label>Incident Category</label>
+        <locationX>446</locationX>
+        <locationY>674</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>File_upload</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Malware_IC</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Incident_Categories</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Malware</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Severity</targetReference>
+            </connector>
+            <label>Malware</label>
+        </rules>
+        <rules>
+            <name>System_Outage_Degradation_IC</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Incident_Categories</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>System_Outage_Degradation</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Severity1</targetReference>
+            </connector>
+            <label>System Outage/Degradation</label>
+        </rules>
+        <rules>
+            <name>Improper_Use_of_Prosci_Systems_Data_IC</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Incident_Categories</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Improper_Use_of_Prosci_Systems_Data</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>X1_Are_you_reporting_a_violation_of_Prosci_s_acceptable_use_policy</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Yes</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Severity2</targetReference>
+            </connector>
+            <label>Improper Use of Prosci Systems/Data</label>
+        </rules>
+    </decisions>
+    <description>NJ</description>
+    <dynamicChoiceSets>
+        <name>DataBreachedPLV</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Data_breached__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>IncidentCategoryPLV</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Incident_Category__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <description>Picklist values for Security Breached field</description>
+        <name>SecurityBreachPLV</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Security_Breached__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <description>List of values from Case&gt;System field</description>
+        <name>SystemPLV</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>System__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <description>Yes/No Picklist values from Violation reporting field</description>
+        <name>ViolationReportingPLV</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Reporting_violation_of_acceptable_use__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <formulas>
+        <name>ImproperUseSeverityCalc</name>
+        <dataType>String</dataType>
+        <expression>IF(
+{!Get_Incident_Response_Case.Incident_Response_Score__c}&lt;8.25, &quot;Level 5&quot;,
+IF(
+AND({!Get_Incident_Response_Case.Incident_Response_Score__c}&gt;8, 
+{!Get_Incident_Response_Case.Incident_Response_Score__c}&lt;11.25), &quot;Level 4&quot;,
+IF(
+AND({!Get_Incident_Response_Case.Incident_Response_Score__c}&gt;11, 
+{!Get_Incident_Response_Case.Incident_Response_Score__c}&lt;13.25), &quot;Level 3&quot;,
+IF(
+AND({!Get_Incident_Response_Case.Incident_Response_Score__c}&gt;13, 
+{!Get_Incident_Response_Case.Incident_Response_Score__c}&lt;16.25), &quot;Level 2&quot;,
+&quot;Level 1&quot;))))</expression>
+    </formulas>
+    <formulas>
+        <name>MalwareSeverityCalculation</name>
+        <dataType>String</dataType>
+        <expression>IF(
+{!Get_Incident_Response_Case.Incident_Response_Score__c}&lt;11.25, &quot;Level 5&quot;,
+IF(
+AND({!Get_Incident_Response_Case.Incident_Response_Score__c}&gt;11, 
+{!Get_Incident_Response_Case.Incident_Response_Score__c}&lt;14.25), &quot;Level 4&quot;,
+IF(
+AND({!Get_Incident_Response_Case.Incident_Response_Score__c}&gt;14, 
+{!Get_Incident_Response_Case.Incident_Response_Score__c}&lt;17.25), &quot;Level 3&quot;,
+IF(
+AND({!Get_Incident_Response_Case.Incident_Response_Score__c}&gt;17, 
+{!Get_Incident_Response_Case.Incident_Response_Score__c}&lt;20.25), &quot;Level 2&quot;,
+&quot;Level 1&quot;))))</expression>
+    </formulas>
+    <formulas>
+        <description>Assigned priority level based on severity</description>
+        <name>PriorityLevelValue</name>
+        <dataType>String</dataType>
+        <expression>CASE(TEXT({!SeverityScore}),
+&quot;Level 1&quot;,&quot;High&quot;,
+&quot;Level 2&quot;,&quot;High&quot;,
+&quot;Level 3&quot;,&quot;Medium&quot;,
+&quot;Level 4&quot;,&quot;Medium&quot;,
+&quot;Low&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>SubjectName</name>
+        <dataType>String</dataType>
+        <expression>IF( {!X1_Are_you_reporting_a_violation_of_Prosci_s_acceptable_use_policy}= &quot;Yes&quot;,
+ &quot;New Incident Response &quot;+ &quot;Improper Use of Prosci Systems/Data&quot;+&quot;, Sev Level: &quot;+RIGHT(TEXT({!SeverityScore}), 1),
+&quot;New Incident Response &quot;+ {!Incident_Categories} +&quot;, Sev Level: &quot;+RIGHT(TEXT({!SeverityScore}), 1))</expression>
+    </formulas>
+    <formulas>
+        <name>SystemOutageSeverityCalc</name>
+        <dataType>String</dataType>
+        <expression>IF(
+{!Get_Incident_Response_Case.Incident_Response_Score__c}&lt;6.25, &quot;Level 5&quot;,
+IF(
+AND({!Get_Incident_Response_Case.Incident_Response_Score__c}&gt;6, 
+{!Get_Incident_Response_Case.Incident_Response_Score__c}&lt;7.25), &quot;Level 4&quot;,
+IF(
+AND({!Get_Incident_Response_Case.Incident_Response_Score__c}&gt;9, 
+{!Get_Incident_Response_Case.Incident_Response_Score__c}&lt;9.25), &quot;Level 3&quot;,
+IF(
+AND({!Get_Incident_Response_Case.Incident_Response_Score__c}&gt;9, 
+{!Get_Incident_Response_Case.Incident_Response_Score__c}&lt;11.25), &quot;Level 2&quot;,
+&quot;Level 1&quot;))))</expression>
+    </formulas>
+    <formulas>
+        <name>UserFullName</name>
+        <dataType>String</dataType>
+        <expression>{!$User.FirstName}+ &quot; &quot;+{!$User.LastName}</expression>
+    </formulas>
+    <interviewLabel>Case - Incident Response Form {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case - Incident Response Form</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <description>Create a Case in &quot;Incident Response&quot; record type with values entered in the previous screen</description>
+        <name>Create_a_Case_Incident_Response</name>
+        <label>Create a Case - Incident Response</label>
+        <locationX>446</locationX>
+        <locationY>458</locationY>
+        <assignRecordIdToReference>varNewCaseRecord.Id</assignRecordIdToReference>
+        <connector>
+            <targetReference>Get_Incident_Response_Case</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Data_breached__c</field>
+            <value>
+                <elementReference>X14_Are_you_already_aware_that_someone_has_unauthorized_access_to_Prosci_s_data</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Have_you_clicked_on_any_links__c</field>
+            <value>
+                <elementReference>X7_Have_you_clicked_on_any_links_in_the_phishing_email</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>How_was_incident_discovered__c</field>
+            <value>
+                <elementReference>How_was_incident_discovered</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Improper_Use_of_Systems_Data_Description__c</field>
+            <value>
+                <elementReference>Improper_Use_of_Systems_Data_Description</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Improper_Use_of_Systems_Data_Type__c</field>
+            <value>
+                <elementReference>X9_What_type_of_improper_use_of_Prosci_Systems_Data</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Incident_Category__c</field>
+            <value>
+                <elementReference>Incident_Categories</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Is_this_an_outage_or_performance_issue__c</field>
+            <value>
+                <elementReference>Is_this_an_outage_or_a_performance_issue</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Malware_Description__c</field>
+            <value>
+                <elementReference>Malware_Description</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Salesforce</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Outage_performance_issue_description__c</field>
+            <value>
+                <elementReference>Outage_Performance_Issue_Description</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>varIncRespQueueGroupId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>People_affected__c</field>
+            <value>
+                <elementReference>X15_How_many_people_are_affected_by_this_incident</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Prosci_RiskM__c</field>
+            <value>
+                <elementReference>X12_What_is_Prosci_at_risk_of_with_this_incident_Please_see_descriptions_below_a</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Prosci_Risk_Description__c</field>
+            <value>
+                <elementReference>Prosci_Risk_Description</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>varIncidentCaseRecordTypeId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Reporting_violation_of_acceptable_use__c</field>
+            <value>
+                <elementReference>X1_Are_you_reporting_a_violation_of_Prosci_s_acceptable_use_policy</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Security_Breached__c</field>
+            <value>
+                <elementReference>X13_Are_you_already_aware_that_someone_has_unauthorized_access_to_Prosci_s_techn</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>System__c</field>
+            <value>
+                <elementReference>X10_What_System_systems_are_involved</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>What_is_the_incident_related_to__c</field>
+            <value>
+                <elementReference>X11_What_technology_is_the_incident_related_to</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>What_type_of_Malware__c</field>
+            <value>
+                <elementReference>Type_of_Malware</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>When_was_the_incident_discovered__c</field>
+            <value>
+                <elementReference>X4_When_was_the_incident_discovered</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Your_Email_Address__c</field>
+            <value>
+                <elementReference>$User.Email</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Your_Name__c</field>
+            <value>
+                <elementReference>UserFullName</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Incident_Response_Case</name>
+        <label>Get Incident Response Case</label>
+        <locationX>446</locationX>
+        <locationY>566</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Incident_Category</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varNewCaseRecord.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Incident_Response_Queue_Id</name>
+        <label>Get Incident Response Queue Id</label>
+        <locationX>446</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Record_Type_Id</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Incident_Response_Queue</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>varIncRespQueueGroupId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieve record type id for incident case</description>
+        <name>Get_Record_Type_Id</name>
+        <label>Get Record Type Id</label>
+        <locationX>446</locationX>
+        <locationY>350</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_a_Case_Incident_Response</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Case</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Incident_Response</stringValue>
+            </value>
+        </filters>
+        <object>RecordType</object>
+        <outputAssignments>
+            <assignToReference>varIncidentCaseRecordTypeId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Severity_Score</name>
+        <label>Update Severity Score</label>
+        <locationX>446</locationX>
+        <locationY>974</locationY>
+        <connector>
+            <targetReference>File_upload</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varNewCaseRecord.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <elementReference>PriorityLevelValue</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Severity_Level__c</field>
+            <value>
+                <elementReference>SeverityScore</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>SubjectName</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <screens>
+        <name>Case_Incident_Response</name>
+        <label>Case - Incident Response</label>
+        <locationX>446</locationX>
+        <locationY>134</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Get_Incident_Response_Queue_Id</targetReference>
+        </connector>
+        <fields>
+            <name>X1_Are_you_reporting_a_violation_of_Prosci_s_acceptable_use_policy</name>
+            <choiceReferences>ViolationReportingPLV</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Are you a reporting violation of Prosci&apos;s acceptable use policy?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Case_Incident_Response_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Case_Incident_Response_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>YourNameText</name>
+                    <fieldText>&lt;p&gt;Your Name: {!UserFullName}&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>YourEmailAddressText</name>
+                    <fieldText>&lt;p&gt;Your Email Address: {!$User.Email}&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>How_was_incident_discovered</name>
+                    <dataType>String</dataType>
+                    <fieldText>How was incident discovered?</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <fields>
+                    <name>X4_When_was_the_incident_discovered</name>
+                    <choiceReferences>In_the_last_24_hours</choiceReferences>
+                    <choiceReferences>Between_24_48_hours</choiceReferences>
+                    <choiceReferences>More_than_48_hours_ago</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>When was the incident discovered?</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <fields>
+                    <name>Incident_Categories</name>
+                    <choiceReferences>IncidentCategoryPLV</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Which of the following categories describes your incident best (see descriptions below)?</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <helpText>&lt;p&gt;1. &lt;strong&gt;Malware&lt;/strong&gt; - This includes phishing attacks, unauthorized software and other external malware (2.0)&lt;/p&gt;&lt;p&gt;2. &lt;strong&gt;System Outage/Performance Issue&lt;/strong&gt; - Is a system not working at all or part of the system not working as expected? (1.0)&lt;/p&gt;&lt;p&gt;3. &lt;strong&gt;Improper use of Prosci systems/data&lt;/strong&gt; - Loss/theft of equipment, suspected unauthorized access, 	violation of InfoSec Policies)&lt;/p&gt;</helpText>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <visibilityRule>
+                        <conditionLogic>and</conditionLogic>
+                        <conditions>
+                            <leftValueReference>X1_Are_you_reporting_a_violation_of_Prosci_s_acceptable_use_policy</leftValueReference>
+                            <operator>EqualTo</operator>
+                            <rightValue>
+                                <elementReference>No</elementReference>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>Case_Incident_Response_Section2</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Case_Incident_Response_Section2_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Type_of_Malware</name>
+                    <choiceReferences>Phishing_Attack</choiceReferences>
+                    <choiceReferences>Unauthorized_Software</choiceReferences>
+                    <choiceReferences>Other_External_Malware</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Specifically what type of Malware?</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <fields>
+                    <name>Malware_Description</name>
+                    <fieldText>Malware Description</fieldText>
+                    <fieldType>LargeTextArea</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                </fields>
+                <fields>
+                    <name>X7_Have_you_clicked_on_any_links_in_the_phishing_email</name>
+                    <choiceReferences>Yes</choiceReferences>
+                    <choiceReferences>No</choiceReferences>
+                    <choiceReferences>Unsure_I_dont_know_if_someone_has_access</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Have you clicked on any links in the phishing email?</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Incident_Categories</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>Malware</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Case_Incident_Response_Section3</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Case_Incident_Response_Section3_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Is_this_an_outage_or_a_performance_issue</name>
+                    <choiceReferences>System_Outage</choiceReferences>
+                    <choiceReferences>Performance_Issue</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Is this an outage or a performance issue</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <fields>
+                    <name>Outage_Performance_Issue_Description</name>
+                    <fieldText>Outage/Performance Issue Description</fieldText>
+                    <fieldType>LargeTextArea</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Incident_Categories</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>System_Outage_Degradation</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Case_Incident_Response_Section4</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Case_Incident_Response_Section4_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>X9_What_type_of_improper_use_of_Prosci_Systems_Data</name>
+                    <choiceReferences>Loss_or_theft_of_equipment</choiceReferences>
+                    <choiceReferences>Suspected_unauthorized_access</choiceReferences>
+                    <choiceReferences>Violation_of_InfoSec_Policies</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>What type of improper use of Prosci Systems/Data</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <fields>
+                    <name>Improper_Use_of_Systems_Data_Description</name>
+                    <fieldText>Improper Use of Systems/Data Description</fieldText>
+                    <fieldType>LargeTextArea</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+            <visibilityRule>
+                <conditionLogic>(1 AND 3) OR 2</conditionLogic>
+                <conditions>
+                    <leftValueReference>Incident_Categories</leftValueReference>
+                    <operator>Contains</operator>
+                    <rightValue>
+                        <stringValue>Improper</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>X1_Are_you_reporting_a_violation_of_Prosci_s_acceptable_use_policy</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>Yes</elementReference>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>X1_Are_you_reporting_a_violation_of_Prosci_s_acceptable_use_policy</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>No</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>X10_What_System_systems_are_involved</name>
+            <choiceReferences>SystemPLV</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>What primary system is involved?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>X11_What_technology_is_the_incident_related_to</name>
+            <choiceReferences>Desktop_Hardware</choiceReferences>
+            <choiceReferences>Network</choiceReferences>
+            <choiceReferences>Cloud_System_or_Application</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>What technology is the incident related to?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>X12_What_is_Prosci_at_risk_of_with_this_incident_Please_see_descriptions_below_a</name>
+            <choiceReferences>Security</choiceReferences>
+            <choiceReferences>Privacy</choiceReferences>
+            <choiceReferences>Business_Continuity</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>What is Prosci at risk of with this incident? Please see descriptions below and select all that apply:</fieldText>
+            <fieldType>MultiSelectCheckboxes</fieldType>
+            <helpText>&lt;p&gt;1. &lt;strong&gt;Security&lt;/strong&gt; - Someone is trying/has breached Prosci’s technology systems 1.5&lt;/p&gt;&lt;p&gt;2. &lt;strong&gt;Privacy&lt;/strong&gt; - Someone has breached Prosci’s technology systems &amp;nbsp;and is trying/has accessed data 2.0&lt;/p&gt;&lt;p&gt;3. &lt;strong&gt;Business Continuity&lt;/strong&gt; – Some/all of Prosci Employees can&apos;t fully complete their duties 1.0&lt;/p&gt;</helpText>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Prosci_Risk_Description</name>
+            <fieldText>Prosci Risk Description</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>X13_Are_you_already_aware_that_someone_has_unauthorized_access_to_Prosci_s_techn</name>
+            <choiceReferences>SecurityBreachPLV</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Are you already aware that someone has unauthorized access to Prosci’s technology systems?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>X14_Are_you_already_aware_that_someone_has_unauthorized_access_to_Prosci_s_data</name>
+            <choiceReferences>DataBreachedPLV</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Are you already aware that someone has unauthorized access to Prosci’s data?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>X15_How_many_people_are_affected_by_this_incident</name>
+            <choiceReferences>Only_1</choiceReferences>
+            <choiceReferences>Multiple_People_whole_department</choiceReferences>
+            <choiceReferences>Multiple_Departments</choiceReferences>
+            <choiceReferences>Multiple_Markets</choiceReferences>
+            <choiceReferences>The_Whole_Company</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>How many people are affected by this incident?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>File_checkbox</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Please check if there are files to upload</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>file_upload_screen</name>
+        <label>file upload screen</label>
+        <locationX>314</locationX>
+        <locationY>1190</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>SuccessScreen</targetReference>
+        </connector>
+        <fields>
+            <name>fileupload</name>
+            <extensionName>forceContent:fileUpload</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Incident Response File Upload</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>multiple</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>contentDocIds</name>
+                <value>
+                    <elementReference>FileIDs</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>Create_a_Case_Incident_Response</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>SuccessScreen</name>
+        <label>SuccessScreen</label>
+        <locationX>446</locationX>
+        <locationY>1382</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SuccessText</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Congrats! The case has been successfully created!&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>320</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Case_Incident_Response</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>FileIDs</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>FilerecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>SeverityScore</name>
+        <dataType>Picklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varIncidentCaseRecordTypeId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Id of the Incident Response Queue</description>
+        <name>varIncRespQueueGroupId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varNewCaseRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Effective_Date__c</fullName>
+    <description>This is the effective date for a new employee, leaving employee, or transitioning employee</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the effective date for a new employee, leaving employee, or transitioning employee</inlineHelpText>
+    <label>Effective Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Physical product problem</fullName>
+        <default>false</default>
+        <label>Physical product problem</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Did not understand product before order</fullName>
+        <default>false</default>
+        <label>Did not understand product before order</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Product doesn’t meet needs</fullName>
+        <default>false</default>
+        <label>Product doesn’t meet needs</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Shipped to wrong address</fullName>
+        <default>false</default>
+        <label>Shipped to wrong address</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Shipped wrong quantity</fullName>
+        <default>false</default>
+        <label>Shipped wrong quantity</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Shipped wrong product</fullName>
+        <default>false</default>
+        <label>Shipped wrong product</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Missing item</fullName>
+        <default>false</default>
+        <label>Missing item</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Did not arrive on time</fullName>
+        <default>false</default>
+        <label>Did not arrive on time</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Issue with policy</fullName>
+        <default>false</default>
+        <label>Issue with policy</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Change email</fullName>
+        <default>false</default>
+        <label>Change email</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Registration assistance</fullName>
+        <default>false</default>
+        <label>Registration assistance</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Subscription management (cancel)</fullName>
+        <default>false</default>
+        <label>Subscription management (cancel)</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Subscription management (renew/purchase)</fullName>
+        <default>false</default>
+        <label>Subscription management (renew/purchase)</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>ADKAR Dashboard Support</fullName>
+        <default>false</default>
+        <label>ADKAR Dashboard Support</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>eBest Practice Support</fullName>
+        <default>false</default>
+        <label>eBest Practice Support</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>eBest Practice Audit Support</fullName>
+        <default>false</default>
+        <label>eBest Practice Audit Support</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>CMROI Calc Support</fullName>
+        <default>false</default>
+        <label>CMROI Calc Support</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>PCT Analyzer Support</fullName>
+        <default>false</default>
+        <label>PCT Analyzer Support</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Maturity Model Audit Support</fullName>
+        <default>false</default>
+        <label>Maturity Model Audit Support</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar support</fullName>
+        <default>false</default>
+        <label>Webinar support</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>NA</fullName>
+        <default>false</default>
+        <label>NA</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Forgot Username or Password</fullName>
+        <default>false</default>
+        <label>Forgot Username or Password</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Trial Help</fullName>
+        <default>false</default>
+        <label>Trial Help</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Purchase tool help</fullName>
+        <default>false</default>
+        <label>Purchase tool help</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Software</fullName>
+        <default>false</default>
+        <label>Software</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Hardware</fullName>
+        <default>false</default>
+        <label>Hardware</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Networking</fullName>
+        <default>false</default>
+        <label>Networking</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Training Issue</fullName>
+        <default>false</default>
+        <label>Training Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Could not reproduce issue</fullName>
+        <default>false</default>
+        <label>Could not reproduce issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>No contact from Customer</fullName>
+        <default>false</default>
+        <label>No contact from Customer</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Forward to other department</fullName>
+        <default>false</default>
+        <label>Forward to other department</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Tool functionality</fullName>
+        <default>false</default>
+        <label>Tool functionality</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Resource Help</fullName>
+        <default>false</default>
+        <label>Resource Help</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Login Help</fullName>
+        <default>false</default>
+        <label>Login Help</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Vendor handoff</fullName>
+        <default>false</default>
+        <label>Vendor handoff</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

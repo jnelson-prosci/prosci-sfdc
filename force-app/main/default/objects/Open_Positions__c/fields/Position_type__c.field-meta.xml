@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Position_type__c</fullName>
+    <externalId>false</externalId>
+    <label>Position type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Full-time</fullName>
+                <default>false</default>
+                <label>Full-time</label>
+            </value>
+            <value>
+                <fullName>Part-time (30 hours)</fullName>
+                <default>false</default>
+                <label>Part-time (30 hours)</label>
+            </value>
+            <value>
+                <fullName>Part-time (25 hours)</fullName>
+                <default>false</default>
+                <label>Part-time (25 hours)</label>
+            </value>
+            <value>
+                <fullName>Part-time (20 hours)</fullName>
+                <default>false</default>
+                <label>Part-time (20 hours)</label>
+            </value>
+            <value>
+                <fullName>Part-time (less than 20)</fullName>
+                <default>false</default>
+                <label>Part-time (less than 20)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Title__c</fullName>
+    <externalId>false</externalId>
+    <label>Program Title</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Certification, Min 8 / Max 18 Participants</fullName>
+                <default>false</default>
+                <label>Certification, Min 8 / Max 18 Participants</label>
+            </value>
+            <value>
+                <fullName>Change Management Sponsor Briefing, Min 5 / Max 15 Participants</fullName>
+                <default>false</default>
+                <label>Change Management Sponsor Briefing, Min 5 / Max 15 Participants</label>
+            </value>
+            <value>
+                <fullName>Delivering Project Results Workshop, Min 10 / Max 24 Participants</fullName>
+                <default>false</default>
+                <label>Delivering Project Results Workshop, Min 10 / Max 24 Participants</label>
+            </value>
+            <value>
+                <fullName>Methodology Application Program (MAP), Min 8 / Max 18 Participants</fullName>
+                <default>false</default>
+                <label>Methodology Application Program (MAP), Min 8 / Max 18 Participants</label>
+            </value>
+            <value>
+                <fullName>Train-the-Trainer, Min 6 / Max 8 Participants</fullName>
+                <default>false</default>
+                <label>Train-the-Trainer, Min 6 / Max 8 Participants</label>
+            </value>
+            <value>
+                <fullName>Taking Charge of Change, Min 8 / Max 20 Participants</fullName>
+                <default>false</default>
+                <label>Taking Charge of Change, Min 8 / Max 20 Participants</label>
+            </value>
+            <value>
+                <fullName>Leading Your Team Through Change, Min 10 / Max 20 Participants</fullName>
+                <default>false</default>
+                <label>Leading Your Team Through Change, Min 10 / Max 20 Participants</label>
+            </value>
+            <value>
+                <fullName>ECM Boot Camp, Min 6 / Max 8 Participants</fullName>
+                <default>false</default>
+                <label>ECM Boot Camp, Min 6 / Max 8 Participants</label>
+            </value>
+            <value>
+                <fullName>Change Management Employee Orientation, Min 15 / Max 24 Participants</fullName>
+                <default>false</default>
+                <label>Change Management Employee Orientation, Min 15 / Max 24 Participants</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

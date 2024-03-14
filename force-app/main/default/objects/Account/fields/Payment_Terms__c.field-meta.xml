@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Terms__c</fullName>
+    <externalId>false</externalId>
+    <label>Payment Terms</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NET 10</fullName>
+                <default>false</default>
+                <label>NET 10</label>
+            </value>
+            <value>
+                <fullName>NET 15</fullName>
+                <default>false</default>
+                <label>NET 15</label>
+            </value>
+            <value>
+                <fullName>NET 30</fullName>
+                <default>false</default>
+                <label>NET 30</label>
+            </value>
+            <value>
+                <fullName>NET 30 10D</fullName>
+                <default>false</default>
+                <label>NET 30 10D</label>
+            </value>
+            <value>
+                <fullName>NET 45</fullName>
+                <default>false</default>
+                <label>NET 45</label>
+            </value>
+            <value>
+                <fullName>NET 60</fullName>
+                <default>false</default>
+                <label>NET 60</label>
+            </value>
+            <value>
+                <fullName>NET 75</fullName>
+                <default>false</default>
+                <label>NET 75</label>
+            </value>
+            <value>
+                <fullName>NET 90</fullName>
+                <default>false</default>
+                <label>NET 90</label>
+            </value>
+            <value>
+                <fullName>RECEIPT</fullName>
+                <default>false</default>
+                <label>RECEIPT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Contact__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for Contact</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Training Registration or Payment Questions</fullName>
+                <default>false</default>
+                <label>Training registration or payment questions</label>
+            </value>
+            <value>
+                <fullName>Bookstore Orders And Payment Questions</fullName>
+                <default>false</default>
+                <label>Bookstore orders and payment questions</label>
+            </value>
+            <value>
+                <fullName>Prosci Portal And Digital Products Suite Support</fullName>
+                <default>false</default>
+                <label>Prosci Portal And Digital Products Suite Support</label>
+            </value>
+            <value>
+                <fullName>Private Training For Your Organization or Team</fullName>
+                <default>false</default>
+                <label>Private Training For Your Organization or Team</label>
+            </value>
+            <value>
+                <fullName>Global Training Availability (Outside of US, Canada, Australia, and New Zealand)</fullName>
+                <default>false</default>
+                <label>Global training availability (outside of US, Canada, Australia, and New Zealand)</label>
+            </value>
+            <value>
+                <fullName>Digital Badges, Proof Of Certification Or Attendance</fullName>
+                <default>false</default>
+                <label>Digital badges, proof of certification or attendance</label>
+            </value>
+            <value>
+                <fullName>Enterprise Access To Prosci&apos;s World-Class Tools</fullName>
+                <default>false</default>
+                <label>Enterprise Access To Prosci&apos;s World-Class Tools</label>
+            </value>
+            <value>
+                <fullName>Advisory And Consulting Services</fullName>
+                <default>false</default>
+                <label>Advisory and consulting services</label>
+            </value>
+            <value>
+                <fullName>Change of Company or Email Address</fullName>
+                <default>false</default>
+                <label>Change of Company or Email Address</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

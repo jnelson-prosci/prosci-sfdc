@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_ATC</fullName>
+    <fields>Training_Event__c</fields>
+    <fields>Contact__c</fields>
+    <fields>Status__c</fields>
+    <fields>Registered_Date__c</fields>
+    <fields>Acclaim_Badge_Issued__c</fields>
+    <label>Contact ATC</label>
+</CompactLayout>

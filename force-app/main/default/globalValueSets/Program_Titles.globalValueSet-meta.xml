@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Certification</fullName>
+        <default>false</default>
+        <label>Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>TTT</fullName>
+        <default>false</default>
+        <label>TTT</label>
+    </customValue>
+    <customValue>
+        <fullName>ECM Boot Camp</fullName>
+        <default>false</default>
+        <label>ECM Boot Camp</label>
+    </customValue>
+    <customValue>
+        <fullName>Experienced Practitioner Program</fullName>
+        <default>false</default>
+        <label>Experienced Practitioner Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Sponsor</fullName>
+        <default>false</default>
+        <label>Sponsor</label>
+    </customValue>
+    <customValue>
+        <fullName>Manager</fullName>
+        <default>false</default>
+        <label>Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Employee</fullName>
+        <default>false</default>
+        <label>Employee</label>
+    </customValue>
+    <customValue>
+        <fullName>Custom-Training</fullName>
+        <default>false</default>
+        <label>Custom-Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Custom-Advisory Services</fullName>
+        <default>false</default>
+        <label>Custom-Advisory Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Delivering Project Results Workshop</fullName>
+        <default>false</default>
+        <label>Delivering Project Results Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Fundamentals of Change Workshop</fullName>
+        <default>false</default>
+        <label>Fundamentals of Change Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Audit</fullName>
+        <default>false</default>
+        <label>Audit</label>
+    </customValue>
+    <customValue>
+        <fullName>Strategic Alignment Workshop</fullName>
+        <default>false</default>
+        <label>Strategic Alignment Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Change Portfolio Workshop</fullName>
+        <default>false</default>
+        <label>Change Portfolio Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Speaking Engagement</fullName>
+        <default>false</default>
+        <label>Speaking Engagement</label>
+    </customValue>
+    <customValue>
+        <fullName>Webinar</fullName>
+        <default>false</default>
+        <label>Webinar</label>
+    </customValue>
+    <customValue>
+        <fullName>Roundtable</fullName>
+        <default>false</default>
+        <label>Roundtable</label>
+    </customValue>
+    <customValue>
+        <fullName>Practitioner</fullName>
+        <default>false</default>
+        <label>Practitioner</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced</fullName>
+        <default>false</default>
+        <label>Advanced</label>
+    </customValue>
+    <customValue>
+        <fullName>Building the Business Case for CM Workshop</fullName>
+        <default>false</default>
+        <label>Building the Business Case for CM Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Coach the Trainer</fullName>
+        <default>false</default>
+        <label>Coach the Trainer</label>
+    </customValue>
+    <customValue>
+        <fullName>Change Management Deployment Support</fullName>
+        <default>false</default>
+        <label>Change Management Deployment Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Leadership</fullName>
+        <default>false</default>
+        <label>Leadership</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Immersion Workshop</fullName>
+        <default>false</default>
+        <label>Advanced Immersion Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Unavailable</fullName>
+        <default>false</default>
+        <label>Unavailable</label>
+    </customValue>
+    <customValue>
+        <fullName>Integrating Agile</fullName>
+        <default>false</default>
+        <label>Integrating Agile</label>
+    </customValue>
+    <customValue>
+        <fullName>CM Planning Workshop</fullName>
+        <default>false</default>
+        <label>CM Planning Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Sponsor - No Health Check</fullName>
+        <default>false</default>
+        <label>Sponsor - No Health Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Consulting</fullName>
+        <default>false</default>
+        <label>Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>ADKAR Model Mastery Level 1: Prevent Change Resistance</fullName>
+        <default>false</default>
+        <label>ADKAR Model Mastery Level 1: Prevent Change Resistance</label>
+    </customValue>
+    <customValue>
+        <fullName>ADKAR Model Mastery Level 2: Resolve Change Barriers</fullName>
+        <default>false</default>
+        <label>ADKAR Model Mastery Level 2: Resolve Change Barriers</label>
+    </customValue>
+    <description>List of the programs</description>
+    <masterLabel>Program Titles</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

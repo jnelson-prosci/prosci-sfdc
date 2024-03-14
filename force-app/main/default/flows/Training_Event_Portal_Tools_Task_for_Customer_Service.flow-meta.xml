@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <description>When a training event is created with Internal type, and either TTT or Internal PCAI Instructor type a task will be added to the Training Event for turning on portal tasks with a due date 7 days before the program.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Portal_Due_Date</name>
+        <dataType>Date</dataType>
+        <expression>{!$Record.Start_Date__c}-7</expression>
+    </formulas>
+    <interviewLabel>Training Event - Portal Tools Task for Customer Service {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Training Event - Portal Tools Task for Customer Service</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Turn_on_Portal_Tools_Task</name>
+        <label>Turn on Portal Tools Task</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>Portal_Due_Date</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Turn on Portal Tools</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Turn_on_Portal_Tools_Task</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3)</filterLogic>
+        <filters>
+            <field>Type_of_Event__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Internal</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Instructor_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>TTT</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Instructor_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Internal PCAI</stringValue>
+            </value>
+        </filters>
+        <object>Training_Event__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

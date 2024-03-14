@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Contact__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for Contact</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Onsite Training</fullName>
+                <default>false</default>
+                <label>Onsite Training</label>
+            </value>
+            <value>
+                <fullName>Attending a public session</fullName>
+                <default>false</default>
+                <label>Attending a public session</label>
+            </value>
+            <value>
+                <fullName>Ordering a product</fullName>
+                <default>false</default>
+                <label>Ordering a product</label>
+            </value>
+            <value>
+                <fullName>Having an issue with a product or order</fullName>
+                <default>false</default>
+                <label>Having an issue with a product or order</label>
+            </value>
+            <value>
+                <fullName>Distributing Prosci materials at organization</fullName>
+                <default>false</default>
+                <label>Distributing Prosci materials at organization</label>
+            </value>
+            <value>
+                <fullName>Having Prosci speak at an event</fullName>
+                <default>false</default>
+                <label>Having Prosci speak at an event</label>
+            </value>
+            <value>
+                <fullName>Learning more about change management</fullName>
+                <default>false</default>
+                <label>Learning more about change management</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

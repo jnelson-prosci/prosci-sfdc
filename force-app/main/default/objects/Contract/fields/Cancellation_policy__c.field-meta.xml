@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_policy__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If &quot;Prosci,&quot; standard Cancellation Policy applies.  If &quot;Company,&quot; modified cancellation.  Reference the Agreement.</inlineHelpText>
+    <label>Cancellation policy</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard</fullName>
+                <default>false</default>
+                <label>Standard</label>
+            </value>
+            <value>
+                <fullName>Non-Standard, see Other</fullName>
+                <default>false</default>
+                <label>Non-Standard - see Cancellation Policy - Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

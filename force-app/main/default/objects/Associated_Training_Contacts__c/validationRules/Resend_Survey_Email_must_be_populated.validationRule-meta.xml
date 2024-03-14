@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resend_Survey_Email_must_be_populated</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ ISPICKVAL( Resend_Survey_Link__c , &quot;Yes&quot;) ,
+ Survey_Resend_Email_for_GetFeedback__c = &quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>Survey_Resend_Email_for_GetFeedback__c</errorDisplayField>
+    <errorMessage>The Survey Resend Email field must have an email address.  This can be any email address needed.</errorMessage>
+</ValidationRule>

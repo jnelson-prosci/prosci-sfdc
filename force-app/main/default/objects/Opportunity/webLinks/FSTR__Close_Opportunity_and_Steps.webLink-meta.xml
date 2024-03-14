@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSTR__Close_Opportunity_and_Steps</fullName>
+    <availability>online</availability>
+    <description>Close Opportunity - alternative for AutoClose (for use with Opportunity used in ProcessComposer processes)</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Close Opportunity and Steps</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/fstr__AutoClose?objName=Opportunity&amp;objId={!Opportunity.Id}&amp;retURL=/{!Opportunity.Id}</url>
+</WebLink>

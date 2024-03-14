@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Authorized Training Provider</fullName>
+        <default>false</default>
+        <label>Authorized Training Provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Client</fullName>
+        <default>true</default>
+        <label>Client</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vendor</fullName>
+        <default>false</default>
+        <label>Vendor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Primary Affiliate</fullName>
+        <default>false</default>
+        <label>Primary Affiliate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Strategic Partner</fullName>
+        <default>false</default>
+        <label>Strategic Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect</fullName>
+        <default>false</default>
+        <label>Prospect</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inactive Client</fullName>
+        <default>false</default>
+        <label>Inactive Client</label>
+    </standardValue>
+</StandardValueSet>

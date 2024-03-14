@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Acclaim Issuer</fullName>
+        <default>false</default>
+        <label>Acclaim Issuer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Contact</fullName>
+        <default>false</default>
+        <label>Account Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Admin</fullName>
+        <default>false</default>
+        <label>Admin</label>
+    </standardValue>
+    <standardValue>
+        <fullName>All access portal</fullName>
+        <default>false</default>
+        <label>All access portal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business Contact</fullName>
+        <default>false</default>
+        <label>Business Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business Development</fullName>
+        <default>false</default>
+        <label>Business Development</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business Development Lead</fullName>
+        <default>false</default>
+        <label>Business Development Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consultant</fullName>
+        <default>false</default>
+        <label>Consultant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Executive Decision Maker</fullName>
+        <default>false</default>
+        <label>Executive Decision Maker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <label>Finance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Firmex</fullName>
+        <default>false</default>
+        <label>Firmex</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Firmex - eLearning</fullName>
+        <default>false</default>
+        <label>Firmex - eLearning</label>
+    </standardValue>
+    <standardValue>
+        <fullName>GAN Primary Contact</fullName>
+        <default>false</default>
+        <label>GAN Primary Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Instructor</fullName>
+        <default>false</default>
+        <label>Instructor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>License Contact</fullName>
+        <default>false</default>
+        <label>License Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Operations</fullName>
+        <default>false</default>
+        <label>Operations</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Operations Lead</fullName>
+        <default>false</default>
+        <label>Operations Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Portal admin</fullName>
+        <default>false</default>
+        <label>Portal admin</label>
+    </standardValue>
+    <standardValue>
+        <fullName>President / Managing Director</fullName>
+        <default>false</default>
+        <label>President / Managing Director</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Procurement Contact</fullName>
+        <default>false</default>
+        <label>Procurement Contact</label>
+    </standardValue>
+</StandardValueSet>

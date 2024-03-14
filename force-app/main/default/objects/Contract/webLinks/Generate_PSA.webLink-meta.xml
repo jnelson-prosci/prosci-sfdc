@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_PSA</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate PSA</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer
+?ServerURL={!API.Partner_Server_URL_220}
+&amp;id={!Contract.Id}
+
+&amp;Templateid=a2F1Y000001eOs2
+&amp;TemplateGroup=PSA
+&amp;SC0=1
+&amp;SC1=SalesforceFile
+&amp;DataTagEnable=1
+
+
+&amp;QueryID=[Misc]a271Y000003EZcb,[MiscWIA]a271Y000003EZcg,[MiscInterp]a271Y000003EZcl,[LoL]a271Y000003EZcq,[Warranties]a271Y000003Eczq,[Term]a271Y000003EZd0,[Confident]a271Y000003EZd5,[Services]a271Y000003EZdA,[Payment]a271Y000003EZdU,[AccountInfo]a271Y000003EZf1,[Template]a271Y000003EZf6,[IP]a271Y000003EczR,[ProscisIP]a271Y000003EczW,[WorkProduct]a271Y000003Eczb,[TFC]a271Y000003Eczg,[EoT]a271Y000003Eczl,[IPIndem]a271Y000003Eczv,[IP2]a271Y000003Ed4v,[IP3]a271Y000003Ed50,[Term2]a271Y000003Ed5K,[Term3]a271Y000003Ed5P,[Misc2]a271Y000003Ed5e
+
+&amp;OFN=PSA+for+{!Contract.Account}
+
+&amp;_DS7=11
+
+&amp;DC={!IF($User.Id = &quot;0051Y000008atd7&quot;,&quot;0&quot;, Contract.Disable_Conga_Logic__c )}
+
+&amp;DCL=One+of+the+following+fields+has+not+been+set+-+Billing+Street,+Billing+ City,+Billing+State,+or+Billing+Postal+Code.+Account+Name+should+be+the+correct+legal+name.</url>
+</WebLink>

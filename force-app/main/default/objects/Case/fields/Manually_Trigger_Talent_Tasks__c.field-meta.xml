@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manually_Trigger_Talent_Tasks__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field to manually trigger the talent tasks for other markets or old cases that may not have had them triggered.</inlineHelpText>
+    <label>Manually Trigger Talent Tasks</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+                <label>Onboarding</label>
+            </value>
+            <value>
+                <fullName>Transition</fullName>
+                <default>false</default>
+                <label>Transition</label>
+            </value>
+            <value>
+                <fullName>Offboarding</fullName>
+                <default>false</default>
+                <label>Offboarding</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

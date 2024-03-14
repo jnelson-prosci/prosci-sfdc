@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Public Program</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Contract Requested</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Contract sent for counter signature</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Dates Pending</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Done - Successful</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Done - Terminated</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Program Confirmed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>TM Nurturing</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

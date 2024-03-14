@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Solicitation__c</fullName>
+    <externalId>false</externalId>
+    <label>Non-Solicitation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prosci may not solicit</fullName>
+                <default>false</default>
+                <label>Prosci may not solicit</label>
+            </value>
+            <value>
+                <fullName>Company may not solicit</fullName>
+                <default>false</default>
+                <label>Company may not solicit</label>
+            </value>
+            <value>
+                <fullName>Neither party may solicit</fullName>
+                <default>false</default>
+                <label>Neither party may solicit</label>
+            </value>
+            <value>
+                <fullName>No Restriction</fullName>
+                <default>false</default>
+                <label>No Restriction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

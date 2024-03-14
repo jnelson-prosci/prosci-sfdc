@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G21_Delivery_Team_Material_Orders</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Ship_To_Contact__c</columns>
+    <columns>Order_No__c</columns>
+    <columns>Invoice_No__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>contains</operation>
+        <value>G21</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>3/25/2021 12:00 AM</value>
+    </filters>
+    <label>G21 Delivery Team Material Orders</label>
+</ListView>

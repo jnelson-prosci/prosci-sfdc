@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Changing_account_manager</fullName>
+    <active>true</active>
+    <errorConditionFormula>$Profile.Name  &lt;&gt; &quot;System Administrator&quot;  
+&lt;&gt; $Permission.Account_Manager_Edit_Rights 
+ &amp;&amp; ISCHANGED( Account_Manager__c ) 
+ &amp;&amp; NOT(ISBLANK(PRIORVALUE( Account_Manager__c )))</errorConditionFormula>
+    <errorMessage>This field is restricted, email ictsupport@prosci.com to request changes</errorMessage>
+</ValidationRule>

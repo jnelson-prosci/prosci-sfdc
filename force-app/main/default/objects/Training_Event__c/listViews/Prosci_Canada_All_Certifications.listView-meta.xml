@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prosci_Canada_All_Certifications</fullName>
+    <columns>End_Date__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Instructor_Type__c</field>
+        <operation>equals</operation>
+        <value>Prosci Canada</value>
+    </filters>
+    <filters>
+        <field>Type_of_Event__c</field>
+        <operation>equals</operation>
+        <value>Onsite,Public</value>
+    </filters>
+    <filters>
+        <field>Title__c</field>
+        <operation>equals</operation>
+        <value>Certification</value>
+    </filters>
+    <filters>
+        <field>End_Date__c</field>
+        <operation>equals</operation>
+        <value>NEXT_WEEK</value>
+    </filters>
+    <label>Prosci Canada Upcoming Certifications</label>
+</ListView>

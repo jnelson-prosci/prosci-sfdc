@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tools_modified_today</fullName>
+    <columns>NAME</columns>
+    <columns>Portal_Access__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Modified_Date_Time__c</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Tools modified today</label>
+</ListView>

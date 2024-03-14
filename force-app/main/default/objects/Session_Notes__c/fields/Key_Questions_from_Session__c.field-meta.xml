@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Questions_from_Session__c</fullName>
+    <description>Please make note of key questions – particularly those that reveal org maturity or those that sparked debate/uncertainty/discomfort among participants.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please make note of key questions – particularly those that reveal org maturity or those that sparked debate/uncertainty/discomfort among participants.</inlineHelpText>
+    <label>Key Questions from Session</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>15</visibleLines>
+</CustomField>

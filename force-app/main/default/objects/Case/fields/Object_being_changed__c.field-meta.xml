@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Object_being_changed__c</fullName>
+    <externalId>false</externalId>
+    <label>Object being changed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounts</fullName>
+                <default>false</default>
+                <label>Accounts</label>
+            </value>
+            <value>
+                <fullName>Contacts</fullName>
+                <default>false</default>
+                <label>Contacts</label>
+            </value>
+            <value>
+                <fullName>Training Events</fullName>
+                <default>false</default>
+                <label>Training Events</label>
+            </value>
+            <value>
+                <fullName>Opportunities</fullName>
+                <default>false</default>
+                <label>Opportunities</label>
+            </value>
+            <value>
+                <fullName>Associated Training Contact</fullName>
+                <default>false</default>
+                <label>Associated Training Contact</label>
+            </value>
+            <value>
+                <fullName>Contracts</fullName>
+                <default>false</default>
+                <label>Contracts</label>
+            </value>
+            <value>
+                <fullName>Advanced Tracks</fullName>
+                <default>false</default>
+                <label>Advanced Tracks</label>
+            </value>
+            <value>
+                <fullName>Leads</fullName>
+                <default>false</default>
+                <label>Leads</label>
+            </value>
+            <value>
+                <fullName>Virtual Coaching</fullName>
+                <default>false</default>
+                <label>Virtual Coaching</label>
+            </value>
+            <value>
+                <fullName>Consulting Time Trackers</fullName>
+                <default>false</default>
+                <label>Consulting Time Trackers</label>
+            </value>
+            <value>
+                <fullName>Referenceable Clients</fullName>
+                <default>false</default>
+                <label>Referenceable Clients</label>
+            </value>
+            <value>
+                <fullName>Executive Panel</fullName>
+                <default>false</default>
+                <label>Executive Panel</label>
+            </value>
+            <value>
+                <fullName>Products</fullName>
+                <default>false</default>
+                <label>Products</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

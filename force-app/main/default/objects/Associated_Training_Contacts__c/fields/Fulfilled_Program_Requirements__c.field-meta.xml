@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fulfilled_Program_Requirements__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this box is the attendee filled all requirements and passed the program.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box is the attendee filled all requirements and passed the program.</inlineHelpText>
+    <label>Fulfilled Program Requirements</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

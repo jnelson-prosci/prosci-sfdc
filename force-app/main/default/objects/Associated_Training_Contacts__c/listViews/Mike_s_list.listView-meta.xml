@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mike_s_list</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Dietary_needs__c</field>
+        <operation>contains</operation>
+        <value>TORD</value>
+    </filters>
+    <label>Mike&apos;s list</label>
+</ListView>

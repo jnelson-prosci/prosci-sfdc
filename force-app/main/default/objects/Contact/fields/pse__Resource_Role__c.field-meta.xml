@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Resource_Role__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Resource Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Advisory Enablement Manager</fullName>
+                <default>false</default>
+                <label>Advisory Enablement Manager</label>
+            </value>
+            <value>
+                <fullName>Change Advisor</fullName>
+                <default>false</default>
+                <label>Change Advisor</label>
+            </value>
+            <value>
+                <fullName>Change Analyst</fullName>
+                <default>false</default>
+                <label>Change Analyst</label>
+            </value>
+            <value>
+                <fullName>Change Communication Specialist</fullName>
+                <default>false</default>
+                <label>Change Communication Specialist</label>
+            </value>
+            <value>
+                <fullName>Change Enablement Coordinator</fullName>
+                <default>false</default>
+                <label>Change Enablement Coordinator</label>
+            </value>
+            <value>
+                <fullName>Director, Engagement Leader</fullName>
+                <default>false</default>
+                <label>Director, Engagement Leader</label>
+            </value>
+            <value>
+                <fullName>Engagement Leader</fullName>
+                <default>false</default>
+                <label>Engagement Leader</label>
+            </value>
+            <value>
+                <fullName>Master Instructor PCA</fullName>
+                <default>false</default>
+                <label>Executive Instructor PCA</label>
+            </value>
+            <value>
+                <fullName>Principal Change Advisor</fullName>
+                <default>false</default>
+                <label>Principal Change Advisor</label>
+            </value>
+            <value>
+                <fullName>Principal Change Advisor - Contractor</fullName>
+                <default>false</default>
+                <label>Principal Change Advisor - Contractor</label>
+            </value>
+            <value>
+                <fullName>Project Manager</fullName>
+                <default>false</default>
+                <label>Project Manager</label>
+            </value>
+            <value>
+                <fullName>Project Manager - Contractor</fullName>
+                <default>false</default>
+                <label>Project Manager - Contractor</label>
+            </value>
+            <value>
+                <fullName>Senior Change Advisor</fullName>
+                <default>false</default>
+                <label>Senior Change Advisor</label>
+            </value>
+            <value>
+                <fullName>VP of Advisory Services</fullName>
+                <default>false</default>
+                <label>VP of Advisory Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

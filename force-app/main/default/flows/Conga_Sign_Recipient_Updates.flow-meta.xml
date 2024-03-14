@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <name>CSR_Updates</name>
+        <label>CSR Updates</label>
+        <locationX>440</locationX>
+        <locationY>647</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>In_Prosci_Signature</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.APXT_CongaSign__Email__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>@prosci.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.APXT_CongaSign__Email__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>@conga.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.APXT_CongaSign__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SENT</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_CA_Status_Prosci_Signature</targetReference>
+            </connector>
+            <label>In Prosci Signature</label>
+        </rules>
+        <rules>
+            <name>In_Client_Signature</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.APXT_CongaSign__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SENT</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_CA_Status_Client_Signature</targetReference>
+            </connector>
+            <label>In Client Signature</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines if the CST was run on an Oppty or a Contract Agreement</description>
+        <name>Which_Object</name>
+        <label>Which Object?</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Get_CA</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Contract Agreement</defaultConnectorLabel>
+        <rules>
+            <name>Opportunity</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_CST.Parent_006__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Opportunity</label>
+        </rules>
+    </decisions>
+    <description>Adding path to handle CSTs on the Opportunity</description>
+    <environments>Default</environments>
+    <interviewLabel>Conga Sign Recipient Updates {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Conga Sign Recipient Updates</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_CA</name>
+        <label>Get CA</label>
+        <locationX>440</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CSR_Updates</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_CST.Parent_a5G__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>APXT_Redlining__Contract_Agreement__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_CST</name>
+        <label>Get CST</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Which_Object</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.APXT_CongaSign__Transaction__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>APXT_CongaSign__Transaction__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_CA_Status_Client_Signature</name>
+        <label>Update CA Status Client Signature</label>
+        <locationX>440</locationX>
+        <locationY>755</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_CA.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>APXT_Redlining__Status__c</field>
+            <value>
+                <stringValue>In Client Signature</stringValue>
+            </value>
+        </inputAssignments>
+        <object>APXT_Redlining__Contract_Agreement__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_CA_Status_Prosci_Signature</name>
+        <label>Update CA Status Prosci Signature</label>
+        <locationX>176</locationX>
+        <locationY>755</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_CA.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>APXT_Redlining__Status__c</field>
+            <value>
+                <stringValue>In Prosci Signature</stringValue>
+            </value>
+        </inputAssignments>
+        <object>APXT_Redlining__Contract_Agreement__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_CST</targetReference>
+        </connector>
+        <object>APXT_CongaSign__Recipient__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

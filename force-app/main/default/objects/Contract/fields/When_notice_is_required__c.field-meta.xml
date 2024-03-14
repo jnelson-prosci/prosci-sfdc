@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>When_notice_is_required__c</fullName>
+    <externalId>false</externalId>
+    <label>When is notice required for changes?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Before Event</fullName>
+                <default>false</default>
+                <label>Before Event</label>
+            </value>
+            <value>
+                <fullName>After Event</fullName>
+                <default>false</default>
+                <label>After Event</label>
+            </value>
+            <value>
+                <fullName>Other, see below</fullName>
+                <default>false</default>
+                <label>Other - see Insurance Requirements - Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
