@@ -1,0 +1,74 @@
+<template>
+    <template if:false={isLoading}>
+        <article class="slds-card" style="border: solid 1px #dddbda;background:#f3f2f2;">
+            <div class="slds-card__header slds-grid">
+              <header class="slds-media slds-media_center slds-has-flexi-truncate" style="margin-top: 15px;margin-left: 15px;margin-right: 15px; margin-bottom: 5px">
+                <div class="slds-media__figure">
+                  <span class="slds-icon_container slds-icon-standard-account" title="account">
+                    <lightning-icon icon-name="custom:custom58" size="small"></lightning-icon>
+                    <span class="slds-assistive-text">Associated Training Contacts</span>
+                  </span>
+                </div>
+                <div class="slds-media__body">
+                  <h2 class="slds-card__header-title">
+                    <a class="slds-card__header-link slds-truncate" onclick={handleNaviagateViewAll} target="_blank" title="Associated Training Contacts">
+                      <span>Associated Training Contacts</span>
+                    </a>
+                  </h2>
+                </div>
+                <div class="slds-no-flex">
+                    <lightning-button-icon icon-name="utility:refresh" onclick={handleRefresh} class="slds-button" variant="border-filled"></lightning-button-icon>
+                    <lightning-button label="New Associated Training Contact" onclick={handleAdd} class="slds-button"></lightning-button>
+                </div>
+              </header>
+            </div>
+            <div class="slds-card__body slds-card__body_inner" style="margin-top: 0px; margin-bottom: 0px;">
+                <template if:true={isData}>
+                    <lightning-datatable 
+                    key-field="Id"
+                    data={tableData}
+                    columns={columns}
+                    hide-checkbox-column="true"
+                    show-row-number-column
+                    sorted-by={sortBy}
+                    sorted-direction={sortDirection}
+                    onsort={handleSortData}
+                    onrowaction={handleRowAction}
+                    class="slds-table slds-table_bordered"
+                    ></lightning-datatable>
+                </template>
+                <template if:false={isData}>
+                    <p>No Related Associated Training Contacts</p>
+                </template>
+            </div>
+            <footer class="slds-card__footer" style="margin-top: -1px; background: white;">
+              <a class="slds-card__footer-action" target="_blank" onclick={handleNaviagateViewAll}>View All
+                <span class="slds-assistive-text">Associated Training Contacts</span>
+              </a>
+            </footer>
+          </article>
+    </template>
+</template>
+<!-- <lightning-card title="Associated Training Contacts Custom" icon-name="custom:custom58">
+    <lightning-button-icon icon-name="utility:refresh" slot="actions" onclick={handleRefresh} class="refresh" style="margin:10px"></lightning-button-icon>
+    <lightning-button label="New Associated Contact" slot="actions" onclick={handleAdd} class="add-button" style="height:1.875em"></lightning-button>
+    <p class="slds-p-horizontal_small"></p>
+    <div class="slds-card_body">
+        <template if:true={isData}>
+            <lightning-datatable 
+            key-field="Id"
+            data={tableData}
+            columns={columns}
+            hide-checkbox-column="true"
+            sorted-by={sortBy}
+            sorted-direction={sortDirection}
+            onsort={handleSortData}
+            onrowaction={handleRowAction}
+            class="slds-table slds-table_bordered"
+            ></lightning-datatable>
+        </template>
+        <template if:false={isData}>
+            <p>No Related Associated Training Contacts</p>
+        </template>
+    </div>
+</lightning-card> -->
