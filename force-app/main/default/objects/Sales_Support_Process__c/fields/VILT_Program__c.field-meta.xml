@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VILT_Program__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If this box is checked this is Virtual Instructor led training</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this box is checked this is Virtual Instructor led training</inlineHelpText>
+    <label>VILT Program</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
