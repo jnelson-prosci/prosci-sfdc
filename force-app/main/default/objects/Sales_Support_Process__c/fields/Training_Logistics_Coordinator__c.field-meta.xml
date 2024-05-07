@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_Logistics_Coordinator__c</fullName>
+    <externalId>false</externalId>
+    <label>Training Logistics Coordinator</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Ali_Semonchick</fullName>
+                <default>false</default>
+                <label>Ali Semonchick</label>
+            </value>
+            <value>
+                <fullName>Cheryl_Calina</fullName>
+                <default>false</default>
+                <label>Cheryl Calina</label>
+            </value>
+            <value>
+                <fullName>Dee Zilke</fullName>
+                <default>false</default>
+                <label>Dee Zilke</label>
+            </value>
+            <value>
+                <fullName>Fallon_Sooley</fullName>
+                <default>false</default>
+                <label>Fallon Sooley</label>
+            </value>
+            <value>
+                <fullName>Gigi_Nagy</fullName>
+                <default>false</default>
+                <label>Gigi Nagy</label>
+            </value>
+            <value>
+                <fullName>Gina Tran</fullName>
+                <default>false</default>
+                <label>Gina Tran</label>
+            </value>
+            <value>
+                <fullName>Hannah_Savoren</fullName>
+                <default>false</default>
+                <label>Hannah Savoren</label>
+            </value>
+            <value>
+                <fullName>Leevi Sparks</fullName>
+                <default>false</default>
+                <label>Leevi Sparks</label>
+            </value>
+            <value>
+                <fullName>Lisa Poshusta-Gregory</fullName>
+                <default>false</default>
+                <label>Lisa Poshusta-Gregory</label>
+            </value>
+            <value>
+                <fullName>Mary_Brittenham</fullName>
+                <default>false</default>
+                <label>Mary Brittenham</label>
+            </value>
+            <value>
+                <fullName>Melissa_Lim</fullName>
+                <default>false</default>
+                <label>Melissa Lim</label>
+            </value>
+            <value>
+                <fullName>Nicole_Sibley</fullName>
+                <default>false</default>
+                <label>Nicole Sibley</label>
+            </value>
+            <value>
+                <fullName>Rickie Griffin</fullName>
+                <default>false</default>
+                <label>Rickie Griffin</label>
+            </value>
+            <value>
+                <fullName>Sue_Chaiken</fullName>
+                <default>false</default>
+                <label>Sue Chaiken</label>
+            </value>
+            <value>
+                <fullName>Wendy_Soulis</fullName>
+                <default>false</default>
+                <label>Wendy Soulis</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
