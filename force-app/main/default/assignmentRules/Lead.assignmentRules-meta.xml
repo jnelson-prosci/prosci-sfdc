@@ -2,7 +2,7 @@
 <AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <assignmentRule>
         <fullName>ANZ Lead Assignments</fullName>
-        <active>true</active>
+        <active>false</active>
         <ruleEntry>
             <assignedTo>ANZ_Leads</assignedTo>
             <assignedToType>Queue</assignedToType>
@@ -80,7 +80,7 @@
     </assignmentRule>
     <assignmentRule>
         <fullName>Brazil Lead Assignments</fullName>
-        <active>true</active>
+        <active>false</active>
         <ruleEntry>
             <assignedTo>Brazil_Leads</assignedTo>
             <assignedToType>Queue</assignedToType>
@@ -93,7 +93,7 @@
     </assignmentRule>
     <assignmentRule>
         <fullName>Canada Lead Assignments</fullName>
-        <active>true</active>
+        <active>false</active>
         <ruleEntry>
             <assignedTo>Canada_Leads</assignedTo>
             <assignedToType>Queue</assignedToType>
@@ -106,7 +106,7 @@
     </assignmentRule>
     <assignmentRule>
         <fullName>Europe Lead Assignments</fullName>
-        <active>true</active>
+        <active>false</active>
         <ruleEntry>
             <assignedTo>Europe_Leads_Dutch</assignedTo>
             <assignedToType>Queue</assignedToType>
@@ -138,8 +138,6 @@
             <assignedTo>Europe_Leads_French</assignedTo>
             <assignedToType>Queue</assignedToType>
             <formula>OR(
-    ISPICKVAL(Country_Code__c, &apos;BE&apos;),
-    ISPICKVAL(Country_Code__c, &apos;CH&apos;),
     ISPICKVAL(Country_Code__c, &apos;FR&apos;),
     ISPICKVAL(Country_Code__c, &apos;LU&apos;),
     ISPICKVAL(Country_Code__c, &apos;MC&apos;)
@@ -160,12 +158,8 @@
             <assignedTo>Europe_Leads_German</assignedTo>
             <assignedToType>Queue</assignedToType>
             <formula>OR(
-    ISPICKVAL(Country_Code__c, &apos;AT&apos;),
-    ISPICKVAL(Country_Code__c, &apos;BE&apos;),
-    ISPICKVAL(Country_Code__c, &apos;CH&apos;),
+				ISPICKVAL(Country_Code__c, &apos;AT&apos;),
     ISPICKVAL(Country_Code__c, &apos;DE&apos;),
-    ISPICKVAL(Country_Code__c, &apos;FR&apos;),
-    ISPICKVAL(Country_Code__c, &apos;IT&apos;),
     ISPICKVAL(Country_Code__c, &apos;LI&apos;),
     ISPICKVAL(Country_Code__c, &apos;LU&apos;)
 )</formula>
@@ -176,17 +170,10 @@
             <formula>OR(
     ISPICKVAL(Country_Code__c, &apos;AD&apos;),
     ISPICKVAL(Country_Code__c, &apos;AL&apos;),
-    ISPICKVAL(Country_Code__c, &apos;AT&apos;),
-    ISPICKVAL(Country_Code__c, &apos;BE&apos;),
     ISPICKVAL(Country_Code__c, &apos;BG&apos;),
-    ISPICKVAL(Country_Code__c, &apos;CH&apos;),
     ISPICKVAL(Country_Code__c, &apos;CZ&apos;),
-    ISPICKVAL(Country_Code__c, &apos;DE&apos;),
-    ISPICKVAL(Country_Code__c, &apos;DK&apos;),
     ISPICKVAL(Country_Code__c, &apos;EE&apos;),
     ISPICKVAL(Country_Code__c, &apos;ES&apos;),
-    ISPICKVAL(Country_Code__c, &apos;FI&apos;),
-    ISPICKVAL(Country_Code__c, &apos;FR&apos;),
     ISPICKVAL(Country_Code__c, &apos;GG&apos;),
     ISPICKVAL(Country_Code__c, &apos;GI&apos;),
     ISPICKVAL(Country_Code__c, &apos;GR&apos;),
@@ -194,11 +181,8 @@
     ISPICKVAL(Country_Code__c, &apos;HU&apos;),
     ISPICKVAL(Country_Code__c, &apos;IE&apos;),
     ISPICKVAL(Country_Code__c, &apos;IM&apos;),
-    ISPICKVAL(Country_Code__c, &apos;IS&apos;),
-    ISPICKVAL(Country_Code__c, &apos;IT&apos;),
     ISPICKVAL(Country_Code__c, &apos;JE&apos;),
     ISPICKVAL(Country_Code__c, &apos;LT&apos;),
-    ISPICKVAL(Country_Code__c, &apos;LU&apos;),
     ISPICKVAL(Country_Code__c, &apos;LV&apos;),
     ISPICKVAL(Country_Code__c, &apos;ME&apos;),
     ISPICKVAL(Country_Code__c, &apos;MT&apos;),
@@ -216,7 +200,7 @@
     </assignmentRule>
     <assignmentRule>
         <fullName>LATAM Lead Assignments</fullName>
-        <active>true</active>
+        <active>false</active>
         <ruleEntry>
             <assignedTo>LATAM_Leads</assignedTo>
             <assignedToType>Queue</assignedToType>
@@ -239,7 +223,7 @@
     </assignmentRule>
     <assignmentRule>
         <fullName>US Lead Assignments</fullName>
-        <active>true</active>
+        <active>false</active>
         <ruleEntry>
             <assignedTo>US_Leads_Carnivores</assignedTo>
             <assignedToType>Queue</assignedToType>
