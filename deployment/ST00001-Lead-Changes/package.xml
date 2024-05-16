@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Lead.Standard Lead Process</members>
+		<name>BusinessProcess</name>
+	</types>
+	<types>
+		<members>Lead.HubSpot_Score__c</members>
+		<members>Lead.Previously_Existing_Contact__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Lead</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Lead_Record_Page_Single_Related_Lists</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Lead-Lead Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>Lead_Path</members>
+		<name>PathAssistant</name>
+	</types>
+	<types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>Lead.Enterprise</members>
+		<members>Lead.Open_Enrollment</members>
+		<name>RecordType</name>
+	</types>
+    <types>
+        <members>LeadStatus</members>
+         <name>StandardValueSet</name>
+     </types>
+	<version>60.0</version>
+</Package>
