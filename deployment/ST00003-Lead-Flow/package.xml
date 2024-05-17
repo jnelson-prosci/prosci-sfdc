@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
+		<members>Contact.CNPJ__c</members>
 		<members>Contact.Country_Code__c</members>
 		<members>Contact.I_need_Advisory_Statements__c</members>
 		<name>CustomField</name>
