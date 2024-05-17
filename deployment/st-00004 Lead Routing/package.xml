@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Lead.Prosci Global Lead Assignments</members>
+		<name>AssignmentRule</name>
+	</types>
+	<types>
+		<members>ANZ_Leads</members>
+		<members>Brazil_Leads</members>
+		<members>Canada_Leads</members>
+		<members>Europe_Leads_Dutch</members>
+		<members>Europe_Leads_English</members>
+		<members>Europe_Leads_French</members>
+		<members>Europe_Leads_German</members>
+		<members>Europe_Leads_Italian</members>
+		<members>Europe_Leads_Nordic_Region</members>
+		<members>Europe_Leads_Spanish</members>
+		<members>LATAM_Leads</members>
+		<members>Other_Leads_GAN_other</members>
+		<members>Singapore_Leads_Asian_country_leads</members>
+		<members>US_Leads_Carnivores</members>
+		<members>US_Leads_Invictus</members>
+		<members>US_Leads_Nitro</members>
+		<members>US_Leads_The_Challenger</members>
+		<name>Queue</name>
+	</types>
+    	<types>
+		<members>Industry</members>
+		<name>StandardValueSet</name>
+	</types>
+	<version>58.0</version>
+</Package>
