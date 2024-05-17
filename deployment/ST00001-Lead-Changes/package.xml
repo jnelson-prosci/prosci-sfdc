@@ -5,13 +5,10 @@
 		<name>BusinessProcess</name>
 	</types>
 	<types>
+		<members>Lead.CNPJ__c</members>
 		<members>Lead.HubSpot_Score__c</members>
 		<members>Lead.Previously_Existing_Contact__c</members>
 		<name>CustomField</name>
-	</types>
-	<types>
-		<members>Lead</members>
-		<name>CustomObject</name>
 	</types>
 	<types>
 		<members>Lead_Record_Page_Single_Related_Lists</members>
