@@ -7,6 +7,8 @@
 	<types>
 		<members>Lead.CNPJ__c</members>
 		<members>Lead.HubSpot_Score__c</members>
+		<members>Lead.Lead_Domain__c</members>
+		<members>Lead.Full_Partial__c</members>
 		<members>Lead.Previously_Existing_Contact__c</members>
 		<name>CustomField</name>
 	</types>
