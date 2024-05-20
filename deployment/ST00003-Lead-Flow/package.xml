@@ -8,6 +8,10 @@
 		<name>CustomField</name>
 	</types>
 	<types>
+		<members>LeadConvertSettings</members>
+		<name>LeadConvertSettings</name>
+	</types>
+	<types>
 		<members>Lead_Record_Page_Single_Related_Lists</members>
 		<name>FlexiPage</name>
 	</types>
