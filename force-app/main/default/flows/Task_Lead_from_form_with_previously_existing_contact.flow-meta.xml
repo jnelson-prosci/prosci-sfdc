@@ -6,7 +6,7 @@
         <name>DEC_Previously_Existing_Contact</name>
         <label>DEC Previously Existing Contact?</label>
         <locationX>182</locationX>
-        <locationY>431</locationY>
+        <locationY>539</locationY>
         <defaultConnectorLabel>New Contact</defaultConnectorLabel>
         <rules>
             <name>Previously_Existing_Contact</name>
@@ -22,6 +22,36 @@
                 <targetReference>GET_Enterprise_Lead_RecordType</targetReference>
             </connector>
             <label>Previously Existing Contact</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If there is a related contact for the MQL task then we will run Lead generation logic</description>
+        <name>DEC_Task_related_to_Contact</name>
+        <label>DEC Task related to Contact?</label>
+        <locationX>380</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>No Contact</defaultConnectorLabel>
+        <rules>
+            <name>Related_Contact</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.WhoId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.WhoId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>003</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GET_Related_Contact</targetReference>
+            </connector>
+            <label>Related Contact</label>
         </rules>
     </decisions>
     <environments>Default</environments>
@@ -67,7 +97,7 @@
         <name>CREATE_Lead</name>
         <label>CREATE Lead</label>
         <locationX>50</locationX>
-        <locationY>647</locationY>
+        <locationY>755</locationY>
         <inputAssignments>
             <field>Comments_from_Website__c</field>
             <value>
@@ -123,7 +153,7 @@
         <name>GET_Enterprise_Lead_RecordType</name>
         <label>GET Enterprise Lead RecordType</label>
         <locationX>50</locationX>
-        <locationY>539</locationY>
+        <locationY>647</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>CREATE_Lead</targetReference>
@@ -152,7 +182,7 @@
         <name>GET_Related_Contact</name>
         <label>GET Related Contact</label>
         <locationX>182</locationX>
-        <locationY>323</locationY>
+        <locationY>431</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>DEC_Previously_Existing_Contact</targetReference>
@@ -170,10 +200,10 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
-        <locationX>56</locationX>
+        <locationX>254</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>GET_Related_Contact</targetReference>
+            <targetReference>DEC_Task_related_to_Contact</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
