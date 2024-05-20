@@ -71,6 +71,80 @@
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
+                <fieldItem>Record.Previously_Existing_Contact__r.Title</fieldItem>
+                <identifier>RecordPreviously_Existing_Contact_rTitleField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Previously_Existing_Contact__r.industry__c</fieldItem>
+                <identifier>RecordPreviously_Existing_Contact_rindustry_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Previously_Existing_Contact__r.Country_Code__c</fieldItem>
+                <identifier>RecordPreviously_Existing_Contact_rCountry_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Previously_Existing_Contact__r.Browser_Language_Settings__c</fieldItem>
+                <identifier>RecordPreviously_Existing_Contact_rBrowser_Language_Settings_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-c3052768-1f03-4ede-afeb-b9705b25ae2c</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Previously_Existing_Contact__r.Reason_for_Contact__c</fieldItem>
+                <identifier>RecordPreviously_Existing_Contact_rReason_for_Contact_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Previously_Existing_Contact__r.I_need_Advisory_Statements__c</fieldItem>
+                <identifier>RecordPreviously_Existing_Contact_rI_need_Advisory_Statements_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Previously_Existing_Contact__r.Comments_from_Website__c</fieldItem>
+                <identifier>RecordPreviously_Existing_Contact_rComments_from_Website_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-5bedef95-2315-499d-9f19-8ba57927de76</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-c3052768-1f03-4ede-afeb-b9705b25ae2c</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column15</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-5bedef95-2315-499d-9f19-8ba57927de76</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column16</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-ab4aa609-460f-43bd-bc24-34b82fa4f16c</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
                     <value>required</value>
@@ -204,6 +278,16 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Previously_Existing_Contact__c</fieldItem>
+                <identifier>RecordPreviously_Existing_Contact_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
                     <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Status</fieldItem>
@@ -286,18 +370,18 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Licensing_Type__c</fieldItem>
-                <identifier>RecordLicensing_Type_cField</identifier>
+                <fieldItem>Record.Browser_Language_Settings__c</fieldItem>
+                <identifier>RecordBrowser_Language_Settings_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Previously_Existing_Contact__c</fieldItem>
-                <identifier>RecordPreviously_Existing_Contact_cField</identifier>
+                <fieldItem>Record.Licensing_Type__c</fieldItem>
+                <identifier>RecordLicensing_Type_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -394,80 +478,6 @@
             </componentInstance>
         </itemInstances>
         <name>Facet-5a6df53f-d1ea-4197-be6e-d47fa928fbba</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Previously_Existing_Contact__r.Title</fieldItem>
-                <identifier>RecordPreviously_Existing_Contact_rTitleField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Previously_Existing_Contact__r.industry__c</fieldItem>
-                <identifier>RecordPreviously_Existing_Contact_rindustry_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Previously_Existing_Contact__r.Country_Code__c</fieldItem>
-                <identifier>RecordPreviously_Existing_Contact_rCountry_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Previously_Existing_Contact__r.Browser_Language_Settings__c</fieldItem>
-                <identifier>RecordPreviously_Existing_Contact_rBrowser_Language_Settings_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-c3052768-1f03-4ede-afeb-b9705b25ae2c</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Previously_Existing_Contact__r.Reason_for_Contact__c</fieldItem>
-                <identifier>RecordPreviously_Existing_Contact_rReason_for_Contact_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Previously_Existing_Contact__r.I_need_Advisory_Statements__c</fieldItem>
-                <identifier>RecordPreviously_Existing_Contact_rI_need_Advisory_Statements_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Previously_Existing_Contact__r.Comments_from_Website__c</fieldItem>
-                <identifier>RecordPreviously_Existing_Contact_rComments_from_Website_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-5bedef95-2315-499d-9f19-8ba57927de76</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-c3052768-1f03-4ede-afeb-b9705b25ae2c</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column15</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-5bedef95-2315-499d-9f19-8ba57927de76</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column16</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-ab4aa609-460f-43bd-bc24-34b82fa4f16c</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -1007,6 +1017,30 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
+                    <value>Facet-ab4aa609-460f-43bd-bc24-34b82fa4f16c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Marketing Form</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection8</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Previously_Existing_Contact__r.LastName}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
                     <value>Facet-31478c8a-1dbb-476b-becd-76697336a7ff</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -1037,30 +1071,6 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection2</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>columns</name>
-                    <value>Facet-ab4aa609-460f-43bd-bc24-34b82fa4f16c</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>horizontalAlignment</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Marketing Form</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection8</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Previously_Existing_Contact__r.LastName}</leftValue>
-                        <operator>NE</operator>
-                    </criteria>
-                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -1229,10 +1239,6 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Tabs</value>
-                </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>tabs</name>
                     <value>Facet-5ea74240-b4c0-4ed2-8ff8-6bf62267712a</value>
