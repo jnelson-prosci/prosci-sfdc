@@ -4,6 +4,7 @@
 		<members>Contact.CNPJ__c</members>
 		<members>Contact.Country_Code__c</members>
 		<members>Contact.I_need_Advisory_Statements__c</members>
+		<members>Lead.Browser_Language_Settings__c</members>
 		<name>CustomField</name>
 	</types>
 	<types>
