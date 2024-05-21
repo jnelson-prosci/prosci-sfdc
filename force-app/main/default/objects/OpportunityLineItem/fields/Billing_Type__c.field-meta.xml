@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Type__c</fullName>
+    <description>Shows the related product&apos;s billing type, used for display in the mini layout for editing products on an opportunity</description>
+    <externalId>false</externalId>
+    <formula>TEXT(PricebookEntry.Product2.Billing_Type__c)</formula>
+    <label>Billing Type</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
