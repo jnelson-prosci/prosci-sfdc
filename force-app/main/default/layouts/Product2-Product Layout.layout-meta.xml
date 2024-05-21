@@ -31,6 +31,10 @@
                 <behavior>Edit</behavior>
                 <field>Portal_Assignable_Product__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Billing_Type__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
