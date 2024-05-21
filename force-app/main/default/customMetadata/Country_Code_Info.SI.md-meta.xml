@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SI</label>
+    <protected>false</protected>
+    <values>
+        <field>Country_Name__c</field>
+        <value xsi:type="xsd:string">Slovenia</value>
+    </values>
+    <values>
+        <field>Language__c</field>
+        <value xsi:type="xsd:string">English;Slovenian</value>
+    </values>
+    <values>
+        <field>Queue_Family__c</field>
+        <value xsi:type="xsd:string">Europe</value>
+    </values>
+</CustomMetadata>
