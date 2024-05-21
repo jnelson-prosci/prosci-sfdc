@@ -1,0 +1,180 @@
+Name,Country_Name__c,Queue_Family__c,Language__c
+AF,Afghanistan,GAN,Pashto;Persian;Uzbek
+AL,Albania,Europe,Albanian;English
+DZ,Algeria,GAN,Arabic;French;Kabyle
+AS,American Samoa,US,English
+AD,Andorra,Europe,Catalan;English
+AO,Angola,GAN,Lingala;Portuguese
+AI,Anguilla,Canada,English;Spanish
+AG,Antigua and Barbuda,Canada,English;Spanish
+AR,Argentina,LATAM,English;Spanish
+AM,Armenia,GAN,Armenian
+AW,Aruba,Canada,Dutch;Spanish
+AU,Australia,ANZ,English
+AT,Austria,Europe,English;German
+AZ,Azerbaijan,GAN,Azerbaijani;Azerbaijani
+BS,"Bahamas, The",Canada,English;Spanish
+BH,Bahrain,GAN,Arabic
+BD,Bangladesh,Singapore,Bangla;Chakma;English
+BB,Barbados,Canada,English;Spanish
+BY,Belarus,Europe,Belarusian;Russian
+BE,Belgium,Europe,Dutch;English;French;German;Walloon
+BZ,Belize,LATAM,English;Spanish
+BJ,Benin,GAN,French;Yoruba
+BM,Bermuda,Canada,English;Spanish
+BT,Bhutan,Singapore,Dzongkha
+BO,Bolivia,LATAM,Quechua;Spanish
+BA,Bosnia and Herzegovina,Europe,Bosnian;Bosnian;Croatian;English;Serbian;Serbian
+BW,Botswana,GAN,English;Tswana
+BR,Brazil,Brazil,English;Portuguese;Spanish
+BN,Brunei,Singapore,Malay;Malay
+BG,Bulgaria,Europe,Bulgarian;English
+BF,Burkina Faso,GAN,French;Fulah
+BI,Burundi,GAN,English;French;Rundi
+KH,Cambodia,Singapore,Khmer
+CM,Cameroon,GAN,Aghem;Bafia;Basaa;Duala;English;Ewondo;French;Fulah;Kako;Kwasio;Meta?;Mundang;Ngiemboon;Ngomba;Yangben
+CA,Canada,Canada,English;French;Inuktitut;Mohawk;Spanish
+CV,Cape Verde,GAN,Kabuverdianu;Portuguese
+KY,Cayman Islands,Canada,English;Spanish
+CF,Central African Republic,GAN,French;Lingala;Sango
+TD,Chad,GAN,Arabic;French
+CL,Chile,LATAM,English;Mapuche;Spanish
+CN,China,Singapore,Cantonese;Chinese;Chinese;English;Sichuan Yi;Tibetan;Uyghur
+CX,Christmas Island,ANZ,English
+CC,Cocos (Keeling) Islands,ANZ,English
+CO,Colombia,LATAM,English;Spanish
+KM,Comoros,GAN,Arabic;French
+CG,"Congo, Republic of the",GAN,French;Lingala
+CK,Cook Islands,ANZ,English
+CR,Costa Rica,LATAM,Spanish
+CI,Cote d'Ivoire,GAN,French
+HR,Croatia,Europe,Croatian;English
+CU,Cuba,Canada,Spanish
+CY,Cyprus,Europe,English;Greek;Turkish
+CZ,Czech Republic,Europe,Czech;English
+DK,Denmark,Europe,Danish;English;Faroese
+DJ,Djibouti,GAN,Arabic;French;Somali
+DM,Dominica,Canada,English;Spanish
+DO,Dominican Republic,LATAM,Spanish
+EC,Ecuador,LATAM,Quechua;Spanish
+EG,Egypt,GAN,Arabic
+SV,El Salvador,LATAM,Spanish
+ER,Eritrea,GAN,Arabic;Blin;English;Geez;Tigre;Tigrinya
+EE,Estonia,Europe,English;Estonian
+FK,Falkland Islands (Islas Malvinas),Europe,English;Spanish
+FO,Faroe Islands,Europe,Faroese
+FI,Finland,Europe,English;Finnish;Inari Sami;Northern Sami;Swedish
+FR,France,Europe,Breton;Catalan;Corsican;English;French;Occitan;Portuguese;Swiss German
+GF,French Guiana,LATAM,French;Spanish
+GA,Gabon,GAN,French
+GM,"Gambia, The",GAN,English;Fulah
+DE,Germany,Europe,Colognian;English;German;Low German;Lower Sorbian;Upper Sorbian
+GI,Gibraltar,Europe,English
+GR,Greece,Europe,English;Greek
+GL,Greenland,Europe,Danish;Kalaallisut;Spanish
+GD,Grenada,Canada,English;Spanish
+GP,Guadeloupe,Europe,French;Spanish
+GU,Guam,US,English
+GT,Guatemala,LATAM,Spanish
+GG,Guernsey,Europe,English
+GN,Guinea,GAN,French;Fulah;Kpelle;N’Ko
+GW,Guinea-Bissau,GAN,Fulah;Portuguese
+GY,Guyana,LATAM,English;Spanish
+HT,Haiti,Canada,French;Spanish
+HN,Honduras,LATAM,Spanish
+HU,Hungary,Europe,English;Hungarian
+IS,Iceland,Europe,English;Icelandic
+IN,India,Singapore,Assamese;Bangla;Bodo;Chakma;English;Gujarati;Hindi;Kannada;Kashmiri;Kashmiri;Kashmiri;Konkani;Malayalam;Manipuri;Manipuri;Marathi;Nepali;Odia;Punjabi;Sanskrit;Santali;Santali;Tamil;Telugu;Tibetan;Urdu;Urdu;Urdu
+ID,Indonesia,Singapore,English;Indonesian;Javanese
+IR,Iran,GAN,Kurdish;Sorani;Mazanderani;Northern Luri;Persian
+IQ,Iraq,GAN,Arabic;Kurdish;Sorani;Northern Luri;Syriac
+IE,Ireland,Europe,English;Irish
+IL,Israel,GAN,Arabic;English;Hebrew
+IT,Italy,Europe,Catalan;English;Friulian;German;Italian;Sardinian;Sicilian
+JM,Jamaica,Canada,English
+JP,Japan,Singapore,English;Japanese
+JE,Jersey,Europe,English
+JO,Jordan,GAN,Arabic
+KZ,Kazakhstan,GAN,Kazakh;Russian
+KE,Kenya,GAN,Embu;English;Gusii;Kalenjin;Kamba;Kikuyu;Luo;Luyia;Masai;Meru;Oromo;Samburu;Somali;Swahili;Taita;Teso
+KI,Kiribati,GAN,English
+KP,"Korea, North",GAN,Korean
+KR,"Korea, South",Singapore,English;Korean
+KW,Kuwait,GAN,Arabic
+KG,Kyrgyzstan,GAN,Kyrgyz;Russian
+LA,Laos,GAN,Lao
+LV,Latvia,Europe,English;Latvian
+LB,Lebanon,GAN,Arabic
+LS,Lesotho,GAN,English;Southern Sotho
+LR,Liberia,GAN,English;Fulah;Kpelle;Vai;Vai
+LY,Libya,GAN,Arabic
+LI,Liechtenstein,Europe,German;Swiss German
+LT,Lithuania,Europe,English;Lithuanian
+LU,Luxembourg,Europe,English;French;German;Luxembourgish;Portuguese
+MK,Macedonia,Europe,Albanian;Macedonian
+MG,Madagascar,GAN,English;French;Malagasy
+MW,Malawi,GAN,English;Nyanja
+MY,Malaysia,Singapore,English;Malay;Malay;Tamil
+ML,Mali,GAN,Bambara;French;Koyra Chiini;Koyraboro Senni
+MT,Malta,Europe,English;Maltese
+MQ,Martinique,Europe,French;Spanish
+MX,Mexico,LATAM,English;Spanish
+MD,Moldova,Europe,Romanian;Russian
+MC,Monaco,Europe,French
+MN,Mongolia,GAN,Mongolian
+MA,Morocco,GAN,Arabic;Central Atlas Tamazight;French;Standard Moroccan Tamazight;Tachelhit;Tachelhit
+MM,Myanmar (Burma),GAN,Burmese;English
+NA,Namibia,GAN,Afrikaans;English;Nama
+NL,Netherlands,Europe,Dutch;English;Low German;Western Frisian
+AN,Netherlands Antilles,Canada,English;Dutch;Papiamentu
+NZ,New Zealand,ANZ,English;Maori
+NI,Nicaragua,LATAM,Spanish
+NG,Nigeria,GAN,English;Fulah;Hausa;Igbo;Jju;Tyap;Yoruba
+NO,Norway,Europe,English;Northern Sami;Norwegian Bokmål;Norwegian Nynorsk
+OM,Oman,GAN,Arabic
+PK,Pakistan,Singapore,English;Pashto;Punjabi;Punjabi;Sindhi;Urdu;Urdu;Urdu
+PA,Panama,LATAM,Spanish
+PG,Papua New Guinea,ANZ,English
+PY,Paraguay,LATAM,Guarani;Spanish
+PE,Peru,LATAM,Quechua;Spanish
+PH,Philippines,Singapore,Cebuano;English;Filipino;Spanish
+PL,Poland,Europe,English;Polish
+PT,Portugal,Europe,English;Portuguese
+PR,Puerto Rico,US,English;Spanish
+QA,Qatar,GAN,Arabic
+RE,Reunion,Europe,French
+RO,Romania,Europe,English;Romanian
+RU,Russia,Europe,Bashkir;Chechen;Chuvash;English;Erzya;Ossetic;Russian;Sakha;Tatar
+KN,Saint Kitts and Nevis,Canada,English;Spanish
+LC,Saint Lucia,Canada,English;Spanish
+SM,San Marino,Europe,Italian
+SA,Saudi Arabia,GAN,Arabic;English
+SG,Singapore,Singapore,Chinese;English;Malay;Tamil
+SK,Slovakia,Europe,English;Slovak
+SI,Slovenia,Europe,English;Slovenian
+ZA,South Africa,GAN,Afrikaans;English;Northern Sotho;South Ndebele;Southern Sotho;Swati;Tsonga;Tswana;Venda;Xhosa;Zulu
+ES,Spain,Europe,Asturian;Basque;Catalan;English;Galician;Spanish
+LK,Sri Lanka,Singapore,Sinhala;Tamil
+SE,Sweden,Europe,English;Northern Sami;Swedish
+CH,Switzerland,Europe,English;French;German;Italian;Portuguese;Romansh;Swiss German;Walser
+TW,Taiwan,Singapore,Chinese;English;Taroko
+TZ,Tanzania,GAN,Asu;Bena;English;Langi;Machame;Makonde;Masai;Rombo;Rwa;Sangu;Shambala;Swahili;Vunjo
+TH,Thailand,Singapore,English;Thai
+TT,Trinidad and Tobago,Canada,English;Spanish
+TN,Tunisia,GAN,Arabic;French
+TR,Turkey,GAN,English;Kurdish;Turkish
+TC,Turks and Caicos Islands,Canada,English;Spanish
+UG,Uganda,GAN,Chiga;English;Ganda;Nyankole;Soga;Swahili;Teso
+UA,Ukraine,Europe,English;Russian;Ukrainian
+AE,United Arab Emirates,GAN,Arabic;English
+GB,United Kingdom,Europe,Cornish;English;Scottish Gaelic;Welsh
+US,United States,US,Cherokee;English (United States);English;Hawaiian;Lakota;Spanish
+UY,Uruguay,LATAM,Spanish
+UZ,Uzbekistan,GAN,Uzbek;Uzbek
+VU,Vanuatu,Europe,English;French
+VE,Venezuela,LATAM,Spanish
+VN,Vietnam,Singapore,Vietnamese
+VI,Virgin Islands,US,English;Spanish
+EH,Western Sahara,GAN,Arabic
+ZM,Zambia,GAN,Bemba;English
+ZW,Zimbabwe,GAN,English;North Ndebele;Shona
