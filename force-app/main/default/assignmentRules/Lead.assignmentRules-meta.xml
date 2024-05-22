@@ -101,11 +101,11 @@
             <formula>AND(
 				Queue_Family__c = &apos;Europe&apos;,
 				OR(
-				    ISPICKVAL(Country_Code__c, &apos;NO&apos;),
-				    ISPICKVAL(Country_Code__c, &apos;DK&apos;),
-				    ISPICKVAL(Country_Code__c, &apos;FI&apos;),
-				    ISPICKVAL(Country_Code__c, &apos;IS&apos;),
-				    ISPICKVAL(Country_Code__c, &apos;SE&apos;)
+        CONTAINS(Languages__c, &apos;Danish&apos;),
+				    CONTAINS(Languages__c, &apos;Norwegian&apos;),
+				    CONTAINS(Languages__c, &apos;Icelandic&apos;),
+				    CONTAINS(Languages__c, &apos;Finnish&apos;),
+				    CONTAINS(Languages__c, &apos;Greenlandic&apos;)
     )
 )</formula>
         </ruleEntry>
