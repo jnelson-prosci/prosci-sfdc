@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>Language__c</field>
-        <value xsi:type="xsd:string">Asturian;Basque;Catalan;English;Galician;Spanish</value>
+        <value xsi:type="xsd:string">Spanish</value>
     </values>
     <values>
         <field>Queue_Family__c</field>
