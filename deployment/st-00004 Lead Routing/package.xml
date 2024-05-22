@@ -42,5 +42,10 @@
 		<members>Lead.Queue_Family__c</members>
 		<name>CustomField</name>
 	</types>
+    <types>
+        <members>Lead-Lead Layout</members>
+		<members>Country_Code_Info__mdt-Country Code Info Layout</members>
+		<name>Layout</name>
+	</types>
 	<version>58.0</version>
 </Package>
