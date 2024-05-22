@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+		<members>Lead_Assign_Country_Code_Info</members>
+		<name>Flow</name>
+	</types>
+    <types>
+		<members>Country_Code_Info__mdt</members>
+		<name>CustomObject</name>
+	</types>
 	<types>
 		<members>Lead.Prosci Global Lead Assignments</members>
 		<name>AssignmentRule</name>
@@ -27,6 +35,12 @@
     	<types>
 		<members>Industry</members>
 		<name>StandardValueSet</name>
+	</types>
+    	<types>
+		<members>Lead.Country_Name__c</members>
+		<members>Lead.Languages__c</members>
+		<members>Lead.Queue_Family__c</members>
+		<name>CustomField</name>
 	</types>
 	<version>58.0</version>
 </Package>
