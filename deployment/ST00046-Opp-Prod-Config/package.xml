@@ -8,6 +8,7 @@
 		<name>CustomField</name>
 	</types>
 	<types>
+		<members>Opportunity-Enterprise Engagement</members>
 		<members>Opportunity-Lightning Product Order</members>
 		<members>OpportunityLineItem-Opportunity Product Layout</members>
 		<members>Product2-Product Layout</members>
