@@ -71,7 +71,7 @@ GD,Grenada,Canada,English;Spanish
 GF,French Guiana,LATAM,French;Spanish
 GG,Guernsey,Europe,English
 GI,Gibraltar,Europe,English
-GL,Greenland,Europe,English
+GL,Greenland,Europe,Greenlandic
 GM,"Gambia, The",GAN,English;Fulah
 GN,Guinea,GAN,French;Fulah;Kpelle;N?Ko
 GP,Guadeloupe,Europe,French
@@ -224,3 +224,22 @@ YT,Mayotte,GAN,French
 ZA,South Africa,GAN,Afrikaans;English;Northern Sotho;South Ndebele;Southern Sotho;Swati;Tsonga;Tswana;Venda;Xhosa;Zulu
 ZM,Zambia,GAN,Bemba;English
 ZW,Zimbabwe,GAN,English;North Ndebele;Shona
+AQ,Antarctica,GAN,None
+AX,Åland Islands,Europe,Swedish
+BL,Saint Barthélemy,Canada,French
+BV,Bouvet Island,Europe,Norwegian
+CD,Democratic Republic of the Congo,GAN,French
+CW,Curaçao,Canada,"Dutch, Papiamento, English"
+GS,South Georgia and the South Sandwich Islands,Europe,English
+HK,Hong Kong,Singapore,"Chinese, English"
+HM,Heard Island and McDonald Islands,GAN,English
+IO,British Indian Ocean Territory,GAN,English
+MF,Saint Martin (French part),Canada,French
+MO,Macau,Singapore,"Chinese, Portuguese"
+SH,"Saint Helena, Ascension and Tristan da Cunha",GAN,English
+SS,South Sudan,GAN,English
+SX,Sint Maarten,GAN,"Dutch, English"
+TF,French Southern and Antarctic Lands,Europe,French
+TL,Timor-Leste (East Timor),GAN,"Portuguese, Tetum"
+UM,United States Minor Outlying Islands,GAN,English
+XK,Kosovo,Europe,"Albanian, Serbian"
