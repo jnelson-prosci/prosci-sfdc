@@ -6,461 +6,165 @@
         <ruleEntry>
             <assignedTo>ANZ_Leads</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <formula>OR(ISPICKVAL(Country_Code__c, &apos;AU&apos;),ISPICKVAL(Country_Code__c, &apos;NZ&apos;))</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>gsingh@prosci.com</assignedTo>
-            <assignedToType>User</assignedToType>
             <criteriaItems>
-                <field>Lead.Interest__c</field>
-                <operation>contains</operation>
-                <value>CMP</value>
-            </criteriaItems>
-            <template>X001_All_auto_response_emails_WebtoLead/LeadsNewassignmentnotificationSAMPLE</template>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>gsingh@prosci.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Lead.Interest__c</field>
-                <operation>contains</operation>
-                <value>bookstore</value>
-            </criteriaItems>
-            <template>X001_All_auto_response_emails_WebtoLead/X07_AUTO_response_to_Bookstore_order_from_website</template>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>gsingh@prosci.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Lead.Interest__c</field>
+                <field>Lead.Queue_Family__c</field>
                 <operation>equals</operation>
-                <value>Contact,Change Community</value>
-            </criteriaItems>
-            <template>X001_All_auto_response_emails_WebtoLead/X04_Auto_Response_for_Prosci_CMP_Public_Website_Registrations</template>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>gsingh@prosci.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Lead.Interest__c</field>
-                <operation>equals</operation>
-                <value>Webinar ANZ</value>
-            </criteriaItems>
-            <template>unfiled$public/LeadsWebtoLeademailresponseSAMPLE</template>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>gsingh@prosci.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Lead.Interest__c</field>
-                <operation>contains</operation>
-                <value>info,Contact us</value>
-            </criteriaItems>
-            <template>X001_All_auto_response_emails_WebtoLead/X01_Auto_response_Contact_Use_form_on_websitefor_info_form</template>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>gsingh@prosci.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Lead.Interest__c</field>
-                <operation>equals</operation>
-                <value>MGMT - ANZ</value>
-            </criteriaItems>
-            <template>X001_All_auto_response_emails_WebtoLead/LeadsNewassignmentnotificationSAMPLE</template>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>gsingh@prosci.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Lead.Interest__c</field>
-                <operation>contains</operation>
-                <value>Agile</value>
+                <value>ANZ</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Brazil_Leads</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
-                <field>Lead.Country_Code__c</field>
+                <field>Lead.Queue_Family__c</field>
                 <operation>equals</operation>
-                <value>BR</value>
+                <value>Brazil</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Canada_Leads</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
-                <field>Lead.Country_Code__c</field>
+                <field>Lead.Queue_Family__c</field>
                 <operation>equals</operation>
-                <value>CA</value>
+                <value>Canada</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>LATAM_Leads</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <formula>OR(
-                ISPICKVAL(Country_Code__c, &apos;AR&apos;),
-                ISPICKVAL(Country_Code__c, &apos;CR&apos;),
-                ISPICKVAL(Country_Code__c, &apos;CU&apos;),
-                ISPICKVAL(Country_Code__c, &apos;BZ&apos;),
-                ISPICKVAL(Country_Code__c, &apos;PY&apos;),
-                ISPICKVAL(Country_Code__c, &apos;UY&apos;),
-                ISPICKVAL(Country_Code__c, &apos;EC&apos;),
-                ISPICKVAL(Country_Code__c, &apos;HN&apos;),
-                ISPICKVAL(Country_Code__c, &apos;SV&apos;),
-                ISPICKVAL(Country_Code__c, &apos;NI&apos;),
-                ISPICKVAL(Country_Code__c, &apos;HT&apos;),
-                ISPICKVAL(Country_Code__c, &apos;GY&apos;),
-                ISPICKVAL(Country_Code__c, &apos;AG&apos;)
-        )</formula>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>LATAM</value>
+            </criteriaItems>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Europe_Leads_Dutch</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
-                <field>Lead.Country_Code__c</field>
+                <field>Lead.Queue_Family__c</field>
                 <operation>equals</operation>
-                <value>BE</value>
+                <value>Europe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Languages__c</field>
+                <operation>contains</operation>
+                <value>Dutch</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Europe_Leads_Spanish</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
-                <field>Lead.Country_Code__c</field>
+                <field>Lead.Queue_Family__c</field>
                 <operation>equals</operation>
-                <value>ES</value>
+                <value>Europe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Languages__c</field>
+                <operation>contains</operation>
+                <value>Spanish</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Europe_Leads_Italian</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <formula>OR(
-                ISPICKVAL(Country_Code__c, &apos;CH&apos;),
-                ISPICKVAL(Country_Code__c, &apos;IT&apos;),
-                ISPICKVAL(Country_Code__c, &apos;SM&apos;)
-            )</formula>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>Europe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Languages__c</field>
+                <operation>contains</operation>
+                <value>Italian</value>
+            </criteriaItems>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Europe_Leads_French</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <formula>OR(
-                ISPICKVAL(Country_Code__c, &apos;FR&apos;),
-                ISPICKVAL(Country_Code__c, &apos;LU&apos;),
-                ISPICKVAL(Country_Code__c, &apos;MC&apos;)
-                )</formula>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>Europe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Languages__c</field>
+                <operation>contains</operation>
+                <value>French</value>
+            </criteriaItems>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Europe_Leads_Nordic_Region</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <formula>OR(
-                ISPICKVAL(Country_Code__c, &apos;AX&apos;),
-                ISPICKVAL(Country_Code__c, &apos;DK&apos;),
-                ISPICKVAL(Country_Code__c, &apos;FI&apos;),
-                ISPICKVAL(Country_Code__c, &apos;IS&apos;),
-                ISPICKVAL(Country_Code__c, &apos;SE&apos;)
-            )</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>Europe_Leads_German</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>OR(
-			ISPICKVAL(Country_Code__c, &apos;AT&apos;),     
-			ISPICKVAL(Country_Code__c, &apos;DE&apos;),     
-			ISPICKVAL(Country_Code__c, &apos;LI&apos;)
+            <formula>AND(
+				Queue_Family__c = &apos;Europe&apos;,
+				OR(
+				    ISPICKVAL(Country_Code__c, &apos;NO&apos;),
+				    ISPICKVAL(Country_Code__c, &apos;DK&apos;),
+				    ISPICKVAL(Country_Code__c, &apos;FI&apos;),
+				    ISPICKVAL(Country_Code__c, &apos;IS&apos;),
+				    ISPICKVAL(Country_Code__c, &apos;SE&apos;)
+    )
 )</formula>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>Europe_Leads_English</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>OR(     
-				ISPICKVAL(Country_Code__c, &apos;AD&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;AL&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;BG&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;CZ&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;EE&apos;),
-				ISPICKVAL(Country_Code__c, &apos;GG&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;GI&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;GR&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;HR&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;HU&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;IE&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;IM&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;JE&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;LT&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;LV&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;ME&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;MT&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;NO&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;PL&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;PT&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;RO&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;RS&apos;),        
-				ISPICKVAL(Country_Code__c, &apos;SI&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;SK&apos;),     
-				ISPICKVAL(Country_Code__c, &apos;UA&apos;) 
-            )</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>US_Leads_Carnivores</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>AND(
-                ISPICKVAL(Country_Code__c, &apos;US&apos;),
-                OR(
-                    ISPICKVAL(Industry, &apos;Finance/Banking&apos;),
-                    ISPICKVAL(Industry, &apos;Insurance&apos;),
-                    ISPICKVAL(Industry, &apos;Consulting&apos;),
-                    ISPICKVAL(Industry, &apos;Professional, Scientific, &amp; Tech Service&apos;),
-                    ISPICKVAL(Industry, &apos;Transportation &amp; Warehousing&apos;)
-                )
-            )</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>US_Leads_Nitro</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>AND(
-                ISPICKVAL(Country_Code__c, &apos;US&apos;),
-                OR(
-                    ISPICKVAL(Industry, &apos;Non-profit&apos;),
-                    CONTAINS(TEXT(Industry), &apos;Government&apos;),
-                    ISPICKVAL(Industry, &apos;Pharmaceutical&apos;),
-                    ISPICKVAL(Industry, &apos;Education Services&apos;)
-                )
-            )</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>US_Leads_Invictus</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>AND(
-                ISPICKVAL(Country_Code__c, &apos;US&apos;),
-                OR(
-                    CONTAINS(TEXT(Industry), &apos;Manufacturing&apos;),
-                    ISPICKVAL(Industry, &apos;Energy, Oil, &amp; Gas&apos;),
-                    ISPICKVAL(Industry, &apos;Fast Moving Consumer Goods&apos;),
-                    ISPICKVAL(Industry, &apos;Utilities&apos;),
-                    ISPICKVAL(Industry, &apos;Aerospace&apos;),
-                    ISPICKVAL(Industry, &apos;Services - General&apos;),
-                    ISPICKVAL(Industry, &apos;Engineering&apos;)
-                )
-            )</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>US_Leads_The_Challenger</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>AND(
-                ISPICKVAL(Country_Code__c, &apos;US&apos;),
-                OR(
-                    ISPICKVAL(Industry, &apos;ICT Hardware &amp; Software&apos;),
-                    ISPICKVAL(Industry, &apos;Telecommunications&apos;),
-                    ISPICKVAL(Industry, &apos;Healthcare&apos;),
-                    ISPICKVAL(Industry, &apos;Information Services/Technology&apos;),
-                    ISPICKVAL(Industry, &apos;Retail Trade&apos;)
-                )
-            )</formula>
-        </ruleEntry>
-    </assignmentRule>
-    <assignmentRule>
-        <fullName>Brazil Lead Assignments</fullName>
-        <active>false</active>
-        <ruleEntry>
-            <assignedTo>Brazil_Leads</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Lead.Country_Code__c</field>
-                <operation>equals</operation>
-                <value>BR</value>
-            </criteriaItems>
-        </ruleEntry>
-    </assignmentRule>
-    <assignmentRule>
-        <fullName>Canada Lead Assignments</fullName>
-        <active>false</active>
-        <ruleEntry>
-            <assignedTo>Canada_Leads</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Lead.Country_Code__c</field>
-                <operation>equals</operation>
-                <value>CA</value>
-            </criteriaItems>
-        </ruleEntry>
-    </assignmentRule>
-    <assignmentRule>
-        <fullName>Europe Lead Assignments</fullName>
-        <active>false</active>
-        <ruleEntry>
-            <assignedTo>Europe_Leads_Dutch</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Lead.Country_Code__c</field>
-                <operation>equals</operation>
-                <value>BE</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>Europe_Leads_Spanish</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Lead.Country_Code__c</field>
-                <operation>equals</operation>
-                <value>ES</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>Europe_Leads_Italian</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>OR(
-                ISPICKVAL(Country_Code__c, &apos;CH&apos;),
-                ISPICKVAL(Country_Code__c, &apos;IT&apos;),
-                ISPICKVAL(Country_Code__c, &apos;SM&apos;)
-            )</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>Europe_Leads_French</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>OR(
-                ISPICKVAL(Country_Code__c, &apos;FR&apos;),
-                ISPICKVAL(Country_Code__c, &apos;LU&apos;),
-                ISPICKVAL(Country_Code__c, &apos;MC&apos;)
-            )</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>Europe_Leads_Nordic_Region</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>OR(
-                ISPICKVAL(Country_Code__c, &apos;AX&apos;),
-                ISPICKVAL(Country_Code__c, &apos;DK&apos;),
-                ISPICKVAL(Country_Code__c, &apos;FI&apos;),
-                ISPICKVAL(Country_Code__c, &apos;IS&apos;),
-                ISPICKVAL(Country_Code__c, &apos;SE&apos;)
-            )</formula>
-        </ruleEntry>
-        <ruleEntry>
             <assignedTo>Europe_Leads_German</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <formula>OR(
-                ISPICKVAL(Country_Code__c, &apos;AT&apos;),
-                ISPICKVAL(Country_Code__c, &apos;DE&apos;),
-                ISPICKVAL(Country_Code__c, &apos;LI&apos;),
-                ISPICKVAL(Country_Code__c, &apos;LU&apos;)
-            )</formula>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>Europe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Languages__c</field>
+                <operation>contains</operation>
+                <value>German</value>
+            </criteriaItems>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Europe_Leads_English</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <formula>OR(
-                ISPICKVAL(Country_Code__c, &apos;AD&apos;),
-                ISPICKVAL(Country_Code__c, &apos;AL&apos;),
-                ISPICKVAL(Country_Code__c, &apos;BG&apos;),
-                ISPICKVAL(Country_Code__c, &apos;CZ&apos;),
-                ISPICKVAL(Country_Code__c, &apos;EE&apos;),
-                ISPICKVAL(Country_Code__c, &apos;ES&apos;),
-                ISPICKVAL(Country_Code__c, &apos;GG&apos;),
-                ISPICKVAL(Country_Code__c, &apos;GI&apos;),
-                ISPICKVAL(Country_Code__c, &apos;GR&apos;),
-                ISPICKVAL(Country_Code__c, &apos;HR&apos;),
-                ISPICKVAL(Country_Code__c, &apos;HU&apos;),
-                ISPICKVAL(Country_Code__c, &apos;IE&apos;),
-                ISPICKVAL(Country_Code__c, &apos;IM&apos;),
-                ISPICKVAL(Country_Code__c, &apos;JE&apos;),
-                ISPICKVAL(Country_Code__c, &apos;LT&apos;),
-                ISPICKVAL(Country_Code__c, &apos;LV&apos;),
-                ISPICKVAL(Country_Code__c, &apos;ME&apos;),
-                ISPICKVAL(Country_Code__c, &apos;MT&apos;),
-                ISPICKVAL(Country_Code__c, &apos;NO&apos;),
-                ISPICKVAL(Country_Code__c, &apos;PL&apos;),
-                ISPICKVAL(Country_Code__c, &apos;PT&apos;),
-                ISPICKVAL(Country_Code__c, &apos;RO&apos;),
-                ISPICKVAL(Country_Code__c, &apos;RS&apos;),
-                ISPICKVAL(Country_Code__c, &apos;SE&apos;),
-                ISPICKVAL(Country_Code__c, &apos;SI&apos;),
-                ISPICKVAL(Country_Code__c, &apos;SK&apos;),
-                ISPICKVAL(Country_Code__c, &apos;UA&apos;)
-            )</formula>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>Europe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Languages__c</field>
+                <operation>equals</operation>
+                <value>English</value>
+            </criteriaItems>
         </ruleEntry>
-    </assignmentRule>
-    <assignmentRule>
-        <fullName>LATAM Lead Assignments</fullName>
-        <active>false</active>
-        <ruleEntry>
-            <assignedTo>LATAM_Leads</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>OR(
-                ISPICKVAL(Country_Code__c, &apos;AR&apos;),
-                ISPICKVAL(Country_Code__c, &apos;CR&apos;),
-                ISPICKVAL(Country_Code__c, &apos;CU&apos;),
-                ISPICKVAL(Country_Code__c, &apos;BZ&apos;),
-                ISPICKVAL(Country_Code__c, &apos;PY&apos;),
-                ISPICKVAL(Country_Code__c, &apos;UY&apos;),
-                ISPICKVAL(Country_Code__c, &apos;EC&apos;),
-                ISPICKVAL(Country_Code__c, &apos;HN&apos;),
-                ISPICKVAL(Country_Code__c, &apos;SV&apos;),
-                ISPICKVAL(Country_Code__c, &apos;NI&apos;),
-                ISPICKVAL(Country_Code__c, &apos;HT&apos;),
-                ISPICKVAL(Country_Code__c, &apos;GY&apos;),
-                ISPICKVAL(Country_Code__c, &apos;AG&apos;)
-            )</formula>
-        </ruleEntry>
-    </assignmentRule>
-    <assignmentRule>
-        <fullName>US Lead Assignments</fullName>
-        <active>false</active>
         <ruleEntry>
             <assignedTo>US_Leads_Carnivores</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <formula>AND(
-                ISPICKVAL(Country_Code__c, &apos;US&apos;),
-                OR(
-                    ISPICKVAL(Industry, &apos;Finance/Banking&apos;),
-                    ISPICKVAL(Industry, &apos;Insurance&apos;), 			
-                    ISPICKVAL(Industry, &apos;Consulting&apos;),
-                    ISPICKVAL(Industry, &apos;Professional, Scientific, &amp; Tech Service&apos;),
-                    ISPICKVAL(Industry, &apos;Transportation &amp; Warehousing	&apos;)
-                )
-            )</formula>
+            <formula>AND(                 ISPICKVAL(Country_Code__c, &apos;US&apos;),                 OR(                     ISPICKVAL(Industry, &apos;Finance/Banking&apos;),                     ISPICKVAL(Industry, &apos;Insurance&apos;),                     ISPICKVAL(Industry, &apos;Consulting&apos;),                     ISPICKVAL(Industry, &apos;Professional, Scientific, &amp; Tech Service&apos;),                     ISPICKVAL(Industry, &apos;Transportation &amp; Warehousing&apos;)                 )             )</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>US_Leads_Nitro</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <formula>AND(
-                ISPICKVAL(Country_Code__c, &apos;US&apos;),
-                OR(
-                    ISPICKVAL(Industry, &apos;Non-profit&apos;),
-                    CONTAINS(TEXT(Industry), &apos;Government&apos;),
-                    ISPICKVAL(Industry, &apos;Pharmaceutical&apos;),
-                    ISPICKVAL(Industry, &apos;Education Services&apos;)
-                )
-            )</formula>
+            <formula>AND(                 ISPICKVAL(Country_Code__c, &apos;US&apos;),                 OR(                     ISPICKVAL(Industry, &apos;Non-profit&apos;),                     CONTAINS(TEXT(Industry), &apos;Government&apos;),                     ISPICKVAL(Industry, &apos;Pharmaceutical&apos;),                     ISPICKVAL(Industry, &apos;Education Services&apos;)                 )             )</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>US_Leads_Invictus</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <formula>AND(
-                ISPICKVAL(Country_Code__c, &apos;US&apos;),
-                OR(
-                    CONTAINS(TEXT(Industry), &apos;Manufacturing&apos;),
-                    ISPICKVAL(Industry, &apos;	Energy, Oil, &amp; Gas&apos;),
-                    ISPICKVAL(Industry, &apos;Fast Moving Consumer Goods&apos;),
-                    ISPICKVAL(Industry, &apos;Utilities&apos;),
-                    ISPICKVAL(Industry, &apos;Aerospace&apos;),
-                    ISPICKVAL(Industry, &apos;Services - General&apos;),
-                    ISPICKVAL(Industry, &apos;Engineering&apos;)
-                )
-            )</formula>
+            <formula>AND(                 ISPICKVAL(Country_Code__c, &apos;US&apos;),                 OR(                     CONTAINS(TEXT(Industry), &apos;Manufacturing&apos;),                     ISPICKVAL(Industry, &apos;Energy, Oil, &amp; Gas&apos;),                     ISPICKVAL(Industry, &apos;Fast Moving Consumer Goods&apos;),                     ISPICKVAL(Industry, &apos;Utilities&apos;),                     ISPICKVAL(Industry, &apos;Aerospace&apos;),                     ISPICKVAL(Industry, &apos;Services - General&apos;),                     ISPICKVAL(Industry, &apos;Engineering&apos;)                 )             )</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>US_Leads_The_Challenger</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <formula>AND(
-                ISPICKVAL(Country_Code__c, &apos;US&apos;),   
-                OR(
-                    ISPICKVAL(Industry, &apos;ICT Hardware &amp; Software&apos;),
-                    ISPICKVAL(Industry, &apos;Telecommunications&apos;),
-                    ISPICKVAL(Industry, &apos;Healthcare&apos;),
-                    ISPICKVAL(Industry, &apos;Information Services/Technology&apos;),
-                    ISPICKVAL(Industry, &apos;Retail Trade&apos;)
-                )
-            )</formula>
+            <formula>AND(                 ISPICKVAL(Country_Code__c, &apos;US&apos;),                 OR(                     ISPICKVAL(Industry, &apos;ICT Hardware &amp; Software&apos;),                     ISPICKVAL(Industry, &apos;Telecommunications&apos;),                     ISPICKVAL(Industry, &apos;Healthcare&apos;),                     ISPICKVAL(Industry, &apos;Information Services/Technology&apos;),                     ISPICKVAL(Industry, &apos;Retail Trade&apos;)                 )             )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Other_Leads_GAN_other</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>GAN</value>
+            </criteriaItems>
         </ruleEntry>
     </assignmentRule>
 </AssignmentRules>
