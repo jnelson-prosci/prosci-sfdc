@@ -6,4 +6,5 @@
     ⋅⋅⋅*sf cmdt generate records --csv [folder/]Country_Code_Info__mdt.csv --type-name Country_Code_Info__mdt*
     *Creates MDT records locally; developer will still need to deploy them to target org*
 2. Activate Lead - Assign Country Code Info flow
-3. Ensure Prosci Global Lead Assignments lead assignment rule(s) is active
+3. Ensure users with [permission set] permissions can access the Lead - Assign Country Code Info flow
+4. Ensure Prosci Global Lead Assignments lead assignment rule(s) is active
