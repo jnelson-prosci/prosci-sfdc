@@ -40,6 +40,15 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
+            <assignedTo>Singapore_Leads_Asian_country_leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>Singapore</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
             <assignedTo>Europe_Leads_Dutch</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
