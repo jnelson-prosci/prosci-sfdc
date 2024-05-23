@@ -89,6 +89,16 @@
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Country_Name__c</fieldItem>
+                <identifier>RecordCountry_Name_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
                 <fieldItem>Record.Previously_Existing_Contact__r.Browser_Language_Settings__c</fieldItem>
                 <identifier>RecordPreviously_Existing_Contact_rBrowser_Language_Settings_cField</identifier>
             </fieldInstance>
@@ -113,6 +123,16 @@
             <fieldInstance>
                 <fieldItem>Record.Previously_Existing_Contact__r.Comments_from_Website__c</fieldItem>
                 <identifier>RecordPreviously_Existing_Contact_rComments_from_Website_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Queue_Family__c</fieldItem>
+                <identifier>RecordQueue_Family_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-5bedef95-2315-499d-9f19-8ba57927de76</name>
