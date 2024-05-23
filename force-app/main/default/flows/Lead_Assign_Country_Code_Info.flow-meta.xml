@@ -58,19 +58,19 @@
         <description>If the Country Name field is null, a value will be assigned using the related MDT record.</description>
         <name>countryNameAssignment</name>
         <dataType>String</dataType>
-        <expression>IF(ISNULL({!$Record.Country_Name__c}), {!Get_Country_Code_Metadata_Info.Country_Name__c}, {!$Record.Country_Name__c})</expression>
+        <expression>IF(ISBLANK({!$Record.Country_Name__c}), {!Get_Country_Code_Metadata_Info.Country_Name__c}, {!$Record.Country_Name__c})</expression>
     </formulas>
     <formulas>
         <description>If the Language field is null, a value will be assigned using the related MDT record.</description>
         <name>languageAssignment</name>
         <dataType>String</dataType>
-        <expression>IF(ISNULL({!$Record.Languages__c}), {!Get_Country_Code_Metadata_Info.Language__c}, {!$Record.Languages__c})</expression>
+        <expression>IF(ISBLANK({!$Record.Languages__c}), {!Get_Country_Code_Metadata_Info.Language__c}, {!$Record.Languages__c})</expression>
     </formulas>
     <formulas>
         <description>If the Queue Family field is null, a value will be assigned using the related MDT record.</description>
         <name>queueFamilyAssignment</name>
         <dataType>String</dataType>
-        <expression>IF(ISNULL({!$Record.Queue_Family__c}), TEXT({!Get_Country_Code_Metadata_Info.Queue_Family__c}), {!$Record.Queue_Family__c})</expression>
+        <expression>IF(ISBLANK({!$Record.Queue_Family__c}), TEXT({!Get_Country_Code_Metadata_Info.Queue_Family__c}), {!$Record.Queue_Family__c})</expression>
     </formulas>
     <interviewLabel>Lead - Assign Country Code Info {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Lead - Assign Country Code Info</label>
