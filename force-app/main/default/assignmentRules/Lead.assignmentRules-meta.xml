@@ -140,11 +140,6 @@
                 <operation>equals</operation>
                 <value>Europe</value>
             </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Languages__c</field>
-                <operation>equals</operation>
-                <value>English</value>
-            </criteriaItems>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>US_Leads_Carnivores</assignedTo>
@@ -165,6 +160,15 @@
             <assignedTo>US_Leads_The_Challenger</assignedTo>
             <assignedToType>Queue</assignedToType>
             <formula>AND(                 ISPICKVAL(Country_Code__c, &apos;US&apos;),                 OR(                     ISPICKVAL(Industry, &apos;ICT Hardware &amp; Software&apos;),                     ISPICKVAL(Industry, &apos;Telecommunications&apos;),                     ISPICKVAL(Industry, &apos;Healthcare&apos;),                     ISPICKVAL(Industry, &apos;Information Services/Technology&apos;),                     ISPICKVAL(Industry, &apos;Retail Trade&apos;)                 )             )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>US_Leads_Carnivores</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>US</value>
+            </criteriaItems>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Other_Leads_GAN_other</assignedTo>
