@@ -99,14 +99,6 @@
                 <behavior>Edit</behavior>
                 <field>Licensing_Type__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Prosci_AI_Chat_Solution__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Prosci_AI_Chat_Solution__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -137,10 +129,8 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>I_need_Advisory_Statements__c</field>
-                <field>I_need_Advisory_Statements__c</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns/>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -345,12 +335,6 @@
                 <field>Lead_Domain__c</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Lead_Domain__c</field>
-            </layoutItems>
-        </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -432,8 +416,7 @@
         <fields>CM.LAST_UPDATE</fields>
         <relatedList>RelatedCampaignList</relatedList>
     </relatedLists>
-    <runAssignmentRulesDefault>true</runAssignmentRulesDefault>
-    <runAssignmentRulesDefault>true</runAssignmentRulesDefault>
+    <runAssignmentRulesDefault>false</runAssignmentRulesDefault>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
