@@ -111,6 +111,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>Country_Code__c</field>
+            <value>
+                <elementReference>GET_Related_Contact.Country_Code__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>FirstName</field>
             <value>
                 <elementReference>GET_Related_Contact.FirstName</elementReference>
