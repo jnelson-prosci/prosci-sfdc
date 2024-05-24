@@ -8,3 +8,7 @@
 2. Activate Lead - Assign Country Code Info flow
 3. Ensure users with [permission set] permissions can access the Lead - Assign Country Code Info flow
 4. Ensure Prosci Global Lead Assignments lead assignment rule(s) is active
+5. Grant Edit/Visible access for the following fields and permissions:
+    - Lead.Country_Name__c
+    - Lead.Languages__c
+    - Lead.Queue_Family__c
