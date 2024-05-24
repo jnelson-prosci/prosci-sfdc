@@ -93,8 +93,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Country_Name__c</fieldItem>
-                <identifier>RecordCountry_Name_cField</identifier>
+                <fieldItem>Record.Languages__c</fieldItem>
+                <identifier>RecordLanguages_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -117,6 +117,16 @@
             <fieldInstance>
                 <fieldItem>Record.Previously_Existing_Contact__r.I_need_Advisory_Statements__c</fieldItem>
                 <identifier>RecordPreviously_Existing_Contact_rI_need_Advisory_Statements_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Country_Name__c</fieldItem>
+                <identifier>RecordCountry_Name_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
