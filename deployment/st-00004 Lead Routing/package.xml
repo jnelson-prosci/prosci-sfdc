@@ -46,5 +46,19 @@
 		<members>Lead_Record_Page_Single_Related_Lists</members>
 		<name>FlexiPage</name>
 	</types>
+    <types>
+		<members>Lead.Europe_Leads_Dutch_Lead</members>
+		<members>Lead.Europe_Leads_English_Lead</members>
+		<members>Lead.Europe_Leads_French_Lead</members>
+		<members>Lead.Europe_Leads_German_Lead</members>
+		<members>Lead.Europe_Leads_Italian_Lead</members>
+		<members>Lead.Europe_Leads_Nordic_Region_Lead</members>
+		<members>Lead.Europe_Leads_Spanish_Lead</members>
+        <members>Lead.US_Leads_Carnivores_Lead</members>
+		<members>Lead.US_Leads_Invictus_Lead</members>
+		<members>Lead.US_Leads_Nitro_Lead</members>
+		<members>Lead.US_Leads_The_Challenger_Lead</members>
+		<name>ListView</name>
+	</types>
 	<version>58.0</version>
 </Package>
