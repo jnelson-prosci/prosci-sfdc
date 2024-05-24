@@ -10,38 +10,5 @@
 		<members>Opportunity-Global Sales Layout</members>
 		<name>Layout</name>
 	</types>
-	<types>
-		<members>Admin</members>
-		<members>Prosci - Account Manager</members>
-		<members>Prosci - Account Success Coordinator</members>
-		<members>Prosci - Accounting User</members>
-		<members>Prosci - Change Advisor</members>
-		<members>Prosci - Change Advisor Admin</members>
-		<members>Prosci - Client Liaison and Marketing Specialist</members>
-		<members>Prosci - Customer Service Manager</members>
-		<members>Prosci - Customer Service Rep</members>
-		<members>Prosci - Development</members>
-		<members>Prosci - Director of Program Excellence</members>
-		<members>Prosci - GAN Team</members>
-		<members>Prosci - Human Resources</members>
-		<members>Prosci - ICT</members>
-		<members>Prosci - ICT Contractor</members>
-		<members>Prosci - Legal</members>
-		<members>Prosci - Marketing User</members>
-		<members>Prosci - Production</members>
-		<members>Prosci - Program Advisor</members>
-		<members>Prosci - Retired Training Logistics</members>
-		<members>Prosci - Standard User</members>
-		<members>Prosci - Training Director</members>
-		<members>Prosci - Training Logistics</members>
-		<members>Prosci ANZ - Training Logistics</members>
-		<members>Sub-Admin</members>
-		<members>Sub-System Administrator</members>
-		<name>Profile</name>
-	</types>
-	<types>
-		<members>Opportunity.Global_Sales</members>
-		<name>RecordType</name>
-	</types>
 	<version>60.0</version>
 </Package>
