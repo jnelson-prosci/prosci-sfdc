@@ -176,7 +176,7 @@
     <picklistValues>
         <picklist>Status__c</picklist>
         <values>
-            <fullName>Closed - Lost%EF%BB%BF</fullName>
+            <fullName>Closed - Lost</fullName>
             <default>false</default>
         </values>
         <values>
