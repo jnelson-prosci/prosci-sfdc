@@ -83,6 +83,10 @@
 		<name>FlexiPage</name>
 	</types>
 	<types>
+		<members>Deal_Support_Process_Path</members>
+		<name>PathAssistant</name>
+	</types>
+	<types>
 		<members>Deal_Support_Process__c-Deal Support Process Layout</members>
 		<name>Layout</name>
 	</types>
