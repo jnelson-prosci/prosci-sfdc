@@ -51,6 +51,7 @@
 		<members>Deal_Support_Process__c.Portal_Admin_Contact__c</members>
 		<members>Deal_Support_Process__c.Practice__c</members>
 		<members>Deal_Support_Process__c.Program_Requested_timeframe__c</members>
+		<members>Deal_Support_Process__c.Program_Title__c</members>
 		<members>Deal_Support_Process__c.Region__c</members>
 		<members>Deal_Support_Process__c.Requested_Training_End_Date__c</members>
 		<members>Deal_Support_Process__c.Requested_Training_Start_Date__c</members>

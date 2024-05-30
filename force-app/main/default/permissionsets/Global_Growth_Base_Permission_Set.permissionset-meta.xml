@@ -17,6 +17,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Deal_Support_Process__c.Accelerate_CM_capability__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Deal_Support_Process__c.AccountId__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -257,6 +262,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Deal_Support_Process__c.Program_Title__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Deal_Support_Process__c.Region__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -440,4 +450,8 @@
         <recordType>Lead.Open_Enrollment</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+    <tabSettings>
+        <tab>Deal_Support_Process__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>
