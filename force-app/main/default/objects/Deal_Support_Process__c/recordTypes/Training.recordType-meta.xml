@@ -3,4 +3,443 @@
     <fullName>Training</fullName>
     <active>true</active>
     <label>Training</label>
+    <picklistValues>
+        <picklist>Closed_Reason__c</picklist>
+        <values>
+            <fullName>Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Different solution at Prosci</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Different solution through GAN Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>From Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Budget</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long sales cycle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Methodology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision-Maker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No internal consensus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unresponsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Type__c</picklist>
+        <values>
+            <fullName>Deliverable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRENCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NMSO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NMSO - FRENCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rate based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stand-Ready</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Instructor_Type__c</picklist>
+        <values>
+            <fullName>Prosci</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Prosci Australia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prosci Canada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>License_Box_Shirt_Size__c</picklist>
+        <values>
+            <fullName>Large</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XLarge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXLarge</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>License_Type__c</picklist>
+        <values>
+            <fullName>ADKAR Dashboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADKAR Enablement License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Best Practices Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMRL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMROI Calculator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Practitioner eToolkit License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise Change Management %28ECM%29 License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise Portal Subscription</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual All Access Portal Subscription</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maturity Model Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organizational Change Competency License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCT Analyzer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal Bundle - CM Deployment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eLearning</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Number_of_Participants__c</picklist>
+        <values>
+            <fullName>1-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5-9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Program_Title__c</picklist>
+        <values>
+            <fullName>Advanced Immersion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Tracks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advisory Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM Maturity Audit Model Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM Planning Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Management Project Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Portfolio Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Scorecard Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivering Project Results Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECM Bootcamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECM Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve Project Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrating Agile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leading Your Team Through Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Methodology Application Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post-Program Support %28CAN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Practitioner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Enrollment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Speaking engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTT - Level 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTT - Level 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taking Charge of Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Coaching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Closed - Lost%EF%BB%BF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dates Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Done - Successful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Program Rescheduled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Training_Logistics_Coordinator__c</picklist>
+        <values>
+            <fullName>Ali_Semonchick</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheryl_Calina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dee Zilke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fallon_Sooley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gigi_Nagy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gina Tran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hannah_Savoren</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leevi Sparks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lisa Poshusta-Gregory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mary_Brittenham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Melissa_Lim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nicole_Sibley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rickie Griffin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sue_Chaiken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wendy_Soulis</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
 </RecordType>
