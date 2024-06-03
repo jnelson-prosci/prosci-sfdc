@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-	<version>58.0</version>
+	<types>
+		<members>Deal_Support_Process__c.Amount__c</members>
+		<members>Deal_Support_Process__c.Opportunity_Product__c</members>
+		<members>Deal_Support_Process__c.Price__c</members>
+		<members>Deal_Support_Process__c.Quantity__c</members>
+		<name>CustomField</name>
+	</types>
+	<version>60.0</version>
 </Package>
