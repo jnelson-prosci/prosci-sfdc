@@ -18,12 +18,92 @@
         <formula>Deal_Support_Process__c.Location__c</formula>
     </fieldOverrides>
     <fieldOverrides>
+        <field>Name</field>
+        <formula>Deal_Support_Process__c.AccountId__r.Name + &apos; (pending) | &apos;
+
+/* start month */
++ CASE(MONTH(Deal_Support_Process__c.Requested_Training_Start_Date__c),
+1, &quot;January &quot;,
+2, &quot;February &quot;,
+3, &quot;March &quot;, 
+4, &quot;April &quot;, 
+5, &quot;May &quot;, 
+6, &quot;June &quot;,
+7, &quot;July &quot;,
+8, &quot;August &quot;,
+9, &quot;September &quot;,
+10, &quot;October &quot;,
+11, &quot;November &quot;,
+12, &quot;December &quot;,
+&quot;&quot;)
+
+/* start day */
++ TEXT(DAY(Deal_Support_Process__c.Requested_Training_Start_Date__c))
+
+/* if the start and end year are different show the start year for date range */
++ IF(
+  YEAR(Deal_Support_Process__c.Requested_Training_Start_Date__c) = 
+  YEAR(Deal_Support_Process__c.Requested_Training_End_Date__c),
+  &apos;&apos;,
+  &apos;, &apos; + TEXT(YEAR(Deal_Support_Process__c.Requested_Training_Start_Date__c))
+)
+
+/* if the start and end day are the same date we don&apos;t show dash for date range */
++ IF(
+  AND(
+    DAYOFYEAR(Deal_Support_Process__c.Requested_Training_Start_Date__c) = 
+    DAYOFYEAR(Deal_Support_Process__c.Requested_Training_End_Date__c),
+
+    YEAR(Deal_Support_Process__c.Requested_Training_Start_Date__c) = 
+    YEAR(Deal_Support_Process__c.Requested_Training_End_Date__c)
+  ),
+ &apos;&apos;,
+ &apos; - &apos;
+)
+
+/* if the start end month and year are same don&apos;t show the end month for date range */
++ IF(
+  AND(
+    Month(Deal_Support_Process__c.Requested_Training_Start_Date__c) = 
+    Month(Deal_Support_Process__c.Requested_Training_End_Date__c),
+
+    YEAR(Deal_Support_Process__c.Requested_Training_Start_Date__c) = 
+    YEAR(Deal_Support_Process__c.Requested_Training_End_Date__c)
+  ),
+  &apos;&apos;,
+  CASE(MONTH(Deal_Support_Process__c.Requested_Training_End_Date__c),
+  1, &quot;January &quot;,
+  2, &quot;February &quot;,
+  3, &quot;March &quot;, 
+  4, &quot;April &quot;, 
+  5, &quot;May &quot;, 
+  6, &quot;June &quot;,
+  7, &quot;July &quot;,
+  8, &quot;August &quot;,
+  9, &quot;September &quot;,
+  10, &quot;October &quot;,
+  11, &quot;November &quot;,
+  12, &quot;December &quot;,
+  &quot;&quot;)
+)
+
+/* end day */
++ TEXT(DAY(Deal_Support_Process__c.Requested_Training_End_Date__c))
+
+/* end year */
++ &apos;, &apos; + TEXT(YEAR(Deal_Support_Process__c.Requested_Training_End_Date__c))</formula>
+    </fieldOverrides>
+    <fieldOverrides>
         <field>Related_Opportunity__c</field>
         <formula>Deal_Support_Process__c.Opportunity__c</formula>
     </fieldOverrides>
     <fieldOverrides>
         <field>Start_Date__c</field>
         <formula>Deal_Support_Process__c.Requested_Training_Start_Date__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status__c</field>
+        <literalValue>Pending</literalValue>
     </fieldOverrides>
     <fieldOverrides>
         <field>Title__c</field>
@@ -44,45 +124,19 @@
             </quickActionLayoutItems>
             <quickActionLayoutItems>
                 <emptySpace>false</emptySpace>
-                <field>Location__c</field>
-                <uiBehavior>Edit</uiBehavior>
-            </quickActionLayoutItems>
-            <quickActionLayoutItems>
-                <emptySpace>false</emptySpace>
-                <field>Start_Date__c</field>
-                <uiBehavior>Edit</uiBehavior>
-            </quickActionLayoutItems>
-            <quickActionLayoutItems>
-                <emptySpace>false</emptySpace>
-                <field>End_Date__c</field>
-                <uiBehavior>Edit</uiBehavior>
-            </quickActionLayoutItems>
-            <quickActionLayoutItems>
-                <emptySpace>false</emptySpace>
-                <field>VILT_Program__c</field>
+                <field>Training_Company__c</field>
                 <uiBehavior>Edit</uiBehavior>
             </quickActionLayoutItems>
         </quickActionLayoutColumns>
         <quickActionLayoutColumns>
             <quickActionLayoutItems>
-                <emptySpace>false</emptySpace>
-                <field>Title__c</field>
+                <emptySpace>true</emptySpace>
                 <uiBehavior>Edit</uiBehavior>
             </quickActionLayoutItems>
             <quickActionLayoutItems>
                 <emptySpace>false</emptySpace>
                 <field>Instructor_Type__c</field>
                 <uiBehavior>Required</uiBehavior>
-            </quickActionLayoutItems>
-            <quickActionLayoutItems>
-                <emptySpace>false</emptySpace>
-                <field>End_User_Company__c</field>
-                <uiBehavior>Edit</uiBehavior>
-            </quickActionLayoutItems>
-            <quickActionLayoutItems>
-                <emptySpace>false</emptySpace>
-                <field>Related_Opportunity__c</field>
-                <uiBehavior>Edit</uiBehavior>
             </quickActionLayoutItems>
         </quickActionLayoutColumns>
     </quickActionLayout>
