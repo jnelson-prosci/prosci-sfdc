@@ -82,12 +82,6 @@
                 <default>false</default>
                 <label>Different solution through GAN Partner</label>
             </value>
-            <value>
-                <fullName>TBD</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>TBD</label>
-            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Done - Successful</controllingFieldValue>
