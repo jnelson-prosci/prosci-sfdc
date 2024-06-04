@@ -21,10 +21,6 @@
 		<name>Layout</name>
 	</types>
 	<types>
-		<members>Lead_Path</members>
-		<name>PathAssistant</name>
-	</types>
-	<types>
 		<members>Global_Growth_Base_Permission_Set</members>
 		<name>PermissionSet</name>
 	</types>

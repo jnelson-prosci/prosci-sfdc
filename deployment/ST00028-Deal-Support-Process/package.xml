@@ -84,7 +84,11 @@
 		<name>FlexiPage</name>
 	</types>
 	<types>
-		<members>Deal_Support_Process_Path</members>
+		<members>Lead_Path_Enterprise</members>
+		<members>Lead_Path_Open_Enrollment</members>
+		<members>Deal_Support_Process_Path_Advisory</members>
+		<members>Deal_Support_Process_Path_Licensing</members>
+		<members>Deal_Support_Process_Path_Training</members>
 		<name>PathAssistant</name>
 	</types>
 	<types>

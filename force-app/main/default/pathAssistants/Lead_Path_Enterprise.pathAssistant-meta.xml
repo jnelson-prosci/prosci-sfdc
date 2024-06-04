@@ -3,6 +3,6 @@
     <active>true</active>
     <entityName>Lead</entityName>
     <fieldName>Status</fieldName>
-    <masterLabel>Lead Path</masterLabel>
+    <masterLabel>Lead Path Enterprise</masterLabel>
     <recordTypeName>Enterprise</recordTypeName>
 </PathAssistant>
