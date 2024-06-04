@@ -3,6 +3,6 @@
     <active>true</active>
     <entityName>Deal_Support_Process__c</entityName>
     <fieldName>Status__c</fieldName>
-    <masterLabel>Deal Support Process Path</masterLabel>
-    <recordTypeName>Advisory</recordTypeName>
+    <masterLabel>Deal Support Process Path Licensing</masterLabel>
+    <recordTypeName>Licensing</recordTypeName>
 </PathAssistant>
