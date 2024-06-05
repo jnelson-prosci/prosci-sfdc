@@ -4,7 +4,7 @@
         <enabled>true</enabled>
         <name>Growth_CoA_User</name>
     </customPermissions>
-    <description>Grants user the ability to set Enterprise Engagement Opportunity to Closed - Won without DSPs being completed</description>
+    <description>Grants user the ability to set Enterprise Engagement Opportunity to &quot;Done - Successful&quot; without DSPs being completed</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Growth CoA User</label>
 </PermissionSet>
