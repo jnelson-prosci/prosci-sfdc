@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Opportunity.Has_Deal_Support_Process__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Generate_Deal_Support_Process_Permission</members>
+		<name>CustomPermission</name>
+	</types>
+	<types>
+		<members>Opportunity_Record_Page_Advisory_Services_Single_Related_Lists1</members>
+		<members>Opportunity_Record_Page_Single_Related_Lists</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Opportunity_Generate_Deal_Support_Processes</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>Opportunity.Generate_Deal_Support_Process</members>
+		<name>WebLink</name>
+	</types>
+	<version>60.0</version>
+</Package>

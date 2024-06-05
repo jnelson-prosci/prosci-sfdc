@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Deal_Support_Process</fullName>
+    <availability>online</availability>
+    <description>Generates Deal Support Process using Opportunity Products related to triggering parent Opportunity</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Generate Deal Support Process</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/flow/Opportunity_Generate_Deal_Support_Processes?opportunityId={!Opportunity.Id}</url>
+</WebLink>
