@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <assignments>
+        <name>Confirmed_Count</name>
+        <label>Confirmed Count</label>
+        <locationX>380</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>ConfirmedCount</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>Confirmed_Deal_Support_Processes</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Has_Confirmed_Deal_Support_Process</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>In_Progress_Count</name>
+        <label>In Progress Count</label>
+        <locationX>182</locationX>
+        <locationY>971</locationY>
+        <assignmentItems>
+            <assignToReference>InProgressCount</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>In_Progress_Deal_Support_Processes</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Has_In_Progress</targetReference>
+        </connector>
+    </assignments>
+    <collectionProcessors>
+        <name>Confirmed_Deal_Support_Processes</name>
+        <elementSubtype>FilterCollectionProcessor</elementSubtype>
+        <label>Confirmed Deal Support Processes</label>
+        <locationX>380</locationX>
+        <locationY>539</locationY>
+        <assignNextValueToReference>currentItem_Confirmed_Deal_Support_Processes</assignNextValueToReference>
+        <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
+        <collectionReference>Get_Related_Deal_Support_Processes</collectionReference>
+        <conditionLogic>and</conditionLogic>
+        <conditions>
+            <leftValueReference>currentItem_Confirmed_Deal_Support_Processes.Status__c</leftValueReference>
+            <operator>EqualTo</operator>
+            <rightValue>
+                <stringValue>Confirmed</stringValue>
+            </rightValue>
+        </conditions>
+        <connector>
+            <targetReference>Confirmed_Count</targetReference>
+        </connector>
+    </collectionProcessors>
+    <collectionProcessors>
+        <description>Deal Support Processes that are still in progress, prevent Closed - Won stage updates to Opportunity</description>
+        <name>In_Progress_Deal_Support_Processes</name>
+        <elementSubtype>FilterCollectionProcessor</elementSubtype>
+        <label>In Progress Deal Support Processes</label>
+        <locationX>182</locationX>
+        <locationY>863</locationY>
+        <assignNextValueToReference>currentItem_In_Progress_Deal_Support_Processes</assignNextValueToReference>
+        <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
+        <collectionReference>Get_Related_Deal_Support_Processes</collectionReference>
+        <conditionLogic>and</conditionLogic>
+        <conditions>
+            <leftValueReference>currentItem_In_Progress_Deal_Support_Processes.Status__c</leftValueReference>
+            <operator>NotEqualTo</operator>
+            <rightValue>
+                <stringValue>Dates Pending</stringValue>
+            </rightValue>
+        </conditions>
+        <conditions>
+            <leftValueReference>currentItem_In_Progress_Deal_Support_Processes.Status__c</leftValueReference>
+            <operator>NotEqualTo</operator>
+            <rightValue>
+                <stringValue>Closed - Lost</stringValue>
+            </rightValue>
+        </conditions>
+        <conditions>
+            <leftValueReference>currentItem_In_Progress_Deal_Support_Processes.Status__c</leftValueReference>
+            <operator>NotEqualTo</operator>
+            <rightValue>
+                <stringValue>Confirmed</stringValue>
+            </rightValue>
+        </conditions>
+        <connector>
+            <targetReference>In_Progress_Count</targetReference>
+        </connector>
+    </collectionProcessors>
+    <decisions>
+        <description>At least one of the deal support processes is confirmed</description>
+        <name>Has_Confirmed_Deal_Support_Process</name>
+        <label>Has Confirmed Deal Support Process</label>
+        <locationX>380</locationX>
+        <locationY>755</locationY>
+        <defaultConnectorLabel>No Confirmed</defaultConnectorLabel>
+        <rules>
+            <name>One_or_More_Confirmed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ConfirmedCount</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>In_Progress_Deal_Support_Processes</targetReference>
+            </connector>
+            <label>One or More Confirmed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Has_In_Progress</name>
+        <label>Has In Progress</label>
+        <locationX>182</locationX>
+        <locationY>1079</locationY>
+        <defaultConnectorLabel>Has In Progress</defaultConnectorLabel>
+        <rules>
+            <name>No_In_Progress</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>InProgressCount</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Opportunity_Stage</targetReference>
+            </connector>
+            <label>No In Progress</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If the related opportunity is set, is an Enterprise Engagement typed opportunity and not already marked as Closed - Won</description>
+        <name>Has_Open_Related_Opportunity</name>
+        <label>Has Open Related Opportunity</label>
+        <locationX>611</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>No Opportunity</defaultConnectorLabel>
+        <rules>
+            <name>Has_Opportunity</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Opportunity__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Opportunity__r.StageName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed - Won</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Opportunity__r.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Enterprise_Engagement</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Related_Deal_Support_Processes</targetReference>
+            </connector>
+            <label>Has Opportunity</label>
+        </rules>
+    </decisions>
+    <description>Contains automations for when Deal Support Process object status changes</description>
+    <environments>Default</environments>
+    <interviewLabel>Deal Support Process - Update Status {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Deal Support Process - Update Status</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Fetch all the deal support processes linked to the related opportunity</description>
+        <name>Get_Related_Deal_Support_Processes</name>
+        <label>Get Related Deal Support Processes</label>
+        <locationX>380</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Confirmed_Deal_Support_Processes</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Opportunity__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Opportunity__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Deal_Support_Process__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Set Opportunity stage to &quot;Done - Successful&quot;</description>
+        <name>Update_Opportunity_Stage</name>
+        <label>Update Opportunity Stage</label>
+        <locationX>50</locationX>
+        <locationY>1187</locationY>
+        <inputAssignments>
+            <field>All_DSPs_Confirmed__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+            <value>
+                <stringValue>Done - Successful</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Opportunity__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>485</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Has_Open_Related_Opportunity</targetReference>
+        </connector>
+        <filterLogic>1</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Deal_Support_Process__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>ConfirmedCount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <name>currentItem_Confirmed_Deal_Support_Processes</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Deal_Support_Process__c</objectType>
+    </variables>
+    <variables>
+        <name>currentItem_In_Progress_Deal_Support_Processes</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Deal_Support_Process__c</objectType>
+    </variables>
+    <variables>
+        <name>InProgressCount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+</Flow>
