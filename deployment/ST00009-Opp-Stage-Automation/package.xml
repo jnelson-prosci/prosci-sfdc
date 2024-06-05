@@ -32,7 +32,6 @@
 		<members>Opportunity.Enterprise_Engagement</members>
 		<name>RecordType</name>
 	</types>
-</types>
     <types>
         <members>OpportunityStage</members>
         <name>StandardValueSet</name>
