@@ -110,6 +110,27 @@
                 <elementReference>dspRecordType</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.AccountId__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Opportunity.Account.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Opportunity__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>opportunityId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Program_Title__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Opportunity.Program_Title__c</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Add_Deal_Support_Process_Record_to_Collection</targetReference>
         </connector>
@@ -153,6 +174,27 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>trainingDSPId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.AccountId__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Opportunity.Account.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Opportunity__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>opportunityId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Program_Title__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Opportunity.Program_Title__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
