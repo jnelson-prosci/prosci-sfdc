@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Growth_CoA_User</name>
+    </customPermissions>
+    <description>Grants user the ability to set Enterprise Engagement Opportunity to Closed - Won without DSPs being completed</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Growth CoA User</label>
+</PermissionSet>
