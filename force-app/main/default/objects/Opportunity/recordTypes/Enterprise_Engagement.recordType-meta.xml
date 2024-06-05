@@ -83,15 +83,59 @@
     <picklistValues>
         <picklist>Closed_Reason__c</picklist>
         <values>
-            <fullName>Do not contact</fullName>
+            <fullName>Competition</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Done for the year</fullName>
+            <fullName>Different solution at Prosci</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Other</fullName>
+            <fullName>Different solution through GAN Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>From Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Budget</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long sales cycle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Methodology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision-Maker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No internal consensus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unresponsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -2359,6 +2403,41 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>I_need_Advisory_Statements__c</picklist>
+        <values>
+            <fullName>I need guidance from Prosci</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support building change capability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support delivering on a must-win project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To accelerate change management capability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To better manage my change portfolio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To build an enterprise change management strategy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To integrate change management with other disciplines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To measure the impact of change</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Important_Urgent__c</picklist>
         <values>
             <fullName>1</fullName>
@@ -2737,14 +2816,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Client Referral</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Client Services</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Enterprise Training</fullName>
             <default>false</default>
         </values>
@@ -2765,15 +2836,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Growth</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Licensing</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Marketing</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4370,10 +4433,6 @@
     <picklistValues>
         <picklist>Shipping_Agent_Service_Code_Priority__c</picklist>
         <values>
-            <fullName>2 DAY GRND</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>2DAY</fullName>
             <default>false</default>
         </values>
@@ -4387,10 +4446,6 @@
         </values>
         <values>
             <fullName>2DAYAM</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3DAY</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4483,10 +4538,6 @@
         </values>
         <values>
             <fullName>EXPPLUS</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>EXPRESS</fullName>
             <default>false</default>
         </values>
         <values>

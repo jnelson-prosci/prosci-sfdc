@@ -26,6 +26,76 @@
                 <default>false</default>
                 <label>Other</label>
             </value>
+            <value>
+                <fullName>From Competitor</fullName>
+                <default>false</default>
+                <label>From Competitor</label>
+            </value>
+            <value>
+                <fullName>RFP</fullName>
+                <default>false</default>
+                <label>RFP</label>
+            </value>
+            <value>
+                <fullName>Extension</fullName>
+                <default>false</default>
+                <label>Extension</label>
+            </value>
+            <value>
+                <fullName>Value</fullName>
+                <default>false</default>
+                <label>Value</label>
+            </value>
+            <value>
+                <fullName>Methodology</fullName>
+                <default>false</default>
+                <label>Methodology</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>Competition</fullName>
+                <default>false</default>
+                <label>Competition</label>
+            </value>
+            <value>
+                <fullName>Lack of Budget</fullName>
+                <default>false</default>
+                <label>Lack of Budget</label>
+            </value>
+            <value>
+                <fullName>Long sales cycle</fullName>
+                <default>false</default>
+                <label>Long sales cycle</label>
+            </value>
+            <value>
+                <fullName>No Decision-Maker</fullName>
+                <default>false</default>
+                <label>No Decision-Maker</label>
+            </value>
+            <value>
+                <fullName>Unresponsive</fullName>
+                <default>false</default>
+                <label>Unresponsive</label>
+            </value>
+            <value>
+                <fullName>No internal consensus</fullName>
+                <default>false</default>
+                <label>No internal consensus</label>
+            </value>
+            <value>
+                <fullName>Different solution at Prosci</fullName>
+                <default>false</default>
+                <label>Different solution at Prosci</label>
+            </value>
+            <value>
+                <fullName>Different solution through GAN Partner</fullName>
+                <default>false</default>
+                <label>Different solution through GAN Partner</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
