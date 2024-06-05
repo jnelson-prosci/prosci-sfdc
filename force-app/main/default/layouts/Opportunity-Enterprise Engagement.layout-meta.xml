@@ -40,6 +40,10 @@
                 <field>StageName</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Closed_Reason__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Required</behavior>
                 <field>CloseDate</field>
             </layoutItems>
@@ -409,6 +413,10 @@
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Deal_Support_Process__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
