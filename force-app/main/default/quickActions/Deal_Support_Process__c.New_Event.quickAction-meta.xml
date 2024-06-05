@@ -87,8 +87,19 @@
   &quot;&quot;)
 )
 
-/* end day */
-+ TEXT(DAY(Deal_Support_Process__c.Requested_Training_End_Date__c))
+/* if the start and end day are the same date we don&apos;t show the end day */
++ IF(
+  AND(
+    DAYOFYEAR(Deal_Support_Process__c.Requested_Training_Start_Date__c) = 
+    DAYOFYEAR(Deal_Support_Process__c.Requested_Training_End_Date__c),
+
+    YEAR(Deal_Support_Process__c.Requested_Training_Start_Date__c) = 
+    YEAR(Deal_Support_Process__c.Requested_Training_End_Date__c)
+  ),
+  &apos;&apos;,
+  TEXT(DAY(Deal_Support_Process__c.Requested_Training_End_Date__c))
+)
+
 
 /* end year */
 + &apos;, &apos; + TEXT(YEAR(Deal_Support_Process__c.Requested_Training_End_Date__c))</formula>
@@ -108,6 +119,10 @@
     <fieldOverrides>
         <field>Title__c</field>
         <formula>TEXT(Deal_Support_Process__c.Program_Title__c)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Type_of_Event__c</field>
+        <literalValue>Onsite</literalValue>
     </fieldOverrides>
     <fieldOverrides>
         <field>VILT_Program__c</field>
