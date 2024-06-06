@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>standard__LightningSalesConsole</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
+		<members>Prosci - Account Manager</members>
+		<members>Prosci - Account Success Coordinator</members>
+		<name>Profile</name>
+	</types>
 	<version>60.0</version>
 </Package>
