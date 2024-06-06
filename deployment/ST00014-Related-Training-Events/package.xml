@@ -5,6 +5,10 @@
 		<name>CustomField</name>
 	</types>
 	<types>
+		<members>Training_Event__c-Lightning Training Event Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
 		<members>Deal_Support_Process_Page_Single_Related_Lists</members>
 		<members>Lead_Record_Page_Single_Related_Lists</members>
 		<members>Opportunity_Record_Page_Single_Related_Lists</members>
