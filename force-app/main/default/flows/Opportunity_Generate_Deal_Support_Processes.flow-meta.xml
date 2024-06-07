@@ -383,7 +383,7 @@
         <description>Checks the Record Type of the triggering Opportunity record</description>
         <name>Check_Opportunity_Record_Type</name>
         <label>Check Opportunity Record Type</label>
-        <locationX>1866</locationX>
+        <locationX>1867</locationX>
         <locationY>266</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -773,7 +773,7 @@
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <value>
-            <stringValue>Enterprise Training</stringValue>
+            <stringValue>Enterprise Engagement</stringValue>
         </value>
     </variables>
     <variables>
