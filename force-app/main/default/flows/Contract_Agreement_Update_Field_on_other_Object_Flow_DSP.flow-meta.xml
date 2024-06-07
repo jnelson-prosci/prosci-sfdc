@@ -780,6 +780,27 @@
                 <elementReference>$Record.APXT_Redlining__Opportunity__c</elementReference>
             </value>
         </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Program Rescheduled</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Closed - Lost</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Done - Successful</stringValue>
+            </value>
+        </filters>
         <inputAssignments>
             <field>Status__c</field>
             <value>
