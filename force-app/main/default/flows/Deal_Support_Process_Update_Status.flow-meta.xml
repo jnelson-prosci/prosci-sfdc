@@ -42,12 +42,19 @@
         <assignNextValueToReference>currentItem_Confirmed_Deal_Support_Processes</assignNextValueToReference>
         <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
         <collectionReference>Get_Related_Deal_Support_Processes</collectionReference>
-        <conditionLogic>and</conditionLogic>
+        <conditionLogic>or</conditionLogic>
         <conditions>
             <leftValueReference>currentItem_Confirmed_Deal_Support_Processes.Status__c</leftValueReference>
             <operator>EqualTo</operator>
             <rightValue>
                 <stringValue>Confirmed</stringValue>
+            </rightValue>
+        </conditions>
+        <conditions>
+            <leftValueReference>currentItem_Confirmed_Deal_Support_Processes.Status__c</leftValueReference>
+            <operator>EqualTo</operator>
+            <rightValue>
+                <stringValue>Done - Successful</stringValue>
             </rightValue>
         </conditions>
         <connector>
@@ -84,6 +91,13 @@
             <operator>NotEqualTo</operator>
             <rightValue>
                 <stringValue>Confirmed</stringValue>
+            </rightValue>
+        </conditions>
+        <conditions>
+            <leftValueReference>currentItem_In_Progress_Deal_Support_Processes.Status__c</leftValueReference>
+            <operator>NotEqualTo</operator>
+            <rightValue>
+                <stringValue>Done - Successful</stringValue>
             </rightValue>
         </conditions>
         <connector>
