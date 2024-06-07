@@ -4,10 +4,5 @@
 		<members>standard__LightningSalesConsole</members>
 		<name>CustomApplication</name>
 	</types>
-	<types>
-		<members>Prosci - Account Manager</members>
-		<members>Prosci - Account Success Coordinator</members>
-		<name>Profile</name>
-	</types>
 	<version>60.0</version>
 </Package>
