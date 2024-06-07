@@ -2,3 +2,4 @@
 - Activate "Contract Agreement - Update Field on other Object Flow DSP"
 - Activate "Deal Support Process - Update Status"
 - Activate "Opportunity - Update Stage"
+- Add the Growth CoA User custom perm to the System Admin Profile
