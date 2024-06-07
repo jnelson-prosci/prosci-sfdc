@@ -124,8 +124,28 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Deal_Support_Process__c</fieldItem>
+                <identifier>RecordDeal_Support_Process_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Legal_Negotiator__c</fieldItem>
                 <identifier>RecordLegal_Negotiator_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Single_Contract_Covers_All_DSPs__c</fieldItem>
+                <identifier>RecordSingle_Contract_Covers_All_DSPs__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-b66e1e8d-8671-4db7-a36a-a8e9b135258e</name>
@@ -402,6 +422,88 @@
             </componentInstance>
         </itemInstances>
         <name>Facet-74e0ff4d-50a7-4238-b7ed-7e4cf6fb2796</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Click_Through_Contact__c</fieldItem>
+                <identifier>RecordClick_Through_Contact_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Click_Thru_Company_Name__c</fieldItem>
+                <identifier>RecordClick_Thru_Company_Name_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-5bdf4eea-2cce-436f-9079-17b897a86e22</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Requested_Start_Date__c</fieldItem>
+                <identifier>RecordRequested_Start_Date_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Click_Thru_Program_Title__c</fieldItem>
+                <identifier>RecordClick_Thru_Program_Title_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Click_Thru_T_C_s_Agreement__c</fieldItem>
+                <identifier>RecordClick_Thru_T_C_s_Agreement_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-67084562-3a31-44b6-b964-f32664a5f50a</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-5bdf4eea-2cce-436f-9079-17b897a86e22</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-67084562-3a31-44b6-b964-f32664a5f50a</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-36465f07-ff23-493c-8f15-20c78ff902f2</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -871,6 +973,16 @@
                 <identifier>RecordLSA_Template_Key_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.SOW_Template_Key__c</fieldItem>
+                <identifier>RecordSOW_Template_Key_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-508e3a77-bcc9-4719-8d7c-c4a886cd1626</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -933,6 +1045,31 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-36465f07-ff23-493c-8f15-20c78ff902f2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Click Through Agreement Details</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection7</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.APXT_Redlining__Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Click Through Agreement</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
