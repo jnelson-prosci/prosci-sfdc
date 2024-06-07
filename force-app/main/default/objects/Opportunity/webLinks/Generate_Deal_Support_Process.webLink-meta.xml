@@ -9,5 +9,5 @@
     <masterLabel>Generate Deal Support Process</masterLabel>
     <openType>replace</openType>
     <protected>false</protected>
-    <url>/flow/Opportunity_Generate_Deal_Support_Processes?opportunityId={!Opportunity.Id}</url>
+    <url>/flow/Opportunity_Generate_Deal_Support_Processes?opportunityId={!Opportunity.Id}&amp;retURL={!Opportunity.Id}</url>
 </WebLink>
