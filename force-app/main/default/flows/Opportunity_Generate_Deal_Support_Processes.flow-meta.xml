@@ -65,6 +65,13 @@
                 <elementReference>advisoryDSPId</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dspName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>advisoryDSPName</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Assign_Deal_Support_Process_Fields</targetReference>
         </connector>
@@ -74,7 +81,7 @@
         <name>Assign_Deal_Support_Process_Fields</name>
         <label>Assign Deal Support Process Fields</label>
         <locationX>1873</locationX>
-        <locationY>498</locationY>
+        <locationY>499</locationY>
         <assignmentItems>
             <assignToReference>dealSupportProcess.Quantity__c</assignToReference>
             <operator>Assign</operator>
@@ -131,6 +138,13 @@
                 <elementReference>Iterate_through_Opportunity_Products.Opportunity.Program_Title__c</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>dspName</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Add_Deal_Support_Process_Record_to_Collection</targetReference>
         </connector>
@@ -139,8 +153,8 @@
         <description>Assigns values to Deal Support Process record where Record Type = Training</description>
         <name>Assign_Deal_Support_Process_Fields_Training</name>
         <label>Assign Deal Support Process Fields Training</label>
-        <locationX>2417</locationX>
-        <locationY>134</locationY>
+        <locationX>2418</locationX>
+        <locationY>131</locationY>
         <assignmentItems>
             <assignToReference>dealSupportProcess.Quantity__c</assignToReference>
             <operator>Assign</operator>
@@ -197,6 +211,13 @@
                 <elementReference>Iterate_through_Opportunity_Products.Opportunity.Program_Title__c</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>trainingDSPName</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Add_Deal_Support_Process_Record_to_Collection_Training</targetReference>
         </connector>
@@ -222,13 +243,20 @@
         <description>Assigns Licensing Record Type Id to dspRecordType variable</description>
         <name>Assign_Licensing_Record_Type</name>
         <label>Assign Licensing Record Type</label>
-        <locationX>1993</locationX>
-        <locationY>369</locationY>
+        <locationX>1995</locationX>
+        <locationY>368</locationY>
         <assignmentItems>
             <assignToReference>dspRecordType</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>licensingDSPId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dspName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>licensingDSPName</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -286,7 +314,7 @@
                 <leftValueReference>Assign_Record_Type_Ids_to_Variables.Name</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>advisoryDSPName</elementReference>
+                    <elementReference>advisoryRT_DSPName</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -301,7 +329,7 @@
                 <leftValueReference>Assign_Record_Type_Ids_to_Variables.Name</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>licensingDSPName</elementReference>
+                    <elementReference>licensingRT_DSPName</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -316,7 +344,7 @@
                 <leftValueReference>Assign_Record_Type_Ids_to_Variables.Name</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>trainingDSPName</elementReference>
+                    <elementReference>trainingRT_DSPName</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -406,6 +434,36 @@
     </decisions>
     <description>Autolaunched flow to be triggered by a button on an Opportunity record to generate Deal Support Process(es)</description>
     <environments>Default</environments>
+    <formulas>
+        <description>Assembles the name for  Deal Support Process Advisory records</description>
+        <name>advisoryDSPName</name>
+        <dataType>String</dataType>
+        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - Advisory&apos;</expression>
+    </formulas>
+    <formulas>
+        <description>Assembles name for Deal Support Process Licensing records</description>
+        <name>licensingDSPName</name>
+        <dataType>String</dataType>
+        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + TEXT({!Iterate_through_Opportunity_Products.Opportunity.License_Type__c})</expression>
+    </formulas>
+    <formulas>
+        <description>Assembles name for Deal Support Process Training record</description>
+        <name>trainingDSPName</name>
+        <dataType>String</dataType>
+        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + TEXT({!Iterate_through_Opportunity_Products.Opportunity.Program_Title__c}) + &apos; - &apos; + {!trainingMedium} + {!trainingGroupNumber}</expression>
+    </formulas>
+    <formulas>
+        <description>Appends the group number to the Deal Support Process Training record name if the number of sessions is greater than one</description>
+        <name>trainingGroupNumber</name>
+        <dataType>String</dataType>
+        <expression>IF({!Iterate_through_Opportunity_Products.Number_of_Sessions__c} &gt; 1, &apos;- Group &apos; + TEXT({!trainingCounter} + 1), &apos;&apos;)</expression>
+    </formulas>
+    <formulas>
+        <description>Denotes whether the training is Virtual (VILT = True) or In-Person (VILT = False)</description>
+        <name>trainingMedium</name>
+        <dataType>String</dataType>
+        <expression>IF({!Iterate_through_Opportunity_Products.Opportunity.VILT_Program__c}, &apos;Virtual&apos;, &apos;In-Person&apos;)</expression>
+    </formulas>
     <interviewLabel>Opportunity - Generate Deal Support Processes {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Opportunity - Generate Deal Support Processes</label>
     <loops>
@@ -490,21 +548,21 @@
             <field>Name</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>advisoryDSPName</elementReference>
+                <elementReference>advisoryRT_DSPName</elementReference>
             </value>
         </filters>
         <filters>
             <field>Name</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>licensingDSPName</elementReference>
+                <elementReference>licensingRT_DSPName</elementReference>
             </value>
         </filters>
         <filters>
             <field>Name</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>trainingDSPName</elementReference>
+                <elementReference>trainingRT_DSPName</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
@@ -594,17 +652,6 @@
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <description>Text representation of the Deal Support Process Advisory record type name</description>
-        <name>advisoryDSPName</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <stringValue>Advisory</stringValue>
-        </value>
-    </variables>
-    <variables>
         <description>Text representation of the Advisory Opportunity Record Type</description>
         <name>advisoryOpportunity</name>
         <dataType>String</dataType>
@@ -613,6 +660,17 @@
         <isOutput>false</isOutput>
         <value>
             <stringValue>Advisory Services</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Text representation of the Deal Support Process Advisory record type name</description>
+        <name>advisoryRT_DSPName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Advisory</stringValue>
         </value>
     </variables>
     <variables>
@@ -634,6 +692,14 @@
         <objectType>Deal_Support_Process__c</objectType>
     </variables>
     <variables>
+        <description>Variable to hold/assign name to generated Deal Support Process</description>
+        <name>dspName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
         <description>Variable to hold Deal Support Process record type Id</description>
         <name>dspRecordType</name>
         <dataType>String</dataType>
@@ -650,17 +716,6 @@
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <description>Text representation of the Deal Support Process Licensing record type name</description>
-        <name>licensingDSPName</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <stringValue>Licensing</stringValue>
-        </value>
-    </variables>
-    <variables>
         <description>Text representation of the Licensing Opportunity Record Type</description>
         <name>licensingOpportunity</name>
         <dataType>String</dataType>
@@ -669,6 +724,17 @@
         <isOutput>false</isOutput>
         <value>
             <stringValue>Site Licensing</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Text representation of the Deal Support Process Licensing record type name</description>
+        <name>licensingRT_DSPName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Licensing</stringValue>
         </value>
     </variables>
     <variables>
@@ -700,17 +766,6 @@
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <description>Text representation of the Deal Support Process Training record type name</description>
-        <name>trainingDSPName</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <stringValue>Training</stringValue>
-        </value>
-    </variables>
-    <variables>
         <description>Text representation of the Training Record Type</description>
         <name>trainingOpportunity</name>
         <dataType>String</dataType>
@@ -719,6 +774,17 @@
         <isOutput>false</isOutput>
         <value>
             <stringValue>Enterprise Training</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Text representation of the Deal Support Process Training record type name</description>
+        <name>trainingRT_DSPName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Training</stringValue>
         </value>
     </variables>
 </Flow>
