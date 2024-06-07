@@ -7,18 +7,6 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>Opportunity.Initiate_Contract_Agreement</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>CustomButton.Opportunity.CongaSign_sendForSignature</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>CustomButton.Opportunity.Send_Final_Negotiated_Contract_for_Signature</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>CustomButton.Opportunity.View_Redlines</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Clone</value>
                         </valueListItems>
                         <valueListItems>
