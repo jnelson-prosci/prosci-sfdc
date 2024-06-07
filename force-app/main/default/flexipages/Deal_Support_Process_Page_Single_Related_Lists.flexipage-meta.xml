@@ -43,6 +43,9 @@
                         <valueListItems>
                             <value>AssignRecordLabel</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>Deal_Support_Process__c.Initiate_Contract_Agreement</value>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
