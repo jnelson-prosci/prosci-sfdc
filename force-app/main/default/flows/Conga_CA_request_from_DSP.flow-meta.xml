@@ -408,9 +408,9 @@
 &apos;,[Logistics]0Q_040EA2282395&apos;+
 &apos;,[PSAEFTDate]0Q_092EA2440276&apos;+
 &apos;,[Acc]0Q_093EA2276103&apos;+
-&apos;,[Opp]0Q_104EA2316245&apos;+
-&apos;,[Tuition]0Q_091EA2503736?pv0=&apos;+{!Get_Contract_Agreement.Deal_Support_Process__r.Id}+
-&apos;,[Materials]0Q_036EA2927219?pv0=&apos;+{!Get_Contract_Agreement.Deal_Support_Process__r.Id}+
+&apos;,[DSP]0Q_104EA2316245&apos;+
+&apos;,[Tuition]0Q_091EA2503736?pv0=&apos;+{!Get_Contract_Agreement.APXT_Redlining__Opportunity__r.Id}+
+&apos;,[Materials]0Q_036EA2927219?pv0=&apos;+{!Get_Contract_Agreement.APXT_Redlining__Opportunity__r.Id}+
 &apos;&amp;TemplateId=&apos;+{!Get_Contract_Agreement.SOW_Template_Key__c}+
 &apos;&amp;SC0=1&apos;+
 &apos;&amp;SC1=SalesforceFile&apos;+
@@ -475,9 +475,9 @@
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>Deal_Support_Process__c</field>
+            <field>APXT_Redlining__Opportunity__c</field>
             <value>
-                <elementReference>Get_DSP.Id</elementReference>
+                <elementReference>Get_DSP.Opportunity__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -496,6 +496,12 @@
             <field>APXT_Redlining__Type__c</field>
             <value>
                 <elementReference>Type_of_Contract</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Deal_Support_Process__c</field>
+            <value>
+                <elementReference>Get_DSP.Id</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
