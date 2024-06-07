@@ -1,5 +1,9 @@
 # Post-Deployment Steps:
 
+1. Set "Growth Console" app as default and remove access to all other custom apps for the following profiles:
+    1. Prosci - Account Success Coordinator
+    1. Prosci - Account Manager
+
 1. Create Lightning Page Assignments as follows:
     1. Record Page: Opportunity Record Page - Advisory Services - Single Related Lists
         * App: Growth Console
