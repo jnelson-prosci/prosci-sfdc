@@ -160,8 +160,8 @@
         <description>Assigns values to Deal Support Process record where Record Type = Training</description>
         <name>Assign_Deal_Support_Process_Fields_Training</name>
         <label>Assign Deal Support Process Fields Training</label>
-        <locationX>2418</locationX>
-        <locationY>131</locationY>
+        <locationX>2420</locationX>
+        <locationY>129</locationY>
         <assignmentItems>
             <assignToReference>dealSupportProcess.Quantity__c</assignToReference>
             <operator>Assign</operator>
@@ -223,6 +223,13 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>trainingDSPName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Opportunity.OwnerId</elementReference>
             </value>
         </assignmentItems>
         <connector>
