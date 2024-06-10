@@ -9,6 +9,8 @@
 		<name>CustomPermission</name>
 	</types>
 	<types>
+        
+		<members>Deal_Support_Process_Page_Single_Related_Lists</members>
 		<members>Opportunity_Record_Page_Advisory_Services_Single_Related_Lists1</members>
 		<members>Opportunity_Record_Page_Single_Related_Lists</members>
 		<name>FlexiPage</name>

@@ -30,7 +30,7 @@
                         <valueListItems>
                             <value>CustomButton.Opportunity.Generate_Deal_Support_Process</value>
                             <visibilityRule>
-                                <booleanFilter>1 AND 2 AND 3</booleanFilter>
+                                <booleanFilter>1 AND 2 AND 3 AND (4 OR 5 OR 6 OR 7)</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.Probability}</leftValue>
                                     <operator>GE</operator>
@@ -45,6 +45,26 @@
                                     <leftValue>{!Record.Has_Deal_Support_Process__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>false</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Propose Solution</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Evaluate Partnership</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Negotiate Terms</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Closed - Won</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
