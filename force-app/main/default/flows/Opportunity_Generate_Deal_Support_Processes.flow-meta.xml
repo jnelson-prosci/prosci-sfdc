@@ -56,8 +56,8 @@
         <description>Assigns Advisory Record Type Id to dspRecordType variable</description>
         <name>Assign_Advisory_Record_Type</name>
         <label>Assign Advisory Record Type</label>
-        <locationX>1758</locationX>
-        <locationY>370</locationY>
+        <locationX>1757</locationX>
+        <locationY>371</locationY>
         <assignmentItems>
             <assignToReference>dspRecordType</assignToReference>
             <operator>Assign</operator>
@@ -80,8 +80,8 @@
         <description>Assigns values to Deal Support Process record</description>
         <name>Assign_Deal_Support_Process_Fields</name>
         <label>Assign Deal Support Process Fields</label>
-        <locationX>1873</locationX>
-        <locationY>499</locationY>
+        <locationX>1879</locationX>
+        <locationY>497</locationY>
         <assignmentItems>
             <assignToReference>dealSupportProcess.Quantity__c</assignToReference>
             <operator>Assign</operator>
@@ -143,6 +143,13 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>dspName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Opportunity.OwnerId</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -380,9 +387,9 @@
         </rules>
     </decisions>
     <decisions>
-        <description>Checks the Record Type of the triggering Opportunity record</description>
-        <name>Check_Opportunity_Record_Type</name>
-        <label>Check Opportunity Record Type</label>
+        <description>Checks the Product Family of the current Opportunity Product record</description>
+        <name>Check_Product_Family</name>
+        <label>Check Product Family</label>
         <locationX>1867</locationX>
         <locationY>266</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
@@ -390,10 +397,10 @@
             <name>Is_Advisory</name>
             <conditionLogic>or</conditionLogic>
             <conditions>
-                <leftValueReference>Get_Opportunity.RecordType.Name</leftValueReference>
+                <leftValueReference>Iterate_through_Opportunity_Products.Product2.Family</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>advisoryOpportunity</elementReference>
+                    <elementReference>advisoryRT_DSPName</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -405,10 +412,10 @@
             <name>Is_Licensing</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Get_Opportunity.RecordType.Name</leftValueReference>
+                <leftValueReference>Iterate_through_Opportunity_Products.Product2.Family</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>licensingOpportunity</elementReference>
+                    <elementReference>licensingRT_DSPName</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -420,10 +427,10 @@
             <name>Is_Training</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Get_Opportunity.RecordType.Name</leftValueReference>
+                <leftValueReference>Iterate_through_Opportunity_Products.Product2.Family</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>trainingOpportunity</elementReference>
+                    <elementReference>trainingRT_DSPName</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -490,7 +497,7 @@
         <collectionReference>Get_Opportunity_Products</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
-            <targetReference>Check_Opportunity_Record_Type</targetReference>
+            <targetReference>Check_Product_Family</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
             <targetReference>Create_Deal_Support_Processes</targetReference>
@@ -652,17 +659,6 @@
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <description>Text representation of the Advisory Opportunity Record Type</description>
-        <name>advisoryOpportunity</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <stringValue>Advisory Services</stringValue>
-        </value>
-    </variables>
-    <variables>
         <description>Text representation of the Deal Support Process Advisory record type name</description>
         <name>advisoryRT_DSPName</name>
         <dataType>String</dataType>
@@ -716,17 +712,6 @@
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <description>Text representation of the Licensing Opportunity Record Type</description>
-        <name>licensingOpportunity</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <stringValue>Site Licensing</stringValue>
-        </value>
-    </variables>
-    <variables>
         <description>Text representation of the Deal Support Process Licensing record type name</description>
         <name>licensingRT_DSPName</name>
         <dataType>String</dataType>
@@ -764,17 +749,6 @@
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <description>Text representation of the Training Record Type</description>
-        <name>trainingOpportunity</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <stringValue>Enterprise Engagement</stringValue>
-        </value>
     </variables>
     <variables>
         <description>Text representation of the Deal Support Process Training record type name</description>
