@@ -11,27 +11,7 @@
         <default>false</default>
     </values>
     <values>
-        <fullName>Dates Pending</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Done - Alternate Solution</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Done - No Response</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Done - Successful</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Done - Terminated</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Done - Transferred</fullName>
+        <fullName>Closed - Won</fullName>
         <default>false</default>
     </values>
     <values>
@@ -39,31 +19,11 @@
         <default>false</default>
     </values>
     <values>
-        <fullName>Identify Opportunity</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>License Confirmed</fullName>
-        <default>false</default>
-    </values>
-    <values>
         <fullName>Negotiate Terms</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Program Confirmed</fullName>
-        <default>false</default>
-    </values>
-    <values>
         <fullName>Propose Solution</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Rescheduled Program</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Verifying</fullName>
         <default>false</default>
     </values>
 </BusinessProcess>

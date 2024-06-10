@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Opportunity.Account Team Sales Process</members>
+		<members>Opportunity.Enterprise Sales Process</members>
+		<name>BusinessProcess</name>
+	</types>
+	<types>
+		<members>Opportunity_Path_Advisory_Services</members>
+		<members>Opportunity_Path_Enterprise_Engagement</members>
+		<members>Opportunity_Path_Site_Licensing</members>
+		<name>PathAssistant</name>
+	</types>
+	<version>60.0</version>
+</Package>
