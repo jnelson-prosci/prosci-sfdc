@@ -6,10 +6,14 @@
 		<name>BusinessProcess</name>
 	</types>
 	<types>
-		<members>Opportunity_Path_Advisory_Services</members>
 		<members>Opportunity_Path_Enterprise_Engagement</members>
-		<members>Opportunity_Path_Site_Licensing</members>
 		<name>PathAssistant</name>
+	</types>
+    	<types>
+		<members>Opportunity.Champion__c</members>
+		<members>Opportunity.Key_Decision_Maker__c</members>
+		<members>Opportunity.Budget_Decision_Maker__c</members>
+		<name>CustomField</name>
 	</types>
 	<version>60.0</version>
 </Package>
