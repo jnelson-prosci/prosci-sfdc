@@ -236,6 +236,16 @@
                 <identifier>RecordPrice_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Amount__c</fieldItem>
+                <identifier>RecordAmount_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-202c5c42-eec0-4f14-b194-37e1b3853ded</name>
         <type>Facet</type>
     </flexiPageRegions>
