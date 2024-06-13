@@ -452,7 +452,7 @@
         <description>Assembles the name for  Deal Support Process Advisory records</description>
         <name>advisoryDSPName</name>
         <dataType>String</dataType>
-        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - Advisory - &apos; + {!onsiteOrVILT}</expression>
+        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - Advisory - &apos;</expression>
     </formulas>
     <formulas>
         <description>Assembles name for Deal Support Process Licensing records</description>
@@ -461,16 +461,10 @@
         <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + TEXT({!Iterate_through_Opportunity_Products.Opportunity.License_Type__c})</expression>
     </formulas>
     <formulas>
-        <description>Denotes whether the Deal Support is Virtual (VILT = True) or In-Person (VILT = False)</description>
-        <name>onsiteOrVILT</name>
-        <dataType>String</dataType>
-        <expression>IF({!Iterate_through_Opportunity_Products.Opportunity.VILT_Program__c}, &apos;Virtual&apos;, &apos;In-Person&apos;)</expression>
-    </formulas>
-    <formulas>
         <description>Assembles name for Deal Support Process Training record</description>
         <name>trainingDSPName</name>
         <dataType>String</dataType>
-        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + TEXT({!Iterate_through_Opportunity_Products.Opportunity.Program_Title__c}) + &apos; - &apos; + {!onsiteOrVILT} + {!trainingGroupNumber}</expression>
+        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + TEXT({!Iterate_through_Opportunity_Products.Opportunity.Program_Title__c}) + &apos; - &apos; + {!trainingGroupNumber}</expression>
     </formulas>
     <formulas>
         <description>Appends the group number to the Deal Support Process Training record name if the number of sessions is greater than one</description>
