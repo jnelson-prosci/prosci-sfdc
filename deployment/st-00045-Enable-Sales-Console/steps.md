@@ -11,7 +11,7 @@
         * Profiles: See Below
     1. Record Page: Opportunity Record Page - Single Related Lists
         * App: Growth Console
-        * Record Type: Enterprise Training
+        * Record Type: Enterprise Engagement and Site Licensing
         * Profiles: See Below
     1. Record Page: Deal Support Process Page - Single Related Lists
         * App Default: Growth Console
