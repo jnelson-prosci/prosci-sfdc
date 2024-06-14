@@ -100,31 +100,23 @@
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Closed - Won</controllingFieldValue>
-            <controllingFieldValue>Done - Successful</controllingFieldValue>
+            <valueName>From Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed - Won</controllingFieldValue>
             <valueName>RFP</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Closed - Won</controllingFieldValue>
-            <controllingFieldValue>Done - Successful</controllingFieldValue>
             <valueName>Extension</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Closed - Won</controllingFieldValue>
-            <controllingFieldValue>Closed - Lost</controllingFieldValue>
-            <controllingFieldValue>Done - Successful</controllingFieldValue>
             <valueName>Value</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Closed - Won</controllingFieldValue>
-            <controllingFieldValue>Closed - Lost</controllingFieldValue>
-            <controllingFieldValue>Done - Successful</controllingFieldValue>
             <valueName>Methodology</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Closed - Won</controllingFieldValue>
-            <controllingFieldValue>Closed - Lost</controllingFieldValue>
-            <controllingFieldValue>Done - Successful</controllingFieldValue>
-            <valueName>Pricing</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Closed - Lost</controllingFieldValue>
@@ -137,6 +129,10 @@
         <valueSettings>
             <controllingFieldValue>Closed - Lost</controllingFieldValue>
             <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed - Lost</controllingFieldValue>
+            <valueName>Pricing</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Closed - Lost</controllingFieldValue>
@@ -169,10 +165,6 @@
         <valueSettings>
             <controllingFieldValue>Closed - Lost</controllingFieldValue>
             <valueName>Different solution through GAN Partner</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Done - Successful</controllingFieldValue>
-            <valueName>From Competitor</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>
