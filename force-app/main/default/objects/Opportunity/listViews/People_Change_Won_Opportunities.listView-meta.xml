@@ -16,7 +16,7 @@
     <filters>
         <field>OPPORTUNITY.STAGE_NAME</field>
         <operation>equals</operation>
-        <value>Done - Successful</value>
+        <value>Done - Successful,Closed - Won</value>
     </filters>
     <label>People Change Won Opportunities</label>
     <sharedTo>
