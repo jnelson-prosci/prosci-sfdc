@@ -5,6 +5,10 @@
 		<name>CustomField</name>
 	</types>
 	<types>
+		<members>Opportunity_Record_Page_Single_Related_Lists</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
 		<members>Global_Growth_Base_Permission_Set</members>
 		<name>PermissionSet</name>
 	</types>
