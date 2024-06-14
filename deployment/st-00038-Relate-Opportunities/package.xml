@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Opportunity.Related_Opportunity__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
+	</types>
+	<version>60.0</version>
+</Package>
