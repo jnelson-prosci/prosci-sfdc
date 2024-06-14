@@ -36,9 +36,5 @@
         <members>OpportunityStage</members>
         <name>StandardValueSet</name>
     </types>
-	<types>
-		<members>Opportunity.EE_Opp_Done_Successful</members>
-		<name>ValidationRule</name>
-	</types>
 	<version>60.0</version>
 </Package>
