@@ -16,7 +16,7 @@
     <filters>
         <field>OPPORTUNITY.STAGE_NAME</field>
         <operation>notEqual</operation>
-        <value>Done - Successful,Done - Terminated,Done - No Response</value>
+        <value>Done - Successful,Done - Terminated,Done - No Response,Closed - Won</value>
     </filters>
     <label>People Change Open Opportunities</label>
     <sharedTo>

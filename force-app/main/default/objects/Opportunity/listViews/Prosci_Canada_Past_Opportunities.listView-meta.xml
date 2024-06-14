@@ -47,7 +47,7 @@
     <filters>
         <field>OPPORTUNITY.STAGE_NAME</field>
         <operation>notContain</operation>
-        <value>Done - Successful,Done - Terminated,Done - No Response,Done - Alternate Solut</value>
+        <value>Done - Successful,Done - Terminated,Done - No Response,Done - Alternate Solution,Closed - Won</value>
     </filters>
     <label>Prosci Canada - Past Opportunities</label>
     <sharedTo>
