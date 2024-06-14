@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Opportunity.Example_Inline_Editing</members>
+		<members>Opportunity.Not_Done_Opportunities</members>
+		<members>Opportunity.PC_Not_Done_Onsite_Opportunities</members>
+		<members>Opportunity.PC_Not_Done_Public_Opportunities</members>
+		<members>Opportunity.People_Change_Open_Opportunities</members>
+		<members>Opportunity.People_Change_Won_Opportunities</members>
+		<members>Opportunity.Prosci_Canada_OPEN_Opportunties</members>
+		<members>Opportunity.Prosci_Canada_Past_Opportunities</members>
+		<name>ListView</name>
+	</types>
+	<version>60.0</version>
+</Package>
