@@ -32,7 +32,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Update_Stage_Name_to_Done_Successful</targetReference>
+                <targetReference>Update_Stage_Name_to_Closed_Won</targetReference>
             </connector>
             <label>Product Order, Not prepayment with invoice number</label>
         </rules>
@@ -60,14 +60,14 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordUpdates>
-        <name>Update_Stage_Name_to_Done_Successful</name>
-        <label>Update Stage Name to Done-Successful</label>
+        <name>Update_Stage_Name_to_Closed_Won</name>
+        <label>Update Stage Name to Closed - Won</label>
         <locationX>50</locationX>
         <locationY>431</locationY>
         <inputAssignments>
             <field>StageName</field>
             <value>
-                <stringValue>Done - Successful</stringValue>
+                <stringValue>Closed - Won</stringValue>
             </value>
         </inputAssignments>
         <inputReference>$Record</inputReference>
