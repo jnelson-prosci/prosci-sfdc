@@ -232,7 +232,7 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
-        <description>Set Opportunity stage to &quot;Done - Successful&quot;</description>
+        <description>Set Opportunity stage to &quot;Closed - Won&quot;</description>
         <name>Update_Opportunity_Stage</name>
         <label>Update Opportunity Stage</label>
         <locationX>50</locationX>
@@ -246,7 +246,7 @@
         <inputAssignments>
             <field>StageName</field>
             <value>
-                <stringValue>Done - Successful</stringValue>
+                <stringValue>Closed - Won</stringValue>
             </value>
         </inputAssignments>
         <inputReference>$Record.Opportunity__r</inputReference>
