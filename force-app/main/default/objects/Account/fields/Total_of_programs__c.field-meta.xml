@@ -11,7 +11,7 @@
     <summaryFilterItems>
         <field>Opportunity.StageName</field>
         <operation>equals</operation>
-        <value>Done - Successful</value>
+        <value>Done - Successful, Closed - Won</value>
     </summaryFilterItems>
     <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
     <summaryOperation>count</summaryOperation>
