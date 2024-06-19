@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Deal_Support_Process__c.Minimum_Number_of_Participants__c</members>
+		<members>Deal_Support_Process__c.Overage_Price__c</members>
+		<members>PricebookEntry.Minimum_Number_of_Participants__c</members>
+		<members>PricebookEntry.Overage_Price__c</members>
+		<members>Product2.Minimum_Number_of_Participants__c</members>
+		<members>Product2.Overage_Price__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Deal_Support_Process_Page_Single_Related_Lists</members>
+		<members>Product_Record_Page</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>PricebookEntry-Price Book Entry Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
+	</types>
+	<version>60.0</version>
+</Package>
