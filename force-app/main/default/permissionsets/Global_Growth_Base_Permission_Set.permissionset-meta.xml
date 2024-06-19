@@ -6,7 +6,17 @@
     </customPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>APXT_Redlining__Contract_Agreement__c.Data_Storage_Requirements__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>APXT_Redlining__Contract_Agreement__c.Deal_Support_Process__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Data_Storage_Requirements__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
