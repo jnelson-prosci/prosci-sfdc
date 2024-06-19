@@ -23,6 +23,14 @@
                 <field>UseStandardPrice</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Overage_Price__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Minimum_Number_of_Participants__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>LastModifiedById</field>
             </layoutItems>
