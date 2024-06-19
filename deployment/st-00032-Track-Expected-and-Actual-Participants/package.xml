@@ -7,6 +7,7 @@
 		<members>PricebookEntry.Overage_Price__c</members>
 		<members>Product2.Minimum_Number_of_Participants__c</members>
 		<members>Product2.Overage_Price__c</members>
+        <members>Affiliates_Covered_under_License__c.Covered_Contract_Type__c</members>
 		<name>CustomField</name>
 	</types>
 	<types>
