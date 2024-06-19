@@ -4,7 +4,7 @@
         <name>Send_License_Confirmation_Email</name>
         <label>Send License Confirmation Email</label>
         <locationX>1370</locationX>
-        <locationY>1163</locationY>
+        <locationY>1463</locationY>
         <actionName>Opportunity.License_Confirmations</actionName>
         <actionType>emailAlert</actionType>
         <connector>
@@ -24,7 +24,7 @@
         <name>Send_Secondary_License_Confirmation_Email</name>
         <label>Send Secondary License Confirmation Email</label>
         <locationX>446</locationX>
-        <locationY>1163</locationY>
+        <locationY>1463</locationY>
         <actionName>Opportunity.License_Confirmations</actionName>
         <actionType>emailAlert</actionType>
         <connector>
@@ -45,7 +45,7 @@
         <name>Inactive_Is_this_a_primary_or_secondary_license</name>
         <label>Inactive - Is this a primary or secondary license?</label>
         <locationX>2822</locationX>
-        <locationY>539</locationY>
+        <locationY>839</locationY>
         <defaultConnector>
             <targetReference>Update_Account_on_Marked_Inactive</targetReference>
         </defaultConnector>
@@ -70,7 +70,7 @@
         <name>Is_secondary_license_elearning</name>
         <label>Is secondary license elearning?</label>
         <locationX>446</locationX>
-        <locationY>1271</locationY>
+        <locationY>1571</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Yes_elearning</name>
@@ -92,7 +92,7 @@
         <name>Is_this_a_primary_or_secondary_license</name>
         <label>Is this a primary or secondary license?</label>
         <locationX>908</locationX>
-        <locationY>947</locationY>
+        <locationY>1247</locationY>
         <defaultConnector>
             <targetReference>Update_Account_Primary_License</targetReference>
         </defaultConnector>
@@ -117,7 +117,7 @@
         <name>Termination_Type_of_Contract</name>
         <label>Termination Type of Contract</label>
         <locationX>3482</locationX>
-        <locationY>431</locationY>
+        <locationY>731</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Terminate_PSA</name>
@@ -154,7 +154,7 @@
         <name>Type_of_Contract</name>
         <label>Type of Contract</label>
         <locationX>1238</locationX>
-        <locationY>839</locationY>
+        <locationY>1139</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>PSA</name>
@@ -206,7 +206,7 @@
         <name>Update_Single_or_Multiple_DSPs</name>
         <label>Update Single or Multiple DSPs?</label>
         <locationX>1238</locationX>
-        <locationY>539</locationY>
+        <locationY>839</locationY>
         <defaultConnector>
             <targetReference>Update_Deal_Support_Process</targetReference>
         </defaultConnector>
@@ -235,10 +235,43 @@
         </rules>
     </decisions>
     <decisions>
+        <description>Updates the related account if it is set to Does Not Consent</description>
+        <name>Was_Data_Storage_Requirements_Set</name>
+        <label>Was Data Storage Requirements Set?</label>
+        <locationX>2756</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Was_the_Status_Updated</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>None</defaultConnectorLabel>
+        <rules>
+            <name>Does_Not_Consent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Data_Storage_Requirements__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Data_Storage_Requirements__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Does Not Consent</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Account_Data_Storage_Requirements</targetReference>
+            </connector>
+            <label>Does Not Consent</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Was_the_Status_Updated</name>
         <label>Was the Status Updated?</label>
         <locationX>2756</locationX>
-        <locationY>323</locationY>
+        <locationY>623</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Active</name>
@@ -316,7 +349,7 @@
         <name>What_Type_of_license</name>
         <label>What Type of license?</label>
         <locationX>1370</locationX>
-        <locationY>1271</locationY>
+        <locationY>1571</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>ADKAR</name>
@@ -416,7 +449,7 @@
         <name>Update_Account</name>
         <label>Update Account</label>
         <locationX>3482</locationX>
-        <locationY>539</locationY>
+        <locationY>839</locationY>
         <inputAssignments>
             <field>Active_License_Status__c</field>
             <value>
@@ -426,10 +459,27 @@
         <inputReference>$Record.APXT_Redlining__Account__r</inputReference>
     </recordUpdates>
     <recordUpdates>
+        <description>Update related account value to match Contract Agreement</description>
+        <name>Update_Account_Data_Storage_Requirements</name>
+        <label>Update Account Data Storage Requirements</label>
+        <locationX>2624</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>Was_the_Status_Updated</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Data_Storage_Requirements__c</field>
+            <value>
+                <stringValue>Does Not Consent</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.APXT_Redlining__Account__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
         <name>Update_Account_for_PSA</name>
         <label>Update Account for PSA</label>
         <locationX>50</locationX>
-        <locationY>947</locationY>
+        <locationY>1247</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -468,7 +518,7 @@
         <name>Update_Account_on_Marked_Inactive</name>
         <label>Update Account on Marked Inactive</label>
         <locationX>2954</locationX>
-        <locationY>647</locationY>
+        <locationY>947</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -495,7 +545,7 @@
         <name>Update_Account_on_Marked_Inactive_Secondary</name>
         <label>Update Account on Marked Inactive Secondary</label>
         <locationX>2690</locationX>
-        <locationY>647</locationY>
+        <locationY>947</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -516,7 +566,7 @@
         <name>Update_Account_Primary_License</name>
         <label>Update Account Primary License</label>
         <locationX>1370</locationX>
-        <locationY>1055</locationY>
+        <locationY>1355</locationY>
         <connector>
             <targetReference>Send_License_Confirmation_Email</targetReference>
         </connector>
@@ -564,7 +614,7 @@
         <name>Update_Account_PSA_Expiration_Date</name>
         <label>Update Account PSA Expiration Date</label>
         <locationX>3218</locationX>
-        <locationY>539</locationY>
+        <locationY>839</locationY>
         <inputAssignments>
             <field>PSA_Expiration_Date__c</field>
             <value>
@@ -577,7 +627,7 @@
         <name>Update_Account_Secondary_License</name>
         <label>Update Account Secondary License</label>
         <locationX>446</locationX>
-        <locationY>1055</locationY>
+        <locationY>1355</locationY>
         <connector>
             <targetReference>Send_Secondary_License_Confirmation_Email</targetReference>
         </connector>
@@ -613,7 +663,7 @@
         <name>Update_ADKAR_price_group</name>
         <label>Update ADKAR price group</label>
         <locationX>842</locationX>
-        <locationY>1379</locationY>
+        <locationY>1679</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -634,7 +684,7 @@
         <name>Update_Contract_Agreement</name>
         <label>Update Contract Agreement</label>
         <locationX>1238</locationX>
-        <locationY>431</locationY>
+        <locationY>731</locationY>
         <connector>
             <targetReference>Update_Single_or_Multiple_DSPs</targetReference>
         </connector>
@@ -650,7 +700,7 @@
         <name>Update_Contract_Agreement_on_Marked_Inactive</name>
         <label>Update Contract Agreement on Marked Inactive</label>
         <locationX>2822</locationX>
-        <locationY>431</locationY>
+        <locationY>731</locationY>
         <connector>
             <targetReference>Inactive_Is_this_a_primary_or_secondary_license</targetReference>
         </connector>
@@ -666,7 +716,7 @@
         <name>Update_Contract_Agreement_with_Expiration</name>
         <label>Update Contract Agreement with Expiration</label>
         <locationX>2162</locationX>
-        <locationY>947</locationY>
+        <locationY>1247</locationY>
         <inputAssignments>
             <field>APXT_Redlining__Expiration_Date__c</field>
             <value>
@@ -680,7 +730,7 @@
         <name>Update_Deal_Support_Process</name>
         <label>Update Deal Support Process</label>
         <locationX>1370</locationX>
-        <locationY>647</locationY>
+        <locationY>947</locationY>
         <connector>
             <targetReference>Type_of_Contract</targetReference>
         </connector>
@@ -704,7 +754,7 @@
         <name>Update_ECM_price_group</name>
         <label>Update ECM price group</label>
         <locationX>1370</locationX>
-        <locationY>1379</locationY>
+        <locationY>1679</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -725,7 +775,7 @@
         <name>Update_Elearning_License</name>
         <label>Update Elearning License</label>
         <locationX>1634</locationX>
-        <locationY>1379</locationY>
+        <locationY>1679</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -746,7 +796,7 @@
         <name>Update_elearning_on_secondary_license</name>
         <label>Update elearning on secondary license</label>
         <locationX>314</locationX>
-        <locationY>1379</locationY>
+        <locationY>1679</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -768,7 +818,7 @@
         <name>Update_Multiple_DSP_Records</name>
         <label>Update Multiple DSP Records</label>
         <locationX>1106</locationX>
-        <locationY>647</locationY>
+        <locationY>947</locationY>
         <connector>
             <targetReference>Type_of_Contract</targetReference>
         </connector>
@@ -813,7 +863,7 @@
         <name>Update_OCC_price_group</name>
         <label>Update OCC price group</label>
         <locationX>1106</locationX>
-        <locationY>1379</locationY>
+        <locationY>1679</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -834,7 +884,7 @@
         <locationX>2630</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Was_the_Status_Updated</targetReference>
+            <targetReference>Was_Data_Storage_Requirements_Set</targetReference>
         </connector>
         <object>APXT_Redlining__Contract_Agreement__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>

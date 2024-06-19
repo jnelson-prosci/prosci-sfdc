@@ -235,6 +235,23 @@
                 <identifier>RecordDate_Time_Returned_from_Client_Review_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Data_Storage_Requirements__c</fieldItem>
+                <identifier>RecordData_Storage_Requirements__cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.APXT_Redlining__Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Professional Services Agreement</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-abd4d196-9bf0-45ac-8797-f578652e8e89</name>
         <type>Facet</type>
     </flexiPageRegions>
