@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Storage_Requirements__c</fullName>
+    <description>Governs whether or not the page layout shows the warning about storing data in Salesforce</description>
+    <externalId>false</externalId>
+    <label>Data Storage Requirements</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Data_Storage_Requirements</valueSetName>
+    </valueSet>
+</CustomField>
