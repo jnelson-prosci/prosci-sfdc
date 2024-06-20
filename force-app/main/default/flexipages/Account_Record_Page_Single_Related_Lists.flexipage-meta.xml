@@ -1778,6 +1778,13 @@
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
                 <identifier>force_relatedListSingleContainer6</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Market_Reach__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Multi Market</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
