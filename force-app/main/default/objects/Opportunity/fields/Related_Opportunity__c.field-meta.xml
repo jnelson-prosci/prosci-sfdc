@@ -3,6 +3,7 @@
     <fullName>Related_Opportunity__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
+    <inlineHelpText>Select the original Opportunity to align paperwork and Opportunity Details.</inlineHelpText>
     <label>Related Opportunity</label>
     <referenceTo>Opportunity</referenceTo>
     <relationshipLabel>Opportunities (Related Opportunity)</relationshipLabel>
