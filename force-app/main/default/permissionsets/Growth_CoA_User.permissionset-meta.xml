@@ -6,7 +6,14 @@
     </customPermissions>
     <description>Grants user the ability to set Enterprise Engagement Opportunity to &quot;Closed - Won&quot; without DSPs being completed
 
-Allows user to move DSP out of &quot;Confirmed&quot; or &quot;Done - Successful&quot; status</description>
+Allows user to move DSP out of &quot;Confirmed&quot; or &quot;Done - Successful&quot; status
+
+Allows user to set the Market Reach value on Account</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Market_Reach__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Growth CoA User</label>
 </PermissionSet>
