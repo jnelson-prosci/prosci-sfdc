@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Reach__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>When Multi Market is selected, the Global Account Management information section will display</inlineHelpText>
+    <label>Market Reach</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Single Market</fullName>
+                <default>false</default>
+                <label>Single Market</label>
+            </value>
+            <value>
+                <fullName>Multi Market</fullName>
+                <default>false</default>
+                <label>Multi Market</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
