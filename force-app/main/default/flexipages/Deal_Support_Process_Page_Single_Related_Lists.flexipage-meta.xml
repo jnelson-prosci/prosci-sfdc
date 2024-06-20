@@ -570,8 +570,28 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Minimum_Number_of_Participants__c</fieldItem>
+                <identifier>RecordMinimum_Number_of_Participants_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.of_participants__c</fieldItem>
                 <identifier>Recordof_participants_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Overage_Price__c</fieldItem>
+                <identifier>RecordOverage_Price_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1021,10 +1041,30 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Minimum_Number_of_Participants__c</fieldItem>
+                <identifier>RecordMinimum_Number_of_Participants_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
                     <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.of_participants__c</fieldItem>
                 <identifier>Recordof_participants_cField3</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Overage_Price__c</fieldItem>
+                <identifier>RecordOverage_Price_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -2135,8 +2175,28 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Minimum_Number_of_Participants__c</fieldItem>
+                <identifier>RecordMinimum_Number_of_Participants_cField3</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.of_participants__c</fieldItem>
                 <identifier>Recordof_participants_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Overage_Price__c</fieldItem>
+                <identifier>RecordOverage_Price_cField3</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -2419,10 +2479,30 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Minimum_Number_of_Participants__c</fieldItem>
+                <identifier>RecordMinimum_Number_of_Participants_cField4</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
                     <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.of_participants__c</fieldItem>
                 <identifier>Recordof_participants_cField4</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Overage_Price__c</fieldItem>
+                <identifier>RecordOverage_Price_cField4</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
