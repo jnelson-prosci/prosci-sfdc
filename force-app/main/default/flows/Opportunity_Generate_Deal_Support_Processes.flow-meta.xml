@@ -160,13 +160,13 @@
         <description>Assigns values to Deal Support Process record where Record Type = Training</description>
         <name>Assign_Deal_Support_Process_Fields_Training</name>
         <label>Assign Deal Support Process Fields Training</label>
-        <locationX>2420</locationX>
+        <locationX>2419</locationX>
         <locationY>129</locationY>
         <assignmentItems>
             <assignToReference>dealSupportProcess.Quantity__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>Iterate_through_Opportunity_Products.Attendees_Per_Session__c</elementReference>
+                <elementReference>Iterate_through_Opportunity_Products.Quantity</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -372,7 +372,7 @@
         <name>Check_Number_of_Trainings</name>
         <label>Check Number of Trainings</label>
         <locationX>2100</locationX>
-        <locationY>164</locationY>
+        <locationY>163</locationY>
         <defaultConnector>
             <targetReference>Iterate_through_Opportunity_Products</targetReference>
         </defaultConnector>
@@ -384,7 +384,7 @@
                 <leftValueReference>trainingCounter</leftValueReference>
                 <operator>LessThan</operator>
                 <rightValue>
-                    <elementReference>Iterate_through_Opportunity_Products.Number_of_Sessions__c</elementReference>
+                    <elementReference>Iterate_through_Opportunity_Products.Quantity</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -397,8 +397,8 @@
         <description>Checks the Product Family of the current Opportunity Product record</description>
         <name>Check_Product_Family</name>
         <label>Check Product Family</label>
-        <locationX>1867</locationX>
-        <locationY>266</locationY>
+        <locationX>1866</locationX>
+        <locationY>264</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Is_Advisory</name>
@@ -464,13 +464,13 @@
         <description>Assembles name for Deal Support Process Training record</description>
         <name>trainingDSPName</name>
         <dataType>String</dataType>
-        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + TEXT({!Iterate_through_Opportunity_Products.Opportunity.Program_Title__c}) + &apos; - &apos; + {!trainingGroupNumber}</expression>
+        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + TEXT({!Iterate_through_Opportunity_Products.Opportunity.Program_Title__c}) + {!trainingGroupNumber}</expression>
     </formulas>
     <formulas>
         <description>Appends the group number to the Deal Support Process Training record name if the number of sessions is greater than one</description>
         <name>trainingGroupNumber</name>
         <dataType>String</dataType>
-        <expression>IF({!Iterate_through_Opportunity_Products.Number_of_Sessions__c} &gt; 1, &apos;- Group &apos; + TEXT({!trainingCounter} + 1), &apos;&apos;)</expression>
+        <expression>IF({!Iterate_through_Opportunity_Products.Quantity} &gt; 1, &apos;- Group &apos; + TEXT({!trainingCounter} + 1), &apos;&apos;)</expression>
     </formulas>
     <interviewLabel>Opportunity - Generate Deal Support Processes {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Opportunity - Generate Deal Support Processes</label>
