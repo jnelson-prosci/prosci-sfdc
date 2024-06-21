@@ -481,6 +481,16 @@
                 <identifier>RecordGAN_Partner_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Related_Opportunity__c</fieldItem>
+                <identifier>RecordRelated_Opportunity_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-498a6eaf-7e21-4eca-aace-0defd09c494d</name>
         <type>Facet</type>
     </flexiPageRegions>
