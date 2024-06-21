@@ -17,5 +17,9 @@
 		<members>Growth_CoA_User</members>
 		<name>PermissionSet</name>
 	</types>
+    <types>
+		<members>Opportunity.Closed_Reason_Required</members>
+		<name>ValidationRule</name>
+	</types>
 	<version>60.0</version>
 </Package>
