@@ -102,6 +102,38 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h6 style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(0, 118, 221);&quot;&gt;This Opportunity is Closed - Won but Closed Reason is missing&lt;/strong&gt;&lt;/h6&gt;&lt;h6 style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(0, 118, 221);&quot;&gt;Please update field with the correct value&lt;/strong&gt;&lt;/h6&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND 2 AND 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.RecordType.DeveloperName}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Enterprise_Engagement</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.StageName}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Closed - Won</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Closed_Reason_Blank__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>hideUpdateButton</name>
                     <value>false</value>
                 </componentInstanceProperties>
