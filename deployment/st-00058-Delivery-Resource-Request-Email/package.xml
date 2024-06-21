@@ -4,5 +4,9 @@
 		<members>Deal_Support_Process_Page_Single_Related_Lists</members>
 		<name>FlexiPage</name>
 	</types>
+    <types>
+		<members>Deal_Support_Process__c-Deal Support Process Layout</members>
+		<name>Layout</name>
+	</types>
 	<version>60.0</version>
 </Package>
