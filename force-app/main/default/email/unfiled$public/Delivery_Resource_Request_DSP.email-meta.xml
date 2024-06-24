@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Template_Letterhead_Prosci</letterhead>
+    <name>Delivery Resource Request (DSP)</name>
+    <style>freeForm</style>
+    <subject>Date Request – {!Deal_Support_Process__c.AccountId__c} – {!Deal_Support_Process__c.Program_Title__c}</subject>
+    <textOnly>Email address: schedulingrequest@prosci.com
+
+
+
+Hi Team –
+
+
+
+
+
+Client:{!Deal_Support_Process__c.AccountId__c}
+
+Industry:
+
+Delivery Mode: {!IF(Deal_Support_Process__c.VILT_Program__c, &quot;Virtual&quot;, &quot;In-Person&quot;)}
+
+Location (if in-person): {!Deal_Support_Process__c.Location__c}
+
+Program Title: {!Deal_Support_Process__c.Program_Title__c}
+
+Training Date Request: {!Deal_Support_Process__c.Program_Requested_timeframe__c}
+
+Requested Instructor(s):
+
+Contract type to confirm work:
+
+Additional Considerations:
+
+
+
+
+
+
+
+Account Manager:
+
+Link to the Deal Support Process: https://prosci.lightning.force.com/lightning/r/{!Deal_Support_Process__c.Id}/view
+
+
+
+Date when the request was made: {!Today}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

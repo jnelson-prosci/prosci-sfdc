@@ -8,5 +8,9 @@
 		<members>Deal_Support_Process__c-Deal Support Process Layout</members>
 		<name>Layout</name>
 	</types>
+    <types>
+		<members>unfiled$public/Delivery_Resource_Request_DSP</members>
+		<name>EmailTemplate</name>
+	</types>
 	<version>60.0</version>
 </Package>
