@@ -161,7 +161,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Overage_Price__c</fieldItem>
+                <fieldItem>Record.Incremental_Pricing__c</fieldItem>
                 <identifier>RecordOverage_Price_cField</identifier>
             </fieldInstance>
         </itemInstances>
