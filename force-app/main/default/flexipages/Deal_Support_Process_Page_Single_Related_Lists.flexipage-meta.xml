@@ -600,8 +600,18 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Overage_Price__c</fieldItem>
+                <fieldItem>Record.Incremental_Pricing__c</fieldItem>
                 <identifier>RecordOverage_Price_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Total_Incremental_Pricing__c</fieldItem>
+                <identifier>RecordTotal_Incremental_Pricing_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1073,7 +1083,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Overage_Price__c</fieldItem>
+                <fieldItem>Record.Incremental_Pricing__c</fieldItem>
                 <identifier>RecordOverage_Price_cField2</identifier>
             </fieldInstance>
         </itemInstances>
@@ -2205,7 +2215,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Overage_Price__c</fieldItem>
+                <fieldItem>Record.Incremental_Pricing__c</fieldItem>
                 <identifier>RecordOverage_Price_cField3</identifier>
             </fieldInstance>
         </itemInstances>
@@ -2511,7 +2521,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Overage_Price__c</fieldItem>
+                <fieldItem>Record.Incremental_Pricing__c</fieldItem>
                 <identifier>RecordOverage_Price_cField4</identifier>
             </fieldInstance>
         </itemInstances>

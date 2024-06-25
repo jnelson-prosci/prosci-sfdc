@@ -150,6 +150,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Deal_Support_Process__c.Incremental_Pricing__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Deal_Support_Process__c.Initial_Fee__c</field>
         <readable>true</readable>
@@ -265,11 +270,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Deal_Support_Process__c.Overage_Price__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Deal_Support_Process__c.PSA_Generated__c</field>
         <readable>true</readable>
@@ -352,6 +352,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Deal_Support_Process__c.Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Deal_Support_Process__c.Total_Incremental_Pricing__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -491,12 +496,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>PricebookEntry.Minimum_Number_of_Participants__c</field>
+        <field>PricebookEntry.Incremental_Pricing__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>PricebookEntry.Overage_Price__c</field>
+        <field>PricebookEntry.Minimum_Number_of_Participants__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -506,12 +511,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product2.Minimum_Number_of_Participants__c</field>
+        <field>Product2.Incremental_Pricing__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product2.Overage_Price__c</field>
+        <field>Product2.Minimum_Number_of_Participants__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
