@@ -151,7 +151,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Deal_Support_Process__c.Incremental_Price__c</field>
+        <field>Deal_Support_Process__c.Incremental_Pricing__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -356,7 +356,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Deal_Support_Process__c.Total_Incremental_Price__c</field>
+        <field>Deal_Support_Process__c.Total_Incremental_Pricing__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -496,7 +496,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>PricebookEntry.Incremental_Price__c</field>
+        <field>PricebookEntry.Incremental_Pricing__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -511,7 +511,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product2.Incremental_Price__c</field>
+        <field>Product2.Incremental_Pricing__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

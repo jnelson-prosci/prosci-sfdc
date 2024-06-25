@@ -2,12 +2,12 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
 		<members>Deal_Support_Process__c.Minimum_Number_of_Participants__c</members>
-		<members>Deal_Support_Process__c.Incremental_Price__c</members>
-		<members>Deal_Support_Process__c.Total_Incremental_Price__c</members>
+		<members>Deal_Support_Process__c.Incremental_Pricing__c</members>
+		<members>Deal_Support_Process__c.Total_Incremental_Pricing__c</members>
 		<members>PricebookEntry.Minimum_Number_of_Participants__c</members>
-		<members>PricebookEntry.Incremental_Price__c</members>
+		<members>PricebookEntry.Incremental_Pricing__c</members>
 		<members>Product2.Minimum_Number_of_Participants__c</members>
-		<members>Product2.Incremental_Price__c</members>
+		<members>Product2.Incremental_Pricing__c</members>
         <members>Affiliates_Covered_under_License__c.Covered_Contract_Type__c</members>
 		<name>CustomField</name>
 	</types>
