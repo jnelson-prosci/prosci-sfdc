@@ -5,4 +5,5 @@
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Global Operations</name>
     <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>System_Administrator</parentRole>
 </Role>
