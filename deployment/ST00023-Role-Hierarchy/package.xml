@@ -11,6 +11,7 @@
 		<members>Global_Team</members>
 		<members>LATAM_Market_Leader</members>
 		<members>LATAM_Market_Member</members>
+        <members>System_Administrator</members>
 		<members>US_Market_Leader</members>
 		<members>US_Market_Member</members>
 		<name>Role</name>
