@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Market_Reach__c</fullName>
+    <description>Enterprise Engagement type Opps have this field set to the related Account&apos;s Market Reach value by flows on Opp (Opportunity - Enterprise Engagement Set Account Market Reach) and Account (Account - Set Enterprise Engagement Opportunity Account Market Reach). This field grants Opportunity read access to Global Team via criteria based sharing rule (Multi-Market Opportunity Visibility). Criteria sharing rules cannot reference formula fields.</description>
+    <externalId>false</externalId>
+    <label>Account Market Reach</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
