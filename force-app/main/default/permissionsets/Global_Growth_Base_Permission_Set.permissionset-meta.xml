@@ -431,6 +431,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Account_Market_Reach__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.All_DSPs_Confirmed__c</field>
         <readable>true</readable>
     </fieldPermissions>
