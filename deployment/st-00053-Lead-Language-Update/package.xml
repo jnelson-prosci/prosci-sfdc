@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Lead.Prosci Global Lead Assignments</members>
+		<name>AssignmentRule</name>
+	</types>
+	<types>
+		<members>Contact.Preferred_Language__c</members>
+		<members>Lead.Preferred_Language__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Contact_Record_Page_Layout_Single_Related_Lists</members>
+		<members>Lead_Record_Page_Single_Related_Lists</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Lead_Assign_Country_Code_Info</members>
+		<members>Task_Lead_from_form_with_previously_existing_contact</members>
+		<name>Flow</name>
+	</types>
 	<version>60.0</version>
 </Package>
