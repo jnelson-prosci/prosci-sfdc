@@ -57,7 +57,7 @@
                 <value>Europe</value>
             </criteriaItems>
             <criteriaItems>
-                <field>Lead.Languages__c</field>
+                <field>Lead.Preferred_Language__c</field>
                 <operation>contains</operation>
                 <value>Dutch</value>
             </criteriaItems>
@@ -71,7 +71,7 @@
                 <value>Europe</value>
             </criteriaItems>
             <criteriaItems>
-                <field>Lead.Languages__c</field>
+                <field>Lead.Preferred_Language__c</field>
                 <operation>contains</operation>
                 <value>Spanish</value>
             </criteriaItems>
@@ -85,7 +85,7 @@
                 <value>Europe</value>
             </criteriaItems>
             <criteriaItems>
-                <field>Lead.Languages__c</field>
+                <field>Lead.Preferred_Language__c</field>
                 <operation>contains</operation>
                 <value>Italian</value>
             </criteriaItems>
@@ -99,7 +99,7 @@
                 <value>Europe</value>
             </criteriaItems>
             <criteriaItems>
-                <field>Lead.Languages__c</field>
+                <field>Lead.Preferred_Language__c</field>
                 <operation>contains</operation>
                 <value>French</value>
             </criteriaItems>
@@ -110,11 +110,11 @@
             <formula>AND(
 				Queue_Family__c = &apos;Europe&apos;,
 				OR(
-        CONTAINS(Languages__c, &apos;Danish&apos;),
-				    CONTAINS(Languages__c, &apos;Norwegian&apos;),
-				    CONTAINS(Languages__c, &apos;Icelandic&apos;),
-				    CONTAINS(Languages__c, &apos;Finnish&apos;),
-				    CONTAINS(Languages__c, &apos;Greenlandic&apos;)
+        CONTAINS(TEXT(Preferred_Language__c), &apos;Danish&apos;),
+				    CONTAINS(TEXT(Preferred_Language__c), &apos;Norwegian&apos;),
+				    CONTAINS(TEXT(Preferred_Language__c), &apos;Icelandic&apos;),
+				    CONTAINS(TEXT(Preferred_Language__c), &apos;Finnish&apos;),
+				    CONTAINS(TEXT(Preferred_Language__c), &apos;Greenlandic&apos;)
     )
 )</formula>
         </ruleEntry>
@@ -127,7 +127,7 @@
                 <value>Europe</value>
             </criteriaItems>
             <criteriaItems>
-                <field>Lead.Languages__c</field>
+                <field>Lead.Preferred_Language__c</field>
                 <operation>contains</operation>
                 <value>German</value>
             </criteriaItems>
