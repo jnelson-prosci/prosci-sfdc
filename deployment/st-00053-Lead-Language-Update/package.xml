@@ -19,5 +19,9 @@
 		<members>Task_Lead_from_form_with_previously_existing_contact</members>
 		<name>Flow</name>
 	</types>
+	<types>
+		<members>LeadConvertSettings</members>
+		<name>LeadConvertSettings</name>
+	</types>
 	<version>60.0</version>
 </Package>
