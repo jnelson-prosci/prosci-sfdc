@@ -5,73 +5,25 @@
         <description>Assigns the Country Name, Queue Family, and Languages from the relevant Country Code Info metatdata to the new Lead</description>
         <name>Assign_Country_Code_Info</name>
         <label>Assign Country Code Info</label>
-        <locationX>50</locationX>
-        <locationY>503</locationY>
+        <locationX>176</locationX>
+        <locationY>395</locationY>
         <assignmentItems>
             <assignToReference>$Record.Country_Name__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>countryNameAssignment</elementReference>
+                <elementReference>Get_Country_Code_Metadata_Info.Country_Name__c</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>$Record.Queue_Family__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>queueFamilyAssignment</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>$Record.Languages__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>languageAssignment</elementReference>
+                <elementReference>Get_Country_Code_Metadata_Info.Queue_Family__c</elementReference>
             </value>
         </assignmentItems>
     </assignments>
-    <decisions>
-        <description>Ensures a Country Code Info record exists for the selected Country Code and that no value has already been entered for the fields to be assigned</description>
-        <name>Validate_for_Assignment</name>
-        <label>Validate for Country Code Info Assignment</label>
-        <locationX>182</locationX>
-        <locationY>395</locationY>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Is_Valid_for_Assignment</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Get_Country_Code_Metadata_Info.Id</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Assign_Country_Code_Info</targetReference>
-            </connector>
-            <label>Is Valid for Assignment</label>
-        </rules>
-    </decisions>
     <description>Before Save flow to assign relevant Country Code Info from metadata to new Lead records</description>
     <environments>Default</environments>
-    <formulas>
-        <description>If the Country Name field is null, a value will be assigned using the related MDT record.</description>
-        <name>countryNameAssignment</name>
-        <dataType>String</dataType>
-        <expression>IF(ISBLANK({!$Record.Country_Name__c}), {!Get_Country_Code_Metadata_Info.Country_Name__c}, {!$Record.Country_Name__c})</expression>
-    </formulas>
-    <formulas>
-        <description>If the Language field is null, a value will be assigned using the related MDT record.</description>
-        <name>languageAssignment</name>
-        <dataType>String</dataType>
-        <expression>IF(ISBLANK({!$Record.Languages__c}), {!Get_Country_Code_Metadata_Info.Language__c}, {!$Record.Languages__c})</expression>
-    </formulas>
-    <formulas>
-        <description>If the Queue Family field is null, a value will be assigned using the related MDT record.</description>
-        <name>queueFamilyAssignment</name>
-        <dataType>String</dataType>
-        <expression>IF(ISBLANK({!$Record.Queue_Family__c}), TEXT({!Get_Country_Code_Metadata_Info.Queue_Family__c}), {!$Record.Queue_Family__c})</expression>
-    </formulas>
     <interviewLabel>Lead - Assign Country Code Info {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Lead - Assign Country Code Info</label>
     <processMetadataValues>
@@ -97,11 +49,11 @@
         <description>Retrieves Country Code Info mdt record that matches the Lead&apos;s Country Code</description>
         <name>Get_Country_Code_Metadata_Info</name>
         <label>Get Country Code Metadata Info</label>
-        <locationX>182</locationX>
+        <locationX>176</locationX>
         <locationY>287</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Validate_for_Assignment</targetReference>
+            <targetReference>Assign_Country_Code_Info</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -116,7 +68,7 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
-        <locationX>56</locationX>
+        <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Get_Country_Code_Metadata_Info</targetReference>
