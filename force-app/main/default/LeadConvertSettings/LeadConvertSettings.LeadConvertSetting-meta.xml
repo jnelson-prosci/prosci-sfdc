@@ -124,6 +124,10 @@
             <outputField>Payment_Type__c</outputField>
         </mappingFields>
         <mappingFields>
+            <inputField>Preferred_Language__c</inputField>
+            <outputField>Preferred_Language__c</outputField>
+        </mappingFields>
+        <mappingFields>
             <inputField>Program_Type__c</inputField>
             <outputField>Program_Type__c</outputField>
         </mappingFields>

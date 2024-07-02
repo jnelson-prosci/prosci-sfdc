@@ -51,58 +51,34 @@
         <ruleEntry>
             <assignedTo>Europe_Leads_Dutch</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Lead.Queue_Family__c</field>
-                <operation>equals</operation>
-                <value>Europe</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Languages__c</field>
-                <operation>contains</operation>
-                <value>Dutch</value>
-            </criteriaItems>
+            <formula>AND(
+    Queue_Family__c = &apos;Europe&apos;,
+    CONTAINS(TEXT(Preferred_Language__c), &apos;Dutch&apos;)
+)</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Europe_Leads_Spanish</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Lead.Queue_Family__c</field>
-                <operation>equals</operation>
-                <value>Europe</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Languages__c</field>
-                <operation>contains</operation>
-                <value>Spanish</value>
-            </criteriaItems>
+            <formula>AND(
+    Queue_Family__c = &apos;Europe&apos;,
+    CONTAINS(TEXT(Preferred_Language__c), &apos;Spanish&apos;)
+)</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Europe_Leads_Italian</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Lead.Queue_Family__c</field>
-                <operation>equals</operation>
-                <value>Europe</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Languages__c</field>
-                <operation>contains</operation>
-                <value>Italian</value>
-            </criteriaItems>
+            <formula>AND(
+Queue_Family__c = &apos;Europe&apos;,
+CONTAINS(TEXT(Preferred_Language__c), &apos;Italian﻿﻿&apos;)
+)</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Europe_Leads_French</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Lead.Queue_Family__c</field>
-                <operation>equals</operation>
-                <value>Europe</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Languages__c</field>
-                <operation>contains</operation>
-                <value>French</value>
-            </criteriaItems>
+            <formula>AND(
+Queue_Family__c = &apos;Europe&apos;,
+CONTAINS(TEXT(Preferred_Language__c), &apos;French&apos;)
+)</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Europe_Leads_Nordic_Region</assignedTo>
@@ -110,27 +86,21 @@
             <formula>AND(
 				Queue_Family__c = &apos;Europe&apos;,
 				OR(
-        CONTAINS(Languages__c, &apos;Danish&apos;),
-				    CONTAINS(Languages__c, &apos;Norwegian&apos;),
-				    CONTAINS(Languages__c, &apos;Icelandic&apos;),
-				    CONTAINS(Languages__c, &apos;Finnish&apos;),
-				    CONTAINS(Languages__c, &apos;Greenlandic&apos;)
+        CONTAINS(TEXT(Preferred_Language__c), &apos;Danish&apos;),
+				    CONTAINS(TEXT(Preferred_Language__c), &apos;Norwegian&apos;),
+				    CONTAINS(TEXT(Preferred_Language__c), &apos;Icelandic&apos;),
+				    CONTAINS(TEXT(Preferred_Language__c), &apos;Finnish&apos;),
+				    CONTAINS(TEXT(Preferred_Language__c), &apos;Greenlandic&apos;)
     )
 )</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Europe_Leads_German</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Lead.Queue_Family__c</field>
-                <operation>equals</operation>
-                <value>Europe</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Languages__c</field>
-                <operation>contains</operation>
-                <value>German</value>
-            </criteriaItems>
+            <formula>AND(
+Queue_Family__c = &apos;Europe&apos;,
+CONTAINS(TEXT(Preferred_Language__c), &apos;German&apos;)
+)</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Europe_Leads_English</assignedTo>
