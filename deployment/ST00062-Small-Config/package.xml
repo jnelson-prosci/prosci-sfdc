@@ -17,6 +17,7 @@
 	</types>
 	<types>
 		<members>Opportunity_Generate_Deal_Support_Processes</members>
+		<members>Deal_Support_Process_Create_or_Update_Incremental_Training_Program</members>
 		<name>Flow</name>
 	</types>
 	<types>

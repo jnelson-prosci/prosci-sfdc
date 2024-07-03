@@ -329,6 +329,12 @@ Error: {!$Flow.FaultMessage}</errorMessage>
             <targetReference>Set_New_ITP_Values</targetReference>
         </connector>
         <inputAssignments>
+            <field>CurrencyIsoCode</field>
+            <value>
+                <elementReference>$Record.Opportunity__r.CurrencyIsoCode</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>IsActive</field>
             <value>
                 <booleanValue>true</booleanValue>
@@ -386,6 +392,12 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <connector>
             <targetReference>Get_PBE</targetReference>
         </connector>
+        <inputAssignments>
+            <field>CurrencyIsoCode</field>
+            <value>
+                <elementReference>$Record.Opportunity_Product__r.CurrencyIsoCode</elementReference>
+            </value>
+        </inputAssignments>
         <inputAssignments>
             <field>IsActive</field>
             <value>
@@ -537,6 +549,13 @@ Error: {!$Flow.FaultMessage}</errorMessage>
                 <elementReference>$Record.Opportunity__r.Pricebook2.Id</elementReference>
             </value>
         </filters>
+        <filters>
+            <field>CurrencyIsoCode</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Opportunity_Product__r.CurrencyIsoCode</elementReference>
+            </value>
+        </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>PricebookEntry</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -587,6 +606,13 @@ Error: {!$Flow.FaultMessage}</errorMessage>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>varITPName</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>CurrencyIsoCode</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Opportunity_Product__r.CurrencyIsoCode</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
