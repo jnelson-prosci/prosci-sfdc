@@ -101,6 +101,12 @@
                 <identifier>RecordBilling_Type_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Program_Title__c</fieldItem>
+                <identifier>RecordProgram_Title__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-21b3d58a-d783-4ee2-8f4c-626a4d345f6a</name>
         <type>Facet</type>
     </flexiPageRegions>
