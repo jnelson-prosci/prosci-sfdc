@@ -38,39 +38,6 @@
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
-        <fullName>All_Internal_Users</fullName>
-        <accessLevel>Edit</accessLevel>
-        <accountSettings>
-            <caseAccessLevel>Edit</caseAccessLevel>
-            <contactAccessLevel>Edit</contactAccessLevel>
-            <opportunityAccessLevel>Edit</opportunityAccessLevel>
-        </accountSettings>
-        <description>All Prosci users share their accounts</description>
-        <label>All Internal Users</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-        <sharedFrom>
-            <allInternalUsers></allInternalUsers>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
-        <fullName>BPI_Partner_Group</fullName>
-        <accessLevel>Edit</accessLevel>
-        <accountSettings>
-            <caseAccessLevel>Edit</caseAccessLevel>
-            <contactAccessLevel>Edit</contactAccessLevel>
-            <opportunityAccessLevel>Edit</opportunityAccessLevel>
-        </accountSettings>
-        <label>BPI Partner Group</label>
-        <sharedTo>
-            <portalRoleAndSubordinates>BPIGroupPartnerUser</portalRoleAndSubordinates>
-        </sharedTo>
-        <sharedFrom>
-            <portalRoleAndSubordinates>BPIGroupPartnerUser</portalRoleAndSubordinates>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
         <fullName>CAN_Account_Visibility</fullName>
         <accessLevel>Edit</accessLevel>
         <accountSettings>
@@ -85,22 +52,6 @@
         </sharedTo>
         <sharedFrom>
             <roleAndSubordinatesInternal>CAN_Market_Leader</roleAndSubordinatesInternal>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
-        <fullName>Change_Enablement_Partner</fullName>
-        <accessLevel>Edit</accessLevel>
-        <accountSettings>
-            <caseAccessLevel>Edit</caseAccessLevel>
-            <contactAccessLevel>Edit</contactAccessLevel>
-            <opportunityAccessLevel>Edit</opportunityAccessLevel>
-        </accountSettings>
-        <label>Change Enablement Partner</label>
-        <sharedTo>
-            <portalRole>ChangeEnablementPtyLtdPartnerUser</portalRole>
-        </sharedTo>
-        <sharedFrom>
-            <portalRole>ChangeEnablementPtyLtdPartnerUser</portalRole>
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
@@ -121,23 +72,6 @@
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
-        <fullName>GAN_Prosci_Team</fullName>
-        <accessLevel>Edit</accessLevel>
-        <accountSettings>
-            <caseAccessLevel>Edit</caseAccessLevel>
-            <contactAccessLevel>Edit</contactAccessLevel>
-            <opportunityAccessLevel>Edit</opportunityAccessLevel>
-        </accountSettings>
-        <description>This rule gives access to the Prosci team to view all of the GAN teams info</description>
-        <label>GAN Prosci Team</label>
-        <sharedTo>
-            <group>GAN_Users</group>
-        </sharedTo>
-        <sharedFrom>
-            <allPartnerUsers></allPartnerUsers>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
         <fullName>LATAM_Account_Visibility</fullName>
         <accessLevel>Edit</accessLevel>
         <accountSettings>
@@ -152,104 +86,6 @@
         </sharedTo>
         <sharedFrom>
             <roleAndSubordinatesInternal>LATAM_Market_Leader</roleAndSubordinatesInternal>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
-        <fullName>Nexum_internal_sharing</fullName>
-        <accessLevel>Edit</accessLevel>
-        <accountSettings>
-            <caseAccessLevel>Edit</caseAccessLevel>
-            <contactAccessLevel>Edit</contactAccessLevel>
-            <opportunityAccessLevel>Edit</opportunityAccessLevel>
-        </accountSettings>
-        <label>Nexum internal sharing</label>
-        <sharedTo>
-            <portalRole>NexumPartnerUser</portalRole>
-        </sharedTo>
-        <sharedFrom>
-            <portalRole>NexumPartnerUser</portalRole>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
-        <fullName>Partner_to_Prosci</fullName>
-        <accessLevel>Read</accessLevel>
-        <accountSettings>
-            <caseAccessLevel>None</caseAccessLevel>
-            <contactAccessLevel>Read</contactAccessLevel>
-            <opportunityAccessLevel>None</opportunityAccessLevel>
-        </accountSettings>
-        <description>Partner rule to allow them to read only the Prosci accounts</description>
-        <label>Partner to Prosci</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-        <sharedFrom>
-            <allPartnerUsers></allPartnerUsers>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
-        <fullName>People_Change_Partner</fullName>
-        <accessLevel>Edit</accessLevel>
-        <accountSettings>
-            <caseAccessLevel>Edit</caseAccessLevel>
-            <contactAccessLevel>Edit</contactAccessLevel>
-            <opportunityAccessLevel>Edit</opportunityAccessLevel>
-        </accountSettings>
-        <label>People Change Partner</label>
-        <sharedTo>
-            <portalRole>PeopleChangePartnerUser</portalRole>
-        </sharedTo>
-        <sharedFrom>
-            <portalRole>PeopleChangePartnerUser</portalRole>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
-        <fullName>Prosci_Canada</fullName>
-        <accessLevel>Edit</accessLevel>
-        <accountSettings>
-            <caseAccessLevel>Edit</caseAccessLevel>
-            <contactAccessLevel>Edit</contactAccessLevel>
-            <opportunityAccessLevel>Edit</opportunityAccessLevel>
-        </accountSettings>
-        <label>Prosci Canada</label>
-        <sharedTo>
-            <portalRoleAndSubordinates>AdProChangeSystemsIncPartnerUser</portalRoleAndSubordinates>
-        </sharedTo>
-        <sharedFrom>
-            <allInternalUsers></allInternalUsers>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
-        <fullName>Prosci_to_Partner</fullName>
-        <accessLevel>Read</accessLevel>
-        <accountSettings>
-            <caseAccessLevel>None</caseAccessLevel>
-            <contactAccessLevel>Read</contactAccessLevel>
-            <opportunityAccessLevel>None</opportunityAccessLevel>
-        </accountSettings>
-        <description>This rule gives partners read only access to prosci account records.</description>
-        <label>Prosci to Partner</label>
-        <sharedTo>
-            <group>GAN_Complete_Partner</group>
-        </sharedTo>
-        <sharedFrom>
-            <allInternalUsers></allInternalUsers>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
-        <fullName>Prosci_with_Prosci_Canada</fullName>
-        <accessLevel>Edit</accessLevel>
-        <accountSettings>
-            <caseAccessLevel>Edit</caseAccessLevel>
-            <contactAccessLevel>Edit</contactAccessLevel>
-            <opportunityAccessLevel>Edit</opportunityAccessLevel>
-        </accountSettings>
-        <label>Prosci with Prosci Canada</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-        <sharedFrom>
-            <portalRoleAndSubordinates>AdProChangeSystemsIncPartnerUser</portalRoleAndSubordinates>
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
