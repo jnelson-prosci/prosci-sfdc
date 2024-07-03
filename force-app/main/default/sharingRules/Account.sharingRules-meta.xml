@@ -95,6 +95,8 @@
             <caseAccessLevel>Edit</caseAccessLevel>
             <contactAccessLevel>Edit</contactAccessLevel>
             <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
         <label>US Account Visibility</label>
         <sharedTo>
             <roleAndSubordinatesInternal>US_Market_Leader</roleAndSubordinatesInternal>
