@@ -5,7 +5,7 @@
         <name>Set_ITP_Unit_Price</name>
         <label>Set ITP Unit Price</label>
         <locationX>50</locationX>
-        <locationY>1055</locationY>
+        <locationY>1163</locationY>
         <assignmentItems>
             <assignToReference>Get_Incremental_Training_Program.UnitPrice</assignToReference>
             <operator>Assign</operator>
@@ -22,7 +22,7 @@
         <name>Set_New_ITP_Values</name>
         <label>Set New ITP Values</label>
         <locationX>710</locationX>
-        <locationY>2387</locationY>
+        <locationY>2495</locationY>
         <assignmentItems>
             <assignToReference>ITPToCreate.Name</assignToReference>
             <operator>Assign</operator>
@@ -66,7 +66,7 @@
         <name>Set_Pricebook_Entry_Id_Existing</name>
         <label>Set Pricebook Entry Id Existing</label>
         <locationX>578</locationX>
-        <locationY>2195</locationY>
+        <locationY>2303</locationY>
         <assignmentItems>
             <assignToReference>varPricebookEntryId</assignToReference>
             <operator>Assign</operator>
@@ -82,7 +82,7 @@
         <name>Set_Product_Id_Existing</name>
         <label>Set Product Id Existing</label>
         <locationX>578</locationX>
-        <locationY>1271</locationY>
+        <locationY>1379</locationY>
         <assignmentItems>
             <assignToReference>varProduct2Id</assignToReference>
             <operator>Assign</operator>
@@ -98,7 +98,7 @@
         <name>Sum_Total_Incremental_Pricing</name>
         <label>Sum Total Incremental Pricing</label>
         <locationX>468</locationX>
-        <locationY>647</locationY>
+        <locationY>755</locationY>
         <assignmentItems>
             <assignToReference>sumTotalIncrementalPricing</assignToReference>
             <operator>Add</operator>
@@ -114,7 +114,7 @@
         <name>Error_Creating_ITP</name>
         <label>Error Creating ITP</label>
         <locationX>1106</locationX>
-        <locationY>2603</locationY>
+        <locationY>2711</locationY>
         <customErrorMessages>
             <errorMessage>Flow: Deal Support Process - Create or Update Incremental Training Program
 Action: Create ITP
@@ -126,7 +126,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Error_Standard_PB_Missing</name>
         <label>Error Standard PB Missing</label>
         <locationX>1370</locationX>
-        <locationY>1571</locationY>
+        <locationY>1679</locationY>
         <customErrorMessages>
             <errorMessage>No Standard Pricebook found</errorMessage>
             <isFieldError>false</isFieldError>
@@ -136,7 +136,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Error_Updating_ITP</name>
         <label>Error Updating ITP</label>
         <locationX>314</locationX>
-        <locationY>1271</locationY>
+        <locationY>1379</locationY>
         <customErrorMessages>
             <errorMessage>Flow: Deal Support Process - Create or Update Incremental Training Program
 Action: Update ITP
@@ -148,7 +148,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <description>Cannot traverse objects to check the record type in entry condition checker</description>
         <name>Decision_5</name>
         <label>Is Training DSP?</label>
-        <locationX>1007</locationX>
+        <locationX>1452</locationX>
         <locationY>323</locationY>
         <defaultConnectorLabel>Not Training</defaultConnectorLabel>
         <rules>
@@ -168,11 +168,33 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         </rules>
     </decisions>
     <decisions>
+        <name>DSPs_Found</name>
+        <label>DSPs Found?</label>
+        <locationX>1007</locationX>
+        <locationY>539</locationY>
+        <defaultConnectorLabel>No Records</defaultConnectorLabel>
+        <rules>
+            <name>Found_Records</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Deal_Support_Processes</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_DSPs</targetReference>
+            </connector>
+            <label>Found Records</label>
+        </rules>
+    </decisions>
+    <decisions>
         <description>No ITP requires a Product, Standard PBE and PBE to exist so we can associate it with the new Opportunity Product</description>
         <name>Incremental_Training_Program_Exists</name>
         <label>Incremental Training Program Exists?</label>
         <locationX>380</locationX>
-        <locationY>947</locationY>
+        <locationY>1055</locationY>
         <defaultConnector>
             <targetReference>Get_ITP_Product</targetReference>
         </defaultConnector>
@@ -198,7 +220,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Pricebook_Entry_Exists</name>
         <label>Pricebook Entry Exists?</label>
         <locationX>710</locationX>
-        <locationY>2087</locationY>
+        <locationY>2195</locationY>
         <defaultConnector>
             <targetReference>Create_PBE</targetReference>
         </defaultConnector>
@@ -223,7 +245,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Product_Exists</name>
         <label>Product Exists?</label>
         <locationX>710</locationX>
-        <locationY>1163</locationY>
+        <locationY>1271</locationY>
         <defaultConnector>
             <targetReference>Create_Product2</targetReference>
         </defaultConnector>
@@ -249,7 +271,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Standard_PBE_Exists</name>
         <label>Standard PBE Exists?</label>
         <locationX>710</locationX>
-        <locationY>1679</locationY>
+        <locationY>1787</locationY>
         <defaultConnector>
             <targetReference>Create_Standard_PBE</targetReference>
         </defaultConnector>
@@ -278,7 +300,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Loop_DSPs</name>
         <label>Loop DSPs</label>
         <locationX>380</locationX>
-        <locationY>539</locationY>
+        <locationY>647</locationY>
         <collectionReference>Get_Deal_Support_Processes</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -312,7 +334,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Create_ITP</name>
         <label>Create ITP</label>
         <locationX>710</locationX>
-        <locationY>2495</locationY>
+        <locationY>2603</locationY>
         <faultConnector>
             <targetReference>Error_Creating_ITP</targetReference>
         </faultConnector>
@@ -323,7 +345,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Create_PBE</name>
         <label>Create PBE</label>
         <locationX>842</locationX>
-        <locationY>2195</locationY>
+        <locationY>2303</locationY>
         <assignRecordIdToReference>varPricebookEntryId</assignRecordIdToReference>
         <connector>
             <targetReference>Set_New_ITP_Values</targetReference>
@@ -364,7 +386,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Create_Product2</name>
         <label>Create Product2</label>
         <locationX>842</locationX>
-        <locationY>1271</locationY>
+        <locationY>1379</locationY>
         <assignRecordIdToReference>varProduct2Id</assignRecordIdToReference>
         <connector>
             <targetReference>Get_Standard_PB</targetReference>
@@ -388,7 +410,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Create_Standard_PBE</name>
         <label>Create Standard PBE</label>
         <locationX>798</locationX>
-        <locationY>1787</locationY>
+        <locationY>1895</locationY>
         <connector>
             <targetReference>Get_PBE</targetReference>
         </connector>
@@ -429,11 +451,11 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <description>Get all the completed Deal Support Processes related to the parent opp to calculate sum of total incremental pricing values</description>
         <name>Get_Deal_Support_Processes</name>
         <label>Get Deal Support Processes</label>
-        <locationX>380</locationX>
+        <locationX>1007</locationX>
         <locationY>431</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Loop_DSPs</targetReference>
+            <targetReference>DSPs_Found</targetReference>
         </connector>
         <filterLogic>1 AND (2 OR 3 OR 4) AND 5</filterLogic>
         <filters>
@@ -480,7 +502,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Get_Incremental_Training_Program</name>
         <label>Get Incremental Training Program</label>
         <locationX>380</locationX>
-        <locationY>839</locationY>
+        <locationY>947</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Incremental_Training_Program_Exists</targetReference>
@@ -508,7 +530,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Get_ITP_Product</name>
         <label>Get ITP Product</label>
         <locationX>710</locationX>
-        <locationY>1055</locationY>
+        <locationY>1163</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Product_Exists</targetReference>
@@ -529,7 +551,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Get_PBE</name>
         <label>Get PBE</label>
         <locationX>710</locationX>
-        <locationY>1979</locationY>
+        <locationY>2087</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Pricebook_Entry_Exists</targetReference>
@@ -564,7 +586,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Get_Standard_PB</name>
         <label>Get Standard PB</label>
         <locationX>710</locationX>
-        <locationY>1463</locationY>
+        <locationY>1571</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Get_Standard_PBE</targetReference>
@@ -588,7 +610,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Get_Standard_PBE</name>
         <label>Get Standard PBE</label>
         <locationX>710</locationX>
-        <locationY>1571</locationY>
+        <locationY>1679</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Standard_PBE_Exists</targetReference>
@@ -624,14 +646,14 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <name>Update_ITP</name>
         <label>Update ITP</label>
         <locationX>50</locationX>
-        <locationY>1163</locationY>
+        <locationY>1271</locationY>
         <faultConnector>
             <targetReference>Error_Updating_ITP</targetReference>
         </faultConnector>
         <inputReference>Get_Incremental_Training_Program</inputReference>
     </recordUpdates>
     <start>
-        <locationX>881</locationX>
+        <locationX>1326</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Decision_5</targetReference>
