@@ -22,6 +22,7 @@
     </sharingCriteriaRules>
     <sharingOwnerRules>
         <fullName>ANZ_Account_Visibility</fullName>
+<<<<<<< HEAD
         <accessLevel>Edit</accessLevel>
         <accountSettings>
             <caseAccessLevel>Edit</caseAccessLevel>
@@ -29,6 +30,15 @@
             <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
         <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
+=======
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+>>>>>>> parent of 386d77b (Update access level to acceptable value, Edit)
         <label>ANZ Account Visibility</label>
         <sharedTo>
             <roleAndSubordinatesInternal>ANZ_Market_Leader</roleAndSubordinatesInternal>
@@ -39,6 +49,7 @@
     </sharingOwnerRules>
     <sharingOwnerRules>
         <fullName>CAN_Account_Visibility</fullName>
+<<<<<<< HEAD
         <accessLevel>Edit</accessLevel>
         <accountSettings>
             <caseAccessLevel>Edit</caseAccessLevel>
@@ -46,6 +57,15 @@
             <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
         <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
+=======
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+>>>>>>> parent of 386d77b (Update access level to acceptable value, Edit)
         <label>CAN Account Visibility</label>
         <sharedTo>
             <roleAndSubordinatesInternal>CAN_Market_Leader</roleAndSubordinatesInternal>
@@ -56,6 +76,7 @@
     </sharingOwnerRules>
     <sharingOwnerRules>
         <fullName>EUR_Account_Visibility</fullName>
+<<<<<<< HEAD
         <accessLevel>Edit</accessLevel>
         <accountSettings>
             <caseAccessLevel>Edit</caseAccessLevel>
@@ -63,6 +84,15 @@
             <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
         <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
+=======
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+>>>>>>> parent of 386d77b (Update access level to acceptable value, Edit)
         <label>EUR Account Visibility</label>
         <sharedTo>
             <roleAndSubordinatesInternal>EUR_Market_Leader</roleAndSubordinatesInternal>
@@ -73,12 +103,33 @@
     </sharingOwnerRules>
     <sharingOwnerRules>
         <fullName>Global_Operations_Visibility</fullName>
+<<<<<<< HEAD
+=======
         <accessLevel>Read</accessLevel>
         <accountSettings>
             <caseAccessLevel>Read</caseAccessLevel>
             <contactAccessLevel>Read</contactAccessLevel>
             <opportunityAccessLevel>Read</opportunityAccessLevel>
         </accountSettings>
+        <description>Grants Global Operations team read access to Account/Opp/Case</description>
+        <label>Global Operations Visibility</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Global_Operations</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Global_Team</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>LATAM_Account_Visibility</fullName>
+>>>>>>> parent of 386d77b (Update access level to acceptable value, Edit)
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+<<<<<<< HEAD
         <description>Grants Global Operations team read access to Account/Opp/Case</description>
         <label>Global Operations Visibility</label>
         <sharedTo>
@@ -97,6 +148,9 @@
             <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
         <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
+=======
+        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+>>>>>>> parent of 386d77b (Update access level to acceptable value, Edit)
         <label>LATAM Account Visibility</label>
         <sharedTo>
             <roleAndSubordinatesInternal>LATAM_Market_Leader</roleAndSubordinatesInternal>
@@ -107,6 +161,7 @@
     </sharingOwnerRules>
     <sharingOwnerRules>
         <fullName>US_Account_Visibility</fullName>
+<<<<<<< HEAD
         <accessLevel>Edit</accessLevel>
         <accountSettings>
             <caseAccessLevel>Edit</caseAccessLevel>
@@ -114,6 +169,15 @@
             <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
         <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
+=======
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+>>>>>>> parent of 386d77b (Update access level to acceptable value, Edit)
         <label>US Account Visibility</label>
         <sharedTo>
             <roleAndSubordinatesInternal>US_Market_Leader</roleAndSubordinatesInternal>
