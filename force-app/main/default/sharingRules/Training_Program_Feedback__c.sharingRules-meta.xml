@@ -2,7 +2,7 @@
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <sharingOwnerRules>
         <fullName>ANZ_Record_Visibility</fullName>
-        <accessLevel>Read</accessLevel>
+        <accessLevel>Read/Write</accessLevel>
         <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
         <label>ANZ Record Visibility</label>
         <sharedTo>
@@ -14,7 +14,7 @@
     </sharingOwnerRules>
     <sharingOwnerRules>
         <fullName>CAN_Record_Visibility</fullName>
-        <accessLevel>Read</accessLevel>
+        <accessLevel>Read/Write</accessLevel>
         <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
         <label>CAN Record Visibility</label>
         <sharedTo>
@@ -26,7 +26,7 @@
     </sharingOwnerRules>
     <sharingOwnerRules>
         <fullName>EUR_Record_Visibility</fullName>
-        <accessLevel>Read</accessLevel>
+        <accessLevel>Read/Write</accessLevel>
         <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
         <label>EUR Record Visibility</label>
         <sharedTo>
@@ -38,7 +38,7 @@
     </sharingOwnerRules>
     <sharingOwnerRules>
         <fullName>LATAM_Record_Visibility</fullName>
-        <accessLevel>Read</accessLevel>
+        <accessLevel>Read/Write</accessLevel>
         <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
         <label>LATAM Record Visibility</label>
         <sharedTo>
@@ -50,7 +50,7 @@
     </sharingOwnerRules>
     <sharingOwnerRules>
         <fullName>US_Record_Visibility</fullName>
-        <accessLevel>Read</accessLevel>
+        <accessLevel>Read/Write</accessLevel>
         <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
         <label>US Record Visibility</label>
         <sharedTo>
