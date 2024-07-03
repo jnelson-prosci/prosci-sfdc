@@ -2,7 +2,6 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
 		<members>OpportunityLineItem.Attendees_Per_Session__c</members>
-		<members>OpportunityLineItem.Billing_Type__c</members>
 		<members>OpportunityLineItem.Number_of_Sessions__c</members>
 		<members>Product2.Billing_Type__c</members>
 		<name>CustomField</name>
