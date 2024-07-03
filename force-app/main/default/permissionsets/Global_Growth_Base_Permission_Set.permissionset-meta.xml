@@ -500,11 +500,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>OpportunityLineItem.Billing_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>OpportunityLineItem.Number_of_Sessions__c</field>
         <readable>true</readable>
@@ -532,6 +527,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Product2.Minimum_Number_of_Participants__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Product2.Program_Title__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
