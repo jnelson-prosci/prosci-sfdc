@@ -22,13 +22,13 @@
     </sharingCriteriaRules>
     <sharingOwnerRules>
         <fullName>ANZ_Account_Visibility</fullName>
-        <accessLevel>Read</accessLevel>
+        <accessLevel>Edit</accessLevel>
         <accountSettings>
-            <caseAccessLevel>None</caseAccessLevel>
-            <contactAccessLevel>Read</contactAccessLevel>
-            <opportunityAccessLevel>Read</opportunityAccessLevel>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
-        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+        <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
         <label>ANZ Account Visibility</label>
         <sharedTo>
             <roleAndSubordinatesInternal>ANZ_Market_Leader</roleAndSubordinatesInternal>
@@ -72,13 +72,13 @@
     </sharingOwnerRules>
     <sharingOwnerRules>
         <fullName>CAN_Account_Visibility</fullName>
-        <accessLevel>Read</accessLevel>
+        <accessLevel>Edit</accessLevel>
         <accountSettings>
-            <caseAccessLevel>None</caseAccessLevel>
-            <contactAccessLevel>Read</contactAccessLevel>
-            <opportunityAccessLevel>Read</opportunityAccessLevel>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
-        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+        <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
         <label>CAN Account Visibility</label>
         <sharedTo>
             <roleAndSubordinatesInternal>CAN_Market_Leader</roleAndSubordinatesInternal>
@@ -105,13 +105,13 @@
     </sharingOwnerRules>
     <sharingOwnerRules>
         <fullName>EUR_Account_Visibility</fullName>
-        <accessLevel>Read</accessLevel>
+        <accessLevel>Edit</accessLevel>
         <accountSettings>
-            <caseAccessLevel>None</caseAccessLevel>
-            <contactAccessLevel>Read</contactAccessLevel>
-            <opportunityAccessLevel>Read</opportunityAccessLevel>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
-        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+        <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
         <label>EUR Account Visibility</label>
         <sharedTo>
             <roleAndSubordinatesInternal>EUR_Market_Leader</roleAndSubordinatesInternal>
@@ -139,13 +139,13 @@
     </sharingOwnerRules>
     <sharingOwnerRules>
         <fullName>LATAM_Account_Visibility</fullName>
-        <accessLevel>Read</accessLevel>
+        <accessLevel>Edit</accessLevel>
         <accountSettings>
-            <caseAccessLevel>None</caseAccessLevel>
-            <contactAccessLevel>Read</contactAccessLevel>
-            <opportunityAccessLevel>Read</opportunityAccessLevel>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
-        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+        <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
         <label>LATAM Account Visibility</label>
         <sharedTo>
             <roleAndSubordinatesInternal>LATAM_Market_Leader</roleAndSubordinatesInternal>
@@ -254,13 +254,13 @@
     </sharingOwnerRules>
     <sharingOwnerRules>
         <fullName>US_Account_Visibility</fullName>
-        <accessLevel>Read</accessLevel>
+        <accessLevel>Edit</accessLevel>
         <accountSettings>
-            <caseAccessLevel>None</caseAccessLevel>
-            <contactAccessLevel>Read</contactAccessLevel>
-            <opportunityAccessLevel>Read</opportunityAccessLevel>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
-        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+        <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
         <label>US Account Visibility</label>
         <sharedTo>
             <roleAndSubordinatesInternal>US_Market_Leader</roleAndSubordinatesInternal>
