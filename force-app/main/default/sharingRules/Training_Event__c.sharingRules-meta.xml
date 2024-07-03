@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>ANZ_Record_Visibility</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+        <label>ANZ Record Visibility</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>ANZ_Market_Leader</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>ANZ_Market_Leader</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>BPI_Partner_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>BPI Partner Group</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>BPIGroupPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>BPIGroupPartnerUser</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CAN_Record_Visibility</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+        <label>CAN Record Visibility</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>CAN_Market_Leader</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>CAN_Market_Leader</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Change_Enablement_Partner</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Change Enablement Partner</label>
+        <sharedTo>
+            <portalRole>ChangeEnablementPtyLtdPartnerUser</portalRole>
+        </sharedTo>
+        <sharedFrom>
+            <portalRole>ChangeEnablementPtyLtdPartnerUser</portalRole>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>EUR_Record_Visibility</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+        <label>EUR Record Visibility</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>EUR_Market_Leader</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>EUR_Market_Leader</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>LATAM_Record_Visibility</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+        <label>LATAM Record Visibility</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>LATAM_Market_Leader</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>LATAM_Market_Leader</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Navigo_Partner</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Navigo Partner</label>
+        <sharedTo>
+            <portalRole>NavigoPartnerUser</portalRole>
+        </sharedTo>
+        <sharedFrom>
+            <portalRole>NavigoPartnerUser</portalRole>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>People_Change_Partner</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>People Change Partner</label>
+        <sharedTo>
+            <portalRole>PeopleChangePartnerUser</portalRole>
+        </sharedTo>
+        <sharedFrom>
+            <portalRole>PeopleChangePartnerUser</portalRole>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Prosci_Canada_with_Prosci</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Prosci Canada with Prosci</label>
+        <sharedTo>
+            <portalRoleAndSubordinates>AdProChangeSystemsIncPartnerUser</portalRoleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Prosci_to_Prosci</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Prosci to Prosci</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Prosci_with_Prosci_Canada</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Prosci with Prosci Canada</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>AdProChangeSystemsIncPartnerUser</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>US_Record_Visibility</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
+        <label>US Record Visibility</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>US_Market_Leader</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>US_Market_Leader</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>
