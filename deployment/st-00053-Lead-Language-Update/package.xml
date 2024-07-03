@@ -20,8 +20,16 @@
 		<name>Flow</name>
 	</types>
 	<types>
+		<members>Preferred_Language</members>
+		<name>GlobalValueSet</name>
+	</types>
+	<types>
 		<members>LeadConvertSettings</members>
 		<name>LeadConvertSettings</name>
+	</types>
+	<types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
 	</types>
 	<version>60.0</version>
 </Package>
