@@ -56,7 +56,7 @@
         <description>Assigns Advisory Record Type Id to dspRecordType variable</description>
         <name>Assign_Advisory_Record_Type</name>
         <label>Assign Advisory Record Type</label>
-        <locationX>1757</locationX>
+        <locationX>1758</locationX>
         <locationY>371</locationY>
         <assignmentItems>
             <assignToReference>dspRecordType</assignToReference>
@@ -135,7 +135,7 @@
             <assignToReference>dealSupportProcess.Program_Title__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>Iterate_through_Opportunity_Products.Opportunity.Program_Title__c</elementReference>
+                <elementReference>Iterate_through_Opportunity_Products.Product2.Program_Title__c</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -160,7 +160,7 @@
         <description>Assigns values to Deal Support Process record where Record Type = Training</description>
         <name>Assign_Deal_Support_Process_Fields_Training</name>
         <label>Assign Deal Support Process Fields Training</label>
-        <locationX>2419</locationX>
+        <locationX>2414</locationX>
         <locationY>129</locationY>
         <assignmentItems>
             <assignToReference>dealSupportProcess.Quantity__c</assignToReference>
@@ -215,7 +215,7 @@
             <assignToReference>dealSupportProcess.Program_Title__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>Iterate_through_Opportunity_Products.Opportunity.Program_Title__c</elementReference>
+                <elementReference>Iterate_through_Opportunity_Products.Product2.Program_Title__c</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -452,7 +452,7 @@
         <description>Assembles the name for  Deal Support Process Advisory records</description>
         <name>advisoryDSPName</name>
         <dataType>String</dataType>
-        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - Advisory - &apos;</expression>
+        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - Advisory&apos;</expression>
     </formulas>
     <formulas>
         <description>Assembles name for Deal Support Process Licensing records</description>
