@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Deal_Support_Process__c.Incremental_Pricing__c</members>
+		<members>Deal_Support_Process__c.Minimum_Number_of_Participants__c</members>
+		<members>OpportunityLineItem.Incremental_Pricing__c</members>
+		<members>OpportunityLineItem.Minimum_Number_of_Participants__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Opportunity_Product_Set_Overage_Fields</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
+	</types>
+	<version>60.0</version>
+</Package>
