@@ -97,16 +97,6 @@
                 <identifier>RecordPreviously_Existing_Contact_rCountry_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Preferred_Language__c</fieldItem>
-                <identifier>RecordPreferred_Language_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-c3052768-1f03-4ede-afeb-b9705b25ae2c</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -394,8 +384,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Browser_Language_Settings__c</fieldItem>
-                <identifier>RecordBrowser_Language_Settings_cField</identifier>
+                <fieldItem>Record.Preferred_Language__c</fieldItem>
+                <identifier>RecordPreferred_Language_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
