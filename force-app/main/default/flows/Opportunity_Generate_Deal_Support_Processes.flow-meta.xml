@@ -464,13 +464,13 @@
         <description>Assembles name for Deal Support Process Training record</description>
         <name>trainingDSPName</name>
         <dataType>String</dataType>
-        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + TEXT({!Iterate_through_Opportunity_Products.Opportunity.Program_Title__c}) + {!trainingGroupNumber}</expression>
+        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + TEXT({!Iterate_through_Opportunity_Products.Product2.Program_Title__c}) + {!trainingGroupNumber}</expression>
     </formulas>
     <formulas>
         <description>Appends the group number to the Deal Support Process Training record name if the number of sessions is greater than one</description>
         <name>trainingGroupNumber</name>
         <dataType>String</dataType>
-        <expression>IF({!Iterate_through_Opportunity_Products.Quantity} &gt; 1, &apos;- Group &apos; + TEXT({!trainingCounter} + 1), &apos;&apos;)</expression>
+        <expression>IF({!Iterate_through_Opportunity_Products.Quantity} &gt; 1, &apos; - Group &apos; + TEXT({!trainingCounter} + 1), &apos;&apos;)</expression>
     </formulas>
     <interviewLabel>Opportunity - Generate Deal Support Processes {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Opportunity - Generate Deal Support Processes</label>
