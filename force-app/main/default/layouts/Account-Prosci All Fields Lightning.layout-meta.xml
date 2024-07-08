@@ -3,6 +3,9 @@
     <customButtons>Training_Summary</customButtons>
     <customButtons>MA_MapIt_a0vi000000Bnnt5AAB</customButtons>
     <customButtons>Add_Document</customButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
