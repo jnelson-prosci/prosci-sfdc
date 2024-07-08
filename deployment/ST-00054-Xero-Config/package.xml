@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Order.Account_Country_Code__c</members>
+		<members>Order.External_Document_Number__c</members>
+		<members>Order.Payment_Type__c</members>
+		<members>Order.Shipment_Date__c</members>
+		<members>Order.Shipping_Agent_Code_Courier__c</members>
+		<members>Order.Shipping_Agent_Service_Code_Priority__c</members>
+		<members>Order.Tracking_Number__c</members>
+		<members>Order.Venue_Code__c</members>
+		<name>CustomField</name>
+	</types>
+    <types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
+	</types>
+    <types>
+		<members>Opportunity_Create_Order_from_Magento_created_Product_Order_Opp</members>
+		<name>Flow</name>
+	</types>
+    <types>
+		<members>Order-Order Layout</members>
+		<name>Layout</name>
+	</types>
+	<version>60.0</version>
+</Package>
