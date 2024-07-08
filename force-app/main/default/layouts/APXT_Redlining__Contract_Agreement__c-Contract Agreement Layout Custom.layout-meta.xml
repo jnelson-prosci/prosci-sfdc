@@ -43,6 +43,10 @@
                 <behavior>Edit</behavior>
                 <field>Historical_Contract_infomation__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Requested_Start_Date_Opportunity__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -362,6 +366,11 @@
             <actionName>APXT_Redlining__Contract_Agreement__c.Additional_Review_Completed</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>30</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>View_Document</actionName>
+            <actionType>CustomButton</actionType>
+            <sortOrder>31</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedLists>
