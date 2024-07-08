@@ -256,6 +256,10 @@
                 <behavior>Edit</behavior>
                 <field>NAICS_Code_Description__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Country_Code__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
