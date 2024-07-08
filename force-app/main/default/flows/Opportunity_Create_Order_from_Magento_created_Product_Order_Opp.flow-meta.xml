@@ -326,20 +326,6 @@
                 </value>
             </transformValueActions>
             <transformValueActions>
-                <outputFieldApiName>Ship_To_Contact__c</outputFieldApiName>
-                <transformType>Map</transformType>
-                <value>
-                    <elementReference>$Record.Ship_To_Contact__c</elementReference>
-                </value>
-            </transformValueActions>
-            <transformValueActions>
-                <outputFieldApiName>Sell_To_Contact__c</outputFieldApiName>
-                <transformType>Map</transformType>
-                <value>
-                    <elementReference>$Record.Sell_To_Contact__c</elementReference>
-                </value>
-            </transformValueActions>
-            <transformValueActions>
                 <outputFieldApiName>External_Document_Number__c</outputFieldApiName>
                 <transformType>Map</transformType>
                 <value>
