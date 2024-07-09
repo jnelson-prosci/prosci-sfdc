@@ -77,6 +77,30 @@
         </connector>
     </assignments>
     <assignments>
+        <description>[Re-]Assigns the current Opportunity Product Id and resets the trainingCounter to zero if this variable does not match the Opportunity Product Id in the loop.</description>
+        <name>Assign_Current_Opportunity_Product</name>
+        <label>Assign Current Opportunity Product</label>
+        <locationX>2205</locationX>
+        <locationY>484</locationY>
+        <assignmentItems>
+            <assignToReference>currentOppProductId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>trainingCounter</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Number_of_Trainings</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <description>Assigns values to Deal Support Process record</description>
         <name>Assign_Deal_Support_Process_Fields</name>
         <label>Assign Deal Support Process Fields</label>
@@ -160,8 +184,8 @@
         <description>Assigns values to Deal Support Process record where Record Type = Training</description>
         <name>Assign_Deal_Support_Process_Fields_Training</name>
         <label>Assign Deal Support Process Fields Training</label>
-        <locationX>2414</locationX>
-        <locationY>129</locationY>
+        <locationX>2435</locationX>
+        <locationY>140</locationY>
         <assignmentItems>
             <assignToReference>dealSupportProcess.Quantity__c</assignToReference>
             <operator>Assign</operator>
@@ -391,6 +415,21 @@
                 <targetReference>Assign_Deal_Support_Process_Fields_Training</targetReference>
             </connector>
             <label>Counter Is Less Than Number of Training Sessions</label>
+        </rules>
+        <rules>
+            <name>Is_New_Opportunity_Product</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Iterate_through_Opportunity_Products.Id</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>currentOppProductId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Current_Opportunity_Product</targetReference>
+            </connector>
+            <label>Is New Opportunity Product</label>
         </rules>
     </decisions>
     <decisions>
@@ -669,6 +708,14 @@
         <value>
             <stringValue>Advisory</stringValue>
         </value>
+    </variables>
+    <variables>
+        <description>Represents the current Opportunity Product Id in the loop. Will be reassigned when/if this variable no longer matches that of the current Opportunity Product in the loop</description>
+        <name>currentOppProductId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
     </variables>
     <variables>
         <description>Contains a single Deal Support Process record</description>
