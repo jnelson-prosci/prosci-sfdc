@@ -457,7 +457,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <connector>
             <targetReference>DSPs_Found</targetReference>
         </connector>
-        <filterLogic>1 AND (2 OR 3 OR 4) AND 5</filterLogic>
+        <filterLogic>1 AND (2 OR 3 OR 4 OR 5) AND 6</filterLogic>
         <filters>
             <field>Opportunity__c</field>
             <operator>EqualTo</operator>
@@ -484,6 +484,13 @@ Error: {!$Flow.FaultMessage}</errorMessage>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Done - Successful</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>In Progress</stringValue>
             </value>
         </filters>
         <filters>
