@@ -536,11 +536,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Order.Integration_Tenant_Id__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Order.Integration_Tenant__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -562,6 +557,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Order.Shipping_Agent_Service_Code_Priority__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Order.Target_Tenant_Id__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
