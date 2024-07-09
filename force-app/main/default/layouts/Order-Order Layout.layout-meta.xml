@@ -42,7 +42,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Integration_Tenant_Id__c</field>
+                <field>Target_Tenant_Id__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

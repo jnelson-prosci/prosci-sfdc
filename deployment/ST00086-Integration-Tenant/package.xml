@@ -4,7 +4,7 @@
 		<members>Integration_Tenant__c.Comments__c</members>
 		<members>Integration_Tenant__c.Company_Name__c</members>
 		<members>Integration_Tenant__c.Tenant_Id__c</members>
-		<members>Order.Integration_Tenant_Id__c</members>
+		<members>Order.Target_Tenant_Id__c</members>
 		<members>Order.Integration_Tenant__c</members>
 		<name>CustomField</name>
 	</types>
