@@ -190,7 +190,7 @@
             <assignToReference>dealSupportProcess.Quantity__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>Iterate_through_Opportunity_Products.Quantity</elementReference>
+                <numberValue>1.0</numberValue>
             </value>
         </assignmentItems>
         <assignmentItems>
