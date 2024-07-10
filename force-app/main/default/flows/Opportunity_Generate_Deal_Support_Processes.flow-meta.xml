@@ -80,8 +80,8 @@
         <description>[Re-]Assigns the current Opportunity Product Id and resets the trainingCounter to zero if this variable does not match the Opportunity Product Id in the loop.</description>
         <name>Assign_Current_Opportunity_Product</name>
         <label>Assign Current Opportunity Product</label>
-        <locationX>2205</locationX>
-        <locationY>484</locationY>
+        <locationX>2156</locationX>
+        <locationY>417</locationY>
         <assignmentItems>
             <assignToReference>currentOppProductId</assignToReference>
             <operator>Assign</operator>
@@ -190,7 +190,7 @@
             <assignToReference>dealSupportProcess.Quantity__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>Iterate_through_Opportunity_Products.Quantity</elementReference>
+                <numberValue>1.0</numberValue>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -395,8 +395,8 @@
         <description>Counts the number of Training sessions purchased; determines how many Deal Support Process - Training records to create.</description>
         <name>Check_Number_of_Trainings</name>
         <label>Check Number of Trainings</label>
-        <locationX>2100</locationX>
-        <locationY>163</locationY>
+        <locationX>2110</locationX>
+        <locationY>157</locationY>
         <defaultConnector>
             <targetReference>Iterate_through_Opportunity_Products</targetReference>
         </defaultConnector>
@@ -409,6 +409,13 @@
                 <operator>LessThan</operator>
                 <rightValue>
                     <elementReference>Iterate_through_Opportunity_Products.Quantity</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Iterate_through_Opportunity_Products.Id</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>currentOppProductId</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -497,7 +504,7 @@
         <description>Assembles name for Deal Support Process Licensing records</description>
         <name>licensingDSPName</name>
         <dataType>String</dataType>
-        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + TEXT({!Iterate_through_Opportunity_Products.Opportunity.License_Type__c})</expression>
+        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + {!Iterate_through_Opportunity_Products.Product2.Name}</expression>
     </formulas>
     <formulas>
         <description>Assembles name for Deal Support Process Training record</description>
