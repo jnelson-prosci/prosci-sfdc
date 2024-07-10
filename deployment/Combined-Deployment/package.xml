@@ -18,12 +18,14 @@
         <members>Training_Event_Update_DSP_of_Participants</members>
         <members>Opportunity_Update_Opportunity_to_Close_but_not_if_stage_is_Pending_Prepayment</members>
         <members>Opportunity_Product_Set_Overage_Fields</members>
+        <members>Order_Create_OrderSync_for_Sync_to_Xero</members>
         <name>Flow</name>
     </types>
     <types>
         <members>Country_Code_Info__mdt</members>
         <members>Deal_Support_Process__c</members>
         <members>Integration_Tenant__c</members>
+        <members>OrderSync__e</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -197,6 +199,7 @@
         <members>Deal_Support_Process_Page_Single_Related_Lists</members>
         <members>Opportunity_Record_Page_Single_Related_Lists</members>
         <members>Opportunity_Record_Page_Advisory_Services_Single_Related_Lists1</members>
+        <members>Order_Record_Page</members>
         <members>Product_Record_Page</members>
         <members>Contact_Record_Page_Layout_Single_Related_Lists</members>
         <name>FlexiPage</name>
@@ -259,6 +262,7 @@
         <members>Deal_Support_Process__c.Initiate_Contract_Agreement</members>
         <members>Deal_Support_Process__c.New_Event</members>
         <members>Deal_Support_Process__c.Amend</members>
+        <members>Order.Sync_to_Xero</members>
         <name>QuickAction</name>
     </types>
     <types>
