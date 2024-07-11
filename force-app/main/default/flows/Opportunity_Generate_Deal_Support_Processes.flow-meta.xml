@@ -176,6 +176,13 @@
                 <elementReference>Get_Opportunity.OwnerId</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.CurrencyIsoCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Opportunity.CurrencyIsoCode</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Add_Deal_Support_Process_Record_to_Collection</targetReference>
         </connector>
