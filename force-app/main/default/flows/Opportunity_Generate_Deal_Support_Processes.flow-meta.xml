@@ -22,8 +22,8 @@
         <description>Adds a Deal Support Process record, whose Record Type = Training, to the collection of records of the same classification</description>
         <name>Add_Deal_Support_Process_Record_to_Collection_Training</name>
         <label>Add Deal Support Process Record to Collection (Training)</label>
-        <locationX>2548</locationX>
-        <locationY>257</locationY>
+        <locationX>2547</locationX>
+        <locationY>258</locationY>
         <assignmentItems>
             <assignToReference>dealSupportProcesses</assignToReference>
             <operator>Add</operator>
@@ -176,6 +176,13 @@
                 <elementReference>Get_Opportunity.OwnerId</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.CurrencyIsoCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Opportunity.CurrencyIsoCode</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Add_Deal_Support_Process_Record_to_Collection</targetReference>
         </connector>
@@ -185,7 +192,7 @@
         <name>Assign_Deal_Support_Process_Fields_Training</name>
         <label>Assign Deal Support Process Fields Training</label>
         <locationX>2435</locationX>
-        <locationY>140</locationY>
+        <locationY>139</locationY>
         <assignmentItems>
             <assignToReference>dealSupportProcess.Quantity__c</assignToReference>
             <operator>Assign</operator>
@@ -254,6 +261,13 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>Get_Opportunity.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.CurrencyIsoCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Opportunity.CurrencyIsoCode</elementReference>
             </value>
         </assignmentItems>
         <connector>
