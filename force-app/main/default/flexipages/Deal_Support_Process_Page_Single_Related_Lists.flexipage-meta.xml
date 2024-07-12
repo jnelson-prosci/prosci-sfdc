@@ -320,6 +320,23 @@
                 <identifier>RecordOpportunity_Product_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Program_Requested_timeframe__c</fieldItem>
+                <identifier>RecordProgram_Requested_timeframe_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.RecordType.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Training</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-47b1b789-b8b2-4249-bee7-9b09aa52a8e8</name>
         <type>Facet</type>
     </flexiPageRegions>
