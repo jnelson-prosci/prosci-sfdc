@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Master_Instructor_Lead_Generator__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This value is set on leads created by the Session Notes - Lead #1-3 flows</description>
+    <externalId>false</externalId>
+    <label>Instructor Lead Generator</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Leads (Instructor Lead Generator)</relationshipLabel>
+    <relationshipName>Leads1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>
