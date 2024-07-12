@@ -320,23 +320,6 @@
                 <identifier>RecordOpportunity_Product_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Program_Requested_timeframe__c</fieldItem>
-                <identifier>RecordProgram_Requested_timeframe_cField</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.RecordType.Name}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>Training</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-47b1b789-b8b2-4249-bee7-9b09aa52a8e8</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -2202,6 +2185,16 @@
                 <identifier>RecordMaster_Instructor_Lead_Generator_cField2</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Program_Requested_timeframe__c</fieldItem>
+                <identifier>RecordProgram_Requested_timeframe_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-2f343437-61d8-41e1-bbcd-10a431923d02</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -2506,6 +2499,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Master_Instructor_Lead_Generator__c</fieldItem>
                 <identifier>RecordMaster_Instructor_Lead_Generator_cField4</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Program_Requested_timeframe__c</fieldItem>
+                <identifier>RecordProgram_Requested_timeframe_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-2qqlu4k4yn8</name>
