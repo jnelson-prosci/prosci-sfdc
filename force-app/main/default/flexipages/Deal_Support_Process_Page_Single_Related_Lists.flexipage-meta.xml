@@ -2185,6 +2185,16 @@
                 <identifier>RecordMaster_Instructor_Lead_Generator_cField2</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Program_Requested_timeframe__c</fieldItem>
+                <identifier>RecordProgram_Requested_timeframe_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-2f343437-61d8-41e1-bbcd-10a431923d02</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -2489,6 +2499,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Master_Instructor_Lead_Generator__c</fieldItem>
                 <identifier>RecordMaster_Instructor_Lead_Generator_cField4</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Program_Requested_timeframe__c</fieldItem>
+                <identifier>RecordProgram_Requested_timeframe_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-2qqlu4k4yn8</name>
