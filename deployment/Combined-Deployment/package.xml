@@ -19,6 +19,9 @@
         <members>Opportunity_Update_Opportunity_to_Close_but_not_if_stage_is_Pending_Prepayment</members>
         <members>Opportunity_Product_Set_Overage_Fields</members>
         <members>Order_Create_OrderSync_for_Sync_to_Xero</members>
+        <members>Session_Notes_Lead_1</members>
+        <members>Session_Notes_Lead_2</members>
+        <members>Session_Notes_Lead_3</members>
         <name>Flow</name>
     </types>
     <types>
@@ -87,6 +90,8 @@
         <members>Lead.HubSpot_Score__c</members>
         <members>Lead.Lead_Domain__c</members>
         <members>Lead.Full_Partial__c</members>
+        <members>Lead.Lead_Gen_Source_Training_Event__c</members>
+        <members>Lead.Master_Instructor_Lead_Generator__c</members>
         <members>Lead.Previously_Existing_Contact__c</members>
         <members>Account.Country_Code__c</members>
         <members>Order.Account_Country_Code__c</members>
