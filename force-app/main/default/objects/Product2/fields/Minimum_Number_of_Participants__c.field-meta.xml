@@ -3,6 +3,7 @@
     <fullName>Minimum_Number_of_Participants__c</fullName>
     <description>Represents the minimum number of participants in a purchased training session.</description>
     <externalId>false</externalId>
+    <inlineHelpText>This is the minimum number of attendees before incremental pricing is evaluated.</inlineHelpText>
     <label>Minimum Number of Participants</label>
     <precision>18</precision>
     <required>false</required>

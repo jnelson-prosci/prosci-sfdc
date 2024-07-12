@@ -5,6 +5,7 @@
     <externalId>false</externalId>
     <formula>Opportunity_Product__r.Minimum_Number_of_Participants__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is the minimum number of attendees before incremental pricing is evaluated.</inlineHelpText>
     <label>Minimum Number of Participants</label>
     <precision>18</precision>
     <required>false</required>
