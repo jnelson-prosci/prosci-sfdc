@@ -61,6 +61,14 @@
                 <behavior>Edit</behavior>
                 <field>HubSpot_Score__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Master_Instructor_Lead_Generator__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Lead_Gen_Source_Training_Event__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
