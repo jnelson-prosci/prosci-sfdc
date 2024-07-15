@@ -3,6 +3,7 @@
 	<types>
 		<members>Deal_Support_Process__c.Minimum_Number_of_Participants__c</members>
 		<members>Opportunity.Program_Requested_timeframe__c</members>
+        <members>Deal_Support_Process__c.Notes__c</members>
 		<members>OpportunityLineItem.Minimum_Number_of_Participants__c</members>
 		<members>PricebookEntry.Minimum_Number_of_Participants__c</members>
 		<members>Product2.Minimum_Number_of_Participants__c</members>
@@ -11,6 +12,10 @@
 	<types>
 		<members>Deal_Support_Process_Page_Single_Related_Lists</members>
 		<name>FlexiPage</name>
+	</types>
+    <types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
 	</types>
 	<version>60.0</version>
 </Package>
