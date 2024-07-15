@@ -261,6 +261,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Deal_Support_Process__c.Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Deal_Support_Process__c.Number_of_Participants__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -442,16 +447,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Lead.LeadSource</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Lead_Gen_Source_Training_Event__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Master_Instructor_Lead_Generator__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
