@@ -13,7 +13,9 @@ public with sharing class GlobalGrowth_AccountManagerBatch implements
      * @return QueryLocator
      */
     public Database.QueryLocator start(Database.BatchableContext bc) {
-
+        String query = 'SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c, Account_Manager__r.pse__Salesforce_User__r.IsActive FROM Account'
+            + ' WHERE Account_Manager__r.pse__Salesforce_User__c != OwnerId';
+        return Database.getQueryLocator(query);
     }
 
     /**
@@ -21,8 +23,8 @@ public with sharing class GlobalGrowth_AccountManagerBatch implements
      * @param bc Batchable Context
      * @param scope List of queried records
      */
-    public void execute(Database.BatchableContext bc, List<Opportunity> scope) {
-    
+    public void execute(Database.BatchableContext bc, List<Account> scope) {
+        
     }
 
     /**
