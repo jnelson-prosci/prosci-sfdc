@@ -536,6 +536,16 @@
                 <identifier>RecordOpportunity_Product_cField2</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Notes__c</fieldItem>
+                <identifier>RecordNotes_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-96osfml546</name>
         <type>Facet</type>
     </flexiPageRegions>
