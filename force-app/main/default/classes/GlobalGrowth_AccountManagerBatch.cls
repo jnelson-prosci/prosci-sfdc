@@ -24,7 +24,7 @@ public with sharing class GlobalGrowth_AccountManagerBatch implements
      * @param scope List of queried records
      */
     public void execute(Database.BatchableContext bc, List<Account> scope) {
-        Account accountsToUpdate = List<Account>();
+        List<Account> accountsToUpdate = new List<Account>();
         User sfAdmin = [SELECT Id FROM User WHERE Name = 'Salesforce Administrator'];
 
         for (Account account : scope) {
