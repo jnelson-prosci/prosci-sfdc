@@ -1,4 +1,7 @@
-<types>
-    <members>Opportunity_Record_Page_Single_Related_Lists</members>
-    <name>FlexiPage</name>
-</types>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Opportunity_Record_Page_Single_Related_Lists</members>
+        <name>FlexiPage</name>
+    </types>
+</Package>
