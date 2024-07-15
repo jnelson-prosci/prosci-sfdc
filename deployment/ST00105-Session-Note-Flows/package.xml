@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Lead.Lead_Gen_Source_Training_Event__c</members>
+		<members>Lead.Master_Instructor_Lead_Generator__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Lead_Record_Page_Single_Related_Lists</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Session_Notes_Lead_1</members>
+		<members>Session_Notes_Lead_2</members>
+		<members>Session_Notes_Lead_3</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Lead-Lead Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
+	</types>
+	<version>60.0</version>
+</Package>
