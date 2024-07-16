@@ -107,6 +107,10 @@
             <fullName>Prosci Canada</fullName>
             <default>false</default>
         </values>
+        <values>
+            <fullName>Prosci Europe</fullName>
+            <default>false</default>
+        </values>
     </picklistValues>
     <picklistValues>
         <picklist>License_Box_Shirt_Size__c</picklist>
@@ -228,15 +232,11 @@
     <picklistValues>
         <picklist>Program_Title__c</picklist>
         <values>
-            <fullName>Advanced Immersion</fullName>
+            <fullName>ADKAR Model Mastery Level 1%3A Prevent Change Resistance</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Advanced Tracks</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Advisory Services</fullName>
+            <fullName>ADKAR Model Mastery Level 2%3A Resolve Change Barriers</fullName>
             <default>false</default>
         </values>
         <values>
@@ -244,27 +244,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>CM Maturity Audit Model Workshop</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>CM Planning Workshop</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Certification</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Change Management Project Support</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Change Portfolio Workshop</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Change Scorecard Workshop</fullName>
             <default>false</default>
         </values>
         <values>
@@ -272,7 +252,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Custom</fullName>
+            <fullName>Custom-Advisory Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom-Training</fullName>
             <default>false</default>
         </values>
         <values>
@@ -280,11 +264,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>ECM Bootcamp</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>ECM Workshop</fullName>
+            <fullName>ECM Boot Camp</fullName>
             <default>false</default>
         </values>
         <values>
@@ -292,23 +272,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Improve Project Health</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Integrating Agile</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Leading Your Team Through Change</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Methodology Application Program</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Post-Program Support %28CAN%29</fullName>
             <default>false</default>
         </values>
         <values>
@@ -316,11 +280,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Public Enrollment</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Speaking engagement</fullName>
+            <fullName>Speaking Engagement</fullName>
             <default>false</default>
         </values>
         <values>
@@ -328,19 +288,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>TTT - Level 1</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>TTT - Level 2</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Taking Charge of Change</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Virtual Coaching</fullName>
+            <fullName>Unavailable</fullName>
             <default>false</default>
         </values>
         <values>
