@@ -13,8 +13,18 @@ public with sharing class GlobalGrowth_AccountManagerBatch implements
      * @return QueryLocator
      */
     public Database.QueryLocator start(Database.BatchableContext bc) {
+        List<Account> accounts = [SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c, Account_Manager__r.pse__Salesforce_User__r.IsActive FROM Account];
+        Map<Id, Account> acctsToRetrieve = new Map<Id, Account>();
+
+        for (Account account : accounts) {
+            if (account.OwnerId != account.Account_Manager__r.pse__Salesforce_User__c) {
+                acctsToRetrieve.put(account.Id, account);
+            }
+        }
+
+        Set<Id> accountIds = acctsToRetrieve.keySet();
         String query = 'SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c, Account_Manager__r.pse__Salesforce_User__r.IsActive FROM Account'
-            + ' WHERE Account_Manager__r.pse__Salesforce_User__c != OwnerId';
+            + ' WHERE Id IN :accountIds';
         return Database.getQueryLocator(query);
     }
 
