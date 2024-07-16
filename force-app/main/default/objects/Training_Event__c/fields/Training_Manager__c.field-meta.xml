@@ -3,7 +3,7 @@
     <fullName>Training_Manager__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Training Manager</label>
+    <label>Training Success Specialist</label>
     <referenceTo>Contact</referenceTo>
     <relationshipLabel>Training Events (Training Manager)</relationshipLabel>
     <relationshipName>Training_Events1</relationshipName>

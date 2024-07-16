@@ -3,7 +3,7 @@
     <fullName>X2nd_Training_Manager__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>2nd Training Manager</label>
+    <label>2nd Training Success Specialist</label>
     <referenceTo>User</referenceTo>
     <relationshipName>Training_Events2</relationshipName>
     <required>false</required>

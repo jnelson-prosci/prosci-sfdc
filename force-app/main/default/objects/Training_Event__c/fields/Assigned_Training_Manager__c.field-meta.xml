@@ -3,7 +3,7 @@
     <fullName>Assigned_Training_Manager__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Assigned Training Manager</label>
+    <label>Assigned Training Success Specialist</label>
     <referenceTo>User</referenceTo>
     <relationshipName>Training_Events1</relationshipName>
     <required>false</required>
