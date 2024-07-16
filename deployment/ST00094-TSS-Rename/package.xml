@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
+		<members>Deal_Support_Process__c.Training_Manager_Requested__c</members>
 		<members>Opportunity.Producer_Lead_Generator__c</members>
+		<members>Opportunity.Training_Manager_Requested__c</members>
+		<members>Session_Notes__c.Training_Manager__c</members>
 		<members>Training_Event__c.Assigned_Training_Manager__c</members>
 		<members>Training_Event__c.Assigned_Training_Manager_noTMneeded__c</members>
 		<members>Training_Event__c.Instructor_Type__c</members>
