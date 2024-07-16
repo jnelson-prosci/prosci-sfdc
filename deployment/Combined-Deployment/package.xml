@@ -328,6 +328,7 @@
     <types>
         <members>Preferred_Language</members>
         <members>Data_Storage_Requirements</members>
+        <members>Program_Titles</members>
         <name>GlobalValueSet</name>
     </types>
     <types>

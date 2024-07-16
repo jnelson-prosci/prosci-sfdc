@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
+		<members>Deal_Support_Process__c.Instructor_Type__c</members>
 		<members>Deal_Support_Process__c.Training_Manager_Requested__c</members>
 		<members>Opportunity.Producer_Lead_Generator__c</members>
 		<members>Opportunity.Training_Manager_Requested__c</members>
@@ -14,6 +15,10 @@
 		<members>Training_Program_Feedback__c.Overall_Producer_TM_effectiveness__c</members>
 		<members>Training_Program_Feedback__c.Producer_do_different_to_improve__c</members>
 		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Program_Titles</members>
+		<name>GlobalValueSet</name>
 	</types>
 	<types>
 		<members>Training_Event__c.Consulting_Event</members>
