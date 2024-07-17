@@ -1,4 +1,4 @@
-# Post-Deployment Steps:
+# Pre-Deployment Steps:
 
 1. Ensure Asynchronous Mode is __enabled__ for testing
     1. Setup (Gear Icon) -> Developer Console
