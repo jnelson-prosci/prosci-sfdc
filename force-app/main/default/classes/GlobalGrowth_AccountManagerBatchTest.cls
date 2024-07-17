@@ -71,10 +71,55 @@ private class GlobalGrowth_AccountManagerBatchTest {
 
     @isTest
     static void testAccountManagerSync() {
+        List<Account> testAccounts = [
+            SELECT Id, 
+                OwnerId, 
+                Account_Manager__r.pse__Salesforce_User__c 
+            FROM Account 
+            WHERE Name 
+            LIKE 'Test Account%' 
+            LIMIT 100
+        ];
+        List<Account> inSyncTestAccts = new List<Account>();
+        List<Account> outOfSyncTestAccts = new List<Account>();
+
+        for (Account testAccount : testAccounts) {
+            if (testAccount.OwnerId == testAccount.Account_Manager__r.pse__Salesforce_User__c) {
+                inSyncTestAccts.add(testAccount);
+            } else {
+                outOfSyncTestAccts.add(testAccount);
+            }
+        }
+
+        Assert.areEqual(0, inSyncTestAccts.size(), 'Assert that no Accounts have an OwnerId that matches its Account Manager\'s SF User Id');
+        Assert.areEqual(100, outOfSyncTestAccts.size(), 'Assert that all Accounts have an OwnerId that does not match its Account Manager\'s SF User Id');
 
         Test.startTest();
         GlobalGrowth_AccountManagerBatch batch = new GlobalGrowth_AccountManagerBatch();
         Database.executeBatch(batch);
         Test.stopTest();
+        
+        inSyncTestAccts.clear();
+        outOfSyncTestAccts.clear();
+
+        List<Account> finalTestAccounts = [
+            SELECT Id, 
+                OwnerId, 
+                Account_Manager__r.pse__Salesforce_User__c 
+            FROM Account 
+            WHERE Name 
+            LIKE 'Test Account%' 
+            LIMIT 100
+        ];
+
+        for (Account testAccount : finalTestAccounts) {
+            if (testAccount.OwnerId == testAccount.Account_Manager__r.pse__Salesforce_User__c) {
+                inSyncTestAccts.add(testAccount);
+            } else {
+                outOfSyncTestAccts.add(testAccount);
+            }
+        }
+        Assert.areEqual(0, outOfSyncTestAccts.size(), 'Assert that no Accounts have an OwnerId that does not match its Account Manager\'s SF User Id');
+        Assert.areEqual(100, inSyncTestAccts.size(), 'Assert that all Accounts have an OwnerId that matches its Account Manager\'s SF User Id');
     }
 }
