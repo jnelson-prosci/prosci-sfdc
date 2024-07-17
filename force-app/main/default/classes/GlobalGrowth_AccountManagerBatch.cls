@@ -4,8 +4,7 @@ Author          : Slalom Team, Reggie Thompson
 Date            : 07/15/24
 @description    : Batch Apex to syncronise Account Owners with Account Managers
 ***********************************************************************************************************************/
-public with sharing class GlobalGrowth_AccountManagerBatch implements 
-    Database.Batchable<SObject>, Database.Stateful, Database.AllowsCallouts {
+public with sharing class GlobalGrowth_AccountManagerBatch implements Database.Batchable<SObject> {
     
     /**
      * @description Start method of the batch
@@ -39,7 +38,6 @@ public with sharing class GlobalGrowth_AccountManagerBatch implements
 
         for (Account account : scope) {
             if (account.Account_Manager__r.pse__Salesforce_User__r.IsActive) {
-                System.debug('Syncing...');
                 account.OwnerId = account.Account_Manager__r.pse__Salesforce_User__c;
             } else {
                 account.OwnerId = sfAdmin.Id;
@@ -51,7 +49,6 @@ public with sharing class GlobalGrowth_AccountManagerBatch implements
         
         if (!accountsToUpdate.isEmpty()) {
             update accountsToUpdate;
-            System.debug('Successful');
         }
     }
 
