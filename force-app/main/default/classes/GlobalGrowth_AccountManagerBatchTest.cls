@@ -12,10 +12,14 @@ private class GlobalGrowth_AccountManagerBatchTest {
         List<Account> testAccounts = new List<Account>();
         for (Integer i = 0; i < 200; i++) {
             Account testAccount = new Account(
-                name = 'Test Account ' + i,
+                Name = 'Test Account ' + i,
                 Industry__c = 'Consulting',
                 CurrencyIsoCode = 'USD'
             );
+
+            if (i >= 150) {
+                testAccount.Asset_Count__c = i;
+            }
 
             testAccounts.add(testAccount);
         }
@@ -95,7 +99,7 @@ private class GlobalGrowth_AccountManagerBatchTest {
         Assert.areEqual(200, outOfSyncTestAccts.size(), 'Assert that all Accounts have an OwnerId that does not match its Account Manager\'s SF User Id');
 
         Test.startTest();
-        GlobalGrowth_AccountManagerBatch batch = new GlobalGrowth_AccountManagerBatch();
+        GlobalGrowth_AccountManagerBatch batch = new GlobalGrowth_AccountManagerBatch(null);
         Database.executeBatch(batch);
         Test.stopTest();
         
@@ -134,7 +138,7 @@ private class GlobalGrowth_AccountManagerBatchTest {
         update testUsers;
 
         Test.startTest();
-        GlobalGrowth_AccountManagerBatch batch = new GlobalGrowth_AccountManagerBatch();
+        GlobalGrowth_AccountManagerBatch batch = new GlobalGrowth_AccountManagerBatch(null);
         Database.executeBatch(batch);
         Test.stopTest();
 
@@ -153,5 +157,31 @@ private class GlobalGrowth_AccountManagerBatchTest {
         }
         Assert.areEqual(100, testAcctsWithInactiveSFUsers.size(), 'Assert that Accounts with inactive SF Users are assigned to the SF Admin User');
         Assert.areEqual(100, testAcctsWithActiveSFUsers.size(), 'Assert that Accounts with active SF Users are correctly assigned to their respective SF User');
+    }
+
+    @isTest
+    static void testAccountManagerSyncWithOverride() {
+        String testQuery = 'SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c, Account_Manager__r.pse__Salesforce_User__r.IsActive FROM Account'
+            + ' WHERE Asset_Count__c != null';
+
+        Test.startTest();
+        GlobalGrowth_AccountManagerBatch batch = new GlobalGrowth_AccountManagerBatch(testQuery);
+        Database.executeBatch(batch);
+        Test.stopTest();
+
+        List<Account> finalTestAccounts = [SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c FROM Account WHERE Name LIKE 'Test Account%' LIMIT 200];
+        List<Account> inSyncTestAccts = new List<Account>();
+        List<Account> outOfSyncTestAccts = new List<Account>();
+
+        for (Account testAccount : finalTestAccounts) {
+            if (testAccount.OwnerId == testAccount.Account_Manager__r.pse__Salesforce_User__c) {
+                inSyncTestAccts.add(testAccount);
+            } else {
+                outOfSyncTestAccts.add(testAccount);
+            }
+        }
+
+        Assert.areEqual(150, outOfSyncTestAccts.size(), 'Assert that the Accounts without \'Test Override\' have an OwnerId that does not match its Account Manager\'s SF User Id');
+        Assert.areEqual(50, inSyncTestAccts.size(), 'Assert that the subset of Accounts with \'Test OVerride\' in the description have an OwnerId that matches its Account Manager\'s SF User Id');
     }
 }
