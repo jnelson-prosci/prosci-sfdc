@@ -39,11 +39,19 @@ public with sharing class GlobalGrowth_AccountManagerBatch implements
 
         for (Account account : scope) {
             if (account.Account_Manager__r.pse__Salesforce_User__r.IsActive) {
+                System.debug('Syncing...');
                 account.OwnerId = account.Account_Manager__r.pse__Salesforce_User__c;
-                accountsToUpdate.add(account);
             } else {
                 account.OwnerId = sfAdmin.Id;
             }
+
+            accountsToUpdate.add(account);
+        }
+
+        
+        if (!accountsToUpdate.isEmpty()) {
+            update accountsToUpdate;
+            System.debug('Successful');
         }
     }
 
