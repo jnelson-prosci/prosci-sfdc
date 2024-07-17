@@ -4,7 +4,7 @@
     <externalId>false</externalId>
     <formula>Training_Event__r.Training_Manager__r.FirstName +&quot; &quot;+  Training_Event__r.Training_Manager__r.LastName</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <label>Training Manager</label>
+    <label>Training Success Specialist</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Text</type>

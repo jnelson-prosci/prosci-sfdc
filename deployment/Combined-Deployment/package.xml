@@ -69,6 +69,8 @@
         <members>Opportunity.Has_Deal_Support_Process__c</members>
         <members>Opportunity.Key_Decision_Maker__c</members>
         <members>Opportunity.Budget_Decision_Maker__c</members>
+        <members>Opportunity.Producer_Lead_Generator__c</members>
+        <members>Opportunity.Training_Manager_Requested__c</members>
         <members>APXT_Redlining__Contract_Agreement__c.SOW_Template_Key__c</members>
         <members>APXT_Redlining__Contract_Agreement__c.Single_Contract_Covers_All_DSPs__c</members>
         <members>Deal_Support_Process__c.Amount__c</members>
@@ -178,7 +180,15 @@
         <members>Deal_Support_Process__c.VILT_Program__c</members>
         <members>Deal_Support_Process__c.of_gift_box_sets__c</members>
         <members>Deal_Support_Process__c.of_participants__c</members>
+        <members>Training_Event__c.Assigned_Training_Manager__c</members>
+        <members>Training_Event__c.Assigned_Training_Manager_noTMneeded__c</members>
         <members>Training_Event__c.Deal_Support_Process__c</members>
+        <members>Training_Event__c.Instructor_Type__c</members>
+        <members>Training_Event__c.Training_Manager__c</members>
+        <members>Training_Event__c.Type_of_Event__c</members>
+        <members>Training_Event__c.X2nd_Training_Manager__c</members>
+        <members>Training_Program_Feedback__c.Overall_Producer_TM_effectiveness__c</members>
+        <members>Training_Program_Feedback__c.Producer_do_different_to_improve__c</members>
         <members>pse__Resource_Request__c.Deal_Support_Process__c</members>
         <members>Account.Market_Reach__c</members>
         <members>Deal_Support_Process__c.of_participants__c</members>
@@ -194,6 +204,7 @@
         <members>Integration_Tenant__c.Tenant_Id__c</members>
         <members>Order.Target_Tenant_Id__c</members>
         <members>Order.Integration_Tenant__c</members>
+        <members>Session_Notes__c.Training_Manager__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -317,6 +328,7 @@
     <types>
         <members>Preferred_Language</members>
         <members>Data_Storage_Requirements</members>
+        <members>Program_Titles</members>
         <name>GlobalValueSet</name>
     </types>
     <types>
@@ -334,6 +346,10 @@
         <members>Deal_Support_Process__c.Advisory</members>
         <members>Deal_Support_Process__c.Licensing</members>
         <members>Deal_Support_Process__c.Training</members>
+        <members>Training_Event__c.Consulting_Event</members>
+        <members>Training_Event__c.GAN_Training_Event</members>
+        <members>Training_Event__c.Partner_Training_Event</members>
+        <members>Training_Event__c.Prosci_Training_Event</members>
         <name>RecordType</name>
     </types>
     <types>

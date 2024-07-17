@@ -14,7 +14,7 @@
             <value>
                 <fullName>Prosci</fullName>
                 <default>true</default>
-                <label>Prosci</label>
+                <label>Prosci US</label>
             </value>
             <value>
                 <fullName>Prosci Canada</fullName>
@@ -25,6 +25,11 @@
                 <fullName>Prosci Australia</fullName>
                 <default>false</default>
                 <label>Prosci Australia</label>
+            </value>
+            <value>
+                <fullName>Prosci Europe</fullName>
+                <default>false</default>
+                <label>Prosci Europe</label>
             </value>
         </valueSetDefinition>
     </valueSet>
