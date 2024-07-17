@@ -5,7 +5,13 @@ Date            : 07/15/24
 @description    : Batch Apex to syncronise Account Owners with Account Managers
 ***********************************************************************************************************************/
 public with sharing class GlobalGrowth_AccountManagerBatch implements Database.Batchable<SObject> {
-    
+
+    public String query;
+
+    public GlobalGrowth_AccountManagerBatch(String q) {
+        query = q;
+    }
+
     /**
      * @description Start method of the batch
      * @param bc Batchable Context
@@ -13,17 +19,19 @@ public with sharing class GlobalGrowth_AccountManagerBatch implements Database.B
      */
     public Database.QueryLocator start(Database.BatchableContext bc) {
         List<Account> accounts = [SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c, Account_Manager__r.pse__Salesforce_User__r.IsActive FROM Account];
-        Map<Id, Account> acctsToRetrieve = new Map<Id, Account>();
+        Set<Id> accountIds = new Set<Id>();
 
         for (Account account : accounts) {
             if (account.OwnerId != account.Account_Manager__r.pse__Salesforce_User__c) {
-                acctsToRetrieve.put(account.Id, account);
+                accountIds.add(account.Id);
             }
         }
 
-        Set<Id> accountIds = acctsToRetrieve.keySet();
-        String query = 'SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c, Account_Manager__r.pse__Salesforce_User__r.IsActive FROM Account'
+        if (query == null) {
+            query = 'SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c, Account_Manager__r.pse__Salesforce_User__r.IsActive FROM Account'
             + ' WHERE Id IN :accountIds';
+        }
+
         return Database.getQueryLocator(query);
     }
 
