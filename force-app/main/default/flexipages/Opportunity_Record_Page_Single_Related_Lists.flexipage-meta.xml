@@ -224,12 +224,6 @@
                         <valueListItems>
                             <value>New</value>
                         </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity.APXT_Redlining__Request_an_Agreement</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity.Sync_To_BC</value>
-                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
