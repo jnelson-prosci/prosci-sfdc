@@ -18,12 +18,14 @@ public with sharing class GlobalGrowth_AccountManagerBatch implements Database.B
      * @return QueryLocator
      */
     public Database.QueryLocator start(Database.BatchableContext bc) {
-        if (query != null) {
-            return Database.getQueryLocator(query);
-        }
-
-        List<Account> accounts = [SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c, Account_Manager__r.pse__Salesforce_User__r.IsActive FROM Account];
+        List<Account> accounts;
         Set<Id> accountIds = new Set<Id>();
+
+        if (query != null) {
+            accounts = Database.query(query);
+        } else {
+            accounts = [SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c, Account_Manager__r.pse__Salesforce_User__r.IsActive FROM Account];
+        }
 
         for (Account account : accounts) {
             if (account.OwnerId != account.Account_Manager__r.pse__Salesforce_User__c) {
