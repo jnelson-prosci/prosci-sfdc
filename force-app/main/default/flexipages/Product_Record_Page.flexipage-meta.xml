@@ -107,6 +107,12 @@
                 <identifier>RecordProgram_Title__cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Xero_Account_Code__c</fieldItem>
+                <identifier>RecordXero_Account_Code__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-21b3d58a-d783-4ee2-8f4c-626a4d345f6a</name>
         <type>Facet</type>
     </flexiPageRegions>
