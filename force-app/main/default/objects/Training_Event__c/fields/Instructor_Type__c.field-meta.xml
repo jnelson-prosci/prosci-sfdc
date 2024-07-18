@@ -13,7 +13,7 @@
             <value>
                 <fullName>Prosci</fullName>
                 <default>false</default>
-                <label>Prosci</label>
+                <label>Prosci US</label>
             </value>
             <value>
                 <fullName>Prosci Australia</fullName>
@@ -29,6 +29,11 @@
                 <fullName>Prosci Canada</fullName>
                 <default>false</default>
                 <label>Prosci Canada</label>
+            </value>
+            <value>
+                <fullName>Prosci Europe</fullName>
+                <default>false</default>
+                <label>Prosci Europe</label>
             </value>
             <value>
                 <fullName>Primary Affiliate</fullName>
