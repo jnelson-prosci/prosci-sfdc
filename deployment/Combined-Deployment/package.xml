@@ -19,6 +19,7 @@
         <members>Opportunity_Update_Opportunity_to_Close_but_not_if_stage_is_Pending_Prepayment</members>
         <members>Opportunity_Product_Set_Overage_Fields</members>
         <members>Order_Create_OrderSync_for_Sync_to_Xero</members>
+        <members>Order_Set_Related_Integration_Tenant</members>
         <members>Session_Notes_Lead_1</members>
         <members>Session_Notes_Lead_2</members>
         <members>Session_Notes_Lead_3</members>
@@ -205,6 +206,11 @@
         <members>Order.Target_Tenant_Id__c</members>
         <members>Order.Integration_Tenant__c</members>
         <members>Session_Notes__c.Training_Manager__c</members>
+        <members>Order.Billing_Country_Code__c</members>
+        <members>Order.Shipping_Country_Code__c</members>
+        <members>Order.VILT__c</members>
+        <members>OrderItem.Xero_Account_Code__c</members>
+        <members>Product2.Xero_Account_Code__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -256,6 +262,7 @@
         <members>Product2-Product Layout</members>
         <members>Integration_Tenant__c-Integration Tenant Layout</members>
         <members>Order-Order Layout</members>
+        <members>OrderItem-Order Product Layout</members>
         <name>Layout</name>
     </types>
     <types>
