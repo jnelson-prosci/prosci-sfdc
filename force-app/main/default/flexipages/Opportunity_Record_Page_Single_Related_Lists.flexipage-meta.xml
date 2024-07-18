@@ -224,12 +224,6 @@
                         <valueListItems>
                             <value>New</value>
                         </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity.APXT_Redlining__Request_an_Agreement</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity.Sync_To_BC</value>
-                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -894,40 +888,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Lead_Type__c</fieldItem>
-                <identifier>RecordLead_Type_cField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.LeadSource</fieldItem>
-                <identifier>RecordLeadSourceField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.CurrencyIsoCode</fieldItem>
-                <identifier>RecordCurrencyIsoCodeField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.StageName</fieldItem>
-                <identifier>RecordStageNameField2</identifier>
+                <fieldItem>Record.RecordTypeId</fieldItem>
+                <identifier>RecordRecordTypeIdField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -936,18 +900,28 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Closed_Reason__c</fieldItem>
-                <identifier>RecordClosed_Reason_cField2</identifier>
+                <fieldItem>Record.Associated_Training_Contact__c</fieldItem>
+                <identifier>RecordAssociated_Training_Contact_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>required</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.CloseDate</fieldItem>
-                <identifier>RecordCloseDateField2</identifier>
+                <fieldItem>Record.Training_Event__c</fieldItem>
+                <identifier>RecordTraining_Event_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Salesperson_Code__c</fieldItem>
+                <identifier>RecordSalesperson_Code_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -974,10 +948,20 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Shipment_Tracking_URL__c</fieldItem>
-                <identifier>RecordShipment_Tracking_URL_cField</identifier>
+                <fieldItem>Record.CurrencyIsoCode</fieldItem>
+                <identifier>RecordCurrencyIsoCodeField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.LeadSource</fieldItem>
+                <identifier>RecordLeadSourceField2</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-mbkpi2c195</name>
@@ -1008,50 +992,20 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Account_Manager__c</fieldItem>
-                <identifier>RecordAccount_Manager_cField2</identifier>
+                <fieldItem>Record.StageName</fieldItem>
+                <identifier>RecordStageNameField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.RecordTypeId</fieldItem>
-                <identifier>RecordRecordTypeIdField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Probability</fieldItem>
-                <identifier>RecordProbabilityField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Amount</fieldItem>
-                <identifier>RecordAmountField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Related_Opportunity__c</fieldItem>
-                <identifier>RecordRelated_Opportunity_cField2</identifier>
+                <fieldItem>Record.CloseDate</fieldItem>
+                <identifier>RecordCloseDateField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1080,8 +1034,28 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Salesperson_Code__c</fieldItem>
-                <identifier>RecordSalesperson_Code_cField</identifier>
+                <fieldItem>Record.Amount</fieldItem>
+                <identifier>RecordAmountField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Background_Note__c</fieldItem>
+                <identifier>RecordBackground_Note_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Related_Opportunity__c</fieldItem>
+                <identifier>RecordRelated_Opportunity_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-nba9uife1i8</name>
@@ -1384,120 +1358,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Is_Tax_Exempt__c</fieldItem>
-                <identifier>RecordIs_Tax_Exempt_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Sell_To__c</fieldItem>
-                <identifier>RecordSell_To_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Sell_to_Customer_No__c</fieldItem>
-                <identifier>RecordSell_to_Customer_No_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Sell_To_Contact__c</fieldItem>
-                <identifier>RecordSell_To_Contact_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Sell_To_Street__c</fieldItem>
-                <identifier>RecordSell_To_Street_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Sell_To_Street_2__c</fieldItem>
-                <identifier>RecordSell_To_Street_2_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Sell_To_City__c</fieldItem>
-                <identifier>RecordSell_To_City_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Sell_to_State__c</fieldItem>
-                <identifier>RecordSell_to_State_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Sell_to_Zip__c</fieldItem>
-                <identifier>RecordSell_to_Zip_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Sell_To_Country__c</fieldItem>
-                <identifier>RecordSell_To_Country_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Payment_Type__c</fieldItem>
-                <identifier>RecordPayment_Type_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-f58187fb-f9d6-4730-bce9-6daad15028fd</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Bill_To__c</fieldItem>
                 <identifier>RecordBill_To_cField</identifier>
             </fieldInstance>
@@ -1518,38 +1378,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Bill_To_Contact__c</fieldItem>
-                <identifier>RecordBill_To_Contact_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Bill_To_Email_Address__c</fieldItem>
-                <identifier>RecordBill_To_Email_Address_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Bill_To_Street__c</fieldItem>
                 <identifier>RecordBill_To_Street_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Bill_To_Street_2__c</fieldItem>
-                <identifier>RecordBill_To_Street_2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1568,16 +1398,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Bill_to_State__c</fieldItem>
-                <identifier>RecordBill_to_State_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Bill_to_Zip__c</fieldItem>
                 <identifier>RecordBill_to_Zip_cField</identifier>
             </fieldInstance>
@@ -1588,8 +1408,72 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Is_Tax_Exempt__c</fieldItem>
+                <identifier>RecordIs_Tax_Exempt_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-f58187fb-f9d6-4730-bce9-6daad15028fd</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Bill_To_Contact__c</fieldItem>
+                <identifier>RecordBill_To_Contact_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Bill_To_Street_2__c</fieldItem>
+                <identifier>RecordBill_To_Street_2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Bill_to_State__c</fieldItem>
+                <identifier>RecordBill_to_State_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Bill_To_Country__c</fieldItem>
                 <identifier>RecordBill_To_Country_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Bill_To_Email_Address__c</fieldItem>
+                <identifier>RecordBill_To_Email_Address_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Payment_Type__c</fieldItem>
+                <identifier>RecordPayment_Type_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-0e44a166-3bb0-492e-9be6-186b5f52a86b</name>
@@ -1626,10 +1510,122 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Ship_To_Contact__c</fieldItem>
-                <identifier>RecordShip_To_Contact_cField</identifier>
+                <fieldItem>Record.Sell_To__c</fieldItem>
+                <identifier>RecordSell_To_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Sell_to_Customer_No__c</fieldItem>
+                <identifier>RecordSell_to_Customer_No_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Sell_To_Street__c</fieldItem>
+                <identifier>RecordSell_To_Street_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Sell_To_City__c</fieldItem>
+                <identifier>RecordSell_To_City_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Sell_to_Zip__c</fieldItem>
+                <identifier>RecordSell_to_Zip_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-abd23dfe-951e-4f67-ac34-3b68bd83e078</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Sell_To_Contact__c</fieldItem>
+                <identifier>RecordSell_To_Contact_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Sell_To_Street_2__c</fieldItem>
+                <identifier>RecordSell_To_Street_2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Sell_to_State__c</fieldItem>
+                <identifier>RecordSell_to_State_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Sell_To_Country__c</fieldItem>
+                <identifier>RecordSell_To_Country_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-cb6d015b-1ab9-491a-bdb7-2a5f466c0707</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-abd23dfe-951e-4f67-ac34-3b68bd83e078</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column26</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-cb6d015b-1ab9-491a-bdb7-2a5f466c0707</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column27</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-2efecaf0-d340-4c39-9d92-f70bb2959123</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -1638,16 +1634,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Ship_to_Street__c</fieldItem>
                 <identifier>RecordShip_to_Street_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Ship_To_Street_2__c</fieldItem>
-                <identifier>RecordShip_To_Street_2_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1666,16 +1652,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Ship_to_State__c</fieldItem>
-                <identifier>RecordShip_to_State_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Ship_to_Zip__c</fieldItem>
                 <identifier>RecordShip_to_Zip_cField</identifier>
             </fieldInstance>
@@ -1686,8 +1662,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Ship_to_Country__c</fieldItem>
-                <identifier>RecordShip_to_Country_cField</identifier>
+                <fieldItem>Record.Ship_To_Phone_Number__c</fieldItem>
+                <identifier>RecordShip_To_Phone_Number_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1710,14 +1686,48 @@
                 <identifier>RecordShip_To_Email_2_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <name>Facet-d7d20625-cae5-4eef-89eb-db01d4a7280e</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Ship_To_Phone_Number__c</fieldItem>
-                <identifier>RecordShip_To_Phone_Number_cField</identifier>
+                <fieldItem>Record.Ship_To_Contact__c</fieldItem>
+                <identifier>RecordShip_To_Contact_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Ship_To_Street_2__c</fieldItem>
+                <identifier>RecordShip_To_Street_2_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Ship_to_State__c</fieldItem>
+                <identifier>RecordShip_to_State_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Ship_to_Country__c</fieldItem>
+                <identifier>RecordShip_to_Country_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1740,7 +1750,31 @@
                 <identifier>RecordVat_Bus_Posting_Group_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-7c7be886-7e70-4ccb-8b13-91d93cbfbac2</name>
+        <name>Facet-c1d5e281-005a-459b-85a1-2cd84f213bb6</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-d7d20625-cae5-4eef-89eb-db01d4a7280e</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column28</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-c1d5e281-005a-459b-85a1-2cd84f213bb6</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column29</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-50c5ac65-67a4-4015-890a-80e06784ae0c</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -1760,28 +1794,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Venue_Code__c</fieldItem>
-                <identifier>RecordVenue_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Shipment_Date__c</fieldItem>
                 <identifier>RecordShipment_Date_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Progtype_Code__c</fieldItem>
-                <identifier>RecordProgtype_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1800,28 +1814,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Location_Code__c</fieldItem>
-                <identifier>RecordLocation_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Tax_Area_Code__c</fieldItem>
                 <identifier>RecordTax_Area_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Customs_Shipping_Number__c</fieldItem>
-                <identifier>RecordCustoms_Shipping_Number_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1834,6 +1828,40 @@
                 <identifier>RecordExternal_Document_Number_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <name>Facet-7c7be886-7e70-4ccb-8b13-91d93cbfbac2</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Venue_Code__c</fieldItem>
+                <identifier>RecordVenue_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Progtype_Code__c</fieldItem>
+                <identifier>RecordProgtype_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Location_Code__c</fieldItem>
+                <identifier>RecordLocation_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -1842,6 +1870,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Tracking_Number__c</fieldItem>
                 <identifier>RecordTracking_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Shipment_Tracking_URL__c</fieldItem>
+                <identifier>RecordShipment_Tracking_URL_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-ca7de5e0-e714-47c0-86cb-affed98e33f2</name>
@@ -1898,46 +1936,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Residential_Delivery__c</fieldItem>
-                <identifier>RecordResidential_Delivery_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Add_Freight_Line__c</fieldItem>
-                <identifier>RecordAdd_Freight_Line_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Freight_Line__c</fieldItem>
-                <identifier>RecordFreight_Line_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.IncoTerms__c</fieldItem>
-                <identifier>RecordIncoTerms_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Shipping_Cost_Payment_Type__c</fieldItem>
                 <identifier>RecordShipping_Cost_Payment_Type_cField</identifier>
             </fieldInstance>
@@ -1948,32 +1946,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Shipping_Payment_Account_No__c</fieldItem>
-                <identifier>RecordShipping_Payment_Account_No_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Payment_Country_Code__c</fieldItem>
                 <identifier>RecordPayment_Country_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-d3186a41-2155-41d5-968b-941318af2415</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.EEI_ITN__c</fieldItem>
-                <identifier>RecordEEI_ITN_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -1992,38 +1966,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Duty_Payment_Account_No__c</fieldItem>
-                <identifier>RecordDuty_Payment_Account_No_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Duty_Payment_Country_Code__c</fieldItem>
                 <identifier>RecordDuty_Payment_Country_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Duty_Payment_Post_Code__c</fieldItem>
-                <identifier>RecordDuty_Payment_Post_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Customs_Broker_Type__c</fieldItem>
-                <identifier>RecordCustoms_Broker_Type_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -2044,6 +1988,100 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Commercial_Inv_Signature__c</fieldItem>
                 <identifier>RecordCommercial_Inv_Signature_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-d3186a41-2155-41d5-968b-941318af2415</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Residential_Delivery__c</fieldItem>
+                <identifier>RecordResidential_Delivery_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Add_Freight_Line__c</fieldItem>
+                <identifier>RecordAdd_Freight_Line_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.IncoTerms__c</fieldItem>
+                <identifier>RecordIncoTerms_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Shipping_Payment_Account_No__c</fieldItem>
+                <identifier>RecordShipping_Payment_Account_No_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.EEI_ITN__c</fieldItem>
+                <identifier>RecordEEI_ITN_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Duty_Payment_Account_No__c</fieldItem>
+                <identifier>RecordDuty_Payment_Account_No_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Duty_Payment_Post_Code__c</fieldItem>
+                <identifier>RecordDuty_Payment_Post_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Customs_Shipping_Number__c</fieldItem>
+                <identifier>RecordCustoms_Shipping_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Customs_Broker_Type__c</fieldItem>
+                <identifier>RecordCustoms_Broker_Type_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-9f1d912a-b681-411b-b24e-938332e8fe23</name>
@@ -2074,16 +2112,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Background_Note__c</fieldItem>
-                <identifier>RecordBackground_Note_cField2</identifier>
-            </fieldInstance>
-        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -2272,6 +2300,42 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-2efecaf0-d340-4c39-9d92-f70bb2959123</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Sell to Details</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection15</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-50c5ac65-67a4-4015-890a-80e06784ae0c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Ship to Details</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection16</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
