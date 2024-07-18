@@ -24,7 +24,7 @@ public with sharing class GlobalGrowth_AccountManagerBatch implements Database.B
         if (query != null) {
             accounts = Database.query(query);
         } else {
-            accounts = [SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c, Account_Manager__r.pse__Salesforce_User__r.IsActive FROM Account];
+            accounts = [SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c FROM Account];
         }
 
         for (Account account : accounts) {
