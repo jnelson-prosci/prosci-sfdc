@@ -598,7 +598,7 @@
         <description>Retrieves the active Deal Support Process record types</description>
         <name>Get_Deal_Support_Process_Record_Types</name>
         <label>Get Deal Support Process Record Types</label>
-        <locationX>980</locationX>
+        <locationX>988</locationX>
         <locationY>340</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -788,7 +788,7 @@
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <value>
-            <stringValue>Licensing</stringValue>
+            <stringValue>Enterprise Licensing</stringValue>
         </value>
     </variables>
     <variables>
@@ -827,7 +827,7 @@
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <value>
-            <stringValue>Training</stringValue>
+            <stringValue>Enterprise Training</stringValue>
         </value>
     </variables>
 </Flow>

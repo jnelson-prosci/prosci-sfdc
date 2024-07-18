@@ -2,7 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Licensing</fullName>
     <active>true</active>
-    <label>Licensing</label>
+    <label>Enterprise Licensing</label>
     <picklistValues>
         <picklist>Closed_Reason__c</picklist>
         <values>
