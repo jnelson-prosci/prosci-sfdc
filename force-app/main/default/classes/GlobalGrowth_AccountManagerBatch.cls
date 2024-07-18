@@ -18,6 +18,10 @@ public with sharing class GlobalGrowth_AccountManagerBatch implements Database.B
      * @return QueryLocator
      */
     public Database.QueryLocator start(Database.BatchableContext bc) {
+        if (query != null) {
+            return Database.getQueryLocator(query);
+        }
+
         List<Account> accounts = [SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c, Account_Manager__r.pse__Salesforce_User__r.IsActive FROM Account];
         Set<Id> accountIds = new Set<Id>();
 
@@ -27,10 +31,8 @@ public with sharing class GlobalGrowth_AccountManagerBatch implements Database.B
             }
         }
 
-        if (query == null) {
-            query = 'SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c, Account_Manager__r.pse__Salesforce_User__r.IsActive FROM Account'
-            + ' WHERE Id IN :accountIds';
-        }
+        query = 'SELECT Id, OwnerId, Account_Manager__r.pse__Salesforce_User__c, Account_Manager__r.pse__Salesforce_User__r.IsActive FROM Account'
+        + ' WHERE Id IN :accountIds';
 
         return Database.getQueryLocator(query);
     }
