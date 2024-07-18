@@ -5,9 +5,9 @@
 		<name>Flow</name>
 	</types>
 	<types>
-		<members>Deal_Support_Process__c.Enterprise_Advisory</members>
-		<members>Deal_Support_Process__c.Enterprise_Licensing</members>
-		<members>Deal_Support_Process__c.Enterprise_Training</members>
+		<members>Deal_Support_Process__c.Advisory</members>
+		<members>Deal_Support_Process__c.Licensing</members>
+		<members>Deal_Support_Process__c.Training</members>
 		<name>RecordType</name>
 	</types>
 	<version>60.0</version>
