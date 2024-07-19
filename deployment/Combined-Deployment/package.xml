@@ -206,6 +206,7 @@
         <members>Order.Target_Tenant_Id__c</members>
         <members>Order.Integration_Tenant__c</members>
         <members>Session_Notes__c.Training_Manager__c</members>
+        <members>Order.Account_Name__c</members>
         <members>Order.Billing_Country_Code__c</members>
         <members>Order.Shipping_Country_Code__c</members>
         <members>Order.VILT__c</members>
