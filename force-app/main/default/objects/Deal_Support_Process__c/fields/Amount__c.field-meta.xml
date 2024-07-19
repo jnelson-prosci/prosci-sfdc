@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Amount__c</fullName>
+    <description>Total value of the deal considering quantity and price of the product plus costs incurred when the number of participants exceeds the base number of participants.</description>
     <externalId>false</externalId>
-    <formula>Quantity__c  *  Price__c</formula>
+    <formula>Quantity__c  *  Price__c + Total_Incremental_Pricing__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Amount</label>
     <precision>18</precision>
