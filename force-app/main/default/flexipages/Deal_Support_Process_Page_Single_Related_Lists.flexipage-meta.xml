@@ -2215,6 +2215,16 @@
                 <identifier>RecordProgram_Requested_timeframe_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Location__c</fieldItem>
+                <identifier>RecordLocation_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-2f343437-61d8-41e1-bbcd-10a431923d02</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -2255,8 +2265,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Location__c</fieldItem>
-                <identifier>RecordLocation_cField</identifier>
+                <fieldItem>Record.Total_Incremental_Pricing__c</fieldItem>
+                <identifier>RecordTotal_Incremental_Pricing_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -2531,6 +2541,16 @@
                 <identifier>RecordProgram_Requested_timeframe_cField2</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Location__c</fieldItem>
+                <identifier>RecordLocation_cField4</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-2qqlu4k4yn8</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -2569,10 +2589,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Location__c</fieldItem>
-                <identifier>RecordLocation_cField4</identifier>
+                <fieldItem>Record.Total_Incremental_Pricing__c</fieldItem>
+                <identifier>RecordTotal_Incremental_Pricing_cField3</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -2864,12 +2884,6 @@
                 <componentInstanceProperties>
                     <name>actionNames</name>
                     <valueList>
-                        <valueListItems>
-                            <value>APXT_Redlining__Contract_Agreement__c.Privacy_and_Security_Approved</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>APXT_Redlining__Contract_Agreement__c.Privacy_and_Security_Review_Needed</value>
-                        </valueListItems>
                         <valueListItems>
                             <value>MassChangeOwner</value>
                         </valueListItems>
