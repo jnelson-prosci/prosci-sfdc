@@ -44,14 +44,47 @@ public class SandboxPostRefreshInvalidateEmailsBatch implements Database.Batchab
 
                     // Retrieve the email value and append .invalid
                     String emailValue = String.valueOf(record.get(emailField));
-                    emailValue = emailValue + '.invalid';
+                    if(!emailValue.endsWith('.invalid')) {
+                        emailValue = emailValue + '.invalid';
+                    }
 
                     // Put back into the field
                     record.put(emailField, emailValue);
                 }
             }
         }
-        Database.update(scope, false);
+
+        Database.SaveResult[] srList = Database.update(scope, false);
+
+        Map<Id,String> failedIdsMap = new Map<Id,String>();
+
+        for (Database.SaveResult sr : srList) {
+            if (sr.isSuccess()) {
+                // Operation was successful, do nothing
+            }
+            else {
+                System.debug('Invalidate Email Post Refresh Failure ' + this.currentObjectName + ' Id: ' + sr.getId());
+                // Operation failed, so get all errors 
+                String srErrors;               
+                for(Database.Error err : sr.getErrors()) {
+                    System.debug('The following error has occurred.');                    
+                    System.debug(err.getStatusCode() + ': ' + err.getMessage());
+                    System.debug('Fields that affected this error: ' + err.getFields());
+                    srErrors = err.getStatusCode() + ': ' + err.getMessage() + err.getFields();
+                }
+                failedIdsMap.put(sr.getId(), srErrors);
+            }
+        }
+
+        if (!failedIdsMap.isEmpty()) {
+            Case failureCase = new Case(
+                Subject = this.currentObjectName + ' Invalidate Email Post Refresh Failures',
+                Origin = 'Salesforce',
+                Description = failedIdsMap.toString()
+            );
+    
+            insert failureCase;
+        }
     }
 
     public void finish(Database.BatchableContext BC) {
