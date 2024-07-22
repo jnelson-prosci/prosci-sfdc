@@ -10,7 +10,7 @@
                             <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Order.Sync_to_Xero</value>
+                            <value>Order.Sync_to_ERP</value>
                             <visibilityRule>
                                 <criteria>
                                     <leftValue>{!Record.Target_Tenant_Id__c}</leftValue>
@@ -86,6 +86,26 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Integration_Tenant__c</fieldItem>
+                <identifier>RecordIntegration_Tenant_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Target_Tenant_Id__c</fieldItem>
+                <identifier>RecordTarget_Tenant_Id_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -166,30 +186,30 @@
                 <identifier>RecordBilling_Country_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <name>Facet-4281a1dc-e764-4e4a-b3f7-d7a4a4763c25</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Integration_Tenant__c</fieldItem>
-                <identifier>RecordIntegration_Tenant_cField</identifier>
+                <fieldItem>Record.Associated_Training_Contact__c</fieldItem>
+                <identifier>RecordAssociated_Training_Contact_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Target_Tenant_Id__c</fieldItem>
-                <identifier>RecordTarget_Tenant_Id_cField</identifier>
+                <fieldItem>Record.Training_Event__c</fieldItem>
+                <identifier>RecordTraining_Event_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-4281a1dc-e764-4e4a-b3f7-d7a4a4763c25</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -208,26 +228,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.TotalAmount</fieldItem>
                 <identifier>RecordTotalAmountField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Type</fieldItem>
-                <identifier>RecordTypeField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Status</fieldItem>
-                <identifier>RecordStatusField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -278,6 +278,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.ActivatedById</fieldItem>
                 <identifier>RecordActivatedByIdField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Status</fieldItem>
+                <identifier>RecordStatusField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-198ee6f0-a675-4e3d-9a17-b4c47cedbac9</name>
