@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <sharingCriteriaRules>
-        <fullName>Multi_Market_Opportunity_Visibility</fullName>
+        <fullName>Global_Team</fullName>
         <accessLevel>Read</accessLevel>
-        <description>Grants Global Team read access to Enterprise Engagement opportunities that are tied to Multi Market account</description>
-        <label>Multi-Market Opportunity Visibility</label>
+        <label>Global Team</label>
         <sharedTo>
             <roleAndSubordinatesInternal>Global_Team</roleAndSubordinatesInternal>
         </sharedTo>
         <criteriaItems>
-            <field>Account_Market_Reach__c</field>
+            <field>RecordTypeId</field>
             <operation>equals</operation>
-            <value>Multi Market</value>
+            <value>Enterprise Engagement</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
