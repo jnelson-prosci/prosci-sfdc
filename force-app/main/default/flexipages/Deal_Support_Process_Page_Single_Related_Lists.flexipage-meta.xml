@@ -640,16 +640,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Fee__c</fieldItem>
-                <identifier>RecordFee_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Expected_Project_Start_Date__c</fieldItem>
                 <identifier>RecordExpected_Project_Start_Date_cField</identifier>
             </fieldInstance>
@@ -1105,16 +1095,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Incremental_Pricing__c</fieldItem>
                 <identifier>RecordOverage_Price_cField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>readonly</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Fee__c</fieldItem>
-                <identifier>RecordFee_cField3</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -2269,16 +2249,6 @@
                 <identifier>RecordTotal_Incremental_Pricing_cField2</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Fee__c</fieldItem>
-                <identifier>RecordFee_cField2</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-296ba28f-6cf4-4b18-a72c-7682a9ad9678</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -2593,16 +2563,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Total_Incremental_Pricing__c</fieldItem>
                 <identifier>RecordTotal_Incremental_Pricing_cField3</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>readonly</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Fee__c</fieldItem>
-                <identifier>RecordFee_cField4</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-gjgtn8ina5o</name>
