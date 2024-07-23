@@ -4,5 +4,9 @@
 		<members>Contract_Agreement_Update_Field_on_other_Object_Flow_DSP</members>
 		<name>Flow</name>
 	</types>
+	<types>
+		<members>Deal_Support_Process_Page_Single_Related_Lists</members>
+		<name>FlexiPage</name>
+	</types>
 	<version>60.0</version>
 </Package>
