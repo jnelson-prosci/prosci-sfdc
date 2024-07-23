@@ -211,6 +211,7 @@
         <members>Order.Shipping_Country_Code__c</members>
         <members>Order.VILT__c</members>
         <members>OrderItem.Xero_Account_Code__c</members>
+        <members>OrderItem.Product_Name__c</members>
         <members>Product2.Xero_Account_Code__c</members>
         <name>CustomField</name>
     </types>
