@@ -4,6 +4,7 @@
 		<members>OrderItem.Product_Name__c</members>
 		<name>CustomField</name>
 	</types>
+	<types>
 		<members>Global_Growth_Base_Permission_Set</members>
 		<name>PermissionSet</name>
 	</types>
