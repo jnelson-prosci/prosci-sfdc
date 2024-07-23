@@ -204,6 +204,10 @@
             <outputField>I_need_Advisory_Statements__c</outputField>
         </mappingFields>
         <mappingFields>
+            <inputField>Master_Instructor_Lead_Generator__c</inputField>
+            <outputField>Master_Instructor_Lead_Generator__c</outputField>
+        </mappingFields>
+        <mappingFields>
             <inputField>I_need_to_integrate_CM_with_other_discip__c</inputField>
             <outputField>Integrate_CM_with_other_disciplines__c</outputField>
         </mappingFields>
