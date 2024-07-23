@@ -335,7 +335,7 @@ class SandboxPostRefreshScriptTest {
         List<Case> failureCases = [
             SELECT Id
             FROM Case
-            WHERE Subject = 'Contact Invalidate Email Post Refresh Failures'
+            WHERE Subject like '%Contact Invalidate Email Post Refresh Failure'
         ];
 
         Assert.areEqual(1,failureCases.size(), 'One Contact Sandbox Post Refresh Failure should exist');

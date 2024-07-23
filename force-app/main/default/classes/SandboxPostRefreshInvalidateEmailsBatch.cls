@@ -76,14 +76,21 @@ public class SandboxPostRefreshInvalidateEmailsBatch implements Database.Batchab
             }
         }
 
+        List<Case> failureCases = new List<Case>();
+
         if (!failedIdsMap.isEmpty()) {
-            Case failureCase = new Case(
-                Subject = this.currentObjectName + ' Invalidate Email Post Refresh Failures',
-                Origin = 'Salesforce',
-                Description = failedIdsMap.toString()
-            );
+            for (Id key : failedIdsMap.keySet()) {
+                Case failureCase = new Case(
+                    Subject = '(' + key + ') ' + this.currentObjectName + ' Invalidate Email Post Refresh Failure',
+                    Origin = 'Salesforce',
+                    Description = failedIdsMap.get(key)
+                );
+
+                failureCases.add(failureCase);
+            }
+
     
-            insert failureCase;
+            insert failureCases;
         }
     }
 
