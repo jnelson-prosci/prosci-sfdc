@@ -135,7 +135,6 @@
         <members>Deal_Support_Process__c.Effective_Date__c</members>
         <members>Deal_Support_Process__c.Expected_Project_End_Date__c</members>
         <members>Deal_Support_Process__c.Expected_Project_Start_Date__c</members>
-        <members>Deal_Support_Process__c.Fee__c</members>
         <members>Deal_Support_Process__c.Firmex_Account_Contact__c</members>
         <members>Deal_Support_Process__c.Group__c</members>
         <members>Deal_Support_Process__c.Initial_Fee__c</members>
