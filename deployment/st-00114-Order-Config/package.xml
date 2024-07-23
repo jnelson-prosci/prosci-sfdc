@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>Case_Schedule_Monthly_Exchange_Rate_Updates_for_Active_Currencies</members>
+		<members>Order.Associated_Training_Contact__c</members>
+		<members>Order.Training_Event__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Order_Record_Page</members>
+		<members>Training_Event_Record_Page</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Opportunity_Create_Order_from_Magento_created_Product_Order_Opp</members>
+		<members>Order_Before_Create_Training_Event_VILT_Sync</members>
 		<name>Flow</name>
+	</types>
+	<types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>Order.Sync_to_ERP</members>
+		<name>QuickAction</name>
 	</types>
 	<version>60.0</version>
 </Package>
