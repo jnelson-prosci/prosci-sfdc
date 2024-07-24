@@ -12,6 +12,7 @@
 		<members>Account</members>
 		<members>Case</members>
 		<members>Opportunity</members>
+        <members>Contact</members>
 		<name>SharingRules</name>
 	</types>
 	<version>60.0</version>
