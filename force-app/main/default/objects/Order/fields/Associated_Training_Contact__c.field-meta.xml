@@ -4,9 +4,9 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
     <label>Associated Training Contact</label>
-    <referenceTo>Contact</referenceTo>
-    <relationshipLabel>Orders (Associated Training Contact)</relationshipLabel>
-    <relationshipName>Orders2</relationshipName>
+    <referenceTo>Associated_Training_Contacts__c</referenceTo>
+    <relationshipLabel>Orders</relationshipLabel>
+    <relationshipName>Orders</relationshipName>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <type>Lookup</type>
