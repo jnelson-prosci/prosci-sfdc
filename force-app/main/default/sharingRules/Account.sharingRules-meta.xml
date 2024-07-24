@@ -4,9 +4,9 @@
         <fullName>ANZ_Account_Visibility</fullName>
         <accessLevel>Edit</accessLevel>
         <accountSettings>
-            <caseAccessLevel>None</caseAccessLevel>
+            <caseAccessLevel>Edit</caseAccessLevel>
             <contactAccessLevel>Edit</contactAccessLevel>
-            <opportunityAccessLevel>Read</opportunityAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
         <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
         <label>ANZ Account Visibility</label>
@@ -21,9 +21,9 @@
         <fullName>CAN_Account_Visibility</fullName>
         <accessLevel>Edit</accessLevel>
         <accountSettings>
-            <caseAccessLevel>None</caseAccessLevel>
+            <caseAccessLevel>Edit</caseAccessLevel>
             <contactAccessLevel>Edit</contactAccessLevel>
-            <opportunityAccessLevel>Read</opportunityAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
         <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
         <label>CAN Account Visibility</label>
@@ -38,9 +38,9 @@
         <fullName>EUR_Account_Visibility</fullName>
         <accessLevel>Edit</accessLevel>
         <accountSettings>
-            <caseAccessLevel>None</caseAccessLevel>
+            <caseAccessLevel>Edit</caseAccessLevel>
             <contactAccessLevel>Edit</contactAccessLevel>
-            <opportunityAccessLevel>Read</opportunityAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
         <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
         <label>EUR Account Visibility</label>
@@ -71,9 +71,9 @@
         <fullName>LATAM_Account_Visibility</fullName>
         <accessLevel>Edit</accessLevel>
         <accountSettings>
-            <caseAccessLevel>None</caseAccessLevel>
+            <caseAccessLevel>Edit</caseAccessLevel>
             <contactAccessLevel>Edit</contactAccessLevel>
-            <opportunityAccessLevel>Read</opportunityAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
         <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
         <label>LATAM Account Visibility</label>
@@ -88,9 +88,9 @@
         <fullName>US_Account_Visibility</fullName>
         <accessLevel>Edit</accessLevel>
         <accountSettings>
-            <caseAccessLevel>None</caseAccessLevel>
+            <caseAccessLevel>Edit</caseAccessLevel>
             <contactAccessLevel>Edit</contactAccessLevel>
-            <opportunityAccessLevel>Read</opportunityAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
         </accountSettings>
         <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
         <label>US Account Visibility</label>
