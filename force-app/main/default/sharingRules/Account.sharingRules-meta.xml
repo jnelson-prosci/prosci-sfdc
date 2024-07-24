@@ -1,25 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
-    <sharingCriteriaRules>
-        <fullName>Multi_Market_Account_Visibility</fullName>
-        <accessLevel>Read</accessLevel>
-        <accountSettings>
-            <caseAccessLevel>None</caseAccessLevel>
-            <contactAccessLevel>Read</contactAccessLevel>
-            <opportunityAccessLevel>None</opportunityAccessLevel>
-        </accountSettings>
-        <description>Grants account read access to Global Team for Multi Market accounts</description>
-        <label>Multi-Market Account Visibility</label>
-        <sharedTo>
-            <roleAndSubordinatesInternal>Global_Team</roleAndSubordinatesInternal>
-        </sharedTo>
-        <criteriaItems>
-            <field>Market_Reach__c</field>
-            <operation>equals</operation>
-            <value>Multi Market</value>
-        </criteriaItems>
-        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
-    </sharingCriteriaRules>
     <sharingOwnerRules>
         <fullName>ANZ_Account_Visibility</fullName>
         <accessLevel>Edit</accessLevel>
@@ -69,6 +49,22 @@
         </sharedTo>
         <sharedFrom>
             <roleAndSubordinatesInternal>EUR_Market_Leader</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Global_Team</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>None</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>Global Team</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Global_Team</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Global_Team</roleAndSubordinatesInternal>
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>

@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>Opportunity.Account_Market_Reach__c</members>
-		<name>CustomField</name>
-	</types>
-	<types>
-		<members>Account_Set_Enterprise_Engagement_Opportunity_Account_Market_Reach</members>
 		<members>Lead_Run_Lead_Assignment_Rules_After_Insert</members>
-		<members>Opportunity_Enterprise_Engagement_Set_Account_Market_Reach</members>
 		<name>Flow</name>
 	</types>
 	<types>
