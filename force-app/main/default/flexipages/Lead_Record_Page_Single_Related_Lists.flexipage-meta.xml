@@ -71,40 +71,12 @@
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
-                <fieldItem>Record.Previously_Existing_Contact__r.Title</fieldItem>
-                <identifier>RecordPreviously_Existing_Contact_rTitleField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Previously_Existing_Contact__r.industry__c</fieldItem>
-                <identifier>RecordPreviously_Existing_Contact_rindustry_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Country_Name__c</fieldItem>
                 <identifier>RecordCountry_Name_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Previously_Existing_Contact__r.Country_Code__c</fieldItem>
-                <identifier>RecordPreviously_Existing_Contact_rCountry_Code_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Master_Instructor_Lead_Generator__c</fieldItem>
-                <identifier>RecordMaster_Instructor_Lead_Generator__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-c3052768-1f03-4ede-afeb-b9705b25ae2c</name>
@@ -115,18 +87,6 @@
             <fieldInstance>
                 <fieldItem>Record.Previously_Existing_Contact__r.Reason_for_Contact__c</fieldItem>
                 <identifier>RecordPreviously_Existing_Contact_rReason_for_Contact_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Previously_Existing_Contact__r.I_need_Advisory_Statements__c</fieldItem>
-                <identifier>RecordPreviously_Existing_Contact_rI_need_Advisory_Statements_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Previously_Existing_Contact__r.Comments_from_Website__c</fieldItem>
-                <identifier>RecordPreviously_Existing_Contact_rComments_from_Website_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -356,6 +316,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Lead_Gen_Source_Training_Event__c</fieldItem>
                 <identifier>RecordLead_Gen_Source_Training_Event__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Master_Instructor_Lead_Generator__c</fieldItem>
+                <identifier>RecordMaster_Instructor_Lead_Generator__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
