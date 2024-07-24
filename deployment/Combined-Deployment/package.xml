@@ -190,6 +190,7 @@
         <members>Training_Event__c.Assigned_Training_Manager_noTMneeded__c</members>
         <members>Training_Event__c.Deal_Support_Process__c</members>
         <members>Training_Event__c.Instructor_Type__c</members>
+        <members>Training_Event__c.Language__c</members>
         <members>Training_Event__c.Training_Manager__c</members>
         <members>Training_Event__c.Type_of_Event__c</members>
         <members>Training_Event__c.X2nd_Training_Manager__c</members>
@@ -253,6 +254,7 @@
         <members>Opportunity.People_Change_Won_Opportunities</members>
         <members>Opportunity.Prosci_Canada_OPEN_Opportunties</members>
         <members>Opportunity.Prosci_Canada_Past_Opportunities</members>
+        <members>Integration_Tenant__c.All</members>
         <name>ListView</name>
     </types>
     <types>
@@ -343,6 +345,7 @@
         <members>Preferred_Language</members>
         <members>Data_Storage_Requirements</members>
         <members>Program_Titles</members>
+        <members>Language</members>
         <name>GlobalValueSet</name>
     </types>
     <types>
