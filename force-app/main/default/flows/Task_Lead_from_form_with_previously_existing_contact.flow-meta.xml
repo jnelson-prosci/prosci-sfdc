@@ -123,6 +123,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>Industry</field>
+            <value>
+                <elementReference>GET_Related_Contact.industry__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>LastName</field>
             <value>
                 <elementReference>GET_Related_Contact.LastName</elementReference>
@@ -156,6 +162,12 @@
             <field>Status</field>
             <value>
                 <stringValue>New</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Title</field>
+            <value>
+                <elementReference>GET_Related_Contact.Title</elementReference>
             </value>
         </inputAssignments>
         <object>Lead</object>

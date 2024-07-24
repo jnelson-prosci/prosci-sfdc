@@ -48,6 +48,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>Industry</field>
+            <value>
+                <elementReference>$Record.Lead_Contact_2__r.industry__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>LastName</field>
             <value>
                 <elementReference>$Record.Lead_Contact_2__r.LastName</elementReference>
@@ -93,6 +99,12 @@
             <field>Status</field>
             <value>
                 <stringValue>New</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Title</field>
+            <value>
+                <elementReference>$Record.Lead_Contact_2__r.Title</elementReference>
             </value>
         </inputAssignments>
         <object>Lead</object>
