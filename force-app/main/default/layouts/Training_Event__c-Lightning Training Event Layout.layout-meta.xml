@@ -46,6 +46,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Language__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Projected_Attendance__c</field>
             </layoutItems>
             <layoutItems>
