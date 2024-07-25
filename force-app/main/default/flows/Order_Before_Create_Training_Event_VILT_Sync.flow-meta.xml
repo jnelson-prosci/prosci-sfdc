@@ -68,6 +68,14 @@
         <connector>
             <targetReference>Get_Training_Event</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Training_Event__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
         <object>Order</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>
