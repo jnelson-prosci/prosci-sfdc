@@ -2,7 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Advisory</fullName>
     <active>true</active>
-    <label>Advisory</label>
+    <label>Enterprise Advisory</label>
     <picklistValues>
         <picklist>Closed_Reason__c</picklist>
         <values>
