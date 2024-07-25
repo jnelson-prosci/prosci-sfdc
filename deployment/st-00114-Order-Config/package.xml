@@ -5,6 +5,10 @@
 		<members>Order.Training_Event__c</members>
 		<name>CustomField</name>
 	</types>
+    <types>
+		<members>Order</members>
+		<name>CustomObject</name>
+	</types>
 	<types>
 		<members>Order_Record_Page</members>
 		<members>Training_Event_Record_Page</members>

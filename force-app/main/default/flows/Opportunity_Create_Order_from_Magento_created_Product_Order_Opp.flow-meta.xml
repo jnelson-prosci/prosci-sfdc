@@ -389,17 +389,17 @@
                 </value>
             </transformValueActions>
             <transformValueActions>
-                <outputFieldApiName>Training_Event__c</outputFieldApiName>
-                <transformType>Map</transformType>
-                <value>
-                    <elementReference>$Record.Training_Event__c</elementReference>
-                </value>
-            </transformValueActions>
-            <transformValueActions>
                 <outputFieldApiName>Associated_Training_Contact__c</outputFieldApiName>
                 <transformType>Map</transformType>
                 <value>
                     <elementReference>$Record.Associated_Training_Contact__c</elementReference>
+                </value>
+            </transformValueActions>
+            <transformValueActions>
+                <outputFieldApiName>Training_Event__c</outputFieldApiName>
+                <transformType>Map</transformType>
+                <value>
+                    <elementReference>$Record.Training_Event__c</elementReference>
                 </value>
             </transformValueActions>
         </transformValues>
