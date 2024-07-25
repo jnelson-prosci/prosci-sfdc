@@ -20,8 +20,8 @@
                 <field>Comments__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Company_Name__c</field>
+                <behavior>Required</behavior>
+                <field>Tenant_Identifier__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
