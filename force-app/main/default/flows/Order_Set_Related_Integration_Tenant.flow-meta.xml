@@ -153,6 +153,7 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordLookups>
+        <description>Tenant Identifier is the field that contains the 2 digit code that aligns with the Country Code</description>
         <name>Get_Integration_Tenant</name>
         <label>Get Integration Tenant</label>
         <locationX>512</locationX>
@@ -163,7 +164,7 @@
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Name</field>
+            <field>Tenant_Identifier__c</field>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>VAR_Country_Code</elementReference>
