@@ -294,7 +294,7 @@
         <members>Deal_Support_Process__c.Initiate_Contract_Agreement</members>
         <members>Deal_Support_Process__c.New_Event</members>
         <members>Deal_Support_Process__c.Amend</members>
-        <members>Order.Sync_to_Xero</members>
+        <members>Order.Sync_to_ERP</members>
         <name>QuickAction</name>
     </types>
     <types>
