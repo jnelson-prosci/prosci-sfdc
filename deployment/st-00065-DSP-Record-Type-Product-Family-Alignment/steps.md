@@ -1,7 +1,7 @@
 # Post-Deployment Steps:
 
 1. From Setup -> Developer Console -> Execute Anonymous, run the following script:
-    ```List<Product2> productsToUpdate = [SELECT Id, Family FROM Product2 WHERE Family = 'Training' OR Family = 'Advisory' = Family LIKE 'Licensing'];
+    ```List<Product2> productsToUpdate = [SELECT Id, Family FROM Product2 WHERE Family = 'Training' OR Family = 'Advisory' OR Family = 'Licensing'];
     Map<String, String> productFamilyMap = new Map<String, String>{
         'Training' => 'Enterprise Training',
         'Advisory' => 'Enterprise Advisory',
