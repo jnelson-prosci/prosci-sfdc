@@ -4,7 +4,7 @@
     ```List<Product2> productsToUpdate = [SELECT Id, Family FROM Product2 WHERE Family = 'Training' OR Family = 'Advisory' = Family LIKE 'Licensing'];
     Map<String, String> productFamilyMap = new Map<String, String>{
         'Training' => 'Enterprise Training',
-        'Advisory' => 'Enterprise Licensing',
+        'Advisory' => 'Enterprise Advisory',
         'Licensing' => 'Enterprise Licensing'
     };
 
