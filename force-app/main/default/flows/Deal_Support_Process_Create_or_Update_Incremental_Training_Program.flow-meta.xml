@@ -353,7 +353,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
         <inputAssignments>
             <field>CurrencyIsoCode</field>
             <value>
-                <elementReference>$Record.Opportunity__r.CurrencyIsoCode</elementReference>
+                <elementReference>$Record.Opportunity_Product__r.CurrencyIsoCode</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -568,7 +568,7 @@ Error: {!$Flow.FaultMessage}</errorMessage>
             <field>Product2Id</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>Get_ITP_Product.Id</elementReference>
+                <elementReference>varProduct2Id</elementReference>
             </value>
         </filters>
         <filters>
