@@ -86,7 +86,7 @@
         <inputAssignments>
             <field>OwnerId</field>
             <value>
-                <elementReference>$Record.Account__r.OwnerId</elementReference>
+                <elementReference>$Record.Lead_Account_2__r.OwnerId</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
