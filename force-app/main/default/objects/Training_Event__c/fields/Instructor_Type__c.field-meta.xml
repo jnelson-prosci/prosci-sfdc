@@ -31,6 +31,11 @@
                 <label>Prosci Canada</label>
             </value>
             <value>
+                <fullName>Prosci Europe</fullName>
+                <default>false</default>
+                <label>Prosci Europe</label>
+            </value>
+            <value>
                 <fullName>Primary Affiliate</fullName>
                 <default>false</default>
                 <label>Primary Affiliate</label>
@@ -44,21 +49,6 @@
                 <fullName>Internal PCAI</fullName>
                 <default>false</default>
                 <label>Internal PCAI</label>
-            </value>
-            <value>
-                <fullName>Prosci Iberia</fullName>
-                <default>false</default>
-                <label>Prosci Iberia</label>
-            </value>
-            <value>
-                <fullName>Prosci Mexico</fullName>
-                <default>false</default>
-                <label>Prosci Mexico</label>
-            </value>
-            <value>
-                <fullName>Prosci Chile</fullName>
-                <default>false</default>
-                <label>Prosci Chile</label>
             </value>
             <value>
                 <fullName>Coach the trainer (Prosci Canada)</fullName>

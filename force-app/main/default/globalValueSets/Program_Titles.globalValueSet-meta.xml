@@ -6,29 +6,14 @@
         <label>Certification</label>
     </customValue>
     <customValue>
-        <fullName>TTT</fullName>
-        <default>false</default>
-        <label>TTT</label>
-    </customValue>
-    <customValue>
-        <fullName>ECM Boot Camp</fullName>
-        <default>false</default>
-        <label>ECM Boot Camp</label>
-    </customValue>
-    <customValue>
-        <fullName>Experienced Practitioner Program</fullName>
-        <default>false</default>
-        <label>Experienced Practitioner Program</label>
-    </customValue>
-    <customValue>
         <fullName>Sponsor</fullName>
         <default>false</default>
         <label>Sponsor</label>
     </customValue>
     <customValue>
-        <fullName>Manager</fullName>
+        <fullName>Leading Your Team Through Change</fullName>
         <default>false</default>
-        <label>Manager</label>
+        <label>Leading Your Team Through Change</label>
     </customValue>
     <customValue>
         <fullName>Employee</fullName>
@@ -51,24 +36,9 @@
         <label>Delivering Project Results Workshop</label>
     </customValue>
     <customValue>
-        <fullName>Fundamentals of Change Workshop</fullName>
-        <default>false</default>
-        <label>Fundamentals of Change Workshop</label>
-    </customValue>
-    <customValue>
         <fullName>Audit</fullName>
         <default>false</default>
         <label>Audit</label>
-    </customValue>
-    <customValue>
-        <fullName>Strategic Alignment Workshop</fullName>
-        <default>false</default>
-        <label>Strategic Alignment Workshop</label>
-    </customValue>
-    <customValue>
-        <fullName>Change Portfolio Workshop</fullName>
-        <default>false</default>
-        <label>Change Portfolio Workshop</label>
     </customValue>
     <customValue>
         <fullName>Speaking Engagement</fullName>
@@ -81,44 +51,9 @@
         <label>Webinar</label>
     </customValue>
     <customValue>
-        <fullName>Roundtable</fullName>
-        <default>false</default>
-        <label>Roundtable</label>
-    </customValue>
-    <customValue>
         <fullName>Practitioner</fullName>
         <default>false</default>
         <label>Practitioner</label>
-    </customValue>
-    <customValue>
-        <fullName>Advanced</fullName>
-        <default>false</default>
-        <label>Advanced</label>
-    </customValue>
-    <customValue>
-        <fullName>Building the Business Case for CM Workshop</fullName>
-        <default>false</default>
-        <label>Building the Business Case for CM Workshop</label>
-    </customValue>
-    <customValue>
-        <fullName>Coach the Trainer</fullName>
-        <default>false</default>
-        <label>Coach the Trainer</label>
-    </customValue>
-    <customValue>
-        <fullName>Change Management Deployment Support</fullName>
-        <default>false</default>
-        <label>Change Management Deployment Support</label>
-    </customValue>
-    <customValue>
-        <fullName>Leadership</fullName>
-        <default>false</default>
-        <label>Leadership</label>
-    </customValue>
-    <customValue>
-        <fullName>Advanced Immersion Workshop</fullName>
-        <default>false</default>
-        <label>Advanced Immersion Workshop</label>
     </customValue>
     <customValue>
         <fullName>Unavailable</fullName>
@@ -129,16 +64,6 @@
         <fullName>Integrating Agile</fullName>
         <default>false</default>
         <label>Integrating Agile</label>
-    </customValue>
-    <customValue>
-        <fullName>CM Planning Workshop</fullName>
-        <default>false</default>
-        <label>CM Planning Workshop</label>
-    </customValue>
-    <customValue>
-        <fullName>Sponsor - No Health Check</fullName>
-        <default>false</default>
-        <label>Sponsor - No Health Check</label>
     </customValue>
     <customValue>
         <fullName>Consulting</fullName>
@@ -154,6 +79,130 @@
         <fullName>ADKAR Model Mastery Level 2: Resolve Change Barriers</fullName>
         <default>false</default>
         <label>ADKAR Model Mastery Level 2: Resolve Change Barriers</label>
+    </customValue>
+    <customValue>
+        <fullName>TTT - Level 1</fullName>
+        <default>false</default>
+        <label>TTT - Level 1</label>
+    </customValue>
+    <customValue>
+        <fullName>TTT - Level 2</fullName>
+        <default>false</default>
+        <label>TTT - Level 2</label>
+    </customValue>
+    <customValue>
+        <fullName>Methodology Application Program</fullName>
+        <default>false</default>
+        <label>Methodology Application Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Taking Charge of Change</fullName>
+        <default>false</default>
+        <label>Taking Charge of Change</label>
+    </customValue>
+    <customValue>
+        <fullName>On Call</fullName>
+        <default>false</default>
+        <label>On Call</label>
+    </customValue>
+    <customValue>
+        <fullName>Improve Project Health</fullName>
+        <default>false</default>
+        <label>Improve Project Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Achieve Change Performance</fullName>
+        <default>false</default>
+        <label>Achieve Change Performance</label>
+    </customValue>
+    <customValue>
+        <fullName>ECM Boot Camp</fullName>
+        <default>false</default>
+        <label>ECM Boot Camp</label>
+    </customValue>
+    <customValue>
+        <fullName>Sponsor - No Health Check</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sponsor - No Health Check</label>
+    </customValue>
+    <customValue>
+        <fullName>CM Planning Workshop</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CM Planning Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Immersion Workshop</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Immersion Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Leadership</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Leadership</label>
+    </customValue>
+    <customValue>
+        <fullName>Change Management Deployment Support</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Change Management Deployment Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Coach the Trainer</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Coach the Trainer</label>
+    </customValue>
+    <customValue>
+        <fullName>Building the Business Case for CM Workshop</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Building the Business Case for CM Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced</label>
+    </customValue>
+    <customValue>
+        <fullName>Roundtable</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Roundtable</label>
+    </customValue>
+    <customValue>
+        <fullName>Change Portfolio Workshop</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Change Portfolio Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Strategic Alignment Workshop</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Strategic Alignment Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Fundamentals of Change Workshop</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Fundamentals of Change Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Experienced Practitioner Program</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Experienced Practitioner Program</label>
+    </customValue>
+    <customValue>
+        <fullName>TTT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TTT</label>
     </customValue>
     <description>List of the programs</description>
     <masterLabel>Program Titles</masterLabel>

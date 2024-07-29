@@ -39,6 +39,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Phone_Number_Extension__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>MobilePhone</field>
             </layoutItems>
             <layoutItems>
@@ -56,6 +60,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>BC_Synced_Instances__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CNPJ__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -148,11 +156,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Opportunity_Lead_Source_1__c</field>
+                <field>Original_Source_Drill_Down_1__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Opportunity_Lead_Source_2__c</field>
+                <field>Original_Source_Drill_Down_2__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -166,6 +174,14 @@
                 <behavior>Edit</behavior>
                 <field>What_best_describes_your_current_role__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>MQL_Type__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Prosci_AI_Chat_Solution__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -174,11 +190,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Click_Thur_T_C_s_Agreement__c</field>
+                <field>Click_Thru_T_C_s_Agreement__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Click_Thur_Company_name__c</field>
+                <field>Click_Thru_Company_name__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -206,7 +222,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Evangalist__c</field>
+                <field>Evangelist__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -291,6 +307,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>PCAI_VILT_Review__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>PLI_Notes__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -526,61 +546,49 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>Scholarship</label>
+        <label>Brazil Leads</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Scholarship_Application_Type__c</field>
+                <field>Are_you_registering_multiple_people__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Preferred_Date__c</field>
+                <field>CPF__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Amount_you_are_requesting__c</field>
+                <field>RG__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>How_did_you_hear_about_Prosci__c</field>
+                <field>Individual_or_Company_Payment__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Attendance_dependent_on_assistance__c</field>
+                <field>Billing_Address_Same_as_Shipping_Address__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Why_you_need_this_scholarship__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Why_should_you_receive_scholarship__c</field>
+                <field>Affiliated_with_Partner_Company__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Why_would_you_be_unable_to_participate__c</field>
+                <field>of_Participants__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Leader_First_Name__c</field>
+                <field>Program_Type__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Leader_Last_Name__c</field>
+                <field>Payment_Code__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Leader_Title__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Leader_Email__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Full_Partial__c</field>
+                <field>Brazil_Cancellation_Acceptance__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -682,6 +690,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Advisory_Bio_Link_French__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Comments_from_Website__c</field>
             </layoutItems>
             <layoutItems>
                 <height>200</height>
@@ -974,6 +986,12 @@
         <fields>Location__c</fields>
         <fields>Start_Date__c</fields>
         <relatedList>Training_Event__c.Training_Manager__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Status__c</fields>
+        <fields>LAST_ACTIVITY</fields>
+        <relatedList>PCAI__c.PCAI_Contact__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
