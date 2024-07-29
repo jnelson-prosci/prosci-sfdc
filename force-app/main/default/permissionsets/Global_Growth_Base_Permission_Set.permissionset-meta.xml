@@ -773,7 +773,7 @@
         <editable>true</editable>
         <field>Product2.Program_Title__c</field>
         <readable>true</readable>
-    </fieldPermissions>
+    </fieldPermissions>        
     <fieldPermissions>
         <editable>false</editable>
         <field>Product2.Xero_Account_Code__c</field>
