@@ -3,6 +3,9 @@
     <customButtons>Training_Summary</customButtons>
     <customButtons>MA_MapIt_a0vi000000Bnnt5AAB</customButtons>
     <customButtons>Add_Document</customButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -82,6 +85,10 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Industry__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Provides_Consulting_Services__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -316,6 +323,14 @@
                 <behavior>Edit</behavior>
                 <field>Licensed_Materials_Version__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Secondary_License_Active_License_Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Secondary_License_Active_License_Type__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -328,7 +343,19 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Can_we_use_PO_number_on_Invoice__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Registration_Slug__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Secondary_License_elearning__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Secondary_License_License__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -348,12 +375,7 @@
                 <field>PSA_Expiration_Date__c</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Can_we_use_PO_number_on_Invoice__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
@@ -368,7 +390,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>EORI_or_other_Shipping_Info__c</field>
+                <field>Customs_Shipping_Number__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Shipping_Notes__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -837,6 +863,18 @@
         <relatedList>RelatedContractList</relatedList>
     </relatedLists>
     <relatedLists>
+        <fields>NAME</fields>
+        <fields>Affiliate_Company__c</fields>
+        <fields>Covered_Contract_Type__c</fields>
+        <relatedList>Affiliates_Covered_under_License__c.Licensed_Account__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Licensed_Account__c</fields>
+        <fields>Covered_Contract_Type__c</fields>
+        <relatedList>Affiliates_Covered_under_License__c.Affiliate_Company__c</relatedList>
+    </relatedLists>
+    <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
@@ -856,8 +894,9 @@
     <relatedLists>
         <fields>NAME</fields>
         <fields>APXT_Redlining__Type__c</fields>
-        <fields>APXT_Redlining__Status__c</fields>
+        <fields>Requested_Start_Date_Opportunity__c</fields>
         <fields>Program_Title__c</fields>
+        <fields>APXT_Redlining__Status__c</fields>
         <fields>APXT_Redlining__Effective_Date__c</fields>
         <fields>APXT_Redlining__Expiration_Date__c</fields>
         <fields>CREATED_DATE</fields>

@@ -483,6 +483,10 @@
                 <field>Duty_Payment_Post_Code__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Customs_Shipping_Number__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Customs_Broker_Type__c</field>
             </layoutItems>

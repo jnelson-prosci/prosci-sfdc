@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOW_Template_Key__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AND(APXT_Redlining__Opportunity__r.VILT_Program__c = TRUE,
+OR(ISPICKVAL( APXT_Redlining__Opportunity__r.Program_Title__c, &apos;Certification&apos;),
+ISPICKVAL( APXT_Redlining__Opportunity__r.Program_Title__c, &apos;Employee&apos;),
+ISPICKVAL( APXT_Redlining__Opportunity__r.Program_Title__c, &apos;Leading Your Team Through Change&apos;))), &apos;0T_007EA2987725&apos;,
+IF(AND(APXT_Redlining__Opportunity__r.VILT_Program__c = TRUE,
+OR(ISPICKVAL( APXT_Redlining__Opportunity__r.Program_Title__c, &apos;Sponsor&apos;),
+ISPICKVAL( APXT_Redlining__Opportunity__r.Program_Title__c, &apos;Delivering Project Results Workshop&apos;),
+ISPICKVAL( APXT_Redlining__Opportunity__r.Program_Title__c, &apos;Taking Charge of Change&apos;),
+ISPICKVAL( APXT_Redlining__Opportunity__r.Program_Title__c, &apos;Integrating Agile&apos;))), &apos;0T_009EA2925139&apos;,
+IF(AND(APXT_Redlining__Opportunity__r.VILT_Program__c = FALSE,
+OR(ISPICKVAL( APXT_Redlining__Opportunity__r.Program_Title__c, &apos;Sponsor&apos;),
+ISPICKVAL( APXT_Redlining__Opportunity__r.Program_Title__c, &apos;Taking Charge of Change&apos;),
+ISPICKVAL( APXT_Redlining__Opportunity__r.Program_Title__c, &apos;Certification&apos;),
+ISPICKVAL( APXT_Redlining__Opportunity__r.Program_Title__c, &apos;Leading Your Team Through Change&apos;),
+ISPICKVAL( APXT_Redlining__Opportunity__r.Program_Title__c, &apos;Employee&apos;),
+ISPICKVAL( APXT_Redlining__Opportunity__r.Program_Title__c, &apos;Integrating Agile&apos;),
+ISPICKVAL( APXT_Redlining__Opportunity__r.Program_Title__c, &apos;Delivering Project Results Workshop&apos;))), &apos;0T_001EA2221822&apos;, &apos;0T_006EA2069382&apos;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SOW Template Key</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

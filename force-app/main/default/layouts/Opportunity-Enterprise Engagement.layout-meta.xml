@@ -118,6 +118,10 @@
                 <behavior>Edit</behavior>
                 <field>Partnership_Request__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>I_need_Advisory_Statements__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
