@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Order_Record_Page</members>
+		<members>Training_Event_Record_Page</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Deal_Support_Process_Create_or_Update_Incremental_Training_Program</members>
+		<members>Session_Notes_Lead_1</members>
+		<members>Session_Notes_Lead_2</members>
+		<members>Session_Notes_Lead_3</members>
+		<members>Training_Event_Create_Order</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>Training_Event__c.Create_Order</members>
+		<name>QuickAction</name>
+	</types>
+	<version>60.0</version>
+</Package>
