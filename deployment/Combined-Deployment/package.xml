@@ -29,6 +29,7 @@
         <members>Session_Notes_Lead_1</members>
         <members>Session_Notes_Lead_2</members>
         <members>Session_Notes_Lead_3</members>
+        <members>Training_Event_Create_Order</members>
         <name>Flow</name>
     </types>
     <types>
@@ -232,6 +233,7 @@
         <members>Order_Record_Page</members>
         <members>Product_Record_Page</members>
         <members>Contact_Record_Page_Layout_Single_Related_Lists</members>
+        <members>Training_Event_Record_Page</members>
         <name>FlexiPage</name>
     </types>
     <types>
@@ -294,7 +296,8 @@
         <members>Deal_Support_Process__c.Initiate_Contract_Agreement</members>
         <members>Deal_Support_Process__c.New_Event</members>
         <members>Deal_Support_Process__c.Amend</members>
-        <members>Order.Sync_to_Xero</members>
+        <members>Order.Sync_to_ERP</members>
+        <members>Training_Event__c.Create_Order</members>
         <name>QuickAction</name>
     </types>
     <types>

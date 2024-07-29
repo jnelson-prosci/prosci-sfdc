@@ -84,6 +84,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.Account__r.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Previously_Existing_Contact__c</field>
             <value>
                 <elementReference>$Record.Lead_Contact_2__r.Id</elementReference>
