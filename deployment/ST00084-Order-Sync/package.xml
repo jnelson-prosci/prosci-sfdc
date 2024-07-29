@@ -20,9 +20,5 @@
 		<members>Order-Order Layout</members>
 		<name>Layout</name>
 	</types>
-	<types>
-		<members>Order.Sync_to_Xero</members>
-		<name>QuickAction</name>
-	</types>
 	<version>60.0</version>
 </Package>
