@@ -105,11 +105,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Deal_Support_Process__c.Currency_Read_Only__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Deal_Support_Process__c.Day_1__c</field>
         <readable>true</readable>
@@ -421,11 +416,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Integration_Tenant__c.Company_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Integration_Tenant__c.Tenant_Id__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -687,6 +677,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Product2.Program_Title__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+         <fieldPermissions>
+        <editable>true</editable>
+        <field>Training_Event__c.Language__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
