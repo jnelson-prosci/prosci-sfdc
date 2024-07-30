@@ -13,6 +13,10 @@
 		<name>CustomField</name>
 	</types>
 	<types>
+		<members>Opportunity_Generate_Deal_Support_Processes</members>
+		<name>Flow</name>
+	</types>
+	<types>
 		<members>Deal_Support_Process__c.Advisory</members>
 		<members>Deal_Support_Process__c.Licensing</members>
 		<members>Deal_Support_Process__c.Training</members>
