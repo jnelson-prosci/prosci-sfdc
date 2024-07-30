@@ -37,6 +37,18 @@
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
+        <fullName>Global_Team_DSP</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Rule granting read-only access to any DSP owned by any role within the Global Team for all Global Team members and internal subordinates.</description>
+        <label>Global Team</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Global_Team</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Global_Team</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
         <fullName>LATAM_Record_Visibility</fullName>
         <accessLevel>Edit</accessLevel>
         <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
