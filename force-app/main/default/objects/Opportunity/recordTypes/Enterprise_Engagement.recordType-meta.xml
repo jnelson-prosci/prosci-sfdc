@@ -2105,14 +2105,6 @@
     <picklistValues>
         <picklist>Shipping_Agent_Code_Courier__c</picklist>
         <values>
-            <fullName>DHL</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>DHLEXP</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>ELECTRONIC</fullName>
             <default>false</default>
         </values>
@@ -2122,10 +2114,6 @@
         </values>
         <values>
             <fullName>UPS</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>USPS</fullName>
             <default>false</default>
         </values>
         <values>
