@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>PSA_Resource</fullName>
-    <active>true</active>
+    <active>false</active>
     <label>PSA Resource</label>
     <picklistValues>
         <picklist>APXT_Redlining__Contract_Agreement_Role__c</picklist>
@@ -23,6 +23,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Affiliated_with_Partner_Company__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>All_Access_Portal_type__c</picklist>
         <values>
             <fullName>Direct</fullName>
@@ -36,6 +47,10 @@
     <picklistValues>
         <picklist>Annual_Revenue__c</picklist>
         <values>
+            <fullName>%3C50M</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>101M - 250M</fullName>
             <default>false</default>
         </values>
@@ -48,7 +63,22 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>501M - 1B</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>50M - 100M</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Are_you_registering_multiple_people__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -129,6 +159,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Billing_Address_Same_as_Shipping_Address__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Certified__c</picklist>
         <values>
             <fullName>Yes</fullName>
@@ -155,7 +196,7 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Click_Thur_T_C_s_Agreement__c</picklist>
+        <picklist>Click_Thru_T_C_s_Agreement__c</picklist>
         <values>
             <fullName>Agree</fullName>
             <default>false</default>
@@ -194,7 +235,11 @@
     <picklistValues>
         <picklist>Contact_Type__c</picklist>
         <values>
-            <fullName>Type B</fullName>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-service</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -213,7 +258,7 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Evangalist__c</picklist>
+        <picklist>Evangelist__c</picklist>
         <values>
             <fullName>No</fullName>
             <default>false</default>
@@ -233,11 +278,11 @@
     <picklistValues>
         <picklist>Full_Partial__c</picklist>
         <values>
-            <fullName>Full</fullName>
+            <fullName>I am requesting a full scholarship</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Partial</fullName>
+            <fullName>I am requesting a partial scholarship</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -253,6 +298,17 @@
         </values>
         <values>
             <fullName>MAP Discount</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Individual_or_Company_Payment__c</picklist>
+        <values>
+            <fullName>Company Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual Payment</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -439,6 +495,21 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>MQL_Type__c</picklist>
+        <values>
+            <fullName>Form Submission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Scoring Model</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Name</picklist>
         <values>
             <fullName>Dr%2E</fullName>
@@ -498,6 +569,33 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Payment_Type__c</picklist>
+        <values>
+            <fullName>EFT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EFT%2FInvoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>For visit %28bank transfer%29%3A R%2410%2C000%2E00</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installments %28credit card%29%3A R%2410%2C500%2E00</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upon visit %28credit card - 1 payment%29%3A R%2410%2C000%2E00</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>redit Card</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Program_Title__c</picklist>
         <values>
             <fullName>Certification%2C Min 8 %2F Max 18 Participants</fullName>
@@ -533,6 +631,64 @@
         </values>
         <values>
             <fullName>Train-the-Trainer%2C Min 6 %2F Max 8 Participants</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Program_Type__c</picklist>
+        <values>
+            <fullName>Change Management Sponsor Briefing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivering Project Results Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECM Boot Camp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrating Agile and Change Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leading Your Team Through Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Methodology Application Program %28MAP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28please share in comments%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Practitioner Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taking Charge of Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Train-the-Trainer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Prosci_AI_Chat_Solution__c</picklist>
+        <values>
+            <fullName>Enterprise Subscription %28available April 2024%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual Subscription %28considered Q4 2024%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Subscription %28considered Q4 2024%29</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -574,14 +730,6 @@
         </values>
         <values>
             <fullName>Having an issue with a product or order</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Learning more about change management</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Onsite Training</fullName>
             <default>false</default>
         </values>
         <values>
@@ -711,6 +859,21 @@
         </values>
         <values>
             <fullName>Timecard Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>of_Participants__c</picklist>
+        <values>
+            <fullName>1-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5-9</fullName>
             <default>false</default>
         </values>
     </picklistValues>

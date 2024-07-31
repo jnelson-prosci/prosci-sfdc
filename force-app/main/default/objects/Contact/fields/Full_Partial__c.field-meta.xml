@@ -12,13 +12,25 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>I am requesting a full scholarship</fullName>
+                <default>false</default>
+                <label>I am requesting a full scholarship</label>
+            </value>
+            <value>
+                <fullName>I am requesting a partial scholarship</fullName>
+                <default>false</default>
+                <label>I am requesting a partial scholarship</label>
+            </value>
+            <value>
                 <fullName>Full</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Full</label>
             </value>
             <value>
                 <fullName>Partial</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Partial</label>
             </value>
         </valueSetDefinition>

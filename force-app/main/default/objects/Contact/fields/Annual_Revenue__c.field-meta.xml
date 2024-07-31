@@ -29,6 +29,11 @@
                 <label>251M - 500M</label>
             </value>
             <value>
+                <fullName>501M - 1B</fullName>
+                <default>false</default>
+                <label>501M - 1B</label>
+            </value>
+            <value>
                 <fullName>1B+</fullName>
                 <default>false</default>
                 <label>1B+</label>

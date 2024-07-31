@@ -17,6 +17,11 @@
                 <label>Advisory Enablement Manager</label>
             </value>
             <value>
+                <fullName>Business Analyst</fullName>
+                <default>false</default>
+                <label>Business Analyst</label>
+            </value>
+            <value>
                 <fullName>Change Advisor</fullName>
                 <default>false</default>
                 <label>Change Advisor</label>
@@ -35,6 +40,11 @@
                 <fullName>Change Enablement Coordinator</fullName>
                 <default>false</default>
                 <label>Change Enablement Coordinator</label>
+            </value>
+            <value>
+                <fullName>Data Specialist</fullName>
+                <default>false</default>
+                <label>Data Specialist</label>
             </value>
             <value>
                 <fullName>Director, Engagement Leader</fullName>
@@ -62,6 +72,11 @@
                 <label>Principal Change Advisor - Contractor</label>
             </value>
             <value>
+                <fullName>Product Owner</fullName>
+                <default>false</default>
+                <label>Product Owner</label>
+            </value>
+            <value>
                 <fullName>Project Manager</fullName>
                 <default>false</default>
                 <label>Project Manager</label>
@@ -70,6 +85,11 @@
                 <fullName>Project Manager - Contractor</fullName>
                 <default>false</default>
                 <label>Project Manager - Contractor</label>
+            </value>
+            <value>
+                <fullName>Quality Architect</fullName>
+                <default>false</default>
+                <label>Quality Architect</label>
             </value>
             <value>
                 <fullName>Senior Change Advisor</fullName>

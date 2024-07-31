@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LSA_Template_Key__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(APXT_Redlining__Opportunity__r.VILT_Program__c = TRUE),&apos;0T_020EAK099172&apos;,
+IF(AND(APXT_Redlining__Opportunity__r.VILT_Program__c = FALSE), &apos;0T_014EA2950633&apos;, &apos;0T_020EAK099172&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>LSA Template Key</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

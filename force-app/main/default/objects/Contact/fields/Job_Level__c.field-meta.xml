@@ -52,6 +52,11 @@
                 <default>false</default>
                 <label>Other</label>
             </value>
+            <value>
+                <fullName>Admin</fullName>
+                <default>false</default>
+                <label>Admin</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
