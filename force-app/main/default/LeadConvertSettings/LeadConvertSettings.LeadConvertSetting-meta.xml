@@ -132,7 +132,7 @@
             <outputField>Program_Type__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Prosci_AI_Chat_Solution__c</inputField>
+            <inputField>Prosci_Kaiya_AI_Tool__c</inputField>
             <outputField>Prosci_AI_Chat_Solution__c</outputField>
         </mappingFields>
         <mappingFields>
