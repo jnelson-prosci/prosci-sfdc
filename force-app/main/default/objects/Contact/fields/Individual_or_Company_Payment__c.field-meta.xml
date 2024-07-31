@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Contact_Type__c</fullName>
+    <fullName>Individual_or_Company_Payment__c</fullName>
     <externalId>false</externalId>
-    <label>Contact Type</label>
+    <label>Individual or Company Payment</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>true</trackHistory>
+    <trackHistory>false</trackHistory>
     <type>Picklist</type>
     <valueSet>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Type B</fullName>
+                <fullName>Individual Payment</fullName>
                 <default>false</default>
-                <label>Type B</label>
+                <label>Individual Payment</label>
             </value>
             <value>
-                <fullName>Enterprise</fullName>
+                <fullName>Company Payment</fullName>
                 <default>false</default>
-                <label>Enterprise</label>
-            </value>
-            <value>
-                <fullName>Self-service</fullName>
-                <default>false</default>
-                <label>Self-service</label>
+                <label>Company Payment</label>
             </value>
         </valueSetDefinition>
     </valueSet>

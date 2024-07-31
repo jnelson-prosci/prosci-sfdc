@@ -20,6 +20,16 @@
                 <default>false</default>
                 <label>Expired</label>
             </value>
+            <value>
+                <fullName>Expired (Former GAN Partner)</fullName>
+                <default>false</default>
+                <label>Expired (Former GAN Partner)</label>
+            </value>
+            <value>
+                <fullName>Active (GAN Partnership Ending)</fullName>
+                <default>false</default>
+                <label>Active (GAN Partnership Ending)</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
