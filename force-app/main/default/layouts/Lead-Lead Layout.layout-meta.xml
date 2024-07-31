@@ -69,10 +69,6 @@
                 <behavior>Edit</behavior>
                 <field>Lead_Gen_Source_Training_Event__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Prosci_Kaiya_AI_Tool__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
