@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>GlobalGrowth_AccountManagerBatch</members>
+        <members>GlobalGrowth_AccountManagerBatchTest</members>
         <members>SandboxPostRefreshInvalidateEmailsBatch</members>
         <members>SandboxPostRefreshScript</members>
         <members>SandboxPostRefreshScriptTest</members>
@@ -16,15 +18,14 @@
         <members>Opportunity_Create_Order_from_Magento_created_Product_Order_Opp</members>
         <members>Deal_Support_Process_Update_Status</members>
         <members>Opportunity_Update_Stage</members>
-        <members>Account_Set_Enterprise_Engagement_Opportunity_Account_Market_Reach</members>
         <members>Lead_Run_Lead_Assignment_Rules_After_Insert</members>
-        <members>Opportunity_Enterprise_Engagement_Set_Account_Market_Reach</members>
         <members>Deal_Support_Process_Advisory_Licensing_Price_Quantity_Updates</members>
         <members>Deal_Support_Process_Create_or_Update_Incremental_Training_Program</members>
         <members>Training_Event_Update_DSP_of_Participants</members>
         <members>Opportunity_Update_Opportunity_to_Close_but_not_if_stage_is_Pending_Prepayment</members>
         <members>Opportunity_Product_Set_Overage_Fields</members>
         <members>Order_Create_OrderSync_for_Sync_to_Xero</members>
+        <members>Order_Before_Create_Training_Event_VILT_Sync</members>
         <members>Order_Set_Related_Integration_Tenant</members>
         <members>Session_Notes_Lead_1</members>
         <members>Session_Notes_Lead_2</members>
@@ -36,6 +37,8 @@
         <members>Country_Code_Info__mdt</members>
         <members>Deal_Support_Process__c</members>
         <members>Integration_Tenant__c</members>
+        <members>Contact</members>
+        <members>Order</members>
         <members>OrderSync__e</members>
         <name>CustomObject</name>
     </types>
@@ -79,9 +82,11 @@
         <members>Opportunity.Budget_Decision_Maker__c</members>
         <members>Opportunity.Producer_Lead_Generator__c</members>
         <members>Opportunity.Training_Manager_Requested__c</members>
+        <members>APXT_Redlining__Contract_Agreement__c.LSA_Template_Key__c</members>
         <members>APXT_Redlining__Contract_Agreement__c.SOW_Template_Key__c</members>
         <members>APXT_Redlining__Contract_Agreement__c.Single_Contract_Covers_All_DSPs__c</members>
         <members>Deal_Support_Process__c.Amount__c</members>
+        <members>Deal_Support_Process__c.Notes__c</members>
         <members>Deal_Support_Process__c.Opportunity_Product__c</members>
         <members>Deal_Support_Process__c.Price__c</members>
         <members>Deal_Support_Process__c.Quantity__c</members>
@@ -105,12 +110,14 @@
         <members>Lead.Previously_Existing_Contact__c</members>
         <members>Account.Country_Code__c</members>
         <members>Order.Account_Country_Code__c</members>
+        <members>Order.Associated_Training_Contact__c</members>
         <members>Order.External_Document_Number__c</members>
         <members>Order.Payment_Type__c</members>
         <members>Order.Shipment_Date__c</members>
         <members>Order.Shipping_Agent_Code_Courier__c</members>
         <members>Order.Shipping_Agent_Service_Code_Priority__c</members>
         <members>Order.Tracking_Number__c</members>
+        <members>Order.Training_Event__c</members>
         <members>Order.Venue_Code__c</members>
         <members>Contact.CNPJ__c</members>
         <members>Contact.Country_Code__c</members>
@@ -119,9 +126,9 @@
         <members>Opportunity.All_DSPs_Confirmed__c</members>
         <members>Opportunity.Closed_Reason__c</members>
         <members>Opportunity.Closed_Reason_Blank__c</members>
+        <members>Opportunity.Program_Requested_timeframe__c</members>
         <members>APXT_Redlining__Contract_Agreement__c.Data_Storage_Requirements__c</members>
         <members>Account.Data_Storage_Requirements__c</members>
-        <members>Opportunity.Account_Market_Reach__c</members>
         <members>APXT_Redlining__Contract_Agreement__c.Deal_Support_Process__c</members>
         <members>Deal_Support_Process__c.Accelerate_CM_capability__c</members>
         <members>Deal_Support_Process__c.AccountId__c</members>
@@ -260,6 +267,7 @@
         <name>ListView</name>
     </types>
     <types>
+        <members>APXT_Redlining__Contract_Agreement__c-Contract Agreement Layout Custom</members>
         <members>Opportunity-Enterprise Engagement</members>
         <members>Opportunity-Global Sales Layout</members>
         <members>PricebookEntry-Price Book Entry Layout</members>
