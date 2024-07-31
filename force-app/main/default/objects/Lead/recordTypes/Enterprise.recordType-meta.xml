@@ -1653,21 +1653,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Prosci_AI_Chat_Solution__c</picklist>
-        <values>
-            <fullName>Enterprise Subscription %28available April 2024%29</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Individual Subscription %28considered Q4 2024%29</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Team Subscription %28considered Q4 2024%29</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Rating</picklist>
         <values>
             <fullName>Cold</fullName>
