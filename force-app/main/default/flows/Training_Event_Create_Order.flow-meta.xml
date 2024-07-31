@@ -466,7 +466,7 @@
         <inputAssignments>
             <field>CurrencyIsoCode</field>
             <value>
-                <elementReference>Get_Training_Event.CurrencyIsoCode</elementReference>
+                <elementReference>Get_Training_Event.Deal_Support_Process__r.CurrencyIsoCode</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
