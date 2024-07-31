@@ -23,6 +23,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Affiliated_with_Partner_Company__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>All_Access_Portal_type__c</picklist>
         <values>
             <fullName>Direct</fullName>
@@ -52,7 +63,22 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>501M - 1B</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>50M - 100M</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Are_you_registering_multiple_people__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -133,6 +159,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Billing_Address_Same_as_Shipping_Address__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Certified__c</picklist>
         <values>
             <fullName>Yes</fullName>
@@ -150,6 +187,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>It%27s used on isolated projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>It%27s used on multiple projects but without a comprehensive approach in the organization</fullName>
             <default>false</default>
         </values>
@@ -159,7 +200,7 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Click_Thur_T_C_s_Agreement__c</picklist>
+        <picklist>Click_Thru_T_C_s_Agreement__c</picklist>
         <values>
             <fullName>Agree</fullName>
             <default>false</default>
@@ -221,7 +262,7 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Evangalist__c</picklist>
+        <picklist>Evangelist__c</picklist>
         <values>
             <fullName>No</fullName>
             <default>false</default>
@@ -241,11 +282,11 @@
     <picklistValues>
         <picklist>Full_Partial__c</picklist>
         <values>
-            <fullName>Full</fullName>
+            <fullName>I am requesting a full scholarship</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Partial</fullName>
+            <fullName>I am requesting a partial scholarship</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -265,6 +306,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Individual_or_Company_Payment__c</picklist>
+        <values>
+            <fullName>Company Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual Payment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Instructor__c</picklist>
         <values>
             <fullName>Butch</fullName>
@@ -277,6 +329,10 @@
     </picklistValues>
     <picklistValues>
         <picklist>Job_Level__c</picklist>
+        <values>
+            <fullName>Admin</fullName>
+            <default>false</default>
+        </values>
         <values>
             <fullName>Associate</fullName>
             <default>false</default>
@@ -475,6 +531,21 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>MQL_Type__c</picklist>
+        <values>
+            <fullName>Form Submission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Scoring Model</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Name</picklist>
         <values>
             <fullName>Dr%2E</fullName>
@@ -538,6 +609,33 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Payment_Type__c</picklist>
+        <values>
+            <fullName>EFT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EFT%2FInvoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>For visit %28bank transfer%29%3A R%2410%2C000%2E00</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installments %28credit card%29%3A R%2410%2C500%2E00</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upon visit %28credit card - 1 payment%29%3A R%2410%2C000%2E00</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>redit Card</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Program_Title__c</picklist>
         <values>
             <fullName>Certification%2C Min 8 %2F Max 18 Participants</fullName>
@@ -577,9 +675,91 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Program_Type__c</picklist>
+        <values>
+            <fullName>ADKAR Model Mastery 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADKAR Model Mastery 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Achieve Change Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Management Sponsor Briefing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivering Project Results Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECM Boot Camp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve Project Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrating Agile and Change Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leading Your Team Through Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Methodology Application Program %28MAP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28please share in comments%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Practitioner Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taking Charge of Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Train-the-Trainer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Prosci_AI_Chat_Solution__c</picklist>
+        <values>
+            <fullName>Enterprise Subscription %28available April 2024%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual Subscription %28considered Q4 2024%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Subscription %28considered Q4 2024%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Prosci_Certified_Advanced_Instructor__c</picklist>
         <values>
+            <fullName>Active %28GAN Partnership Ending%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired %28Former GAN Partner%29</fullName>
             <default>false</default>
         </values>
         <values>
@@ -601,11 +781,35 @@
     <picklistValues>
         <picklist>Reason_for_Contact__c</picklist>
         <values>
+            <fullName>Advisory and consulting services</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Attending a public session</fullName>
             <default>false</default>
         </values>
         <values>
+            <fullName>Bookstore orders and payment questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change of Company or Email Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital badges%2C proof of certification or attendance</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Distributing Prosci materials at organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise Access To Prosci%27s World-Class Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global training availability %28outside of US%2C Canada%2C Australia%2C and New Zealand%29</fullName>
             <default>false</default>
         </values>
         <values>
@@ -617,15 +821,23 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Learning more about change management</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Onsite Training</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Ordering a product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Training For Your Organization or Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prosci Portal And Digital Products Suite Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training registration or payment questions</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -715,7 +927,15 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>I am a change management deployment leader</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>I am a consultant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I am a full-time change practitioner %28I spend more than 51%25 of my time on change management%29</fullName>
             <default>false</default>
         </values>
         <values>
@@ -751,6 +971,21 @@
         </values>
         <values>
             <fullName>Timecard Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>of_Participants__c</picklist>
+        <values>
+            <fullName>1-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5-9</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -806,6 +1041,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Business Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Change Advisor</fullName>
             <default>false</default>
         </values>
@@ -819,6 +1058,10 @@
         </values>
         <values>
             <fullName>Change Enablement Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Specialist</fullName>
             <default>false</default>
         </values>
         <values>
@@ -842,11 +1085,19 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Product Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Project Manager</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Project Manager - Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Architect</fullName>
             <default>false</default>
         </values>
         <values>

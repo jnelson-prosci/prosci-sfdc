@@ -11,11 +11,6 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Onsite Training</fullName>
-                <default>false</default>
-                <label>Onsite Training</label>
-            </value>
-            <value>
                 <fullName>Attending a public session</fullName>
                 <default>false</default>
                 <label>Attending a public session</label>
@@ -41,9 +36,54 @@
                 <label>Having Prosci speak at an event</label>
             </value>
             <value>
-                <fullName>Learning more about change management</fullName>
+                <fullName>Training registration or payment questions</fullName>
                 <default>false</default>
-                <label>Learning more about change management</label>
+                <label>Training registration or payment questions</label>
+            </value>
+            <value>
+                <fullName>Bookstore orders and payment questions</fullName>
+                <default>false</default>
+                <label>Bookstore orders and payment questions</label>
+            </value>
+            <value>
+                <fullName>Prosci Portal And Digital Products Suite Support</fullName>
+                <default>false</default>
+                <label>Prosci Portal and Digital Products suite support</label>
+            </value>
+            <value>
+                <fullName>Private Training For Your Organization or Team</fullName>
+                <default>false</default>
+                <label>Private Training For Your Organization or Team</label>
+            </value>
+            <value>
+                <fullName>Global training availability (outside of US, Canada, Australia, and New Zealand)</fullName>
+                <default>false</default>
+                <label>Global training availability (outside of US, Canada, Australia, and New Zealand)</label>
+            </value>
+            <value>
+                <fullName>Digital badges, proof of certification or attendance</fullName>
+                <default>false</default>
+                <label>Digital badges, proof of certification or attendance</label>
+            </value>
+            <value>
+                <fullName>Enterprise Access To Prosci&apos;s World-Class Tools</fullName>
+                <default>false</default>
+                <label>Enterprise Access To Prosci&apos;s World-Class Tools</label>
+            </value>
+            <value>
+                <fullName>Advisory and consulting services</fullName>
+                <default>false</default>
+                <label>Advisory and consulting services</label>
+            </value>
+            <value>
+                <fullName>Change of Company or Email Address</fullName>
+                <default>false</default>
+                <label>Change of Company or Email Address</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
             </value>
         </valueSetDefinition>
     </valueSet>

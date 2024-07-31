@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>How_did_you_hear_about_Prosci__c</fullName>
+    <fullName>historical_europe_certified__c</fullName>
+    <defaultValue>false</defaultValue>
     <externalId>false</externalId>
-    <label>How did you hear about Prosci</label>
-    <length>5000</length>
+    <label>Historical Europe Certified</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
-    <type>LongTextArea</type>
-    <visibleLines>3</visibleLines>
+    <type>Checkbox</type>
 </CustomField>

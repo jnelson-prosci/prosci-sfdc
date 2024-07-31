@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Amount_you_are_requesting__c</fullName>
+    <fullName>Original_Source_Drill_Down_1__c</fullName>
     <externalId>false</externalId>
-    <label>Amount you are requesting</label>
-    <precision>6</precision>
+    <label>Original Source - Drill Down 1</label>
+    <length>255</length>
     <required>false</required>
-    <scale>2</scale>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
-    <type>Number</type>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
     <unique>false</unique>
 </CustomField>

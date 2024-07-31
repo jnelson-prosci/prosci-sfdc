@@ -3,10 +3,43 @@
     <fullName>Payment_Type__c</fullName>
     <externalId>false</externalId>
     <label>Payment Type</label>
-    <length>50</length>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
-    <type>Text</type>
-    <unique>false</unique>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>redit Card</fullName>
+                <default>false</default>
+                <label>redit Card</label>
+            </value>
+            <value>
+                <fullName>EFT</fullName>
+                <default>false</default>
+                <label>EFT</label>
+            </value>
+            <value>
+                <fullName>EFT/Invoice</fullName>
+                <default>false</default>
+                <label>EFT/Invoice</label>
+            </value>
+            <value>
+                <fullName>For visit (bank transfer): R$10,000.00</fullName>
+                <default>false</default>
+                <label>For visit (bank transfer): R$10,000.00</label>
+            </value>
+            <value>
+                <fullName>Upon visit (credit card - 1 payment): R$10,000.00</fullName>
+                <default>false</default>
+                <label>Upon visit (credit card - 1 payment): R$10,000.00</label>
+            </value>
+            <value>
+                <fullName>Installments (credit card): R$10,500.00</fullName>
+                <default>false</default>
+                <label>Installments (credit card): R$10,500.00</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
 </CustomField>

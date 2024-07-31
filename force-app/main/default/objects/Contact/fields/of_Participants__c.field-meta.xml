@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Contact_Type__c</fullName>
+    <fullName>of_Participants__c</fullName>
     <externalId>false</externalId>
-    <label>Contact Type</label>
+    <label># of Participants</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>true</trackHistory>
+    <trackHistory>false</trackHistory>
     <type>Picklist</type>
     <valueSet>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Type B</fullName>
+                <fullName>1-4</fullName>
                 <default>false</default>
-                <label>Type B</label>
+                <label>1-4</label>
             </value>
             <value>
-                <fullName>Enterprise</fullName>
+                <fullName>5-9</fullName>
                 <default>false</default>
-                <label>Enterprise</label>
+                <label>5-9</label>
             </value>
             <value>
-                <fullName>Self-service</fullName>
+                <fullName>10+</fullName>
                 <default>false</default>
-                <label>Self-service</label>
+                <label>10+</label>
             </value>
         </valueSetDefinition>
     </valueSet>
