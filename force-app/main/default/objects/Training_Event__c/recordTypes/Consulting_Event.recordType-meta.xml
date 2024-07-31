@@ -257,19 +257,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Prosci Chile</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Prosci Europe</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Prosci Iberia</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Prosci Mexico</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -424,27 +412,11 @@
     <picklistValues>
         <picklist>Title__c</picklist>
         <values>
-            <fullName>Change Management Deployment Support</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Change Management Project Support</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Change Portfolio Workshop</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Consulting</fullName>
             <default>true</default>
         </values>
         <values>
             <fullName>Custom-Advisory Services</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>ECM Workshop</fullName>
             <default>false</default>
         </values>
         <values>
