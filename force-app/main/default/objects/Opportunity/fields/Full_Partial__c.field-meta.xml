@@ -9,7 +9,6 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -18,9 +17,14 @@
                 <label>I am requesting a full scholarship for the program selected.</label>
             </value>
             <value>
-                <fullName>I am requesting a partial scholarship for the program selected.</fullName>
+                <fullName>I am requesting a full scholarship</fullName>
                 <default>false</default>
-                <label>I am requesting a partial scholarship for the program selected.</label>
+                <label>I am requesting a full scholarship</label>
+            </value>
+            <value>
+                <fullName>I am requesting a partial scholarship</fullName>
+                <default>false</default>
+                <label>I am requesting a partial scholarship</label>
             </value>
         </valueSetDefinition>
     </valueSet>
