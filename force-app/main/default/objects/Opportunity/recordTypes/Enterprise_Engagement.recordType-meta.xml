@@ -93,11 +93,11 @@
     <picklistValues>
         <picklist>Full_Partial__c</picklist>
         <values>
-            <fullName>I am requesting a full scholarship for the program selected%2E</fullName>
+            <fullName>I am requesting a full scholarship for the program selected.</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>I am requesting a partial scholarship for the program selected%2E</fullName>
+            <fullName>I am requesting a partial scholarship for the program selected.</fullName>
             <default>false</default>
         </values>
     </picklistValues>
