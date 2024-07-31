@@ -97,7 +97,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>I am requesting a partial scholarship for the program selected.</fullName>
+            <fullName>I am requesting a full scholarship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I am requesting a partial scholarship</fullName>
             <default>false</default>
         </values>
     </picklistValues>
