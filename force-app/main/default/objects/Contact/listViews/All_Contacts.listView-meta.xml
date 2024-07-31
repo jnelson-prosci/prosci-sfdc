@@ -7,7 +7,7 @@
     <columns>CONTACT.PHONE1</columns>
     <columns>CONTACT.EMAIL</columns>
     <columns>CORE.USERS.ALIAS</columns>
-    <filterScope>Everything</filterScope>
+    <filterScope>Mine</filterScope>
     <label>All Contacts</label>
     <sharedTo>
         <allInternalUsers></allInternalUsers>

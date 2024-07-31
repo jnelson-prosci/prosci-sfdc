@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Amount_you_are_requesting__c</fullName>
+    <fullName>Billing_Address_Same_as_Shipping_Address__c</fullName>
     <externalId>false</externalId>
-    <label>Amount you are requesting</label>
-    <precision>6</precision>
+    <label>Billing Address Same as Shipping Address</label>
     <required>false</required>
-    <scale>2</scale>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
-    <type>Number</type>
-    <unique>false</unique>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Yes_No</valueSetName>
+    </valueSet>
 </CustomField>

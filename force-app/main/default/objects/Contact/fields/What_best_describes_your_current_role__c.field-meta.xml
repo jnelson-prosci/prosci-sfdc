@@ -36,6 +36,16 @@
                 <default>false</default>
                 <label>Other</label>
             </value>
+            <value>
+                <fullName>I am a change management deployment leader</fullName>
+                <default>false</default>
+                <label>I am a change management deployment leader</label>
+            </value>
+            <value>
+                <fullName>I am a full-time change practitioner (I spend more than 51% of my time on change management)</fullName>
+                <default>false</default>
+                <label>I am a full-time change practitioner (I spend more than 51% of my time on change management)</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

@@ -32,6 +32,11 @@
                 <default>false</default>
                 <label>Change management standards are a formal part of our business processes at all levels</label>
             </value>
+            <value>
+                <fullName>It&apos;s used on isolated projects</fullName>
+                <default>false</default>
+                <label>It&apos;s used on isolated projects</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
