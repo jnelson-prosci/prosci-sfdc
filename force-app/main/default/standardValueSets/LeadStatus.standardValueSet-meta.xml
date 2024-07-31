@@ -14,18 +14,6 @@
         <converted>false</converted>
     </standardValue>
     <standardValue>
-        <fullName>Qualified</fullName>
-        <default>false</default>
-        <label>Qualified</label>
-        <converted>false</converted>
-    </standardValue>
-    <standardValue>
-        <fullName>Unqualified</fullName>
-        <default>false</default>
-        <label>Unqualified</label>
-        <converted>false</converted>
-    </standardValue>
-    <standardValue>
         <fullName>Outbound</fullName>
         <default>false</default>
         <label>Outbound</label>
@@ -42,5 +30,41 @@
         <default>false</default>
         <label>Identify Opportunity</label>
         <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Working</fullName>
+        <default>false</default>
+        <label>Working</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualified</fullName>
+        <default>false</default>
+        <label>Qualified</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Unqualified</fullName>
+        <default>false</default>
+        <label>Unqualified</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Unresponsive</fullName>
+        <default>false</default>
+        <label>Unresponsive</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Nurture</fullName>
+        <default>false</default>
+        <label>Nurture</label>
+        <converted>false</converted>
     </standardValue>
 </StandardValueSet>

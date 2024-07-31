@@ -3,7 +3,7 @@
     <fullName>Training_Manager_Requested__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Training Manager Requested</label>
+    <label>Training Success Specialist Requested</label>
     <referenceTo>User</referenceTo>
     <relationshipName>Opportunities1</relationshipName>
     <required>false</required>

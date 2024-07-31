@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Product2.Billing_Type__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Opportunity-Enterprise Engagement</members>
+		<members>Opportunity-Lightning Product Order</members>
+		<members>OpportunityLineItem-Opportunity Product Layout</members>
+		<members>Product2-Product Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
+	</types>
+	<version>60.0</version>
+</Package>

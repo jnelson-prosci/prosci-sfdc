@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Agent_Code_Courier__c</fullName>
+    <externalId>false</externalId>
+    <label>Shipping Agent Code (Courier)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DHL</fullName>
+                <default>false</default>
+                <label>DHL</label>
+            </value>
+            <value>
+                <fullName>DHLEXP</fullName>
+                <default>false</default>
+                <label>DHLEXP</label>
+            </value>
+            <value>
+                <fullName>ELECTRONIC</fullName>
+                <default>false</default>
+                <label>ELECTRONIC</label>
+            </value>
+            <value>
+                <fullName>FEDEX</fullName>
+                <default>false</default>
+                <label>FEDEX</label>
+            </value>
+            <value>
+                <fullName>UPS</fullName>
+                <default>false</default>
+                <label>UPS</label>
+            </value>
+            <value>
+                <fullName>USPS</fullName>
+                <default>false</default>
+                <label>USPS</label>
+            </value>
+            <value>
+                <fullName>WILL_CALL</fullName>
+                <default>false</default>
+                <label>WILL CALL</label>
+            </value>
+            <value>
+                <fullName>AUPOST</fullName>
+                <default>false</default>
+                <label>AUPOST</label>
+            </value>
+            <value>
+                <fullName>COURIER</fullName>
+                <default>false</default>
+                <label>COURIER</label>
+            </value>
+            <value>
+                <fullName>OWN LOG.</fullName>
+                <default>false</default>
+                <label>OWN LOG.</label>
+            </value>
+            <value>
+                <fullName>PACKSEND</fullName>
+                <default>false</default>
+                <label>PACKSEND</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

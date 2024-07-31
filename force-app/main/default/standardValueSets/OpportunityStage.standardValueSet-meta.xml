@@ -311,4 +311,13 @@
         <probability>0</probability>
         <won>false</won>
     </standardValue>
+    <standardValue>
+        <fullName>Closed - Lost</fullName>
+        <default>false</default>
+        <label>Closed - Lost</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
 </StandardValueSet>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Prosci Global Lead Assignments</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>ANZ_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>ANZ</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Brazil_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>Brazil</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Canada_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>Canada</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LATAM_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>LATAM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Singapore_Leads_Asian_country_leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>Singapore</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Europe_Leads_Dutch</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(
+    Queue_Family__c = &apos;Europe&apos;,
+    CONTAINS(TEXT(Preferred_Language__c), &apos;Dutch&apos;)
+)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Europe_Leads_Spanish</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(
+    Queue_Family__c = &apos;Europe&apos;,
+    CONTAINS(TEXT(Preferred_Language__c), &apos;Spanish&apos;)
+)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Europe_Leads_Italian</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(
+Queue_Family__c = &apos;Europe&apos;,
+CONTAINS(TEXT(Preferred_Language__c), &apos;Italian﻿﻿&apos;)
+)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Europe_Leads_French</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(
+Queue_Family__c = &apos;Europe&apos;,
+CONTAINS(TEXT(Preferred_Language__c), &apos;French&apos;)
+)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Europe_Leads_Nordic_Region</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(
+				Queue_Family__c = &apos;Europe&apos;,
+				OR(
+        CONTAINS(TEXT(Preferred_Language__c), &apos;Danish&apos;),
+				    CONTAINS(TEXT(Preferred_Language__c), &apos;Norwegian&apos;),
+				    CONTAINS(TEXT(Preferred_Language__c), &apos;Icelandic&apos;),
+				    CONTAINS(TEXT(Preferred_Language__c), &apos;Finnish&apos;),
+				    CONTAINS(TEXT(Preferred_Language__c), &apos;Greenlandic&apos;)
+    )
+)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Europe_Leads_German</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(
+Queue_Family__c = &apos;Europe&apos;,
+CONTAINS(TEXT(Preferred_Language__c), &apos;German&apos;)
+)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Europe_Leads_English</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>Europe</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>US_Leads_Carnivores</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(                 ISPICKVAL(Country_Code__c, &apos;US&apos;),                 OR(                     ISPICKVAL(Industry, &apos;Finance/Banking&apos;),                     ISPICKVAL(Industry, &apos;Insurance&apos;),                     ISPICKVAL(Industry, &apos;Consulting&apos;),                     ISPICKVAL(Industry, &apos;Professional, Scientific, &amp; Tech Service&apos;),                     ISPICKVAL(Industry, &apos;Transportation &amp; Warehousing&apos;)                 )             )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>US_Leads_Nitro</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(                 ISPICKVAL(Country_Code__c, &apos;US&apos;),                 OR(                     ISPICKVAL(Industry, &apos;Non-profit&apos;),                     CONTAINS(TEXT(Industry), &apos;Government&apos;),                     ISPICKVAL(Industry, &apos;Pharmaceutical&apos;),                     ISPICKVAL(Industry, &apos;Education Services&apos;)                 )             )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>US_Leads_Invictus</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(                 ISPICKVAL(Country_Code__c, &apos;US&apos;),                 OR(                     CONTAINS(TEXT(Industry), &apos;Manufacturing&apos;),                     ISPICKVAL(Industry, &apos;Energy, Oil, &amp; Gas&apos;),                     ISPICKVAL(Industry, &apos;Fast Moving Consumer Goods&apos;),                     ISPICKVAL(Industry, &apos;Utilities&apos;),                     ISPICKVAL(Industry, &apos;Aerospace&apos;),                     ISPICKVAL(Industry, &apos;Services - General&apos;),                     ISPICKVAL(Industry, &apos;Engineering&apos;)                 )             )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>US_Leads_The_Challenger</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(                 ISPICKVAL(Country_Code__c, &apos;US&apos;),                 OR(                     ISPICKVAL(Industry, &apos;ICT Hardware &amp; Software&apos;),                     ISPICKVAL(Industry, &apos;Telecommunications&apos;),                     ISPICKVAL(Industry, &apos;Healthcare&apos;),                     ISPICKVAL(Industry, &apos;Information Services/Technology&apos;),                     ISPICKVAL(Industry, &apos;Retail Trade&apos;)                 )             )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>US_Leads_Carnivores</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>US</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Other_Leads_GAN_other</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Queue_Family__c</field>
+                <operation>equals</operation>
+                <value>GAN</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

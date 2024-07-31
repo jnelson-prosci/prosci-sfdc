@@ -8,14 +8,6 @@
             <outputField>Affiliated_with_Partner_Company__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Amount_you_are_requesting__c</inputField>
-            <outputField>Amount_you_are_requesting__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Annual_Revenue_Picklist__c</inputField>
-            <outputField>Annual_Revenue__c</outputField>
-        </mappingFields>
-        <mappingFields>
             <inputField>Are_you_registering_multiple_people__c</inputField>
             <outputField>Are_you_registering_multiple_people__c</outputField>
         </mappingFields>
@@ -56,8 +48,8 @@
             <outputField>BillingSuburb__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Brazil_Cancellation_Acceptance__c</inputField>
-            <outputField>Brazil_Cancellation_Acceptance__c</outputField>
+            <inputField>Browser_Language_Settings__c</inputField>
+            <outputField>Browser_Language_Settings__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>CC_Date_Joined__c</inputField>
@@ -112,6 +104,10 @@
             <outputField>How_did_you_hear_about_Prosci__c</outputField>
         </mappingFields>
         <mappingFields>
+            <inputField>I_need_Advisory_Statements__c</inputField>
+            <outputField>I_need_Advisory_Statements__c</outputField>
+        </mappingFields>
+        <mappingFields>
             <inputField>Individual_or_Company_Payment__c</inputField>
             <outputField>Individual_or_Company_Payment__c</outputField>
         </mappingFields>
@@ -128,11 +124,15 @@
             <outputField>Payment_Type__c</outputField>
         </mappingFields>
         <mappingFields>
+            <inputField>Preferred_Language__c</inputField>
+            <outputField>Preferred_Language__c</outputField>
+        </mappingFields>
+        <mappingFields>
             <inputField>Program_Type__c</inputField>
             <outputField>Program_Type__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Prosci_Kaiya_AI_Tool__c</inputField>
+            <inputField>Prosci_AI_Chat_Solution__c</inputField>
             <outputField>Prosci_AI_Chat_Solution__c</outputField>
         </mappingFields>
         <mappingFields>
@@ -162,10 +162,6 @@
         <mappingFields>
             <inputField>Amount_you_are_requesting__c</inputField>
             <outputField>Amount_you_are_requesting__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Attendance_dependent_on_assistance__c</inputField>
-            <outputField>Attendance_dependent_on_assistance__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>I_need_to_better_manage_my_change_portfo__c</inputField>
@@ -204,20 +200,24 @@
             <outputField>Help_you_achieve_plans_goals__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>How_did_you_hear_about_Prosci__c</inputField>
-            <outputField>How_did_you_hear_about_Prosci__c</outputField>
+            <inputField>I_need_Advisory_Statements__c</inputField>
+            <outputField>I_need_Advisory_Statements__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Master_Instructor_Lead_Generator__c</inputField>
+            <outputField>Master_Instructor_Lead_Generator__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>I_need_to_integrate_CM_with_other_discip__c</inputField>
             <outputField>Integrate_CM_with_other_disciplines__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Lead_Type__c</inputField>
-            <outputField>Lead_Type__c</outputField>
+            <inputField>Job_Title__c</inputField>
+            <outputField>Job_Title__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Leader_Email__c</inputField>
-            <outputField>Leader_Email__c</outputField>
+            <inputField>Lead_Type__c</inputField>
+            <outputField>Lead_Type__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>Leader_First_Name__c</inputField>
@@ -226,10 +226,6 @@
         <mappingFields>
             <inputField>Leader_Last_Name__c</inputField>
             <outputField>Leader_Last_Name__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Leader_Title__c</inputField>
-            <outputField>Leader_Title__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>Licensing_Type__c</inputField>
@@ -249,11 +245,7 @@
         </mappingFields>
         <mappingFields>
             <inputField>Program_Type__c</inputField>
-            <outputField>Interested_Program_Type_From_Lead__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Reason_for_Contact__c</inputField>
-            <outputField>Reason_for_Contact__c</outputField>
+            <outputField>Program_Title__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>Speaking_Engagement_Details__c</inputField>
@@ -270,10 +262,6 @@
         <mappingFields>
             <inputField>I_need_support_delivering_on_a_must_win__c</inputField>
             <outputField>Support_delivering_on_a_must_win__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Training_Program_would_like_to_attend__c</inputField>
-            <outputField>Training_Program_would_like_to_attend__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>Type_of_Speaking_Engagement__c</inputField>

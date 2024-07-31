@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>IN</label>
+    <protected>false</protected>
+    <values>
+        <field>Country_Name__c</field>
+        <value xsi:type="xsd:string">India</value>
+    </values>
+    <values>
+        <field>Language__c</field>
+        <value xsi:type="xsd:string">Assamese;Bangla;Bodo;Chakma;English;Gujarati;Hindi;Kannada;Kashmiri;Kashmiri;Kashmiri;Konkani;Malayalam;Manipuri;Manipuri;Marathi;Nepali;Odia;Punjabi;Sanskrit;Santali;Santali;Tamil;Telugu;Tibetan;Urdu;Urdu;Urdu</value>
+    </values>
+    <values>
+        <field>Queue_Family__c</field>
+        <value xsi:type="xsd:string">Singapore</value>
+    </values>
+</CustomMetadata>

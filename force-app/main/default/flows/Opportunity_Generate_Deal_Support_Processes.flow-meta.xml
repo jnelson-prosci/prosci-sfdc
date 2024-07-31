@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <assignments>
+        <description>Adds a Deal Support Process record to the collection of records of the same classification</description>
+        <name>Add_Deal_Support_Process_Record_to_Collection</name>
+        <label>Add Deal Support Process Record to Collection</label>
+        <locationX>1649</locationX>
+        <locationY>497</locationY>
+        <assignmentItems>
+            <assignToReference>dealSupportProcesses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>dealSupportProcess</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Iterate_through_Opportunity_Products</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Adds a Deal Support Process record, whose Record Type = Training, to the collection of records of the same classification</description>
+        <name>Add_Deal_Support_Process_Record_to_Collection_Training</name>
+        <label>Add Deal Support Process Record to Collection (Training)</label>
+        <locationX>2547</locationX>
+        <locationY>258</locationY>
+        <assignmentItems>
+            <assignToReference>dealSupportProcesses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>dealSupportProcess</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Increment_Training_Counter</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Advisory record type Id to its designated variable</description>
+        <name>Assign_Advisory</name>
+        <label>Assign Advisory</label>
+        <locationX>1082</locationX>
+        <locationY>564</locationY>
+        <assignmentItems>
+            <assignToReference>advisoryDSPId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Assign_Record_Type_Ids_to_Variables.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_Record_Type_Ids_to_Variables</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Advisory Record Type Id to dspRecordType variable</description>
+        <name>Assign_Advisory_Record_Type</name>
+        <label>Assign Advisory Record Type</label>
+        <locationX>1758</locationX>
+        <locationY>371</locationY>
+        <assignmentItems>
+            <assignToReference>dspRecordType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>advisoryDSPId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dspName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>advisoryDSPName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_Deal_Support_Process_Fields</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>[Re-]Assigns the current Opportunity Product Id and resets the trainingCounter to zero if this variable does not match the Opportunity Product Id in the loop.</description>
+        <name>Assign_Current_Opportunity_Product</name>
+        <label>Assign Current Opportunity Product</label>
+        <locationX>2156</locationX>
+        <locationY>417</locationY>
+        <assignmentItems>
+            <assignToReference>currentOppProductId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>trainingCounter</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Number_of_Trainings</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns values to Deal Support Process record</description>
+        <name>Assign_Deal_Support_Process_Fields</name>
+        <label>Assign Deal Support Process Fields</label>
+        <locationX>1879</locationX>
+        <locationY>497</locationY>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Quantity__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Quantity</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Price__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.UnitPrice</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Opportunity_Product__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>dspRecordType</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.AccountId__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Opportunity.Account.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Opportunity__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>opportunityId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Program_Title__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Product2.Program_Title__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>dspName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Opportunity.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.CurrencyIsoCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Opportunity.CurrencyIsoCode</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Deal_Support_Process_Record_to_Collection</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns values to Deal Support Process record where Record Type = Training</description>
+        <name>Assign_Deal_Support_Process_Fields_Training</name>
+        <label>Assign Deal Support Process Fields Training</label>
+        <locationX>2435</locationX>
+        <locationY>139</locationY>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Quantity__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Price__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.UnitPrice</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Opportunity_Product__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>trainingDSPId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.AccountId__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Opportunity.Account.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Opportunity__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>opportunityId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Program_Title__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Product2.Program_Title__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>trainingDSPName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Opportunity.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dealSupportProcess.CurrencyIsoCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_Products.Opportunity.CurrencyIsoCode</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Deal_Support_Process_Record_to_Collection_Training</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Licensing record type Id to its designated variable</description>
+        <name>Assign_Licensing</name>
+        <label>Assign Licensing</label>
+        <locationX>1208</locationX>
+        <locationY>570</locationY>
+        <assignmentItems>
+            <assignToReference>licensingDSPId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Assign_Record_Type_Ids_to_Variables.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_Record_Type_Ids_to_Variables</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Licensing Record Type Id to dspRecordType variable</description>
+        <name>Assign_Licensing_Record_Type</name>
+        <label>Assign Licensing Record Type</label>
+        <locationX>1995</locationX>
+        <locationY>368</locationY>
+        <assignmentItems>
+            <assignToReference>dspRecordType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>licensingDSPId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dspName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>licensingDSPName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_Deal_Support_Process_Fields</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Training record type Id to its designated variable</description>
+        <name>Assign_Training</name>
+        <label>Assign Training</label>
+        <locationX>1339</locationX>
+        <locationY>566</locationY>
+        <assignmentItems>
+            <assignToReference>trainingDSPId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Assign_Record_Type_Ids_to_Variables.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_Record_Type_Ids_to_Variables</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Increments Training Counter by one for each Training session</description>
+        <name>Increment_Training_Counter</name>
+        <label>Increment Training Counter</label>
+        <locationX>2435</locationX>
+        <locationY>365</locationY>
+        <assignmentItems>
+            <assignToReference>trainingCounter</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Number_of_Trainings</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Determines which record type should be assigned to which variable</description>
+        <name>Check_Deal_Support_Process_Name</name>
+        <label>Check Deal Support Process Name</label>
+        <locationX>1192</locationX>
+        <locationY>340</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Record_Type_Ids_to_Variables</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_DSP_Advisory</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Assign_Record_Type_Ids_to_Variables.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>advisoryRT_DSPName</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Advisory</targetReference>
+            </connector>
+            <label>Is DSP Advisory</label>
+        </rules>
+        <rules>
+            <name>Is_DSP_Licensing</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Assign_Record_Type_Ids_to_Variables.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>licensingRT_DSPName</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Licensing</targetReference>
+            </connector>
+            <label>Is DSP Licensing</label>
+        </rules>
+        <rules>
+            <name>Is_DSP_Training</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Assign_Record_Type_Ids_to_Variables.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>trainingRT_DSPName</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Training</targetReference>
+            </connector>
+            <label>Is DSP Training</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Counts the number of Training sessions purchased; determines how many Deal Support Process - Training records to create.</description>
+        <name>Check_Number_of_Trainings</name>
+        <label>Check Number of Trainings</label>
+        <locationX>2110</locationX>
+        <locationY>157</locationY>
+        <defaultConnector>
+            <targetReference>Iterate_through_Opportunity_Products</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Counter_Is_Less_Than_Number_of_Training_Sessions</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>trainingCounter</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>Iterate_through_Opportunity_Products.Quantity</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Iterate_through_Opportunity_Products.Id</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>currentOppProductId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Deal_Support_Process_Fields_Training</targetReference>
+            </connector>
+            <label>Counter Is Less Than Number of Training Sessions</label>
+        </rules>
+        <rules>
+            <name>Is_New_Opportunity_Product</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Iterate_through_Opportunity_Products.Id</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>currentOppProductId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Current_Opportunity_Product</targetReference>
+            </connector>
+            <label>Is New Opportunity Product</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks the Product Family of the current Opportunity Product record</description>
+        <name>Check_Product_Family</name>
+        <label>Check Product Family</label>
+        <locationX>1866</locationX>
+        <locationY>264</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Advisory</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Iterate_through_Opportunity_Products.Product2.Family</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>advisoryRT_DSPName</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Advisory_Record_Type</targetReference>
+            </connector>
+            <label>Is Advisory</label>
+        </rules>
+        <rules>
+            <name>Is_Licensing</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Iterate_through_Opportunity_Products.Product2.Family</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>licensingRT_DSPName</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Licensing_Record_Type</targetReference>
+            </connector>
+            <label>Is Licensing</label>
+        </rules>
+        <rules>
+            <name>Is_Training</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Iterate_through_Opportunity_Products.Product2.Family</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>trainingRT_DSPName</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Number_of_Trainings</targetReference>
+            </connector>
+            <label>Is Training</label>
+        </rules>
+    </decisions>
+    <description>Autolaunched flow to be triggered by a button on an Opportunity record to generate Deal Support Process(es)</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Assembles the name for  Deal Support Process Advisory records</description>
+        <name>advisoryDSPName</name>
+        <dataType>String</dataType>
+        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - Advisory&apos;</expression>
+    </formulas>
+    <formulas>
+        <description>Assembles name for Deal Support Process Licensing records</description>
+        <name>licensingDSPName</name>
+        <dataType>String</dataType>
+        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + {!Iterate_through_Opportunity_Products.Product2.Name}</expression>
+    </formulas>
+    <formulas>
+        <description>Assembles name for Deal Support Process Training record</description>
+        <name>trainingDSPName</name>
+        <dataType>String</dataType>
+        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + TEXT({!Iterate_through_Opportunity_Products.Product2.Program_Title__c}) + {!trainingGroupNumber}</expression>
+    </formulas>
+    <formulas>
+        <description>Appends the group number to the Deal Support Process Training record name if the number of sessions is greater than one</description>
+        <name>trainingGroupNumber</name>
+        <dataType>String</dataType>
+        <expression>IF({!Iterate_through_Opportunity_Products.Quantity} &gt; 1, &apos; - Group &apos; + TEXT({!trainingCounter} + 1), &apos;&apos;)</expression>
+    </formulas>
+    <interviewLabel>Opportunity - Generate Deal Support Processes {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity - Generate Deal Support Processes</label>
+    <loops>
+        <description>Assigns the retrieved Deal Support Process record types to their respective variables</description>
+        <name>Assign_Record_Type_Ids_to_Variables</name>
+        <label>Assign Record Type Ids to Variables</label>
+        <locationX>1204</locationX>
+        <locationY>155</locationY>
+        <collectionReference>Get_Deal_Support_Process_Record_Types</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_Deal_Support_Process_Name</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Iterate_through_Opportunity_Products</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>Iterates through the retrieved collection of Opportunity Products</description>
+        <name>Iterate_through_Opportunity_Products</name>
+        <label>Iterate through Opportunity Products</label>
+        <locationX>1641</locationX>
+        <locationY>157</locationY>
+        <collectionReference>Get_Opportunity_Products</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_Product_Family</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Create_Deal_Support_Processes</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Creates Deal Support Process records</description>
+        <name>Create_Deal_Support_Processes</name>
+        <label>Create Deal Support Processes</label>
+        <locationX>1445</locationX>
+        <locationY>706</locationY>
+        <connector>
+            <targetReference>Update_Opportunity</targetReference>
+        </connector>
+        <inputReference>dealSupportProcesses</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <description>Retrieves the active Deal Support Process record types</description>
+        <name>Get_Deal_Support_Process_Record_Types</name>
+        <label>Get Deal Support Process Record Types</label>
+        <locationX>988</locationX>
+        <locationY>340</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Record_Type_Ids_to_Variables</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4)</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Deal_Support_Process__c</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>advisoryRT_DSPName</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>licensingRT_DSPName</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>trainingRT_DSPName</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves triggering Opportunity record</description>
+        <name>Get_Opportunity</name>
+        <label>Get Opportunity</label>
+        <locationX>989</locationX>
+        <locationY>220</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Deal_Support_Process_Record_Types</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>opportunityId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves all active Opportunity Products related to a given Opportunity</description>
+        <name>Get_Opportunity_Products</name>
+        <label>Get Opportunity Products</label>
+        <locationX>990</locationX>
+        <locationY>81</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Opportunity</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OpportunityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>opportunityId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>OpportunityLineItem</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Enables the Has Deal Support Process checkbox to denote that a record of that SObject type has been generated</description>
+        <name>Update_Opportunity</name>
+        <label>Update Opportunity</label>
+        <locationX>1446</locationX>
+        <locationY>875</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>opportunityId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Has_Deal_Support_Process__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <start>
+        <locationX>1130</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Get_Opportunity_Products</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Represents the Id for the Deal Support Process record type &quot;Advisory&quot;</description>
+        <name>advisoryDSPId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Text representation of the Deal Support Process Advisory record type name</description>
+        <name>advisoryRT_DSPName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Enterprise Advisory</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Represents the current Opportunity Product Id in the loop. Will be reassigned when/if this variable no longer matches that of the current Opportunity Product in the loop</description>
+        <name>currentOppProductId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Contains a single Deal Support Process record</description>
+        <name>dealSupportProcess</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Deal_Support_Process__c</objectType>
+    </variables>
+    <variables>
+        <description>Contains a collection of Deal Support Process records</description>
+        <name>dealSupportProcesses</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Deal_Support_Process__c</objectType>
+    </variables>
+    <variables>
+        <description>Variable to hold/assign name to generated Deal Support Process</description>
+        <name>dspName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Variable to hold Deal Support Process record type Id</description>
+        <name>dspRecordType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Represents the Id for the Deal Support Process record type &quot;Licensing&quot;</description>
+        <name>licensingDSPId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Text representation of the Deal Support Process Licensing record type name</description>
+        <name>licensingRT_DSPName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Enterprise Licensing</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Id of triggering Opportunity record</description>
+        <name>opportunityId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Iteration counter to count the number of Training sessions purchased</description>
+        <name>trainingCounter</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Represents the Id for the Deal Support Process record type &quot;Training&quot;</description>
+        <name>trainingDSPId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Text representation of the Deal Support Process Training record type name</description>
+        <name>trainingRT_DSPName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Enterprise Training</stringValue>
+        </value>
+    </variables>
+</Flow>

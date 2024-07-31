@@ -13,7 +13,7 @@
     <filters>
         <field>OPPORTUNITY.STAGE_NAME</field>
         <operation>notEqual</operation>
-        <value>Done - Successful,Done - Terminated,Done - No Response,Done - Alternate Solution</value>
+        <value>Done - Successful,Done - Terminated,Done - No Response,Done - Alternate Solution,Closed - Won</value>
     </filters>
     <filters>
         <field>OPPORTUNITY.RECORDTYPE</field>

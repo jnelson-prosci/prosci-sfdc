@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>OrderSync__e</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Order_Record_Page</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Order_Create_OrderSync_for_Sync_to_Xero</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Preferred_Language</members>
+		<name>GlobalValueSet</name>
+	</types>
+	<types>
+		<members>Order-Order Layout</members>
+		<name>Layout</name>
+	</types>
+	<version>60.0</version>
+</Package>

@@ -4,16 +4,113 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>Global.NewTask</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Global.LogACall</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>FeedItem.ContentPost</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>FeedItem.LinkPost</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Clone</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Edit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.Opportunity.MA_MapIt_a0vi000000Bnnt8AAB</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.Opportunity.Add_Document</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.Opportunity.Select_Clause_Bundle</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.Opportunity.Generate_SOW</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.Opportunity.Send_for_Negotiation</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.Opportunity.View_Redlines</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.Opportunity.Send_Final_Negotiated_Contract_for_Signature</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.Opportunity.CongaSign_sendForSignature</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>ChangeRecordType</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>ChangeOwnerOne</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Delete</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.Opportunity.Generate_Deal_Support_Process</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND 2 AND 3 AND (4 OR 5 OR 6 OR 7)</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.Probability}</leftValue>
+                                    <operator>GE</operator>
+                                    <rightValue>50</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!$Permission.CustomPermission.Generate_Deal_Support_Process_Permission}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.Has_Deal_Support_Process__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>false</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Propose Solution</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Evaluate Partnership</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Negotiate Terms</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.StageName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Closed - Won</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>collapsed</name>
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsConfiguration</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsInNative</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>ANZ_Contact_Visibility</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
+        <label>ANZ Contact Visibility</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>ANZ_Market_Leader</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>ANZ_Market_Leader</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CAN_Contact_Visibility</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
+        <label>CAN Contact Visibility</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>CAN_Market_Leader</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>CAN_Market_Leader</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>EUR_Contact_Visibility</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
+        <label>EUR Contact Visibility</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>EUR_Market_Leader</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>EUR_Market_Leader</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>LATAM_Contact_Visibility</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
+        <label>LATAM Contact Visibility</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>LATAM_Market_Leader</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>LATAM_Market_Leader</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>US_Contact_Visibility</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Everyone under a given market leader role can see/edit records created by anyone in that branch of the hierarchy</description>
+        <label>ANZ Contact Visibility</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>US_Market_Leader</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>US_Market_Leader</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

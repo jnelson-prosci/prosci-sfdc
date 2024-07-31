@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Opportunity.Account Team Sales Process</members>
+		<name>BusinessProcess</name>
+	</types>
+	<types>
+		<members>Opportunity.All_DSPs_Confirmed__c</members>
+		<members>Opportunity.Closed_Reason__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Growth_CoA_User</members>
+		<name>CustomPermission</name>
+	</types>
+	<types>
+		<members>Contract_Agreement_Update_Field_on_other_Object_Flow_DSP</members>
+		<members>Deal_Support_Process_Update_Status</members>
+		<members>Opportunity_Update_Stage</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Opportunity-Enterprise Engagement</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<members>Growth_CoA_User</members>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>Opportunity.Enterprise_Engagement</members>
+		<name>RecordType</name>
+	</types>
+    <types>
+        <members>OpportunityStage</members>
+        <name>StandardValueSet</name>
+    </types>
+	<version>60.0</version>
+</Package>

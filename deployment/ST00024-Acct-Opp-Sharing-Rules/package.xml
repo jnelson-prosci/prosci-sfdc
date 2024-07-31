@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Lead_Run_Lead_Assignment_Rules_After_Insert</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>Account</members>
+		<members>Case</members>
+		<members>Opportunity</members>
+        <members>Contact</members>
+		<name>SharingRules</name>
+	</types>
+	<version>60.0</version>
+</Package>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Lead_Record_Page_Single_Related_Lists</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Session_Notes_Lead_1</members>
+		<members>Session_Notes_Lead_2</members>
+		<members>Session_Notes_Lead_3</members>
+		<members>Task_Lead_from_form_with_previously_existing_contact</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>LeadConvertSettings</members>
+		<name>LeadConvertSettings</name>
+	</types>
+	<version>60.0</version>
+</Package>
