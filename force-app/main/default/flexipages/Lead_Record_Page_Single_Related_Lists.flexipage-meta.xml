@@ -250,7 +250,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Prosci_AI_Chat_Solution__c</fieldItem>
+                <fieldItem>Record.Prosci_Kaiya_AI_Tool__c</fieldItem>
                 <identifier>RecordProsci_AI_Chat_Solution_cField</identifier>
             </fieldInstance>
         </itemInstances>
