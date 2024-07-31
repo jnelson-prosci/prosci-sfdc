@@ -146,11 +146,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Deal_Support_Process__c.Fee__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Deal_Support_Process__c.Firmex_Account_Contact__c</field>
         <readable>true</readable>
     </fieldPermissions>
