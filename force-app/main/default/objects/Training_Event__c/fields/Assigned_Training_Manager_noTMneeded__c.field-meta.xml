@@ -3,7 +3,7 @@
     <fullName>Assigned_Training_Manager_noTMneeded__c</fullName>
     <externalId>false</externalId>
     <inlineHelpText>Assigned Training Support Specialist No Training Support Specialist Needed</inlineHelpText>
-    <label>Assigned TSS No TSS Needed</label>
+    <label>Assigned Training Success Specialist</label>
     <length>75</length>
     <required>false</required>
     <trackHistory>false</trackHistory>

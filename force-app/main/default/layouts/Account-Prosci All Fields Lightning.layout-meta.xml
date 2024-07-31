@@ -92,6 +92,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Provides_Consulting_Services__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Is_Tax_Exempt__c</field>
             </layoutItems>
             <layoutItems>

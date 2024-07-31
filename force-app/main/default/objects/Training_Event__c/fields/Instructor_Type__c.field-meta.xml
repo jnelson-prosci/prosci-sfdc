@@ -51,21 +51,6 @@
                 <label>Internal PCAI</label>
             </value>
             <value>
-                <fullName>Prosci Iberia</fullName>
-                <default>false</default>
-                <label>Prosci Iberia</label>
-            </value>
-            <value>
-                <fullName>Prosci Mexico</fullName>
-                <default>false</default>
-                <label>Prosci Mexico</label>
-            </value>
-            <value>
-                <fullName>Prosci Chile</fullName>
-                <default>false</default>
-                <label>Prosci Chile</label>
-            </value>
-            <value>
                 <fullName>Coach the trainer (Prosci Canada)</fullName>
                 <default>false</default>
                 <label>Coach the trainer (Prosci Canada)</label>

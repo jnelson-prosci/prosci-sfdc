@@ -39,6 +39,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Phone_Number_Extension__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>MobilePhone</field>
             </layoutItems>
             <layoutItems>
@@ -317,6 +321,10 @@
                 <field>PCAI_VILT_Review__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>PLI_Notes__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Enrolled_in_Advanced_Instructor_Track__c</field>
             </layoutItems>
@@ -590,6 +598,10 @@
                 <behavior>Edit</behavior>
                 <field>Payment_Code__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Brazil_Cancellation_Acceptance__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -690,6 +702,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Advisory_Bio_Link_French__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Comments_from_Website__c</field>
             </layoutItems>
             <layoutItems>
                 <height>200</height>
