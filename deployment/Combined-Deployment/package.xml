@@ -108,6 +108,7 @@
         <members>Lead.Lead_Gen_Source_Training_Event__c</members>
         <members>Lead.Master_Instructor_Lead_Generator__c</members>
         <members>Lead.Previously_Existing_Contact__c</members>
+        <members>Lead.Program_Type__c</members>
         <members>Account.Country_Code__c</members>
         <members>Order.Account_Country_Code__c</members>
         <members>Order.Associated_Training_Contact__c</members>
