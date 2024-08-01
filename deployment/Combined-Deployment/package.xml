@@ -403,6 +403,7 @@
     </types>
     <types>
         <members>Deal_Support_Process__c</members>
+        <members>Integration_Tenant__c</members>
         <name>CustomTab</name>
     </types>
 	<version>60.0</version>
