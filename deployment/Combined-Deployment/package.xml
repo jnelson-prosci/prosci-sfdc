@@ -335,6 +335,7 @@
         <members>Training_Event__c</members>
         <members>Account</members>
         <members>Case</members>
+        <members>Contact</members>
         <members>Opportunity</members>
         <name>SharingRules</name>
     </types>
