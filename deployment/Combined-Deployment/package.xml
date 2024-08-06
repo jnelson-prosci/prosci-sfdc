@@ -71,6 +71,7 @@
         <members>Industry</members>
         <members>LeadStatus</members>
         <members>OpportunityStage</members>
+    	<members>OrderStatus</members>
         <name>StandardValueSet</name>
     </types>
     <types>
