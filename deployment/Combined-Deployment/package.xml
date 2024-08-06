@@ -248,6 +248,8 @@
         <members>Lead.US_Leads_Invictus_Lead</members>
         <members>Lead.US_Leads_Nitro_Lead</members>
         <members>Lead.US_Leads_The_Challenger_Lead</members>
+        <members>Lead.Enterprise_Leads</members>
+		<members>Lead.Open_Enrollment_Leads</members>
         <members>Opportunity.Example_Inline_Editing</members>
         <members>Opportunity.Not_Done_Opportunities</members>
         <members>Opportunity.PC_Not_Done_Onsite_Opportunities</members>
