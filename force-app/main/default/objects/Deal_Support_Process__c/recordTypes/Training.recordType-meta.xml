@@ -240,6 +240,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Achieve Change Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Audit</fullName>
             <default>false</default>
         </values>
@@ -272,7 +276,23 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Improve Project Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Integrating Agile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leading Your Team Through Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Methodology Application Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Call</fullName>
             <default>false</default>
         </values>
         <values>
@@ -285,6 +305,18 @@
         </values>
         <values>
             <fullName>Sponsor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTT - Level 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTT - Level 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taking Charge of Change</fullName>
             <default>false</default>
         </values>
         <values>

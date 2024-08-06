@@ -112,27 +112,7 @@ CONTAINS(TEXT(Preferred_Language__c), &apos;German&apos;)
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>US_Leads_Carnivores</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>AND(                 ISPICKVAL(Country_Code__c, &apos;US&apos;),                 OR(                     ISPICKVAL(Industry, &apos;Finance/Banking&apos;),                     ISPICKVAL(Industry, &apos;Insurance&apos;),                     ISPICKVAL(Industry, &apos;Consulting&apos;),                     ISPICKVAL(Industry, &apos;Professional, Scientific, &amp; Tech Service&apos;),                     ISPICKVAL(Industry, &apos;Transportation &amp; Warehousing&apos;)                 )             )</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>US_Leads_Nitro</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>AND(                 ISPICKVAL(Country_Code__c, &apos;US&apos;),                 OR(                     ISPICKVAL(Industry, &apos;Non-profit&apos;),                     CONTAINS(TEXT(Industry), &apos;Government&apos;),                     ISPICKVAL(Industry, &apos;Pharmaceutical&apos;),                     ISPICKVAL(Industry, &apos;Education Services&apos;)                 )             )</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>US_Leads_Invictus</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>AND(                 ISPICKVAL(Country_Code__c, &apos;US&apos;),                 OR(                     CONTAINS(TEXT(Industry), &apos;Manufacturing&apos;),                     ISPICKVAL(Industry, &apos;Energy, Oil, &amp; Gas&apos;),                     ISPICKVAL(Industry, &apos;Fast Moving Consumer Goods&apos;),                     ISPICKVAL(Industry, &apos;Utilities&apos;),                     ISPICKVAL(Industry, &apos;Aerospace&apos;),                     ISPICKVAL(Industry, &apos;Services - General&apos;),                     ISPICKVAL(Industry, &apos;Engineering&apos;)                 )             )</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>US_Leads_The_Challenger</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>AND(                 ISPICKVAL(Country_Code__c, &apos;US&apos;),                 OR(                     ISPICKVAL(Industry, &apos;ICT Hardware &amp; Software&apos;),                     ISPICKVAL(Industry, &apos;Telecommunications&apos;),                     ISPICKVAL(Industry, &apos;Healthcare&apos;),                     ISPICKVAL(Industry, &apos;Information Services/Technology&apos;),                     ISPICKVAL(Industry, &apos;Retail Trade&apos;)                 )             )</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>US_Leads_Carnivores</assignedTo>
+            <assignedTo>US_Leads</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
                 <field>Lead.Queue_Family__c</field>

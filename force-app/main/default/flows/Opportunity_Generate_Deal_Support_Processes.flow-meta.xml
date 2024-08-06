@@ -192,7 +192,7 @@
         <name>Assign_Deal_Support_Process_Fields_Training</name>
         <label>Assign Deal Support Process Fields Training</label>
         <locationX>2435</locationX>
-        <locationY>139</locationY>
+        <locationY>137</locationY>
         <assignmentItems>
             <assignToReference>dealSupportProcess.Quantity__c</assignToReference>
             <operator>Assign</operator>
@@ -509,22 +509,22 @@
     <description>Autolaunched flow to be triggered by a button on an Opportunity record to generate Deal Support Process(es)</description>
     <environments>Default</environments>
     <formulas>
-        <description>Assembles the name for  Deal Support Process Advisory records</description>
+        <description>Assembles the name for  Deal Support Process Advisory records and limits the concatenated string to 80 characters.</description>
         <name>advisoryDSPName</name>
         <dataType>String</dataType>
-        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - Advisory&apos;</expression>
+        <expression>LEFT({!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - Advisory&apos;, 80)</expression>
     </formulas>
     <formulas>
-        <description>Assembles name for Deal Support Process Licensing records</description>
+        <description>Assembles name for Deal Support Process Licensing records and limits the concatenated string to 80 characters.</description>
         <name>licensingDSPName</name>
         <dataType>String</dataType>
-        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + {!Iterate_through_Opportunity_Products.Product2.Name}</expression>
+        <expression>LEFT({!Iterate_through_Opportunity_Products.Product2.Name} + &apos; - &apos; + {!Iterate_through_Opportunity_Products.Opportunity.Account.Name} , 80)</expression>
     </formulas>
     <formulas>
-        <description>Assembles name for Deal Support Process Training record</description>
+        <description>Assembles name for Deal Support Process Training record and limits the concatenated string to 80 characters.</description>
         <name>trainingDSPName</name>
         <dataType>String</dataType>
-        <expression>{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} + &apos; - &apos; + TEXT({!Iterate_through_Opportunity_Products.Product2.Program_Title__c}) + {!trainingGroupNumber}</expression>
+        <expression>LEFT( TEXT({!Iterate_through_Opportunity_Products.Product2.Program_Title__c}) + {!trainingGroupNumber} + &apos; - &apos; +{!Iterate_through_Opportunity_Products.Opportunity.Account.Name} , 80)</expression>
     </formulas>
     <formulas>
         <description>Appends the group number to the Deal Support Process Training record name if the number of sessions is greater than one</description>
