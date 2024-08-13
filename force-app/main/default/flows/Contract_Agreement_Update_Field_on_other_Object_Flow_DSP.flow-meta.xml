@@ -913,7 +913,7 @@
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <description>Contains the Record Type API name associated with the Enterprise Engagement Opportunity Record Type</description>
         <name>enterpriseEngagementOpp_RTName</name>
