@@ -4,7 +4,7 @@
         <name>Send_License_Confirmation_Email</name>
         <label>Send License Confirmation Email</label>
         <locationX>1370</locationX>
-        <locationY>1463</locationY>
+        <locationY>1571</locationY>
         <actionName>Opportunity.License_Confirmations</actionName>
         <actionType>emailAlert</actionType>
         <connector>
@@ -24,7 +24,7 @@
         <name>Send_Secondary_License_Confirmation_Email</name>
         <label>Send Secondary License Confirmation Email</label>
         <locationX>446</locationX>
-        <locationY>1463</locationY>
+        <locationY>1571</locationY>
         <actionName>Opportunity.License_Confirmations</actionName>
         <actionType>emailAlert</actionType>
         <connector>
@@ -42,10 +42,33 @@
     </actionCalls>
     <apiVersion>60.0</apiVersion>
     <decisions>
+        <description>Checks if the triggering Contract Agreement comes from an Enterprise Engagement Opportunity</description>
+        <name>Check_If_Enterprise_Engagement_Opportunity</name>
+        <label>Check If Enterprise Engagement Opportunity</label>
+        <locationX>3647</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Enterprise_Engagement</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.APXT_Redlining__Opportunity__r.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>enterpriseEngagementOpp_RTName</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Was_Data_Storage_Requirements_Set</targetReference>
+            </connector>
+            <label>Is Enterprise Engagement</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Inactive_Is_this_a_primary_or_secondary_license</name>
         <label>Inactive - Is this a primary or secondary license?</label>
         <locationX>2822</locationX>
-        <locationY>839</locationY>
+        <locationY>947</locationY>
         <defaultConnector>
             <targetReference>Update_Account_on_Marked_Inactive</targetReference>
         </defaultConnector>
@@ -70,7 +93,7 @@
         <name>Is_secondary_license_elearning</name>
         <label>Is secondary license elearning?</label>
         <locationX>446</locationX>
-        <locationY>1571</locationY>
+        <locationY>1679</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Yes_elearning</name>
@@ -92,7 +115,7 @@
         <name>Is_this_a_primary_or_secondary_license</name>
         <label>Is this a primary or secondary license?</label>
         <locationX>908</locationX>
-        <locationY>1247</locationY>
+        <locationY>1355</locationY>
         <defaultConnector>
             <targetReference>Update_Account_Primary_License</targetReference>
         </defaultConnector>
@@ -117,7 +140,7 @@
         <name>Termination_Type_of_Contract</name>
         <label>Termination Type of Contract</label>
         <locationX>3482</locationX>
-        <locationY>731</locationY>
+        <locationY>839</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Terminate_PSA</name>
@@ -154,7 +177,7 @@
         <name>Type_of_Contract</name>
         <label>Type of Contract</label>
         <locationX>1238</locationX>
-        <locationY>1139</locationY>
+        <locationY>1247</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>PSA</name>
@@ -206,7 +229,7 @@
         <name>Update_Single_or_Multiple_DSPs</name>
         <label>Update Single or Multiple DSPs?</label>
         <locationX>1238</locationX>
-        <locationY>839</locationY>
+        <locationY>947</locationY>
         <defaultConnector>
             <targetReference>Update_Deal_Support_Process</targetReference>
         </defaultConnector>
@@ -239,7 +262,7 @@
         <name>Was_Data_Storage_Requirements_Set</name>
         <label>Was Data Storage Requirements Set?</label>
         <locationX>2756</locationX>
-        <locationY>323</locationY>
+        <locationY>431</locationY>
         <defaultConnector>
             <targetReference>Was_the_Status_Updated</targetReference>
         </defaultConnector>
@@ -271,7 +294,7 @@
         <name>Was_the_Status_Updated</name>
         <label>Was the Status Updated?</label>
         <locationX>2756</locationX>
-        <locationY>623</locationY>
+        <locationY>731</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Active</name>
@@ -349,7 +372,7 @@
         <name>What_Type_of_license</name>
         <label>What Type of license?</label>
         <locationX>1370</locationX>
-        <locationY>1571</locationY>
+        <locationY>1679</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>ADKAR</name>
@@ -449,7 +472,7 @@
         <name>Update_Account</name>
         <label>Update Account</label>
         <locationX>3482</locationX>
-        <locationY>839</locationY>
+        <locationY>947</locationY>
         <inputAssignments>
             <field>Active_License_Status__c</field>
             <value>
@@ -463,7 +486,7 @@
         <name>Update_Account_Data_Storage_Requirements</name>
         <label>Update Account Data Storage Requirements</label>
         <locationX>2624</locationX>
-        <locationY>431</locationY>
+        <locationY>539</locationY>
         <connector>
             <targetReference>Was_the_Status_Updated</targetReference>
         </connector>
@@ -479,7 +502,7 @@
         <name>Update_Account_for_PSA</name>
         <label>Update Account for PSA</label>
         <locationX>50</locationX>
-        <locationY>1247</locationY>
+        <locationY>1355</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -518,7 +541,7 @@
         <name>Update_Account_on_Marked_Inactive</name>
         <label>Update Account on Marked Inactive</label>
         <locationX>2954</locationX>
-        <locationY>947</locationY>
+        <locationY>1055</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -545,7 +568,7 @@
         <name>Update_Account_on_Marked_Inactive_Secondary</name>
         <label>Update Account on Marked Inactive Secondary</label>
         <locationX>2690</locationX>
-        <locationY>947</locationY>
+        <locationY>1055</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -566,7 +589,7 @@
         <name>Update_Account_Primary_License</name>
         <label>Update Account Primary License</label>
         <locationX>1370</locationX>
-        <locationY>1355</locationY>
+        <locationY>1463</locationY>
         <connector>
             <targetReference>Send_License_Confirmation_Email</targetReference>
         </connector>
@@ -614,7 +637,7 @@
         <name>Update_Account_PSA_Expiration_Date</name>
         <label>Update Account PSA Expiration Date</label>
         <locationX>3218</locationX>
-        <locationY>839</locationY>
+        <locationY>947</locationY>
         <inputAssignments>
             <field>PSA_Expiration_Date__c</field>
             <value>
@@ -627,7 +650,7 @@
         <name>Update_Account_Secondary_License</name>
         <label>Update Account Secondary License</label>
         <locationX>446</locationX>
-        <locationY>1355</locationY>
+        <locationY>1463</locationY>
         <connector>
             <targetReference>Send_Secondary_License_Confirmation_Email</targetReference>
         </connector>
@@ -663,7 +686,7 @@
         <name>Update_ADKAR_price_group</name>
         <label>Update ADKAR price group</label>
         <locationX>842</locationX>
-        <locationY>1679</locationY>
+        <locationY>1787</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -684,7 +707,7 @@
         <name>Update_Contract_Agreement</name>
         <label>Update Contract Agreement</label>
         <locationX>1238</locationX>
-        <locationY>731</locationY>
+        <locationY>839</locationY>
         <connector>
             <targetReference>Update_Single_or_Multiple_DSPs</targetReference>
         </connector>
@@ -700,7 +723,7 @@
         <name>Update_Contract_Agreement_on_Marked_Inactive</name>
         <label>Update Contract Agreement on Marked Inactive</label>
         <locationX>2822</locationX>
-        <locationY>731</locationY>
+        <locationY>839</locationY>
         <connector>
             <targetReference>Inactive_Is_this_a_primary_or_secondary_license</targetReference>
         </connector>
@@ -716,7 +739,7 @@
         <name>Update_Contract_Agreement_with_Expiration</name>
         <label>Update Contract Agreement with Expiration</label>
         <locationX>2162</locationX>
-        <locationY>1247</locationY>
+        <locationY>1355</locationY>
         <inputAssignments>
             <field>APXT_Redlining__Expiration_Date__c</field>
             <value>
@@ -730,7 +753,7 @@
         <name>Update_Deal_Support_Process</name>
         <label>Update Deal Support Process</label>
         <locationX>1370</locationX>
-        <locationY>947</locationY>
+        <locationY>1055</locationY>
         <connector>
             <targetReference>Type_of_Contract</targetReference>
         </connector>
@@ -754,7 +777,7 @@
         <name>Update_ECM_price_group</name>
         <label>Update ECM price group</label>
         <locationX>1370</locationX>
-        <locationY>1679</locationY>
+        <locationY>1787</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -775,7 +798,7 @@
         <name>Update_Elearning_License</name>
         <label>Update Elearning License</label>
         <locationX>1634</locationX>
-        <locationY>1679</locationY>
+        <locationY>1787</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -796,7 +819,7 @@
         <name>Update_elearning_on_secondary_license</name>
         <label>Update elearning on secondary license</label>
         <locationX>314</locationX>
-        <locationY>1679</locationY>
+        <locationY>1787</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -818,7 +841,7 @@
         <name>Update_Multiple_DSP_Records</name>
         <label>Update Multiple DSP Records</label>
         <locationX>1106</locationX>
-        <locationY>947</locationY>
+        <locationY>1055</locationY>
         <connector>
             <targetReference>Type_of_Contract</targetReference>
         </connector>
@@ -863,7 +886,7 @@
         <name>Update_OCC_price_group</name>
         <label>Update OCC price group</label>
         <locationX>1106</locationX>
-        <locationY>1679</locationY>
+        <locationY>1787</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -881,14 +904,25 @@
         <inputReference>$Record.APXT_Redlining__Account__r</inputReference>
     </recordUpdates>
     <start>
-        <locationX>2630</locationX>
+        <locationX>3521</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Was_Data_Storage_Requirements_Set</targetReference>
+            <targetReference>Check_If_Enterprise_Engagement_Opportunity</targetReference>
         </connector>
         <object>APXT_Redlining__Contract_Agreement__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
+    <variables>
+        <description>Contains the Record Type API name associated with the Enterprise Engagement Opportunity Record Type</description>
+        <name>enterpriseEngagementOpp_RTName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Enterprise_Engagement</stringValue>
+        </value>
+    </variables>
 </Flow>
