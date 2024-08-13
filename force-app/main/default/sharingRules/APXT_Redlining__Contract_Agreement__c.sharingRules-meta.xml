@@ -37,6 +37,17 @@
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
+        <fullName>Global_Team_CA</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Global Team CA</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Global_Team</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Global_Team</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
         <fullName>LATAM_Record_Visibility</fullName>
         <accessLevel>Edit</accessLevel>
         <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
