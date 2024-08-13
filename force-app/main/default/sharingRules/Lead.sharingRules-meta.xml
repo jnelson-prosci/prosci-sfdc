@@ -60,17 +60,6 @@
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
-        <fullName>Lead_PeopleChange</fullName>
-        <accessLevel>Edit</accessLevel>
-        <label>Lead_PeopleChange</label>
-        <sharedTo>
-            <portalRole>PeopleChangePartnerUser</portalRole>
-        </sharedTo>
-        <sharedFrom>
-            <portalRole>PeopleChangePartnerUser</portalRole>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
         <fullName>US_Record_Visibility</fullName>
         <accessLevel>Edit</accessLevel>
         <description>Everyone under a given market leader role can see records created by anyone in that branch of the hierarchy</description>
