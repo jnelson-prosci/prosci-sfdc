@@ -52,7 +52,7 @@
             <name>Is_Enterprise_Engagement</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>$Record.APXT_Redlining__Opportunity__r.RecordType.Name</leftValueReference>
+                <leftValueReference>$Record.APXT_Redlining__Opportunity__r.RecordType.DeveloperName</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <elementReference>enterpriseEngagementOpp_RTName</elementReference>
