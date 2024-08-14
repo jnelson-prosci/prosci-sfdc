@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
-        <name>Send_License_Confirmation_Email</name>
-        <label>Send License Confirmation Email</label>
+        <name>Send_License_Confirmation_Email_DSP</name>
+        <label>Send License Confirmation Email DSP</label>
         <locationX>1370</locationX>
         <locationY>1571</locationY>
-        <actionName>Opportunity.License_Confirmations</actionName>
+        <actionName>Deal_Support_Process__c.License_Confirmed_DSP</actionName>
         <actionType>emailAlert</actionType>
         <connector>
             <targetReference>What_Type_of_license</targetReference>
@@ -14,18 +14,18 @@
         <inputParameters>
             <name>SObjectRowId</name>
             <value>
-                <elementReference>$Record.APXT_Redlining__Opportunity__c</elementReference>
+                <elementReference>$Record.Deal_Support_Process__c</elementReference>
             </value>
         </inputParameters>
-        <nameSegment>Opportunity.License_Confirmations</nameSegment>
+        <nameSegment>Deal_Support_Process__c.License_Confirmed_DSP</nameSegment>
         <versionSegment>1</versionSegment>
     </actionCalls>
     <actionCalls>
-        <name>Send_Secondary_License_Confirmation_Email</name>
-        <label>Send Secondary License Confirmation Email</label>
+        <name>Send_Secondary_License_Confirmation_Email_DSP</name>
+        <label>Send Secondary License Confirmation Email DSP</label>
         <locationX>446</locationX>
         <locationY>1571</locationY>
-        <actionName>Opportunity.License_Confirmations</actionName>
+        <actionName>Deal_Support_Process__c.License_Confirmed_DSP</actionName>
         <actionType>emailAlert</actionType>
         <connector>
             <targetReference>Is_secondary_license_elearning</targetReference>
@@ -34,10 +34,10 @@
         <inputParameters>
             <name>SObjectRowId</name>
             <value>
-                <elementReference>$Record.APXT_Redlining__Opportunity__c</elementReference>
+                <elementReference>$Record.Deal_Support_Process__c</elementReference>
             </value>
         </inputParameters>
-        <nameSegment>Opportunity.License_Confirmations</nameSegment>
+        <nameSegment>Deal_Support_Process__c.License_Confirmed_DSP</nameSegment>
         <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>60.0</apiVersion>
@@ -124,7 +124,7 @@
             <name>Secondary_License</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>$Record.APXT_Redlining__Opportunity__r.Is_this_a_secondary_license__c</leftValueReference>
+                <leftValueReference>$Record.Deal_Support_Process__r.Is_this_a_secondary_license__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -591,7 +591,7 @@
         <locationX>1370</locationX>
         <locationY>1463</locationY>
         <connector>
-            <targetReference>Send_License_Confirmation_Email</targetReference>
+            <targetReference>Send_License_Confirmation_Email_DSP</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -652,7 +652,7 @@
         <locationX>446</locationX>
         <locationY>1463</locationY>
         <connector>
-            <targetReference>Send_Secondary_License_Confirmation_Email</targetReference>
+            <targetReference>Send_Secondary_License_Confirmation_Email_DSP</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
