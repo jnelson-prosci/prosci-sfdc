@@ -110,10 +110,6 @@
                 <behavior>Edit</behavior>
                 <field>Region__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Overage_Price__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
