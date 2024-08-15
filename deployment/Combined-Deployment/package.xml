@@ -21,6 +21,7 @@
         <members>Lead_Run_Lead_Assignment_Rules_After_Insert</members>
         <members>Deal_Support_Process_Advisory_Licensing_Price_Quantity_Updates</members>
         <members>Deal_Support_Process_Create_or_Update_Incremental_Training_Program</members>
+        <members>Deal_Support_Process_Confirmed_Status_Sets_Confirmed_Date</members>
         <members>Training_Event_Update_DSP_of_Participants</members>
         <members>Opportunity_Update_Opportunity_to_Close_but_not_if_stage_is_Pending_Prepayment</members>
         <members>Opportunity_Product_Set_Overage_Fields</members>
@@ -143,6 +144,7 @@
         <members>Deal_Support_Process__c.Better_manage_my_change_portfolio__c</members>
         <members>Deal_Support_Process__c.Build_an_ECM_Strategy__c</members>
         <members>Deal_Support_Process__c.Closed_Reason__c</members>
+        <members>Deal_Support_Process__c.Confirmed_Date__c</members>
         <members>Deal_Support_Process__c.Contract_Type__c</members>
         <members>Deal_Support_Process__c.Day_1__c</members>
         <members>Deal_Support_Process__c.Day_2__c</members>
