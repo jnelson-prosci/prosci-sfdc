@@ -76,6 +76,10 @@
         <name>StandardValueSet</name>
     </types>
     <types>
+    	<members>Order_Compact_Layout</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
         <members>Lead.Country_Name__c</members>
         <members>Lead.Languages__c</members>
         <members>Lead.Queue_Family__c</members>
@@ -224,6 +228,7 @@
         <members>Integration_Tenant__c.Tenant_Id__c</members>
         <members>Order.Target_Tenant_Id__c</members>
         <members>Order.Integration_Tenant__c</members>
+        <members>Order.Integration_Logic__c</members>
         <members>Session_Notes__c.Training_Manager__c</members>
         <members>Order.Account_Name__c</members>
         <members>Order.Billing_Country_Code__c</members>
@@ -232,6 +237,7 @@
         <members>OrderItem.Xero_Account_Code__c</members>
         <members>OrderItem.Product_Name__c</members>
         <members>Product2.Xero_Account_Code__c</members>
+        <members>User.Integration_Tenant_Identifier__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -270,6 +276,7 @@
         <members>Opportunity.People_Change_Won_Opportunities</members>
         <members>Opportunity.Prosci_Canada_OPEN_Opportunties</members>
         <members>Opportunity.Prosci_Canada_Past_Opportunities</members>
+        <members>Order.AllOrders</members>
         <members>Integration_Tenant__c.All</members>
         <name>ListView</name>
     </types>
@@ -289,6 +296,7 @@
         <members>Integration_Tenant__c-Integration Tenant Layout</members>
         <members>Order-Order Layout</members>
         <members>OrderItem-Order Product Layout</members>
+        <members>User-User Layout</members>
         <name>Layout</name>
     </types>
     <types>

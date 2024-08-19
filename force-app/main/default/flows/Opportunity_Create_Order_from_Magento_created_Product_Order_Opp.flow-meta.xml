@@ -402,6 +402,20 @@
                     <elementReference>$Record.Training_Event__c</elementReference>
                 </value>
             </transformValueActions>
+            <transformValueActions>
+                <outputFieldApiName>Billing_Country_Code__c</outputFieldApiName>
+                <transformType>Map</transformType>
+                <value>
+                    <elementReference>$Record.Bill_To_Country__c</elementReference>
+                </value>
+            </transformValueActions>
+            <transformValueActions>
+                <outputFieldApiName>Shipping_Country_Code__c</outputFieldApiName>
+                <transformType>Map</transformType>
+                <value>
+                    <elementReference>$Record.Ship_to_Country__c</elementReference>
+                </value>
+            </transformValueActions>
         </transformValues>
     </transforms>
 </Flow>
