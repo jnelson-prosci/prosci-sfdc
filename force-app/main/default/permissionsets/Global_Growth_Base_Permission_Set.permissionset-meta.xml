@@ -601,11 +601,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Order.Account_Country_Code__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Order.Account_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -677,6 +672,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Order.External_Document_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.Integration_Logic__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -867,6 +867,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>pse__Resource_Request__c.Deal_Support_Process__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.Integration_Tenant_Identifier__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
