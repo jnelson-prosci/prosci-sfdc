@@ -100,7 +100,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Integration_Logic__c</fieldItem>
                 <identifier>RecordIntegration_Logic_cField</identifier>
