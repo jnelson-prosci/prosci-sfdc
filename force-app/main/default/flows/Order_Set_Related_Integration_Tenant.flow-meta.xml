@@ -355,7 +355,7 @@
             <field>Tenant_Identifier__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>$Record.Training_Event__r.Assigned_Instructor__r.Integration_Tenant_Identifier__c</elementReference>
+                <elementReference>$Record.Associated_Training_Contact__r.Training_Event__r.Assigned_Instructor__r.Integration_Tenant_Identifier__c</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
