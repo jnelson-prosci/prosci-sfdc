@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Associated_Training_Contacts__c.Check_in_Email_Alert_EUR_Enterprise_Agile_In_Person_English</members>
+		<members>Associated_Training_Contacts__c.Check_in_Email_Alert_EUR_Enterprise_In_Person_English</members>
+		<members>Associated_Training_Contacts__c.Welcome_Email_Alert_ANZ_Improve_Projecth_Health</members>
+		<members>Deal_Support_Process__c.License_Confirmed_DSP</members>
+		<name>WorkflowAlert</name>
+	</types>
+	<version>60.0</version>
+</Package>
