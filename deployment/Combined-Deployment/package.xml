@@ -370,7 +370,6 @@
         <members>pse__Timecard_Header__c</members>
         <members>Training_Program_Feedback__c</members>
         <members>Training_Event__c</members>
-        <members>Account</members>
         <members>Case</members>
         <members>Opportunity</members>
         <name>SharingRules</name>
