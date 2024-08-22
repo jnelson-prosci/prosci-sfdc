@@ -186,6 +186,16 @@
                 <identifier>RecordBilling_Country_Code_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Order_Contact__c</fieldItem>
+                <identifier>RecordOrder_Contact__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-4281a1dc-e764-4e4a-b3f7-d7a4a4763c25</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -396,6 +406,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Tracking_Number__c</fieldItem>
                 <identifier>RecordTracking_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Invoice_External_ID__c</fieldItem>
+                <identifier>RecordInvoice_External_ID_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-4d15cb5f-29f4-4eb3-9454-b3334cdd80e2</name>
