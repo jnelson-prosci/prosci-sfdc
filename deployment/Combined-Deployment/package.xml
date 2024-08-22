@@ -51,6 +51,7 @@
         <name>Flow</name>
     </types>
     <types>
+        <members>Contact</members>
         <members>Country_Code_Info__mdt</members>
         <members>Deal_Support_Process__c</members>
         <members>Integration_Tenant__c</members>
