@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>VILT Welcome email for the Europe Spanish Practitioner Course</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Cert Welcome Europe Enterprise VILT Spanish</name>
+    <style>none</style>
+    <subject>Programa de Certificación en Gestión del Cambio | Trabajo Previo e Información del Programa</subject>
+    <textOnly>Hola {!Contact.FirstName},
+
+Nos complace darle la bienvenida al {!Training_Event}
+
+Fechas del Programa: {!Training_Event__c.Start_Date__c} - {!Training_Event__c.End_Date__c} en {!Training_Event__c.Location__c}
+
+Nuestro objetivo es dotarle de conocimientos, habilidades y herramientas para impulsar el cambio con éxito.
+
+
+PREPARación para el PROgrama Trabajo Previo
+
+Para maximizar su experiencia de aprendizaje durante el programa, deberá completar las siguientes tareas de trabajo previo. Deberá disponer de 2 horas para completarlo, ya que es un componente fundamental para apoyar su experiencia de aprendizaje.
+
+Configuración acceso al Portal Prosci y tareas de Trabajo Previo
+
+En breve recibirá un correo electrónico de portal@prosci.com con un enlace al trabajo previo del programa en el Portal Prosci, así como acceso a contenidos, recursos y herramientas adicionales para apoyar su aprendizaje durante el programa.
+
+Una vez en el portal Prosci, haga clic en la casilla &quot;Prework&quot;. Debería ver un menú desplegable que dice &quot;Prework Tasks&quot;. El trabajo previo debe realizarse 4 días laborables antes del programa para que el instructor tenga tiempo de revisarlo.
+
+Horario
+
+El horario que figura a continuación indica el tiempo que deberá asistir. Habrá 8 horas de clase el día 1 y el día 2, y 7 horas el día 3, con frecuentes descansos a lo largo de la sesión.  Calcule aproximadamente 1 hora de autoaprendizaje adicional los días 1 y 2.
+
+Horarios del curso
+
+{!Training_Event__c.Program_Schedule__c}
+
+Tenga en cuenta que no podrá obtener la certificación si falta al curso.
+
+Su instructor realizará varias pausas a lo largo del día de formación.
+
+Lo que Necesita para Tener Éxito durante su Programa Virtual
+
+Su experiencia de aprendizaje es muy importante para nosotros. En el entorno virtual, lo siguiente mejorará en gran medida su experiencia y su éxito:
+
+Tiempo ininterrumpido para concentrarse
+Ordenador con Microsoft Office 2007 o posterior. Usuarios de Mac, por favor usen Microsoft Office para Mac para asegurar la compatibilidad de las herramientas.
+Conexión a Internet de alta velocidad
+Cámara web apta para retransmitirte por vídeo
+Auriculares o conexión de audio con altavoz y micrófono
+
+Unos días antes del programa, recibirá un correo electrónico con información específica sobre cómo acceder a la sesión a través del enlace/ID de reunión virtual.
+
+Nuestro equipo de formación estará en línea 15 minutos antes del comienzo de la clase cada día. Le pedimos que se conecte antes para confirmar que su tecnología funciona.
+
+Si tiene alguna pregunta sobre la preparación de su programa, no dude en ponerse en contacto con nosotros escribiendo a training.europe@prosci.com
+
+Atentamente,
+
+{!Training_Event__c.OwnerFullName}
+
+Training Coordinator
+
+
+
+
+
+CONNECT WITH US:
+
+
+Prosci Europe SRL (formada por las antiguas filiales de Prosci, CMC Partnership y Nexum) es la nueva división europea de Prosci, que opera en Alemania, Bélgica, Dinamarca, España, Francia, Irlanda, Italia, Luxemburgo, Noruega, Países Bajos, Portugal, Reino Unido, Suecia y Suiza. Consulte la lista de domicilios sociales en https://www.proscieurope.com/prosci-europe.
+
+Este correo electrónico y cualquier archivo adjunto son privados y confidenciales y están destinados exclusivamente a su destinatario. Si ha recibido este correo electrónico por error, notifíquelo al remitente y elimínelo inmediatamente de su sistema. Queda terminantemente prohibido copiar, distribuir o basarse en el contenido de un correo electrónico enviado por error. Hemos tomado las precauciones debidas para garantizar que este correo electrónico no contenga virus, pero no aceptamos ninguna responsabilidad por cualquier alteración o daño infligido una vez transmitido. Tenga en cuenta que las opiniones del autor no reflejan necesariamente las de Prosci Europe SRL. Su información está protegida y gestionada como se detalla en la Política de Privacidad de la empresa en https://proscieurope.com/legal/privacy-en.pdf. Prosci Ibérica S.L., Sociedad Limitada, inscrita en Madrid en el Registro Mercantil con el número M-669.659, con domicilio social en Avenida de Brasil, número 6, planta 1ª, 28020.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

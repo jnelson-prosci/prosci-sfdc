@@ -1,0 +1,173 @@
+<div>
+    <table cellspacing="0" cellpadding="0" style="width:100%; border-collapse:collapse;">
+        <tbody>
+            <tr>
+                <td style="width:468pt; vertical-align:top; background-color:#f2f5f5;">
+                    <div style="text-align:center;">
+                        <table cellspacing="0" cellpadding="0" style="width:450pt; margin-right:auto; margin-left:auto; border-collapse:collapse;">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align:top;">
+                                        <table cellspacing="0" cellpadding="0" style="width:450pt; border-collapse:collapse;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding-top:11.25pt; padding-left:3.75pt; padding-bottom:7.5pt; vertical-align:top;">
+                                                        <p style="margin-top:0pt; margin-bottom:8pt; text-align:center; line-height:105%; font-size:11.5pt;"><img src="https://myfiles.space/user_files/233292_47b444abb78326a7/1724282049_1-prac-french-oe-vilt-welcome-v2.1/1724282049_1-prac-french-oe-vilt-welcome-v2.1-1.png" width="171" height="62" alt="A blue text on a black background
+
+Description automatically generated"></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:10pt;"><br></p>
+                                    </td>
+                                </tr>
+                                <tr style="height:301.25pt;">
+                                    <td style="border:1pt solid #ebebeb; padding:3.75pt 3.25pt; vertical-align:top; background-color:#ffffff;">
+                                        <table cellspacing="0" cellpadding="0" style="width:449.25pt; border-collapse:collapse;">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="3" style="vertical-align:top;">
+                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:105%; font-size:11.5pt;"><img src="https://myfiles.space/user_files/233292_47b444abb78326a7/1724282049_1-prac-french-oe-vilt-welcome-v2.1/1724282049_1-prac-french-oe-vilt-welcome-v2.1-2.jpeg" width="598" height="290" alt="Welcome Banner"></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width:45pt; vertical-align:top;">
+                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:105%; font-size:11.5pt;">&nbsp;</p>
+                                                    </td>
+                                                    <td style="vertical-align:top;">
+                                                        <table cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+                                                            <tbody>
+                                                                <tr style="height:71.1pt;">
+                                                                    <td style="vertical-align:top;">
+                                                                        <table cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+                                                                            <tbody>
+                                                                                <tr style="height:71.1pt;">
+                                                                                    <td style="vertical-align:top;">
+                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; text-align:center; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">Bonjour {!Contact.FirstName},</span></p>
+                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; text-align:center; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">Nous sommes impatients de vous accueillir pour votre participation &agrave; {!Training_Event}</span><span style="font-family:Calibri;">&nbsp;&nbsp;</span></p>
+                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; text-align:center; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">Dates du programme: {!Training_Event__c.Start_Date__c} - {!Training_Event__c.End_Date__c} at {!Training_Event__c.Location__c}</span></p>
+                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; text-align:center; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">Notre objectif est de vous fournir les connaissances, les comp&eacute;tences et les outils n&eacute;cessaires pour mener des changements r&eacute;ussis</span></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr style="height:13.5pt;">
+                                                                                    <td style="vertical-align:top;">
+                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">&nbsp;</span></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr style="height:648pt;">
+                                                                                    <td style="vertical-align:top;">
+                                                                                        <table cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width:422.25pt; vertical-align:top;">
+                                                                                                        <p style="margin-top:0pt; margin-bottom:18pt; text-align:center; line-height:105%; font-size:19pt;"><span style="font-family:Calibri; text-transform:uppercase; color:#342a86;">PREPARation pour votre programme</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:108%; font-size:16pt;"><strong><span style="font-family:Calibri; color:#3d444f;">Exigences relatives au travail pr&eacute;paratoire</span></strong></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">Afin de maximiser votre exp&eacute;rience d&apos;apprentissage pendant le programme, vous devrez compl&eacute;ter un certain nombre de t&acirc;ches pr&eacute;paratoires. Vous devriez pr&eacute;voir 2 heures pour les accomplir, car il s&apos;agit d&apos;une composante essentielle pour soutenir votre exp&eacute;rience d&apos;apprentissage.</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:108%; font-size:12pt;"><strong><span style="font-family:Calibri;">Configuration de l&apos;Acc&egrave;s au Portail Prosci et des T&acirc;ches Pr&eacute;paratoires</span></strong></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">Vous recevrez prochainement un email de l&apos;adresse&nbsp;</span><a href="mailto:portal@prosci.com" style="text-decoration:none;"><u><span style="font-family:Calibri; color:#0563c1;">portal@prosci.com</span></u></a><span style="font-family:Calibri;">&nbsp;avec un lien vers les t&acirc;ches pr&eacute;paratoires de votre programme dans le Portail Prosci, ainsi qu&apos;un acc&egrave;s &agrave; du contenu suppl&eacute;mentaire, des ressources et des outils pour soutenir votre apprentissage pendant le programme.</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">Une fois dans le portail Prosci, cliquez sur la vignette &quot;Prework&quot;. Vous devriez voir un menu d&eacute;roulant intitul&eacute; &quot;T&acirc;ches Pr&eacute;paratoires&quot;.&nbsp;</span><strong><em><span style="font-family:Calibri;">Les t&acirc;ches pr&eacute;paratoires doivent &ecirc;tre compl&eacute;t&eacute;es 4 jours ouvrables avant votre programme</span></em></strong><span style="font-family:Calibri;">&nbsp;afin de permettre &agrave; votre instructeur de les examiner.</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:108%; font-size:16pt;"><strong><span style="font-family:Calibri; color:#3d444f;">Documents en version papier</span></strong></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:108%; font-size:12pt;"><span style="font-family:Calibri;">Un ensemble de documents sera envoy&eacute; par coursier avant le d&eacute;but du programme &agrave; l&apos;adresse de livraison que vous avez fournie lors de l&apos;inscription (v&eacute;rifiez vos spams pour les notifications de suivi de la part du coursier). Aucune action n&apos;est requise concernant ces documents avant le d&eacute;but du programme. Veuillez nous contacter si vous n&apos;avez pas re&ccedil;u vos documents 4 jours ouvrables avant la date de d&eacute;but du programme.</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:108%; font-size:12pt;"><span style="font-family:Calibri;">Voici l&apos;adresse de livraison que vous avez fournie lors de l&apos;inscription et &agrave; laquelle vos documents seront exp&eacute;di&eacute;s:</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">{!Contact.MailingAddress}</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:108%; font-size:16pt;"><strong><span style="font-family:Calibri; color:#3d444f;">Planning</span></strong></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">Le planning ci-dessous indique les horaires auxquels vous devrez &ecirc;tre pr&eacute;sent. Veuillez noter qu&apos;il y aura 8 heures de cours d&eacute;di&eacute;es les Jour 1 et Jour 2, et 7 heures le Jour 3, toutes avec des pauses fr&eacute;quentes tout au long de la session. Pr&eacute;voyez environ 1 heure suppl&eacute;mentaire d&apos;&eacute;tude personnelle les Jour 1 et 2.&nbsp;</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:108%; font-size:12pt;"><strong><span style="font-family:Calibri;">Les horaires des cours&nbsp;</span></strong></p>
+                                                                                                        <p style="margin-top:0pt; margin-left:36pt; margin-bottom:8pt; line-height:108%; font-size:12pt;"><span style="font-family:Calibri;">{!Training_Event__c.Program_Schedule__c}</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:108%; font-size:12pt;"><span style="font-family:Calibri;">Veuillez noter que vous pourriez ne pas obtenir la certification si une partie de la formation est manqu&eacute;e.</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">Votre instructeur int&eacute;grera des pauses en fonction du d&eacute;roulement de la formation chaque jour.</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:108%; font-size:16pt;"><strong><span style="font-family:Calibri; color:#3d444f;">Ce Dont Vous Avez Besoin pour R&eacute;ussir en Tant qu&apos;Apprenant Virtuel</span></strong></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:108%; font-size:12pt;"><span style="font-family:Calibri;">Votre exp&eacute;rience d&apos;apprentissage est tr&egrave;s importante pour nous. Dans l&apos;environnement virtuel, les &eacute;l&eacute;ments suivants am&eacute;lioreront grandement votre exp&eacute;rience et votre r&eacute;ussite:</span></p>
+                                                                                                        <ul type="disc" style="margin:0pt; padding-left:0pt;">
+                                                                                                            <li style="margin-left:28.52pt; line-height:116%; padding-left:7.48pt; font-family:serif; font-size:12pt;"><span style="font-family:Calibri;">Temps ininterrompu pour se concentrer.</span></li>
+                                                                                                            <li style="margin-left:28.52pt; line-height:116%; padding-left:7.48pt; font-family:serif; font-size:12pt;"><span style="font-family:Calibri;">Ordinateur portable ou de bureau avec Microsoft Office 2007 ou version plus r&eacute;cente. Utilisateurs Mac, veuillez utiliser Microsoft Office pour Mac afin d&apos;assurer la compatibilit&eacute; des outils.</span></li>
+                                                                                                            <li style="margin-left:28.52pt; line-height:116%; padding-left:7.48pt; font-family:serif; font-size:12pt;"><span style="font-family:Calibri;">Connexion Internet haut d&eacute;bit.</span></li>
+                                                                                                            <li style="margin-left:28.52pt; line-height:116%; padding-left:7.48pt; font-family:serif; font-size:12pt;"><span style="font-family:Calibri;">Webcam capable de diffuser votre image en vid&eacute;o.</span></li>
+                                                                                                            <li style="margin-left:28.37pt; margin-bottom:8pt; line-height:116%; padding-left:7.33pt; font-family:serif; font-size:12pt;"><span style="font-family:Calibri;">Casque audio ou connexion audio avec haut-parleur et microphone.</span></li>
+                                                                                                        </ul>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:12pt;"><strong><em><u><span style="font-family:Calibri;">Vous recevrez un e-mail quelques jours avant votre programme qui inclura des informations sp&eacute;cifiques sur la fa&ccedil;on d&apos;acc&eacute;der &agrave; votre session via votre lien/ID de r&eacute;union virtuelle.</span></u></em></strong></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">Notre &eacute;quipe de formation sera en ligne 15 minutes avant le d&eacute;but de chaque journ&eacute;e de cours. Nous vous demandons de vous connecter &agrave; l&apos;avance pour v&eacute;rifier que votre technologie fonctionne correctement.</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:0pt; font-size:12pt;"><span style="font-family:Calibri;">Si vous avez des questions concernant la pr&eacute;paration de votre programme, n&apos;h&eacute;sitez pas &agrave; nous contacter &agrave; l&apos;adresse suivante&nbsp;</span><a href="mailto:training.europe@prosci.com" style="text-decoration:none;"><u><span style="font-family:Calibri; color:#0563c1;">training.europe@prosci.com</span></u></a><span style="font-family:Calibri;">.</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:0pt; font-size:12pt;"><span style="font-family:Calibri;">&nbsp;</span></p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr style="height:72pt;">
+                                                                                                    <td style="width:422.25pt; vertical-align:top;">
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">Cordialement,&nbsp;</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">{!Training_Event__c.OwnerFullName}</span></p>
+                                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">Training Coordinator</span></p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:12pt;"><span style="font-family:Calibri;">&nbsp;</span></p>
+                                                                                        <p style="margin-top:0pt; margin-bottom:8pt; text-align:center; line-height:116%; font-size:12pt;"><img src="https://myfiles.space/user_files/233292_47b444abb78326a7/1724282049_1-prac-french-oe-vilt-welcome-v2.1/1724282049_1-prac-french-oe-vilt-welcome-v2.1-3.jpeg" width="430" height="74" alt="Thank you"></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; line-height:105%; font-size:11.5pt;"><br></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height:22.5pt;">
+                                                                    <td style="vertical-align:top;">
+                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:105%; font-size:11.5pt;">CONNECT WITH US:</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height:22.5pt;">
+                                                                    <td style="vertical-align:top;">
+                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:105%; font-size:11.5pt;"><img src="https://myfiles.space/user_files/233292_47b444abb78326a7/1724282049_1-prac-french-oe-vilt-welcome-v2.1/1724282049_1-prac-french-oe-vilt-welcome-v2.1-4.jpeg" width="32" height="32" alt="LinkedIn"></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height:22.5pt;">
+                                                                    <td style="vertical-align:top;">
+                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:105%; font-size:12pt;"><span style="line-height:105%; font-size:8pt;">Prosci Europe SRL (comprising the former Prosci affiliates CMC Partnership and Nexum) is the new European division of Prosci, operating in Belgium, Denmark, France, Germany, Ireland, Italy, Luxembourg, Netherlands, Norway, Portugal, Spain, Sweden, the UK and Switzerland. See&nbsp;</span><a href="https://www.proscieurope.com/prosci-europe" target="_blank" style="text-decoration:none;"><u><span style="line-height:105%; font-size:8pt; color:#0563c1;">https://www.proscieurope.com/prosci-europe</span></u></a><span style="line-height:105%; font-size:8pt;">&nbsp;for the list of registered offices.</span><span style="line-height:105%; font-size:8pt;">&nbsp;</span><span style="line-height:105%; font-size:8pt;">&nbsp;</span></p>
+                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:105%; font-size:12pt;"><span style="line-height:105%; font-size:8pt;">This email and any attachment(s) are private and confidential and intended solely for use by the addressee. If you have received this email in error, please notify the sender and remove it entirely from your system immediately. Copying, distributing or relying on the contents of an email sent in error is strictly prohibited. We have taken reasonable precautions to ensure that no viruses are contained in this email but do not accept any liability for any alterations or damage inflicted once transmitted.</span><u><span style="line-height:105%; font-size:8pt;">&nbsp;</span></u><span style="line-height:105%; font-size:8pt;">Please note that the views of the author may not necessarily reflect those of Prosci Europe SRL. Your information is protected and managed as detailed within the company&rsquo;s Privacy Policy at&nbsp;</span><a href="https://proscieurope.com/legal/privacy-en.pdf" target="_blank" style="text-decoration:none;"><u><span style="line-height:105%; font-size:8pt; color:#0563c1;">https://proscieurope.com/legal/privacy-en.pdf</span></u></a><span style="line-height:105%; font-size:8pt;">.</span><span style="line-height:105%; font-size:8pt;">&nbsp;</span><br><span style="line-height:105%; font-size:8pt;">Prosci UK Ltd. Registered in England and Wales. Registered Address: 2 Kingdom Street, 6</span><span style="line-height:105%; font-size:5.33pt;"><sup>th</sup></span><span style="line-height:105%; font-size:8pt;">&nbsp;Floor, Paddington, London, W2 6BD, Registered Number: 04358177</span><span style="line-height:105%; font-family:Arial; font-size:8pt;"> </span><span style="line-height:105%; font-size:8pt;">&nbsp;</span></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height:22.5pt;">
+                                                                    <td style="vertical-align:top;">
+                                                                        <p style="margin-top:0pt; margin-bottom:8pt; text-align:center; line-height:105%; font-size:11.5pt;">&nbsp;</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="vertical-align:top;">
+                                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:105%; font-size:11.5pt;">&nbsp;</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="vertical-align:top;">
+                                                                        <p style="margin-top:0pt; margin-bottom:0pt; line-height:105%; font-size:11.5pt;"><span style="font-family:Calibri;">&nbsp;</span></p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:10pt;"><br></p>
+                                                    </td>
+                                                    <td style="width:45pt; vertical-align:top;">
+                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:105%; font-size:11.5pt;">&nbsp;</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" style="vertical-align:top; background-color:#3f474f;">
+                                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:10pt;"><span style="font-family:'Times New Roman';">&nbsp;</span></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p style="margin-top:0pt; margin-bottom:8pt; line-height:116%; font-size:10pt;"><br></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p style="margin-top:0pt; margin-bottom:8pt; text-align:center; line-height:116%; font-size:10pt;"><br></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p style="margin-top:0pt; margin-bottom:8pt; line-height:105%; font-size:11.5pt;"><span style="font-family:'Open Sans';">&nbsp;</span></p>
+    <p style="margin-top:0pt; margin-bottom:8pt; line-height:105%; font-size:11.5pt;"><span style="font-family:'Open Sans';">&nbsp;</span></p>
+    <p style="margin-top:0pt; margin-bottom:8pt;">&nbsp;</p>
+</div>

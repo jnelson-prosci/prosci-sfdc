@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>VILT Welcome email for the Europe English IPH Programme</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>IPH Welcome Europe Enterprise VILT English</name>
+    <style>none</style>
+    <subject>Change Management Certification Programme | Prework and Programme Information</subject>
+    <textOnly>Hello {!Contact.FirstName},
+
+We look forward to your participation in {!Training_Event}
+
+Programme Dates: {!Training_Event__c.Start_Date__c} - {!Training_Event__c.End_Date__c} at {!Training_Event__c.Location__c}
+
+
+Our goal is to equip you with knowledge, skills, and tools to drive successful change.
+
+
+
+PREPARING FOR YOUR programme Prework Requirements
+
+To maximize your in-programme learning experience, you will need to complete a number of prework tasks. You should allow 2 hours to complete as it is a critical component to support your learning experience.
+
+Set-up your Prosci Portal Access and Prework tasks
+
+You will receive an email shortly from portal@prosci.com with a link to your programme prework in the Prosci Portal as well as access to additional content, resources and tools to support your in-programme learning.
+
+Once in the Prosci portal, click the “Prework” tile. You should see a drop-down menu that says “Prework Tasks”. Prework is due 4 business days before your programme to allow your instructor time to review.
+
+
+Hard copy materials
+
+A set of materials will be couriered before the programme to the shipping address that was provided during registration (check spam for tracking notifications from the courier). There are no action items that need to be taken from these materials prior to the programme start. Please contact us if you have not received your materials by 4 business days prior to the programme start date.
+
+Here is the shipping address you provided during registration that your materials will be shipped to:
+
+{!Contact.MailingAddress}
+
+
+Schedule
+
+The schedule below indicates the time you will be required to be live online. Please note, there will be 8 hours of dedicated class time on Day 1 and Day 2 and 7 hours on Day 3, all with frequent breaks throughout the session. Please estimate roughly 1 hour of additional self-study on Day 1 and 2.
+
+Course Timings prompt start at local time zone: Europe/London
+
+Day 1 - 8:30 AM - 5:30 PM Plus one hour of self-study after class
+
+Day 2 - 8:30 AM - 5:30 PM Plus one hour of self-study after class
+
+Day 3 - 8:30 AM - 4:30 PM
+
+
+Or can we use merge field {!Training_Event__c.Programme_Schedule__c} ???
+
+To add this to your Outlook Calendar, please click on the attachment.
+
+Please be aware that you may not become certified if any training is missed.
+
+Your Instructor will factor in breaks in around the flow of training each day.
+
+What You Need for Success as a Virtual Learner
+
+Your learning experience is very important to us. In the virtual environment, the following will greatly enhance your experience and success:
+
+Uninterrupted time to focus.
+
+Laptop or desktop computer with Microsoft Office 2007 or newer. Mac users, please use Microsoft Office for Mac to ensure tool compatibility
+
+High-speed internet connection
+
+Webcam capable of streaming you by video
+
+Audio headset or audio connection with speaker and microphone
+
+
+You will receive an email a few days before your programme that will include specific information on how to access your session via your virtual meeting link/ID
+
+Our delivery team will be online 15 minutes before the start of class each day. We ask that you join early to confirm that your technology is working.
+
+
+If you have any questions about preparing for your programme, please don’t hesitate to contact us at training.europe@prosci.com
+
+
+If you have any questions about preparing for your programme, please don’t hesitate to contact us at training.europe@prosci.com.
+
+
+Best regards,
+
+Xxxxx Xxxxx
+
+Training Coordinator
+
+
+
+
+CONNECT WITH US:
+
+
+Prosci Europe SRL (comprising the former Prosci affiliates CMC Partnership and Nexum) is the new European division of Prosci, operating in Belgium, Denmark, France, Germany, Ireland, Italy, Luxembourg, Netherlands, Norway, Portugal, Spain, Sweden, the UK and Switzerland. See https://www.proscieurope.com/prosci-europe for the list of registered offices.
+
+This email and any attachment(s) are private and confidential and intended solely for use by the addressee. If you have received this email in error, please notify the sender and remove it entirely from your system immediately. Copying, distributing or relying on the contents of an email sent in error is strictly prohibited. We have taken reasonable precautions to ensure that no viruses are contained in this email but do not accept any liability for any alterations or damage inflicted once transmitted. Please note that the views of the author may not necessarily reflect those of Prosci Europe SRL. Your information is protected and managed as detailed within the company’s Privacy Policy at https://proscieurope.com/legal/privacy-en.pdf.
+Prosci UK Ltd. Registered in England and Wales. Registered Address: 2 Kingdom Street, 6th Floor, Paddington, London, W2 6BD, Registered Number: 04358177 </textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>License_Confirmed_DSP</name>
+        <label>License Confirmed - DSP</label>
+        <locationX>578</locationX>
+        <locationY>647</locationY>
+        <actionName>Deal_Support_Process__c.License_Confirmed_DSP</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Deal_Support_Process__c.License_Confirmed_DSP</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Program_Confirmed_DSP</name>
+        <label>Program Confirmed - DSP</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <actionName>Deal_Support_Process__c.Program_Confirmed_DSP</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Deal_Support_Process__c.Program_Confirmed_DSP</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>61.0</apiVersion>
+    <decisions>
+        <name>Not_Canada_Market</name>
+        <label>Not Canada Market</label>
+        <locationX>182</locationX>
+        <locationY>539</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Not_Canada_Market_Copy</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Owner:User.Division</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>CAN</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Program_Confirmed_DSP</targetReference>
+            </connector>
+            <label>Not Canada Market</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Not_US_Market</name>
+        <label>Not US Market</label>
+        <locationX>710</locationX>
+        <locationY>539</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Not_US_Market_Copy</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Owner:User.Division</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>USA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>License_Confirmed_DSP</targetReference>
+            </connector>
+            <label>Not US Market</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Type_of_Service</name>
+        <label>Type of Service</label>
+        <locationX>644</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Enterprise_Training_or_Advisory</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Enterprise Training</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Enterprise Advisory</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Not_Canada_Market</targetReference>
+            </connector>
+            <label>Enterprise Training or Advisory</label>
+        </rules>
+        <rules>
+            <name>Enterprise_Licensing</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Enterprise Licensing</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Not_US_Market</targetReference>
+            </connector>
+            <label>Enterprise Licensing</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>TODAY</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Deal Support Process - Update Confirmed Date and Send Email Alert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Deal Support Process - Update Confirmed Date and Send Email Alert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Confirmed_Date</name>
+        <label>Update Confirmed Date</label>
+        <locationX>644</locationX>
+        <locationY>323</locationY>
+        <connector>
+            <targetReference>Type_of_Service</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Confirmed_Date__c</field>
+            <value>
+                <elementReference>TODAY</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>518</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Confirmed_Date</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Confirmed</stringValue>
+            </value>
+        </filters>
+        <object>Deal_Support_Process__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
