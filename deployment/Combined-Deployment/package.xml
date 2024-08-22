@@ -232,6 +232,7 @@
         <members>Session_Notes__c.Training_Manager__c</members>
         <members>Order.Account_Name__c</members>
         <members>Order.Billing_Country_Code__c</members>
+        <members>Order.Order_Contact__c</members>
         <members>Order.Shipping_Country_Code__c</members>
         <members>Order.VILT__c</members>
         <members>OrderItem.Xero_Account_Code__c</members>
@@ -247,6 +248,7 @@
         <members>ContractAgreementDynamic</members>
         <members>Deal_Support_Process_Page_Single_Related_Lists</members>
         <members>Opportunity_Record_Page_Single_Related_Lists</members>
+        <members>Opportunity_Record_Page_Single_Related_Lists_EE</members>
         <members>Opportunity_Record_Page_Advisory_Services_Single_Related_Lists1</members>
         <members>Order_Record_Page</members>
         <members>Product_Record_Page</members>
@@ -283,6 +285,7 @@
     <types>
         <members>APXT_Redlining__Contract_Agreement__c-Contract Agreement Layout Custom</members>
         <members>Opportunity-Enterprise Engagement</members>
+        <members>Opportunity-Enterprise Training</members>
         <members>Opportunity-Global Sales Layout</members>
         <members>PricebookEntry-Price Book Entry Layout</members>
         <members>Deal_Support_Process__c-Deal Support Process Layout</members>
@@ -351,6 +354,7 @@
         <members>Case</members>
         <members>Contact</members>
         <members>Opportunity</members>
+        <members>Order</members>
         <name>SharingRules</name>
     </types>
     <types>
