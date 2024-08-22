@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>VILT Welcome email for the Europe English Agile Programme</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Agile Welcome Europe Open Enrollment VILT English</name>
+    <style>none</style>
+    <subject>Integrating Agile and Change Management  | Prework and Programme Information</subject>
+    <textOnly>Hello {!Contact.FirstName},
+
+We look forward to your participation in {!Training_Event}
+
+Programme Dates: {!Training_Event__c.Start_Date__c} - {!Training_Event__c.End_Date__c} at {!Training_Event__c.Location__c}
+
+
+Our goal is to equip you with the best practices and frameworks for applying change management in an Agile environment.
+
+
+PREPARING FOR YOUR programme Prework Requirements
+
+To maximize your in-programme learning experience, you will need to complete a number of prework tasks. You should allow 30 minutes to complete the pre-work.
+
+Set-up your Prosci Portal Access and Prework tasks
+
+You will receive an email shortly from portal@prosci.com with a link to your programme prework in the Prosci Portal as well as access to additional content, resources and tools to support your in-programme learning.
+
+
+Once in the Prosci portal, click the “Prework” tile. You should see a drop-down menu that says “Prework Tasks”. Prework is due 4 business days before your programme to allow your instructor time to review.
+
+
+Watch Prosci ADKAR Model (2 minutes). Gain a basic understanding of the Prosci ADKAR Model for individual change.
+
+
+Watch Clarifying Agile and agile (3 minutes). Your program will focus on change management and “Agile with an upper-case ‘A.’” Learn more about the differences between Agile and agile.
+
+
+Watch Shared Goal of Agile and Change Management (2 minutes).  Gain a foundational understanding of the intersection of Agile and change management by watching this video.
+
+
+Optional Tasks
+
+Watch Value of Clarifying Agile vs. agile (1 minute)
+Watch Defining Change Impact at Each Release (3 minutes)
+Watch Aligning Change Management With the Pace of Agile Initiatives (5 minutes)
+
+
+Schedule
+
+The schedule below indicates the time you will be required to be live online.
+
+
+Course Timings prompt start at local time zone: Europe/London
+
+{!Training_Event__c.Program_Schedule__c}
+
+Your Instructor will factor in breaks in around the flow of training.
+
+
+What You Need for Success as a Virtual Learner
+
+Your learning experience is very important to us. In the virtual environment, the following will greatly enhance your experience and success:
+
+Uninterrupted time to focus.
+Laptop or desktop computer with Microsoft Office 2007 or newer. Mac users, please use Microsoft Office for Mac to ensure tool compatibility
+High-speed internet connection
+Webcam capable of streaming you by video
+Audio headset or audio connection with speaker and microphone
+
+
+
+
+You will receive an email a few days before your programme that will include specific information on how to access your session via your virtual meeting link/ID
+
+
+
+Our delivery team will be online 15 minutes before the start of class each day. We ask that you join early to confirm that your technology is working.
+
+
+If you have any questions about preparing for your programme, please don’t hesitate to contact us at training.europe@prosci.com
+
+Best regards,
+
+{!Training_Event__c.OwnerFullName}
+
+Training Coordinator
+
+
+
+
+
+CONNECT WITH US:
+
+
+Prosci Europe SRL (comprising the former Prosci affiliates CMC Partnership and Nexum) is the new European division of Prosci, operating in Belgium, Denmark, France, Germany, Ireland, Italy, Luxembourg, Netherlands, Norway, Portugal, Spain, Sweden, the UK and Switzerland. See https://www.proscieurope.com/prosci-europe for the list of registered offices.
+
+This email and any attachment(s) are private and confidential and intended solely for use by the addressee. If you have received this email in error, please notify the sender and remove it entirely from your system immediately. Copying, distributing or relying on the contents of an email sent in error is strictly prohibited. We have taken reasonable precautions to ensure that no viruses are contained in this email but do not accept any liability for any alterations or damage inflicted once transmitted. Please note that the views of the author may not necessarily reflect those of Prosci Europe SRL. Your information is protected and managed as detailed within the company’s Privacy Policy at https://proscieurope.com/legal/privacy-en.pdf.
+Prosci UK Ltd. Registered in England and Wales. Registered Address: 2 Kingdom Street, 6th Floor, Paddington, London, W2 6BD, Registered Number: 04358177 </textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

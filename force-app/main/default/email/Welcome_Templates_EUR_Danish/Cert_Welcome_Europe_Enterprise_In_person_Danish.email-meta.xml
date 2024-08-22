@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>F2F Welcome email for the European Danish Practitioner Course</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Cert Welcome Europe Enterprise In person Danish</name>
+    <style>none</style>
+    <subject>Certificeringsprogram for forandringsledelse  | Forarbejde og programinformation</subject>
+    <textOnly>Hej {!Contact.FirstName},
+
+Vi glæder os til at møde dig på {!Training_Event}
+
+Kursus datoer: {!Training_Event__c.Start_Date__c} - {!Training_Event__c.End_Date__c} at {!Training_Event__c.Location__c}
+
+Vores mål er at give dig viden, færdigheder og værktøjer til at skabe succesfuld forandring.
+
+
+
+FORBEdelse til dit kursus Forberedelseskrav
+
+For at optimere din læringsoplevelse på kurset bedes du forberede dig ved at gennemgå nogle forudgående opgaver. Afsæt venligst 2 timer til at udføre dem, da de er en vigtig del af at støtte din læringsoplevelse.
+
+Set-up din adgang til Prosci-portalen og forberedelsesopgaverne.
+
+Du vil snarest modtage en e-mail fra portal@prosci.com med et link til dine forberedelsesopgaver i Prosci-portalen, samt adgang til supplerende materialer, ressourcer og værktøjer, der understøtter din læring under kurset.
+
+Når du er logget ind på Prosci-portalen, skal du klikke på titlen ”Prework” Du vil se en drop-down menu med teksten “Prework Tasks” Forberedelsesopgaverne skal være færdige 4 dage før kursusstart, så instruktøren har tid til at gennemgå dem.
+
+Tidsplan
+
+Her er tidsplanen for kurset, hvor din tilstedeværelse er obligatorisk. Undervisningen varer 8 timer på dag 1 og 2, og 7 timer på dag 3, med pauser undervejs. Afsæt cirka 1 time til selvstudie efter undervisningen på dag 1 og 2.
+
+Mødetid:
+
+{!Training_Event__c.Program_Schedule__c}
+
+Din instruktør vil tage højde for pauser omkring træningsflowet hver dag.
+
+Bemærk, at fravær kan medføre, at du ikke opnår din certificering.
+
+Hvad du har brug for for at få succes som en personlig elev
+
+Dit undervisningsforløb er vigtigt for os. Følgende vil forbedre din oplevelse og øge din succes:
+
+IT-udstyr – Medbring en bærbar computer med Microsoft Office 2007 eller nyere. Mac-brugere bedes anvende Microsoft Office for Mac for at sikre kompatibilitet.
+
+
+Hvis du har spørgsmål om forberedelse til dit kursus, er du velkommen til at kontakte os på training.europe@prosci.com.
+
+Venlig hilsen,
+
+{!Training_Event__c.OwnerFullName}
+
+Training Coordinator
+
+
+
+
+
+CONNECT WITH US:
+
+
+Prosci Europe SRL (comprising the former Prosci affiliates CMC Partnership and Nexum) is the new European division of Prosci, operating in Belgium, Denmark, France, Germany, Ireland, Italy, Luxembourg, Netherlands, Norway, Portugal, Spain, Sweden, the UK and Switzerland. See https://www.proscieurope.com/prosci-europe for the list of registered offices.
+
+This email and any attachment(s) are private and confidential and intended solely for use by the addressee. If you have received this email in error, please notify the sender and remove it entirely from your system immediately. Copying, distributing or relying on the contents of an email sent in error is strictly prohibited. We have taken reasonable precautions to ensure that no viruses are contained in this email but do not accept any liability for any alterations or damage inflicted once transmitted. Please note that the views of the author may not necessarily reflect those of Prosci Europe SRL. Your information is protected and managed as detailed within the company’s Privacy Policy at https://proscieurope.com/legal/privacy-en.pdf.
+Prosci UK Ltd. Registered in England and Wales. Registered Address: 2 Kingdom Street, 6th Floor, Paddington, London, W2 6BD, Registered Number: 04358177 </textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

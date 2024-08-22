@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Virtual Check-In email for the Europe Danish Enterprise Practitioner Course</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Cert Check in Europe Enterprise VILT Danish</name>
+    <style>none</style>
+    <subject>Din Prosci-session er næsten her | Certificeringsprogram for forandringsledelse</subject>
+    <textOnly>Hej {!Associated_Training_Contacts__c.Contact__c},
+
+Vores instruktør, {!Training_Event__c.Instructor__c}, og Training Success Specialist, {!Training_Event__c.Training_Manager__c}, ser frem til at møde dig på kurset {!Training_Event} at {!Training_Event__c.End_User_Company__c}!
+
+
+
+FORBEdelse til dit kursus Virtuelt mødeinformation
+
+Mødelink til kurset {!Training_Event__c.Virtual_Meeting_Details__c}
+
+Det virtuelle møde starter 15 minutter før programmet. Vi anbefaler at du logger på lidt før, for at skire at dit it udstyr virker.
+
+Har du spørgsmål på dagen kontakt {!Training_Event__c.Training_Manager__c}.
+
+Her er nogle påmindelser for at sikre en god læringsproces.
+
+Færdiggør dit Prework (Hvis du ikke har gjort det endnu):
+
+Prework, skal være færdigt 4 dage før kursusstart som beskrevet i din velkomstmail sendt tidligere. Du burde have modtaget en e-mail fra portal@prosci.com med adgang til dit Prework gennem Prosci-portalen. Kontakt os, hvis du ikke har modtaget denne e-mail.
+
+Du kan downloade dine digitale ressourcer i Prosci-portalen i Knowledge Hub-flisen Practitioner-linket
+
+
+Mødetid
+
+{!Training_Event__c.Program_Schedule__c}
+
+Din instruktør vil tage højde for pauser omkring træningsflowet hver dag.
+
+Bemærk, at fravær kan medføre, at du ikke opnår din certificering.
+
+
+IT-udstyr
+
+Medbring en bærbar computer med Microsoft Office 2007 eller nyere. Mac-brugere bedes anvende Microsoft Office for Mac for at sikre kompatibilitet.
+
+Vi ser frem til at møde dig. Hvis du har nogen spørgsmål, er du velkommen til at kontakte os på training.europe@prosci.com
+
+
+Venlig hilsen,
+
+{!Training_Event__c.OwnerFullName}
+
+Training Coordinator
+
+
+
+
+
+CONNECT WITH US:
+
+
+Prosci Europe SRL (comprising the former Prosci affiliates CMC Partnership and Nexum) is the new European division of Prosci, operating in Belgium, Denmark, France, Germany, Ireland, Italy, Luxembourg, Netherlands, Norway, Portugal, Spain, Sweden, the UK and Switzerland. See https://www.proscieurope.com/prosci-europe for the list of registered offices.
+
+This email and any attachment(s) are private and confidential and intended solely for use by the addressee. If you have received this email in error, please notify the sender and remove it entirely from your system immediately. Copying, distributing or relying on the contents of an email sent in error is strictly prohibited. We have taken reasonable precautions to ensure that no viruses are contained in this email but do not accept any liability for any alterations or damage inflicted once transmitted. Please note that the views of the author may not necessarily reflect those of Prosci Europe SRL. Your information is protected and managed as detailed within the company’s Privacy Policy at https://proscieurope.com/legal/privacy-en.pdf.
+Prosci UK Ltd. Registered in England and Wales. Registered Address: 2 Kingdom Street, 6th Floor, Paddington, London, W2 6BD, Registered Number: 04358177 </textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
