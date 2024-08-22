@@ -402,6 +402,7 @@
     </types>
     <types>
         <members>unfiled$public/Delivery_Resource_Request_DSP</members>
+        <members>unfiled$public/License_Confirmed_DSP</members>
         <members>Check_In_Templates_EUR_Danish/Cert_Check_in_Europe_Enterprise_In_person_Danish</members>
 		<members>Check_In_Templates_EUR_Danish/Cert_Check_in_Europe_Enterprise_VILT_Danish</members>
 		<members>Check_In_Templates_EUR_Danish/Cert_Check_in_Europe_Open_Enrollment_In_person_Danish</members>
