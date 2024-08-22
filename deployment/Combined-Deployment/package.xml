@@ -639,8 +639,18 @@
 		<members>Associated_Training_Contacts__c.Welcome_Email_Alert_EUR_Open_Enrollment_VILT_Norwegian</members>
 		<members>Associated_Training_Contacts__c.Welcome_Email_Alert_EUR_Open_Enrollment_VILT_Spanish</members>
 		<members>Associated_Training_Contacts__c.Welcome_Email_Alert_EUR_Open_Enrollment_VILT_Swedish</members>
+        <members>Associated_Training_Contacts__c.Check_in_Email_Alert_EUR_Enterprise_Agile_In_Person_English</members>
+		<members>Associated_Training_Contacts__c.Check_in_Email_Alert_EUR_Enterprise_In_Person_English</members>
+		<members>Associated_Training_Contacts__c.Welcome_Email_Alert_ANZ_Improve_Projecth_Health</members>
+		<members>Deal_Support_Process__c.License_Confirmed_DSP</members>
 		<name>WorkflowAlert</name>
 	</types>
+    <types>
+        <members>Associated_Training_Contacts__c</members>
+        <members>Deal_Support_Process__c</members>
+        <members></members>
+        <name>Workflow</name>
+    </types>
     <types>
         <members>Deal_Support_Process__c</members>
         <members>Integration_Tenant__c</members>
