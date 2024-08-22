@@ -51,7 +51,6 @@
         <name>Flow</name>
     </types>
     <types>
-        <members>Contact</members>
         <members>Country_Code_Info__mdt</members>
         <members>Deal_Support_Process__c</members>
         <members>Integration_Tenant__c</members>
@@ -373,9 +372,7 @@
         <members>Training_Event__c</members>
         <members>Account</members>
         <members>Case</members>
-        <members>Contact</members>
         <members>Opportunity</members>
-        <members>Order</members>
         <name>SharingRules</name>
     </types>
     <types>
