@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
-    <sharingOwnerRules>
-        <fullName>Prosci_with_Prosci_Canada</fullName>
-        <accessLevel>Edit</accessLevel>
-        <label>Prosci with Prosci Canada</label>
+    <sharingCriteriaRules>
+        <fullName>Global_Team</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Global Team</label>
         <sharedTo>
-            <allInternalUsers></allInternalUsers>
+            <roleAndSubordinatesInternal>Global_Team</roleAndSubordinatesInternal>
         </sharedTo>
-        <sharedFrom>
-            <portalRoleAndSubordinates>AdProChangeSystemsIncPartnerUser</portalRoleAndSubordinates>
-        </sharedFrom>
-    </sharingOwnerRules>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Engagement</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
 </SharingRules>

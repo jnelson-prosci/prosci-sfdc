@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>ANZ_Market_Leader</members>
+		<members>ANZ_Market_Member</members>
+		<members>CAN_Market_Leader</members>
+		<members>CAN_Market_Member</members>
+		<members>EUR_Market_Leader</members>
+		<members>EUR_Market_Member</members>
+		<members>Global_Team</members>
+		<members>LATAM_Market_Leader</members>
+		<members>LATAM_Market_Member</members>
+        <members>System_Administrator</members>
+		<members>US_Market_Leader</members>
+		<members>US_Market_Member</members>
+		<name>Role</name>
+	</types>
+	<version>60.0</version>
+</Package>

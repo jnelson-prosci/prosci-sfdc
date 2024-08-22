@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_Number_of_Participants__c</fullName>
+    <description>At the time of creation the value for this field is set from the related Price Book Entry in the flow &quot;Opportunity Product - Set Overage Fields&quot;. Deal Support Process references the Opportunity Product value to calculate incremental pricing.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the minimum number of attendees before incremental pricing is evaluated.</inlineHelpText>
+    <label>Minimum Number of Participants</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

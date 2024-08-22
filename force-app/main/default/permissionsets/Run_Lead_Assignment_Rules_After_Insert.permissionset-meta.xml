@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Run_Lead_Assignment_Rules_After_Insert</name>
+    </customPermissions>
+    <description>Flow &quot;Lead - Run Lead Assignment Rules After Insert&quot; checks to see if this permission set is present on the running user. If present, the flow schedules the lead assignment rules to be applied to the new lead 1 minute after creation.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Run Lead Assignment Rules After Insert</label>
+</PermissionSet>

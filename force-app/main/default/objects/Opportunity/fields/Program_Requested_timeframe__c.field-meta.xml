@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Program_Requested_timeframe__c</fullName>
     <externalId>false</externalId>
-    <label>Program Requested timeframe</label>
+    <label>Program Requested Timeframe</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

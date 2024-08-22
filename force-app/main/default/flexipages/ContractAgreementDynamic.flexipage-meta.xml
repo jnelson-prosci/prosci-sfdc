@@ -124,8 +124,28 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Deal_Support_Process__c</fieldItem>
+                <identifier>RecordDeal_Support_Process_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Legal_Negotiator__c</fieldItem>
                 <identifier>RecordLegal_Negotiator_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Single_Contract_Covers_All_DSPs__c</fieldItem>
+                <identifier>RecordSingle_Contract_Covers_All_DSPs__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-b66e1e8d-8671-4db7-a36a-a8e9b135258e</name>
@@ -213,6 +233,23 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Date_Time_Returned_from_Client_Review__c</fieldItem>
                 <identifier>RecordDate_Time_Returned_from_Client_Review_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Data_Storage_Requirements__c</fieldItem>
+                <identifier>RecordData_Storage_Requirements__cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.APXT_Redlining__Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Professional Services Agreement</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-abd4d196-9bf0-45ac-8797-f578652e8e89</name>

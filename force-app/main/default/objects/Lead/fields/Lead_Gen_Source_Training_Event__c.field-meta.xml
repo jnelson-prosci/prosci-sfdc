@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Gen_Source_Training_Event__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This value is set on leads created by the Session Notes - Lead #1-3 flows</description>
+    <externalId>false</externalId>
+    <label>Lead Gen Source Training Event</label>
+    <referenceTo>Training_Event__c</referenceTo>
+    <relationshipLabel>Leads</relationshipLabel>
+    <relationshipName>Leads</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

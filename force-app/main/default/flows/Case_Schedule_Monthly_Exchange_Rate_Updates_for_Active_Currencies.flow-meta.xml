@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <decisions>
+        <description>Checks if the current day is the first Monday of the month</description>
+        <name>Check_For_First_Monday</name>
+        <label>Check For First Monday</label>
+        <locationX>182</locationX>
+        <locationY>252</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>isFirstMonday</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>isFirstMondayOfMonth</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_ICT_Queue_Record</targetReference>
+            </connector>
+            <label>isFirstMonday</label>
+        </rules>
+    </decisions>
+    <description>Generates a Case each month to remind member(s) of a designated queue to update the exchange rates for all active currencies in the org.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Calculates the due date for the Case to update active currency exchange rates</description>
+        <name>caseDueDate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY() + 4</expression>
+    </formulas>
+    <formulas>
+        <description>Creates a subject for the Case to update active currency exchange rates</description>
+        <name>caseSubject</name>
+        <dataType>String</dataType>
+        <expression>&apos;Update Exchange Rates for All Active Currencies - &apos; + TEXT(MONTH(TODAY())) + TEXT(YEAR(TODAY()))</expression>
+    </formulas>
+    <formulas>
+        <description>Determines whether or not the current day is the first Monday of the month</description>
+        <name>isFirstMondayOfMonth</name>
+        <dataType>Boolean</dataType>
+        <expression>TEXT(WEEKDAY(TODAY())) = &apos;2&apos; &amp;&amp; MONTH(TODAY() - 7) != MONTH(TODAY())</expression>
+    </formulas>
+    <interviewLabel>Case - Schedule Monthly Exchange Rate Updates for Active Currencies {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case - Schedule Monthly Exchange Rate Updates for Active Currencies</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Creates a Case to be assigned to a queue that reminds queue member(s) to update the exchange rates for all active currencies within the org.</description>
+        <name>Create_Case_to_Update_Currency_Exchange_Rates</name>
+        <label>Create Case to Update Currency Exchange Rates</label>
+        <locationX>50</locationX>
+        <locationY>468</locationY>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>caseSubject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Due_date__c</field>
+            <value>
+                <elementReference>caseDueDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Salesforce</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_ICT_Queue_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Medium</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Request_Type__c</field>
+            <value>
+                <stringValue>Configuration Change</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>New</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>caseSubject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>System__c</field>
+            <value>
+                <stringValue>Salesforce</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Retrieves ICT Queue record</description>
+        <name>Get_ICT_Queue_Record</name>
+        <label>Get ICT Queue Record</label>
+        <locationX>50</locationX>
+        <locationY>360</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Case_to_Update_Currency_Exchange_Rates</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>queueName</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_For_First_Monday</targetReference>
+        </connector>
+        <schedule>
+            <frequency>Weekly</frequency>
+            <startDate>2024-07-01</startDate>
+            <startTime>00:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Contains API name of the queue to which the generated Case will be assigned</description>
+        <name>queueName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>ICT_Support_Queue</stringValue>
+        </value>
+    </variables>
+</Flow>

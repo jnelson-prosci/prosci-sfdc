@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Reason_Required</fullName>
+    <active>true</active>
+    <description>For Enterprise Engagement Opp, require a closed reason be provided if the user has set the stage to Closed - Lost</description>
+    <errorConditionFormula>/* Check if Enterprise Engagement Opp and stage is set to Closed - Lost */
+ IF(RecordType.DeveloperName = &apos;Enterprise_Engagement&apos; &amp;&amp;
+ ISPICKVAL(StageName, &apos;Closed - Lost&apos;),
+    
+    /* If the Closed Reason is blank then show error*/
+    ISBLANK(TEXT(Closed_Reason__c)),
+
+
+    FALSE
+)</errorConditionFormula>
+    <errorMessage>Provide a closed reason</errorMessage>
+</ValidationRule>

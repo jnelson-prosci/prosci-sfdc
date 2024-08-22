@@ -3,6 +3,7 @@
     <fullName>Producer_Lead_Generator__c</fullName>
     <deleteConstraint>Restrict</deleteConstraint>
     <externalId>false</externalId>
+    <inlineHelpText>Training Success Specialist Lead Generator</inlineHelpText>
     <label>TSS Lead Generator</label>
     <referenceTo>Contact</referenceTo>
     <relationshipLabel>Opportunities (Producer Lead Generator)</relationshipLabel>

@@ -46,6 +46,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Language__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Projected_Attendance__c</field>
             </layoutItems>
             <layoutItems>
@@ -71,6 +75,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Google_Calendar_Link__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Deal_Support_Process__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

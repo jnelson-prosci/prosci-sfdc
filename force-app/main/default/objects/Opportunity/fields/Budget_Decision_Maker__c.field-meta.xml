@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Decision_Maker__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Represents the person responsible for the budget decision-making at the company.</description>
+    <externalId>false</externalId>
+    <label>Budget Decision-Maker</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Opportunities (Budget Decision-Maker)</relationshipLabel>
+    <relationshipName>Opportunitiesf445</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

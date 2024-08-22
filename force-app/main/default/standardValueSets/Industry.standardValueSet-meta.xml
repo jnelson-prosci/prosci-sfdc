@@ -161,4 +161,19 @@
         <default>false</default>
         <label>Services - General</label>
     </standardValue>
+    <standardValue>
+        <fullName>Fast Moving Consumer Goods</fullName>
+        <default>false</default>
+        <label>Fast Moving Consumer Goods</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Engineering</fullName>
+        <default>false</default>
+        <label>Engineering</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ICT Hardware &amp; Software</fullName>
+        <default>false</default>
+        <label>ICT Hardware &amp; Software</label>
+    </standardValue>
 </StandardValueSet>

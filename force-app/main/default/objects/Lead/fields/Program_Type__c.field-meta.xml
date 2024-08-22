@@ -60,6 +60,21 @@
                 <default>false</default>
                 <label>Other (please share in comments)</label>
             </value>
+            <value>
+                <fullName>Improve Project Health</fullName>
+                <default>false</default>
+                <label>Improve Project Health</label>
+            </value>
+            <value>
+                <fullName>ADKAR Model Mastery 1</fullName>
+                <default>false</default>
+                <label>ADKAR Model Mastery 1</label>
+            </value>
+            <value>
+                <fullName>ADKAR Model Mastery 2</fullName>
+                <default>false</default>
+                <label>ADKAR Model Mastery 2</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionCalls>
+        <description>Redirects to Composer URL variable that contains the solution URL</description>
+        <name>Call_Composer_Solution</name>
+        <label>Call Composer Solution</label>
+        <locationX>842</locationX>
+        <locationY>998</locationY>
+        <actionName>c:navigateEverywhereLFA</actionName>
+        <actionType>component</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>destinationType</name>
+            <value>
+                <stringValue>URL</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>destinationUrl</name>
+            <value>
+                <elementReference>varT_ComposerURL</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>c:navigateEverywhereLFA</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>Client paper requires no docgen - immediately redirects user to created Contract Agreement record</description>
+        <name>Go_to_Contract_Agreement</name>
+        <label>Go to Contract Agreement</label>
+        <locationX>578</locationX>
+        <locationY>890</locationY>
+        <actionName>c:navigateEverywhereLFA</actionName>
+        <actionType>component</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>destinationRecordId</name>
+            <value>
+                <elementReference>varT_ContractAgreementId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>destinationType</name>
+            <value>
+                <stringValue>RECORD</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>destinationAction</name>
+            <value>
+                <stringValue>View</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>c:navigateEverywhereLFA</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <description>Checks if user selected License Agreement or SOW, sets Composer URL appropriately</description>
+        <name>Assign_Composer_URL</name>
+        <label>Assign Composer URL</label>
+        <locationX>842</locationX>
+        <locationY>890</locationY>
+        <assignmentItems>
+            <assignToReference>varT_ComposerURL</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fT_EvaluateComposerURL</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Call_Composer_Solution</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>chAdvisory</name>
+        <choiceText>Advisory</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Advisory</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>chAudit</name>
+        <choiceText>Audit</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Audit</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>chClickThruAgreement</name>
+        <choiceText>Click Through Agreement</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Click Through Agreement</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>chClientPaper</name>
+        <choiceText>Client Paper</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Client Paper</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>chLicenseAgreement</name>
+        <choiceText>License Agreement</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>License Agreement</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>chLimitedServicesAgreement</name>
+        <choiceText>Limited Services Agreement</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Limited Services Agreement</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>chSOW</name>
+        <choiceText>Statement of Work</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Statement of Work</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>chSpeakingEngagement</name>
+        <choiceText>Speaking Engagement</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Speaking Engagement</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <description>Replaces Disable Conga formula fields in Composer solutions. confirms that required fields have values before letting users continue with request</description>
+        <name>Check_for_Required_Fields</name>
+        <label>Check for Required Fields</label>
+        <locationX>380</locationX>
+        <locationY>350</locationY>
+        <defaultConnector>
+            <targetReference>Contract_Information</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Statement_of_Work</name>
+            <conditionLogic>(1 OR 2 OR 3) AND 4</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_DSP.Location__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_DSP.AccountId__r.PSA_Effective_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_DSP.Day_1__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Type_of_Contract</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>chSOW</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SOW_ErrorScreen</targetReference>
+            </connector>
+            <label>Statement of Work</label>
+        </rules>
+        <rules>
+            <name>License_Agreement</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>Type_of_Contract</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>chLicenseAgreement</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_DSP.Initial_Fee__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_DSP.Agent_count__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>License_Agreement_Error_Screen</targetReference>
+            </connector>
+            <label>License Agreement</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Client_Paper</name>
+        <label>Client Paper?</label>
+        <locationX>710</locationX>
+        <locationY>782</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Composer_URL</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Type_of_Contract</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>chClientPaper</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Go_to_Contract_Agreement</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>LSA Company assignments</description>
+    <dynamicChoiceSets>
+        <name>pckLicenseType</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>License_Agreement_Type__c</picklistField>
+        <picklistObject>APXT_Redlining__Contract_Agreement__c</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <formulas>
+        <name>formLicAff</name>
+        <dataType>Boolean</dataType>
+        <expression>IF({!License_Affiliates} = TRUE, TRUE, FALSE)</expression>
+    </formulas>
+    <formulas>
+        <name>fT_AdvisoryComposerURL</name>
+        <dataType>String</dataType>
+        <expression>&apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos;+
+&apos;&amp;serverUrl=&apos;+{!$Api.Partner_Server_URL_520}+
+&apos;&amp;Id=&apos;+{!Get_Contract_Agreement.Id}+
+&apos;&amp;QueryID=[ADVI]0Q_113EA2563826&apos;+
+&apos;&amp;TemplateId=0T_018EA2758206&apos;+
+&apos;&amp;SC0=1&apos;+
+&apos;&amp;SC1=SalesforceFile&apos;+
+&apos;&amp;DataTagEnable=1&apos;+
+&apos;&amp;RM=1&apos;+
+&apos;&amp;LRTF=1&apos;+
+&apos;&amp;OFN=Agreement+&apos; + {!Get_Contract_Agreement.Name} + &apos;+for+&apos; + {!Get_Contract_Agreement.APXT_Redlining__Account__r.Name} +
+&apos;&amp;DS7=11&apos;+
+&apos;&amp;BML=Generating+agreement...&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>fT_AuditComposerURL</name>
+        <dataType>String</dataType>
+        <expression>&apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos;+
+&apos;&amp;serverUrl=&apos;+{!$Api.Partner_Server_URL_520}+
+&apos;&amp;Id=&apos;+{!Get_Contract_Agreement.Id}+
+&apos;&amp;QueryID=[AUDIT]0Q_112EA2377103&apos;+
+&apos;&amp;TemplateId=0T_017EA2098394&apos;+
+&apos;&amp;SC0=1&apos;+
+&apos;&amp;SC1=SalesforceFile&apos;+
+&apos;&amp;DataTagEnable=1&apos;+
+&apos;&amp;RM=1&apos;+
+&apos;&amp;LRTF=1&apos;+
+&apos;&amp;OFN=Agreement+&apos; + {!Get_Contract_Agreement.Name} + &apos;+for+&apos; + {!Get_Contract_Agreement.APXT_Redlining__Account__r.Name} +
+&apos;&amp;DS7=11&apos;+
+&apos;&amp;BML=Generating+agreement...&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>fT_ClickThruAgreementComposerURL</name>
+        <dataType>String</dataType>
+        <expression>&apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos;+
+&apos;&amp;serverUrl=&apos;+{!$Api.Partner_Server_URL_520}+
+&apos;&amp;Id=&apos;+{!Get_Contract_Agreement.Id}+
+&apos;&amp;QueryID=[CTA]0Q_109EA2284158&apos;+
+&apos;&amp;TemplateId=0T_016EA2816684&apos;+
+&apos;&amp;SC0=1&apos;+
+&apos;&amp;SC1=SalesforceFile&apos;+
+&apos;&amp;DataTagEnable=1&apos;+
+&apos;&amp;RM=1&apos;+
+&apos;&amp;LRTF=1&apos;+
+&apos;&amp;OFN=Agreement+&apos; + {!Get_Contract_Agreement.Name} + &apos;+for+&apos; + {!Get_Contract_Agreement.APXT_Redlining__Account__r.Name} +
+&apos;&amp;DS7=11&apos;+
+&apos;&amp;BML=Generating+agreement...&apos;</expression>
+    </formulas>
+    <formulas>
+        <description>Checks which type of contract the user selected and pulls the proper Composer URL based on that choice</description>
+        <name>fT_EvaluateComposerURL</name>
+        <dataType>String</dataType>
+        <expression>CASE(
+{!Type_of_Contract},
+{!chAdvisory}, {!fT_AdvisoryComposerURL},
+{!chAudit}, {!fT_AuditComposerURL},
+{!chClickThruAgreement}, {!fT_ClickThruAgreementComposerURL}, 
+{!chLicenseAgreement}, {!fT_LicenseAgreementComposerURL}, 
+{!chSOW}, {!fT_SOWComposerURL}, 
+{!chSpeakingEngagement}, {!fT_SpeakingEngagementComposerURL}, 
+{!fT_LimitedServicesAgreementComposerURL})</expression>
+    </formulas>
+    <formulas>
+        <name>fT_LicenseAgreementComposerURL</name>
+        <dataType>String</dataType>
+        <expression>&apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos;+
+&apos;&amp;serverUrl=&apos;+{!$Api.Partner_Server_URL_520}+
+&apos;&amp;Id=&apos;+{!Get_Contract_Agreement.Id}+
+&apos;&amp;QueryID=[LBI]0Q_075EA2947406&apos;+
+&apos;,[LPMC]0Q_078EA2607677&apos;+
+&apos;,[LPM]0Q_079EA2892101&apos;+
+&apos;,[LPT1]0Q_080EA2508372&apos;+
+&apos;,[LPF]0Q_081EA2002103&apos;+
+&apos;,[LTerm]0Q_082EA2683816&apos;+
+&apos;,[LLL]0Q_083EA2860912&apos;+
+&apos;,[LMisc]0Q_085EA2182314&apos;+
+&apos;,[LER]0Q_086EA2252954&apos;+
+&apos;,[LPMIP]0Q_087EA2728610&apos;+
+&apos;,[LLM]0Q_088EA2057908&apos;+
+&apos;,[LSL]0Q_094EA2962643&apos;+
+&apos;,[LLR]0Q_089EA2035828&apos;+
+&apos;,[LPT]0Q_090EA2381820&apos;+
+&apos;,[Acc]0Q_093EA2276103&apos;+
+&apos;,[LWD]0Q_095EA2283282&apos;+
+&apos;,[LII]0Q_096EA2357983&apos;+
+&apos;,[LPMIR]0Q_097EA2182916&apos;+
+&apos;,[LPC]0Q_100EA2927539&apos;+
+&apos;,[LIPA]0Q_099EA2802777&apos;+
+&apos;,[LALS]0Q_098EA2987965&apos;+
+&apos;&amp;TemplateId=&apos;+{!Get_Contract_Agreement.License_Agreement_Template_Key__c}+
+&apos;&amp;SC0=1&apos;+
+&apos;&amp;SC1=SalesforceFile&apos;+
+&apos;&amp;DataTagEnable=1&apos;+
+&apos;&amp;RM=1&apos;+
+&apos;&amp;LRTF=1&apos;+
+&apos;&amp;OFN=Agreement+&apos; + {!Get_Contract_Agreement.Name} + &apos;+for+&apos; + {!Get_Contract_Agreement.APXT_Redlining__Account__r.Name} +
+&apos;&amp;DS7=11&apos;+
+&apos;&amp;BML=Generating+agreement...&apos;+
+&apos;&amp;DC=&apos; + IF( {!Get_Contract_Agreement.Disable_Conga_Logic_License__c} = &apos;0&apos;, &apos;0&apos;, &apos;1&apos; ) +
+&apos;&amp;DCL=One+of+the+following+fields+has+not+been+set+-+Initial+License+Fee,+Licensee+Agent+Count.&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>fT_LimitedServicesAgreementComposerURL</name>
+        <dataType>String</dataType>
+        <expression>&apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos;+
+&apos;&amp;serverUrl=&apos;+{!$Api.Partner_Server_URL_520}+
+&apos;&amp;Id=&apos;+{!Get_Contract_Agreement.Id}+
+&apos;&amp;QueryID=[SVCPER]0Q_108EA2889280&apos;+
+&apos;,[Acc]0Q_093EA2276103&apos;+
+&apos;,[ProgramCosts]0Q_038EA2096951&apos;+
+&apos;,[FEES]0Q_115EA2092850&apos;+
+&apos;,[INTPROP]0Q_116EA2925529&apos;+
+&apos;,[LSATERM]0Q_117EA2276365&apos;+
+&apos;,[PERFWAR]0Q_118EA2806633&apos;+
+&apos;,[MISCLSA]0Q_119EA2048166&apos;+
+&apos;,[LONL]0Q_120EA2451306&apos;+
+&apos;,[CompanyAssignments]0Q_039EA2294490&apos;+
+&apos;,[LOG]0Q_122EA2743794&apos;+
+&apos;,[CANCEL]0Q_123EA2408841&apos;+
+&apos;,[DSP]0Q_104EA2316245&apos;+
+&apos;,[Tuition]0Q_091EA2503736?pv0=&apos;+{!Get_Contract_Agreement.Deal_Support_Process__r.Id}+
+&apos;,[Materials]0Q_036EA2927219?pv0=&apos;+{!Get_Contract_Agreement.Deal_Support_Process__r.Id}+
+&apos;&amp;TemplateId=&apos;+{!Get_Contract_Agreement.LSA_Template_Key__c}+
+&apos;&amp;SC0=1&apos;+
+&apos;&amp;SC1=SalesforceFile&apos;+
+&apos;&amp;DataTagEnable=1&apos;+
+&apos;&amp;RM=1&apos;+
+&apos;&amp;LRTF=1&apos;+
+&apos;&amp;OFN=Agreement+&apos; + {!Get_Contract_Agreement.Name} + &apos;+for+&apos; + {!Get_Contract_Agreement.APXT_Redlining__Account__r.Name} +
+&apos;&amp;DS7=11&apos;+
+&apos;&amp;BML=Generating+agreement...&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>fT_SOWComposerURL</name>
+        <dataType>String</dataType>
+        <expression>&apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos;+
+&apos;&amp;serverUrl=&apos;+{!$Api.Partner_Server_URL_520}+
+&apos;&amp;Id=&apos;+{!Get_Contract_Agreement.Id}+
+&apos;&amp;QueryId=[ScopeofServices]0Q_037EA2140055&apos;+
+&apos;,[ProgramCosts]0Q_038EA2096951&apos;+
+&apos;,[CompanyAssignments]0Q_039EA2294490&apos;+
+&apos;,[Logistics]0Q_040EA2282395&apos;+
+&apos;,[PSAEFTDate]0Q_092EA2440276&apos;+
+&apos;,[Acc]0Q_093EA2276103&apos;+
+&apos;,[DSP]0Q_104EA2316245&apos;+
+&apos;,[Tuition]0Q_091EA2503736?pv0=&apos;+{!Get_Contract_Agreement.APXT_Redlining__Opportunity__r.Id}+
+&apos;,[Materials]0Q_036EA2927219?pv0=&apos;+{!Get_Contract_Agreement.APXT_Redlining__Opportunity__r.Id}+
+&apos;&amp;TemplateId=&apos;+{!Get_Contract_Agreement.SOW_Template_Key__c}+
+&apos;&amp;SC0=1&apos;+
+&apos;&amp;SC1=SalesforceFile&apos;+
+&apos;&amp;DataTagEnable=1&apos;+
+&apos;&amp;RM=1&apos;+
+&apos;&amp;LRTF=1&apos;+
+&apos;&amp;OFN=SOW+&apos; + {!Get_Contract_Agreement.Name} + &apos;+for+&apos; + {!Get_Contract_Agreement.APXT_Redlining__Account__r.Name} +
+&apos;&amp;DS7=11&apos;+
+&apos;&amp;BML=Generating+SOW...&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>fT_SpeakingEngagementComposerURL</name>
+        <dataType>String</dataType>
+        <expression>&apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos;+
+&apos;&amp;serverUrl=&apos;+{!$Api.Partner_Server_URL_520}+
+&apos;&amp;Id=&apos;+{!Get_Contract_Agreement.Id}+
+&apos;&amp;QueryID=[SPENG]0Q_114EA2169345&apos;+
+&apos;&amp;TemplateId=0T_019EA2796194&apos;+
+&apos;&amp;SC0=1&apos;+
+&apos;&amp;SC1=SalesforceFile&apos;+
+&apos;&amp;DataTagEnable=1&apos;+
+&apos;&amp;RM=1&apos;+
+&apos;&amp;LRTF=1&apos;+
+&apos;&amp;OFN=Agreement+&apos; + {!Get_Contract_Agreement.Name} + &apos;+for+&apos; + {!Get_Contract_Agreement.APXT_Redlining__Account__r.Name} +
+&apos;&amp;DS7=11&apos;+
+&apos;&amp;BML=Generating+agreement...&apos;</expression>
+    </formulas>
+    <interviewLabel>Conga - CA request from DSP {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Conga - CA request from DSP</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_Contract_Agreement</name>
+        <label>Create Contract Agreement</label>
+        <locationX>710</locationX>
+        <locationY>566</locationY>
+        <assignRecordIdToReference>varT_ContractAgreementId</assignRecordIdToReference>
+        <connector>
+            <targetReference>Get_Contract_Agreement</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>APXT_Redlining__Account__c</field>
+            <value>
+                <elementReference>Get_DSP.AccountId__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>APXT_Redlining__Opportunity__c</field>
+            <value>
+                <elementReference>Get_DSP.Opportunity__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>APXT_Redlining__Recursive_Merge_Status__c</field>
+            <value>
+                <stringValue>Sync</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>APXT_Redlining__Status__c</field>
+            <value>
+                <stringValue>In Process</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>APXT_Redlining__Type__c</field>
+            <value>
+                <elementReference>Type_of_Contract</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Deal_Support_Process__c</field>
+            <value>
+                <elementReference>Get_DSP.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Initial_License_Fee__c</field>
+            <value>
+                <elementReference>Initial_License_Fee</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Legal_Negotiator__c</field>
+            <value>
+                <elementReference>LegalNegoLookup.recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>License_Affiliates__c</field>
+            <value>
+                <elementReference>formLicAff</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>License_Agreement_Type__c</field>
+            <value>
+                <elementReference>License_Agreement_Type</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Licensee_Agent_Count__c</field>
+            <value>
+                <elementReference>Licensee_Agent_Count</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Other_Client_Paper_Type__c</field>
+            <value>
+                <elementReference>Other_Client_Paper_Type</elementReference>
+            </value>
+        </inputAssignments>
+        <object>APXT_Redlining__Contract_Agreement__c</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Contract_Agreement</name>
+        <label>Get Contract Agreement</label>
+        <locationX>710</locationX>
+        <locationY>674</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Client_Paper</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varT_ContractAgreementId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>APXT_Redlining__Contract_Agreement__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_DSP</name>
+        <label>Get DSP</label>
+        <locationX>380</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Contract_Type_Screen</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Deal_Support_Process__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>Contract_Information</name>
+        <label>Contract Information</label>
+        <locationX>710</locationX>
+        <locationY>458</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Create_Contract_Agreement</targetReference>
+        </connector>
+        <fields>
+            <name>License_Agreement_Type</name>
+            <choiceReferences>pckLicenseType</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>License Agreement Type</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Type_of_Contract</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>chLicenseAgreement</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>License_Affiliates</name>
+            <dataType>Boolean</dataType>
+            <fieldText>License Affiliates?</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Type_of_Contract</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>chLicenseAgreement</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Right_to_Translate_Materials</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Right to Translate Materials?</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Type_of_Contract</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>chLicenseAgreement</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Initial_License_Fee</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_DSP.Initial_Fee__c</elementReference>
+            </defaultValue>
+            <fieldText>Initial License Fee</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Type_of_Contract</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>chLicenseAgreement</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Licensee_Agent_Count</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_DSP.Agent_count__c</elementReference>
+            </defaultValue>
+            <fieldText>Licensee Agent Count</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Type_of_Contract</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>chLicenseAgreement</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Other_Client_Paper_Type</name>
+            <dataType>String</dataType>
+            <fieldText>Other Client Paper Type</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Type_of_Contract</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>chClientPaper</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>LegalNegoLookup</name>
+            <extensionName>flowruntime:lookup</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>fieldApiName</name>
+                <value>
+                    <stringValue>Legal_Negotiator__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Legal Negotiator</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>objectApiName</name>
+                <value>
+                    <stringValue>APXT_Redlining__Contract_Agreement__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Contract_Type_Screen</name>
+        <label>Contract Type Screen</label>
+        <locationX>380</locationX>
+        <locationY>242</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Check_for_Required_Fields</targetReference>
+        </connector>
+        <fields>
+            <name>UserWarningMessage</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 18px;&quot;&gt;Please read: &lt;/strong&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Until told otherwise by the Prosci admin team, only the SOW can be used with the Conga updates&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Type_of_Contract</name>
+            <choiceReferences>chLicenseAgreement</choiceReferences>
+            <choiceReferences>chSOW</choiceReferences>
+            <choiceReferences>chClientPaper</choiceReferences>
+            <choiceReferences>chLimitedServicesAgreement</choiceReferences>
+            <choiceReferences>chClickThruAgreement</choiceReferences>
+            <choiceReferences>chAudit</choiceReferences>
+            <choiceReferences>chAdvisory</choiceReferences>
+            <choiceReferences>chSpeakingEngagement</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Type of Contract</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>License_Agreement_Error_Screen</name>
+        <label>License Agreement Error Screen</label>
+        <locationX>314</locationX>
+        <locationY>458</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>LicenseAgreement_ErrorMessage</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 18px;&quot;&gt;Uh oh! This isn&apos;t good.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;You are missing required fields on the Deal Support Process, Opportunity, and/or Acccount.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Please go back and confirm that the 2 fields below have the proper values before continuing.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;﻿&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;Initial Fee: &lt;/strong&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;{!Get_DSP.Initial_Fee__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 16px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Agent Count:&lt;/strong&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt; {!Get_DSP.Agent_count__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>SOW_ErrorScreen</name>
+        <label>SOW Error Screen</label>
+        <locationX>50</locationX>
+        <locationY>458</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SOW_ErrorMessage</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 18px;&quot;&gt;Uh oh! This isn&apos;t good.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;You are missing required fields on the Deal Support Process or Opportunity.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Please go back and confirm that the 5 fields below have the proper values before continuing.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;﻿&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255); font-size: 16px;&quot;&gt;Location:&lt;/strong&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255); font-size: 16px;&quot;&gt; {!Get_DSP.Location__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255); font-size: 16px;&quot;&gt;PSA Effective Date: &lt;/strong&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255); font-size: 16px;&quot;&gt;{!Get_DSP.AccountId__r.PSA_Effective_Date__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255); font-size: 16px;&quot;&gt;Day 1: &lt;/strong&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255); font-size: 16px;&quot;&gt;{!Get_DSP.Day_1__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_DSP</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varT_ComposerURL</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varT_ContractAgreementId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Order.Billing_Country_Code__c</members>
+		<members>Order.Shipping_Country_Code__c</members>
+		<members>Order.VILT__c</members>
+		<members>OrderItem.Xero_Account_Code__c</members>
+		<members>Product2.Xero_Account_Code__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Opportunity_Record_Page_Single_Related_Lists</members>
+		<members>Order_Record_Page</members>
+		<members>Product_Record_Page</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Order_Set_Related_Integration_Tenant</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Order-Order Layout</members>
+		<members>OrderItem-Order Product Layout</members>
+		<members>Product2-Product Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
+	</types>
+	<version>60.0</version>
+</Package>

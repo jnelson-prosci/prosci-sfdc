@@ -352,6 +352,11 @@
             <actionType>QuickAction</actionType>
             <sortOrder>27</sortOrder>
         </platformActionListItems>
+        <platformActionListItems>
+            <actionName>View_Document</actionName>
+            <actionType>CustomButton</actionType>
+            <sortOrder>31</sortOrder>
+        </platformActionListItems>
     </platformActionList>
     <relatedLists>
         <customButtons>APXT_Redlining__Contract_Agreement_Managed_Clauses</customButtons>

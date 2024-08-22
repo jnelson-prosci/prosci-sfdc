@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Global_Operations_Editability</members>
+		<members>Global_Operations_Visibility</members>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>APXT_Redlining__Contract_Agreement__c</members>
+		<members>Deal_Support_Process__c</members>
+		<members>Lead</members>
+		<members>Prework__c</members>
+		<members>pse__Milestone__c</members>
+		<members>pse__Proj__c</members>
+		<members>pse__Resource_Request__c</members>
+		<members>pse__Timecard_Header__c</members>
+        <members>Training_Program_Feedback__c</members>
+		<members>Training_Event__c</members>
+		<name>SharingRules</name>
+	</types>
+	<version>60.0</version>
+</Package>

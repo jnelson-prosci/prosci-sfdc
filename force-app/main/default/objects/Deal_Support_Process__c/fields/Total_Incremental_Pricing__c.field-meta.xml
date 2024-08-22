@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Incremental_Pricing__c</fullName>
+    <description>Calculates the Total Incremental Price. If the number of participants exceeds the base number of participants, this formula determines how much the base number is exceeded by and multiplies that difference by the incremental price.</description>
+    <externalId>false</externalId>
+    <formula>IF( of_participants__c &gt; Minimum_Number_of_Participants__c, (of_participants__c - Minimum_Number_of_Participants__c) * Incremental_Pricing__c, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Incremental Pricing</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

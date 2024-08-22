@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Previously_Existing_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>When a lead is created from a Hubspot generated task with a previously existing contact, this field is populated by the &quot;Task - Lead from form with previously existing contact&quot; flow.</description>
+    <externalId>false</externalId>
+    <label>Previously Existing Contact</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Leads (Previously Existing Contact)</relationshipLabel>
+    <relationshipName>Leads</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

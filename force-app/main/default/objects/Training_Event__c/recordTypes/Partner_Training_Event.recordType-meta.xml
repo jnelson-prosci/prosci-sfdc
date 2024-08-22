@@ -257,6 +257,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Prosci Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>TTT</fullName>
             <default>false</default>
         </values>
@@ -396,10 +400,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Change Management Project Support</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Custom-Training</fullName>
             <default>false</default>
         </values>
@@ -416,15 +416,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Fundamentals of Change Workshop</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Integrating Agile</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Manager</fullName>
             <default>false</default>
         </values>
         <values>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_need_Advisory_Statements__c</fullName>
+    <externalId>false</externalId>
+    <label>I need...(Advisory Statements)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>To accelerate change management capability</fullName>
+                <default>false</default>
+                <label>To accelerate change management capability</label>
+            </value>
+            <value>
+                <fullName>To build an enterprise change management strategy</fullName>
+                <default>false</default>
+                <label>To build an enterprise change management strategy</label>
+            </value>
+            <value>
+                <fullName>Support delivering on a must-win project</fullName>
+                <default>false</default>
+                <label>Support delivering on a must-win project</label>
+            </value>
+            <value>
+                <fullName>Support building change capability</fullName>
+                <default>false</default>
+                <label>Support building change capability</label>
+            </value>
+            <value>
+                <fullName>To integrate change management with other disciplines</fullName>
+                <default>false</default>
+                <label>To integrate change management with other disciplines</label>
+            </value>
+            <value>
+                <fullName>To measure the impact of change</fullName>
+                <default>false</default>
+                <label>To measure the impact of change</label>
+            </value>
+            <value>
+                <fullName>To better manage my change portfolio</fullName>
+                <default>false</default>
+                <label>To better manage my change portfolio</label>
+            </value>
+            <value>
+                <fullName>I need guidance from Prosci</fullName>
+                <default>false</default>
+                <label>I need guidance from Prosci</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
