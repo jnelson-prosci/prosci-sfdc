@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>57.0</apiVersion>
-    <description>This flow will add the word &quot;Cancelled&quot; to the no-show notes when the ATC status is changed to &quot;cancelled&quot;.  It will NOT override any note that was already there.</description>
+    <apiVersion>59.0</apiVersion>
     <environments>Default</environments>
-    <interviewLabel>Associated Training Contact - Update No-Show Notes when status is changed to Cancelled {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Associated Training Contact - Update No-Show Notes when status is changed to Cancelled</label>
+    <interviewLabel>Deal Support Process - Enterprise VILT, update location {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Deal Support Process - Enterprise VILT, update location</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -25,14 +24,14 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordUpdates>
-        <name>Update_No_Show_Notes_to_Cancelled</name>
-        <label>Update No-Show Notes to Cancelled</label>
+        <name>Update_Location</name>
+        <label>Update Location</label>
         <locationX>176</locationX>
         <locationY>287</locationY>
         <inputAssignments>
-            <field>No_Show_Notes__c</field>
+            <field>Location__c</field>
             <value>
-                <stringValue>CANCELLED</stringValue>
+                <stringValue>a Virtual Platform</stringValue>
             </value>
         </inputAssignments>
         <inputReference>$Record</inputReference>
@@ -41,33 +40,26 @@
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Update_No_Show_Notes_to_Cancelled</targetReference>
+            <targetReference>Update_Location</targetReference>
         </connector>
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
-        <filterLogic>1 AND 2 AND 3</filterLogic>
+        <filterLogic>and</filterLogic>
         <filters>
-            <field>Status__c</field>
+            <field>VILT_Program__c</field>
             <operator>EqualTo</operator>
-            <value>
-                <stringValue>Cancelled</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>No_Show_Notes__c</field>
-            <operator>IsNull</operator>
             <value>
                 <booleanValue>true</booleanValue>
             </value>
         </filters>
         <filters>
-            <field>Instructor_Type__c</field>
-            <operator>Contains</operator>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
             <value>
-                <stringValue>Prosci</stringValue>
+                <stringValue>012VD000000Z5GBYA0</stringValue>
             </value>
         </filters>
-        <object>Associated_Training_Contacts__c</object>
-        <recordTriggerType>Update</recordTriggerType>
+        <object>Deal_Support_Process__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>
     </start>
     <status>Active</status>

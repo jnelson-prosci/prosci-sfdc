@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Virtual Check-In email for the Europe French Enterprise Practitioner Course</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Cert Check in Europe Enterprise VILT French</name>
+    <style>none</style>
+    <subject>Votre formation Prosci arrive bientôt | Programme de certification en gestion du changement</subject>
+    <textOnly>Objet : Votre formation Prosci arrive bientôt| Programme de certification en gestion du changement
+
+
+
+
+
+ 
+
+
+
+Bonjour {!Associated_Training_Contacts__c.Contact__c},
+
+Notre instructeur, {!Training_Event__c.Instructor__c}, et notre Training Success Specialist, {!Training_Event__c.Training_Manager__c}, sont impatients de vous accueillir la semaine prochaine pour le {!Training_Event} à   {!Training_Event__c.End_User_Company__c}!
+
+
+
+
+
+PREPARation pour votre programme
+
+
+Informations sur la réunion virtuelle
+
+
+Vo ici le lien de réunion virtuelle à utiliser pour rejoindre la session : {!Training_Event__c.Virtual_Meeting_Details__c}
+
+La réunion virtuelle commencera 15 minutes avant le début du programme. Veuillez-vous connecter le plus tôt possible pour vérifier que votre technologie fonctionne correctement. Si vous avez des questions le jour de la formation, contactez {!Training_Event__c.Training_Manager__c}. À l&amp;apos;approche du programme, voici quelques rappels pour vous assurer de vivre une expérience d&amp;apos;apprentissage positive et productive.
+
+
+Complétez votre travail préparatoire (si ce n&amp;apos;est pas encore fait) :
+
+Le travail préparatoire doit être complété 4 jours ouvrables avant le programme. Vous devriez avoir reçu un email de portal@prosci.com vous donnant accès à votre travail préparatoire via le Portail Prosci. Contactez-nous si vous n&amp;apos;avez pas reçu cet email
+
+
+L’horaire des cours
+
+{!Training_Event__c.Program_Schedule__c}
+
+Veuillez noter que vous pourriez ne pas obtenir la certification si une partie de la formation est manquée. Votre instructeur intégrera des pauses en fonction du déroulement de la formation chaque jour.
+
+
+IT requirements
+
+Ordinateur portable ou de bureau avec Microsoft Office 2007 ou version plus récente. Utilisateurs Mac, veuillez utiliser Microsoft Office pour Mac afin d&amp;apos;assurer la compatibilité des outils.
+
+
+Nous avons hâte de vous voir en ligne bientôt. N&amp;apos;hésitez pas à nous contacter pour toute question à l&amp;apos;adresse suivante : training.europe@prosci.com.
+
+
+Cordialement,
+
+
+{!Training_Event__c.OwnerFullName}
+
+
+Training Coordinator
+
+
+
+
+
+
+
+CONNECT WITH US:
+
+
+
+Prosci Europe SRL (comprising the former Prosci affiliates CMC Partnership and Nexum) is the new European division of Prosci, operating in Belgium, Denmark, France, Germany, Ireland, Italy, Luxembourg, Netherlands, Norway, Portugal, Spain, Sweden, the UK and Switzerland. See https://www.proscieurope.com/prosci-europe for the list of registered offices.  
+
+This email and any attachment(s) are private and confidential and intended solely for use by the addressee. If you have received this email in error, please notify the sender and remove it entirely from your system immediately. Copying, distributing or relying on the contents of an email sent in error is strictly prohibited. We have taken reasonable precautions to ensure that no viruses are contained in this email but do not accept any liability for any alterations or damage inflicted once transmitted. Please note that the views of the author may not necessarily reflect those of Prosci Europe SRL. Your information is protected and managed as detailed within the company’s Privacy Policy at https://proscieurope.com/legal/privacy-en.pdf.
+
+
+
+
+
+ </textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
