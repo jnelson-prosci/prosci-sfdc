@@ -316,8 +316,7 @@
         <fields>Product2</fields>
         <fields>Quantity</fields>
         <fields>UnitPrice</fields>
-        <fields>Line_Discount_Amount__c</fields>
-        <fields>Line_Discount__c</fields>
+        <fields>Discount</fields>
         <fields>TotalPrice</fields>
         <fields>Description</fields>
         <fields>ServiceDate</fields>
