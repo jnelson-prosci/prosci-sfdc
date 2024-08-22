@@ -1,0 +1,30 @@
+Hi Everyone,
+
+Attached is the License Agreement for {!Deal_Support_Process__c.AccountId__c}, they are purchasing the {!Deal_Support_Process__c.License_Type__c}
+
+
+Client: {!Deal_Support_Process__c.AccountId__c}
+License Type & Version: {!Deal_Support_Process__c.License_Type__c}/{!Deal_Support_Process__c.License_Version__c}
+Effective date:{!Deal_Support_Process__c.Effective_Date__c}
+Agent Count:  {!Deal_Support_Process__c.Agent_count__c}
+Initial Fee: {!Deal_Support_Process__c.Initial_Fee__c}
+Active License Fee: {!Deal_Support_Process__c.Active_License_Fee__c}
+Initial Invoice amount:  {!Deal_Support_Process__c.Initial_invoice_amount__c}
+Active License Anniversary dates:  {!Deal_Support_Process__c.Active_License_anniversary_dates__c}
+
+License Box details:
+{!Deal_Support_Process__c.License_box_Contact__c}
+{!Deal_Support_Process__c.License_box_Contact_email__c}
+{!Deal_Support_Process__c.License_box_Ship_date__c}
+{!Deal_Support_Process__c.Ship_to_address_for_License_box__c}
+
+Firmex Contact:
+{!Deal_Support_Process__c.Firmex_Account_Contact__c}
+
+Portal Admin Contact: 
+{!Deal_Support_Process__c.Portal_Admin_Contact__c}
+
+Invoice/Billing Contact:
+{!Deal_Support_Process__c.Invoice_Contact__c}
+
+Link to Deal Support Process for additional details: https://prosci--full2.sandbox.lightning.force.com/lightning/r/Deal_Support_Process__c/{!Deal_Support_Process__c.Id}/view
