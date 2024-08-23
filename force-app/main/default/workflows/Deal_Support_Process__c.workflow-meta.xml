@@ -10,4 +10,14 @@
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/License_Confirmed_DSP</template>
     </alerts>
+    <alerts>
+        <fullName>Program_Confirmed_DSP</fullName>
+        <description>Program Confirmed - DSP</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Program_confirmed_DSP</template>
+    </alerts>
 </Workflow>
