@@ -1,0 +1,25 @@
+Hi Everyone,
+
+Attached is the SOW for the {!Deal_Support_Process__c.Program_Title__c} for {!Deal_Support_Process__c.AccountId__c}
+
+Account Link:  https://prosci.my.salesforce.com/{!Deal_Support_Process__c.AccountIdId__c}
+
+Client: {!Deal_Support_Process__c.AccountId__c}
+Event: {!Deal_Support_Process__c.Program_Title__c}
+Date: {!Deal_Support_Process__c.Requested_Training_Start_Date__c} - {!Deal_Support_Process__c.Requested_Training_End_Date__c}
+Location: {!Deal_Support_Process__c.Location__c}
+Base Fee:  {!Deal_Support_Process__c.Price__c}
+Incremental Price: {!Deal_Support_Process__c.Incremental_Pricing__c} after {!Deal_Support_Process__c.Minimum_Number_of_Participants__c} attendees
+Facilitators: {!Deal_Support_Process__c.Assigned_Instructor__c}
+
+Client Contact:
+
+Billing Contact:
+
+Logistics Contact:
+
+Logistics coordinator is {!Opportunity.Training_Logistics_Coordinator__c}
+
+
+
+Link to Deal Support Process for additional details: https://prosci--full2.sandbox.lightning.force.com/lightning/r/Deal_Support_Process__c/{!Deal_Support_Process__c.Id}/view
