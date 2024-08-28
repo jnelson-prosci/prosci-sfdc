@@ -92,7 +92,7 @@
         <name>StandardValueSet</name>
     </types>
     <types>
-    	<members>Order_Compact_Layout</members>
+    	<members>Order.Order_Compact_Layout</members>
         <name>CompactLayout</name>
     </types>
     <types>
@@ -123,6 +123,7 @@
         <members>Affiliates_Covered_under_License__c.Covered_Contract_Type__c</members>
         <members>Opportunity.Related_Opportunity__c</members>
         <members>Contact.Preferred_Language__c</members>
+        <members>Contact.Leader_Email__c</members>
         <members>Lead.Preferred_Language__c</members>
         <members>Lead.CNPJ__c</members>
         <members>Lead.HubSpot_Score__c</members>
@@ -403,7 +404,7 @@
     <types>
         <members>unfiled$public/Delivery_Resource_Request_DSP</members>
         <members>unfiled$public/License_Confirmed_DSP</members>
-        <members>unfiled$public/Program_Confirmed_DSP</members>
+        <members>unfiled$public/Program_confirmed_DSP</members>
         <members>Check_In_Templates_EUR_Danish/Cert_Check_in_Europe_Enterprise_In_person_Danish</members>
 		<members>Check_In_Templates_EUR_Danish/Cert_Check_in_Europe_Enterprise_VILT_Danish</members>
 		<members>Check_In_Templates_EUR_Danish/Cert_Check_in_Europe_Open_Enrollment_In_person_Danish</members>
@@ -645,13 +646,11 @@
 		<members>Associated_Training_Contacts__c.Check_in_Email_Alert_EUR_Enterprise_In_Person_English</members>
 		<members>Associated_Training_Contacts__c.Welcome_Email_Alert_ANZ_Improve_Projecth_Health</members>
 		<members>Deal_Support_Process__c.License_Confirmed_DSP</members>
-		<members>Deal_Support_Process__c.Program_Confirmed_DSP</members>
 		<name>WorkflowAlert</name>
 	</types>
     <types>
         <members>Associated_Training_Contacts__c</members>
         <members>Deal_Support_Process__c</members>
-        <members></members>
         <name>Workflow</name>
     </types>
     <types>

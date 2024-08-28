@@ -22,6 +22,8 @@ class SandboxPostRefreshScriptTest {
 
         Profile testSysAdminId = [SELECT Id FROM Profile WHERE Name = 'System Administrator'];
         
+        Organization org = [SELECT Id, IsSandbox FROM Organization LIMIT 1];
+        String userSuffix = org.IsSandbox ? DomainParser.parse(DomainCreator.getOrgMyDomainHostname()).getSandboxName() : 'prosciprod';
         List<User> testUsers = new List<User>();
         for (Integer i = 0; i < 199; i++) {
             User testUser = new User(
@@ -36,7 +38,7 @@ class SandboxPostRefreshScriptTest {
                 LocaleSidKey = 'en_US',
                 ProfileId = testSysAdminId.Id,
                 TimeZonesIdKey = 'America/Denver',
-                UserName = 'userTest' + i + '@example.com'
+                UserName = 'userTest' + i + '@example.com' + userSuffix
             );
 
             testUsers.add(testUser);
@@ -187,23 +189,23 @@ class SandboxPostRefreshScriptTest {
         Boolean contactPSecondaryEmailAllInvalid = true;
 
         for (Contact testContact : testContacts) {
-            if (!testContact.Email.endsWith('.invalid')) {
+            if (String.isNotBlank(testContact.Email) && !testContact?.Email?.endsWith('.invalid')) {
                 contactEmailAllInvalid = false;
                 return;
             }
-            if (!testContact.Leader_Email__c.endsWith('.invalid')) {
+            if (String.isNotBlank(testContact.Leader_Email__c) && !testContact.Leader_Email__c.endsWith('.invalid')) {
                 contactLeaderEmailAllInvalid = false;
                 return;
             }
-            if (!testContact.Reports_To_Email__c.endsWith('.invalid')) {
+            if (String.isNotBlank(testContact.Reports_To_Email__c) && !testContact.Reports_To_Email__c.endsWith('.invalid')) {
                 contactReportsToEmailAllInvalid = false;
                 return;
             }
-            if (!testContact.Secondary_Email__c.endsWith('.invalid')) {
+            if (String.isNotBlank(testContact.Secondary_Email__c) && !testContact.Secondary_Email__c.endsWith('.invalid')) {
                 contactSecondaryEmailAllInvalid = false;
                 return;
             }
-            if (!testContact.P_Secondary_Email__c.endsWith('.invalid')) {
+            if (String.isNotBlank(testContact.P_Secondary_Email__c) && !testContact.P_Secondary_Email__c.endsWith('.invalid')) {
                 contactPSecondaryEmailAllInvalid = false;
                 return;
             }

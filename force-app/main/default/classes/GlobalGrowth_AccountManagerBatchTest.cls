@@ -26,6 +26,8 @@ private class GlobalGrowth_AccountManagerBatchTest {
 
         insert testAccounts;
 
+        Organization org = [SELECT Id, IsSandbox FROM Organization LIMIT 1];
+        String userSuffix = org.IsSandbox ? DomainParser.parse(DomainCreator.getOrgMyDomainHostname()).getSandboxName() : 'prosciprod';
         List<User> testUsers = new List<User>();
         Profile testSysAdminId = [SELECT Id FROM Profile WHERE Name = 'System Administrator'];
         for (Integer i = 0; i < 200; i++) {
@@ -41,7 +43,7 @@ private class GlobalGrowth_AccountManagerBatchTest {
                 LocaleSidKey = 'en_US',
                 ProfileId = testSysAdminId.Id,
                 TimeZonesIdKey = 'America/Denver',
-                UserName = 'userTest' + i + '@example.com'
+                UserName = 'userTest' + i + '@example.com.' + userSuffix
             );
 
             testUsers.add(testUser);
