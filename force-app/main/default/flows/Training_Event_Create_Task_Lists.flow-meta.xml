@@ -4,12 +4,12 @@
     <decisions>
         <name>Instructor_Type</name>
         <label>Instructor Type</label>
-        <locationX>2030</locationX>
+        <locationX>2756</locationX>
         <locationY>323</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Prosci_US</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>1 OR 2</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Instructor_Type__c</leftValueReference>
                 <operator>EqualTo</operator>
@@ -17,10 +17,17 @@
                     <stringValue>Prosci</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record.Instructor_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Prosci Europe</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Type_of_Event</targetReference>
             </connector>
-            <label>Prosci US</label>
+            <label>Prosci US &amp; Europe</label>
         </rules>
         <rules>
             <name>Prosci_Australia</name>
@@ -47,11 +54,14 @@
                     <stringValue>Prosci Canada</stringValue>
                 </rightValue>
             </conditions>
+            <connector>
+                <targetReference>Type_of_Event_CAN</targetReference>
+            </connector>
             <label>Prosci Canada</label>
         </rules>
         <rules>
             <name>TTT</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>or</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Instructor_Type__c</leftValueReference>
                 <operator>EqualTo</operator>
@@ -59,16 +69,23 @@
                     <stringValue>TTT</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record.Instructor_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Internal PCAI</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Log_TTT_order_to_TE</targetReference>
             </connector>
-            <label>TTT</label>
+            <label>TTT and PCAI</label>
         </rules>
     </decisions>
     <decisions>
         <name>Type_of_Event</name>
         <label>Type of Event</label>
-        <locationX>842</locationX>
+        <locationX>974</locationX>
         <locationY>431</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -117,12 +134,19 @@
         </rules>
         <rules>
             <name>Public_Virtual_Certification</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>(1 OR 2) AND 3 AND 4</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Type_of_Event__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>Public</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type_of_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Public Partnership</stringValue>
                 </rightValue>
             </conditions>
             <conditions>
@@ -142,7 +166,7 @@
             <connector>
                 <targetReference>Activate_Portal_Tools</targetReference>
             </connector>
-            <label>Public Virtual Certification</label>
+            <label>Public Virtual Certification &amp; Partnership</label>
         </rules>
         <rules>
             <name>Public_In_Person_Cert</name>
@@ -252,11 +276,47 @@
             </connector>
             <label>Public Virtual MAP</label>
         </rules>
+        <rules>
+            <name>Public_TTT_L1_TTT_L2_Partnerships</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type_of_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Public</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.VILT_Program__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>TTT - Level 1</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>TTT - Level 2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_3_of_Create_Zoom_Link</targetReference>
+            </connector>
+            <label>Public TTT L1, TTT L2, Partnerships</label>
+        </rules>
     </decisions>
     <decisions>
         <name>Type_of_Event_AUS</name>
         <label>Type of Event AUS</label>
-        <locationX>2162</locationX>
+        <locationX>2558</locationX>
         <locationY>431</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -317,12 +377,193 @@
             </connector>
             <label>Public Virtual Certification (ANZ)</label>
         </rules>
+        <rules>
+            <name>Enterprise_Programs_All</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type_of_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Onsite</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Program_start_up_sent_to_client_with_logistics_booklet_and_delegate_list</targetReference>
+            </connector>
+            <label>Enterprise Programs (All)</label>
+        </rules>
     </decisions>
+    <decisions>
+        <name>Type_of_Event_CAN</name>
+        <label>Type of Event CAN</label>
+        <locationX>3614</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Public_Virtual_MAP_IPH_ADKAR_L1_L2_Sponsor</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4 OR 5 OR 6 OR 7)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type_of_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Public</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.VILT_Program__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Improve Project Health</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ADKAR Model Mastery Level 1: Prevent Change Resistance</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ADKAR Model Mastery Level 2: Resolve Change Barriers</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sponsor</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Methodology Application Program</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Turn_on_Portal_Access</targetReference>
+            </connector>
+            <label>Public Virtual MAP, IPH, ADKAR L1 &amp; L2, Sponsor</label>
+        </rules>
+        <rules>
+            <name>Public_Virtual_TCoC_LYT_Agile_Cert_ECM</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4 OR 5 OR 6 OR 7)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type_of_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Public</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.VILT_Program__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Leading Your Team Through Change</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Integrating Agile</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Taking Charge of Change</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Certification</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ECM Boot Camp</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Order_Materials</targetReference>
+            </connector>
+            <label>Public Virtual TCoC, LYT, Agile, Cert, ECM</label>
+        </rules>
+        <rules>
+            <name>Public_In_Person_Cert2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type_of_Event__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Public</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.VILT_Program__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Title__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Certification</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Order_Materials</targetReference>
+            </connector>
+            <label>Public In Person Cert</label>
+        </rules>
+    </decisions>
+    <description>Updated to include ANZ Enterprise Tasks</description>
     <environments>Default</environments>
+    <formulas>
+        <name>Enddateplus1</name>
+        <dataType>Date</dataType>
+        <expression>{!$Record.End_Date__c}+1</expression>
+    </formulas>
     <formulas>
         <name>EndDateplus10</name>
         <dataType>Date</dataType>
         <expression>{!$Record.End_Date__c}+10</expression>
+    </formulas>
+    <formulas>
+        <name>Enddateplus7</name>
+        <dataType>Date</dataType>
+        <expression>{!$Record.End_Date__c}+7</expression>
+    </formulas>
+    <formulas>
+        <name>Startdate</name>
+        <dataType>Date</dataType>
+        <expression>{!$Record.Start_Date__c}</expression>
     </formulas>
     <formulas>
         <name>StartDateminus10</name>
@@ -440,7 +681,7 @@
     <recordCreates>
         <name>Activate_program_tools_for_registered_participants</name>
         <label>Activate program tools for registered participants</label>
-        <locationX>1898</locationX>
+        <locationX>2162</locationX>
         <locationY>971</locationY>
         <connector>
             <targetReference>Send_Preparing_for_Program_email_to_registered_participants</targetReference>
@@ -487,7 +728,7 @@
     <recordCreates>
         <name>Add_program_to_the_website</name>
         <label>Add program to the website</label>
-        <locationX>1898</locationX>
+        <locationX>2162</locationX>
         <locationY>539</locationY>
         <connector>
             <targetReference>Confirm_booking_number_with_venue_is_in_training_event</targetReference>
@@ -534,7 +775,7 @@
     <recordCreates>
         <name>Add_to_TTT_Material_Order_Spreadsheet</name>
         <label>Add to TTT Material Order Spreadsheet</label>
-        <locationX>2954</locationX>
+        <locationX>4274</locationX>
         <locationY>755</locationY>
         <connector>
             <targetReference>Upload_participant_list</targetReference>
@@ -567,6 +808,53 @@
             <field>Subject</field>
             <value>
                 <stringValue>Add to TTT Material Order Spreadsheet</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>BEO_dietary_restrictions_due_to_venue</name>
+        <label>BEO &amp; dietary restrictions due to venue</label>
+        <locationX>3746</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Copy_3_of_Turn_on_Portal_Access</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus14</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>BEO &amp; dietary restrictions due to venue</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -624,7 +912,7 @@
     </recordCreates>
     <recordCreates>
         <name>Check_Portal_Access_Tools</name>
-        <label>Check Portal Access &amp; Tools</label>
+        <label>Activate Portal Tools</label>
         <locationX>314</locationX>
         <locationY>1403</locationY>
         <connector>
@@ -657,7 +945,7 @@
         <inputAssignments>
             <field>Subject</field>
             <value>
-                <stringValue>Check Portal Access &amp; Tools</stringValue>
+                <stringValue>Activate Portal Tools</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -671,7 +959,7 @@
     </recordCreates>
     <recordCreates>
         <name>Check_Portal_Access_Tools_Virtual</name>
-        <label>Check Portal Access &amp; Tools_Virtual</label>
+        <label>Activate Portal Tools</label>
         <locationX>50</locationX>
         <locationY>1079</locationY>
         <connector>
@@ -704,7 +992,7 @@
         <inputAssignments>
             <field>Subject</field>
             <value>
-                <stringValue>Check Portal Access &amp; Tools</stringValue>
+                <stringValue>Activate Portal Tools</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -858,53 +1146,9 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
-        <name>Complete_post_program_feedback_debrief_items</name>
-        <label>Complete post-program feedback &amp; debrief items</label>
-        <locationX>314</locationX>
-        <locationY>2051</locationY>
-        <inputAssignments>
-            <field>ActivityDate</field>
-            <value>
-                <elementReference>EndDateplus10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>OwnerId</field>
-            <value>
-                <elementReference>$Record.OwnerId</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Priority</field>
-            <value>
-                <stringValue>Normal</stringValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Status</field>
-            <value>
-                <stringValue>Not Started</stringValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Subject</field>
-            <value>
-                <stringValue>Complete post-program feedback &amp; debrief items</stringValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>WhatId</field>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <object>Task</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordCreates>
-    <recordCreates>
         <name>Complete_Transfer_order</name>
         <label>Complete Transfer order</label>
-        <locationX>1898</locationX>
+        <locationX>2162</locationX>
         <locationY>1727</locationY>
         <inputAssignments>
             <field>ActivityDate</field>
@@ -948,7 +1192,7 @@
     <recordCreates>
         <name>Confirm_booking_number_with_venue_is_in_training_event</name>
         <label>Confirm booking number with venue is in training event</label>
-        <locationX>1898</locationX>
+        <locationX>2162</locationX>
         <locationY>647</locationY>
         <connector>
             <targetReference>Confirm_delivery_team_is_added_to_training_event</targetReference>
@@ -995,7 +1239,7 @@
     <recordCreates>
         <name>Confirm_delivery_team_is_added_to_training_event</name>
         <label>Confirm delivery team is added to training event</label>
-        <locationX>1898</locationX>
+        <locationX>2162</locationX>
         <locationY>755</locationY>
         <connector>
             <targetReference>Send_Program_Venue_the_initial_details_email</targetReference>
@@ -1042,7 +1286,7 @@
     <recordCreates>
         <name>Confirm_dietary_with_the_venue</name>
         <label>Confirm dietary with the venue</label>
-        <locationX>1898</locationX>
+        <locationX>2162</locationX>
         <locationY>1511</locationY>
         <connector>
             <targetReference>Create_teams_channel_and_post_program_information_for_the_delivery_team</targetReference>
@@ -1087,9 +1331,56 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
+        <name>Confirm_materials_are_delivered</name>
+        <label>Confirm materials are delivered</label>
+        <locationX>3482</locationX>
+        <locationY>863</locationY>
+        <connector>
+            <targetReference>Copy_2_of_Update_Attendance_Status</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus10</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Confirm materials are delivered</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
         <name>Confirm_order_received_send_participant_roster</name>
         <label>Confirm order received, send participant roster</label>
-        <locationX>2954</locationX>
+        <locationX>4274</locationX>
         <locationY>539</locationY>
         <connector>
             <targetReference>Order_Material</targetReference>
@@ -1134,9 +1425,103 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
+        <name>Confirmation_of_sponsor_message_sent_by_client</name>
+        <label>Confirmation of sponsor message sent by client</label>
+        <locationX>2690</locationX>
+        <locationY>863</locationY>
+        <connector>
+            <targetReference>Confirmed_logistics_information_delegate_list_sent_back_from_client_all_info_log</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus21</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Confirmation of sponsor message sent by client</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Confirmed_logistics_information_delegate_list_sent_back_from_client_all_info_log</name>
+        <label>Confirmed logistics information/ delegate list sent back from client + all info logged in SF and Teams</label>
+        <locationX>2690</locationX>
+        <locationY>971</locationY>
+        <connector>
+            <targetReference>Program_materials_packed_and_sent</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus21</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Confirmed logistics information/ delegate list sent back from client + all info logged in SF and Teams </stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
         <name>Copy_1_of_Add_program_to_the_website</name>
         <label>Copy 1 of Add program to the website</label>
-        <locationX>2162</locationX>
+        <locationX>2426</locationX>
         <locationY>539</locationY>
         <connector>
             <targetReference>Copy_2_of_Confirm_delivery_team_is_added_to_training_event</targetReference>
@@ -1182,7 +1567,7 @@
     </recordCreates>
     <recordCreates>
         <name>Copy_1_of_Check_In_Email</name>
-        <label>Copy 1 of Check In Email</label>
+        <label>Check In Email</label>
         <locationX>1106</locationX>
         <locationY>647</locationY>
         <connector>
@@ -1229,7 +1614,7 @@
     </recordCreates>
     <recordCreates>
         <name>Copy_1_of_Copy_1_of_Check_In_Email</name>
-        <label>Copy 1 of Copy 1 of Check In Email</label>
+        <label>Check In Email</label>
         <locationX>1370</locationX>
         <locationY>647</locationY>
         <connector>
@@ -1276,7 +1661,7 @@
     </recordCreates>
     <recordCreates>
         <name>Copy_1_of_Copy_1_of_Send_Delivery_Team_Email</name>
-        <label>Copy 1 of Copy 1 of Send Delivery Team Email</label>
+        <label>Send Delivery Team Email</label>
         <locationX>1370</locationX>
         <locationY>755</locationY>
         <connector>
@@ -1370,7 +1755,7 @@
     </recordCreates>
     <recordCreates>
         <name>Copy_1_of_Create_Zoom_Link_One_Day_Programs</name>
-        <label>Copy 1 of Create Zoom Link One Day Programs</label>
+        <label>Create Zoom Link One Day Programs</label>
         <locationX>1370</locationX>
         <locationY>539</locationY>
         <connector>
@@ -1404,6 +1789,53 @@
             <field>Subject</field>
             <value>
                 <stringValue>Create Zoom Link</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Copy_1_of_Order_Materials</name>
+        <label>Order Materials</label>
+        <locationX>3746</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>BEO_dietary_restrictions_due_to_venue</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus21</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Order Materials</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1464,7 +1896,7 @@
     </recordCreates>
     <recordCreates>
         <name>Copy_1_of_Send_Delivery_Team_Email</name>
-        <label>Copy 1 of Send Delivery Team Email</label>
+        <label>Send Delivery Team Email</label>
         <locationX>1106</locationX>
         <locationY>755</locationY>
         <inputAssignments>
@@ -1508,7 +1940,7 @@
     </recordCreates>
     <recordCreates>
         <name>Copy_1_of_Trigger_Tools</name>
-        <label>Copy 1 of Trigger Tools</label>
+        <label>Trigger Tools</label>
         <locationX>1370</locationX>
         <locationY>863</locationY>
         <inputAssignments>
@@ -1551,9 +1983,56 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
+        <name>Copy_1_of_Turn_on_Portal_Access</name>
+        <label>Turn on Portal Access</label>
+        <locationX>3482</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Copy_2_of_Send_Zoom_or_Teams_Invite</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus14</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Turn on Portal Access</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
         <name>Copy_2_of_Activate_program_tools_for_registered_participants</name>
         <label>Copy 2 of Activate program tools for registered participants</label>
-        <locationX>2162</locationX>
+        <locationX>2426</locationX>
         <locationY>755</locationY>
         <connector>
             <targetReference>Copy_2_of_Send_Preparing_for_Program_email_to_registered_participants</targetReference>
@@ -1598,53 +2077,9 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
-        <name>Copy_2_of_Complete_post_program_feedback_debrief_items</name>
-        <label>Copy 2 of Complete post-program feedback &amp; debrief items</label>
-        <locationX>50</locationX>
-        <locationY>1619</locationY>
-        <inputAssignments>
-            <field>ActivityDate</field>
-            <value>
-                <elementReference>EndDateplus10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>OwnerId</field>
-            <value>
-                <elementReference>$Record.OwnerId</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Priority</field>
-            <value>
-                <stringValue>Normal</stringValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Status</field>
-            <value>
-                <stringValue>Not Started</stringValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Subject</field>
-            <value>
-                <stringValue>Complete post-program feedback &amp; debrief items</stringValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>WhatId</field>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <object>Task</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordCreates>
-    <recordCreates>
         <name>Copy_2_of_Complete_Transfer_order</name>
         <label>Copy 2 of Complete Transfer order</label>
-        <locationX>2162</locationX>
+        <locationX>2426</locationX>
         <locationY>1511</locationY>
         <inputAssignments>
             <field>ActivityDate</field>
@@ -1688,7 +2123,7 @@
     <recordCreates>
         <name>Copy_2_of_Confirm_delivery_team_is_added_to_training_event</name>
         <label>Copy 2 of Confirm delivery team is added to training event</label>
-        <locationX>2162</locationX>
+        <locationX>2426</locationX>
         <locationY>647</locationY>
         <connector>
             <targetReference>Copy_2_of_Activate_program_tools_for_registered_participants</targetReference>
@@ -1733,9 +2168,56 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
+        <name>Copy_2_of_Confirm_materials_are_delivered</name>
+        <label>Confirm materials are delivered</label>
+        <locationX>3746</locationX>
+        <locationY>863</locationY>
+        <connector>
+            <targetReference>Copy_3_of_Send_Zoom_or_Teams_Invite</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus7</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Confirm materials are delivered</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
         <name>Copy_2_of_Create_teams_channel_and_post_program_information_for_the_delivery_tea</name>
         <label>Copy 2 of Create teams’ channel and post program information for the delivery team</label>
-        <locationX>2162</locationX>
+        <locationX>2426</locationX>
         <locationY>1295</locationY>
         <connector>
             <targetReference>Send_Zoom_link_to_participants</targetReference>
@@ -1768,6 +2250,50 @@
             <field>Subject</field>
             <value>
                 <stringValue>Create teams’ channel and post program information for the delivery team</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Copy_2_of_Finalize_Program_Attendance</name>
+        <label>Copy 2 of Finalize Program Attendance</label>
+        <locationX>314</locationX>
+        <locationY>2159</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>Enddateplus1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Finalize Program Attendance</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1923,7 +2449,7 @@
     <recordCreates>
         <name>Copy_2_of_Send_Preparing_for_Program_email_to_registered_participants</name>
         <label>Copy 2 of Send Preparing for Program email to registered participants</label>
-        <locationX>2162</locationX>
+        <locationX>2426</locationX>
         <locationY>863</locationY>
         <connector>
             <targetReference>Create_Zoom_Link_and_copy_into_Salesforce_Event</targetReference>
@@ -1968,9 +2494,56 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
+        <name>Copy_2_of_Send_Zoom_or_Teams_Invite</name>
+        <label>Send Zoom or Teams Invite</label>
+        <locationX>3482</locationX>
+        <locationY>755</locationY>
+        <connector>
+            <targetReference>Confirm_materials_are_delivered</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus5</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Send Zoom or Teams Invite</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
         <name>Copy_2_of_Start_Material_Opportunity</name>
         <label>Copy 2 of Start Material Opportunity</label>
-        <locationX>2162</locationX>
+        <locationX>2426</locationX>
         <locationY>1079</locationY>
         <connector>
             <targetReference>Send_program_packs_to_participants</targetReference>
@@ -2015,12 +2588,332 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
+        <name>Copy_2_of_Update_Attendance_Status</name>
+        <label>Update Attendance Status</label>
+        <locationX>3482</locationX>
+        <locationY>971</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>Enddateplus1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Update Attendance Status</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Copy_3_of_Check_In_Email</name>
+        <label>Send Check In Email</label>
+        <locationX>1634</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Copy_3_of_Send_Delivery_Team_Email</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus5</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Send Check-In Email</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Copy_3_of_Create_Zoom_Link</name>
+        <label>Create Zoom Link</label>
+        <locationX>1634</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>Copy_3_of_Check_In_Email</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus7</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Create Zoom Link</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Copy_3_of_Send_Delivery_Team_Email</name>
+        <label>Send Delivery Team Email</label>
+        <locationX>1634</locationX>
+        <locationY>755</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus4</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Send Delivery Team Email</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Copy_3_of_Send_Zoom_or_Teams_Invite</name>
+        <label>Send Zoom or Teams Invite</label>
+        <locationX>3746</locationX>
+        <locationY>971</locationY>
+        <connector>
+            <targetReference>Copy_3_of_Update_Attendance_Status</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus5</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Send Zoom or Teams Invite</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Copy_3_of_Turn_on_Portal_Access</name>
+        <label>Turn on Portal Access</label>
+        <locationX>3746</locationX>
+        <locationY>755</locationY>
+        <connector>
+            <targetReference>Copy_2_of_Confirm_materials_are_delivered</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus14</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Turn on Portal Access</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Copy_3_of_Update_Attendance_Status</name>
+        <label>Update Attendance Status</label>
+        <locationX>3746</locationX>
+        <locationY>1079</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>Enddateplus1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Update Attendance Status</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
         <name>Create_Sales_Order_for_Accounting</name>
         <label>Create Sales Order for Accounting</label>
         <locationX>50</locationX>
         <locationY>1511</locationY>
         <connector>
-            <targetReference>Copy_2_of_Complete_post_program_feedback_debrief_items</targetReference>
+            <targetReference>Schedule_Debrief</targetReference>
         </connector>
         <inputAssignments>
             <field>ActivityDate</field>
@@ -2064,7 +2957,7 @@
     <recordCreates>
         <name>Create_teams_channel_and_post_program_information_for_the_delivery_team</name>
         <label>Create teams’ channel and post program information for the delivery team</label>
-        <locationX>1898</locationX>
+        <locationX>2162</locationX>
         <locationY>1619</locationY>
         <connector>
             <targetReference>Complete_Transfer_order</targetReference>
@@ -2205,7 +3098,7 @@
     <recordCreates>
         <name>Create_Zoom_Link_and_copy_into_Salesforce_Event</name>
         <label>Create Zoom Link and copy into Salesforce Event</label>
-        <locationX>2162</locationX>
+        <locationX>2426</locationX>
         <locationY>971</locationY>
         <connector>
             <targetReference>Copy_2_of_Start_Material_Opportunity</targetReference>
@@ -2485,6 +3378,188 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
+        <name>Facilitator_call_confirmed_and_booking_form_sent_if_needed</name>
+        <label>Facilitator call confirmed and booking form sent if needed</label>
+        <locationX>2690</locationX>
+        <locationY>755</locationY>
+        <connector>
+            <targetReference>Confirmation_of_sponsor_message_sent_by_client</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus21</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Facilitator call confirmed and booking form sent if needed</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Feedback_not_applicable_for_SB</name>
+        <label>Feedback (not applicable for SB)</label>
+        <locationX>2690</locationX>
+        <locationY>1511</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>Enddateplus7</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Feedback (not applicable for SB)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Final_check_in_with_client</name>
+        <label>Final check in with client</label>
+        <locationX>2690</locationX>
+        <locationY>1295</locationY>
+        <connector>
+            <targetReference>Program_day_check_in_for_final_numbers_BC_and_ATC_work</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus7</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Final check in with client</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Finalize_Program_Attendance</name>
+        <label>Finalize Program Attendance</label>
+        <locationX>50</locationX>
+        <locationY>1727</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>Enddateplus1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Finalize Program Attendance</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
         <name>In_Person_Material_Order</name>
         <label>In Person Material Order</label>
         <locationX>842</locationX>
@@ -2581,7 +3656,7 @@
     <recordCreates>
         <name>Log_TTT_order_to_TE</name>
         <label>Log TTT order to TE</label>
-        <locationX>2954</locationX>
+        <locationX>4274</locationX>
         <locationY>431</locationY>
         <connector>
             <targetReference>Confirm_order_received_send_participant_roster</targetReference>
@@ -2628,7 +3703,7 @@
     <recordCreates>
         <name>Order_Material</name>
         <label>Order Material</label>
-        <locationX>2954</locationX>
+        <locationX>4274</locationX>
         <locationY>647</locationY>
         <connector>
             <targetReference>Add_to_TTT_Material_Order_Spreadsheet</targetReference>
@@ -2661,6 +3736,288 @@
             <field>Subject</field>
             <value>
                 <stringValue>Order Material</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Order_Materials</name>
+        <label>Order Materials</label>
+        <locationX>3482</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>Copy_1_of_Turn_on_Portal_Access</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus21</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Order Materials</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Pre_work_sent_and_portal_activation</name>
+        <label>Pre work sent and portal activation</label>
+        <locationX>2690</locationX>
+        <locationY>1187</locationY>
+        <connector>
+            <targetReference>Final_check_in_with_client</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus14</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Pre work sent and portal activation</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Program_day_check_in_for_final_numbers_BC_and_ATC_work</name>
+        <label>Program day - check in for final numbers/ BC and ATC work</label>
+        <locationX>2690</locationX>
+        <locationY>1403</locationY>
+        <connector>
+            <targetReference>Feedback_not_applicable_for_SB</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>Startdate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Program day - check in for final numbers/ BC and ATC work</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Program_kick_off_received_from_growth_team</name>
+        <label>Program kick off received from growth team</label>
+        <locationX>2690</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Facilitator_call_confirmed_and_booking_form_sent_if_needed</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus28</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Program kick off received from growth team </stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Program_materials_packed_and_sent</name>
+        <label>Program materials packed and sent</label>
+        <locationX>2690</locationX>
+        <locationY>1079</locationY>
+        <connector>
+            <targetReference>Pre_work_sent_and_portal_activation</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus14</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Program materials packed and sent</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Program_start_up_sent_to_client_with_logistics_booklet_and_delegate_list</name>
+        <label>Program start up sent to client with logistics booklet and delegate list</label>
+        <locationX>2690</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>Program_kick_off_received_from_growth_team</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus28</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Program start up sent to client with logistics booklet and delegate list</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -2755,6 +4112,100 @@
             <field>Subject</field>
             <value>
                 <stringValue>Provide any delivery team dietary restrictions to client</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Schedule_Debrief</name>
+        <label>Schedule Debrief</label>
+        <locationX>50</locationX>
+        <locationY>1619</locationY>
+        <connector>
+            <targetReference>Finalize_Program_Attendance</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus7</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Schedule Debrief</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Schedule_Debrief_2</name>
+        <label>Schedule Debrief</label>
+        <locationX>314</locationX>
+        <locationY>2051</locationY>
+        <connector>
+            <targetReference>Copy_2_of_Finalize_Program_Attendance</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus7</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Schedule Debrief</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -3098,7 +4549,7 @@
         <locationX>314</locationX>
         <locationY>1943</locationY>
         <connector>
-            <targetReference>Complete_post_program_feedback_debrief_items</targetReference>
+            <targetReference>Schedule_Debrief_2</targetReference>
         </connector>
         <inputAssignments>
             <field>ActivityDate</field>
@@ -3142,7 +4593,7 @@
     <recordCreates>
         <name>Send_Preparing_for_Program_email_to_registered_participants</name>
         <label>Send Preparing for Program email to registered participants</label>
-        <locationX>1898</locationX>
+        <locationX>2162</locationX>
         <locationY>1079</locationY>
         <connector>
             <targetReference>Start_Material_Opportunity</targetReference>
@@ -3189,7 +4640,7 @@
     <recordCreates>
         <name>Send_Prework_and_Confirm_details_reminder_to_participants</name>
         <label>Send Prework and Confirm details reminder to participants</label>
-        <locationX>1898</locationX>
+        <locationX>2162</locationX>
         <locationY>1403</locationY>
         <connector>
             <targetReference>Confirm_dietary_with_the_venue</targetReference>
@@ -3236,7 +4687,7 @@
     <recordCreates>
         <name>Send_program_packs_to_participants</name>
         <label>Send program packs to participants</label>
-        <locationX>2162</locationX>
+        <locationX>2426</locationX>
         <locationY>1187</locationY>
         <connector>
             <targetReference>Copy_2_of_Create_teams_channel_and_post_program_information_for_the_delivery_tea</targetReference>
@@ -3283,7 +4734,7 @@
     <recordCreates>
         <name>Send_program_packs_to_venue</name>
         <label>Send program packs to venue</label>
-        <locationX>1898</locationX>
+        <locationX>2162</locationX>
         <locationY>1295</locationY>
         <connector>
             <targetReference>Send_Prework_and_Confirm_details_reminder_to_participants</targetReference>
@@ -3330,7 +4781,7 @@
     <recordCreates>
         <name>Send_Program_Venue_the_initial_details_email</name>
         <label>Send Program Venue the initial details email</label>
-        <locationX>1898</locationX>
+        <locationX>2162</locationX>
         <locationY>863</locationY>
         <connector>
             <targetReference>Activate_program_tools_for_registered_participants</targetReference>
@@ -3471,7 +4922,7 @@
     <recordCreates>
         <name>Send_Zoom_link_to_participants</name>
         <label>Send Zoom link to participants</label>
-        <locationX>2162</locationX>
+        <locationX>2426</locationX>
         <locationY>1403</locationY>
         <connector>
             <targetReference>Copy_2_of_Complete_Transfer_order</targetReference>
@@ -3504,6 +4955,53 @@
             <field>Subject</field>
             <value>
                 <stringValue>Send Zoom link to participants</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Send_Zoom_or_Teams_Invite</name>
+        <label>Send Zoom or Teams Invite</label>
+        <locationX>3218</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Update_Attendance_Status</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus5</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Send Zoom or Teams Invite</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -3612,7 +5110,7 @@
     <recordCreates>
         <name>Start_Material_Opportunity</name>
         <label>Start Material Opportunity</label>
-        <locationX>1898</locationX>
+        <locationX>2162</locationX>
         <locationY>1187</locationY>
         <connector>
             <targetReference>Send_program_packs_to_venue</targetReference>
@@ -3704,9 +5202,56 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
+        <name>Turn_on_Portal_Access</name>
+        <label>Turn on Portal Access</label>
+        <locationX>3218</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>Send_Zoom_or_Teams_Invite</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>StartDateminus14</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Turn on Portal Access</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
         <name>Turn_on_portal_tools</name>
         <label>Turn on portal tools</label>
-        <locationX>2954</locationX>
+        <locationX>4274</locationX>
         <locationY>971</locationY>
         <inputAssignments>
             <field>ActivityDate</field>
@@ -3748,9 +5293,53 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
+        <name>Update_Attendance_Status</name>
+        <label>Update Attendance Status</label>
+        <locationX>3218</locationX>
+        <locationY>755</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>Enddateplus1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Update Attendance Status</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
         <name>Upload_participant_list</name>
         <label>Upload participant list</label>
-        <locationX>2954</locationX>
+        <locationX>4274</locationX>
         <locationY>863</locationY>
         <connector>
             <targetReference>Turn_on_portal_tools</targetReference>
@@ -3795,7 +5384,7 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <start>
-        <locationX>1904</locationX>
+        <locationX>2630</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Instructor_Type</targetReference>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Reason_Blank__c</fullName>
+    <description>Used by component visibility setting on the lightning page layout to show a warning when value is blank and the Opp is Closed - Won. Needed since we cannot check if picklist field is blank directly.</description>
+    <externalId>false</externalId>
+    <formula>ISBLANK(TEXT(Closed_Reason__c))</formula>
+    <label>Closed Reason Blank</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

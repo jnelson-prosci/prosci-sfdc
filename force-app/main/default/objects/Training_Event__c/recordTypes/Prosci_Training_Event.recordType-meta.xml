@@ -120,6 +120,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>NMSO</fullName>
             <default>false</default>
         </values>
@@ -269,15 +273,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Prosci Chile</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Prosci Iberia</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Prosci Mexico</fullName>
+            <fullName>Prosci Europe</fullName>
             <default>false</default>
         </values>
         <values>
@@ -401,6 +397,10 @@
             <fullName>Regular</fullName>
             <default>false</default>
         </values>
+        <values>
+            <fullName>Weekend</fullName>
+            <default>false</default>
+        </values>
     </picklistValues>
     <picklistValues>
         <picklist>Status__c</picklist>
@@ -484,7 +484,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Advanced_Immersion_Workshop</fullName>
+            <fullName>Achieve Change Performance</fullName>
             <default>false</default>
         </values>
         <values>
@@ -508,10 +508,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Fundamentals of Change Workshop</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Improve Project Health</fullName>
             <default>false</default>
         </values>
@@ -521,10 +517,6 @@
         </values>
         <values>
             <fullName>Leading Your Team Through Change</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Manager</fullName>
             <default>false</default>
         </values>
         <values>

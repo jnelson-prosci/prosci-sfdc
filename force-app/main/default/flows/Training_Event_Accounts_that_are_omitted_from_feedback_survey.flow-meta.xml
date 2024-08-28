@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <description>•	Johnson and Johnson
+•	The Hartford
+•	Abbott Laboratories
+•	SRC Inc
+•	Farmers&apos; Mutual Group (FMG)
+•	Ministry of Business, Innovation and Employment NZ (MBIE)
+•	L&apos;Oreal
+•	KPMG, LLP
+•	Akron Children&apos;s Hospital
+•	Sydney Trains
+•	GSK
+•	Louis Dreyfus Company LLC</description>
+    <environments>Default</environments>
+    <interviewLabel>Training Event - Accounts that are omitted from feedback survey {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Training Event - Accounts that are omitted from feedback survey</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Check_Feedback_Survey_Opt_Out_Option</name>
+        <label>Check Feedback Survey Opt-Out Option</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <inputAssignments>
+            <field>Feedback_Survey_Opt_Out__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Feedback_Survey_Opt_Out_Option</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13</filterLogic>
+        <filters>
+            <field>End_User_Company__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>0011Y00002cQW1cQAG</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_User_Company__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>001i000000OuWt0AAF</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_User_Company__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>001i000000OuWUzAAN</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_User_Company__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>001i000000OuWrSAAV</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_User_Company__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>0011Y00002faNErQAM</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_User_Company__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>0011Y00002faNAQQA2</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_User_Company__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>0015d000043TJZGAA4</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_User_Company__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>0015d00003airmlAAA</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_User_Company__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>001i000000OuWVhAAN</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_User_Company__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>0011Y00002faOLNQA2</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_User_Company__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>001i000000OuWg1AAF</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_User_Company__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>001i0000025NyliAAC</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>End_User_Company__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>001i000000OuWNBAA3</stringValue>
+            </value>
+        </filters>
+        <object>Training_Event__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

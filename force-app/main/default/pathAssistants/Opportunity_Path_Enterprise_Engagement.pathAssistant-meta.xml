@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Opportunity Path Enterprise Engagement</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri;&quot;&gt;Identify specific products and ensure they&amp;#39;re added to the Opportunity.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri;&quot;&gt;Update estimated target Close Date.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Assess Needs</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Budget_Decision_Maker__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri;&quot;&gt;Confirm all information held in the Deal Support Process is accurate.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Approve Close Date.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri;&quot;&gt;Verify resource allocation.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri;&quot;&gt;Approve contract language.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri;&quot;&gt;Send contract letter to contact.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Evaluate Partnership</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;ul&gt;&lt;li&gt;Complete Countersigned documents.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Negotiate Terms</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Decision__c</fieldNames>
+        <fieldNames>Pricing__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Champion__c</fieldNames>
+        <fieldNames>Key_Decision_Maker__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-family: Calibri; font-size: 11pt;&quot;&gt;Verify client decision on Proposal.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Confirm products added to an Opportunity this will be what determines the Deal Support Processes created in this stage.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Calibri; font-size: 11pt;&quot;&gt;Verify general agreement on price, dates, and services.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Process resource request (if applicable).&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Propose Solution</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Enterprise_Engagement</recordTypeName>
+</PathAssistant>

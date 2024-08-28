@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>VILT Welcome email for the Europe French Practitioner Course</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Cert Welcome Europe Enterprise VILT French</name>
+    <style>none</style>
+    <subject>Programme de certification en gestion du changement| Travail préparatoire et information du programme</subject>
+    <textOnly>Bonjour {!Contact.FirstName},
+
+Nous sommes impatients de vous accueillir pour votre participation à {!Training_Event}
+
+Dates du programme: {!Training_Event__c.Start_Date__c} - {!Training_Event__c.End_Date__c} at {!Training_Event__c.Location__c}
+
+Notre objectif est de vous fournir les connaissances, les compétences et les outils nécessaires pour mener des changements réussis
+
+
+PREPARation pour votre programme
+
+Exigences relatives au travail préparatoire
+
+Afin de maximiser votre expérience d&amp;apos;apprentissage pendant le programme, vous devrez compléter un certain nombre de tâches préparatoires. Vous devriez prévoir 2 heures pour les accomplir, car il s&amp;apos;agit d&amp;apos;une composante essentielle pour soutenir votre expérience d&amp;apos;apprentissage.
+
+Configuration de l&amp;apos;Accès au Portail Prosci et des Tâches Préparatoires
+
+Vous recevrez prochainement un email de l&amp;apos;adresse portal@prosci.com avec un lien vers les tâches préparatoires de votre programme dans le Portail Prosci, ainsi qu&amp;apos;un accès à du contenu supplémentaire, des ressources et des outils pour soutenir votre apprentissage pendant le programme.
+
+Une fois dans le portail Prosci, cliquez sur la vignette &quot;Prework&quot;. Vous devriez voir un menu déroulant intitulé &quot;Tâches Préparatoires&quot;. Les tâches préparatoires doivent être complétées 4 jours ouvrables avant votre programme afin de permettre à votre instructeur de les examiner.
+
+Planning
+
+Le planning ci-dessous indique les horaires auxquels vous devrez être présent. Veuillez noter qu&amp;apos;il y aura 8 heures de cours dédiées les Jour 1 et Jour 2, et 7 heures le Jour 3, toutes avec des pauses fréquentes tout au long de la session. Prévoyez environ 1 heure supplémentaire d&amp;apos;étude personnelle les Jour 1 et 2.
+
+Les horaires des cours
+
+{!Training_Event__c.Program_Schedule__c}
+
+Veuillez noter que vous pourriez ne pas obtenir la certification si une partie de la formation est manquée.
+
+Votre instructeur intégrera des pauses en fonction du déroulement de la formation chaque jour.
+
+Ce Dont Vous Avez Besoin pour Réussir en Tant qu&amp;apos;Apprenant Virtuel
+
+Votre expérience d&amp;apos;apprentissage est très importante pour nous. Dans l&amp;apos;environnement virtuel, les éléments suivants amélioreront grandement votre expérience et votre réussite:
+
+Temps ininterrompu pour se concentrer.
+Ordinateur portable ou de bureau avec Microsoft Office 2007 ou version plus récente. Utilisateurs Mac, veuillez utiliser Microsoft Office pour Mac afin d&amp;apos;assurer la compatibilité des outils.
+Connexion Internet haut débit.
+Webcam capable de diffuser votre image en vidéo.
+Casque audio ou connexion audio avec haut-parleur et microphone.
+
+Vous recevrez un e-mail quelques jours avant votre programme qui inclura des informations spécifiques sur la façon d&amp;apos;accéder à votre session via votre lien/ID de réunion virtuelle.
+
+Notre équipe de formation sera en ligne 15 minutes avant le début de chaque journée de cours. Nous vous demandons de vous connecter à l&amp;apos;avance pour vérifier que votre technologie fonctionne correctement.
+
+Si vous avez des questions concernant la préparation de votre programme, n&amp;apos;hésitez pas à nous contacter à l&amp;apos;adresse suivante training.europe@prosci.com.
+
+
+Cordialement,
+
+{!Training_Event__c.OwnerFullName}
+
+Training Coordinator
+
+
+
+
+
+CONNECT WITH US:
+
+
+Prosci Europe SRL (comprising the former Prosci affiliates CMC Partnership and Nexum) is the new European division of Prosci, operating in Belgium, Denmark, France, Germany, Ireland, Italy, Luxembourg, Netherlands, Norway, Portugal, Spain, Sweden, the UK and Switzerland. See https://www.proscieurope.com/prosci-europe for the list of registered offices.
+
+This email and any attachment(s) are private and confidential and intended solely for use by the addressee. If you have received this email in error, please notify the sender and remove it entirely from your system immediately. Copying, distributing or relying on the contents of an email sent in error is strictly prohibited. We have taken reasonable precautions to ensure that no viruses are contained in this email but do not accept any liability for any alterations or damage inflicted once transmitted. Please note that the views of the author may not necessarily reflect those of Prosci Europe SRL. Your information is protected and managed as detailed within the company’s Privacy Policy at https://proscieurope.com/legal/privacy-en.pdf.
+Prosci UK Ltd. Registered in England and Wales. Registered Address: 2 Kingdom Street, 6th Floor, Paddington, London, W2 6BD, Registered Number: 04358177 </textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

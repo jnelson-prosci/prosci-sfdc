@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>F2F Welcome email for the European German Practitioner Course</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Cert Welcome Europe Enterprise In person German</name>
+    <style>none</style>
+    <subject>Change Management Zertifizierungsprogramm | Vorarbeiten und Programminformationen</subject>
+    <textOnly>Hallo {!Contact.FirstName},
+
+Wir freuen uns auf Ihre Teilnahme an {!Training_Event}
+
+Programmdaten: {!Training_Event__c.Start_Date__c} - {!Training_Event__c.End_Date__c} am {!Training_Event__c.Location__c}!
+
+Unser Ziel ist es, Sie mit Wissen, Fähigkeiten und Werkzeugen auszustatten, um erfolgreiche Veränderungen voranzutreiben.
+
+
+VORBEREITUNG FÜR IHR PROGRAMM Anforderungen an die Vorarbeit
+
+Um Ihre Lernerfahrung im Programm zu maximieren, müssen Sie eine Reihe von Vorarbeiten erledigen. Planen Sie bitte hierfür zwei Stunden ein, denn das ist ein wichtiger Bestandteil Ihrer Lernerfahrung.
+
+Richten Sie Ihren Prosci-Portal-Zugang und Ihre Vorarbeiten ein
+
+Sie erhalten in Kürze eine E-Mail von portal@prosci.com mit einem Link zu Ihrer Programmvorarbeit im Prosci-Portal sowie Zugang zu zusätzlichen Inhalten, Ressourcen und Tools, die Sie beim Lernen im Programm unterstützen.
+
+Im Prosci-Portal klicken Sie auf die Kachel &quot;Prework&quot;. Sie sollten ein Dropdown-Menü mit der Aufschrift &quot;Prework Tasks&quot; (Vorarbeiten) sehen. Vorarbeiten sind 4 Werktage vor der Veranstaltung fällig, damit Ihr Trainer/in Zeit hat, sie zu prüfen
+
+Zeitplan
+
+Der unten stehende Zeitplan zeigt die Zeit, die Sie für die Teilnahme benötigen. Bitte beachten Sie, dass am 1. und 2. Tag 8 Stunden und am 3. Tag 7 Stunden für den Unterricht vorgesehen sind, mit häufigen Pausen während der Veranstaltung. Bitte rechnen Sie mit etwa 1 Stunde zusätzlichem Selbststudium an Tag 1 und 2.
+
+Die Kurszeiten beginnen sofort in der lokalen Zeitzone: Europa/Berlin
+
+{!Training_Event__c.Program_Schedule__c}
+
+Bitte beachten Sie, dass Sie möglicherweise nicht zertifiziert werden, wenn irgendein Training verpasst wird.
+
+Ihr Trainer/in wird jeden Tag Pausen in den Ablauf der Schulung einbauen.
+
+Was Sie für Ihren Erfolg als Selbstlerner brauchen
+
+Ihre Lernerfahrung ist für uns sehr wichtig. Die folgenden Punkte werden Ihre Erfahrung und Ihren Erfolg erheblich verbessern:
+
+IT-Anforderungen - Laptop oder Desktop-Computer mit Microsoft Office 2007 oder neuer. Mac-Nutzer verwenden bitte Microsoft Office für Mac, um die Kompatibilität der Tools zu gewährleisten.
+
+Wenn Sie Fragen zur Vorbereitung Ihres Programms haben, kontaktieren Sie uns bitte unter: training.europe@prosci.com
+
+Mit freundlichen Grüßen,
+
+{!Training_Event__c.OwnerFullName}
+
+Ausbildungskoordinator
+
+
+
+
+
+VERBINDEN SIE SICH MIT UNS:
+
+
+Prosci Europe SRL (bestehend aus den ehemaligen Prosci-Tochtergesellschaften CMC Partnership und Nexum) ist die neue europäische Abteilung von Prosci, die in Belgien, Dänemark, Frankreich, Deutschland, Irland, Italien, Luxemburg, den Niederlanden, Norwegen, Portugal, Spanien, Schweden, dem Vereinigten Königreich und der Schweiz tätig ist. Siehe https://www.proscieurope.com/prosci-europe für die Liste der eingetragenen Niederlassungen.
+
+Diese E-Mail und alle Anhänge sind privat und vertraulich und ausschließlich für den Empfänger bestimmt. Sollten Sie diese E-Mail irrtümlich erhalten haben, benachrichtigen Sie bitte den Absender und löschen Sie sie unverzüglich vollständig aus Ihrem System. Es ist strengstens untersagt, den Inhalt einer irrtümlich versandten E-Mail zu kopieren, zu verbreiten oder sich darauf zu verlassen. Wir haben angemessene Vorkehrungen getroffen, um sicherzustellen, dass diese E-Mail keine Viren enthält, übernehmen jedoch keine Haftung für etwaige Veränderungen oder Schäden, die nach der Übermittlung entstehen. Bitte beachten Sie, dass die Ansichten des Autors nicht unbedingt mit denen von Prosci Europe SRL übereinstimmen müssen. Ihre Daten werden gemäß der Datenschutzrichtlinie des Unternehmens unter https://proscieurope.com/legal/privacy-en.pdf geschützt und verwaltet.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

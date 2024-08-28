@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Integration_Tenant__c.Tenant_Identifier__c</members>
+		<members>Training_Event__c.Language__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Integration_Tenant__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Order_Set_Related_Integration_Tenant</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Language</members>
+		<name>GlobalValueSet</name>
+	</types>
+	<types>
+		<members>Integration_Tenant__c-Integration Tenant Layout</members>
+		<members>Training_Event__c-Lightning Training Event Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>Integration_Tenant__c.All</members>
+		<name>ListView</name>
+	</types>
+	<types>
+		<members>Global_Growth_Base_Permission_Set</members>
+		<name>PermissionSet</name>
+	</types>
+	<version>60.0</version>
+</Package>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>VILT Welcome email for the Europe English TCoC Programme</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TCoC Welcome Europe Enterprise VILT English</name>
+    <style>none</style>
+    <subject>Taking Charge of Change  | Prework and Programme Information</subject>
+    <textOnly>Hello {!Contact.FirstName},
+
+We look forward to your participation in {!Training_Event}
+
+Programme Dates: {!Training_Event__c.Start_Date__c} - {!Training_Event__c.End_Date__c} at {!Training_Event__c.Location__c}
+
+Our goal is to equip you to understand the changes underway at your organization and support your ability to engage with the change process.
+
+
+PREPARING FOR YOUR programme Prework Requirements
+
+To maximize your in-programme learning experience, you will need to complete a number of prework tasks. You should allow 30 minutes to complete.
+
+Set-up your Prosci Portal Access
+
+You will receive an email from portal@prosci.com with instructions on how to finish setting up your Prosci Portal access. This is where you will find the resources and tools to support your in-programme learning.
+
+Pre-Learning
+
+Identify a change to focus on in the course, and:
+
+Identify the reasons the change is needed
+Identify who will need to do their jobs differently for the change to succeed
+Think about where the change might encounter resistance
+
+Watch -Tim Talks: Back to the Basics.
+Optional - We highly recommend viewing these additional videos to understand the 5 Tenets of Change Management
+
+Tenet 1 - We change for a reason
+Tenet 2 – Organizational change requires individual change
+Tenet 3 – Organizational outcomes are the collective result of individual change
+Tenet 4 – Change Management is an enabling framework for managing the people side of change
+Tenet 5 – We apply change management to realize the benefits and desired outcomes of change
+
+
+Schedule
+
+The schedule below indicates the time you will be required to be live online.
+
+Course Timings prompt start at local time zone: Europe/London
+
+{!Training_Event__c.Program_Schedule__c}
+
+Your Instructor will factor in breaks in around the flow of training each day.
+
+What You Need for Success as a Virtual Learner
+
+Your learning experience is very important to us. In the virtual environment, the following will greatly enhance your experience and success:
+
+Uninterrupted time to focus
+Laptop or desktop computer with Microsoft Office 2007 or newer. Mac users, please use Microsoft Office for Mac to ensure tool compatibility
+High-speed internet connection
+Webcam capable of streaming you by video
+Audio headset or audio connection with speaker and microphone
+
+You will receive an email a few days before your programme that will include specific information on how to access your session via your virtual meeting link/ID
+
+Our delivery team will be online 15 minutes before the start of class each day. We ask that you join early to confirm that your technology is working.
+
+If you have any questions about preparing for your programme, please don’t hesitate to contact us at training.europe@prosci.com
+
+Best regards,
+
+{!Training_Event__c.OwnerFullName}
+
+Training Coordinator
+
+
+
+
+
+CONNECT WITH US:
+
+
+Prosci Europe SRL (comprising the former Prosci affiliates CMC Partnership and Nexum) is the new European division of Prosci, operating in Belgium, Denmark, France, Germany, Ireland, Italy, Luxembourg, Netherlands, Norway, Portugal, Spain, Sweden, the UK and Switzerland. See https://www.proscieurope.com/prosci-europe for the list of registered offices.
+
+This email and any attachment(s) are private and confidential and intended solely for use by the addressee. If you have received this email in error, please notify the sender and remove it entirely from your system immediately. Copying, distributing or relying on the contents of an email sent in error is strictly prohibited. We have taken reasonable precautions to ensure that no viruses are contained in this email but do not accept any liability for any alterations or damage inflicted once transmitted. Please note that the views of the author may not necessarily reflect those of Prosci Europe SRL. Your information is protected and managed as detailed within the company’s Privacy Policy at https://proscieurope.com/legal/privacy-en.pdf.
+Prosci UK Ltd. Registered in England and Wales. Registered Address: 2 Kingdom Street, 6th Floor, Paddington, London, W2 6BD, Registered Number: 04358177 </textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

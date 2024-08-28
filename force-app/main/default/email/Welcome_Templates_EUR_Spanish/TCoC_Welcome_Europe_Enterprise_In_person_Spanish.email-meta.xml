@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>F2F Welcome email for the Europe Spanish TCoC Programme</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TCoC Welcome Europe Enterprise In person Spanish</name>
+    <style>none</style>
+    <subject>Haciéndome Cargo del Cambio | Trabajo Previo e Información del Programa</subject>
+    <textOnly>Hola {!Contact.FirstName},
+
+Nos complace darle la bienvenida al {!Training_Event}
+
+Fechas del Programa: {!Training_Event__c.Start_Date__c} - {!Training_Event__c.End_Date__c} en {!Training_Event__c.Location__c}
+
+Nuestro objetivo es prepararle para comprender los cambios que se están produciendo en su organización y ayudarle a participar en el proceso de cambio.
+
+
+PREPARación para el PROgrama Trabajo Previo
+
+Para maximizar su experiencia de aprendizaje durante el programa, deberá completar las siguientes tareas de trabajo previo. Deberá disponer de 30 minutos para completarlo.
+
+
+Configuración Acceso al Portal Prosci y tareas de Trabajo Previo
+
+
+Recibirá un correo electrónico de portal@prosci.com con instrucciones sobre cómo terminar de configurar su acceso al Portal Prosci. Aquí es donde encontrará los recursos y herramientas para apoyar su aprendizaje durante el programa.
+
+
+Aprendizaje Previo
+
+1. Identificar una iniciativa de cambio en la que centrarse durante el curso, y:
+
+Identificar las razones por las que el cambio es necesario
+Determinar quién tendrá que hacer su trabajo de forma diferente para que el cambio tenga éxito.
+Pensar en las posibles resistencias al cambio
+
+2. Ver Tim Talks: Back to the Basics. En este vídeo, el director de Innovación de Prosci, Tim Creasey, habla de la creación de un marco para definir la gestión del cambio
+
+Integración de los aspectos técnicos y humanos del cambio
+Medir el éxito de la integración de la gestión del cambio
+Descubrir dónde aplicar la gestión del cambio dentro de su organización
+
+3. Opcional - Recomendamos encarecidamente ver estos vídeos adicionales para comprender los 5 principios de la gestión del cambio:
+
+ Tenet 1 - We change for a reason
+
+ Tenet 2 – Organizational change requires individual change
+
+ Tenet 3 – Organizational outcomes are the collective result of individual change
+
+ Tenet 4 – Change Management is an enabling framework for managing the people side of change
+
+ Tenet 5 – We apply change management to realize the benefits and desired outcomes of change
+
+
+Horario
+
+El horario que figura a continuación indica el tiempo que deberá asistir.
+
+Horario del curso empieza en zona horaria local: Europa/España hora peninsular
+
+{!Training_Event__c.Program_Schedule__c}
+
+Su instructor realizará varias pausas a lo largo del día de formación.
+
+
+Lo que Necesita para Tener Éxito durante su Programa Presencial
+
+Su experiencia de aprendizaje es muy importante para nosotros. Lo siguiente mejorará en gran medida su experiencia y éxito:
+
+
+Requisitos IT - Ordenador portátil con Microsoft Office 2007 o posterior. Usuarios de Mac, por favor usen Microsoft Office para Mac para asegurar la compatibilidad de las herramientas.
+
+
+Si tiene alguna pregunta sobre la preparación de su programa, no dude en ponerse en contacto con nosotros escribiendo a training.europe@prosci.com
+
+
+Atentamente,
+
+{!Training_Event__c.OwnerFullName}
+
+Training Coordinator
+
+
+
+
+
+CONECTA CON NOSOTROS:
+
+
+
+Prosci Europe SRL (formada por las antiguas filiales de Prosci, CMC Partnership y Nexum) es la nueva división europea de Prosci, que opera en Alemania, Bélgica, Dinamarca, España, Francia, Irlanda, Italia, Luxemburgo, Noruega, Países Bajos, Portugal, Reino Unido, Suecia y Suiza. Consulte la lista de domicilios sociales en https://www.proscieurope.com/prosci-europe.
+
+Este correo electrónico y cualquier archivo adjunto son privados y confidenciales y están destinados exclusivamente a su destinatario. Si ha recibido este correo electrónico por error, notifíquelo al remitente y elimínelo inmediatamente de su sistema. Queda terminantemente prohibido copiar, distribuir o basarse en el contenido de un correo electrónico enviado por error. Hemos tomado las precauciones debidas para garantizar que este correo electrónico no contenga virus, pero no aceptamos ninguna responsabilidad por cualquier alteración o daño infligido una vez transmitido. Tenga en cuenta que las opiniones del autor no reflejan necesariamente las de Prosci Europe SRL. Su información está protegida y gestionada como se detalla en la Política de Privacidad de la empresa en https://proscieurope.com/legal/privacy-en.pdf. Prosci Ibérica S.L., Sociedad Limitada, inscrita en Madrid en el Registro Mercantil con el número M-669.659, con domicilio social en Avenida de Brasil, número 6, planta 1ª, 28020.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

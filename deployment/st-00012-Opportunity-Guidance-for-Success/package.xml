@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Opportunity.Account Team Sales Process</members>
+		<members>Opportunity.Enterprise Sales Process</members>
+		<name>BusinessProcess</name>
+	</types>
+	<types>
+		<members>Opportunity_Path_Enterprise_Engagement</members>
+		<name>PathAssistant</name>
+	</types>
+    	<types>
+		<members>Opportunity.Champion__c</members>
+		<members>Opportunity.Key_Decision_Maker__c</members>
+		<members>Opportunity.Budget_Decision_Maker__c</members>
+		<name>CustomField</name>
+	</types>
+	<version>60.0</version>
+</Package>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Europe Enterprise In person DPR English Check In Email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DPR Check in Europe Enterprise In person English</name>
+    <style>none</style>
+    <subject>Your Prosci Session is Almost Here | Delivering Project Results </subject>
+    <textOnly>Hello {!Associated_Training_Contacts__c.Contact__c},
+
+Our Instructor, {!Training_Event__c.Instructor__c}, and our Training Success Specialist, {!Training_Event__c.Training_Manager__c}, look forward to welcoming you next week onto the  {!Training_Event} at {!Training_Event__c.End_User_Company__c}!
+
+
+PREPARING FOR YOUR programme
+
+As you prepare for the programme here a few reminders to help ensure you have a positive and productive learning experience.
+
+
+Complete your Prework (if you haven’t done so):
+
+Prework is due 4 business days before the programme as detailed in your Welcome email sent earlier. You should have received an email from portal@prosci.com providing access to your prework through the Prosci Portal. Contact us if you have not received this email.
+
+Course Timings prompt start at local timezone: Europe/London
+
+{!Training_Event__c.Program_Schedule__c}
+
+Your Instructor will factor in breaks in around the flow of training.
+
+IT requirements
+
+Laptop or desktop computer with Microsoft Office 2007 or newer. Mac users, please use Microsoft Office for Mac to ensure tool compatibility.
+
+
+We look forward to seeing you soon.  
+
+Please do not hesitate to reach out with any questions at training.europe@prosci.com
+
+
+Best regards,
+
+{!Training_Event__c.OwnerFullName}
+
+Training Coordinator
+
+
+
+
+
+CONNECT WITH US:
+
+
+Prosci Europe SRL (comprising the former Prosci affiliates CMC Partnership and Nexum) is the new European division of Prosci, operating in Belgium, Denmark, France, Germany, Ireland, Italy, Luxembourg, Netherlands, Norway, Portugal, Spain, Sweden, the UK and Switzerland. See https://www.proscieurope.com/prosci-europe for the list of registered offices.
+
+This email and any attachment(s) are private and confidential and intended solely for use by the addressee. If you have received this email in error, please notify the sender and remove it entirely from your system immediately. Copying, distributing or relying on the contents of an email sent in error is strictly prohibited. We have taken reasonable precautions to ensure that no viruses are contained in this email but do not accept any liability for any alterations or damage inflicted once transmitted. Please note that the views of the author may not necessarily reflect those of Prosci Europe SRL. Your information is protected and managed as detailed within the company’s Privacy Policy at https://proscieurope.com/legal/privacy-en.pdf.
+Prosci UK Ltd. Registered in England and Wales. Registered Address: 2 Kingdom Street, 6th Floor, Paddington, London, W2 6BD, Registered Number: 04358177 </textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

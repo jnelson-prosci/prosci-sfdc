@@ -10,6 +10,10 @@
                 <behavior>Edit</behavior>
                 <field>Training_Event_Approve_Assignment__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Integration_Tenant_Identifier__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>

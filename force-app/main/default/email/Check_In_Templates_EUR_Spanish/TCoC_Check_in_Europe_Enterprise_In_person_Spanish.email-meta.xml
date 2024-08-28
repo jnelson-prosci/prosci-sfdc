@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Europe Enterprise In person TCoC Spanish Check In Email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TCoC Check in Europe Enterprise In person Spanish</name>
+    <style>none</style>
+    <subject>Su curso de Prosci está a punto de comenzar | Haciéndome Cargo del Cambio</subject>
+    <textOnly>Hola {!Associated_Training_Contacts__c.Contact__c},
+
+Nuestro Instructor {!Training_Event__c.Instructor__c}, y Training Success Specialist, {!Training_Event__c.Training_Manager__c}, le darán la bienvenida la semana que viene al  {!Training_Event} en {!Training_Event__c.End_User_Company__c}
+
+
+
+PREPARación para el PROgrama Mientras se prepara para el programa, aquí tiene algunos recordatorios que le ayudarán a tener una experiencia de aprendizaje positiva y productiva.
+
+
+Complete su Trabajo Previo (en caso de no haberlo hecho):
+
+Como se detalla en el correo electrónico de bienvenida enviado anteriormente.
+
+
+Horario del curso empieza en zona horaria local: Europa/España hora peninsular
+
+{!Training_Event__c.Program_Schedule__c}
+
+Su instructor realizará varias pausas a lo largo del día de formación.
+
+Requisitos IT
+
+Ordenador portátil con Microsoft Office 2007 o posterior. Usuarios de Mac, por favor usen Microsoft Office para Mac para asegurar la compatibilidad de las herramientas.
+
+
+Esperamos verle pronto.
+
+Si tiene alguna pregunta, no dude en ponerse en contacto con nosotros escribiendo a training.europe@prosci.com
+
+
+Atentamente,
+
+{!Training_Event__c.OwnerFullName}
+
+Training Coordinator
+
+
+
+
+
+
+
+CONECTA CON NOSOTROS:
+
+
+
+Prosci Europe SRL (formada por las antiguas filiales de Prosci, CMC Partnership y Nexum) es la nueva división europea de Prosci, que opera en Alemania, Bélgica, Dinamarca, España, Francia, Irlanda, Italia, Luxemburgo, Noruega, Países Bajos, Portugal, Reino Unido, Suecia y Suiza. Consulte la lista de domicilios sociales en https://www.proscieurope.com/prosci-europe.
+
+Este correo electrónico y cualquier archivo adjunto son privados y confidenciales y están destinados exclusivamente a su destinatario. Si ha recibido este correo electrónico por error, notifíquelo al remitente y elimínelo inmediatamente de su sistema. Queda terminantemente prohibido copiar, distribuir o basarse en el contenido de un correo electrónico enviado por error. Hemos tomado las precauciones debidas para garantizar que este correo electrónico no contenga virus, pero no aceptamos ninguna responsabilidad por cualquier alteración o daño infligido una vez transmitido. Tenga en cuenta que las opiniones del autor no reflejan necesariamente las de Prosci Europe SRL. Su información está protegida y gestionada como se detalla en la Política de Privacidad de la empresa en https://proscieurope.com/legal/privacy-en.pdf.
+
+Prosci Ibérica S.L., Sociedad Limitada, inscrita en Madrid en el Registro Mercantil con el número M-669.659, con domicilio social en Avenida de Brasil, número 6, planta 1ª, 28020.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -28,7 +28,7 @@
         <name>Update_No_Show_Notes_to_Cancelled</name>
         <label>Update No-Show Notes to Cancelled</label>
         <locationX>176</locationX>
-        <locationY>311</locationY>
+        <locationY>287</locationY>
         <inputAssignments>
             <field>No_Show_Notes__c</field>
             <value>
@@ -44,7 +44,7 @@
             <targetReference>Update_No_Show_Notes_to_Cancelled</targetReference>
         </connector>
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
-        <filterLogic>1 AND 2 AND (3 OR 4 OR 5)</filterLogic>
+        <filterLogic>1 AND 2 AND 3</filterLogic>
         <filters>
             <field>Status__c</field>
             <operator>EqualTo</operator>
@@ -61,23 +61,9 @@
         </filters>
         <filters>
             <field>Instructor_Type__c</field>
-            <operator>EqualTo</operator>
+            <operator>Contains</operator>
             <value>
                 <stringValue>Prosci</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Instructor_Type__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Prosci Canada</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Instructor_Type__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Prosci Australia</stringValue>
             </value>
         </filters>
         <object>Associated_Training_Contacts__c</object>

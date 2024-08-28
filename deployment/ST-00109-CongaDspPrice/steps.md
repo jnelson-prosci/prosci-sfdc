@@ -1,0 +1,3 @@
+1. Update the conga merge query record with template key of '0Q_104EA2316245' that used to be for OPP and has been updated for DSP so that it includes DSP.Price__c
+
+SELECT Deal_Support_Process__r.Day_1__c, Deal_Support_Process__r.Day_2__c, Deal_Support_Process__r.Day_3__c, Deal_Support_Process__r.Day_4__c, Deal_Support_Process__r.Fee__c, Deal_Support_Process__r.Location__c, Deal_Support_Process__r.Price__c FROM APXT_Redlining__Contract_Agreement__c WHERE Id = '{pv0}'

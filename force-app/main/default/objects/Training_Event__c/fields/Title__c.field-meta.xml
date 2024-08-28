@@ -36,11 +36,6 @@
                 <label>Sponsor</label>
             </value>
             <value>
-                <fullName>Manager</fullName>
-                <default>false</default>
-                <label>Manager</label>
-            </value>
-            <value>
                 <fullName>Employee</fullName>
                 <default>false</default>
                 <label>Employee</label>
@@ -61,21 +56,6 @@
                 <label>Delivering Project Results Workshop</label>
             </value>
             <value>
-                <fullName>Fundamentals of Change Workshop</fullName>
-                <default>false</default>
-                <label>Fundamentals of Change Workshop</label>
-            </value>
-            <value>
-                <fullName>Change Portfolio Workshop</fullName>
-                <default>false</default>
-                <label>Change Portfolio Workshop</label>
-            </value>
-            <value>
-                <fullName>Change Management Project Support</fullName>
-                <default>false</default>
-                <label>Change Management Project Support</label>
-            </value>
-            <value>
                 <fullName>Speaking Engagement</fullName>
                 <default>false</default>
                 <label>Speaking Engagement</label>
@@ -84,16 +64,6 @@
                 <fullName>Practitioner</fullName>
                 <default>false</default>
                 <label>Practitioner</label>
-            </value>
-            <value>
-                <fullName>Change Management Deployment Support</fullName>
-                <default>false</default>
-                <label>Change Management Deployment Support</label>
-            </value>
-            <value>
-                <fullName>Advanced_Immersion_Workshop</fullName>
-                <default>false</default>
-                <label>Advanced Immersion Workshop</label>
             </value>
             <value>
                 <fullName>Unavailable</fullName>
@@ -114,11 +84,6 @@
                 <fullName>Methodology Application Program</fullName>
                 <default>false</default>
                 <label>Methodology Application Program</label>
-            </value>
-            <value>
-                <fullName>ECM Workshop</fullName>
-                <default>false</default>
-                <label>ECM Workshop</label>
             </value>
             <value>
                 <fullName>Leading Your Team Through Change</fullName>
@@ -149,6 +114,11 @@
                 <fullName>ADKAR Model Mastery Level 2: Resolve Change Barriers</fullName>
                 <default>false</default>
                 <label>ADKAR Model Mastery Level 2: Resolve Change Barriers</label>
+            </value>
+            <value>
+                <fullName>Achieve Change Performance</fullName>
+                <default>false</default>
+                <label>Achieve Change Performance</label>
             </value>
         </valueSetDefinition>
     </valueSet>

@@ -49,7 +49,7 @@
     <filters>
         <field>OPPORTUNITY.STAGE_NAME</field>
         <operation>notContain</operation>
-        <value>Done - Successful,Done - Terminated,Done - No Response,Done - Alternate Solut</value>
+        <value>Done - Successful,Done - Terminated,Done - No Response,Done - Alternate Soluion,Closed - Won</value>
     </filters>
     <filters>
         <field>CORE.USERS.ALIAS</field>
